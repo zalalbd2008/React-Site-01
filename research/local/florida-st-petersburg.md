@@ -59,6 +59,10 @@ St. Petersburg is about 28% of Pinellas County's 2025 estimated population.
 - Milton (Oct 2024): landfall Siesta Key; "major damage in the Sarasota and Tampa Bay areas"; Tropicana Field roof damaged in St. Petersburg; same area affected by Helene two weeks before.
 - **Do not** attribute the 2024→2025 population decline to the storms: the estimates do not give causes. Page may note the two facts side by side with that caveat, or not at all.
 
+## Cross-check: BEBR Florida Estimates of Population, April 1, 2025 (`bebr-florida-estimates-2025`, PDF retrieved 2026-11-08)
+
+St. Petersburg city 266,153 (+3.0% vs 258,308 in 2020); Pinellas County 966,933 (+0.8% vs 959,107). BEBR (state) and Census Vintage 2025 (federal) use different methods and reference dates (April vs. July); sibling Florida pages cite BEBR, so pages in this batch cite both where growth is discussed and do not mix either with ACS period estimates.
+
 ## Hypotheses to test with client data (not claims)
 
 1. A flat-to-declining resident base (county) means new-patient growth is more likely to come from share shift (switchers, people moving within the county, lapsed patients) than from population inflow. Test: new-patient source and address-change data in the PMS.

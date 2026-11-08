@@ -46,6 +46,10 @@ Boca Raton city: base 97,444 → 2024 101,921 → 2025 101,582: **+4.2%** since 
 
 Searches for Boca Raton returned several dental-specialist marketing firms listing Boca Raton addresses (see competitors file). This affects the buyer context: owners here are likely to receive pitches from nearby dental-specialist agencies — the page should help them evaluate, not out-claim.
 
+## Cross-check: BEBR Florida Estimates of Population, April 1, 2025 (`bebr-florida-estimates-2025`, PDF retrieved 2026-11-08)
+
+Boca Raton city 100,897 (+3.6% vs 97,422); Palm Beach County 1,556,161 (+4.3%). BEBR (state) and Census Vintage 2025 (federal) use different methods and reference dates (April vs. July); sibling Florida pages cite BEBR, so pages in this batch cite both where growth is discussed and do not mix either with ACS period estimates.
+
 ## Hypotheses (test with client data)
 
 1. High income and education do **not** establish cosmetic demand (brief rule). They may raise expectations about evidence, credentials and service — test via consult conversion and reasons for not proceeding.

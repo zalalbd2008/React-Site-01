@@ -50,6 +50,10 @@ City 4,874 (±597) of 60,786 units = **8.0%**; county 73,296 of 713,855 = **10.3
 
 Growth concentrated 2021–2023 (122,288 → 126,327), roughly flat since 2024.
 
+## Cross-check: BEBR Florida Estimates of Population, April 1, 2025 (`bebr-florida-estimates-2025`, PDF retrieved 2026-11-08)
+
+West Palm Beach city 126,944 (+8.1% vs 117,415); Palm Beach County 1,556,161 (+4.3%). BEBR (state) and Census Vintage 2025 (federal) use different methods and reference dates (April vs. July); sibling Florida pages cite BEBR, so pages in this batch cite both where growth is discussed and do not mix either with ACS period estimates.
+
 ## Hypotheses (test with client data)
 
 1. Language access is a front-line operational issue here more than in the other three cities in this batch: 13.8% report speaking English less than very well. Test: call-language tagging, form language, review language.

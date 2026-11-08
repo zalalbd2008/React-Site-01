@@ -42,9 +42,7 @@ Table URLs: https://data.census.gov/table/ACSDP5Y2023.DP02?g=160XX00US1304000 (a
 | DeKalb County | 764,458 | 772,584 | 774,394 | +9,936 (+1.3%) |
 | Fulton County | 1,066,559 | 1,090,468 | 1,098,791 | +32,232 (+3.0%) |
 | Atlanta-Sandy Springs-Roswell, GA [metro] | 6,106,816 | 6,420,229 | 6,482,182 | +375,366 (+6.1%) |
-| Atlanta-Sandy Springs-Roswell, GA [metro] | 4,766,683 | 4,999,054 | 5,044,702 | +278,019 (+5.8%) |
-| DeKalb County, GA | 764,458 | 772,584 | 774,394 | +9,936 (+1.3%) |
-| Fulton County, GA | 1,066,559 | 1,090,468 | 1,098,791 | +32,232 (+3.0%) |
+| Atlanta-Sandy Springs-Roswell, GA Metropolitan Division (part of the metro) | 4,766,683 | 4,999,054 | 5,044,702 | +278,019 (+5.8%) |
 | Fulton County, GA (metro county) | 1,066,559 | 1,090,468 | 1,098,791 | +32,232 (+3.0%) |
 | Gwinnett County, GA (metro county) | 957,385 | 1,009,864 | 1,018,099 | +60,714 (+6.3%) |
 | Cobb County, GA (metro county) | 766,088 | 788,879 | 793,345 | +27,257 (+3.6%) |

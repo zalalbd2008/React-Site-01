@@ -61,6 +61,10 @@ Note: the city's uninsured rate (14.9%) is higher than the county's (10.0%), and
 
 Milton made landfall on **Siesta Key** (Sarasota County) on 10 Oct 2024 as a category 3 hurricane, causing major damage in the Sarasota and Tampa Bay areas (NHC TCR, 31 Mar 2025). Helene's surge two weeks earlier damaged numerous structures in Sarasota County's coastal areas and heavily damaged Anna Maria Island/Bradenton Beach in Manatee (NHC TCR, 17 Feb 2026).
 
+## Cross-check: BEBR Florida Estimates of Population, April 1, 2025 (`bebr-florida-estimates-2025`, PDF retrieved 2026-11-08)
+
+Sarasota city 58,279 (+6.3% vs 54,842); Sarasota County 487,640 (+12.4% vs 434,006); Manatee County 466,845 (+16.8% vs 399,710); North Port-Bradenton-Sarasota MSA 954,485 (+14.5% vs 833,716). BEBR (state) and Census Vintage 2025 (federal) use different methods and reference dates (April vs. July); sibling Florida pages cite BEBR, so pages in this batch cite both where growth is discussed and do not mix either with ACS period estimates.
+
 ## Hypotheses (test with client data)
 
 1. The oldest age profile in this batch (county median age 57.3; 37.3% 65+) suggests restorative, denture and implant consultations and accessibility of booking (phone answering) matter — test with procedure mix and call outcomes.

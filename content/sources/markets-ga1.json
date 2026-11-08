@@ -442,19 +442,6 @@
     "kind": "other"
   },
   {
-    "id": "google-gbp-local-ranking-ga1",
-    "title": "Tips to improve your local ranking on Google",
-    "publisher": "Google Business Profile Help",
-    "url": "https://support.google.com/business/answer/7091",
-    "published": null,
-    "retrieved": "2026-11-08",
-    "dataYear": null,
-    "geography": null,
-    "measures": "Local results are mainly based on relevance, distance and prominence (the summary also calls it popularity); distance is how far the business is from the searcher; prominence draws on links and reviews; no way to pay for better local ranking.",
-    "limitations": "Help page; Google may change it without notice; undated.",
-    "kind": "official-docs"
-  },
-  {
     "id": "obs-ga1-atlanta-practices",
     "title": "Observation: sample of Atlanta-area dental practice websites",
     "publisher": "Alpha Dental Media editorial team",

@@ -554,7 +554,7 @@
   "retrieved": "2026-11-08",
   "dataYear": "2026-11-08",
   "geography": "Torrance city",
-  "measures": "Observable features of 5 dental practice home pages (booking path, hours, language content, insurance and payment information, location content): research/local/california-torrance-practices.md",
+  "measures": "Observable features of 4 dental practice home pages (booking path, hours, language content, insurance and payment information, location content): research/local/california-torrance-practices.md",
   "limitations": "Small, non-random sample found via a web search tool; home pages fetched on one date; several candidate sites could not be retrieved; no forms submitted and no calls made; not representative of the market.",
   "kind": "observation"
  },
@@ -579,7 +579,7 @@
   "published": null,
   "retrieved": "2026-11-08",
   "dataYear": "2026-11-08",
-  "geography": "Beverly Hills city and an adjacent Los Angeles address using the Beverly Hills name",
+  "geography": "Beverly Hills city, plus one office in the City of Los Angeles that uses the Beverly Hills name",
   "measures": "Observable features of 3 dental practice home pages (booking path, hours, language content, insurance and payment information, location content): research/local/california-beverly-hills-practices.md",
   "limitations": "Small, non-random sample found via a web search tool; home pages fetched on one date; several candidate sites could not be retrieved; no forms submitted and no calls made; not representative of the market.",
   "kind": "observation"

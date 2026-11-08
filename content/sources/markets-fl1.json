@@ -8,7 +8,7 @@
     "retrieved": "2026-11-08",
     "dataYear": "2020–2024",
     "geography": "Miami city, Florida",
-    "measures": "Total population 459,745; households 194,821; under 18 16.5%; 65+ 15.9%; median age 39.3; language other than English at home (age 5+) 77.2% (±0.9); Spanish at home 68.8%; speak English less than 'very well' 39.2%; median household income $62,462 (±$1,757); mean travel time to work 27.3 min; no health insurance 16.3%; owner-occupied housing 30.8%; bachelor's or higher (25+) 37.4%.",
+    "measures": "Total population 459,745; households 194,821; land area 36.0 sq mi (2023 Gazetteer, via scripts/census.mjs); under 18 16.5%; 65+ 15.9%; median age 39.3; language other than English at home (age 5+) 77.2% (±0.9); Spanish at home 68.8%; speak English less than 'very well' 39.2%; median household income $62,462 (±$1,757); mean travel time to work 27.3 min; no health insurance 16.3%; owner-occupied housing 30.8%; bachelor's or higher (25+) 37.4%.",
     "limitations": "5-year period estimates with margins of error; not a point-in-time count. Companion tables with the same geography: https://data.census.gov/table/ACSDP5Y2024.DP03?g=160XX00US1245000, DP04 and DP05. Retrieved through the data.census.gov table API with scripts/census.mjs --vintage 2024.",
     "kind": "government-data"
   },

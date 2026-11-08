@@ -43,3 +43,7 @@ Regional considerations (state-level data, regulation/insurance landscape where 
 ## Status
 
 Set `status: "Drafted"` when the page meets the standard. If evidence cannot support a page, set `status: "Researching"` with a `statusReason`, record the gap in the brief and move on.
+
+## Data vintage policy (added 2026-11-08)
+
+All market pages use the **ACS 2020–2024 5-year Data Profiles** (released and available on data.census.gov; `node scripts/census.mjs` now defaults to 2024). Pages drafted with 2019–2023 values are updated to 2020–2024 at review, so sibling pages compare like with like. Population change over time uses the Census Vintage 2025 population estimates where cited; where a state source (e.g. Florida BEBR) is also cited, say which source each figure comes from and that methods differ.

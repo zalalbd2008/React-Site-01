@@ -1,4 +1,5 @@
 // Pull a fixed set of ACS 5-year Data Profile values for a Census place (city).
+// Variable codes and labels verified against api.census.gov profile variables.json for the 2023 and 2024 vintages.
 // Usage: node scripts/census.mjs "Fort Worth" TX [--vintage 2023]
 // Output: JSON with geography name, GEOID, table ids, vintage, labels and values, plus source URLs.
 // Uses the public data.census.gov table API (no key) and the 2023 Gazetteer for GEOIDs.
@@ -11,7 +12,7 @@ if (!cityArg || !stateArg) {
   console.error('Usage: node scripts/census.mjs "<City>" <ST> [--vintage 2023]');
   process.exit(1);
 }
-const vintage = rest.includes('--vintage') ? rest[rest.indexOf('--vintage') + 1] : '2023';
+const vintage = rest.includes('--vintage') ? rest[rest.indexOf('--vintage') + 1] : '2024';
 const FIPS = { TX: '48', FL: '12', GA: '13', CA: '06' };
 const st = FIPS[stateArg.toUpperCase()];
 if (!st) throw new Error('State must be TX, FL, GA or CA');
