@@ -2,14 +2,195 @@
 route: "/blog/dental-call-tracking/"
 type: "article"
 category: "websites-conversion"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
 title: "Dental Call Tracking Without Treating Every Call as a New Patient"
-metaTitle: "Dental Call Tracking Without Treating Every Call as a New P…"
-description: "Dental Call Tracking Without Treating Every Call as a New Patient. A practical guide for dental practice owners and managers from Alpha Dental Media."
+metaTitle: "Dental Call Tracking: Measure Calls, Not Just Count Them"
+description: "How dental practices can track calls by source, classify them honestly, keep Business Profile phone details consistent and approach call recording consent cautiously."
+eyebrow: "Measurement"
+lede: "A call tracking report that says the website produced 300 calls last month is not saying it produced 300 new patients. Most of the work in dental call tracking is deciding which calls count, and recording what happened next."
 parent: "/blog/"
-primaryIntent: "Dental Call Tracking Without Treating Every Call as a New Patient"
-related: ["/services/dental-conversion-tracking/"]
-order: 15
+primaryIntent: "dental call tracking"
+secondaryQuestions:
+  - "How do we tell new-patient calls from other calls?"
+  - "Does dynamic number insertion hurt our Google Business Profile?"
+  - "Should we count calls by duration?"
+  - "Is it legal to record patient phone calls?"
+  - "How do call tracking numbers work with Google Ads?"
+audience: "Practice owners, office managers and dental group marketing leads who receive call reports from an agency or ad platform"
+sources:
+  - "google-gbp-guidelines"
+  - "google-gbp-phone-numbers"
+  - "google-ads-call-conversions"
+  - "google-ads-call-assets"
+  - "ga4-conversions-vs-key-events"
+  - "usc-18-2511"
+  - "rcfp-recording-guide-california"
+  - "fl-statutes-934-03"
+  - "rcfp-recording-guide-texas"
+  - "rcfp-recording-guide-georgia"
+related:
+  - "/services/dental-conversion-tracking/"
+  - "/resources/dental-marketing-metrics/"
+  - "/blog/dental-marketing-roi/"
+  - "/services/dental-local-seo-google-business-profile/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Google Business Profile guidelines and phone-number help, Google Ads call conversion and call asset help, and Google Analytics key-event terminology were retrieved on 2026-11-08. Recording-consent statements rely on 18 U.S.C. § 2511 (Cornell LII), Florida Statutes § 934.03 (Florida Senate, 2025 text) and Reporters Committee for Freedom of the Press summaries for California (updated August 2021), Texas (June 2020) and Georgia (May 2020); the official California legislature page could not be retrieved from this environment and was not cited. Legal statements are cautious summaries, not advice. Call volumes and shares appear only in a labelled illustrative example."
+faqs:
+  - q: "Is every tracked call from an ad a new-patient lead?"
+    a: "No. Tracked calls include existing patients rescheduling, people asking about bills, vendors, wrong numbers, spam and repeat calls from the same person. Count a call as a new-patient opportunity only after it has been classified, and as a new patient only once the practice management system shows a scheduled and attended first visit."
+  - q: "Can we use a tracking number on our Google Business Profile?"
+    a: "Google's guidelines require a number that connects to the individual location and is under the practice's direct control, and they prohibit numbers that redirect to anyone other than the actual business. A tracking number that forwards straight to the office line can meet that; list the main office line as an additional number and on the website."
+  - q: "Do we need consent to record calls with patients?"
+    a: "It depends on where the parties are. Federal law and states such as Texas and Georgia generally allow recording with one party's consent, while California and Florida generally require all parties' consent. An announcement at the start of every recorded call is a safeguard counsel may suggest. Ask counsel before turning recording on."
+  - q: "Is call duration a good way to count qualified calls?"
+    a: "It is a rough filter, not a classification. Short calls are often not opportunities, but long calls include billing disputes and existing patients, and some valuable booking calls are short. Google Ads lets you set a minimum duration; use it as a starting point and replace it with classified or imported outcomes when you can."
 ---
+
+<KeyAnswer>Track calls by source with tracking numbers, but count them in stages: every call, then calls classified as new-patient opportunities, then calls that booked, then first visits attended. Keep the Business Profile number one that rings the practice directly, keep the main number consistent everywhere, and check recording-consent rules for every state your callers are in before recording.</KeyAnswer>
+
+Call tracking is one of the most useful measurement tools a dental practice can have, because phone calls are a contact path that web analytics alone cannot see. It is also one of the most misread. A report that counts every ringing phone as a lead makes every channel look productive and makes it impossible to decide where to spend. This article covers how to classify calls, how tracking numbers interact with your Google Business Profile and Google Ads, how to think about duration and AI scoring, and where recording-consent law requires caution. Definitions of each funnel stage are in [the dental marketing metrics reference](/resources/dental-marketing-metrics/); building the full measurement system is the job of [dental conversion tracking](/services/dental-conversion-tracking/).
+
+## Why a raw call count overstates new patients
+
+A tracking number records that a call happened, when, for how long, and which source the caller came from. It cannot know who the caller is or why they called. A month of calls to a typical practice line includes:
+
+- New patients wanting an appointment.
+- New patients asking a question and not booking yet.
+- Existing patients confirming, rescheduling or cancelling.
+- Existing patients with billing or insurance questions.
+- Insurance companies, labs, suppliers and job applicants.
+- Spam, robocalls, wrong numbers and hang-ups.
+- The same person calling twice or three times about one issue.
+
+Existing patients also look up the number on the website and Business Profile, so organic search and maps calls mix existing patients with new ones. If those are counted as leads, organic search looks like the most productive channel while possibly producing fewer new patients than the report implies.
+
+## A call classification scheme a front desk can use
+
+Classification is the step that turns call data into marketing data. It can be done by listening to recordings, by front-desk notes, by an automated tool, or by a mix. The categories must be few enough that staff apply them consistently.
+
+<DataTable caption="A seven-category call classification for dental practices" columns={["Category", "Definition", "Counts toward marketing results?", "Notes"]}
+  rows={[
+    ["New patient, booked", "A person not yet a patient who scheduled an appointment on the call", "Yes, as a booked new-patient call", "Confirm later against the practice management system"],
+    ["New patient, not booked", "A prospective new patient who did not schedule", "Yes, as an opportunity", "Record the reason: price, insurance, timing, no availability, just asking"],
+    ["Existing patient", "Anyone already a patient, for any reason", "No", "Useful for staffing, not for marketing"],
+    ["Business or vendor", "Insurers, labs, suppliers, job seekers, sales calls", "No", "High numbers can mask real demand"],
+    ["Spam or wrong number", "Robocalls, misdials, silence", "No", "Rising spam on one number may mean it has been scraped"],
+    ["Missed or abandoned", "Unanswered, voicemail without callback, hang-up in the queue", "Investigate", "Callback rate matters as much as answer rate"],
+    ["Repeat", "A second or later call from the same number about the same issue", "No, deduplicate", "Count the person once per issue"]
+  ]}
+  note="A framework, not a standard. Agree the definitions in writing with the front desk and keep them fixed so months are comparable." />
+
+The "new patient, not booked" category deserves particular attention. Its reasons tell the practice whether the problem is marketing (wrong people calling), operations (no availability, unanswered questions) or price and insurance fit. That is often the most actionable column in the whole report.
+
+## From a ringing phone to an attended first visit
+
+<Funnel title="Call stages that should be reported separately" steps={[
+  { label: "Tracked calls", note: "Every call to a tracking number, by source" },
+  { label: "Unique callers", note: "Repeat calls about the same issue removed" },
+  { label: "New-patient opportunities", note: "Classified as prospective new patients" },
+  { label: "Booked on the call", note: "An appointment was scheduled" },
+  { label: "Attended first visit", note: "Matched in the practice management system" }
+]} caption="Each stage needs its own owner: the tracking tool, the classification process and the practice management system." />
+
+The last stage requires matching calls to appointments. That can be done with a monthly export of new-patient first visits (dates and phone numbers, handled under the practice's privacy procedures) compared with booked calls, or by having the front desk record the referral source at scheduling. Neither is perfect; both are far better than stopping at "calls". The difference between leads, bookings, visits, revenue and profit is unpacked further in [how to tell dental marketing ROI stages apart](/blog/dental-marketing-roi/).
+
+## Duration thresholds and AI call scoring
+
+Google Ads can count a call from an ad as a conversion in two ways: by counting calls that last longer than a minimum duration the advertiser sets, or by having Google's AI analyse call recordings to identify higher-quality leads. Recording-based analysis is limited to calls where both parties are in the U.S. or Canada and can be turned off in account settings; if recording is off or unavailable, the system falls back to duration. Advertisers who track outcomes elsewhere can import calls as a separate conversion action.
+
+<SourceNote ids={["google-ads-call-conversions"]} />
+
+Duration is a crude filter. It removes most hang-ups and wrong numbers, but an existing patient disputing a bill can talk for ten minutes, and a new patient who already knows what they want can book in two. Automated scoring may do better, but it is still a model's judgement about intent, not a record of what happened. For bidding, the most reliable signal is an imported outcome: a call later confirmed as a new-patient booking or attended visit.
+
+In analytics, calls from website visits can be recorded as events and marked as key events; Google Ads conversions can be created from those key events. Keep call key events separate from form and booking events so each path can be judged on its own.
+
+<SourceNote ids={["ga4-conversions-vs-key-events"]} />
+
+## Dynamic number insertion, NAP consistency and your Business Profile
+
+Dynamic number insertion (DNI) swaps the phone number shown on the website according to how the visitor arrived, so a visitor from a paid ad sees one number and a visitor from organic search sees another. It is how call tracking attributes website calls to sources. It also creates a risk: the practice's name, address and phone number (NAP) appearing inconsistently across the web.
+
+### What Google's Business Profile rules say about phone numbers
+
+Google's guidelines for representing a business ask for a phone number that connects to the individual business location, a local number rather than a central call centre where possible, a number under the direct control of the business, and no numbers that redirect or refer users to anyone other than the actual business.
+
+<SourceNote ids={["google-gbp-guidelines"]} />
+
+A Business Profile can list a primary number and up to two additional numbers.
+
+<SourceNote ids={["google-gbp-phone-numbers"]} />
+
+Read together, those rules allow a tracking number on the profile if it rings straight through to that location, is controlled by the practice, and is not a referral service. One approach, which comes from call tracking practice rather than from Google's documentation, is to put a dedicated tracking number in the primary field and the office line in an additional field, so the office number still matches the website and directories. Whether to do that is a judgement call; the alternative is to keep the office number as primary and measure profile calls through the profile's own reporting and a tagged website link.
+
+### Rules that keep DNI from damaging consistency
+
+- **Keep a single canonical number for each location** and use it in structured data, the footer's static fallback, directories and printed material.
+- **Swap numbers only in the visible page content**, not in schema markup or citations.
+- **Use a different tracking number per channel**, not per page, unless you have the call volume to make page-level numbers meaningful.
+- **Own the numbers.** Tracking numbers should be in an account the practice controls, so they can be ported if the provider changes. A number that disappears when a contract ends breaks every place it was published.
+- **Retire numbers carefully.** Old tracking numbers linger in directories and old ads; keep them forwarding for a long period after retirement.
+
+### DNI and Google Ads phone verification
+
+Google Ads verifies phone numbers used in call assets. Its help page says that where a website uses DNI or third-party call tracking, Google cannot verify the number by scanning the site's source code, and the advertiser must prove domain ownership instead, either by linking Search Console to Google Ads or by placing the Google tag directly in the site's raw HTML rather than through a tag manager. Call assets can also be scheduled to show only when the practice is answering phones.
+
+<SourceNote ids={["google-ads-call-assets"]} />
+
+## Call recording consent: a cautious summary
+
+Recording calls is valuable for classification and training. It is also regulated, and the rules depend on where the parties are, not only where the practice is.
+
+Under federal law, 18 U.S.C. § 2511(2)(d) provides that a person not acting under color of law may intercept a communication where that person is a party or one party has given prior consent, unless the interception is for a criminal or tortious purpose. This is often described as one-party consent.
+
+<SourceNote ids={["usc-18-2511"]} />
+
+Several states are stricter. Florida's statute makes interception lawful when all parties to the communication have given prior consent. In California, a summary by the Reporters Committee for Freedom of the Press describes Penal Code § 632 as requiring all parties' consent to record a confidential communication, including by telephone, and § 632.7 as requiring all-party consent for calls involving a cellular or cordless phone regardless of confidentiality.
+
+<SourceNote ids={["fl-statutes-934-03", "rcfp-recording-guide-california"]} />
+
+By the same organisation's summaries, Texas and Georgia generally permit recording by a party to the call or with one party's consent.
+
+<SourceNote ids={["rcfp-recording-guide-texas", "rcfp-recording-guide-georgia"]} />
+
+<Callout title="What this means in practice" tone="caution">
+These are summaries, not legal advice, and the details (what counts as confidential, how cross-state calls are treated, what notice is sufficient) vary. A practice whose callers may be in an all-party-consent state, including any practice that advertises across state lines, should ask its counsel before enabling recording. A clear announcement at the start of every recorded call is a common safeguard counsel may recommend. Recordings can also contain patient health information, so access, retention and the vendor relationship belong in the practice's HIPAA review.
+</Callout>
+
+## Worked example: one month of calls, read two ways
+
+<Illustrative title="A single-location practice reviews 400 tracked calls">
+The call tracking report shows 400 calls: 160 from organic search and the Business Profile, 140 from Google Ads, 60 from a directory listing and 40 from a mailer.
+
+After classification and deduplication, the picture changes. Of the 160 organic and profile calls, 95 are existing patients, 15 are vendors or spam and 50 are new-patient opportunities, 30 of whom booked. Of the 140 ad calls, 25 are existing patients who searched the practice name and clicked the ad, 20 are spam or wrong numbers, and 95 are new-patient opportunities, 48 of whom booked. The directory produced 12 opportunities and 5 bookings; the mailer 14 opportunities and 9 bookings.
+
+Matching to the practice management system a month later, 72 of the 92 booked new patients attended. Of the 81 opportunities that did not book, 33 cited no appointment within two weeks.
+
+Read raw, organic search was the largest channel. Read classified, paid search produced the most new-patient bookings, the mailer had the highest booking rate, and the biggest single problem was availability, not marketing. All numbers are invented.
+</Illustrative>
+
+The example also shows why branded searches matter: existing patients who click a paid ad on the practice's own name can make a paid campaign look busier than it is. Classification exposes that.
+
+## Common mistakes in dental call tracking
+
+- **Reporting calls as leads.** Always report the classified stages alongside the raw count.
+- **Putting tracking numbers in citations and schema.** It fragments NAP consistency and outlives the campaign.
+- **Letting the vendor own the numbers.** Ports are hard when the account is not yours.
+- **Ignoring missed calls.** A missed new-patient call with no callback is a lost patient that never appears in the booking data.
+- **Turning on recording without checking consent rules.** The default setting in a tool is not legal advice.
+- **Optimising ad bidding to duration alone** once better outcome data exists.
+
+## Sources and limitations
+
+Google Business Profile and Google Ads rules reflect help pages retrieved on 8 November 2026 and can change. Recording-consent statements are summaries drawn from the federal statute, Florida's statute and the Reporters Committee for Freedom of the Press state guides; the California summary is secondary because the official legislature page could not be retrieved, and the guides were last updated between 2020 and 2021. Other states' rules are not covered. No industry benchmarks for call mix or booking rates are given.
+
+## Related next steps
+
+- See how call, form and booking measurement fit together in [dental conversion tracking](/services/dental-conversion-tracking/).
+- Check phone details and profile set-up with [dental local SEO and Google Business Profile management](/services/dental-local-seo-google-business-profile/).
+- Use [the dental growth calculator](/resources/dental-growth-calculator/) to see how call booking and attendance rates change what each channel must produce.
+- Ask for a review of your call tracking, classification and Business Profile numbers through the [Dental Growth Audit](/dental-marketing-audit/).
