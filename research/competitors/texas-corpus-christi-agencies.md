@@ -26,5 +26,5 @@ Batch: markets-tx2b · Observed 2026-11-08 · Route: `/markets/texas/corpus-chri
 |---|---|---|
 | Template city copy | No reason to believe the plan fits a flat-population market | Uses Vintage 2025 estimates: city −0.3% since 2020; frames growth as share and retention |
 | Cosmetic demand inferred from industry/income | Unsupported; risks wrong budget | States income/insurance as hypotheses to test with payer and consult data |
-| No language discussion | 29.0% Spanish at home (ACS) | Decision tree for Spanish pages tied to staff capacity |
+| No language discussion | 29.3% Spanish at home (ACS 2020–2024) | Decision tree for Spanish pages tied to staff capacity |
 | No operational resilience | Hurricane season June–Nov (NOAA) | Storm-closure update procedure across GBP, site, ads |

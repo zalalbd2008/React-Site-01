@@ -43,7 +43,7 @@ Source id: `obs-ga1-augusta-practices`.
 |---|---|---|---|
 | Only the DSO office showed Saturday/after-5 hours and one-tap booking | Convenience is a visible differentiator held by the corporate office in this sample | Independents should not copy hours they cannot staff; compete on clarity (fees, insurance, who you'll see) and booking speed | Booked-rate by inquiry type; lost-call rate at lunch and after 5 |
 | Growth in Columbia County (+8.4%) and SC counties; 2 of 4 sites name those areas | Augusta practices draw across county and state lines | Location content and ads geography built from patient ZIPs, including SC where relevant | Patient ZIP share by county/state; ads location reports |
-| Public coverage 43.5% in the consolidated city; insurance missing on 2 homepages | Payer questions are likely a frequent call driver (hypothesis) | Publish plain-language participation list per plan type; explain out-of-network process | Share of calls about insurance; call-to-booking rate |
+| Public coverage 43.7% in the consolidated city; insurance missing on 2 homepages | Payer questions are likely a frequent call driver (hypothesis) | Publish plain-language participation list per plan type; explain out-of-network process | Share of calls about insurance; call-to-booking rate |
 | University clinic in the choice set | Some patients compare a teaching clinic with private offices | Explain the practice's own scheduling speed and continuity without disparaging alternatives | Intake question "where else did you consider?" |
 
 Limitations: four pages; one is a university clinic page and one a DSO location page; not representative.

@@ -43,10 +43,10 @@ Source id: `obs-ga1-atlanta-practices`.
 
 | Observed fact | Cautious interpretation | Proposed action | How to test |
 |---|---|---|---|
-| Early-start, early-finish hours on 2 of 3 sites; none open evenings/weekends | Atlanta practices in this sample compete on early-morning slots, not evenings. With 26.6% of city workers working from home (ACS), daytime availability may matter differently by neighborhood. | Put real hours (including early starts) in GBP, schema and above the fold; do not advertise availability that is not staffed | Booked-time distribution by hour; share of web bookings into early slots |
+| Early-start, early-finish hours on 2 of 3 sites; none open evenings/weekends | Atlanta practices in this sample compete on early-morning slots, not evenings. With 29.7% of city workers working from home (ACS), daytime availability may matter differently by neighborhood. | Put real hours (including early starts) in GBP, schema and above the fold; do not advertise availability that is not staffed | Booked-time distribution by hour; share of web bookings into early slots |
 | One site led with text messaging | Some practices treat SMS as the primary inquiry channel | If the practice can staff texting, offer it — and track it as a conversion like calls and forms | Count text inquiries → booked → attended separately |
 | Dollar-off implant and aligner offers on 1 site | Price-led promotion exists in Midtown | If fees are advertised, follow Georgia Board of Dentistry Rule 150-10-.01 fee-advertising conditions; check with counsel | Consult-to-start rate for promo vs non-promo leads |
 | Multi-office group with suburb pages (A2) | Metro-wide competitors build one page per office | Single-office practices should define a realistic radius rather than chase "Atlanta" | Search Console queries by neighborhood; GBP direction-request origins |
-| No non-English content in the city sample | City language mix (11.7% non-English at home) is lower than Gwinnett (37.4%) — language strategy is a county/location decision | Decide by office location and staff capability, not metro averages | Ask "preferred language" at intake for 90 days |
+| No non-English content in the city sample | City language mix (12.2% non-English at home) is lower than Gwinnett (38.1%) — language strategy is a county/location decision | Decide by office location and staff capability, not metro averages | Ask "preferred language" at intake for 90 days |
 
 Limitations: four homepages, two in one ZIP; directory-heavy search results; not representative of Atlanta dentistry.

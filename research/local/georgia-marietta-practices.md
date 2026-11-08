@@ -16,7 +16,7 @@
 - Of **three** practice websites reviewed on 8 November 2026, **none** offered confirmed real-time online booking; two used request forms and one had a scheduling label with no visible destination.
 - **One** of three showed no phone number in its homepage text.
 - **One** listed seven-day hours; the other two that showed hours ran Monday–Thursday with early finishes.
-- **One** used an automatic translation widget; **none** had written Spanish content, although 17.7% of Marietta residents speak Spanish at home (ACS).
+- **One** used an automatic translation widget; **none** had written Spanish content, although 15.8% of Marietta residents speak Spanish at home (ACS 2020–2024).
 - Location wording mixed "Marietta" and "East Cobb" — the sites write for postal areas, not city limits.
 
 ## Strategy table: observed fact → cautious interpretation → proposed action → how to test
@@ -24,7 +24,7 @@
 |---|---|---|---|
 | No confirmed online booking on 3 of 3 | Local patients may be used to calling; or this is a usability gap | Add a short request form with clear response times the practice can meet; test online booking on one appointment type | Form/booking share vs calls; time to first response |
 | Translation widget but no written Spanish content | Machine translation of the template is not a Spanish-language service | If staff speak Spanish, write a real Spanish page and say when Spanish-speaking staff answer the phone | Spanish-language calls and page sessions |
-| Uninsured share 18.1% (ACS); membership/financing on 2 of 3 sites | Payment clarity likely matters | Plain-language self-pay and membership explanation; no unverified price claims | Payment-question tags on calls; membership sign-ups |
+| Uninsured share 17.9% (ACS 2020–2024); membership/financing on 2 of 3 sites | Payment clarity likely matters | Plain-language self-pay and membership explanation; no unverified price claims | Payment-question tags on calls; membership sign-ups |
 | "East Cobb" vs "Marietta" naming | Patients search by area names that are not city limits | Location content for the areas the practice really serves; Business Profile stays at the real address | Search Console query terms by area name |
 | 1 of 3 homepages showed no phone | Mobile visitors may struggle to call | Sticky tap-to-call; NAP in header/footer | tel-link click events |
 

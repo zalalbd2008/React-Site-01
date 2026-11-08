@@ -27,4 +27,4 @@ Batch: markets-tx2b · Observed 2026-11-08 · Route: `/markets/texas/round-rock/
 | Round Rock folded into "Austin" | Paying for clicks from people who will not drive north | Catchment from ZIPs/drive time; presence-only targeting; separate reporting for Austin-city clicks |
 | Generic Austin claims | Northern Williamson growth ignored | Uses Vintage 2025: Round Rock +18.2%, Georgetown +58.5%, Hutto +66.9% since 2020 |
 | Software bundles | Owner unsure what is marketing vs tooling | Separates marketing work from practice dependencies (phones, scheduling capacity) |
-| No language discussion | 17.7% Spanish; 9.2% limited English (ACS) | Spanish-page decision tied to staff capacity |
+| No language discussion | 18.3% Spanish; 10.0% limited English (ACS 2020–2024) | Spanish-page decision tied to staff capacity |

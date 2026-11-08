@@ -4,7 +4,7 @@ Retrieved and compiled 2026-11-08 by the Alpha Dental Media editorial team (batc
 
 ## Sources and method
 
-- **ACS:** ACS 2019–2023 5-year DP02–DP05 via `node scripts/census.mjs "Irving" TX`. Citable table `https://data.census.gov/table/ACSDP5Y2023.DP05?g=160XX00US4837000`. Extra variables from the same responses. (Empty cached DP02 removed and re-run.)
+- **ACS:** ACS 2020–2024 5-year DP02–DP05 via `node scripts/census.mjs "Irving" TX`. Citable table `https://data.census.gov/table/ACSDP5Y2024.DP05?g=160XX00US4837000`. Extra variables from the same responses. (Empty cached DP02 removed and re-run.)
 - **Comparators:** Dallas and Fort Worth city values from the census script; DFW MSA ACS retrieved 2026-11-08.
 - **Population estimates:** Vintage 2025 SUB-EST2025_48.
 - **Metro definition:** OMB July 2023.
@@ -24,41 +24,43 @@ Retrieved and compiled 2026-11-08 by the Alpha Dental Media editorial team (batc
 | Irving city | 256,781 | 258,637 | 257,076 | +295 (+0.1%) | −1,561 (−0.6%) |
 | Dallas County | — | 2,664,013 | 2,661,397 | — | −2,616 |
 
-## ACS 2019–2023 profile
+## ACS 2020–2024 profile
 
 | Measure | Irving city | Dallas city | Fort Worth city | DFW MSA |
 |---|---|---|---|---|
-| Total population | 255,036 (±57) | 1,299,553 | 941,311 | 7,807,555 |
-| Under 18 | 26.2% (±0.7) | 24.2% | 26.7% | 25.3% |
-| **Under 5** | **8.2% (±0.5)** | 7.0% | 7.3% | — |
-| 65 and over | 8.8% (±0.4) (lowest of five) | 11.4% | 10.5% | 11.9% |
-| Median age | 32.8 (±0.5) | 33.4 | 33.4 | 35.5 |
-| Households | 94,252 (±1,401) | 528,038 | 334,230 | — |
-| **Foreign-born** | **41.9% (±1.1)** | 23.4% | 17.0% | — |
-| Language other than English (5+) | 60.5% (±1.2) | 41.1% | 32.5% | 31.7% |
-| Spanish | 36.6% (±1.2) | 35.1% | 24.9% | 21.9% |
-| Other Indo-European | 10.9% (±0.7) | 2.2% | 3.0% | — |
-| Asian/PI languages | 10.0% (±0.7) | 2.1% | 2.9% | — |
-| Speak English less than "very well" | 23.3% (±1.1) | 18.2% | 12.2% | 11.9% |
-| — Spanish speakers | 17.5% (±1.0) | — | — | — |
-| Bachelor's or higher | 41.6% (±1.2) | 37.4% | 31.7% | 38.5% |
-| Median household income | $79,641 (±2,584) | $67,760 | $76,602 | $87,155 |
-| Mean travel time | 24.1 min (±0.5) | 26.0 | 26.9 | 28.0 |
-| Worked from home | 17.3% (±1.0) | 14.0% | 12.9% | — |
-| Private health insurance | 61.0% (±1.4) | 54.1% | 61.7% | — |
-| Public coverage | 22.6% (±1.1) | 29.3% | 26.4% | — |
-| No health insurance | 21.6% (±1.0) | 23.0% | 18.6% | 16.3% |
-| Under 19 uninsured | 15.6% (±1.7) | 15.7% | 12.7% | — |
-| **Owner-occupied** | **38.3% (±1.2)** (renters 61.7%) | 42.4% | 56.7% | 60.0% |
-| Same house one year ago | 83.7% (±1.0) (lowest of five) | — | — | — |
+| Total population | 256,492 (±91) | 1,307,930 | 963,194 | 7,985,590 |
+| Under 18 | 26.2% (±0.7) | 23.9% | 26.4% | 25.0% |
+| **Under 5** | **8.1% (±0.6)** | 7.0% | 7.1% | 6.4% |
+| 65 and over | 8.7% (±0.4) (lowest of five) | 11.8% | 10.6% | 12.1% |
+| Median age | 32.8 (±0.4) | 33.4 | 33.6 | 35.6 |
+| Households | 94,845 (±1,157) | 533,915 | 342,126 | 2,891,725 |
+| **Foreign-born** | **42.5% (±1.4)** | 23.4% | 17.6% | 19.4% |
+| Language other than English (5+) | 61.8% (±1.4) | 41.2% | 32.6% | 32.1% |
+| Spanish | 37.4% (±1.5) | 34.9% | 24.5% | 21.9% |
+| Other Indo-European | 11.4% (±0.9) | 2.2% | 3.1% | 3.7% |
+| Asian/PI languages | 10.2% (±0.9) | 2.2% | 2.9% | 4.7% |
+| Speak English less than "very well" | 23.4% (±1.1) | 18.2% | 12.5% | 12.1% |
+| — Spanish speakers | 17.9% (±1.0) | 16.2% | 9.5% | 8.9% |
+| Bachelor's or higher | 42.4% (±1.1) | 38.2% | 32.0% | 39.4% |
+| Median household income | $81,830 (±2,433) | $70,518 | $79,507 | $90,275 |
+| Mean travel time | 24.1 min (±0.6) | 25.7 | 27.1 | 27.9 |
+| Worked from home | 20.0% (±1.2) | 15.8% | 14.0% | 17.8% |
+| Private health insurance | 60.8% (±1.4) | 54.3% | 62.1% | 67.0% |
+| Public coverage | 21.7% (±1.0) | 29.5% | 26.3% | 24.5% |
+| No health insurance | 22.3% (±1.2) | 22.8% | 18.6% | 16.2% |
+| Under 19 uninsured | 15.8% (±1.6) | 16.3% | 13.5% | 12.1% |
+| **Owner-occupied** | **38.1% (±1.3)** (renters 61.9%) | 42.4% | 57.0% | 60.1% |
+| Same house one year ago | 84.2% (±1.0) (lowest of five) | 84.5% | 85.7% | 86.2% |
+
+*Vintage note:* first drafted with ACS 2019–2023 values; updated to ACS 2020–2024 on 2026-11-08 under the data-vintage policy in docs/city-brief.md. All ACS figures here are 2020–2024.
 
 ## Observations and hypotheses
 
-1. **Renter-majority, higher turnover.** Only 38.3% owner-occupied (lower than Dallas, 42.4%); 83.7% in the same house a year earlier. Hypothesis: patients move more often, so recall, reactivation and "found us again" discovery matter; test with lapsed-patient and address-change data.
-2. **Multilingual on three fronts.** Spanish 36.6%, other Indo-European 10.9%, Asian/PI 10.0%; foreign-born 41.9%. Specific languages are not in DP tables. Observed practice sites advertise Spanish, Hindi and Telugu capability (see practices file) — that is what practices claim, not a demographic finding.
-3. **Young families and coverage gaps.** Under 5 = 8.2% (highest of five); under-19 uninsured 15.6%; 22.6% public coverage. Hypothesis: pediatric, Medicaid/CHIP (Texas Health Steps covers dental checkups from 6 months for children with Medicaid) and self-pay options are relevant for some practices; test with the practice's own payer mix.
+1. **Renter-majority, higher turnover.** Only 38.1% owner-occupied (lower than Dallas, 42.4%); 84.2% in the same house a year earlier. Hypothesis: patients move more often, so recall, reactivation and "found us again" discovery matter; test with lapsed-patient and address-change data.
+2. **Multilingual on three fronts.** Spanish 37.4%, other Indo-European 11.4%, Asian/PI 10.2%; foreign-born 42.5%. Specific languages are not in DP tables. Observed practice sites advertise Spanish, Hindi and Telugu capability (see practices file) — that is what practices claim, not a demographic finding.
+3. **Young families and coverage gaps.** Under 5 = 8.1% (highest of five); under-19 uninsured 15.8%; 21.7% public coverage. Hypothesis: pediatric, Medicaid/CHIP (Texas Health Steps covers dental checkups from 6 months for children with Medicaid) and self-pay options are relevant for some practices; test with the practice's own payer mix.
 4. **Two settings in one city.** Practices position either on Las Colinas (business district, corporate-sounding copy) or on residential family/affordable dentistry. Hypothesis: two different offers, schedules and landing pages; one campaign for both will be blunt.
-5. **Flat population.** +0.1% since 2020; −0.6% last year. Growth comes from share and retention.
+5. **Flat population.** +0.1% since 2020; −0.6% last year (Vintage 2025). Growth comes from share and retention.
 6. **Short commutes** (24.1 min). Hypothesis: proximity to home or workplace drives choice; test with ZIP data.
 
 ## Gaps

@@ -16,9 +16,9 @@
 
 | Claim | Source id | What the source actually measures | Geography / period | Limitation |
 |---|---|---|---|---|
-| Private 61.4%, public 27.4%, uninsured 18.7%, under-19 uninsured 12.4% | census-acs-2023-arlington-city-tx | DP03 | Arlington city 2019–2023 | MOE ±0.8–1.3 |
-| Income $73,519; owner 54.8%; Spanish 22.9%; Asian/PI 5.1%; Indo-European 3.3%; other 4.2%; less than very well 13.7%; foreign-born 21.3% | census-acs-2023-arlington-city-tx | DP02–DP04 | Arlington 2019–2023 | — |
-| Fort Worth income $76,602, uninsured 18.6%, owner 56.7%; Dallas income $67,760, uninsured 23.0%, owner 42.4% | census-acs-2023-fort-worth-city-tx / census-acs-2023-dallas-city-tx | DP tables | 2019–2023 | — |
+| Private 62.0%, public 26.8%, uninsured 19.0%, under-19 uninsured 13.1% | census-acs-2024-arlington-city-tx | DP03 | Arlington city 2020–2024 | MOE ±0.8–1.3 |
+| Income $75,171; owner 54.3%; Spanish 24.0%; Asian/PI 5.1%; Indo-European 3.2%; other 4.0%; less than very well 14.6%; foreign-born 22.2% | census-acs-2024-arlington-city-tx | DP02–DP04 | Arlington 2020–2024 | — |
+| Fort Worth income $79,507, uninsured 18.6%, owner 57.0%, under-19 uninsured 13.5%; Dallas income $70,518, uninsured 22.8%, owner 42.4%, under-19 uninsured 16.3% | census-acs-2024-fort-worth-city-tx / census-acs-2024-dallas-city-tx | DP tables | 2020–2024 | — |
 | Arlington +7,747 (+2.0%) since 2020; −1,214 in 2024–25; Tarrant County +18,428 in 2024–25 | census-sub-est2025-texas | Vintage 2025 | — | Estimates |
 | Fort Worth-Arlington-Grapevine division counties | omb-cbsa-delineation-2023 | OMB | 2023 | — |
 | Distance as local ranking factor | google-gbp-local-ranking | Google | — | — |
@@ -31,4 +31,5 @@
 - **Evidence status:** sourced (Census, OMB, Google documentation, Texas HHSC/TAC where used) plus dated observations.
 - **Proposed visual and its purpose / data:** see original contributions; at least one DataTable of observed fact → interpretation → action → test, and a Timeline.
 - **CTA and next-step deliverables:** Dental Growth Audit — what it reviews, what we need (priorities, capacity, optional read-only access), what happens next; no turnaround, price or free-work promise.
+- **Data vintage:** ACS values updated from 2019–2023 to 2020–2024 on 2026-11-08 under the data-vintage policy in docs/city-brief.md; Vintage 2025 population estimates unchanged.
 - **Gaps / what needs client data:** No commuting flows between Arlington and Dallas/Fort Worth; stadium/event-district effects not sourced and not used; no dentist counts; no keyword data.

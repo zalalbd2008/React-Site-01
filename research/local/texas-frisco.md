@@ -4,10 +4,10 @@ Retrieved and compiled 2026-11-08 by the Alpha Dental Media editorial team (batc
 
 ## Sources and method
 
-- **ACS:** ACS 2019–2023 5-year DP02–DP05 via `node scripts/census.mjs "Frisco" TX`. Citable table `https://data.census.gov/table/ACSDP5Y2023.DP05?g=160XX00US4827684`. Extra variables from the same responses. (Empty cached DP02 from a concurrent run removed and re-run.)
+- **ACS:** ACS 2020–2024 5-year DP02–DP05 via `node scripts/census.mjs "Frisco" TX`. Citable table `https://data.census.gov/table/ACSDP5Y2024.DP05?g=160XX00US4827684`. Extra variables from the same responses. (Empty cached DP02 from a concurrent run removed and re-run.)
 - **Population estimates:** Vintage 2025 SUB-EST2025_48 (city and county-part rows).
 - **Metro definition:** OMB July 2023.
-- **Important vintage caveat:** ACS 2019–2023 is a five-year average. In a city that grew about 18% over 2020–2025, the ACS population (210,238) is well below the Vintage 2025 estimate (236,955). They measure different things and periods; they are not subtracted, and ACS characteristics describe the 2019–2023 average population, not today's.
+- **Important vintage caveat:** ACS 2020–2024 is a five-year average. In a city that grew about 18% over 2020–2025, the ACS population (219,304) is well below the Vintage 2025 estimate (236,955). They measure different things and periods; they are not subtracted, and ACS characteristics describe the 2020–2024 average population, not today's.
 
 ## Market definition
 
@@ -26,41 +26,43 @@ Retrieved and compiled 2026-11-08 by the Alpha Dental Media editorial team (batc
 - **2024→2025: +1,796 (+0.8%)** — sharply slower than earlier years (+8,281 in 2023–24; +9,272 in 2021–22). Year-on-year differences are our calculations from the same file.
 - Collin County +42,966 and Denton County +23,120 in 2024–25 (county rows).
 
-## ACS 2019–2023 profile
+## ACS 2020–2024 profile
 
 | Measure | Frisco city | Plano city | DFW MSA |
 |---|---|---|---|
-| Total population (ACS average) | 210,238 (±162) | 287,339 | 7,807,555 |
-| Under 18 | **27.7% (±0.7)** | 21.3% | 25.3% |
-| Under 5 | 5.4% (±0.4) | 5.3% | — |
-| 65 and over | 9.6% (±0.6) | 14.1% | 11.9% |
-| Median age | 38.1 (±0.5) | 39.3 | 35.5 |
-| Households | 74,081 (±1,089) | 110,522 | — |
-| Language other than English | 32.8% (±1.4) | 37.5% | 31.7% |
-| Spanish | 7.5% (±0.9) | 12.0% | 21.9% |
-| Asian/PI languages | **15.1% (±1.2)** | 12.4% | — |
-| Other Indo-European | 8.8% (±0.8) | 10.3% | — |
-| Speak English less than "very well" | 7.9% (±0.8) | 12.3% | 11.9% |
-| Foreign-born | 26.5% (±1.1) | 28.7% | — |
-| Bachelor's or higher | 66.0% (±1.3) | 59.2% | 38.5% |
-| Median household income | $146,158 (±5,995) | $108,649 | $87,155 |
-| Mean travel time | **28.6 min (±1.0)** (longest of five) | 25.6 | 28.0 |
-| Worked from home | **33.7% (±1.5)** | 25.3% | — |
-| Private health insurance | 86.8% (±0.9) | 76.5% | — |
-| Public coverage | 13.0% (±0.8) | 20.3% | — |
-| No health insurance | 6.6% (±0.7) | 11.4% | 16.3% |
-| Under 19 uninsured | 4.6% (±1.0) | 9.0% | — |
-| Owner-occupied | 66.5% (±1.4) | 56.6% | 60.0% |
-| Same house one year ago | 84.3% (±1.2) | 85.4% | — |
+| Total population (ACS average) | 219,304 (±67) | 290,594 | 7,985,590 |
+| Under 18 | **27.2% (±0.8)** | 20.9% | 25.0% |
+| Under 5 | 5.0% (±0.5) | 5.2% | 6.4% |
+| 65 and over | 9.6% (±0.6) | 14.7% | 12.1% |
+| Median age | 38.3 (±0.6) | 39.6 | 35.6 |
+| Households | 77,208 (±1,139) | 112,438 | 2,891,725 |
+| Language other than English | 33.6% (±1.2) | 38.0% | 32.1% |
+| Spanish | 6.9% (±0.8) | 12.0% | 21.9% |
+| Asian/PI languages | **15.5% (±1.1)** | 12.8% | 4.7% |
+| Other Indo-European | 9.3% (±1.0) | 10.4% | 3.7% |
+| Speak English less than "very well" | 7.6% (±0.7) | 12.0% | 12.1% |
+| Foreign-born | 27.3% (±1.1) | 29.3% | 19.4% |
+| Bachelor's or higher | 67.5% (±1.2) | 60.5% | 39.4% |
+| Median household income | $150,212 (±6,821) | $112,253 | $90,275 |
+| Mean travel time | **28.6 min (±1.1)** (longest of five) | 25.4 | 27.9 |
+| Worked from home | **37.8% (±1.6)** | 27.5% | 17.8% |
+| Private health insurance | 86.9% (±1.0) | 76.7% | 67.0% |
+| Public coverage | 12.9% (±0.8) | 21.0% | 24.5% |
+| No health insurance | 6.3% (±0.8) | 10.7% | 16.2% |
+| Under 19 uninsured | 4.0% (±0.9) | 9.1% | 12.1% |
+| Owner-occupied | 65.9% (±1.4) | 56.9% | 60.1% |
+| Same house one year ago | 84.5% (±1.0) | 85.5% | 86.2% |
+
+*Vintage note:* first drafted with ACS 2019–2023 values; updated to ACS 2020–2024 on 2026-11-08 under the data-vintage policy in docs/city-brief.md. All ACS figures here are 2020–2024.
 
 ## Observations and hypotheses
 
-1. **Growth decelerating.** +18.2% since 2020, but only +0.8% in the latest year. Hypothesis: "everyone is new here" plans built on 2021–2023 conditions may overstate new-mover inflow now; test with the share of new patients reporting a recent move and the new-patient trend.
-2. **Family households.** 27.7% under 18 (highest of the five); 66.5% owner-occupied. Hypothesis: family scheduling (multiple patients per visit, school-hours constraints) is a conversion factor. Not a treatment-demand claim.
-3. **Highly insured.** 86.8% private coverage, 6.6% uninsured. Hypothesis: in-network clarity is the first filter; self-pay messaging is secondary.
-4. **Split commute pattern.** Longest mean commute (28.6 min) but a third (33.7%) worked from home. Hypothesis: two distinct schedules — remote workers who can book weekdays, commuters who need early/late/Saturday slots. Test with booking-time distribution.
+1. **Growth decelerating.** +18.2% since 2020, but only +0.8% in the latest year (Vintage 2025). Hypothesis: "everyone is new here" plans built on 2021–2023 conditions may overstate new-mover inflow now; test with the share of new patients reporting a recent move and the new-patient trend.
+2. **Family households.** 27.2% under 18 (highest of the five); 65.9% owner-occupied. Hypothesis: family scheduling (multiple patients per visit, school-hours constraints) is a conversion factor. Not a treatment-demand claim.
+3. **Highly insured.** 86.9% private coverage, 6.3% uninsured. Hypothesis: in-network clarity is the first filter; self-pay messaging is secondary.
+4. **Split commute pattern.** Longest mean commute (28.6 min) but 37.8% worked from home. Hypothesis: two distinct schedules — remote workers who can book weekdays, commuters who need early/late/Saturday slots. Test with booking-time distribution.
 5. **Two counties.** 59/41 Collin/Denton split. Hypothesis: county-based ad targeting or "Collin County" messaging misses 41% of the city; target by radius/ZIP.
-6. **Income.** $146,158 median. We do not infer cosmetic demand from income.
+6. **Income.** $150,212 median. We do not infer cosmetic demand from income.
 
 ## Gaps
 

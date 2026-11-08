@@ -25,6 +25,6 @@ Blocked (not worked around): Clutch profile (403), Krowdbase orthodontist list (
 |---|---|
 | "Most competitive market" asserted | No competition-intensity claim; we describe what we observed (template sites, group offices) and how to test competition (local results grid, Search Console) |
 | Neighbourhood name lists | Neighbourhood content only where the practice serves it; warns against doorway pages |
-| No demographic grounding | Uses ACS: older-skewing, 59.2% bachelor's, multilingual (Asian/PI 12.4%, Indo-European 10.3%), 76.5% private coverage; flat population |
+| No demographic grounding | Uses ACS: older-skewing, 60.5% bachelor's, multilingual (Asian/PI 12.8%, Indo-European 10.4%), 76.7% private coverage (ACS 2020–2024); flat population |
 | Unverifiable testimonials | No testimonials or client claims |
 | No group vs independent dynamics | Addresses competing against multi-office brands with shared templates |

@@ -22,7 +22,7 @@
 |---|---|---|---|---|
 | City 257,240 → 273,071 (+6.2%); all in Lubbock County | census-sub-est2025-texas | PEP Vintage 2025 | 2020–2025 | Our % calc |
 | Six-county MSA | omb-cbsa-delineation-2023 | OMB 2023 list 1 (Lubbock rows verified) | — | — |
-| Median age 30.4; owner 50.8%; commute 16.2; WFH 6.5%; Spanish 16.8%; limited English 4.6%; uninsured 13.5%; public 29.1%; income $60,487 | census-acs-2023-lubbock-city-tx | ACS DP02–DP05 | City, 2019–2023 | MOEs in research file |
+| Median age 30.5; owner 51.2%; commute 16.3; WFH 7.1%; Spanish 16.3%; limited English 4.6%; uninsured 13.6%; public 28.6%; income $60,895 | census-acs-2024-lubbock-city-tx | ACS DP02–DP05 | City, 2020–2024 | MOEs in research file |
 | TTU fall 2025: 42,272 students; 4th consecutive increase | ttu-enrollment-fall-2025 | University release 2025-09-11 | TTU | Not combined with Census |
 | Relevance, distance, prominence | google-gbp-local-ranking | GBP Help | — | — |
 | Special hours need "Open with main hours" | google-gbp-special-hours | GBP Help | — | — |

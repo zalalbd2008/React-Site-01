@@ -18,9 +18,9 @@
 | Claim | Source id | What the source actually measures | Geography / period | Limitation |
 |---|---|---|---|---|
 | City 529,110 (Jul 2025), +6.1%; metro 6,482,182 +6.1%; city ~8.2% of metro; Forsyth +12.5%, Cherokee +12.2%, Henry +10.1% | ga1-census-pep-v2025-places, ga1-census-pep-v2025-cbsa | PEP | see research/local/georgia-atlanta.md | See source limitations |
-| Commute 26.8 (city), 31.2 (metro); WFH 26.6% city | census-acs5-2023-dp-atlanta-city-ga, -atlanta-msa | ACS 2019–2023 | see research/local/georgia-atlanta.md | See source limitations |
-| Language other than English: city 11.7%, Gwinnett 37.4%, DeKalb 20.6%, Cobb 21.6% | census-acs5-2023-dp-* | ACS | see research/local/georgia-atlanta.md | See source limitations |
-| Uninsured: city 10.5%, Gwinnett 15.4%; bachelor’s+ 58.4%; median HH income $81,938 | census-acs5-2023-dp-* | ACS | see research/local/georgia-atlanta.md | See source limitations |
+| Commute 26.5 (city), 31.0 (metro); WFH 29.7% city | census-acs5-2024-dp-atlanta-city-ga, -atlanta-msa | ACS 2020–2024 | see research/local/georgia-atlanta.md | See source limitations |
+| Language other than English: city 12.2%, Gwinnett 38.1%, DeKalb 21.1%, Cobb 21.9% | census-acs5-2024-dp-* | ACS | see research/local/georgia-atlanta.md | See source limitations |
+| Uninsured: city 10.1%, Gwinnett 15.2%; bachelor’s+ 59.2%; median HH income $85,652 | census-acs5-2024-dp-* | ACS | see research/local/georgia-atlanta.md | See source limitations |
 | Practice site aggregates (4 sites) | obs-ga1-atlanta-practices | Observation | see research/local/georgia-atlanta.md | See source limitations |
 | Agency SERP patterns | obs-ga1-atlanta-agencies | Observation | see research/local/georgia-atlanta.md | See source limitations |
 | Local ranking factors relevance/distance/prominence | google-gbp-local-ranking | Google Help | see research/local/georgia-atlanta.md | See source limitations |

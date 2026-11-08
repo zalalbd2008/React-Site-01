@@ -25,9 +25,9 @@ Batch: markets-tx2b · Observed 2026-11-08 · Route: `/markets/texas/round-rock/
 ## Strategy table
 | Observed | Cautious interpretation | Proposed action | How to test |
 |---|---|---|---|
-| 4 of 5 self-scheduling | Baseline expectation in the sample | Optimise the scheduler for first visits and midday slots (WFH 23.1% hypothesis) | Slot-time distribution of online bookings |
+| 4 of 5 self-scheduling | Baseline expectation in the sample | Optimise the scheduler for first visits and midday slots (WFH 24.8% hypothesis) | Slot-time distribution of online bookings |
 | Neighbour mentions split south/west vs north/east | Practices differ in which direction they claim | Decide catchment from patient ZIPs and drive-time, not from the metro name | ZIP report; ads user-location report |
-| 2 of 5 Spanish signposts; ACS 9.2% limited English | A real but partial pattern | If bilingual staff exist, build Spanish versions of a few high-intent pages with hreflang and a Spanish-capable phone path | Spanish query impressions; intake language |
+| 2 of 5 Spanish signposts; ACS 10.0% limited English | A real but partial pattern | If bilingual staff exist, build Spanish versions of a few high-intent pages with hreflang and a Spanish-capable phone path | Spanish query impressions; intake language |
 | 2 of 5 Saturdays; 1 closed Fri–Sun | Mixed availability | Align GBP, site and ad schedules with staffed hours | Day-of-week bookings vs ad spend |
 | Price specials/new-patient offers on 2–3 of 5 | Offers are common | Any price shown must meet Texas disclosure rules; prefer clear payment information over discounts | Legal review; offer-specific booking codes |
 

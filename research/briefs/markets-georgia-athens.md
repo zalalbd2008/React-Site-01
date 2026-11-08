@@ -18,7 +18,7 @@
 | Claim | Source id | What the source actually measures | Geography / period | Limitation |
 |---|---|---|---|---|
 | Balance 128,612 (+1.0%); Oconee +7.4%; Madison +9.3%; Oglethorpe +10.7%; metro +4.1% | ga1-census-pep-v2025-places, -cbsa | PEP | see research/local/georgia-athens.md | See source limitations |
-| Median age 29.2; owner-occupied 40.5%; Spanish at home 9.0%; English less than very well 5.2%; private coverage 72.8%; median HH income $51,655 | census-acs5-2023-dp-athens-clarke-balance-ga | ACS | see research/local/georgia-athens.md | See source limitations |
+| Median age 29.4; owner-occupied 40.7%; Spanish at home 9.3%; English less than very well 5.3%; private coverage 73.1%; median HH income $52,974 | census-acs5-2024-dp-athens-clarke-balance-ga | ACS | see research/local/georgia-athens.md | See source limitations |
 | UGA 43,888 fall 2025 | uga-fall-2025-enrollment | UGA | see research/local/georgia-athens.md | See source limitations |
 | ACCGov name | accgov-home | Official | see research/local/georgia-athens.md | See source limitations |
 | Practice aggregates | obs-ga1-athens-practices | Observation | see research/local/georgia-athens.md | See source limitations |

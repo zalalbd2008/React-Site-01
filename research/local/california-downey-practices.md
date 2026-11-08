@@ -18,7 +18,7 @@ Batch: markets-ca2 · Observed 2026-11-08 · Source id: `obs-ca2-practices-downe
 
 ## Aggregates (n = 3)
 
-- **0 of 3 home pages had Spanish-language content**, in a city where 56.6% of residents 5+ speak Spanish at home.
+- **0 of 3 home pages had Spanish-language content**, in a city where 56.7% of residents 5+ speak Spanish at home.
 - 2 of 3 linked to a third-party online scheduler; 1 used a central booking line for many locations.
 - 2 of 3 offered limited Saturday availability by appointment.
 - 1 of 3 listed Medi-Cal among accepted plans; 1 of 3 published a full carrier list.

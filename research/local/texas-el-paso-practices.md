@@ -32,7 +32,7 @@
 ## Aggregates used on the page
 
 - 2 of 4 were location pages of multi-state dental groups; 2 were independent.
-- 0 of 4 offered dedicated Spanish-language pages; 1 had an automatic translation toggle; 1 mentioned a Spanish-speaking dentist in a bio. (The city's Spanish-at-home share is 64.1% — ACS.)
+- 0 of 4 offered dedicated Spanish-language pages; 1 had an automatic translation toggle; 1 mentioned a Spanish-speaking dentist in a bio. (The city's Spanish-at-home share is 63.7% — ACS 2020–2024.)
 - 2 of 4 stated explicitly that they do not accept Medicaid; none of the 4 stated that they do.
 - 3 of 4 named an in-house membership/discount plan or third-party financing on the homepage (4 of 4 mentioned financing somewhere).
 - 1 of 4 had regular Saturday hours; 1 by appointment only; 0 of 4 had evening hours.

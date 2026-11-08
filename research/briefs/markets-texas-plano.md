@@ -16,11 +16,11 @@
 
 | Claim | Source id | What the source actually measures | Geography / period | Limitation |
 |---|---|---|---|---|
-| 65+ 14.1%; median age 39.3; under 18 21.3% | census-acs-2023-plano-city-tx | DP05 | Plano 2019–2023 | — |
-| Language other 37.5%; Spanish 12.0%; Asian/PI 12.4%; Indo-European 10.3%; less than very well 12.3%; foreign-born 28.7%; bachelor's 59.2% | census-acs-2023-plano-city-tx | DP02 | — | — |
-| Income $108,649; private 76.5%; public 20.3%; uninsured 11.4%; WFH 25.3%; commute 25.6 | census-acs-2023-plano-city-tx | DP03 | — | — |
+| 65+ 14.7%; median age 39.6; under 18 20.9%; Frisco under 18 27.2% | census-acs-2024-plano-city-tx | DP05 | Plano 2020–2024 | — |
+| Language other 38.0%; Spanish 12.0%; Asian/PI 12.8%; Indo-European 10.4%; less than very well 12.0%; foreign-born 29.3%; bachelor's 60.5% (DFW 39.4%) | census-acs-2024-plano-city-tx | DP02 | — | — |
+| Income $112,253; private 76.7%; public 21.0%; uninsured 10.7%; WFH 27.5%; commute 25.4 | census-acs-2024-plano-city-tx | DP03 | — | — |
 | Plano 285,465 → 293,028 (+2.6%); −367 in 2024–25; Collin 287,323 / Denton 5,705; Collin County +42,966 | census-sub-est2025-texas | Vintage 2025 | — | — |
-| Dallas Spanish 35.1%; Asian/PI 2.1% | census-acs-2023-dallas-city-tx | DP02 | — | — |
+| Dallas Spanish 34.9%; Asian/PI 2.2%; Indo-European 2.2% | census-acs-2024-dallas-city-tx | DP02 | — | — |
 | Dallas-Plano-Irving division | omb-cbsa-delineation-2023 | OMB | — | — |
 | GBP guidelines: real-world name, no keyword stuffing; practitioner listings | google-gbp-guidelines | Google | — | — |
 | Prominence includes reviews and links | google-gbp-local-ranking | Google | — | — |
@@ -32,4 +32,5 @@
 - **Evidence status:** sourced (Census, OMB, Google documentation, Texas HHSC/TAC where used) plus dated observations.
 - **Proposed visual and its purpose / data:** see original contributions; at least one DataTable of observed fact → interpretation → action → test, and a Timeline.
 - **CTA and next-step deliverables:** Dental Growth Audit — what it reviews, what we need (priorities, capacity, optional read-only access), what happens next; no turnaround, price or free-work promise.
+- **Data vintage:** ACS values updated from 2019–2023 to 2020–2024 on 2026-11-08 under the data-vintage policy in docs/city-brief.md; Vintage 2025 population estimates unchanged.
 - **Gaps / what needs client data:** Specific languages spoken (ACS B16001) not retrieved; no dentist density; agency claims about competitiveness not used.

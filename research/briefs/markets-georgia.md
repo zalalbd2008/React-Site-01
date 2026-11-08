@@ -20,7 +20,7 @@
 | Georgia 11,302,748 (Jul 2025), +5.5% from 2020 base | ga1-census-pep-v2025-places | PEP estimates | State, 2020–2025 | Model-based |
 | Atlanta metro 29 counties; ~57.4% of state | ga1-census-pep-v2025-cbsa (+ places for state total) | Metro/county estimates | 2025 | Derived share |
 | City vs metro growth per market | ga1-census-pep-v2025-places / -cbsa | Estimates | 2020–2025 | Derived |
-| Payer, age, language, veteran, Armed Forces per city | census-acs5-2023-dp-* | ACS 5-yr | 2019–2023 | MOEs; health not dental insurance |
+| Payer, age, language, veteran, Armed Forces per city | census-acs5-2024-dp-* | ACS 5-yr | 2020–2024 | MOEs; health not dental insurance |
 | Fort Benning / Fort Gordon current names and history | army-fort-benning-home, ap-fort-benning-name-restored-2025, army-fort-gordon-home, wrdw-fort-gordon-name-restored-2025 | Official site / news | 2025–2026 | — |
 | Hunter AAF in Savannah; Stewart-Hunter staffing | army-fort-stewart-hunter-about | Army page | undated | Installation-reported |
 | TRICARE dental by beneficiary type | tricare-dental-care-overview, tricare-dental-program-tdp | Program pages | page updated 2020 | Confirm current |

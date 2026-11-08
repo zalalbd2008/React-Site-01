@@ -31,7 +31,7 @@
 - 4 of 5 were offices of multi-office brands or used a shared network template; 1 was a stand-alone independent.
 - 3 of 5 offered some Saturday access (two regular half-days, one "select Saturdays").
 - 2 of 5 started at 7 am; 1 of 5 stayed open to 7 pm four days a week.
-- 0 of 5 advertised a language other than English; 2 explicitly said "English" (the city's Asian/PI-language share is 15.1% — ACS).
+- 0 of 5 advertised a language other than English; 2 explicitly said "English" (the city's Asian/PI-language share is 15.5% — ACS 2020–2024).
 - 1 of 5 targeted a neighbouring town (Prosper) in its page title.
 - 4 of 5 used landmark or office-list location content rather than neighbourhood narratives.
 

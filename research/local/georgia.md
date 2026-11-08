@@ -1,6 +1,6 @@
 # Georgia state hub — public data and regional structure (markets-ga1, 2026-11-08)
 
-- **Route:** /markets/georgia/ · **Method:** ACS 2019–2023 5-year Data Profiles via the data.census.gov table API (cities via `scripts/census.mjs`, state and metros via the same API); PEP Vintage 2025 (`sub-est2025_13.csv`, `cbsa-est2025-alldata.csv`); official pages for consolidated governments, Army installations, TRICARE, Augusta University and UGA; Georgia Board of Dentistry Rule 150-10-.01 on rules.sos.ga.gov. All retrieved 2026-11-08. QuickFacts not used (403; not bypassed).
+- **Route:** /markets/georgia/ · **Method:** ACS 2020–2024 5-year Data Profiles via the data.census.gov table API (cities via `scripts/census.mjs`, state and metros via the same API); PEP Vintage 2025 (`sub-est2025_13.csv`, `cbsa-est2025-alldata.csv`); official pages for consolidated governments, Army installations, TRICARE, Augusta University and UGA; Georgia Board of Dentistry Rule 150-10-.01 on rules.sos.ga.gov. All retrieved 2026-11-08. QuickFacts not used (403; not bypassed).
 - City-level detail lives in `research/local/georgia-{atlanta,savannah,augusta,columbus,athens}.md` and the markets-ga2 files for Sandy Springs, Alpharetta, Roswell, Marietta, Johns Creek, Lawrenceville and Macon.
 
 ## 1. Metro structure (PEP Vintage 2025, derived shares)
@@ -36,47 +36,47 @@
 | Athens | Athens-Clarke County unified government (balance) | "Athens-Clarke County Unified Government (ACCGov)" (`accgov-home`) | County 129,921 vs balance 128,612 |
 | Macon (ga2) | Macon-Bibb County | consolidated 2014 (ga2 source) | Not our page |
 
-## 3. ACS 2019–2023 comparison — the five principal cities and the state
-| Measure (ACS 2019–2023 5-year) | Georgia | Atlanta city | Savannah city | Augusta-Richmond (balance) | Columbus city | Athens-Clarke (balance) | Table |
+## 3. ACS 2020–2024 comparison — the five principal cities and the state
+| Measure (ACS 2020–2024 5-year) | Georgia | Atlanta city | Savannah city | Augusta-Richmond (balance) | Columbus city | Athens-Clarke (balance) | Table |
 |---|---|---|---|---|---|---|---|
-| Total population | 10822590 (no MOE published) | 499287 (±90) | 147546 (±85) | 201504 (±20) | 204383 (no MOE published) | 126987 (±688) | DP05 |
-| Median age (years) | 37.4 (±0.1) | 34.0 (±0.3) | 33.7 (±0.6) | 34.9 (±0.1) | 35.1 (±0.1) | 29.2 (±0.2) | DP05 |
-| Under 18 years (%) | 23.5 (±0.1) | 17.1 (±0.6) | 20.4 (±0.8) | 23.1 (±0.1) | 25.0 (±0.1) | 16.7 (±0.2) | DP05 |
-| 65 years and over (%) | 14.6 (±0.1) | 12.3 (±0.3) | 14.0 (±0.7) | 14.8 (±0.1) | 14.4 (±0.1) | 12.0 (±0.1) | DP05 |
-| Total households | 4008013 (±9372) | 231504 (±2419) | 58632 (±1068) | 73493 (±1136) | 80600 (±1286) | 53397 (±558) | DP02 |
-| Median household income (2023 dollars) | 74664 (±431) | 81938 (±1945) | 56782 (±2388) | 53134 (±2396) | 56622 (±1512) | 51655 (±1834) | DP03 |
-| Mean travel time to work (minutes) | 28.3 (±0.1) | 26.8 (±0.6) | 20.4 (±0.5) | 20.6 (±0.6) | 20.2 (±0.6) | 20.7 (±0.9) | DP03 |
-| Worked from home (% of workers 16+) | 14.2 (±0.2) | 26.6 (±0.9) | 10.1 (±1.2) | 8.3 (±1.2) | 9.4 (±0.9) | 11.9 (±1.3) | DP03 |
-| With private health insurance (%) | 65.9 (±0.3) | 70.4 (±1.0) | 59.3 (±1.4) | 58.8 (±1.4) | 63.5 (±1.7) | 72.8 (±1.6) | DP03 |
-| With public coverage (%) | 32.4 (±0.2) | 27.2 (±0.8) | 36.7 (±1.3) | 43.5 (±1.3) | 40.4 (±1.1) | 25.0 (±1.3) | DP03 |
-| No health insurance coverage (%) | 12.6 (±0.2) | 10.5 (±0.6) | 13.8 (±0.9) | 11.5 (±0.9) | 11.3 (±1.1) | 11.2 (±1.1) | DP03 |
-| Bachelor's degree or higher (% of 25+) | 34.2 (±0.3) | 58.4 (±0.9) | 32.0 (±1.1) | 24.2 (±1.3) | 29.7 (±1.3) | 48.7 (±1.7) | DP02 |
-| Civilian veterans (% of civilians 18+) | 7.4 (±0.1) | 4.1 (±0.3) | 7.6 (±0.6) | 11.3 (±0.7) | 14.3 (±0.9) | 4.0 (±0.4) | DP02 |
-| Language other than English at home (% of 5+) | 15.0 (±0.1) | 11.7 (±0.5) | 10.1 (±0.9) | 7.0 (±0.6) | 8.3 (±0.6) | 15.3 (±0.8) | DP02 |
-| Spanish at home (% of 5+) | 8.4 (±0.1) | 4.5 (±0.3) | 5.3 (±0.7) | 3.7 (±0.4) | 5.1 (±0.4) | 9.0 (±0.5) | DP02 |
-| Armed Forces (count, population 16+) | 59494 (±2036) | 487 (±200) | 1783 (±309) | 7332 (±642) | 6832 (±578) | 241 (±173) | DP03 |
-| Armed Forces (% of population 16+) | 0.7 (±0.1) | 0.1 (±0.1) | 1.5 (±0.3) | 4.6 (±0.4) | 4.3 (±0.4) | 0.2 (±0.2) | DP03 |
+| Total population | 10940407 (no MOE published) | 505268 (±79) | 147898 (±64) | 201528 (±20) | 203711 (no MOE published) | 127345 (±606) | DP05 |
+| Median age (years) | 37.6 (±0.1) | 34.2 (±0.3) | 34.0 (±0.5) | 35.2 (±0.1) | 35.4 (±0.2) | 29.4 (±0.2) | DP05 |
+| Under 18 years (%) | 23.2 (±0.1) | 16.6 (±0.5) | 20.4 (±0.8) | 22.8 (±0.1) | 24.9 (±0.1) | 16.6 (±0.2) | DP05 |
+| 65 years and over (%) | 15.0 (±0.1) | 12.3 (±0.3) | 14.3 (±0.7) | 15.3 (±0.1) | 14.8 (±0.1) | 12.4 (±0.1) | DP05 |
+| Total households | 4074366 (±9635) | 236468 (±2330) | 58192 (±1157) | 75222 (±1069) | 81415 (±740) | 53643 (±492) | DP02 |
+| Median household income (2024 dollars) | 77353 (±407) | 85652 (±1846) | 57137 (±1715) | 55485 (±2918) | 58073 (±1832) | 52974 (±2410) | DP03 |
+| Mean travel time to work (minutes) | 28.3 (±0.1) | 26.5 (±0.7) | 20.7 (±0.7) | 21.1 (±0.6) | 20.9 (±0.7) | 20.6 (±0.8) | DP03 |
+| Worked from home (% of workers 16+) | 15.9 (±0.2) | 29.7 (±1.0) | 11.5 (±1.3) | 9.1 (±1.1) | 12.1 (±1.3) | 13.5 (±1.1) | DP03 |
+| With private health insurance (%) | 66.0 (±0.3) | 71.5 (±0.9) | 58.5 (±1.5) | 58.6 (±1.6) | 63.1 (±1.6) | 73.1 (±1.5) | DP03 |
+| With public coverage (%) | 32.7 (±0.2) | 26.6 (±0.8) | 37.9 (±1.2) | 43.7 (±1.3) | 41.4 (±1.2) | 24.5 (±1.1) | DP03 |
+| No health insurance coverage (%) | 12.4 (±0.2) | 10.1 (±0.7) | 13.9 (±1.1) | 11.8 (±1.0) | 11.1 (±0.9) | 11.3 (±1.0) | DP03 |
+| Bachelor's degree or higher (% of 25+) | 34.9 (±0.3) | 59.2 (±0.9) | 33.3 (±1.3) | 24.7 (±1.1) | 30.5 (±1.2) | 47.3 (±1.7) | DP02 |
+| Civilian veterans (% of civilians 18+) | 7.2 (±0.1) | 3.9 (±0.3) | 7.2 (±0.6) | 11.1 (±0.9) | 14.0 (±0.8) | 3.7 (±0.4) | DP02 |
+| Language other than English at home (% of 5+) | 15.5 (±0.1) | 12.2 (±0.6) | 10.4 (±1.0) | 6.8 (±0.5) | 8.3 (±0.6) | 15.9 (±0.8) | DP02 |
+| Spanish at home (% of 5+) | 8.6 (±0.1) | 4.6 (±0.4) | 5.4 (±0.7) | 3.8 (±0.4) | 4.9 (±0.4) | 9.3 (±0.5) | DP02 |
+| Armed Forces (count, population 16+) | 58682 (±2191) | 501 (±259) | 1868 (±374) | 6646 (±595) | 6595 (±571) | 231 (±152) | DP03 |
+| Armed Forces (% of population 16+) | 0.7 (±0.1) | 0.1 (±0.1) | 1.6 (±0.3) | 4.1 (±0.4) | 4.2 (±0.4) | 0.2 (±0.1) | DP03 |
 
-## 4. ACS 2019–2023 comparison — metros
-| Measure (ACS 2019–2023 5-year) | Atlanta MSA | Savannah MSA | Augusta MSA | Columbus MSA | Athens MSA | Table |
+## 4. ACS 2020–2024 comparison — metros
+| Measure (ACS 2020–2024 5-year) | Atlanta MSA | Savannah MSA | Augusta MSA | Columbus MSA | Athens MSA | Table |
 |---|---|---|---|---|---|---|
-| Total population | 6176937 (no MOE published) | 412089 (no MOE published) | 618022 (no MOE published) | 326136 (no MOE published) | 218190 (no MOE published) | DP05 |
-| Median age (years) | 37.0 (±0.2) | 36.7 (±0.2) | 38.2 (±0.2) | 36.1 (±0.2) | 33.2 (±0.2) | DP05 |
-| Under 18 years (%) | 23.8 (±0.1) | 22.8 (±0.1) | 23.0 (±0.1) | 23.9 (±0.1) | 20.0 (±0.1) | DP05 |
-| 65 years and over (%) | 13.1 (±0.1) | 15.1 (±0.1) | 16.9 (±0.1) | 15.1 (±0.1) | 14.2 (±0.1) | DP05 |
-| Total households | 2280747 (±4767) | 158617 (±1271) | 225591 (±1984) | 126156 (±1539) | 85019 (±699) | DP02 |
-| Median household income (2023 dollars) | 86338 (±676) | 74632 (±1717) | 66628 (±1362) | 57762 (±1311) | 62897 (±2390) | DP03 |
-| Mean travel time to work (minutes) | 31.2 (±0.1) | 25.1 (±0.5) | 23.9 (±0.4) | 22.1 (±0.5) | 23.6 (±0.7) | DP03 |
-| Worked from home (% of workers 16+) | 18.5 (±0.2) | 9.0 (±0.6) | 8.7 (±0.6) | 8.8 (±0.7) | 12.1 (±1.0) | DP03 |
-| With private health insurance (%) | 69.1 (±0.3) | 67.8 (±0.9) | 66.4 (±0.8) | 63.9 (±1.2) | 71.4 (±1.3) | DP03 |
-| With public coverage (%) | 28.2 (±0.2) | 32.8 (±0.7) | 38.1 (±0.6) | 40.1 (±0.8) | 27.8 (±0.9) | DP03 |
-| No health insurance coverage (%) | 12.2 (±0.2) | 12.0 (±0.7) | 10.0 (±0.5) | 11.0 (±0.8) | 11.0 (±0.8) | DP03 |
-| Bachelor's degree or higher (% of 25+) | 41.5 (±0.3) | 34.9 (±0.9) | 28.8 (±0.8) | 26.9 (±1.0) | 43.5 (±1.3) | DP02 |
-| Civilian veterans (% of civilians 18+) | 6.5 (±0.1) | 10.0 (±0.4) | 11.3 (±0.4) | 13.7 (±0.7) | 5.0 (±0.3) | DP02 |
-| Language other than English at home (% of 5+) | 19.5 (±0.2) | 9.8 (±0.5) | 7.3 (±0.3) | 7.5 (±0.4) | 12.0 (±0.5) | DP02 |
-| Spanish at home (% of 5+) | 9.8 (±0.1) | 5.5 (±0.4) | 4.2 (±0.2) | 4.8 (±0.3) | 7.0 (±0.4) | DP02 |
-| Armed Forces (count, population 16+) | 6795 (±803) | 5866 (±774) | 11406 (±947) | 13631 (±701) | 298 (±182) | DP03 |
-| Armed Forces (% of population 16+) | 0.1 (±0.1) | 1.8 (±0.2) | 2.3 (±0.2) | 5.3 (±0.3) | 0.2 (±0.1) | DP03 |
+| Total population | 6256377 (no MOE published) | 418285 (no MOE published) | 624181 (no MOE published) | 325615 (no MOE published) | 220197 (no MOE published) | DP05 |
+| Median age (years) | 37.2 (±0.1) | 36.9 (±0.2) | 38.3 (±0.2) | 36.5 (±0.2) | 33.6 (±0.2) | DP05 |
+| Under 18 years (%) | 23.6 (±0.1) | 22.6 (±0.1) | 22.8 (±0.1) | 23.7 (±0.1) | 19.8 (±0.1) | DP05 |
+| 65 years and over (%) | 13.4 (±0.1) | 15.4 (±0.1) | 17.3 (±0.1) | 15.5 (±0.1) | 14.7 (±0.1) | DP05 |
+| Total households | 2313055 (±5155) | 161273 (±1313) | 231857 (±2041) | 127512 (±1104) | 86101 (±752) | DP02 |
+| Median household income (2024 dollars) | 89724 (±630) | 77180 (±1575) | 69344 (±1537) | 59336 (±1529) | 65608 (±2404) | DP03 |
+| Mean travel time to work (minutes) | 31.0 (±0.1) | 25.6 (±0.5) | 23.9 (±0.4) | 22.6 (±0.6) | 23.5 (±0.6) | DP03 |
+| Worked from home (% of workers 16+) | 20.6 (±0.2) | 10.5 (±0.6) | 9.8 (±0.6) | 11.1 (±0.9) | 13.0 (±1.0) | DP03 |
+| With private health insurance (%) | 69.2 (±0.3) | 67.5 (±0.8) | 66.2 (±0.9) | 64.0 (±1.2) | 71.8 (±1.3) | DP03 |
+| With public coverage (%) | 28.4 (±0.2) | 33.4 (±0.6) | 38.6 (±0.6) | 41.0 (±0.9) | 27.3 (±0.9) | DP03 |
+| No health insurance coverage (%) | 12.0 (±0.2) | 11.7 (±0.7) | 10.2 (±0.5) | 10.9 (±0.6) | 10.9 (±0.8) | DP03 |
+| Bachelor's degree or higher (% of 25+) | 42.2 (±0.3) | 35.8 (±0.9) | 29.5 (±0.6) | 28.1 (±0.9) | 43.2 (±1.2) | DP02 |
+| Civilian veterans (% of civilians 18+) | 6.2 (±0.1) | 9.9 (±0.5) | 11.2 (±0.5) | 13.4 (±0.6) | 4.9 (±0.3) | DP02 |
+| Language other than English at home (% of 5+) | 19.9 (±0.2) | 10.3 (±0.5) | 7.2 (±0.3) | 7.2 (±0.4) | 12.4 (±0.5) | DP02 |
+| Spanish at home (% of 5+) | 10.0 (±0.1) | 5.7 (±0.4) | 4.2 (±0.2) | 4.5 (±0.3) | 7.2 (±0.4) | DP02 |
+| Armed Forces (count, population 16+) | 6959 (±859) | 5751 (±709) | 10841 (±941) | 13450 (±729) | 292 (±166) | DP03 |
+| Armed Forces (% of population 16+) | 0.1 (±0.1) | 1.7 (±0.2) | 2.2 (±0.2) | 5.2 (±0.3) | 0.2 (±0.1) | DP03 |
 
 ## 5. Military installations (current names verified 2026-11-08)
 | Installation | Near | Name history | Sources |
@@ -87,7 +87,7 @@
 
 **The assignment brief's names "Fort Moore" and "Fort Eisenhower" are outdated; pages use Fort Benning and Fort Gordon.**
 
-Patient-population consideration (sourced): TRICARE dental coverage depends on beneficiary type — active duty (active duty dental benefits), active-duty family members (may purchase TRICARE Dental Program, administered by United Concordia), retirees (may be eligible for FEDVIP) (`tricare-dental-care-overview`, `tricare-dental-program-tdp`). ACS: Armed Forces share of population 16+ — Columbus city 4.3%, Augusta balance 4.6%, Savannah city 1.5%, Atlanta city 0.1%, Athens 0.2%; civilian veterans 14.3% (Columbus), 11.3% (Augusta), 7.6% (Savannah), 7.4% (state).
+Patient-population consideration (sourced): TRICARE dental coverage depends on beneficiary type — active duty (active duty dental benefits), active-duty family members (may purchase TRICARE Dental Program, administered by United Concordia), retirees (may be eligible for FEDVIP) (`tricare-dental-care-overview`, `tricare-dental-program-tdp`). ACS: Armed Forces share of population 16+ — Columbus city 4.2%, Augusta balance 4.1%, Savannah city 1.6%, Atlanta city 0.1%, Athens 0.2%; civilian veterans 14.0% (Columbus), 11.1% (Augusta), 7.2% (Savannah), 7.2% (state).
 
 ## 6. University and dental-education dynamics
 - UGA total enrollment 43,888 in fall 2025 (`uga-fall-2025-enrollment`) — Athens.

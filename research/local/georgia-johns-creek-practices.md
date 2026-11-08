@@ -22,7 +22,7 @@
 ## Strategy table: observed fact → cautious interpretation → proposed action → how to test
 | Observed fact | Cautious interpretation | Proposed action | How to test |
 |---|---|---|---|
-| Language fluency stated as a banner on 1 of 3 sites | Language capability is being used as a differentiator; Asian/Pacific languages are 17.6% at home (ACS) | If the client's team speaks a language, state which language, who speaks it and when — then build one real page in that language if call data justify it | Call-language log; page sessions by language |
+| Language fluency stated as a banner on 1 of 3 sites | Language capability is being used as a differentiator; Asian/Pacific languages are 18.5% at home (ACS 2020–2024) | If the client's team speaks a language, state which language, who speaks it and when — then build one real page in that language if call data justify it | Call-language log; page sessions by language |
 | Multi-office brand with per-office booking | Patients compare offices across city and county lines | For a single-office client, explain travel time from Duluth/Suwanee/Alpharetta honestly rather than claiming those cities | Patient ZIPs; direction requests in Business Profile |
 | Pediatric/ortho site with Friday-by-appointment | Family scheduling (several children, after-school slots) is a constraint | Publish after-school availability where it exists; family-block booking request option | Requests for multiple patients per inquiry |
 | Request forms on 2 of 3 | Callback step may slow conversion for busy two-commuter households | Short form + guaranteed callback window the office can meet | Time-to-callback vs booked rate |

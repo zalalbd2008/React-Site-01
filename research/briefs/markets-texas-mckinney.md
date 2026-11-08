@@ -22,8 +22,8 @@
 | McKinney 195,331 (Apr 2020 base) → 236,001 (Jul 2025), +20.8%; Allen +8.4%; Melissa +115.6%; Anna +105.7%; Princeton +156.1%; Collin +21.7%; Plano +2.6%; Frisco +18.2%; all McKinney in Collin | census-sub-est2025-texas | PEP Vintage 2025 subcounty estimates | Texas places and county parts, 2020–2025 | Estimates; our % calculations |
 | McKinney +8,504 in 2024–25, 10th-largest numeric gain of US cities | census-v2025-cities-release | CB26-80 tables | US cities, Jul 2024–Jul 2025 | Estimates revised yearly |
 | Collin County in Dallas-Plano-Irving division of DFW MSA | omb-cbsa-delineation-2023 | OMB July 2023 list 1 | — | Statistical definition |
-| Under 18 27.1%; owner-occupied 63.3%; WFH 21.8%; commute 27.4 min; income $120,273; bachelor's 52.6%; uninsured 8.6%; private 82.3%; other language 25.1%; Spanish 11.2% | census-acs-2023-mckinney-city-tx | ACS DP02–DP05 | McKinney city, 2019–2023 | MOEs in research file; health ≠ dental coverage |
-| Other Indo-European 5.0%; every other group under 3% | census-acs-2023-c16001-mckinney | ACS C16001 | McKinney city, 2019–2023 | Aggregated language groups |
+| Under 18 26.2%; owner-occupied 63.8%; WFH 24.5%; commute 27.8 min; income $124,215; bachelor's 54.1%; uninsured 8.2%; private 83.1%; other language 26.5%; Spanish 10.9% | census-acs-2024-mckinney-city-tx | ACS DP02–DP05 | McKinney city, 2020–2024 | MOEs in research file; health ≠ dental coverage |
+| Other Indo-European 5.5%; every other group under 4% | census-acs-2024-c16001-mckinney | ACS C16001 | McKinney city, 2020–2024 | Aggregated language groups |
 | 4/5 online scheduler links; 2/5 Saturday + 1 selective; 2/5 open to 6 PM+; 0/5 other languages; 3/5 membership plans; 2/5 named neighbours, all south; 1/5 DSO footer | obs-tx2b-mckinney-practices | Homepage observation | 5 sites, 2026-11-08 | Small convenience sample |
 | Agency pages: templates, unverified badges, no attended-visit measurement | obs-tx2b-mckinney-agencies | Observation | 4 pages, 2026-11-08 | WebSearch, not Google ranking |
 | Local results based mainly on relevance, distance, prominence | google-gbp-local-ranking | GBP Help | — | Help page |

@@ -18,7 +18,7 @@
 | Claim | Source id | What the source actually measures | Geography / period | Limitation |
 |---|---|---|---|---|
 | City −2.3% (202,171); metro −1.2%; Harris +7.5%; Chattahoochee −11.5%; Russell AL in metro | ga1-census-pep-v2025-places, -cbsa | PEP | see research/local/georgia-columbus.md | See source limitations |
-| Veterans 14.3%; Armed Forces 4.3%; under-18 25.0%; public coverage 40.4% | census-acs5-2023-dp-columbus-city-ga | ACS | see research/local/georgia-columbus.md | See source limitations |
+| Veterans 14.0%; Armed Forces 4.2%; under-18 24.9%; public coverage 41.4% | census-acs5-2024-dp-columbus-city-ga | ACS | see research/local/georgia-columbus.md | See source limitations |
 | Fort Benning restored April 2025; ~70,000 stationed (AP) | ap-fort-benning-name-restored-2025, army-fort-benning-home | News/Army | see research/local/georgia-columbus.md | See source limitations |
 | TDP administered by United Concordia; family members purchase TDP | tricare-dental-care-overview, tricare-dental-program-tdp | TRICARE | see research/local/georgia-columbus.md | See source limitations |
 | Georgia’s first consolidated government | columbus-consolidated-government-home | Official | see research/local/georgia-columbus.md | See source limitations |

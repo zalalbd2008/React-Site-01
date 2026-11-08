@@ -32,7 +32,7 @@ Source id: `obs-ga1-athens-practices`.
 - 4 of 4 had tap-to-call links.
 - 1 of 4 offered direct online booking; 2 used request forms; 1 was phone-only.
 - 0 of 4 advertised evening or weekend hours; none of the three showing hours listed Friday opening hours.
-- 0 of 4 offered Spanish content, although 9.0% of Athens-Clarke residents 5+ speak Spanish at home (ACS 2019–2023).
+- 0 of 4 offered Spanish content, although 9.3% of Athens-Clarke residents 5+ speak Spanish at home (ACS 2020–2024).
 - 0 of 4 addressed students, academic-calendar scheduling or out-of-town insurance.
 - Insurance positions varied widely: an in-office plan with a published price, out-of-network-only, "variety of plans", and none stated.
 
@@ -41,7 +41,7 @@ Source id: `obs-ga1-athens-practices`.
 | Observed fact | Cautious interpretation | Proposed action | How to test |
 |---|---|---|---|
 | No student-specific content; UGA enrollment 43,888 (fall 2025) | Students and new graduate-student/faculty households may not find answers about out-of-area insurance, break-period scheduling or emergency visits | If the practice wants this segment, publish a factual page on insurance from home states, emergency access and scheduling around the semester | New-patient counts by month vs academic calendar; intake "how did you hear" |
-| No Spanish content; 9.0% Spanish at home; 5.2% speak English less than "very well" | Possible unmet language need — not proven | Only if staff can serve Spanish speakers: a Spanish landing page and GBP attributes | Intake preferred-language field; calls needing interpretation |
+| No Spanish content; 9.3% Spanish at home; 5.3% speak English less than "very well" | Possible unmet language need — not proven | Only if staff can serve Spanish speakers: a Spanish landing page and GBP attributes | Intake preferred-language field; calls needing interpretation |
 | Out-of-network-only and in-office plan positions | Price/coverage clarity is a competitive variable | State the practice's position plainly; avoid "we take all insurance" | Insurance-related call share; booking rate |
 | Pediatric practice located in Oconee County serving Athens | Families move to surrounding counties (Oconee +7.4%) | Location content for the communities patients actually drive from | Patient ZIP mix |
 | Thursday/Friday closures | Four-day weeks common | Make hours exact in GBP and ads schedules | Calls missed by weekday |

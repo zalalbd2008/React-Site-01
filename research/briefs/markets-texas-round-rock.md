@@ -21,9 +21,9 @@
 | Round Rock 119,523 → 141,282 (+18.2%); county parts; Georgetown +58.5%; Hutto +66.9%; Leander (Wmsn) +57.1%; Cedar Park (Wmsn) +3.2%; Williamson +23.6% | census-sub-est2025-texas | PEP Vintage 2025 | 2020–2025 | Our % calcs |
 | Hutto 13th fastest US city 20k+ 2024–25 (+7.9%) | census-v2025-cities-release | CB26-80 | US | Estimates |
 | MSA composition | omb-cbsa-delineation-2023 | OMB 2023 | — | — |
-| Other language 27.3%; Spanish 17.7%; limited English 9.2%; WFH 23.1%; commute 24.4; under 18 24.4%; owner 56.2%; income $97,187; uninsured 11.1%; private 77.8%; public 20.6% | census-acs-2023-round-rock-city-tx | ACS DP02–DP05 | City, 2019–2023 | MOEs in research file |
-| No other language group above 2.5% | census-acs-2023-c16001-round-rock | ACS C16001 | City, 2019–2023 | — |
-| McKinney limited English 6.9% (comparison) | census-acs-2023-mckinney-city-tx | ACS DP02 | McKinney, 2019–2023 | — |
+| Other language 29.2%; Spanish 18.3%; limited English 10.0%; WFH 24.8%; commute 24.9; under 18 23.5%; owner 55.5%; income $99,287; uninsured 11.9%; private 76.9%; public 20.7% | census-acs-2024-round-rock-city-tx | ACS DP02–DP05 | City, 2020–2024 | MOEs in research file |
+| No other language group above 3.0% | census-acs-2024-c16001-round-rock | ACS C16001 | City, 2020–2024 | — |
+| McKinney limited English 7.1% (comparison) | census-acs-2024-mckinney-city-tx | ACS DP02 | McKinney, 2020–2024 | — |
 | Ads location options: in, regularly in, interest | google-ads-location-targeting; google-ads-target-locations | Google Ads Help | — | — |
 | Profile represents business at real location | google-gbp-guidelines | GBP guidelines | — | — |
 | hreflang language versions | google-localized-versions | Search Central | — | — |

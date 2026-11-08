@@ -18,7 +18,7 @@
 | Claim | Source id | What the source actually measures | Geography / period | Limitation |
 |---|---|---|---|---|
 | City 149,440, +1.1%; metro +8.3%; Bryan +16.4%; Effingham +14.8%; Chatham +5.6% | ga1-census-pep-v2025-places, -cbsa | PEP | see research/local/georgia-savannah.md | See source limitations |
-| Public coverage 36.7% city; uninsured 13.8%; veterans 7.6% (metro 10.0%); Armed Forces 1.5% | census-acs5-2023-dp-savannah-city-ga, -savannah-msa | ACS | see research/local/georgia-savannah.md | See source limitations |
+| Public coverage 37.9% city; uninsured 13.9%; veterans 7.2% (metro 9.9%); Armed Forces 1.6% | census-acs5-2024-dp-savannah-city-ga, -savannah-msa | ACS | see research/local/georgia-savannah.md | See source limitations |
 | Stewart-Hunter staffing; HAAF in Savannah | army-fort-stewart-hunter-about | Army | see research/local/georgia-savannah.md | See source limitations |
 | TRICARE dental structure | tricare-dental-care-overview | TRICARE | see research/local/georgia-savannah.md | See source limitations |
 | Hyundai Metaplant production began Oct 2024 in Bryan County | wtoc-hyundai-metaplant-first-vehicle-2024 | News | see research/local/georgia-savannah.md | See source limitations |

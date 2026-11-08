@@ -11,14 +11,14 @@
 - **Intended internal links:** /markets/georgia/, /services/dental-local-seo-google-business-profile/, /services/dental-seo-company/, /services/dental-web-design-conversion/, /services/dental-google-ads-management/, /services/dental-conversion-tracking/, /resources/dental-website-audit-checklist/, /resources/dental-marketing-metrics/, /dental-marketing-audit/, /blog/dental-group-location-pages/, /blog/dental-call-tracking/, /who-we-help/pediatric-dentists/
 - **Three original contributions:**
   1. Two-state catchment worksheet (GA/SC counties) from PEP
-  2. Payer-clarity framework for a market with 43.5% public coverage
+  2. Payer-clarity framework for a market with 43.7% public coverage
   3. Observed→action DataTable from four Augusta sites
 - **Factual claims and evidence:**
 
 | Claim | Source id | What the source actually measures | Geography / period | Limitation |
 |---|---|---|---|---|
 | Balance 201,999 (flat); Columbia +8.4%; Aiken SC +7.5%; Edgefield SC +16.2%; metro +4.9%; SC counties in metro | ga1-census-pep-v2025-places, -cbsa | PEP | see research/local/georgia-augusta.md | See source limitations |
-| Public coverage 43.5%; private 58.8%; bachelor’s+ 24.2%; Armed Forces 4.6%; veterans 11.3% | census-acs5-2023-dp-augusta-richmond-balance-ga | ACS | see research/local/georgia-augusta.md | See source limitations |
+| Public coverage 43.7%; private 58.6%; bachelor’s+ 24.7%; Armed Forces 4.1%; veterans 11.1% | census-acs5-2024-dp-augusta-richmond-balance-ga | ACS | see research/local/georgia-augusta.md | See source limitations |
 | Fort Gordon renamed back June 2025 | wrdw-fort-gordon-name-restored-2025, army-fort-gordon-home | News/Army | see research/local/georgia-augusta.md | See source limitations |
 | DCG only dental school | augusta-dcg-heritage | University | see research/local/georgia-augusta.md | See source limitations |
 | Practice aggregates | obs-ga1-augusta-practices | Observation | see research/local/georgia-augusta.md | See source limitations |

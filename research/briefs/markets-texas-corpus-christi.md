@@ -20,7 +20,7 @@
 |---|---|---|---|---|
 | City 318,090 → 317,247 (−0.3%); Nueces −0.1%; San Patricio +4.8%; Aransas +9.7%; city ≈ all in Nueces | census-sub-est2025-texas | PEP Vintage 2025 | 2020–2025 | Our % calcs |
 | MSA composition | omb-cbsa-delineation-2023 | OMB 2023 list 1 (opened; Corpus rows verified) | — | Statistical definition |
-| Spanish 29.0%; limited English 6.6%; uninsured 17.8%; public coverage 34.6%; SNAP 16.8%; income $66,325; WFH 4.8%; commute 20.8; 65+ 15.0% | census-acs-2023-corpus-christi-city-tx | ACS DP02–DP05 | City, 2019–2023 | MOEs in research file; health ≠ dental |
+| Spanish 29.3%; limited English 6.8%; uninsured 17.8%; public coverage 35.3%; SNAP 17.3%; income $67,394; WFH 5.3%; commute 21.3; 65+ 15.6% | census-acs-2024-corpus-christi-city-tx | ACS DP02–DP05 | City, 2020–2024 | MOEs in research file; health ≠ dental |
 | Hurricane season June 1–Nov 30; peak ~Sept 10 | noaa-nhc-hurricane-climatology | NHC climatology | Atlantic basin | Basin-wide |
 | Special hours up to 6 days; profile must be "Open with main hours" | google-gbp-special-hours | GBP Help | — | Help page |
 | hreflang for language versions; Google detects language from content | google-localized-versions | Search Central | — | — |

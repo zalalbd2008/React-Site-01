@@ -30,5 +30,5 @@ Not opened: a growth article that returned a 429 security checkpoint (not worked
 | Spanish-language strategy absent or a one-line mention | Treats Spanish as a core demand path: separate URLs, hreflang, bilingual call handling, language tagging in measurement |
 | Results claims without definitions ("30 new patients a month") | Separates inquiries, qualified inquiries, bookings, attended visits; no results claims |
 | Out-of-state testimonials, superlatives | No claims about clients; methodology only; says plainly that work is delivered remotely from Houston |
-| No discussion of payment/coverage | Coverage-status clarity as a conversion priority grounded in 34.9% public coverage / 21.0% uninsured |
+| No discussion of payment/coverage | Coverage-status clarity as a conversion priority grounded in 35.0% public coverage / 20.6% uninsured (ACS 2020–2024) |
 | No mention of the metro's structure | Defines city vs El Paso County vs El Paso MSA vs El Paso-Las Cruces CSA |

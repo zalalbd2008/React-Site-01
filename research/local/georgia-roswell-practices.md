@@ -23,10 +23,10 @@
 ## Strategy table: observed fact → cautious interpretation → proposed action → how to test
 | Observed fact | Cautious interpretation | Proposed action | How to test |
 |---|---|---|---|
-| 1 of 3 named a Spanish-speaking dentist, in English copy only | Spanish speakers may not find that fact; ACS shows 13.6% speak Spanish at home | If the client has bilingual staff, add a Spanish-language page that explains the visit, payment and booking — written in Spanish, not machine translation | Calls/forms in Spanish; Spanish page sessions → contacts |
+| 1 of 3 named a Spanish-speaking dentist, in English copy only | Spanish speakers may not find that fact; ACS 2020–2024 shows 13.4% speak Spanish at home | If the client has bilingual staff, add a Spanish-language page that explains the visit, payment and booking — written in Spanish, not machine translation | Calls/forms in Spanish; Spanish page sessions → contacts |
 | 2 of 3 used real-time online booking | Expectation of self-service booking is being set locally | Offer online booking only if schedule data stay current; otherwise a short request form with a callback promise the practice can keep | Booking completion rate; no-show rate by channel |
 | Review-count widget on homepage of 1 site | Review volume is a visible comparison point | Steady, policy-compliant review requests (no incentives, no gating) | Review velocity per month |
-| No Saturday hours; short Fridays | Older and family patients may be fine; commuters (44.6% work in city incl. WFH) may not | Test early-morning slots before promising weekends | Fill rate of test slots |
+| No Saturday hours; short Fridays | Older and family patients may be fine; commuters (47.5% work in city incl. WFH) may not | Test early-morning slots before promising weekends | Fill rate of test slots |
 
 ## Limits
 - Small convenience sample (4 sites); not representative of all practices in Roswell.

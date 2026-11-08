@@ -24,10 +24,10 @@
 ## Strategy table: observed fact → cautious interpretation → proposed action → how to test
 | Observed fact | Cautious interpretation | Proposed action | How to test |
 |---|---|---|---|
-| 1 of 4 was Spanish-first; 3 English-only with no Spanish | The market supports at least one Spanish-led practice; English-only sites may be leaving Spanish-speaking households to it (ACS: 23.3% speak Spanish at home) — unproven | If the client can serve in Spanish, build real Spanish pages (visit, payment, booking) and a Spanish-capable phone path; hreflang only for genuinely equivalent pages | Spanish-language calls and forms; Spanish page → contact rate |
-| 2 of 4 advertised after-5 pm hours | Commuter-heavy city (28.3% work in city incl. WFH; 33-minute mean commute) | Make extended hours prominent in Business Profile, ads schedule and booking options — only if staffed | Lead volume by hour; fill rate of late slots |
+| 1 of 4 was Spanish-first; 3 English-only with no Spanish | The market supports at least one Spanish-led practice; English-only sites may be leaving Spanish-speaking households to it (ACS 2020–2024: 26.1% speak Spanish at home) — unproven | If the client can serve in Spanish, build real Spanish pages (visit, payment, booking) and a Spanish-capable phone path; hreflang only for genuinely equivalent pages | Spanish-language calls and forms; Spanish page → contact rate |
+| 2 of 4 advertised after-5 pm hours | Commuter-heavy city (29.4% work in city incl. WFH; 32-minute mean commute) | Make extended hours prominent in Business Profile, ads schedule and booking options — only if staffed | Lead volume by hour; fill rate of late slots |
 | City name misspelled in an address block | Inconsistent NAP data across the web can confuse listings | Audit name/address/phone consistency across site, Business Profile and directories | Citation audit count of inconsistencies |
-| No Medicaid/PeachCare mention; 33.6% public coverage (health, ACS) | Coverage questions likely arrive by phone | State plainly which plans the practice does and does not accept | Tag coverage questions; count mismatched inquiries |
+| No Medicaid/PeachCare mention; 32.6% public coverage (health, ACS 2020–2024) | Coverage questions likely arrive by phone | State plainly which plans the practice does and does not accept | Tag coverage questions; count mismatched inquiries |
 | "Lawrenceville" addresses on Duluth Hwy / Cruse Rd / Club Dr | Postal area is far larger than the 13.8 sq mi city | Target by drive-time/ZIP, not city limits; write location content for the practice's real catchment | Ad location reports; patient ZIPs |
 
 ## Limits

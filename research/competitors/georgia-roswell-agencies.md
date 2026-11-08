@@ -19,7 +19,7 @@ Relevant to this city:
 | Dimension | What competing pages observed did | What our Roswell page should do |
 |---|---|---|
 | Market definition | City names used loosely; no Census geography or metro named | Name the exact Census geography, county and metro/division; separate city limits from postal areas |
-| Data | Wealth/HQ claims without sources, or none | ACS 2019–2023 and PEP Vintage 2025 figures with dates, framed as hypotheses |
+| Data | Wealth/HQ claims without sources, or none | ACS 2020–2024 and PEP Vintage 2025 figures with dates, framed as hypotheses |
 | Proof | Percentages without baselines; self-reported client totals | No client claims (none exist); explain the measurement chain instead |
 | Offer | "Free" instant AI audits / competitive analyses | Describe what the Dental Growth Audit reviews and what we need; no free or turnaround promises |
 | Local operating detail | Rarely discussed (hours, language, coverage, booking) | Use dated, aggregated practice-site observations |

@@ -16,11 +16,11 @@
 
 | Claim | Source id | What the source actually measures | Geography / period | Limitation |
 |---|---|---|---|---|
-| Spanish at home 64.1%; language other than English 66.4%; English less than very well 25.8%; Spanish speakers with English less than very well 25.1% | census-acs-2023-el-paso-city-tx | Pop. 5+, language spoken at home | El Paso city, 2019–2023 | Survey estimate, MOE ±0.6–0.7 |
-| Public coverage 34.9%; uninsured 21.0%; private 53.1%; under-19 uninsured 11.9% | census-acs-2023-el-paso-city-tx | Civilian noninstitutionalized pop. | El Paso city, 2019–2023 | MOE recorded |
-| Median household income $58,734; mean commute 23.7 min; WFH 7.8%; owner-occupied 60.2% | census-acs-2023-el-paso-city-tx | DP03/DP04 | El Paso city, 2019–2023 | — |
-| Metro Spanish 66.3%, uninsured 21.9% | census-acs-2023-el-paso-msa | Metro profile | El Paso, TX Metro, 2019–2023 | — |
-| Texas Spanish 28.1%, uninsured 17.4% | census-acs-2023-texas | State profile | Texas, 2019–2023 | — |
+| Spanish at home 63.7%; language other than English 65.9%; English less than very well 25.1%; Spanish speakers with English less than very well 24.4% | census-acs-2024-el-paso-city-tx | Pop. 5+, language spoken at home | El Paso city, 2020–2024 | Survey estimate, MOE ±0.6–0.7 |
+| Public coverage 35.0%; uninsured 20.6%; private 53.3%; under-19 uninsured 11.2% | census-acs-2024-el-paso-city-tx | Civilian noninstitutionalized pop. | El Paso city, 2020–2024 | MOE recorded |
+| Median household income $59,745; mean commute 23.4 min; WFH 8.9%; owner-occupied 60.8% | census-acs-2024-el-paso-city-tx | DP03/DP04 | El Paso city, 2020–2024 | — |
+| Metro Spanish 66.1%, uninsured 21.7%, income $59,751 | census-acs-2024-el-paso-msa | Metro profile | El Paso, TX Metro, 2020–2024 | — |
+| Texas Spanish 28.1%, uninsured 17.1%; Dallas city Spanish 34.9% | census-acs-2024-texas | State profile | Texas, 2020–2024 | — |
 | Population 678,932 (Apr 2020 base) → 683,012 (Jul 2025); −2,219 in 2024–25 | census-sub-est2025-texas | Vintage 2025 estimates | El Paso city | Estimates revised each vintage |
 | El Paso MSA counties; El Paso-Las Cruces CSA | omb-cbsa-delineation-2023 | OMB delineation | 2023 | Statistical, not catchment |
 | Local results based on relevance, distance, prominence/popularity | google-gbp-local-ranking | Google help | — | No weights published |
@@ -34,4 +34,5 @@
 - **Evidence status:** sourced (Census, OMB, Google documentation, Texas HHSC/TAC where used) plus dated observations.
 - **Proposed visual and its purpose / data:** see original contributions; at least one DataTable of observed fact → interpretation → action → test, and a Timeline.
 - **CTA and next-step deliverables:** Dental Growth Audit — what it reviews, what we need (priorities, capacity, optional read-only access), what happens next; no turnaround, price or free-work promise.
+- **Data vintage:** ACS values updated from 2019–2023 to 2020–2024 on 2026-11-08 under the data-vintage policy in docs/city-brief.md; Vintage 2025 population estimates unchanged.
 - **Gaps / what needs client data:** Cross-border patient flows (Mexico, New Mexico) not sourced — not claimed on the page. No dentist counts, keyword volumes or seasonality. Spanish demand must be confirmed from the practice's own call/form data.

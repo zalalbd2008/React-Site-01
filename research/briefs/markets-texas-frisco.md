@@ -17,10 +17,10 @@
 | Claim | Source id | What the source actually measures | Geography / period | Limitation |
 |---|---|---|---|---|
 | Population 200,531 → 236,955 (+18.2%); +1,796 in 2024–25; +8,281 in 2023–24; Collin 140,753 / Denton 96,202 | census-sub-est2025-texas | Vintage 2025 | Frisco | Estimates |
-| Under 18 27.7%; 65+ 9.6%; median age 38.1 | census-acs-2023-frisco-city-tx | DP05 | 2019–2023 | ACS predates much growth |
-| Private 86.8%; uninsured 6.6%; public 13.0%; under-19 uninsured 4.6%; income $146,158; commute 28.6; WFH 33.7%; owner 66.5% | census-acs-2023-frisco-city-tx | DP03/DP04 | — | — |
-| Asian/PI 15.1%; Spanish 7.5%; Indo-European 8.8%; less than very well 7.9% | census-acs-2023-frisco-city-tx | DP02 | — | — |
-| Plano comparisons | census-acs-2023-plano-city-tx | — | — | — |
+| Under 18 27.2%; 65+ 9.6%; median age 38.3 | census-acs-2024-frisco-city-tx | DP05 | 2020–2024 | ACS predates much growth |
+| Private 86.9%; uninsured 6.3%; public 12.9%; under-19 uninsured 4.0%; income $150,212; commute 28.6; WFH 37.8%; owner 65.9% | census-acs-2024-frisco-city-tx | DP03/DP04 | — | — |
+| Language other 33.6%; Asian/PI 15.5%; Spanish 6.9%; Indo-European 9.3%; less than very well 7.6% | census-acs-2024-frisco-city-tx | DP02 | — | — |
+| Plano comparisons | census-acs-2024-plano-city-tx | — | — | — |
 | Division counties | omb-cbsa-delineation-2023 | — | — | — |
 | Ad schedule/All day default | google-ads-ad-scheduling | Google Ads | — | — |
 | Presence targeting | google-ads-location-presence | Google Ads | — | — |
@@ -32,4 +32,5 @@
 - **Evidence status:** sourced (Census, OMB, Google documentation, Texas HHSC/TAC where used) plus dated observations.
 - **Proposed visual and its purpose / data:** see original contributions; at least one DataTable of observed fact → interpretation → action → test, and a Timeline.
 - **CTA and next-step deliverables:** Dental Growth Audit — what it reviews, what we need (priorities, capacity, optional read-only access), what happens next; no turnaround, price or free-work promise.
-- **Gaps / what needs client data:** No new-mover counts; no dentist counts; ACS characteristics describe 2019–2023 average population, before part of the growth.
+- **Data vintage:** ACS values updated from 2019–2023 to 2020–2024 on 2026-11-08 under the data-vintage policy in docs/city-brief.md; Vintage 2025 population estimates unchanged.
+- **Gaps / what needs client data:** No new-mover counts; no dentist counts; ACS characteristics describe 2020–2024 average population, before part of the growth.

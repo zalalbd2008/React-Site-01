@@ -41,7 +41,7 @@
 | Observed fact | Cautious interpretation | Proposed action | How to test |
 |---|---|---|---|
 | Template sites shared across offices; a domain redirect to another office name | Many listings look alike; branded groups compete with independents on near-identical pages | Differentiate on verifiable specifics: doctors, services actually offered, access, plans accepted, real photos; keep NAP consistent if names change | Branded vs non-branded search impressions in Search Console; GBP profile views |
-| Language rarely stated; one "bilingual" without naming language | Language capability is under-communicated in a city where 37.5% speak a non-English language at home | Publish exact staff languages; add language-specific pages only where demand is shown | Front-desk language log for 60 days |
+| Language rarely stated; one "bilingual" without naming language | Language capability is under-communicated in a city where 38.0% speak a non-English language at home | Publish exact staff languages; add language-specific pages only where demand is shown | Front-desk language log for 60 days |
 | Membership plans and financing appear in 2 of 5 | Self-pay options exist even in an insured city | Keep insurance (in-network list) primary; self-pay secondary | Payer mix of new bookings |
 | Two sites name Frisco | Practices near the north edge expect cross-boundary patients | Use patient ZIPs to decide; do not create "Frisco" pages for a Plano office unless patients genuinely come from there | Direction-request origins |
 | Saturday "by appointment" | Weekend access is limited and conditional | Publish exact access rules; mirror in GBP special hours | Calls asking about weekend availability |

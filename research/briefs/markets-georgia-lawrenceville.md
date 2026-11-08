@@ -16,8 +16,8 @@
 
 | Claim | Source id | What the source actually measures | Geography / period | Limitation |
 |---|---|---|---|---|
-| Population, age, language, income, insurance, tenure, commuting (city) | census-acs-2023-lawrenceville-ga | ACS 2019–2023 5-year DP02–DP05 estimates | Lawrenceville city, Georgia, 2019–2023 | Survey MOEs; not single-year; health not dental insurance |
-| Share of resident workers working in the city | census-acs-2023-b08008-lawrenceville-ga | B08008 place-level place of work | Lawrenceville city, Georgia, 2019–2023 | Includes work-from-home |
+| Population, age, language, income, insurance, tenure, commuting (city; ACS 2020–2024) | census-acs-2024-lawrenceville-ga | ACS 2020–2024 5-year DP02–DP05 estimates | Lawrenceville city, Georgia, 2020–2024 | Survey MOEs; not single-year; health not dental insurance |
+| Share of resident workers working in the city | census-acs-2024-b08008-lawrenceville-ga | B08008 place-level place of work | Lawrenceville city, Georgia, 2020–2024 | Includes work-from-home |
 | Population change 2020→2025; county populations | census-sub-est2025-ga-places | PEP Vintage 2025 subcounty estimates | Georgia places/counties | Estimates; derived % |
 | Metro / division name and composition | census-cbsa-est2025-ga, omb-cbsa-delineation-2023-ga | CBSA estimates; OMB July 2023 delineations | GA metros | Statistical areas, not catchments |
 | Land area | census-gazetteer-2023-ga-places | Gazetteer | 2023 | — |

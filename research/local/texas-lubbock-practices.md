@@ -19,7 +19,7 @@ Batch: markets-tx2b · Observed 2026-11-08 · Route: `/markets/texas/lubbock/`
 - **Online self-scheduling:** 3 of 5 clearly linked to real-time online scheduling (one with appointment-type selection); 1 used a request form; 1 had booking buttons of undetermined type.
 - **Fridays and weekends:** 0 of 5 advertised Saturday hours; **3 of 5 advertised Friday closed or half-day**, and 1 more a Wednesday half-day; only 1 of 5 showed a full five-day, 8–5 week.
 - **Regional towns:** 1 of 5 listed several surrounding South Plains towns; 1 more used "surrounding communities".
-- **Languages:** 0 of 5 signposted Spanish (ACS: 16.8% Spanish at home).
+- **Languages:** 0 of 5 signposted Spanish (ACS 2020–2024: 16.3% Spanish at home).
 - **University:** 0 of 5 mentioned Texas Tech students or student schedules on the homepage.
 
 ## Strategy table

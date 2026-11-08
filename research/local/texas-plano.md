@@ -4,7 +4,7 @@ Retrieved and compiled 2026-11-08 by the Alpha Dental Media editorial team (batc
 
 ## Sources and method
 
-- **ACS:** ACS 2019–2023 5-year DP02–DP05 via `node scripts/census.mjs "Plano" TX`. Citable table `https://data.census.gov/table/ACSDP5Y2023.DP05?g=160XX00US4858016` (companions DP02–DP04). Extra variables from the same API responses. (A first run hit an empty cached DP02 file written by a concurrent process; the empty file was removed and the script re-run successfully.)
+- **ACS:** ACS 2020–2024 5-year DP02–DP05 via `node scripts/census.mjs "Plano" TX`. Citable table `https://data.census.gov/table/ACSDP5Y2024.DP05?g=160XX00US4858016` (companions DP02–DP04). Extra variables from the same API responses. (A first run hit an empty cached DP02 file written by a concurrent process; the empty file was removed and the script re-run successfully.)
 - **Comparators:** DFW MSA ACS (retrieved 2026-11-08); Dallas/Fort Worth city values from the census script; Frisco from this batch.
 - **Population estimates:** Vintage 2025 SUB-EST2025_48 (city and county-part rows), retrieved 2026-11-08.
 - **Metro definition:** OMB July 2023 delineation.
@@ -25,42 +25,44 @@ Retrieved and compiled 2026-11-08 by the Alpha Dental Media editorial team (batc
 
 Plano is close to flat while Collin County as a whole added 42,966 people in one year — growth is happening around Plano, not in it.
 
-## ACS 2019–2023 profile
+## ACS 2020–2024 profile
 
 | Measure | Plano city | Frisco city | Dallas city | DFW MSA |
 |---|---|---|---|---|
-| Total population | 287,339 (±74) | 210,238 | 1,299,553 | 7,807,555 |
-| Under 18 | 21.3% (±0.6) | 27.7% | 24.2% | 25.3% |
-| Under 5 | 5.3% (±0.4) | 5.4% | 7.0% | — |
-| 65 and over | **14.1% (±0.4)** | 9.6% | 11.4% | 11.9% |
-| Median age | **39.3 (±0.5)** | 38.1 | 33.4 | 35.5 |
-| Households | 110,522 (±1,277) | 74,081 | 528,038 | — |
-| Language other than English (5+) | 37.5% (±1.1) | 32.8% | 41.1% | 31.7% |
-| Spanish (5+) | 12.0% (±0.7) | 7.5% | 35.1% | 21.9% |
-| Other Indo-European languages | 10.3% (±0.8) | 8.8% | 2.2% | — |
-| Asian and Pacific Islander languages | 12.4% (±0.7) | 15.1% | 2.1% | — |
-| Speak English less than "very well" | 12.3% (±0.6) | 7.9% | 18.2% | 11.9% |
-| — of which Asian/PI-language speakers | 4.4% (±0.4) | 3.8% | — | — |
-| — of which Spanish speakers | 4.7% (±0.6) | 2.3% | — | — |
-| Foreign-born | 28.7% (±0.9) | 26.5% | 23.4% | — |
-| Bachelor's or higher (25+) | 59.2% (±1.1) | 66.0% | 37.4% | 38.5% |
-| Median household income | $108,649 (±2,862) | $146,158 | $67,760 | $87,155 |
-| Mean travel time | 25.6 min (±0.5) | 28.6 | 26.0 | 28.0 |
-| Worked from home | 25.3% (±1.0) | 33.7% | 14.0% | — |
-| Private health insurance | 76.5% (±1.1) | 86.8% | 54.1% | — |
-| Public coverage | 20.3% (±0.8) | 13.0% | 29.3% | — |
-| No health insurance | 11.4% (±0.8) | 6.6% | 23.0% | 16.3% |
-| Under 19 uninsured | 9.0% (±1.4) | 4.6% | 15.7% | — |
-| Owner-occupied | 56.6% (±1.1) | 66.5% | 42.4% | 60.0% |
-| Same house one year ago | 85.4% (±1.0) | 84.3% | — | — |
+| Total population | 290,594 (±98) | 219,304 | 1,307,930 | 7,985,590 |
+| Under 18 | 20.9% (±0.5) | 27.2% | 23.9% | 25.0% |
+| Under 5 | 5.2% (±0.3) | 5.0% | 7.0% | 6.4% |
+| 65 and over | **14.7% (±0.5)** | 9.6% | 11.8% | 12.1% |
+| Median age | **39.6 (±0.6)** | 38.3 | 33.4 | 35.6 |
+| Households | 112,438 (±1,195) | 77,208 | 533,915 | 2,891,725 |
+| Language other than English (5+) | 38.0% (±1.2) | 33.6% | 41.2% | 32.1% |
+| Spanish (5+) | 12.0% (±0.8) | 6.9% | 34.9% | 21.9% |
+| Other Indo-European languages | 10.4% (±0.9) | 9.3% | 2.2% | 3.7% |
+| Asian and Pacific Islander languages | 12.8% (±0.7) | 15.5% | 2.2% | 4.7% |
+| Speak English less than "very well" | 12.0% (±0.8) | 7.6% | 18.2% | 12.1% |
+| — of which Asian/PI-language speakers | 4.3% (±0.4) | 3.7% | 0.8% | 1.8% |
+| — of which Spanish speakers | 4.5% (±0.6) | 2.1% | 16.2% | 8.9% |
+| Foreign-born | 29.3% (±1.0) | 27.3% | 23.4% | 19.4% |
+| Bachelor's or higher (25+) | 60.5% (±1.2) | 67.5% | 38.2% | 39.4% |
+| Median household income | $112,253 (±3,281) | $150,212 | $70,518 | $90,275 |
+| Mean travel time | 25.4 min (±0.5) | 28.6 | 25.7 | 27.9 |
+| Worked from home | 27.5% (±1.0) | 37.8% | 15.8% | 17.8% |
+| Private health insurance | 76.7% (±1.1) | 86.9% | 54.3% | 67.0% |
+| Public coverage | 21.0% (±0.8) | 12.9% | 29.5% | 24.5% |
+| No health insurance | 10.7% (±0.8) | 6.3% | 22.8% | 16.2% |
+| Under 19 uninsured | 9.1% (±1.6) | 4.0% | 16.3% | 12.1% |
+| Owner-occupied | 56.9% (±1.0) | 65.9% | 42.4% | 60.1% |
+| Same house one year ago | 85.5% (±1.0) | 84.5% | 84.5% | 86.2% |
+
+*Vintage note:* first drafted with ACS 2019–2023 values; updated to ACS 2020–2024 on 2026-11-08 under the data-vintage policy in docs/city-brief.md. All ACS figures here are 2020–2024.
 
 ## Observations and hypotheses
 
-1. **Mature and older-skewing.** Highest 65+ share (14.1%) and median age (39.3) of the five cities in this batch; lowest under-18 share (21.3%). Hypothesis: retention, recall and restorative/prosthetic service lines may carry more weight than pediatric acquisition. We do not infer treatment demand from age — test with the practice's own procedure mix.
-2. **Stable population.** +2.6% since 2020; −0.1% last year. Hypothesis: new-patient growth is mostly switching between practices, so differentiation (reviews, insurance clarity, access, specific expertise) matters more than "new in town" messaging.
-3. **Multilingual beyond Spanish.** Asian/PI languages 12.4% and other Indo-European 10.3%, each comparable to Spanish (12.0%). Specific languages are not in the DP tables; do not guess. Test front-desk language logs before translating anything.
-4. **Insured, PPO-heavy.** 76.5% private coverage; 11.4% uninsured. Hypothesis: in-network status and plan-specific information are major filters.
-5. **Remote work.** 25.3% worked from home. Hypothesis: weekday daytime appointments near home may be feasible for a quarter of workers; test appointment-time demand with booking data rather than assuming evening demand.
+1. **Mature and older-skewing.** Highest 65+ share (14.7%) and median age (39.6) of the five cities in this batch; lowest under-18 share (20.9%). Hypothesis: retention, recall and restorative/prosthetic service lines may carry more weight than pediatric acquisition. We do not infer treatment demand from age — test with the practice's own procedure mix.
+2. **Stable population.** +2.6% since 2020; −0.1% last year (Vintage 2025). Hypothesis: new-patient growth is mostly switching between practices, so differentiation (reviews, insurance clarity, access, specific expertise) matters more than "new in town" messaging.
+3. **Multilingual beyond Spanish.** Asian/PI languages 12.8% and other Indo-European 10.4%, each comparable to Spanish (12.0%). Specific languages are not in the DP tables; do not guess. Test front-desk language logs before translating anything.
+4. **Insured, PPO-heavy.** 76.7% private coverage; 10.7% uninsured. Hypothesis: in-network status and plan-specific information are major filters.
+5. **Remote work.** 27.5% worked from home. Hypothesis: weekday daytime appointments near home may be feasible for many workers; test appointment-time demand with booking data rather than assuming evening demand.
 
 ## Gaps
 

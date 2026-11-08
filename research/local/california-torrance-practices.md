@@ -30,7 +30,7 @@ Sample = 4 distinct office pages (a fifth candidate could not be retrieved).
 
 | Observed | Cautious interpretation | Proposed action | How to test |
 |---|---|---|---|
-| No Asian-language content in 4 of 4, despite 23.6% API-language speakers in ACS | Possible unmet need **or** patients comfortable in English — unknown | If staff speak Korean (or another language) fluently, publish a reviewed page and GBP description note; do not machine-translate | 60-day language log; calls/forms on language page; staff capacity check |
+| No Asian-language content in 4 of 4, despite 23.0% API-language speakers in ACS | Possible unmet need **or** patients comfortable in English — unknown | If staff speak Korean (or another language) fluently, publish a reviewed page and GBP description note; do not machine-translate | 60-day language log; calls/forms on language page; staff capacity check |
 | Review counts shown by 2 of 4 | Prominence is visible competition | Steady, policy-compliant review requests (S7 owns method) | Monthly new-review count and rating trend |
 | Membership plan on 1 of 4 | Some offices compete for uninsured/underinsured patients with in-house plans | If the practice offers one, give it a dedicated page and track sign-ups | Plan enrolments; plan-member attended visits |
 | Saturday/evening on 2 of 4 | Extended hours exist in the market | Publish exact hours everywhere; align ad schedule | Out-of-hours call attempts |

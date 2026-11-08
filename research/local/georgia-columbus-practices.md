@@ -43,7 +43,7 @@ Source id: `obs-ga1-columbus-practices`.
 
 | Observed fact | Cautious interpretation | Proposed action | How to test |
 |---|---|---|---|
-| No TDP network statement on any homepage; veterans 14.3% of city adults; Fort Benning just outside Columbus | The network question is likely decisive for military families but unanswered online | State plan participation precisely (TDP, FEDVIP carriers, or "out of network — here is how claims work") on the insurance page and GBP description | Calls tagged "insurance/network"; booking rate before/after |
+| No TDP network statement on any homepage; veterans 14.0% of city adults; Fort Benning just outside Columbus | The network question is likely decisive for military families but unanswered online | State plan participation precisely (TDP, FEDVIP carriers, or "out of network — here is how claims work") on the insurance page and GBP description | Calls tagged "insurance/network"; booking rate before/after |
 | Mon–Thu schedules | Friday availability is scarce in sample | If Friday or early-morning capacity exists, make it visible; align ads schedule to staffed hours | Call-answer rate by weekday; ads by day |
 | Columbus GA/OH ambiguity | Entity signals need state qualifiers | Use "Columbus, GA" consistently in titles, GBP, schema address, citations | Search Console queries containing "ohio"/"oh"; misdirected calls |
 | Template-platform URL on one site | Domain authority and branding may not accrue to the practice (hypothesis) | Check domain ownership; plan a migration only with redirects | Search Console coverage after migration |
