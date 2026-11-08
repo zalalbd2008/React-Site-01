@@ -19,10 +19,10 @@ export function metadataFor(e: Entry, opts: { noindex?: boolean } = {}): Metadat
       title: e.metaTitle,
       description: e.description,
       locale: 'en_US',
-      images: [{ url: absoluteUrl('/og-default.png'), width: 1200, height: 630, alt: 'Alpha Dental Media — dental marketing for practices and dental groups' }],
+      images: [{ url: absoluteUrl('/opengraph-image'), width: 1200, height: 630, alt: 'Alpha Dental Media — dental marketing for practices and dental groups' }],
       ...(e.type === 'article' && e.published ? { publishedTime: e.published, modifiedTime: e.updated ?? e.published } : {}),
     },
-    twitter: { card: 'summary_large_image', title: e.metaTitle, description: e.description },
+    twitter: { card: 'summary_large_image', title: e.metaTitle, description: e.description, images: [absoluteUrl('/opengraph-image')] },
   };
 }
 

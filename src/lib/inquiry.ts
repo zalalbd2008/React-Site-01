@@ -1,19 +1,20 @@
 import { z } from 'zod';
-import { INQUIRY_TYPES, CHALLENGES } from './inquiry-shared';
+import { INQUIRY_TYPES, CHALLENGES } from './inquiry-shared.ts';
 
-export { INQUIRY_TYPES, CHALLENGES, isFreeEmail, CLINICAL_HINTS } from './inquiry-shared';
+export { INQUIRY_TYPES, CHALLENGES, isFreeEmail, CLINICAL_HINTS } from './inquiry-shared.ts';
 
-const trimmed = (max: number) => z.string().trim().max(max);
+const trimmed = (max: number, label = 'This field') =>
+  z.string({ message: `${label} is required.` }).trim().max(max, `${label} is too long.`);
 
 export const inquirySchema = z.object({
-  type: z.enum(INQUIRY_TYPES),
-  name: trimmed(120).min(2, 'Please enter your name.'),
-  email: trimmed(200).email('Please enter a valid email address.'),
-  practice: trimmed(160).min(2, 'Please enter the practice or group name.'),
-  website: trimmed(300)
+  type: z.enum(INQUIRY_TYPES, { message: 'Please choose an audit or a strategy call.' }),
+  name: trimmed(120, 'Your name').min(2, 'Please enter your name.'),
+  email: trimmed(200, 'Email').email('Please enter a valid email address.'),
+  practice: trimmed(160, 'Practice name').min(2, 'Please enter the practice or group name.'),
+  website: trimmed(300, 'Website')
     .min(4, 'Please enter the practice website.')
     .refine((v) => /^(https?:\/\/)?[a-z0-9.-]+\.[a-z]{2,}(\/.*)?$/i.test(v), 'Please enter a website address such as example.com.'),
-  location: trimmed(160).min(2, 'Please enter the city and state of the main office.'),
+  location: trimmed(160, 'Location').min(2, 'Please enter the city and state of the main office.'),
   challenge: z.enum(CHALLENGES, { message: 'Please choose the main growth challenge.' }),
   details: trimmed(2000).optional().default(''),
   phone: trimmed(40)
@@ -24,8 +25,8 @@ export const inquirySchema = z.object({
   role: trimmed(80).optional().default(''),
   consentContact: z.literal(true, { message: 'Please confirm we may contact you about this request.' }),
   // Anti-abuse fields.
-  submissionId: z.string().uuid(),
-  startedAt: z.number().int().positive(),
+  submissionId: z.string({ message: 'Please reload the page and try again.' }).uuid('Please reload the page and try again.'),
+  startedAt: z.number({ message: 'Please reload the page and try again.' }).int().positive(),
   company_url: z.string().max(0).optional().default(''), // honeypot: must stay empty
   // Permitted campaign attribution (no personal data).
   utm: z
