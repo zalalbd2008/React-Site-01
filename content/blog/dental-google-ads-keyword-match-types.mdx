@@ -2,14 +2,190 @@
 route: "/blog/dental-google-ads-keyword-match-types/"
 type: "article"
 category: "advertising"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
-title: "Dental Google Ads Match Types: Tradeoffs and Controls"
-metaTitle: "Dental Google Ads Match Types: Tradeoffs and Controls"
-description: "Dental Google Ads Match Types: Tradeoffs and Controls. A practical guide for dental practice owners and managers from Alpha Dental Media."
-parent: "/blog/"
-primaryIntent: "Dental Google Ads Match Types: Tradeoffs and Controls"
-related: ["/services/dental-google-ads-management/"]
+title: "Which Keyword Match Types Should a Dental Practice Use in Google Ads?"
+metaTitle: "Dental Google Ads Match Types: Exact, Phrase or Broad?"
+description: "How exact, phrase and broad match behave in Google Ads today, what each needs to work for a dental practice, and the controls that matter more than the match type."
+eyebrow: "Google Ads for dentists"
+lede: "Match types no longer mean what most practice owners were taught. Each one now matches on meaning, and the right choice depends less on the keyword than on the conversion data and controls behind it."
+primaryIntent: "dental Google Ads keyword match types"
+secondaryQuestions:
+  - "Is broad match safe for a dental practice?"
+  - "Does exact match still mean the exact words?"
+  - "Why does broad match need Smart Bidding?"
+  - "How do I see which searches my keywords actually matched?"
+  - "What happens when several of my keywords match the same search?"
+audience: "Practice owners and managers reviewing how their Google Ads account is built"
+sources:
+  - "google-ads-match-types"
+  - "google-ads-broad-match-guide"
+  - "google-ads-search-terms-report"
+  - "google-ads-smart-bidding"
+  - "google-ads-primary-secondary-conversions"
+  - "google-ads-ai-max"
+  - "google-ads-negative-keywords"
+related:
+  - "/services/dental-google-ads-management/"
+  - "/blog/dental-google-ads-negative-keywords/"
+  - "/blog/dental-google-ads-budget/"
+  - "/services/dental-conversion-tracking/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Match type definitions, Smart Bidding note and keyword prioritisation checked against Google Ads Help answer 7478529 on 2026-11-08; broad match guidance against 12159290; search terms report and close variants against 2472708; 30-conversion evaluation guidance against 7065882; primary/secondary conversions against 11461796; AI Max search term matching against 15910187; negative behaviour against 2453972. All retrieved 2026-11-08. Keyword examples are invented research candidates, not volume data."
 order: 7
+faqs:
+  - q: "Is broad match safe for a small dental practice?"
+    a: "It can be, but only when the account bids toward conversions that reflect real patient inquiries, has enough of them to learn from, and is reviewed weekly through the search terms report. Without those, broad match spends on loosely related searches and there is little signal to correct it. Phrase and exact keep tighter control while measurement is fixed."
+  - q: "Does exact match still mean the exact words someone typed?"
+    a: "No. Google now describes exact match as showing ads on searches with the same meaning or same intent as the keyword. Close variants such as plurals, misspellings, abbreviations and reworded searches with the same meaning can match. It remains the narrowest of the three options."
+  - q: "Should we run the same keyword in all three match types?"
+    a: "Google says a broad match keyword already covers the searches its phrase and exact equivalents would match, so triplicating keywords is usually unnecessary. A separate exact match keyword is still useful when you want a specific search to go to a specific ad group, because identical exact-match keywords are prioritised."
+  - q: "How often should someone check the search terms report?"
+    a: "Weekly in the first months of a campaign or after a match type change, then at least every two weeks once the terms settle. The review should end in decisions: new negatives, new exact keywords to route a valuable search, or landing page changes, not just a download."
 ---
+
+<KeyAnswer>Most dental accounts should start with phrase and exact match on high-intent service and location terms, then add broad match only where conversion tracking counts real patient inquiries and Smart Bidding has enough of them to learn from. Match type is one control among several; the search terms report, negatives and conversion goals decide whether any of them work.</KeyAnswer>
+
+This article is about how keywords match searches. Building the exclusion list that keeps broad and phrase match in check is covered in [how to build dental negative keywords without excluding good leads](/blog/dental-google-ads-negative-keywords/), and how much to spend is covered in [setting a dental ads budget from attended visits](/blog/dental-google-ads-budget/).
+
+## How Google defines the three match types today
+
+Google's current definitions all describe meaning rather than exact wording, which is why advice written a few years ago can mislead.
+
+<DataTable caption="Keyword match types as described in Google Ads Help (retrieved 2026-11-08)" columns={["Match type", "Syntax", "Google's description", "What it means for a dental account"]}
+  rows={[
+    ["Broad", "dental implants", "Ads may show on searches related to the keyword, including searches that do not contain its direct meaning. Google may use the user's recent searches, the landing page and assets, and other keywords in the ad group.", "Widest reach. Can match neighbouring intents such as dentures, implant cost research or implant training unless the account's conversion data and negatives steer it."],
+    ["Phrase", "\"dental implants\"", "Ads may show on searches that include the meaning of the keyword; the meaning can be implied and the search can be more specific.", "Covers longer, more specific searches built around the service, such as a city or a question. Middle ground."],
+    ["Exact", "[dental implants]", "Ads may show on searches with the same meaning or same intent as the keyword.", "Narrowest, but still includes close variants and reworded searches with the same intent."]
+  ]}
+  note="Keyword examples are invented for illustration. Google states that broad is the default match type for new keywords." />
+
+<SourceNote ids={["google-ads-match-types"]} />
+
+Two points in Google's description change how an account should be built. First, Google says broader match types capture all the queries of narrower ones: a broad keyword matches everything its phrase and exact equivalents would, plus related searches. Running "dental implants" in all three types is therefore mostly duplication. Second, broad match is the default. A keyword typed without quotes or brackets is broad match, which is how many practice-built accounts end up matching far more than intended.
+
+<SourceNote ids={["google-ads-match-types"]} />
+
+### Close variants apply to every match type
+
+The search terms report labels matches such as "Exact match (close variant)". Google describes close variants as including singular and plural forms, acronyms, stem words, abbreviations, accents and variants with the same meaning. For a dental account, `[emergency dentist]` can match a search worded differently that Google judges to mean the same thing. Exact match no longer means exact words, and the only way to know what it matched is to read the report.
+
+<SourceNote ids={["google-ads-search-terms-report"]} />
+
+## Why dental searches make match type decisions harder
+
+Dental services have neighbours that look similar to a matching system but mean very different things to a practice:
+
+- **Patient versus profession.** Searches about dental assistant jobs, hygiene school or continuing education share vocabulary with patient searches.
+- **Service versus adjacent service.** Implants, dentures, bridges and "teeth in a day" overlap in language but differ in what the practice offers, the consultation it needs and its value.
+- **Need versus research.** A search for a cost or a definition is earlier in the decision than "implant dentist" plus a neighbourhood, and may still be worth reaching, but not at the same bid.
+- **Available versus unavailable.** An emergency search at 11 p.m. is worthless to a practice that cannot answer the phone until morning.
+
+Broad match decides between these using signals Google controls. Phrase and exact decide more from the keyword you chose. Neither is right by default; the question is which signals the account can trust.
+
+## What broad match needs before it is worth using
+
+Google is direct about this: "It's critical to use Smart Bidding with broad match." The reasoning Google gives is that every search is different and bids should reflect auction-time signals, so that across the wider set of searches broad match reaches, the account only competes in the right auctions at the right bid. Google's broad match guide repeats the point and lists more data for Smart Bidding as a benefit.
+
+<SourceNote ids={["google-ads-match-types", "google-ads-broad-match-guide"]} />
+
+That makes broad match only as good as the conversion actions Smart Bidding is told to pursue. Google's primary and secondary conversion settings determine which actions are used for bidding: primary actions feed the Conversions column and bidding, and secondary actions are observation only. If the primary conversion is "any call over 10 seconds" or "any form view", Smart Bidding will find more of those, which is not the same as more new patients.
+
+<SourceNote ids={["google-ads-primary-secondary-conversions"]} />
+
+Volume matters too. Google's Smart Bidding guidance recommends evaluating performance over longer periods with at least 30 conversions, such as a month or longer. A single-office practice running a modest implant campaign may not produce 30 genuine inquiries in a month, which means the bidding system is learning slowly and any evaluation of broad match is noisy.
+
+<SourceNote ids={["google-ads-smart-bidding"]} />
+
+### A matrix for choosing an approach
+
+<Matrix title="Match type approach by measurement quality and conversion volume" xLabel="Monthly volume of genuine tracked inquiries" yLabel="Quality of the conversion signal" cells={[
+  { title: "Reliable signal, low volume", text: "Phrase and exact on core service and location terms. Consider broad in one tightly themed ad group with Smart Bidding, reviewed weekly." },
+  { title: "Reliable signal, higher volume", text: "Broad match with Smart Bidding is reasonable to test, alongside exact keywords for the searches that matter most. Strong negatives and weekly search term reviews.", hot: true },
+  { title: "Weak signal, low volume", text: "Fix tracking first. Phrase and exact only, manual or conservative bidding. Broad match has nothing reliable to learn from." },
+  { title: "Weak signal, higher volume", text: "The account looks busy but is optimising toward the wrong thing. Correct the primary conversion actions before changing match types." }
+]} caption="Cells in reading order: top-left, top-right, bottom-left, bottom-right. A reliable signal means the primary conversion counts real inquiries, not page views or short calls." />
+
+What counts as a reliable signal is a measurement question. The [dental conversion tracking service](/services/dental-conversion-tracking/) and the [definitions in the dental marketing metrics reference](/resources/dental-marketing-metrics/) set out how calls, forms and bookings are separated.
+
+## What happens when several keywords could match one search
+
+Practices often find a search matched by an unexpected keyword or ad group. Google's prioritisation rules, as published on the retrieval date, run in this order:
+
+1. **An exact match keyword identical to the search wins.** If someone searches the exact text of an eligible exact match keyword, that Search campaign is prioritised over broad or phrase keywords and over Performance Max.
+2. **Phrase and broad keywords identical to the search** share priority with an identical Performance Max search theme.
+3. **Relevance.** If a search could match keywords in several ad groups, only the most relevant ad groups, as judged by Google's AI, are considered.
+4. **Ad Rank** decides among equal candidates.
+
+<SourceNote ids={["google-ads-match-types"]} />
+
+This is the main remaining reason to keep exact match keywords alongside broad ones. If "implant dentist" plus your city is the search you most want routed to the implant ad group and its dedicated landing page, an identical exact keyword in that ad group is the most dependable way to get it there. Google also lists reasons a keyword may show in Performance Max instead of Search, including the Search campaign being limited by budget.
+
+### AI Max widens matching further
+
+Google's AI Max for Search campaigns adds "search term matching", which Google describes as expanding existing keywords using broad match and keywordless technology, learning from keywords, creatives and URLs. It is turned on with AI Max and can be switched off at ad group level. AI Max also brings brand controls, URL controls and locations of interest. Google notes AI Max will not be effective when a campaign is limited by budget. For a practice, turning on AI Max is effectively a decision to use broad-style matching, so the same prerequisites apply.
+
+<SourceNote ids={["google-ads-ai-max"]} />
+
+## Reading the search terms report as the control loop
+
+Whatever the match types, the search terms report is where you find out what the account actually bought. Google's report shows the search term, the keyword that triggered the ad (the Keyword column, which is not shown by default and must be added) and the match type of the search term relative to the keyword. Two quirks matter:
+
+- The search term match type can differ from the keyword's match type. A broad keyword that matched an identical search is reported as exact match.
+- Terms without enough query activity are omitted for privacy. Search terms insights groups some of them into themes, but the report is never a complete list of searches you paid for.
+
+<SourceNote ids={["google-ads-search-terms-report"]} />
+
+<Illustrative title="One week of search terms for an invented implant ad group">
+An invented single-office practice runs one implant ad group with the broad keyword dental implants and the exact keyword for implant dentist plus its city. In one week the report shows 46 search terms with clicks.
+
+Sorting them by intent: 21 are clearly patient searches for implants in the area; 9 are cost or financing questions; 6 are about dentures; 4 mention a neighbouring city 40 minutes away; 3 are about implant courses for dentists; 2 are about a specific implant brand's careers page; 1 is a misspelling of a competitor's name.
+
+Decisions: add implant courses, careers and the training terms as negatives; add the far city as a location exclusion or negative depending on whether the practice wants those patients; route denture searches to a denture ad group with its own landing page rather than excluding them; keep the cost questions but check that the landing page answers cost honestly. The competitor term is noted for a separate policy decision. All figures here are invented.
+</Illustrative>
+
+The example shows the practical difference between match types: broad match created the denture and course matches, and the review turned them into decisions. Without a weekly review, broad match runs unattended, which is where most of its waste comes from.
+
+## A checklist before switching any ad group to broad match
+
+<Checklist title="Before moving a dental ad group to broad match" items={[
+  "The primary conversion actions count real inquiries: qualified calls, submitted forms or completed booking requests, not page views",
+  "Secondary actions such as directions clicks or short calls are set to observation only",
+  "Recent conversion volume is high enough to evaluate over a month, with Google's 30-conversion guidance in mind",
+  "A Smart Bidding strategy is active, with a target that matches what the practice can afford per qualified inquiry",
+  "Account-level and shared negative lists cover jobs, education, products and services the practice does not offer",
+  "Exact match keywords exist for the searches that must reach a specific landing page",
+  "Location targeting and ad schedule reflect where patients come from and when calls are answered",
+  "Someone is named to review search terms weekly and has authority to add negatives",
+  "A baseline of cost per qualified inquiry exists from the previous period for comparison",
+  "The practice can take the extra patients broad match is meant to find"
+]} />
+
+## Tradeoffs and common mistakes
+
+**Exact and phrase give control at the cost of reach.** They miss legitimate searches phrased in ways you did not predict, and they need more keyword maintenance. **Broad match gives reach at the cost of predictability**, and it shifts control from the keyword list to the conversion data. Neither choice is about the keyword alone.
+
+Common mistakes:
+
+- Leaving keywords at the default broad match without realising it, while bidding on clicks rather than conversions.
+- Switching to broad match when the primary conversion is a page view, a short call or a directions click.
+- Treating exact match as word-for-word and skipping search term reviews on exact-only campaigns.
+- Duplicating every keyword in three match types, which adds complexity Google says is unnecessary.
+- Excluding adjacent intents such as dentures or cost questions that the practice could serve with the right ad group and page.
+- Judging a match type change after a few days. Allow enough conversions to evaluate, and change one thing at a time.
+
+Negatives are the other half of this system, and they behave differently from positive match types. Google states that negative keywords do not match close variants, so a negative for one form of a word will not block its synonyms or plural. That asymmetry is the subject of the [negative keywords article](/blog/dental-google-ads-negative-keywords/).
+
+<SourceNote ids={["google-ads-negative-keywords"]} />
+
+## Sources and limitations
+
+Definitions, prioritisation and Google's recommendations come from Google Ads Help articles retrieved on 8 November 2026. These describe Google's systems as Google presents them; recommendations to use broad match and Smart Bidding are the platform's view, not independent evidence of results for dental practices. Matching behaviour changes over time, often without a dated notice, and AI Max features vary by account. This article cites no click costs, conversion rates or benchmarks, because none were available from a dated source for dental searches. The worked example is invented.
+
+## Next steps
+
+If you are not sure what match types your account uses or what its conversions count, start with a review of the last 30 to 90 days of search terms and conversion actions. Our [dental Google Ads management](/services/dental-google-ads-management/) work begins with exactly that: which searches the budget paid for, what was counted as a conversion, and which controls are missing. The [Dental Growth Audit](/dental-marketing-audit/) covers the same questions alongside landing pages and call handling, with read-only access to the account if you choose to grant it.

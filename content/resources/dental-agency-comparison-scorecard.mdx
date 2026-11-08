@@ -1,14 +1,133 @@
 ---
 route: "/resources/dental-agency-comparison-scorecard/"
 type: "resource"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
 title: "Dental Agency Comparison Scorecard"
 navLabel: "Dental Agency Comparison Scorecard"
-metaTitle: "Dental Agency Comparison Scorecard"
-description: "A scorecard for comparing dental marketing agency proposals. A free reference from Alpha Dental Media for dental practice owners and managers."
+metaTitle: "Dental Marketing Agency Comparison Scorecard (0–2 Scoring)"
+description: "Score dental marketing agency proposals on ownership, fees, ad spend, reporting, evidence, contracts, offboarding, specialty knowledge and compliance."
+eyebrow: "Scorecard"
+lede: "Nine criteria, a 0–2 score for each, and the evidence that earns the score — so proposals are compared on what they commit to rather than how confident they sound."
 parent: "/resources/"
-primaryIntent: "A scorecard for comparing dental marketing agency proposals"
+primaryIntent: "dental marketing agency comparison scorecard"
+secondaryQuestions:
+  - "How do I compare dental marketing agency proposals fairly?"
+  - "Who should own the Google Ads and Business Profile accounts?"
+  - "What are red flags in a dental marketing contract?"
+  - "How should an agency separate ad spend from its fee?"
+audience: "Dental practice owners, managers, dental groups and DSOs comparing two or more agency proposals"
+sources:
+  - "google-ads-access-levels"
+  - "gbp-owners-managers"
+  - "ga4-user-management"
+  - "ecfr-16-cfr-465"
+related:
+  - "/blog/choosing-a-dental-marketing-agency/"
+  - "/resources/dental-marketing-metrics/"
+  - "/resources/dental-growth-calculator/"
+  - "/services/"
+  - "/dental-marketing-audit/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Account role descriptions checked against Google Ads Help (access levels), Google Business Profile Help (owners and managers) and Google Analytics Help (user management), retrieved 2026-11-08. Review-rule references checked against 16 CFR Part 465 via eCFR (title 16 current as of 2026-11-05). Scoring method and criteria are an editorial framework, not an industry standard. The worked example uses invented proposals."
 order: 4
+faqs:
+  - q: "Should we score Alpha Dental Media with this scorecard too?"
+    a: "Yes. The criteria apply to any provider, including us. Ask for the same evidence from every agency you are considering, score each proposal before any sales call where possible, and keep the completed sheets. A provider that resists being scored on account ownership or fee transparency has told you something useful."
+  - q: "What if an agency scores well but costs more?"
+    a: "Compare the cost against the expected cost per attended new-patient visit, not against the other fee alone. A higher fee with transparent reporting and practice-owned accounts can be cheaper over time than a lower fee you cannot verify or leave. Use the growth calculator with each proposal's figures to see the difference."
+  - q: "Is a zero on any single criterion a deal-breaker?"
+    a: "We treat a zero on account ownership or on access and offboarding as disqualifying, because they decide whether the practice can verify results or leave. A zero elsewhere is a negotiating point: ask the agency to fix it in writing before you sign, then rescore."
+  - q: "How many proposals should we compare?"
+    a: "Two or three is usually enough to see the range of terms on offer. More than that makes it hard to give each one a careful reading. What matters more is that each proposal answers the same brief, so the scores compare like with like."
 ---
+
+<KeyAnswer>Score each agency proposal 0, 1 or 2 on nine criteria: account ownership, fee transparency, ad spend separation, reporting definitions, case-study evidence, contract terms, access and offboarding, dental specialty knowledge, and compliance awareness. A 2 requires written evidence, not a verbal assurance. Treat a zero on ownership or offboarding as disqualifying, then compare the totals.</KeyAnswer>
+
+This is the working tool. If you want the reasoning behind each question — why ownership matters, what to ask in the first call — read [what to ask a dental marketing agency](/blog/choosing-a-dental-marketing-agency/) first. The scorecard turns those questions into something you can fill in, compare and keep on file.
+
+## How to score
+
+- **0 — Missing or unfavourable.** The proposal says nothing, or says something that works against the practice.
+- **1 — Stated but not evidenced.** The agency says the right thing in conversation or in general terms, but it is not in the proposal or contract.
+- **2 — Committed in writing with evidence.** The proposal or draft contract commits to it, and you have seen the evidence described in the table.
+
+Score from documents, not memories of a sales call. If an answer was only given verbally, it scores 1 at most until it appears in writing.
+
+## The scorecard
+
+<DataTable caption="Dental agency comparison scorecard: what earns each score" columns={["Criterion", "What good evidence looks like (scores 2)", "Red flags (score 0)", "Score 0–2"]}
+  rows={[
+    ["1. Account ownership", "Contract states the practice owns its Google Ads, Analytics, Search Console, Business Profile, domain and website accounts, with the practice as primary owner or admin and the agency added as a user", "Accounts created under the agency's login; 'we will transfer them when you leave'; domain registered in the agency's name", "__"],
+    ["2. Fee transparency", "Itemised fees for each service, what is included, what triggers extra charges, and how fees change if scope changes", "One bundled monthly figure; 'custom pricing' with no breakdown; setup fees that are not explained", "__"],
+    ["3. Ad spend separation", "Ad spend is billed by the platform to the practice's card, or passed through with platform invoices attached; management fee shown separately", "Spend and fee combined; agency marks up media without saying so; no access to platform invoices", "__"],
+    ["4. Reporting definitions", "Sample report with written definitions of inquiry, qualified inquiry, booking and attended visit; states which system each number comes from", "Reports end at clicks or 'leads'; conversions counted from page views or phone taps; no reconciliation with practice records", "__"],
+    ["5. Case-study evidence", "Named or anonymised examples with baseline period, measurement period, data source and what else changed; offer to discuss methodology", "Percent increases with no baseline; screenshots without dates; promises of specific rankings or patient numbers", "__"],
+    ["6. Contract terms", "Clear term and notice period; termination for convenience with reasonable notice; no automatic renewal without notice; deliverables listed", "Long lock-in with no performance or exit clause; auto-renewal buried in terms; penalty fees for leaving", "__"],
+    ["7. Access and offboarding", "Written offboarding steps: access removed, ownership confirmed, website files and content handed over, tracking documented, within a stated period", "Website hosted on an agency platform you cannot export; call-tracking numbers owned by the agency with no port-out plan", "__"],
+    ["8. Dental specialty knowledge", "Understands the practice's service mix, capacity, insurance position and patient journey; proposal reflects your specialty and market, not a template", "Same proposal for any business type; promises volume without asking about capacity or call handling", "__"],
+    ["9. Compliance awareness", "Describes how it handles reviews without incentives or gating, avoids patient information in tracking and forms, and defers legal questions to the practice's counsel", "Offers to buy or incentivise reviews; puts pixels on patient-intake pages without discussion; claims to make the practice 'compliant'", "__"]
+  ]}
+  note="Editorial framework published 2026-11-08. Score each proposal separately; '__' marks where to write the score." />
+
+## Notes on each criterion
+
+### Account ownership
+
+Ownership decides whether the practice can see its own data and keep its history if the relationship ends. Google's platforms are built for this arrangement. In Google Ads, access levels run from email-only through billing, read-only and standard to admin, and Google warns that an account with only one administrator risks losing access if that person becomes unavailable. A Business Profile can have several owners but only one primary owner, and managers cannot add or remove users. In Google Analytics, users can be added at the account or property level, and only an Administrator can add, change or remove users. The practice should hold the top role in each and add the agency as a user.
+
+<SourceNote ids={["google-ads-access-levels", "gbp-owners-managers", "ga4-user-management"]} />
+
+### Fee transparency and ad spend separation
+
+These are scored separately because they fail separately. A proposal can itemise its own fees clearly and still blend media into a single invoice. Ask each agency to show, for one sample month, exactly how much would reach the ad platform. The [growth calculator](/resources/dental-growth-calculator/) keeps the two apart for the same reason: spend buys clicks, fees pay for work, and the cost per attended visit needs both.
+
+### Reporting definitions
+
+A 2 here means the agency can say, in writing, what it will count as an inquiry and how it will learn whether that inquiry became an attended visit. The [metrics glossary](/resources/dental-marketing-metrics/) gives the definitions we use; an agency does not have to use ours, but it should have its own, and they should be specific.
+
+### Case-study evidence
+
+Results without a baseline, a period and a data source cannot be checked. A careful agency will also say what else changed during the period — a new dentist, extended hours, a price change — because those confounders explain part of any result. Absence of case studies is not automatically a zero; an honest "we cannot share client data, here is how we would measure yours" can score 1.
+
+### Contract terms and offboarding
+
+Read the termination clause before the scope. The most expensive contract is often the one you cannot leave. Offboarding should cover more than passwords: website files and content, the domain, call-tracking numbers, conversion tags and the documentation that explains them.
+
+### Specialty knowledge and compliance awareness
+
+Specialty knowledge shows up as questions, not claims. A proposal that asks about chair capacity, insurance participation and how calls are answered is reasoning about your practice; one that leads with a keyword list is reasoning about a template. Compliance awareness is similar. The FTC's rule on consumer reviews prohibits fake reviews, buying reviews of a particular sentiment and certain forms of review suppression. An agency should know this without being asked and should send legal questions to the practice's counsel rather than answer them itself.
+
+<SourceNote ids={["ecfr-16-cfr-465"]} />
+
+## Weighting and totals
+
+The unweighted maximum is 18. If some criteria matter more to you, double them before adding — for example, a dental group that has been through an acquisition may double ownership and offboarding. Decide the weights before you read the proposals, write them down, and apply them to every proposal the same way.
+
+<Checklist title="Running a fair comparison" items={[
+  "Send every agency the same brief: services wanted, locations, capacity, current spend and what you want measured.",
+  "Agree the weights before any proposal arrives.",
+  "Score each proposal independently; if two people score, compare afterwards and discuss the differences.",
+  "Mark any criterion scored 1 because the answer was verbal, and ask for it in writing.",
+  "Disqualify any proposal with a zero on account ownership or on access and offboarding unless it is fixed in writing.",
+  "Run each proposal's spend and fee through the growth calculator using the same conversion assumptions.",
+  "Keep the completed scorecards with the signed contract."
+]} />
+
+## A worked comparison
+
+<Illustrative title="Two invented proposals for a two-office general practice">
+Proposal A quotes one monthly figure covering "SEO, ads and reporting", sets up a new Google Ads account under the agency's login and offers a 12-month term with automatic renewal. Its sample report shows clicks, calls and "leads". It scores: ownership 0, fee transparency 0, spend separation 0, reporting 1, evidence 1, contract 0, offboarding 0, specialty 1, compliance 1 — a total of 4, with two disqualifying zeros.
+
+Proposal B itemises SEO and ads management separately, has ad spend billed by the platform to the practice, will work in the practice's existing accounts, and offers a rolling monthly term after three months with 30 days' notice. Its sample report defines inquiries and asks for monthly booking data from the front desk. It has no case studies to share but explains its measurement method. It scores: ownership 2, fees 2, spend 2, reporting 2, evidence 1, contract 2, offboarding 1 (steps described verbally), specialty 2, compliance 1 — a total of 15.
+
+Proposal B's fee is higher. Run through the growth calculator with the same assumptions, the difference in fee changes the cost per attended visit by a known amount; Proposal A's numbers cannot be checked at all. All details are invented for illustration.
+</Illustrative>
+
+## Using the result
+
+The total is a starting point for negotiation, not a verdict. Take each 1 back to the agency and ask what it would take to make it a 2 in writing; how an agency responds to that request is itself evidence. If you would like a neutral view of where your current marketing stands before you compare proposals, the [Dental Growth Audit](/dental-marketing-audit/) reviews visibility, website conversion, advertising and measurement, and the findings are yours to use with any provider. Our full list of [dental marketing services](/services/) describes what each one involves.

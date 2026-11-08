@@ -1,14 +1,274 @@
 ---
 route: "/resources/dental-marketing-metrics/"
 type: "resource"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
-title: "Dental Marketing Metrics Glossary"
+title: "Dental Marketing Metrics Glossary: From Impression to Collected Revenue"
 navLabel: "Dental Marketing Metrics Glossary"
-metaTitle: "Dental Marketing Metrics Glossary"
-description: "Definitions for dental marketing metrics, from inquiry to collected revenue. A free reference from Alpha Dental Media for dental practice owners and managers."
+metaTitle: "Dental Marketing Metrics Glossary: Definitions and Misuse"
+description: "Plain definitions of dental marketing metrics — impressions to collected revenue, CPC to profit-based ROI — with data sources and common misuse."
+eyebrow: "Reference"
+lede: "One definition for each number in a dental marketing report: what it counts, where the data comes from, and how it is most often misread."
 parent: "/resources/"
-primaryIntent: "Definitions for dental marketing metrics, from inquiry to collected revenue"
+primaryIntent: "dental marketing metrics definitions"
+secondaryQuestions:
+  - "What is the difference between an inquiry, a qualified inquiry and a booking?"
+  - "Is a Google Ads conversion the same as a new patient?"
+  - "What is the difference between ROAS and ROI for a dental practice?"
+  - "What does cost per attended new-patient visit include?"
+  - "Why do Google Ads clicks and Google Analytics sessions not match?"
+audience: "Dental practice owners, practice managers, dental groups and DSOs reading marketing reports"
+sources:
+  - "google-ads-impressions"
+  - "google-ads-clicks"
+  - "google-ads-ctr"
+  - "google-ads-avg-cpc"
+  - "google-ads-conversion-rate"
+  - "google-ads-key-event-conversion"
+  - "google-ads-target-roas"
+  - "ga4-sessions"
+  - "ga4-dimensions-metrics"
+  - "ga4-key-events"
+  - "gbp-performance"
+related:
+  - "/resources/dental-growth-calculator/"
+  - "/blog/dental-marketing-roi/"
+  - "/blog/dental-call-tracking/"
+  - "/services/dental-conversion-tracking/"
+  - "/blog/dental-group-marketing-dashboard/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Platform definitions (impressions, clicks, CTR, average CPC, conversion rate, key events and conversions, ROAS, GA4 sessions and engaged sessions, Business Profile performance metrics) checked against Google Ads Help, Google Analytics Help and Google Business Profile Help pages retrieved 2026-11-08. Practice-side metrics (qualified inquiry, booking, attended visit, new patient, treatment acceptance, collected revenue, contribution margin, profit-based ROI) are editorial working definitions, not platform definitions, and are labelled as such. No benchmarks are given."
 order: 1
+faqs:
+  - q: "Is a Google Ads conversion the same as a new patient?"
+    a: "No. A conversion is whatever action the account has been set up to count, such as a form submission or a call over a set length. It says nothing about whether the person was a new patient, could be served, booked or attended. Treat conversions as inquiries until the practice's own records confirm what happened next."
+  - q: "Why do Google Ads clicks and Google Analytics sessions not match?"
+    a: "They count different things. Google Ads counts a click even if the visitor never reaches the website, and GA4 starts a session only when the page loads and the tag runs, subject to consent. Timeouts, blocked scripts, redirects and tagging errors widen the gap. A small, stable difference is normal; a large or sudden one is worth investigating."
+  - q: "Which metric should a practice owner look at first?"
+    a: "Cost per attended new-patient visit, alongside the count of attended new-patient visits. Together they show whether marketing is producing patients the practice can see at a cost it can afford. Platform metrics such as CTR and CPC explain why that number moves; they are not goals in themselves."
+  - q: "Should agency fees be included in cost per inquiry?"
+    a: "For decisions about whether a channel pays for itself, yes. Report ad spend and management fees as separate lines, then add them, plus tools such as call tracking, into total relevant cost. A cost-per-inquiry figure built from ad spend alone understates what each inquiry actually costs the practice."
 ---
+
+<KeyAnswer>A dental marketing report is only useful if every number in it has one agreed meaning. Platform metrics — impressions, clicks, sessions, conversions — describe attention and actions online. Practice metrics — qualified inquiries, bookings, attended visits, collected revenue — describe what happened at the front desk and in the chair. Most reporting disputes come from treating the first group as if it were the second.</KeyAnswer>
+
+This glossary is the reference other pages on this site link to when they mention a metric. Each entry gives a definition, the data source it normally comes from, and the misuse that most often makes it misleading. Where Google publishes an official definition, we quote its substance and cite it; where a metric only exists inside the practice (a "qualified inquiry", for example), we give the working definition we use in audits and say so.
+
+## How the metrics fit together
+
+The funnel below is the spine of the glossary. Each stage is a smaller number than the one before it, and each transition is controlled by a different part of the business: ads and SEO drive the top, the website drives the middle, and the front desk, schedule and clinical team drive the bottom.
+
+<Funnel title="From impression to collected revenue" steps={[
+  { label: "Impressions", note: "An ad, listing or result was shown" },
+  { label: "Clicks and profile interactions", note: "Someone tapped through, called from the listing or asked for directions" },
+  { label: "Sessions", note: "A visit the website's analytics actually recorded" },
+  { label: "Inquiries", note: "Calls, form submissions and booking attempts that reached the practice" },
+  { label: "Qualified inquiries", note: "Genuine new-patient opportunities the practice can serve" },
+  { label: "Bookings", note: "A first appointment was scheduled" },
+  { label: "Attended visits", note: "The patient arrived for that appointment" },
+  { label: "Treatment acceptance and collected revenue", note: "Recommended treatment accepted and money actually received" }
+]} caption="Stages from impressions to sessions are measured by ad, search and analytics platforms; inquiries are measured by call tracking and form tools; everything after that is measured only by the practice's phone system, CRM or practice management software." />
+
+The practical consequence: an agency can report the top half from its own dashboards, but nobody can report the bottom half without the practice's cooperation. If a report stops at "conversions", it has stopped at the stage where the practice's own records should take over.
+
+## Platform metrics compared with practice metrics
+
+<DataTable caption="What each metric counts, where it comes from, and what it cannot tell you" columns={["Metric", "What it counts", "Typical source", "What it cannot tell you"]}
+  rows={[
+    ["Impressions", "Times an ad or listing was shown", "Google Ads, Search Console, Business Profile", "Whether anyone noticed or wanted the practice"],
+    ["Clicks", "Taps on an ad or result", "Google Ads, Search Console", "Whether the visitor reached the site or stayed"],
+    ["CTR", "Clicks divided by impressions", "Google Ads, Search Console", "Lead quality; a high CTR can come from broad or misleading ads"],
+    ["Sessions", "Recorded visits to the website", "GA4", "Visits from people who block analytics or did not consent"],
+    ["Business Profile interactions", "Calls, direction requests, website clicks, messages, bookings on the profile", "Business Profile performance", "Whether a call connected or a direction request led to a visit"],
+    ["Inquiries", "Calls, forms and booking attempts that reached the practice", "Call tracking, form backend, booking tool", "Whether the person was a new patient the practice can serve"],
+    ["Qualified inquiries", "Inquiries that are genuine new-patient opportunities", "Front-desk or CRM classification", "Whether they booked"],
+    ["Bookings", "First appointments scheduled", "Practice management software", "Whether the patient attended"],
+    ["Attended visits", "First appointments the patient actually kept", "Practice management software", "Treatment value or profit"],
+    ["Collected revenue", "Money received for treatment in a period", "Practice management and accounting", "Profit after clinical costs"],
+    ["Profit-based ROI", "Contribution margin minus total cost, divided by total cost", "Calculated from the above", "Long-term patient value beyond the period measured"]
+  ]}
+  note="Platform definitions from Google Ads, Google Analytics and Business Profile Help, retrieved 2026-11-08. Practice-side rows are working definitions used on this site." />
+
+<SourceNote ids={["google-ads-impressions", "google-ads-ctr", "ga4-sessions", "gbp-performance"]} />
+
+## Visibility metrics
+
+### Impressions
+
+**Definition.** In Google Ads, an impression is counted each time an ad is shown on a search results page or elsewhere on the Google Network. Google notes that sometimes only part of the ad is shown — in Google Maps, for example, possibly just the business name and location.
+
+**Data source.** Google Ads for paid placements; Search Console for organic search results; Business Profile performance for profile views. Each platform counts differently, so impressions from one are not comparable with another.
+
+**Common misuse.** Presenting rising impressions as rising demand. Impressions grow when targeting is widened, a budget is raised or a profile starts appearing for loosely related searches. None of those means more people want a dentist nearby.
+
+<SourceNote ids={["google-ads-impressions"]} />
+
+### Clicks
+
+**Definition.** Google Ads counts a click when someone clicks an ad, including its headline or phone number. Google states that a click is counted even if the person does not reach the website — for instance because the site is temporarily unavailable — which is why ad clicks and website visits often differ. Invalid clicks, such as those from automated tools, are filtered out and not charged.
+
+**Data source.** Google Ads for paid clicks; Search Console for organic clicks.
+
+**Common misuse.** Treating clicks as visits, or call-extension clicks as calls answered. A tap on a phone number shows intent to call, not a connected conversation.
+
+<SourceNote ids={["google-ads-clicks"]} />
+
+### Clickthrough rate (CTR)
+
+**Definition.** Clicks divided by impressions. Google's example: 5 clicks from 100 impressions is a 5% CTR. Google also notes that a good CTR is relative to what is being advertised and on which networks.
+
+**Data source.** Google Ads; Search Console reports an equivalent for organic results.
+
+**Common misuse.** Optimizing for CTR on its own. An ad promising something the practice does not offer, or appearing for searches outside its services, can earn a high CTR and still fill the phone with calls the practice cannot use.
+
+<SourceNote ids={["google-ads-ctr"]} />
+
+## Website and profile engagement metrics
+
+### Sessions
+
+**Definition.** Google Analytics describes a session as a period of time during which a user interacts with a website or app. By default a web session ends after 30 minutes of inactivity. GA4 counts sessions by estimating the number of unique session IDs, and the session start carries the attribution information — click ID, UTM parameters, referrer — used in acquisition reports.
+
+**Data source.** GA4 (or whichever analytics tool is installed).
+
+**Common misuse.** Comparing sessions directly to ad clicks and assuming the gap is fraud or failure. Consent choices, blocked scripts, redirects that strip tagging and the estimation method all move the number. A related trap is "engaged sessions": GA4 defines these as sessions lasting 10 seconds or longer, with at least one key event, or with two or more page views. An engaged session is a reading signal, not an inquiry.
+
+<SourceNote ids={["ga4-sessions", "ga4-dimensions-metrics"]} />
+
+### Business Profile interactions
+
+**Definition.** Google Business Profile performance reports a total of interactions plus individual metrics, including calls (the number of times someone clicked the call button on the profile), direction requests, website clicks, messages and bookings completed through a booking provider. Views count unique viewers, each counted once a day. Google states that performance data includes activity from both organic results and Google Ads, and that it is available only for verified profiles.
+
+**Data source.** Business Profile performance, viewed per profile or downloaded for several locations.
+
+**Common misuse.** Reporting profile "calls" as phone calls received. The metric counts button clicks; a patient who copies the number and dials it is not counted, and one who taps the button and hangs up is. Another misuse is adding profile website clicks to GA4 sessions, which double-counts the same visits. And because the data mixes organic and ad activity, a profile "win" may partly be ad spend.
+
+<SourceNote ids={["gbp-performance"]} />
+
+## Inquiry metrics
+
+### Inquiries: calls, forms and booking attempts
+
+**Definition (working).** An inquiry is a contact attempt that reached the practice: a phone call that connected, a form submission the practice received, or an online booking request. We count the three types separately because they behave differently — calls are often existing patients, forms arrive outside hours, booking attempts may be abandoned midway.
+
+**Data source.** Call tracking or the phone system for calls; the form backend or CRM for forms; the booking provider for booking attempts. Google Ads and GA4 report "conversions" or "key events", which are the platform's record of the actions it was configured to count.
+
+**Common misuse.** Equating platform conversions with inquiries. Google Ads defines a conversion as an action used to measure campaign performance and optimize bidding — whatever the account has been told to count. If the account counts every page view of the contact page, or every tap on a phone number, "conversions" will far exceed real inquiries. Google also notes that conversion rate can exceed 100% when several conversion actions are tracked or every conversion per click is counted. For how to count calls without inflating them, see [measuring dental calls with call tracking](/blog/dental-call-tracking/).
+
+<SourceNote ids={["google-ads-key-event-conversion", "google-ads-conversion-rate", "ga4-key-events"]} />
+
+### Qualified inquiries
+
+**Definition (working).** An inquiry from a prospective new patient whom the practice can serve: the right service, a location within reach, an insurance or payment situation the practice accepts, and a genuine request rather than spam, a vendor call or a wrong number. The practice writes the definition down once and applies it consistently.
+
+**Data source.** A classification made by staff or a CRM after the conversation. It cannot be measured by a browser, and on this site the analytics code deliberately leaves qualification to staff records.
+
+**Common misuse.** Letting each person classify differently, or letting the agency define "qualified" without the practice. If the definition changes month to month, the trend line is meaningless.
+
+### Bookings
+
+**Definition (working).** A first appointment scheduled for a new patient as a result of an inquiry.
+
+**Data source.** Practice management software, matched to the inquiry by name and date during a regular reconciliation — never by sending patient details into ad or analytics platforms.
+
+**Common misuse.** Counting a booking request form as a booking. A request is an inquiry until the practice confirms a time.
+
+## Patient outcome metrics
+
+### Attended visits and new patients
+
+**Definition (working).** An attended visit is a booked first appointment the patient actually kept. A new patient is a person with no prior record at the practice (or, for a group, no prior record at any office — decide which rule applies and state it).
+
+**Data source.** Practice management software.
+
+**Common misuse.** Reporting all new patients as marketing results. New patients arrive through referrals, insurance directories, walk-ins and word of mouth as well as marketing. Attribution needs a source recorded at intake, ideally cross-checked against tracked inquiries.
+
+### Treatment acceptance
+
+**Definition (working).** The share of recommended treatment, by case count or by value, that patients agree to proceed with in the period. Decide in advance whether you are counting cases or dollars.
+
+**Data source.** Practice management software treatment plans.
+
+**Common misuse.** Judging marketing by acceptance alone. Acceptance depends heavily on clinical presentation, financing and scheduling, which marketing does not control — though it does reveal whether campaigns attract people who want the treatments advertised.
+
+### Collected revenue
+
+**Definition (working).** Money actually received for treatment delivered in a defined period, as opposed to production (fees scheduled or charged) or treatment plans presented.
+
+**Data source.** Practice management software and accounting.
+
+**Common misuse.** Using production or treatment-plan value as "revenue". Write-offs, insurance adjustments and unaccepted plans can make those figures far larger than what the practice collects.
+
+## Cost metrics
+
+### Cost per click (CPC)
+
+**Definition.** Google Ads defines average CPC as the total cost of clicks divided by the total number of clicks. It is based on the actual amount charged per click, which can differ from the maximum CPC bid. For example, two clicks costing $0.20 and $0.40 give an average CPC of $0.30.
+
+**Data source.** Google Ads.
+
+**Common misuse.** Choosing campaigns by lowest CPC. Cheap clicks from broad or irrelevant searches can cost more per qualified inquiry than expensive, specific ones. CPC is an input to the calculation, not the result.
+
+<SourceNote ids={["google-ads-avg-cpc"]} />
+
+### Cost per inquiry
+
+**Definition.** Total relevant cost for the channel divided by inquiries in the same period. Total relevant cost means ad spend plus management fees plus channel-specific tools such as call tracking or landing-page software.
+
+**Data source.** Cost from ad platforms and invoices; inquiries from call tracking, forms and booking tools.
+
+**Common misuse.** Reporting the platform's "cost per conversion", which uses ad spend only and counts whatever the account calls a conversion. That figure is a platform diagnostic, not the practice's cost per inquiry.
+
+### Cost per qualified inquiry
+
+**Definition.** Total relevant cost divided by qualified inquiries. It is usually the earliest cost metric that a practice can compare fairly across channels, because it removes spam, existing patients and unserviceable requests.
+
+**Common misuse.** Comparing it across practices or offices with different qualification rules. For multi-office comparisons, see [how to compare offices fairly in a group dashboard](/blog/dental-group-marketing-dashboard/).
+
+### Cost per attended new-patient visit
+
+**Definition.** Total relevant cost divided by attended new-patient visits attributed to the channel in the same period. This is the cost metric closest to what a practice owner is buying.
+
+**Data source.** Costs from invoices and platforms; attended visits from practice management software.
+
+**Common misuse.** Mixing denominators — for example, dividing new-patient ad costs by all attended visits including existing patients, or by visits attributed to referrals. The [dental growth calculator](/resources/dental-growth-calculator/) shows how this number is built from spend and conversion assumptions, and why it only describes new patients if every input does.
+
+## Return metrics
+
+### ROAS (return on ad spend)
+
+**Definition.** Revenue (or another conversion value) divided by ad spend. Google Ads describes target ROAS as the average conversion value, such as revenue, the advertiser wants for each dollar spent on ads, and reports it as conversion value per cost. Its example: a 500% target means 5 dollars of conversion value for every 1 dollar of ad spend.
+
+**Data source.** Google Ads, using conversion values the advertiser supplies; or a calculation from collected revenue and ad spend.
+
+**Common misuse.** Two are common. First, ROAS inside Google Ads is only as true as the conversion values fed into it — if a form fill is given an assumed value, the ROAS is an assumption too. Second, ROAS ignores agency fees and clinical costs, so a practice can show a healthy ROAS and still lose money on the channel.
+
+<SourceNote ids={["google-ads-target-roas"]} />
+
+### Contribution margin
+
+**Definition (working).** Collected revenue minus the direct costs of delivering that treatment — for example lab fees, materials and clinical labor that varies with the work — expressed in dollars or as a percentage of revenue. It is what is left to cover marketing, overhead and profit.
+
+**Data source.** The practice's accountant or management reports. It varies widely by treatment type, which is why a single practice-wide percentage is a rough approximation.
+
+**Common misuse.** Assuming revenue is the same as margin. A treatment with high fees and high lab costs can contribute less than a smaller, simpler one.
+
+### Profit-based ROI
+
+**Definition (working).** Contribution margin from attributed patients minus total relevant marketing cost, divided by total relevant marketing cost. A result of zero means the channel exactly paid for itself in the period; a negative result means it did not.
+
+**Data source.** Calculated from collected revenue, margin and total cost.
+
+**Common misuse.** Measuring over too short a window. First visits often precede the treatment that produces most revenue, so a single month can understate return. Choose the window in advance and keep it fixed. For a fuller treatment of the difference between leads, revenue and profit, read [how to tell leads, bookings, visits, revenue and profit apart](/blog/dental-marketing-roi/).
+
+<Illustrative title="One month, two ways of reporting it">
+A practice spends $3,000 on ads and $1,500 on management in a month. The ad account reports 40 conversions, so the platform shows a cost per conversion of $75. The practice's own records show 28 inquiries that actually reached the front desk, 16 qualified, 9 booked and 7 attended. Using total relevant cost of $4,500, the cost per qualified inquiry is about $281 and the cost per attended new-patient visit is about $643. All of these numbers are invented for illustration — the point is that the same month can be described as "$75 per lead" or "$643 per new patient", and only the second answers the owner's question.
+</Illustrative>
+
+## Getting the definitions agreed
+
+A short written measurement plan prevents most of the problems above. It should state, for each metric the practice cares about: the definition, the system of record, who records it, how often it is reconciled, and which costs are included. Our [conversion tracking and attribution service](/services/dental-conversion-tracking/) starts by writing that plan with the practice before changing any tags. If you want an outside view of what your current reports can and cannot support, the [Dental Growth Audit](/dental-marketing-audit/) reviews measurement alongside visibility, website conversion and advertising.

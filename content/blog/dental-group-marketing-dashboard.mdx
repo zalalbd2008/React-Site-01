@@ -2,14 +2,188 @@
 route: "/blog/dental-group-marketing-dashboard/"
 type: "article"
 category: "dental-groups"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
 title: "A Dental Group Marketing Dashboard That Compares Offices Fairly"
-metaTitle: "A Dental Group Marketing Dashboard That Compares Offices Fa…"
-description: "A Dental Group Marketing Dashboard That Compares Offices Fairly. A practical guide for dental practice owners and managers from Alpha Dental Media."
+metaTitle: "Dental Group Marketing Dashboard: Comparing Offices Fairly"
+description: "How to compare dental offices across markets fairly: normalise by capacity, market size, maturity and service mix, and use cost per attended visit."
+eyebrow: "Dental groups and DSOs"
+lede: "A league table of raw new-patient counts rewards the biggest office in the easiest market. A fair dashboard asks a different question: given what each office can absorb and where it sits, is marketing doing its job?"
 parent: "/blog/"
-primaryIntent: "A Dental Group Marketing Dashboard That Compares Offices Fairly"
-related: ["/services/local-seo-multi-location-clinics/","/services/dental-conversion-tracking/"]
+primaryIntent: "dental group marketing dashboard comparing locations"
+secondaryQuestions:
+  - "How do we compare marketing performance between dental offices in different markets?"
+  - "What is cost per attended visit and why use it?"
+  - "Which marketing metrics are vanity metrics for a dental group?"
+  - "How should a dashboard account for a new or recently acquired office?"
+audience: "Operations directors, marketing leads and finance teams at dental groups and DSOs reviewing marketing across several offices"
+sources:
+  - "google-gbp-performance"
+  - "ga4-key-events"
+  - "google-ads-location-targeting"
+  - "google-search-console-properties"
+  - "census-acs-about"
+  - "ada-hpi-state-level-data"
+related:
+  - "/services/local-seo-multi-location-clinics/"
+  - "/services/dental-conversion-tracking/"
+  - "/resources/dental-marketing-metrics/"
+  - "/blog/dental-marketing-roi/"
+  - "/blog/dental-call-tracking/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Business Profile metric definitions checked against Business Profile Help (performance and insights), GA4 key events against Analytics Help, location targeting options against Google Ads Help, ACS description against Census Bureau and HPI data index against ADA, all retrieved 2026-11-08. All office figures are illustrative; no benchmarks are claimed."
 order: 19
+faqs:
+  - q: "Why not just rank offices by new patients per month?"
+    a: "Because the count mostly reflects how many chairs and provider hours an office has, how long it has been open and how big its market is. An office that is full cannot add patients however good its marketing is. Ranking by raw counts rewards size and penalises offices that are already at capacity or just opened."
+  - q: "What does cost per attended visit include?"
+    a: "Marketing cost attributed to an office over a period, divided by new-patient visits that actually took place in that period from those channels. Define the cost side once — media, management fees, tools — and apply it the same way to every office, or the comparison breaks."
+  - q: "Should Google Business Profile views be on a group dashboard?"
+    a: "As context, not as a performance measure. Google defines profile views as unique viewers on Search and Maps, and the counts include interactions from Google Ads as well as organic results. Views rise and fall with demand and ad spend, so they say little about whether an office is converting attention into visits."
+  - q: "How should a newly acquired office be treated in the comparison?"
+    a: "Put it in a separate maturity band for its first year and compare it with its own baseline from before the acquisition rather than with established offices. Integration changes such as renaming, new phones and new booking systems disrupt its numbers in ways unrelated to marketing quality."
 ---
+
+<KeyAnswer>Compare dental offices on ratios, not totals: cost per attended new-patient visit, the share of qualified inquiries that become attended visits, and new-patient volume relative to open capacity. Then read those ratios within bands of similar market size, office maturity and service mix. Raw counts, profile views and impressions describe size and demand, not marketing performance.</KeyAnswer>
+
+This article is about the comparison problem — how to read several offices side by side without misleading the people who allocate budget. The definitions of individual metrics live in our [dental marketing metrics glossary](/resources/dental-marketing-metrics/), and the difference between leads, bookings, visits, revenue and profit is covered in [dental marketing ROI](/blog/dental-marketing-roi/). Here we assume those definitions are agreed and focus on fairness.
+
+## Why raw totals mislead in a multi-office group
+
+Picture a group dashboard sorted by new patients last month. The top office has twelve operatories and has been open fifteen years. The bottom office opened eight months ago with four operatories in a smaller town. The sort tells you which office is biggest and oldest. It does not tell you whether marketing money is being spent well in either.
+
+Four structural differences drive most of the gap between offices, and none of them is marketing quality:
+
+- **Capacity.** Chairs, provider hours and open new-patient slots cap what any office can absorb. An office with no openings for three weeks will show falling bookings when demand rises.
+- **Market size and competition.** The number of households within a reasonable travel distance, and the number of other practices competing for them, sets the ceiling on demand.
+- **Maturity.** A new or newly acquired office starts with fewer reviews, fewer links and fewer returning referrals. Its trajectory matters more than its level.
+- **Service mix.** An office hosting implant or orthodontic teams attracts different, often more expensive, inquiries than a general office. Its cost per visit will look higher and may still be the better investment.
+
+A fair dashboard either adjusts for these differences or groups offices so that like is compared with like.
+
+## The normalisers and where their data comes from
+
+<DataTable caption="Normalising factors for comparing offices" columns={["Factor", "Practical measure", "Data source", "How to use it"]}
+  rows={[
+    ["Capacity", "Open new-patient appointment slots per week, or provider hours", "Practice management system schedule", "Express new-patient visits as a share of slots offered; flag offices above a utilisation threshold as capacity-constrained"],
+    ["Market size", "Households or population within the office's realistic catchment", "Census American Community Survey estimates", "Group offices into market-size bands rather than dividing by population directly"],
+    ["Competition", "Count of other general and specialist practices nearby; dentist supply context", "Your own local survey; ADA Health Policy Institute state-level data for context", "Use as a band or note, not a precise divisor"],
+    ["Maturity", "Months since opening or acquisition", "Group records", "Bands such as first year, years one to three, established"],
+    ["Service mix", "Share of new-patient inquiries by service line", "Call notes, form fields, PMS appointment types", "Compare general and specialty inquiries separately"],
+    ["Marketing input", "Attributed spend and effort per office", "Ad accounts, invoices, time allocation", "The denominator for cost per attended visit"]
+  ]}
+  note="Choose one method for each factor and apply it to every office; consistency matters more than precision." />
+
+The Census Bureau describes the American Community Survey as releasing new estimates every year on population and household characteristics; those estimates carry margins of error, and small areas rely on multi-year estimates. That makes them suitable for banding offices into small, medium and large catchments, and unsuitable for dividing new-patient counts by an exact population figure.
+
+The ADA Health Policy Institute publishes state-level data on dentist supply, practice modality and dentist migration. State-level figures describe the environment a region operates in; they are not a measure of competition around a specific office, and should not be used as one.
+
+<SourceNote ids={["census-acs-about", "ada-hpi-state-level-data"]} />
+
+## Measure the stages, then compare the ratios between them
+
+Every office passes the same stages: attention, inquiry, qualified inquiry, booked appointment, attended visit. The fair comparisons are the conversion rates between stages and the cost of reaching the end.
+
+<Funnel title="The stages a group dashboard should separate" steps={[
+  { label: "Attention", note: "Search impressions, profile views, ad impressions — context only" },
+  { label: "Inquiry", note: "Answered calls, form submissions, booking attempts attributed to an office" },
+  { label: "Qualified inquiry", note: "A prospective new patient the office could serve, for a service it offers" },
+  { label: "Booked", note: "An appointment created in the practice management system" },
+  { label: "Attended", note: "The visit took place" }
+]} caption="Definitions for each stage belong in the metrics glossary; the dashboard should link to them rather than redefine them." />
+
+The ratios that travel well between offices are:
+
+1. **Qualified share of inquiries.** Low values usually point to targeting or page problems rather than front-desk problems.
+2. **Booking rate of qualified inquiries.** Low values point to phone handling, availability or booking friction.
+3. **Attendance rate of bookings.** Low values point to long lead times, reminders or mismatched expectations.
+4. **Cost per attended new-patient visit.** The summary number that ties spend to an outcome the practice can verify.
+
+Each ratio points to a different owner, which is why a single blended "cost per lead" hides more than it shows. Measuring the call stage without counting every call as a new patient is covered in [dental call tracking](/blog/dental-call-tracking/).
+
+## Cost per attended visit, and why it beats cost per lead
+
+Cost per lead divides spend by inquiries — including wrong numbers, existing patients, job applicants and people asking about services the office does not offer. Cost per attended visit divides the same spend by visits that happened. It is harder to produce, because it requires matching marketing sources to appointments in the practice management system, but it is the number finance and operations can check.
+
+<Illustrative title="Two offices with the same cost per lead">
+Office North and Office South each spent 6,000 on marketing last quarter and each recorded 200 inquiries, so both show a cost per lead of 30.
+
+At North, 130 inquiries were qualified, 90 booked and 78 attended: a cost per attended visit of about 77. At South, 110 were qualified, 55 booked and 40 attended: a cost per attended visit of 150.
+
+South's gap opens at booking. Its schedule shows only a handful of new-patient slots a week, all three weeks out. More marketing spend at South would raise inquiries and cost without raising visits. The fix is capacity or scheduling, not budget — a conclusion the cost-per-lead view would never reveal.
+
+All figures are invented for illustration and are not benchmarks.
+</Illustrative>
+
+## Metrics to demote from the comparison
+
+Some numbers are easy to collect and widely reported, but say little about whether an office's marketing is working. They can stay on a context tab; they should not drive league tables.
+
+| Metric | What it actually counts | Why it misleads in office comparisons |
+|---|---|---|
+| Business Profile views | Unique viewers of the profile on Search and Maps, including activity from Google Ads | Moves with local demand and ad spend; bigger markets produce more views regardless of performance |
+| Profile "calls" | Clicks on the call button in the profile | A button click is not an answered call, let alone a new patient |
+| Website clicks from the profile | Clicks on the website link | Says nothing about what happened on the site |
+| Search impressions | Times a page appeared in results | Driven by market size and query volume; not a visit or an inquiry |
+| Analytics key events | Whatever events the account has been configured to mark as key events | Only as meaningful as the configuration; a page scroll can be a "key event" |
+| Total calls | Every call to the office's lines | Includes existing patients, vendors and repeat calls |
+
+The Business Profile definitions come from Google's help page on performance metrics, which describes views as unique viewers, calls as clicks on the call button, and notes that performance data includes both organic results and Google Ads. Google Analytics' help on key events describes them as events you mark as important; the label says nothing about whether a patient is behind them.
+
+<SourceNote ids={["google-gbp-performance", "ga4-key-events"]} />
+
+## A dashboard layout that reads fairly
+
+One workable starting design separates efficiency from capacity, then adds context around them.
+
+<Matrix title="Reading offices by efficiency and capacity" xLabel="Capacity utilisation (new-patient slots filled)" yLabel="Efficiency (cost per attended visit, inverted)"
+  cells={[
+    { title: "Efficient, room to grow", text: "Marketing converts well and slots are open: candidates for more budget", hot: true },
+    { title: "Efficient, near full", text: "Marketing works but the schedule is the limit: hold spend, address capacity" },
+    { title: "Inefficient, room to grow", text: "Open slots and poor conversion: diagnose pages, targeting and call handling before spending more" },
+    { title: "Inefficient, near full", text: "Rare and usually a data problem: check attribution and definitions" }
+  ]} caption="Cells in reading order: top-left, top-right, bottom-left, bottom-right. Compare offices within the same maturity and market-size bands." />
+
+Around the matrix, keep a small table per band showing the four ratios for each office this period and the same period last year, and a notes column for events that explain changes — a provider leaving, a rename, a new ad campaign. Notes stop the dashboard being read as a verdict.
+
+## Getting clean per-office data
+
+Fair comparison depends on attributing activity to the right office. The plumbing is unglamorous and usually where groups fall short.
+
+<Checklist title="Per-office attribution checks" items={[
+  "Each office has its own location page, and each Business Profile links to that page",
+  "Each office has distinct tracked phone numbers per channel, routing to that office",
+  "Forms and booking tools record which office the patient chose",
+  "Analytics can segment by office path, and Search Console has URL-prefix properties or filters per office section",
+  "Ad campaigns or ad groups map to offices, with location targeting reviewed",
+  "Practice management appointment sources use the same channel names as the marketing reports",
+  "Someone reconciles marketing-reported bookings with PMS appointments each month"
+]} />
+
+Two platform details are worth checking. Search Console's URL-prefix properties can be limited to a path such as an office's section, which makes per-office search data possible on a single domain. And Google Ads lets advertisers target people in or regularly in a location, people who have shown interest in it, or both; an office's campaign set to the broader option may serve ads to people far outside its catchment, inflating its inquiries with unqualified ones.
+
+<SourceNote ids={["google-search-console-properties", "google-ads-location-targeting"]} />
+
+## Common mistakes in group dashboards
+
+- **Comparing a first-year office with established ones.** Use maturity bands, and compare a new office with its own trajectory.
+- **Allocating budget by inquiry volume.** Offices at capacity generate inquiries they cannot serve; more budget there buys frustration.
+- **Inconsistent cost definitions.** If one office's cost includes agency fees and another's covers only media, every ratio is wrong.
+- **Ignoring service mix.** An implant-hosting office will have a higher cost per visit; compare its specialty inquiries with other specialty sites, not with general offices.
+- **No reconciliation with the PMS.** If marketing reports and appointment records disagree, the dashboard is a guess.
+- **Ranking without notes.** A table without context turns a staffing gap into a marketing failure.
+
+## Sources and limitations
+
+Platform metric definitions were checked on 8 November 2026 and can change. No benchmark values are given because none were available from a dated, cited source for dental group offices; thresholds such as "near full" should be set from your own schedule data. Census and ADA data describe areas and states, not individual offices or demand for a particular practice. Attribution of patients to channels is always partial; treat ratios as directional and look for consistent patterns over several months.
+
+## Related next steps
+
+- Our [multi-location SEO service](/services/local-seo-multi-location-clinics/) builds the per-office structure that makes these comparisons possible.
+- Our [dental conversion tracking service](/services/dental-conversion-tracking/) connects calls, forms and bookings to attended visits per office.
+- Check definitions in the [metrics glossary](/resources/dental-marketing-metrics/) and model scenarios with the [dental growth calculator](/resources/dental-growth-calculator/).
+- If your offices were recently restructured, read [the migration guide](/blog/dental-practice-rebrand-seo-migration/) for how changes disrupt baselines, or start with a [Dental Growth Audit](/dental-marketing-audit/) of your current reporting.

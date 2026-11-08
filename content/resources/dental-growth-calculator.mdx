@@ -1,14 +1,141 @@
 ---
 route: "/resources/dental-growth-calculator/"
 type: "resource"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
-title: "Dental Growth Calculator"
+title: "Dental Growth Calculator: Estimate Cost per Attended New-Patient Visit"
 navLabel: "Dental Growth Calculator"
-metaTitle: "Dental Growth Calculator"
-description: "Estimate inquiries, bookings and cost per attended visit from your own assumptions. A free reference from Alpha Dental Media for dental practice owners and man…"
+metaTitle: "Dental Growth Calculator: Cost per Attended New Patient"
+description: "Estimate clicks, inquiries, bookings, attended visits and cost per attended new-patient visit from your own ad spend and conversion assumptions."
+eyebrow: "Tool"
+lede: "Enter your own spend, cost-per-click and conversion assumptions to see how many attended new-patient visits they imply — and what each one costs once fees are included."
 parent: "/resources/"
-primaryIntent: "Estimate inquiries, bookings and cost per attended visit from your own assumptions"
+primaryIntent: "dental marketing funnel and cost per new patient calculator"
+secondaryQuestions:
+  - "How do I estimate cost per new patient from ad spend?"
+  - "Should agency fees be included in cost per patient?"
+  - "What is the difference between ROAS and profit-based ROI?"
+  - "Are the calculator's default numbers dental benchmarks?"
+audience: "Dental practice owners and managers planning or reviewing paid search budgets"
+sources:
+  - "google-ads-avg-cpc"
+  - "google-ads-target-roas"
+related:
+  - "/resources/dental-marketing-metrics/"
+  - "/blog/dental-google-ads-budget/"
+  - "/blog/dental-marketing-roi/"
+  - "/services/dental-google-ads-management/"
+  - "/services/dental-conversion-tracking/"
+cta: "audit"
+published: null
+updated: null
+evidence: "illustrative-only"
+verificationNotes: "Formulas transcribed from src/lib/calculator.ts on 2026-11-08 and the worked examples recalculated by hand. Default inputs are the code's DEMO_INPUTS, which the code itself labels illustrative, not benchmarks. Average CPC and ROAS definitions checked against Google Ads Help on 2026-11-08. No industry benchmark is stated."
 order: 2
+faqs:
+  - q: "Are the calculator's starting numbers typical for dental practices?"
+    a: "No. They are placeholders chosen so the arithmetic is easy to follow, not observed dental-industry benchmarks. Cost per click and conversion rates vary by market, service, season, account structure and how well the practice handles calls. Replace every default with figures from your own ad account and front-desk records."
+  - q: "Why does the calculator ask for agency fees separately?"
+    a: "Because ad spend and management fees are different money. Ad spend buys clicks; fees pay for the work. Keeping them separate lets you see each one, and adding them into total relevant cost stops the cost per attended visit from looking cheaper than it really is."
+  - q: "Why does the result show a dash?"
+    a: "A dash means an input is missing, outside its allowed range, or would require dividing by zero — for example a cost per click of zero, an attendance rate that produces no attended visits, or a revenue field left blank. The calculator shows nothing rather than a misleading number."
+  - q: "Can the calculator forecast what my practice will get?"
+    a: "It shows what your assumptions imply, not what will happen. If the assumptions come from your own recent history, the output is a reasonable planning estimate. If they are guesses, the output is a guess with arithmetic attached. Use it to test which assumption matters most, then measure that one."
 ---
+
+<KeyAnswer>The calculator multiplies your ad spend through a chain of your own conversion assumptions — clicks, inquiries, qualified inquiries, bookings, attended visits — and then divides total relevant cost (ad spend plus fees plus other channel costs) by the attended visits. The result is an estimated cost per attended new-patient visit. The starting values are illustrative, not benchmarks.</KeyAnswer>
+
+## The calculator
+
+<GrowthCalculator />
+
+## How to use it
+
+1. **Start with spend and cost per click from your own account.** Monthly ad spend is what you pay the ad platform. For cost per click, use the average CPC from a recent, representative period in your Google Ads account; Google defines it as the total cost of clicks divided by the number of clicks.
+2. **Enter the four conversion rates as percentages.** Each one applies to the stage before it, not to clicks. If 50% of qualified inquiries book, enter 50 in the booking field — not the percentage of all clicks that book.
+3. **Add every cost tied to the channel.** The management fee goes in its own field. Call tracking, landing-page software and similar tools go in "other monthly cost".
+4. **Optionally add revenue and margin.** Average collected revenue per attended new patient and the contribution margin on it unlock ROAS and profit-based ROI. Leave them blank if you do not have reliable figures.
+5. **Change one assumption at a time.** The useful question is usually "which rate moves the result most?" — that is the one to measure properly first.
+
+<SourceNote ids={["google-ads-avg-cpc"]} />
+
+If your rates come from a period with tracking problems — calls not recorded, forms counted twice — the result inherits those problems. The [metrics glossary](/resources/dental-marketing-metrics/) defines each stage so that the numbers you enter mean the same thing every month.
+
+## The formulas
+
+Every output is calculated from the inputs above it. Rates are entered as percentages and divided by 100 before use.
+
+<DataTable caption="How each output is calculated" columns={["Output", "Formula", "Unit"]}
+  rows={[
+    ["Estimated clicks", "Monthly ad spend ÷ assumed average cost per click", "clicks per month"],
+    ["Estimated inquiries", "Clicks × inquiry rate", "inquiries per month"],
+    ["Estimated qualified inquiries", "Inquiries × qualification rate", "qualified inquiries per month"],
+    ["Estimated bookings", "Qualified inquiries × booking rate", "first appointments per month"],
+    ["Estimated attended visits", "Bookings × attendance rate", "attended first visits per month"],
+    ["Total relevant cost", "Ad spend + agency or management fee + other channel cost", "USD per month"],
+    ["Cost per qualified inquiry", "Total relevant cost ÷ qualified inquiries", "USD"],
+    ["Cost per attended new-patient visit", "Total relevant cost ÷ attended visits", "USD"],
+    ["Estimated collected revenue", "Attended visits × average collected revenue per attended new patient", "USD per month"],
+    ["ROAS", "Estimated collected revenue ÷ ad spend", "multiple, shown as ×"],
+    ["Profit-based ROI", "(Revenue × contribution margin − total relevant cost) ÷ total relevant cost", "percent"]
+  ]}
+  note="Matches the calculation code used by the tool on this page as of 2026-11-08." />
+
+Results are shown to one decimal place for counts below clicks, because fractional patients are a normal feature of averages: a monthly estimate with a decimal describes an expected rate over many months, not a part of a patient.
+
+## Working through the illustrative defaults
+
+<Illustrative title="The calculator's starting values, step by step">
+With $3,000 of ad spend and an assumed $6 cost per click, the calculator estimates 500 clicks. An 8% inquiry rate gives 40 inquiries; 60% qualified gives 24 qualified inquiries; 55% booked gives 13.2 bookings; 80% attendance gives about 10.6 attended visits. Adding a $1,500 management fee makes total relevant cost $4,500. That is $187.50 per qualified inquiry and about $426 per attended new-patient visit.
+
+Now add an assumed $800 of collected revenue per attended new patient and a 40% contribution margin. Estimated revenue is about $8,448, so ROAS is about 2.8×. But contribution margin is about $3,379, which is less than the $4,500 total cost, so profit-based ROI is about −25% for the month.
+
+Every figure here is an illustrative placeholder, not a dental benchmark.
+</Illustrative>
+
+The second half of the example is the reason the calculator shows both return measures. A ROAS above 1 looks like the channel "makes money"; the profit view shows that, on these assumptions and in this one-month window, it does not cover its own cost.
+
+## Ad spend versus agency fees
+
+Ad spend is paid to the platform and buys clicks. A management fee is paid to whoever runs the account. The calculator keeps them in separate fields for three reasons:
+
+- **Transparency.** You should always be able to see how much of the budget reached the ad platform. If a proposal bundles the two into one figure, ask for the split — the [agency comparison scorecard](/resources/dental-agency-comparison-scorecard/) treats this as a scored criterion.
+- **Different behaviour.** Raising spend changes clicks; raising fees does not. Keeping them apart shows how the cost per attended visit responds to each.
+- **Honest unit costs.** Cost per attended visit uses total relevant cost. A figure built from ad spend alone would understate what each patient cost the practice.
+
+## ROAS versus profit-based ROI
+
+ROAS divides revenue by ad spend only. Google Ads describes its version as conversion value per cost — the average conversion value, such as revenue, per dollar spent on ads — and that value is whatever the advertiser reports. Profit-based ROI subtracts total relevant cost from contribution margin, so it accounts for fees, tools and the direct cost of the treatment.
+
+<SourceNote ids={["google-ads-target-roas"]} />
+
+Use ROAS to compare campaigns inside one account where fees and margins are constant. Use profit-based ROI to decide whether the channel is worth funding. For the reasoning behind that distinction, read [how to tell leads, bookings, visits, revenue and profit apart](/blog/dental-marketing-roi/).
+
+## Assumptions built into the model
+
+- **A single average cost per click.** Real accounts have many CPCs; the average hides the mix. A shift toward more expensive terms changes the result even if the average you entered does not.
+- **Stages are sequential and independent.** The model assumes each rate applies to the stage before it and does not change as volume changes. In practice, more spend often reaches less specific searches, so inquiry and qualification rates can fall as budget rises.
+- **One month, one channel.** All inputs are monthly and refer to the same channel. Mixing a quarterly fee with monthly spend, or organic inquiries with paid costs, distorts every output.
+- **New patients only.** Cost per attended visit describes new patients only if every input refers to new-patient activity. If your inquiry rate includes existing patients calling to reschedule, the output will look better than reality.
+- **Capacity is not modelled.** The calculator will estimate any number of attended visits, including more than the schedule can absorb. Check new-patient appointment availability before acting on any increase.
+
+## Limitations
+
+The calculator does not account for revenue that arrives after the first visit, patient lifetime value, seasonality, conversion lag between click and appointment, or the effect of organic visibility and referrals on paid results. It does not model Google Ads auction dynamics; you cannot buy a fixed number of clicks at a fixed price. It cannot tell you what your rates should be — only what your rates imply. To set a budget from targets rather than estimate outcomes from a budget, see [setting a dental ad budget from qualified inquiries and attended visits](/blog/dental-google-ads-budget/).
+
+## How missing values and zero denominators are handled
+
+The calculator shows a dash rather than a number whenever the arithmetic would be meaningless:
+
+- **Cost per click of zero.** Clicks cannot be estimated, so every downstream count shows a dash and the field displays an error.
+- **Any rate outside 0–100, or a negative cost.** That field is flagged and the outputs that depend on it show a dash. An invalid cost is excluded from total relevant cost.
+- **Zero attended visits or zero qualified inquiries.** The matching cost-per figure shows a dash instead of dividing by zero.
+- **Zero ad spend.** ROAS shows a dash because there is no spend to divide by.
+- **Zero total cost, or revenue or margin left blank.** Profit-based ROI and, where relevant, revenue and ROAS show a dash.
+
+Blank optional fields are treated as "not provided", not as zero.
+
+## Using the result
+
+The most useful output is often not the final cost but the sensitivity: because the stages multiply, halving the booking rate halves attended visits — the same effect on cost per attended visit as doubling the cost per click, and fixing call handling requires no extra media spend. Our [Google Ads management](/services/dental-google-ads-management/) work starts from the same chain, and [conversion tracking](/services/dental-conversion-tracking/) is what replaces the assumptions with measured rates. If you would like the rates in your own funnel checked against your accounts and front-desk records, the [Dental Growth Audit](/dental-marketing-audit/) covers measurement and advertising together.

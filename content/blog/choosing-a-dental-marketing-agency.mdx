@@ -2,14 +2,195 @@
 route: "/blog/choosing-a-dental-marketing-agency/"
 type: "article"
 category: "reputation-strategy"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
 title: "Choosing a Dental Marketing Agency: Ownership, Fees, Reporting and Evidence"
-metaTitle: "Choosing a Dental Marketing Agency: Ownership, Fees, Report…"
-description: "Choosing a Dental Marketing Agency: Ownership, Fees, Reporting and Evidence. A practical guide for dental practice owners and managers from Alpha Dental Media."
+metaTitle: "Choosing a Dental Marketing Agency: Questions to Ask"
+description: "The questions that separate dental marketing agencies: who owns your accounts and website, fees versus ad spend, contract exits, reporting and how to check case studies."
+eyebrow: "Reputation and strategy"
+lede: "Most agency proposals look alike on the surface. The differences that matter show up when you ask who owns what, where the money goes, how you leave, and what the evidence behind a result actually is."
 parent: "/blog/"
-primaryIntent: "Choosing a Dental Marketing Agency: Ownership, Fees, Reporting and Evidence"
-related: []
+primaryIntent: "how to choose a dental marketing agency"
+secondaryQuestions:
+  - "Who should own the Google Ads account, Business Profile, domain and website?"
+  - "How should agency fees be separated from ad spend?"
+  - "What contract terms should a dental practice check?"
+  - "What should a monthly dental marketing report include?"
+  - "How can a practice check an agency's case-study claims?"
+audience: "Practice owners, managers and dental group leads comparing marketing agencies or replacing a current provider"
+sources:
+  - "google-ads-access-levels"
+  - "google-ads-manager-ownership"
+  - "google-gbp-eligibility"
+  - "google-gbp-owners-managers"
+  - "ga4-access-roles"
+  - "search-console-permissions"
+  - "icann-registrant-rights"
+  - "google-hiring-seo"
+  - "ftc-endorsement-guides"
+related:
+  - "/resources/dental-agency-comparison-scorecard/"
+  - "/services/"
+  - "/dental-marketing-audit/"
+  - "/our-process/"
+  - "/blog/dental-marketing-roi/"
+  - "/case-studies/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Account ownership and access mechanics checked against Google Ads Help, Google Business Profile Help, Google Analytics Help and Search Console Help on 2026-11-08; registrant rights against ICANN; hiring questions against Google Search Central 'Do you need an SEO?' (last updated 2026-06-05); testimonial representativeness against 16 CFR 255.2 on eCFR (current as of 2026-11-05). No fee levels or contract norms are stated because no dated source supports them."
 order: 27
+faqs:
+  - q: "Is it a red flag if an agency wants to own our Google Ads account?"
+    a: "It is a reason to ask more questions. Google lets a manager account own a client account, and a manager that creates an account becomes its owner automatically. Ask that the account be created under a practice-owned login, or that the contract commits to transferring admin control and full history at the end."
+  - q: "Should agency fees be a percentage of ad spend?"
+    a: "It is a common structure, but it rewards spending more rather than spending well. Whatever the structure, the proposal should show the management fee and the media budget as separate lines, state who pays Google, and say whether any markup is applied to media."
+  - q: "How do we check whether an agency's case study is real?"
+    a: "Ask for the baseline period, the measurement period, the data source, how a lead was defined and whether the client agreed to be named. Ask to speak to the client. A result that cannot be explained at that level should carry little weight in your decision."
+  - q: "What should we get back if we leave an agency?"
+    a: "Admin access to every account in the practice's name, the website files or CMS ownership, content you paid for, the domain, call-tracking numbers or a plan to port them, and an export of reports and conversion settings. Put this handover list in the contract before you sign."
+  - q: "Do we need a dental-specific agency?"
+    a: "Not necessarily, but the agency should understand dental realities: insurance questions on the phone, new-patient capacity, practice management system data, specialty referral patterns and patient privacy. Ask how they would measure attended visits, not just leads. The answer shows quickly whether they understand the business."
 ---
+
+<KeyAnswer>Ask five sets of questions before you sign: who owns the ad account, Business Profile, domain, website and analytics; how the agency fee is separated from ad spend; what the contract says about length, notice and handover; what the monthly report measures beyond clicks and leads; and what evidence sits behind any result they show you, including baseline, dates, definitions and client permission.</KeyAnswer>
+
+Comparing agencies on the services they list rarely helps; most proposals list similar ones. The differences that cost practices money appear later, when a contract ends and the ad account turns out to belong to the agency, or when a report shows "leads" climbing while the schedule looks the same. This guide sets out the questions that surface those differences early. When you are ready to score proposals side by side, use the [dental agency comparison scorecard](/resources/dental-agency-comparison-scorecard/); this article explains why each question matters.
+
+## Start with ownership: what the practice should control
+
+The single most useful question is: **if we end this relationship, what do we keep?** The answer depends on who owns each account, not on goodwill at the time.
+
+<DataTable caption="Practice marketing assets: who should control them and what to check" columns={["Asset", "Who should hold top-level control", "What the agency needs", "What to check"]}
+  rows={[
+    ["Google Ads account", "The practice, through its own login with Admin access", "Standard or Admin user access, or a manager-account link", "Who created the account, which manager account owns it, who pays Google"],
+    ["Google Business Profile", "The practice as primary owner", "Manager access", "Primary owner email; that no profile was created under an agency login"],
+    ["Domain name", "The practice or its owner as registrant", "DNS changes, granted on request", "Registrant name on the registration and the registrar account login"],
+    ["Website and hosting", "The practice, under a written assignment of the site files and content", "Editor or developer access", "Whether the site is on a proprietary platform that cannot be exported"],
+    ["Analytics and Search Console", "The practice as Administrator and verified owner", "Editor or full-user access", "Who holds Administrator and verified-owner roles"],
+    ["Call-tracking numbers", "Agreed in writing; ideally the practice's account or a porting commitment", "Configuration access", "What happens to the numbers printed in ads and listings when you leave"]
+  ]}
+  note="Roles named as described in Google's help documentation on 2026-11-08. Product role names may change." />
+
+### Google Ads: user access versus ownership
+
+Google Ads separates access levels (Email-only, Billing, Read-only, Standard and Admin) from the ownership a manager account can hold. A client account can have only one owner manager account. If a manager account creates a new client account, it becomes the owner automatically; if it links an existing account, it does not own it unless the client enables that. Google notes that the client account still owns its data and can remove ownership access. Google also recommends having more than one admin so that access is not lost if one person becomes unavailable.
+
+<SourceNote ids={["google-ads-access-levels", "google-ads-manager-ownership"]} />
+
+For a practice, that translates into two requests: the account is created under, or transferred to, a practice login with Admin access, and the practice keeps at least two admins of its own.
+
+### Business Profile: agencies are authorized representatives
+
+Google's Business Profile rules call a third-party SEO or marketing company an authorized representative, not an owner. They say representatives should never claim a profile without the owner's express consent, should transfer ownership to the business owner immediately on request, and should encourage the owner to own the profile and add representatives as managers. They also say the website on a profile should be one the business owner can verify, and that website content must be owned and managed by the business owner. A profile can have several owners but only one primary owner, and managers can do most things except add or remove users and delete the profile.
+
+<SourceNote ids={["google-gbp-eligibility", "google-gbp-owners-managers"]} />
+
+### Analytics, Search Console and the domain
+
+In Google Analytics, the Administrator role has full control, including managing users; Editor has full control of settings but cannot manage users. Search Console distinguishes verified owners, delegated owners, full users and restricted users, and every property must keep at least one verified owner. For domains, ICANN's registrant rights page says the registrant is entitled to review its registration agreement and to information about transfer and renewal, and is responsible for keeping contact data accurate. A domain registered in an agency's name puts all of that in someone else's hands.
+
+<SourceNote ids={["ga4-access-roles", "search-console-permissions", "icann-registrant-rights"]} />
+
+## Fees versus ad spend: where the money goes
+
+Ask for the proposal to separate three things: the agency's fee, the media budget paid to Google or other platforms, and any one-off costs such as setup, website builds or tracking. Then ask:
+
+- **Who pays the platform?** Paying Google directly from the practice's card keeps billing history in the practice's account and makes spend visible.
+- **Is any markup applied to media?** If the agency pays the platform and re-bills you, the invoice should show the platform cost separately.
+- **How is the fee calculated?** Flat retainers, percentage-of-spend fees and project fees all exist. A percentage-of-spend fee is simple, but it gives the agency a reason to raise spend; a flat fee does not adjust when scope genuinely grows. Neither is wrong; the point is to know which incentive you are buying.
+- **What is included?** Count the hours or deliverables, not the service names. "SEO" can mean a monthly report or a substantial content and technical program.
+
+We do not publish typical fee levels here because we have no dated, representative source for them. The [dental SEO cost guide](/blog/dental-seo-cost/) covers how to compare SEO proposals on scope, and the [ad budget guide](/blog/dental-google-ads-budget/) covers how to size media spend from capacity.
+
+## Contract terms that decide what happens when you leave
+
+Read the exit clauses first. They are where the ownership answers above become enforceable.
+
+<Checklist title="Contract terms to confirm before signing" items={[
+  "Minimum term and notice period, stated in plain dates",
+  "What fees, if any, are due on early termination",
+  "A written handover list: account admin access, website files or CMS export, domain, content, reports and conversion settings",
+  "Assignment of rights in content, design and photography the practice paid for",
+  "What happens to call-tracking numbers used in ads and listings",
+  "Who may make changes to the website, profile and ad accounts, and whether changes are logged",
+  "How patient information is handled, if any is ever shared, and a business associate agreement where your counsel says one is needed",
+  "Which person at the agency is accountable for the account"
+]} />
+
+A long minimum term is not automatically a problem; SEO work in particular takes time to show results, as explained in [how long dental SEO takes](/blog/how-long-dental-seo-takes/). But a long term combined with agency-owned accounts and no handover list leaves the practice with little leverage. Have your own counsel review the agreement; this article is not legal advice.
+
+## Reporting: what a useful monthly report contains
+
+A useful report answers "what happened to new patients and why", not "what did the dashboards say". Ask to see a sample report, with the client's details removed, before you sign.
+
+The report should keep these measures separate, because each one can move independently:
+
+1. Visibility and traffic (search impressions, map views, sessions).
+2. Inquiries (calls, forms, booking attempts) with definitions of what counts.
+3. Qualified inquiries (new patients asking for a service you offer, in your area).
+4. Booked appointments and attended first visits, reconciled with the practice management system.
+5. Spend, by channel, and cost per attended visit where the data supports it.
+6. What changed in the account that month, and what is planned next.
+
+If an agency reports only the top two layers, ask how they would get to the others. Our guide to [dental marketing ROI](/blog/dental-marketing-roi/) explains why the gap between leads and attended visits is where most misleading reports live, and the [metrics glossary](/resources/dental-marketing-metrics/) gives working definitions.
+
+## Expertise: who will actually do the work
+
+Google's own advice on hiring an SEO is a useful baseline for any marketing agency. It suggests interviewing the provider about examples of previous work, whether they follow Google Search Essentials, what results they expect and over what timeframe, how they measure success, their experience in your industry and location, and whether they will explain every change they make. It also advises checking business references, granting only read access to Search Console during an audit, and being wary of anyone claiming a special relationship with Google or promising a first-place ranking, which Google says no one can do.
+
+<SourceNote ids={["google-hiring-seo"]} />
+
+For a dental practice, add questions that test understanding of the business rather than the channels:
+
+- How would you handle calls that ask about insurance we do not accept?
+- How would you change campaigns if our hygiene schedule is full for three weeks?
+- Which data from our practice management system would you need, and how would you avoid receiving patient-level information you do not need?
+- Who on your team writes clinical service pages, and who checks them with the dentist?
+- What would you advise us *not* to spend on?
+
+## Evidence: how to check an agency's case-study claims
+
+Case studies are the hardest claims to assess because the reader rarely sees the underlying data. The FTC's endorsement guides note that a featured customer experience is likely to be read as representative of what customers generally achieve, and that without substantiation for that, the advertiser should clearly disclose what people can generally expect. You do not need to apply the law to an agency's pitch deck to use the same test: is this result typical, and how would I know?
+
+<SourceNote ids={["ftc-endorsement-guides"]} />
+
+<Checklist title="Questions to ask about any case study" items={[
+  "Did the client give permission to publish, and can we speak to them?",
+  "What were the baseline and measurement periods, with dates?",
+  "What exactly was done, and what else changed at the practice at the same time?",
+  "Where does each number come from: an ad platform, analytics, call tracking or the practice management system?",
+  "How was a lead defined, and were duplicates, existing patients and spam removed?",
+  "Are traffic, calls, qualified leads, booked visits, attended visits and revenue reported separately?",
+  "Is the result typical of the agency's clients, or the strongest example?",
+  "What would the agency say did not work?"
+]} />
+
+A percentage change with no baseline, no dates and no definition tells you almost nothing.
+
+<Illustrative title="Two ways to read the same headline">
+A slide says "Leads up 200%". At practice A, monthly form submissions went from 3 to 9, and 4 of the 9 were existing patients asking to reschedule. At practice B, tracked calls went from 300 to 900 after a tracking number was added to every page, so calls that already happened were simply being counted for the first time. Neither version says whether a single additional patient attended an appointment. Both practices are invented for illustration.
+</Illustrative>
+
+Our own [results and case study standards](/case-studies/) describe what we require before publishing any result.
+
+## Tradeoffs and common mistakes when choosing an agency
+
+| Common mistake | Why it costs the practice | Better approach |
+|---|---|---|
+| Choosing on the lowest monthly fee | Scope and ownership differ more than price; cheap scope can still be expensive | Compare deliverables, hours and ownership terms line by line |
+| Accepting agency-created accounts | History and control may stay with the agency at exit | Create accounts under practice logins and add the agency as a user |
+| Judging on a sample report full of traffic charts | Traffic rarely reflects bookings or attendance | Ask how the report reaches attended visits |
+| Trusting a case study without dates or definitions | The result cannot be compared with your situation | Ask the evidence questions above and request a reference call |
+| Signing without a handover list | Leaving becomes slow and costly | Write the list into the contract |
+| Ignoring practice-side dependencies | No agency can fix unanswered phones or a full schedule | Agree what the practice commits to: call handling, approvals, access |
+
+## Sources and limitations
+
+Platform mechanics reflect Google Ads Help, Google Business Profile Help, Google Analytics Help, Search Console Help and Google Search Central, retrieved 8 November 2026; ICANN's registrant rights page; and the FTC endorsement guides at 16 CFR Part 255 as published on eCFR. Google can rename roles or change ownership features without notice. This article does not state typical fees or contract lengths because we found no dated, representative source. Nothing here is legal advice; have counsel review any agency agreement.
+
+## Next steps
+
+Score each proposal with the [agency comparison scorecard](/resources/dental-agency-comparison-scorecard/), and read [how we work](/our-process/) to see how we answer these questions ourselves. You can review the full list of [dental marketing services](/services/) we offer, or request a [Dental Growth Audit](/dental-marketing-audit/) to get an independent view of your current accounts, ownership and measurement before you choose.

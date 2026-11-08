@@ -2,14 +2,185 @@
 route: "/blog/dental-group-location-pages/"
 type: "article"
 category: "dental-groups"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
-title: "Useful Dental Group Location Pages Without Repeated Content"
-metaTitle: "Useful Dental Group Location Pages Without Repeated Content"
-description: "Useful Dental Group Location Pages Without Repeated Content. A practical guide for dental practice owners and managers from Alpha Dental Media."
+title: "How to Write Dental Group Location Pages That Are Not Copies of Each Other"
+metaTitle: "Dental Group Location Pages Without Repeated Content"
+description: "What genuinely differs between dental offices, how to collect it, and how to build location pages that avoid Google's doorway pattern without padding."
+eyebrow: "Dental groups and DSOs"
+lede: "A location page earns its place when it answers questions only that office can answer: who works there, when it is open, what it offers, which plans it takes and how to get in the door."
 parent: "/blog/"
-primaryIntent: "Useful Dental Group Location Pages Without Repeated Content"
-related: ["/services/local-seo-multi-location-clinics/"]
+primaryIntent: "dental group location pages without duplicate content"
+secondaryQuestions:
+  - "What should be on a dental office location page?"
+  - "Are near-identical location pages a problem for Google?"
+  - "How do we keep location details accurate across many offices?"
+  - "Should location pages have structured data?"
+audience: "Marketing leads and office managers at dental groups and DSOs responsible for location pages"
+sources:
+  - "google-spam-policies"
+  - "google-helpful-content"
+  - "google-seo-starter-guide"
+  - "google-gbp-guidelines"
+  - "google-local-business-structured-data"
+  - "schema-org-dentist"
+related:
+  - "/services/local-seo-multi-location-clinics/"
+  - "/blog/multi-location-dental-website-structure/"
+  - "/blog/structured-data-for-dental-websites/"
+  - "/resources/dental-website-audit-checklist/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Doorway and scaled content wording checked against Google Spam policies (last updated 2026-08-28); people-first questions against Creating helpful content (2026-10-05); website/phone and chain naming rules against Business Profile guidelines; LocalBusiness doc (2026-09-08) and Schema.org Dentist type, all retrieved 2026-11-08. Page examples are illustrative."
 order: 17
+faqs:
+  - q: "How long should a dental location page be?"
+    a: "As long as the office-specific facts require and no longer. Google's own starter guide says there is no magical word count. A page with complete providers, hours, services, insurance, access and booking details will usually be substantial; padding it with generic paragraphs about the city adds length without adding anything a patient can use."
+  - q: "Can location pages share any text?"
+    a: "Yes. Policies, payment options and descriptions of services that are identical across offices can live on shared pages that every location page links to, or in short shared blocks. The problem is when the shared material is the page and the office-specific facts are a name and address swapped into a template."
+  - q: "Should we create pages for nearby towns where we have no office?"
+    a: "Generally no. A page for a town with no office tends to say little beyond the town's name and a link to the nearest location, which matches Google's examples of doorway abuse. Mention the areas an office genuinely serves on that office's page, with real travel and access details, instead."
+  - q: "Who should keep location page details current?"
+    a: "The office manager should own the facts and report changes before they happen; central marketing should own the template and publish updates. Set a fixed review cycle, such as quarterly, plus immediate updates for hours, provider or insurance changes, and keep the Business Profile updated in the same step."
+  - q: "Does each location page need its own structured data?"
+    a: "It is reasonable to mark up each office with LocalBusiness or the more specific Dentist type, describing that office's own address, phone and hours. The markup must match what the page visibly shows. Structured data supports a good page; it does not compensate for a page that lacks real office details."
 ---
+
+<KeyAnswer>A useful dental location page is built from facts that differ by office: the dentists and hygienists who work there, opening hours, which services are offered at that site, insurance and payment arrangements, parking and accessibility, languages spoken, and the booking route. Shared material belongs on shared pages. If a page stays true after swapping the city name, it is a template, not a location page.</KeyAnswer>
+
+This guide assumes your group has already decided its website structure — usually one domain with a location section. If not, start with [choosing between subfolders, subdomains and separate domains](/blog/multi-location-dental-website-structure/). Here the question is narrower: what goes on each office's page so that it is useful to a patient and distinct from its siblings.
+
+## Why near-identical location pages are a risk
+
+Google's spam policies define doorway abuse as sites or pages created to rank for specific, similar search queries that lead users to intermediate pages that are not as useful as the final destination. Two of the listed examples apply directly to groups: "having multiple domain names or pages targeted at specific regions or cities that funnel users to one page" and "creating substantially similar pages that are closer to search results than a clearly defined, browseable hierarchy."
+
+The same document describes scaled content abuse as many pages generated primarily to manipulate rankings rather than help users, "no matter how it's created" — a template with a city name swapped in qualifies as easily as AI-generated text.
+
+<SourceNote ids={["google-spam-policies"]} />
+
+A group with real offices is not running a doorway scheme simply by having location pages. The risk appears when the pages contain nothing that distinguishes one office from the next, so that each page exists mainly to catch a city search. Google's guidance on people-first content asks whether content is created primarily to attract search visits and whether it is mass-produced across many pages; a block of identical location pages invites both questions.
+
+<SourceNote ids={["google-helpful-content"]} />
+
+## The city-swap test
+
+Before writing or auditing a location page, apply a simple test. Copy the page, replace the office name and city with another office's, and read it again. Every sentence that is still true is template text. Every sentence that becomes false is office-specific.
+
+A strong page fails the swap test almost everywhere outside the shared navigation. A weak page passes it almost everywhere. Scoring a few pages this way gives a quick, honest view of how much of a location section is genuinely local.
+
+<DataTable caption="City-swap audit: classify each block on the page" columns={["Page block", "Still true after the swap?", "Classification", "Action"]}
+  rows={[
+    ["Intro paragraph about caring for families", "Yes", "Template", "Replace with a two-sentence summary of what this office offers and who it suits"],
+    ["Provider list with photos and roles", "No", "Office-specific", "Keep; check it is current"],
+    ["Opening hours", "Usually no", "Office-specific", "Keep; sync with Business Profile"],
+    ["List of every service the group offers", "Yes", "Template", "Replace with services actually available at this office; link the rest to other offices"],
+    ["Paragraph about the city's history or attractions", "No, but irrelevant", "Padding", "Remove; replace with access and parking details"],
+    ["Insurance and payment notes", "Depends", "Mixed", "State this office's arrangements; link to a shared payment page"],
+    ["Booking button", "Yes if it goes to a generic form", "Template", "Route to this office's schedule or pre-select the office"]
+  ]}
+  note="The rows are an illustrative audit template, not observations of any particular site." />
+
+## What genuinely differs from office to office
+
+The facts below are the raw material of a location page. Most groups have them already — scattered across the practice management system, HR records, the phone system and office managers' memories. The work is collecting them in one place.
+
+### People
+
+Which dentists, specialists and hygienists see patients at this office, on which days, and in what roles. If a specialist visits two days a month, say so. Provider bios can live on their own pages and be linked from every office they work at, so the bio is written once.
+
+### Hours and availability
+
+Regular opening hours, early or late days, Saturday sessions, holiday closures, and how emergencies are handled outside hours at this office. Hours must match the office's Business Profile; a mismatch is one of the most common errors patients report.
+
+### Services offered at this site
+
+Not every office offers every service. Some host the group's implant or orthodontic team; others refer onward. List what is available at this office and link to the office that offers the rest. This also stops the page claiming services a patient cannot get there.
+
+### Insurance and payment
+
+Which plans the office is in network with, if that varies, and any office-specific payment arrangements. Where arrangements are group-wide, link to one shared page rather than repeating it on every location page. Keep the wording factual and current; out-of-date insurance lists produce wasted calls.
+
+### Access
+
+Parking (lot, garage, street, validation), public transport stops, building entrance and floor, lift access, step-free routes, and anything a first-time visitor needs to find the door. This is the content most often missing and most often asked about on the phone.
+
+### Languages
+
+Which languages are spoken by front-desk staff or providers, and on which days. Only state what is reliably available; a language listed but not staffed creates a worse experience than not listing it.
+
+### Booking route
+
+Where the "book" or "call" action goes for this office: its own phone line or tracking number, its own online schedule, or a form with the office pre-selected. Google's Business Profile guidelines ask that the phone number and website on a profile represent the individual location, so the location page is usually the right website link for each profile.
+
+<SourceNote ids={["google-gbp-guidelines"]} />
+
+## A page structure that leads with office facts
+
+Order matters. A patient arriving from a map result wants to confirm they have the right office, then decide whether it suits them, then act. A workable order:
+
+<Checklist title="Location page anatomy, in reading order" items={[
+  "Office name, address, phone and a book button for this office, visible without scrolling on a phone",
+  "Today's hours and a link to the full schedule, including emergency handling out of hours",
+  "Two or three sentences on what this office offers and who it suits, written for this office only",
+  "Providers who practise here, with links to their bios and the days they are in",
+  "Services available at this office, with links to service pages and to sister offices for services not offered here",
+  "Insurance and payment arrangements specific to this office, linking to shared payment information",
+  "Parking, transport, entrance and accessibility details",
+  "Languages spoken and when",
+  "Photos of the actual office exterior, entrance and treatment areas",
+  "Links to nearby sister offices and back to the location hub"
+]} />
+
+Shared content — how a new-patient visit works, financing, privacy notices — sits on shared pages linked from this structure. That keeps location pages focused and means a policy change is made once.
+
+## A worked comparison of two offices
+
+<Illustrative title="Two offices in the same group, written properly">
+Office A is in a suburban retail centre. Its page says: three general dentists and two hygienists; open until 7pm Tuesday and Thursday and on alternate Saturdays; the group's orthodontist sees patients here on the first and third Wednesday; free surface parking at the front with a step-free entrance; front-desk staff speak English and Spanish; booking goes to Office A's online schedule.
+
+Office B is on the fourth floor of a medical building downtown. Its page says: two general dentists and one periodontist; open 7am to 4pm weekdays, closed weekends; implant consultations are held here, orthodontics is referred to Office A; garage parking with validation, lift from the garage level, nearest rail stop a five-minute walk; English and Vietnamese spoken on Mondays and Fridays; booking goes to a request form with Office B pre-selected.
+
+Neither page mentions the city's history. Both are distinct without a single sentence of padding. All details above are invented for illustration.
+</Illustrative>
+
+## Collecting and maintaining the data
+
+Location facts go stale. Providers change offices, hours change for summer, an insurance contract ends. A page that was accurate at launch can mislead within months. Treat the facts as a small dataset with owners rather than as copy.
+
+<Timeline title="A maintenance cycle for location details" phases={[
+  { when: "At launch", title: "Collect", items: ["One structured intake per office: people, hours, services, insurance, access, languages, booking route", "Office manager confirms each field in writing", "Photos taken of the real office"] },
+  { when: "On any change", title: "Update immediately", items: ["Office manager reports provider, hours or insurance changes before they take effect", "Website and Business Profile updated in the same step", "Change logged with date"] },
+  { when: "Quarterly", title: "Review", items: ["Each office re-confirms its fields", "Run the city-swap test on a sample of pages", "Check booking routes and phone numbers still go to the right office"] },
+  { when: "Annually", title: "Refresh", items: ["Replace outdated photos", "Review which services each office offers", "Retire pages for closed offices with redirects to the nearest office or the hub"] }
+]} caption="The cadence is a suggested starting point; groups with frequent staff rotation may need monthly checks." />
+
+## Matching structured data to the visible page
+
+Google's LocalBusiness structured data documentation describes how to mark up business details such as address, phone and opening hours, and Schema.org includes a Dentist type as a more specific kind of local business. For a group, each office page can carry markup for that office only, using the same address, phone and hours shown on the page and in the Business Profile.
+
+<SourceNote ids={["google-local-business-structured-data", "schema-org-dentist"]} />
+
+The rule that matters is consistency: markup that lists hours or services the page does not show, or that copies one office's data onto another's page, creates contradictions. How to align markup with the real practice is covered in [structured data for dental websites](/blog/structured-data-for-dental-websites/).
+
+## Common mistakes on group location pages
+
+- **Pages for towns without offices.** These usually contain nothing beyond the town name and a link to the nearest office. Mention served areas on the real office's page instead.
+- **Stock photography.** Patients use photos to recognise the entrance. Photos of the actual building and team do work that no stock image can.
+- **One group phone number everywhere.** It may simplify call routing, but it breaks the link between a page, a profile and an office, and makes it harder to measure which office generated the call. See [call measurement without overcounting](/blog/dental-call-tracking/).
+- **Claiming every service at every office.** It is inaccurate and leads to wasted consultations. List what is available and point to the sister office for the rest.
+- **Generic AI-written intros.** A paragraph that could describe any dental office anywhere fails the swap test whatever produced it.
+- **Leaving closed offices live.** Redirect a closed office's page to the nearest office or the location hub, and mark the Business Profile accordingly.
+
+## Sources and limitations
+
+Google policy wording quoted here was current on 8 November 2026. Google does not publish a threshold for how similar pages may be before they are treated as doorways; the city-swap test is a practical heuristic, not a Google rule. The worked example is illustrative. Language and access details should only be published when the office can reliably provide them.
+
+## Related next steps
+
+- Our [multi-location SEO service](/services/local-seo-multi-location-clinics/) starts with an office-by-office inventory of exactly these facts.
+- If your location section sits across several domains, read [the structure guide](/blog/multi-location-dental-website-structure/) first.
+- For the page-level checks that affect whether visitors book, use the [dental website audit checklist](/resources/dental-website-audit-checklist/).
+- To compare how each office's page performs once it is fixed, see [comparing offices fairly in a group dashboard](/blog/dental-group-marketing-dashboard/), or ask for a [Dental Growth Audit](/dental-marketing-audit/) covering every location.

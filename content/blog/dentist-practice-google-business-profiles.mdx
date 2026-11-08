@@ -2,14 +2,197 @@
 route: "/blog/dentist-practice-google-business-profiles/"
 type: "article"
 category: "seo-local"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
-title: "Practitioner and Practice Google Business Profiles: Eligibility and Duplicates"
-metaTitle: "Practitioner and Practice Google Business Profiles: Eligibi…"
-description: "Practitioner and Practice Google Business Profiles: Eligibility and Duplicates. A practical guide for dental practice owners and managers from Alpha Dental Med…"
-parent: "/blog/"
-primaryIntent: "Practitioner and Practice Google Business Profiles: Eligibility and Duplicates"
-related: ["/services/dental-local-seo-google-business-profile/"]
+title: "Dentist and Practice Google Business Profiles: Who Is Eligible and How to Handle Duplicates"
+metaTitle: "Dentist vs Practice Google Business Profiles: Eligibility"
+description: "When a dentist should have their own Google Business Profile, when they should share the practice profile, and how to resolve duplicate listings safely."
+eyebrow: "Local SEO and Google Business Profile"
+lede: "Google allows individual dentists to have their own Business Profiles, but the rules differ for solo and multi-dentist offices. Getting this wrong splits reviews, confuses patients and invites duplicate flags."
+primaryIntent: "dentist practitioner Google Business Profile vs practice profile"
+secondaryQuestions:
+  - "Can each dentist in a practice have their own Google Business Profile?"
+  - "Should a solo dentist have a separate practitioner profile?"
+  - "How should a practitioner profile be named?"
+  - "What happens to reviews when duplicate profiles are merged?"
+  - "What should a practice do when an associate dentist leaves?"
+audience: "Practice owners and office managers deciding how dentists and offices should appear on Google"
+sources:
+  - "google-gbp-guidelines"
+  - "google-gbp-duplicates"
+  - "google-gbp-owners-managers"
+related:
+  - "/services/dental-local-seo-google-business-profile/"
+  - "/blog/google-maps-visibility-for-dentists/"
+  - "/blog/dental-google-business-profile-suspension/"
+  - "/blog/dental-group-location-pages/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Practitioner, naming, department and one-profile-per-business rules checked against Google's Business Profile guidelines (support.google.com/business/answer/3038177) on 2026-11-08. Duplicate, merge, removal and ownership-request behaviour checked against Google's duplicate-profiles help article on 2026-11-08. Owner and manager roles checked against answer 3403100 on 2026-11-08. Google publishes no official procedure specific to a practitioner who leaves a practice; that section is reasoning, labelled as such."
 order: 6
+faqs:
+  - q: "Can every dentist in our practice have a Google Business Profile?"
+    a: "Each public-facing dentist who can be contacted directly at the verified location during stated hours may have one, according to Google's guidelines. When several dentists practise at one office, the practice should also have its own profile, and each dentist's profile should carry only the dentist's name, not the practice name."
+  - q: "Should a solo dentist set up a separate practitioner profile?"
+    a: "Usually not. Google's guidance for a sole public-facing practitioner at a branded location is to share one profile with the organization, named in the format brand: practitioner name. Two profiles for one dentist at one address is the arrangement most likely to be treated as a duplicate."
+  - q: "What happens to reviews if two duplicate profiles are merged?"
+    a: "Google says that when two profiles are merged, their reviews are combined but replies to reviews may be lost. Merges are requested through Google Maps and every request is reviewed, so there is no guarantee a merge will be approved or which profile's details will survive."
+  - q: "Is it a good idea to create practitioner profiles to get more map listings?"
+    a: "Not as a tactic. A practitioner profile is legitimate only when the dentist meets Google's eligibility conditions, and Google says a practitioner should not have several profiles for different specializations. Profiles created to occupy more listings risk duplicate flags and suspension, and they split reviews away from the practice."
 ---
+
+<KeyAnswer>A dental practice should have one profile per office. A dentist may have their own profile only if they are a public-facing practitioner who can be reached at that verified location during stated hours. In multi-dentist offices the practice and each eligible dentist get separate profiles; a solo dentist at a branded practice should share one profile named "Practice: Dr. Name".</KeyAnswer>
+
+The question sounds administrative, but it decides where patients land, which profile collects reviews and calls, and whether Google treats your listings as legitimate or as duplicates. This article covers the profile structure itself. Why a correctly structured profile still does not rank in the map pack is a separate question, covered in [why a practice may not show in Google Maps](/blog/google-maps-visibility-for-dentists/).
+
+## What Google means by an individual practitioner
+
+Google's Business Profile guidelines define an individual practitioner as "a public-facing professional, typically with their own customer base", and name dentists explicitly alongside doctors and lawyers. A practitioner's profile may include a title or degree certification; Google's examples are Dr., MD, JD, Esq. and CFA. DDS and DMD are not listed, but they are degree designations of the same kind.
+
+Google sets two conditions for a practitioner to have a dedicated profile:
+
+1. **They operate in a public-facing role.** Google states that support staff should not create their own profiles.
+2. **They can be contacted directly at the verified location during stated hours.**
+
+Two further restrictions matter for dentistry. A practitioner should not have multiple profiles to cover different specializations, so a dentist who places implants and provides orthodontics still has one profile. And the profile is tied to a verified location, which raises questions for dentists who rotate between offices (covered below).
+
+<SourceNote ids={["google-gbp-guidelines"]} />
+
+### Where the definition leaves room for judgement
+
+The guidelines do not say whether a hygienist, an orthodontic treatment coordinator or a visiting specialist counts as public-facing. Read conservatively, the test is whether patients seek out and book with that named person, and whether calls to the profile's phone number can reach them during the hours shown. A hygienist whose patients are scheduled by the practice and who is not contacted directly is closer to Google's "support staff" description than to a practitioner. When the answer is unclear, the cautious choice is not to create the profile: an unnecessary profile can be added later, while a duplicate flag or suspension takes time to undo.
+
+## The three structures Google describes, applied to dental offices
+
+Google's guidance covers three arrangements. Dental offices map onto them like this.
+
+<DataTable caption="Profile structure by office type, based on Google's Business Profile guidelines (retrieved 2026-11-08)" columns={["Office situation", "Practice profile", "Dentist profile(s)", "Naming"]}
+  rows={[
+    ["One public-facing dentist, practice has its own brand name", "One shared profile for practice and dentist", "No separate profile", "Brand: Dentist name, for example Riverbend Dental: Dr. Ana Ruiz"],
+    ["One public-facing dentist, practice is named after the dentist", "One profile", "No separate profile; the practice name already is the dentist", "The real-world practice name as it appears on signage"],
+    ["Several public-facing dentists at one office", "Yes, one for the office", "One per eligible dentist, if wanted", "Dentist profiles carry only the dentist's name, without the practice name"],
+    ["Dentist working at two offices of the same group", "One per office", "Judgement required: Google ties a practitioner to a verified location where they can be contacted during stated hours", "Dentist name only on any practitioner profile"],
+    ["Distinct department with its own entrance and category, such as a separately signed specialty clinic", "Possibly a separate department profile", "As above for its practitioners", "Department name must differ from the main business and have a distinct category"]
+  ]}
+  note="Example names are invented. The second row applies Google's general naming rule (use the real-world name) because the guidelines do not give a dental example for an eponymous practice." />
+
+<SourceNote ids={["google-gbp-guidelines"]} />
+
+The solo-practitioner rule is easy to miss. Google recommends that when a practitioner is the only public-facing practitioner at a location and represents a branded organization, the practitioner shares a single Business Profile with the organization, named using the format `[brand/company]: [practitioner name]`. Google's own example is an insurance agency, but the logic is the same for a single-dentist practice with a brand name. The practical effect is that all reviews, calls and photos accumulate on one profile rather than two that compete for the same searches at the same address.
+
+For multi-dentist offices, Google says the organization "should create a Business Profile for this location, separate from that of the practitioner", and that the practitioner profile "should include only the name of the practitioner". A profile titled "Dr. Ana Ruiz – Riverbend Dental" does not follow that rule. So many dental practitioner listings carry the practice name that it is worth checking each one.
+
+### Departments are not a workaround
+
+Google allows departments within businesses to have their own profiles when they are public-facing and operate as distinct entities, typically with a separate customer entrance, a name that differs from the main business and a different primary category. A general practice that also offers implants in the same operatories is not a department; Google says that if you offer different services you should list them on the profile rather than create separate profiles. A separately signed and separately entered pediatric or orthodontic clinic inside a larger building may meet the department description, but that needs to be true in the real world, with signage, before it is represented on Google.
+
+<SourceNote ids={["google-gbp-guidelines", "google-gbp-duplicates"]} />
+
+## Why dental practices end up with duplicate profiles
+
+Google is explicit that there should be one profile per business, and that a profile considered a duplicate will not show on Search or Maps. Google lists three common reasons a profile is marked duplicate: a verified profile already exists for the same business, several profiles share an address, or several profiles exist for the same business offering different services.
+
+<SourceNote ids={["google-gbp-duplicates"]} />
+
+In dental offices, duplicates usually come from ordinary events rather than deliberate manipulation:
+
+- **Relocation handled as a new listing.** Google says a business that moves should update its existing profile with the new address, not create a new one. A fresh profile at the new address leaves the old one, with its reviews, either orphaned or competing.
+- **Rebrand or acquisition.** A new owner creates a profile under the new name while the old one still exists, often claimed by a former owner or an old agency account.
+- **Practitioner profiles that should have been the practice.** A solo dentist ends up with a practitioner profile and a practice profile at the same address, both verified.
+- **Service-specific listings.** Separate profiles for "implants" or "emergency" at the same address. These run directly against Google's instruction to list services on one profile.
+- **Profiles created by patients or data providers.** Unclaimed listings appear from user edits and need to be claimed or reported rather than ignored.
+
+## How to resolve a duplicate or conflicting profile
+
+The right fix depends on who controls the profile and whether it represents a genuinely distinct, eligible entity. The decision tree below follows the routes described in Google's duplicate-profile guidance.
+
+<DecisionTree title="You find a second profile for your office or dentist" q="Does it represent a distinct, eligible business or practitioner at that address?" branches={[
+  { answer: "Yes", q: "Is it marked as a duplicate or merged in error?", branches: [
+      { answer: "Yes", outcome: "Appeal the duplicate status through support. Expect to show evidence such as permanent signage for both entities at a shared location." },
+      { answer: "No", outcome: "Keep both. Check naming: a practitioner profile in a multi-dentist office should carry only the dentist's name." } ] },
+  { answer: "No, it is the same business", q: "Do you control both profiles?", branches: [
+      { answer: "Yes, and the extra one was created by mistake", outcome: "Remove the mistaken profile from your account. Removal deletes its content and managers, so confirm which one holds the reviews first." },
+      { answer: "No, someone else owns it", outcome: "Request ownership. The current owner has 3 days to respond; if they do not, a claim option may appear. Then decide whether to merge." },
+      { answer: "It is unclaimed on Maps", outcome: "Suggest a merge or edit on Google Maps. All merge requests are reviewed and approval is not assured." } ] }
+]} />
+
+<SourceNote ids={["google-gbp-duplicates"]} />
+
+Three details in Google's guidance change what you should do first:
+
+- **Removal is destructive.** When you remove a duplicate profile, Google says all content and linked managers are removed. If the duplicate holds most of the practice's reviews, removing it is the wrong move.
+- **Merging combines reviews but may lose replies.** Google states that reviews are combined in a merge but replies to reviews may be lost, and that the profiles must represent the same business with the same information. Export or screenshot review replies you care about before requesting a merge.
+- **Ownership requests are time-boxed.** If a verified profile is owned by someone else, such as a former partner or a previous agency, you can request access, and the owner has three days to respond. Google notes the claim option is not always available if they do not.
+
+If a profile is already suspended rather than merely duplicated, the evidence you need is different; see [what to prepare before appealing a profile suspension](/blog/dental-google-business-profile-suspension/).
+
+## When an associate dentist leaves the practice
+
+Google's help pages, as retrieved on 8 November 2026, do not describe a procedure for a practitioner who leaves a practice. What follows is reasoning from the rules above, not Google policy.
+
+A practitioner profile describes a person who can be contacted at a verified location during stated hours. Once the dentist no longer practises there, the profile no longer meets that condition at that address. The practice's realistic choices are:
+
+1. **If the dentist is moving to another practice**, the profile arguably belongs with the dentist. Updating it to the new location is a decision for the dentist and whoever owns the profile, and it is easier if ownership was agreed in advance.
+2. **If the dentist is retiring or leaving dentistry**, marking the profile closed or requesting removal is the usual route. Expect that some calls and searches for the dentist's name will continue for a while.
+3. **If the profile is unclaimed**, the practice can suggest edits on Google Maps, but has limited control over the outcome.
+
+The underlying problem is ownership. Google's role model has one primary owner per profile, with additional owners and managers; only owners can add or remove users or remove the profile. A practice that lets each associate create and own their profile on a personal Google account has no control when that associate leaves. A practice that owns every practitioner profile it created may face a dispute about whether a departing dentist can take "their" profile. Agree in writing, when the dentist joins, who owns the practitioner profile, who are managers, and what happens to it on departure.
+
+<SourceNote ids={["google-gbp-owners-managers"]} />
+
+<Callout title="What this does not mean" tone="caution">
+None of this is legal advice about employment agreements or patient notification when a dentist leaves. Those questions belong with the practice's own counsel and state dental board guidance. This section only covers how the Google listing is managed.
+</Callout>
+
+## A profile inventory you can run in an afternoon
+
+Before changing anything, list what exists. Searching the practice name, each dentist's name, the address and the main phone number on Google Maps usually surfaces every profile at the address, including ones no one remembers creating.
+
+<Checklist title="Practitioner and practice profile inventory" items={[
+  "List every profile that shows the office address or phone number, including closed and unclaimed ones",
+  "For each profile, record who is the primary owner and which Google account holds it",
+  "Mark each profile as practice, practitioner or department, and check it against Google's eligibility conditions",
+  "Check practitioner names: dentist name only in multi-dentist offices; brand: dentist name for a solo branded practice",
+  "Confirm each practitioner can be reached through the profile's phone number during the hours shown",
+  "Note review counts and recent review replies on any profile that may be merged or removed",
+  "Identify profiles for dentists who no longer practise at the address",
+  "Look for service-specific or old-address profiles that duplicate the practice",
+  "Check that practitioner profiles link to the dentist's bio page and the practice profile links to the homepage or office page",
+  "Write down which changes need the dentist's agreement before anything is edited"
+]} />
+
+The link targets matter more than they appear to. A practitioner profile pointing to the practice homepage gives patients searching for a named dentist no information about that dentist. A bio page that states the dentist's role, services and booking route makes the profile useful, and it keeps the practitioner profile distinct from the practice profile.
+
+<Illustrative title="A three-dentist office tidying its listings">
+An invented general practice, Harbor Lane Dental, has three dentists at one address. The inventory finds five profiles: the practice; Dr. Lee and Dr. Patel as practitioners; "Harbor Lane Dental Implants", created by a former agency; and Dr. Owens, who left eighteen months ago.
+
+Dr. Lee's profile is titled "Dr. Sam Lee – Harbor Lane Dental", so the practice name is removed to leave the dentist's name only. The implants profile is the same business offering a different service. It holds 9 reviews against the practice profile's 140, so the practice requests a merge through Maps rather than removing it, and accepts that replies on those 9 reviews may be lost. Dr. Owens's profile is still owned by his personal account. The practice contacts him; he has joined another practice and updates the profile to his new address himself.
+
+The practice ends with three legitimate profiles and one merge request pending review. It also has a written rule for future associates about profile ownership.
+</Illustrative>
+
+## Tradeoffs and common mistakes
+
+**Separate dentist profiles are not free visibility.** They can help patients who search for a named dentist, and they let that dentist's reviews describe that dentist. They also divide reviews and calls between profiles at the same address, and each one needs accurate hours, a working phone route and a real bio page. For a practice where patients choose the office rather than the individual, the practice profile carries most of the value.
+
+**Common mistakes:**
+
+- Creating a practitioner profile for a solo dentist alongside the practice profile at the same address.
+- Including the practice name, services or city in a multi-dentist office's practitioner profile titles.
+- Creating new profiles for a relocation, a rebrand or a new service line instead of editing the existing profile.
+- Removing a "duplicate" without checking which profile holds the reviews.
+- Letting associates or agencies hold primary ownership of profiles the practice depends on.
+- Treating hygienists or treatment coordinators as practitioners without checking whether patients contact them directly.
+
+For groups with many offices and rotating providers, profile structure is part of a wider location architecture; see [how to write useful location pages for dental groups](/blog/dental-group-location-pages/).
+
+## Sources and limitations
+
+The eligibility, naming and department rules come from Google's guidelines for representing a business on Google, and the duplicate, merge, removal and ownership-request behaviour from Google's duplicate-profile help article, both retrieved on 8 November 2026. Google revises these pages without dated changelogs, and its enforcement can differ from the written guidance. The guidelines use non-dental examples for the solo-practitioner rule and do not address dentists who work at several offices or who leave a practice. Those sections apply the general rules and say so. Nothing here predicts how a merge, appeal or removal request will be decided.
+
+## Next steps
+
+If your listings have grown over years of hires, moves and agencies, the profile inventory above is the first step. Our [local SEO and Google Business Profile service](/services/dental-local-seo-google-business-profile/) starts with that inventory, then fixes structure, naming and ownership before any optimisation work. The [Dental Growth Audit](/dental-marketing-audit/) includes a check of every profile tied to your addresses and phone numbers, alongside your website and measurement.

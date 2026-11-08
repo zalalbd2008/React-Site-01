@@ -2,14 +2,278 @@
 route: "/services/local-seo-multi-location-clinics/"
 type: "service"
 serviceId: "S3"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
-title: "Multi-Location Dental SEO"
+title: "Multi-Location Dental SEO for Groups and DSOs"
 navLabel: "Multi-Location Dental SEO"
-metaTitle: "Multi-Location Dental SEO"
-description: "Multi-Location Dental SEO for dental practices and dental groups: diagnosis, deliverables, dependencies and reporting from Alpha Dental Media."
+metaTitle: "Multi-Location Dental SEO for Dental Groups and DSOs"
+description: "Local SEO for dental groups and DSOs: location governance, site structure, Business Profiles at scale, acquisitions, listings and fair office-level reporting."
+eyebrow: "SEO for dental groups"
+lede: "Local search for a group is a data-management problem before it is a marketing one. We build the location register, the access model and the structure that let every office be found, then report each office on fair terms."
 parent: "/services/"
 primaryIntent: "Multi-location dental SEO and DSO local SEO"
-order: 3
+secondaryQuestions:
+  - "Who in a dental group should be able to edit Business Profiles and location pages?"
+  - "Should a dental group use subfolders, subdomains or separate domains?"
+  - "How does Google Business Profile bulk verification work for a dental group?"
+  - "How do we keep search visibility through an acquisition or rebrand?"
+  - "How do we compare offices fairly in SEO reporting?"
+  - "What does a DSO have to provide before multi-location SEO can start?"
+audience: "Marketing, operations and growth leads at dental groups and DSOs; owners of practices with two or more offices"
+sources:
+  - "google-gbp-guidelines"
+  - "google-gbp-bulk-verification"
+  - "google-gbp-business-groups"
+  - "google-gbp-business-group-roles"
+  - "google-gbp-profile-roles"
+  - "google-gbp-store-codes"
+  - "google-gbp-local-ranking"
+  - "google-site-move-url-changes"
+related:
+  - "/who-we-help/dental-groups-dsos/"
+  - "/blog/multi-location-dental-website-structure/"
+  - "/blog/dental-group-location-pages/"
+  - "/blog/dental-practice-rebrand-seo-migration/"
+  - "/blog/dental-group-marketing-dashboard/"
+  - "/dental-marketing-audit/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Google Business Profile statements (bulk verification eligibility, business group roles, store codes, chain naming, practitioner rules, phone and website rules, local ranking factors) checked against Google Business Profile Help pages retrieved 2026-11-08. Site-move statements checked against Google Search Central (page last updated 2026-08-20). No statistics are used. The worked example is labelled Illustrative and uses invented figures. Alpha Dental Media has no published client results; all delivery is described as methodology."
+faqs:
+  - q: "What is the difference between multi-location dental SEO and ordinary local SEO?"
+    a: "The search disciplines are the same; the operating problem is different. With one office, the risks are mostly accuracy and relevance. With many, the risks are inconsistency, duplicated profiles, unclear ownership, acquisitions that arrive with their own websites and listings, and reports that compare offices unfairly. Multi-location work spends far more time on governance and data than a single-practice engagement does."
+  - q: "Can every office in our group be bulk verified on Google?"
+    a: "Only if the account meets Google's conditions on the retrieval date: ten or more eligible profiles of the same business, not a service-area business, every managed profile included in the spreadsheet, and no existing verified account for the same business. Duplicate, suspended or disabled profiles do not count. Agencies holding several businesses in one account cannot bulk verify, so the group should apply from its own business group."
+  - q: "Who should own our Google Business Profiles: the group, each office or the agency?"
+    a: "The group. Put profiles in a business group the organisation owns, with a named primary owner who is an employee, and add the agency and office staff as managers with only the access they need. Google's roles let managers edit profiles but not add or remove users, which keeps control with the group if a vendor or employee leaves."
+  - q: "Should acquired practices keep their own websites?"
+    a: "It depends on whether the acquired office will keep its name, its booking system and its patient-facing identity. If it will trade under the group brand, its pages usually move into the group site with page-by-page redirects. If it keeps its own name for a long period, a separate site can be justified. The decision tree in our site-structure article covers the tradeoffs."
+  - q: "How long does visibility take to settle after a rebrand or site consolidation?"
+    a: "Google says to expect temporary ranking fluctuation during a site move, and that medium-sized sites can take a few weeks or more before new URLs replace old ones in results. Profile name changes and listing updates add their own lag. We plan a monitoring window per office and avoid stacking a rebrand on top of other major changes where the group can choose."
+  - q: "Can you make a weaker office rank like our flagship?"
+    a: "Not by copying the flagship. Google describes local results as driven mainly by relevance, distance and prominence, so an office in a dense market with few reviews faces different odds from one with long local history. We identify what each office can realistically improve, such as categories, page depth, reviews and local links, and set expectations office by office."
+  - q: "What do you need from a DSO before work starts?"
+    a: "A complete location register with legal and public names, addresses, phone numbers, hours, booking systems and open or closing dates; the list of who currently controls each profile, domain, analytics property and ad account; planned acquisitions, relocations and rebrands; one approver for brand and data decisions; and summary booking or new-patient counts by office if you want reporting beyond inquiries."
+  - q: "Does multi-location SEO include location page writing?"
+    a: "It includes the location page template, the facts each page must carry and the review process. Writing distinctive copy for every office is often scoped as content work alongside it, because useful location pages depend on office-specific details only the group can confirm. Our article on location pages explains how to avoid near-duplicate pages."
 ---
+
+## The problem with SEO across many dental offices
+
+For a group, most local search problems are not ranking puzzles. They are records that disagree with each other: a Business Profile that still shows a departed dentist's name, an acquired office whose old website outranks its new location page, a phone number that routes to a central call centre for one office and directly to the front desk for another, two profiles for the same address because a store code was changed in a spreadsheet. Each of these is small. Across ten or forty offices, they compound into a pattern where some locations are hard to find and nobody can say why.
+
+Our recommendation is to treat multi-location dental SEO as three linked jobs, in this order:
+
+1. **Govern the data.** One authoritative location register, one ownership model for every profile and property, and a rule for who may change what.
+2. **Structure the web presence.** A site architecture and location page template that can absorb new offices, closures and rebrands without breaking.
+3. **Improve and report office by office.** Visibility work prioritised by each office's capacity and market, measured in a way that compares offices fairly.
+
+If your question is broader, such as how a DSO should split budget across brands, channels and regions, start with our page on [marketing for dental groups and DSOs](/who-we-help/dental-groups-dsos/). This page covers the specific SEO service.
+
+## How we diagnose a dental group's local search position
+
+The diagnosis starts by building a picture of what exists, not by running a ranking report. Rankings are an output; the inputs are the records Google reads.
+
+### The location register comes first
+
+We ask for, or help assemble, a single list of every office with the fields below. Where the group already keeps a register in its operations or finance systems, we reconcile against it rather than replacing it.
+
+<Checklist title="Fields every office needs in the location register" items={[
+  "Public trading name exactly as on signage, and the legal entity behind it",
+  "Street address with suite number, as the office presents it to patients",
+  "Primary phone number that reaches that office, and any tracking numbers in use",
+  "Regular hours, holiday hours and any services with different hours",
+  "Booking system and the URL or number a new patient should use",
+  "Dentists and hygienists who see patients there, with start and end dates",
+  "Services offered at that office, and services it does not offer",
+  "Status: open, opening, relocating, closing, recently acquired or rebranding",
+  "Google Business Profile ID and store code, website location URL, and owner of each"
+]} />
+
+### Then we audit access and ownership
+
+For each office we record who is the primary owner of the Business Profile, who manages it, who controls the domain and DNS, who owns the analytics and Search Console properties, and whether any former agency or departed employee still holds access. Groups that have grown by acquisition often inherit profiles owned by a previous owner's personal Google account, which becomes a problem the day that person stops answering email.
+
+### Then we reconcile what Google and the web show
+
+We compare the register against each office's Business Profile, its location page and the main listings and directories patients use. Differences are logged as specific defects with an owner: wrong suite number on one directory, a duplicate profile, a category that differs from sibling offices, a location page that names a dentist who has left. We also check the website's technical state for location pages: whether they are indexed, whether they are reachable from the site's navigation, and whether old acquired-practice URLs redirect somewhere sensible.
+
+### Finally we read the measurement
+
+Before proposing targets, we establish what can be counted per office today: calls, form submissions, online booking starts and completions, and whether any of these can be matched to new-patient bookings in the practice management system. Where the answer is "not yet", fixing that is part of the plan, usually alongside our [conversion tracking and attribution](/services/dental-conversion-tracking/) work.
+
+## What the multi-location SEO service delivers
+
+The deliverables below describe the service as we would scope it. The exact mix depends on the size of the group and what the diagnosis finds.
+
+- **A maintained location register** that becomes the source for profiles, location pages and listings, with a change log.
+- **An access model** for Business Profiles, Search Console, analytics and the website, documented and implemented.
+- **Business Profile clean-up and standards:** names, categories, hours, phone numbers, websites, practitioner profiles and duplicates handled to Google's guidelines.
+- **A site-structure recommendation** for location pages and acquired brands, with the redirect plan where consolidation is needed.
+- **A location page template** specifying the facts, sections and internal links every office page carries.
+- **Listings consistency work** across the directories that matter for each office.
+- **An office-level reporting model** that separates inquiries, qualified inquiries, bookings and attended visits wherever the data allows.
+- **Change playbooks** for openings, closures, relocations, acquisitions and rebrands.
+
+## Location governance: who can change what
+
+A group needs explicit rules for which people can edit which records, because Google's tools allow broad access by default. Google recommends business groups as a safer alternative to shared usernames and passwords, and anyone added as a manager or owner of a business group can access all current and future profiles placed in it.
+
+<SourceNote ids={["google-gbp-business-groups"]} />
+
+The roles themselves are fixed by Google. A business group can have several owners but only one primary owner; only owners can add or remove users, delete the group or transfer it. Group managers can add, edit and delete every profile in the group but cannot manage users. On an individual profile, managers have mostly the same access as owners, except they cannot add or remove users or remove the profile.
+
+<SourceNote ids={["google-gbp-business-group-roles", "google-gbp-profile-roles"]} />
+
+That means "who can edit" is decided by which group a profile sits in and which role a person holds. One business group for the whole organisation keeps everything in one dashboard and one spreadsheet, but anyone with group access can edit every office. Several groups, for example one per brand or region, limit access but need separate spreadsheets and dashboards. Google notes both tradeoffs, and also that owners and managers can be added to single profiles within a group.
+
+<SourceNote ids={["google-gbp-business-groups"]} />
+
+The model we usually propose is a primary owner who is a group employee, central marketing as owners, the agency as managers, and office managers with profile-level manager access only where they genuinely need to post updates or reply to reviews. The table makes the split concrete.
+
+| Record | Who approves a change | Who makes the change | Who is told |
+|---|---|---|---|
+| Public name, brand or category | Group marketing lead | Agency, in the business group | Office manager |
+| Address, relocation, closure | Operations lead | Agency, after the move date is confirmed | Every channel owner |
+| Hours and holiday hours | Office manager | Office manager or agency | Central marketing |
+| Phone numbers and call routing | Operations lead | Agency and phone vendor together | Office manager |
+| Dentists listed at an office | Clinical or HR lead | Agency | Office manager |
+| Review replies | Office manager or central team, per policy | Whoever the policy names | Central marketing |
+| Location page content | Group marketing lead | Agency | Office manager |
+
+## Group website structure for many offices
+
+Most dental groups are well served by one domain with a subfolder per office, because authority, templates and maintenance are shared. Separate domains make sense mainly when offices trade under genuinely different brands with separate booking and patient-facing identities. Subdomains sit between the two and are usually chosen for technical rather than search reasons.
+
+The full comparison, with the cases where each choice is right, is in our article on [subfolders, subdomains or separate domains for dental groups](/blog/multi-location-dental-website-structure/). The service applies that analysis to your brands, booking systems and acquisition plans.
+
+<DecisionTree title="A first pass at structure for a dental group" q="Do all offices trade under one patient-facing brand?" branches={[
+  { answer: "Yes", q: "Do offices share one booking system and website platform?", branches: [
+      { answer: "Yes", outcome: "One domain with a location subfolder for each office" },
+      { answer: "No", outcome: "One domain with subfolders; link each office page to its own booking route" } ] },
+  { answer: "No, several brands", q: "Will acquired brands keep their names for the long term?", branches: [
+      { answer: "Yes", outcome: "A domain per brand, each with its own office subfolders" },
+      { answer: "No, they will rebrand", outcome: "Plan consolidation into the group domain with mapped redirects" } ] }
+]} />
+
+Location pages are where structure becomes content. Each office page needs facts only that office has: who practises there, what it offers, how to get there, parking and access, insurance accepted, and how a new patient books. Our guide to [writing location pages that are not near-duplicates](/blog/dental-group-location-pages/) covers the editorial side.
+
+## Business Profiles at scale
+
+### Naming, categories and practitioners
+
+Google's guidelines ask chains to keep names and categories consistent across locations, and all locations offering the same service to share a category. Each location gets one profile; Google does not allow more than one profile per location in one account or across accounts. Dentists are named by Google as individual practitioners who may have their own profiles if they are public-facing and can be contacted at the location, and where several practitioners work at one location, the organisation keeps its own separate profile.
+
+<SourceNote ids={["google-gbp-guidelines"]} />
+
+Practitioner profiles are a frequent source of duplicates and stale listings in groups, especially when associates move between offices. The detail is in our article on [practice and practitioner profiles](/blog/dentist-practice-google-business-profiles/).
+
+### Phone numbers and websites per office
+
+Google asks for a phone number that connects to the individual location, or a website that represents it, and prefers a local number over a central call-centre helpline where possible. For groups with central scheduling, this is a real tradeoff: the call centre may answer more reliably, but the profile should still point to something that represents that office. We work through it with operations rather than treating it as an SEO setting.
+
+<SourceNote ids={["google-gbp-guidelines"]} />
+
+### Bulk verification and spreadsheet management
+
+Groups with ten or more profiles of the same business can apply for bulk verification in Business Profile Manager. Google's conditions on the retrieval date include: duplicate, suspended or disabled profiles do not count toward the ten; the spreadsheet must contain every profile the account manages; service-area businesses are excluded; and agencies holding more than one business in one account cannot bulk verify. Google may also de-verify accounts that do not actively manage their profiles.
+
+<SourceNote ids={["google-gbp-bulk-verification"]} />
+
+Bulk management depends on store codes. Each location needs a unique store code that stays the same, and adding or changing a store code on an existing location through a spreadsheet creates a duplicate location. We set store codes once, record them in the register and never let a spreadsheet edit them.
+
+<SourceNote ids={["google-gbp-store-codes"]} />
+
+## Acquisitions, relocations and rebrands
+
+Change is constant in a growing group, and it is where visibility is usually lost. Every change has three parts that have to land together: the profile, the website and the listings. The sequence matters more than any single step.
+
+For website changes, Google's site-move guidance is the reference: map every old URL to its new equivalent, use server-side permanent redirects, avoid redirect chains, keep redirects for as long as possible (generally at least a year), and expect temporary ranking fluctuation while Google recrawls.
+
+<SourceNote ids={["google-site-move-url-changes"]} />
+
+Our article on [keeping visibility through acquisitions, rebrands and migrations](/blog/dental-practice-rebrand-seo-migration/) walks through the full sequence. In the service, we turn it into a playbook per change type with named owners and dates, and we hold the profile name change until the real-world signage and website reflect the new name, because Google expects names to match how the business is represented in the real world.
+
+<SourceNote ids={["google-gbp-guidelines"]} />
+
+## Listings consistency
+
+Directories and data sources outside Google still shape what patients see and what Google can corroborate. We prioritise the listings each office can actually control, correct them from the location register, and record what was changed and when. We do not promise that every third-party site will update on request, and we would rather fix the dozen listings that matter than chase hundreds that do not.
+
+## Implementation sequence
+
+<Timeline title="A typical sequence for a dental group" phases={[
+  { when: "Phase 1", title: "Register and access", items: ["Assemble and reconcile the location register", "Map ownership of every profile and property", "Move profiles into group-owned business groups", "Remove stale users after the group confirms"] },
+  { when: "Phase 2", title: "Clean-up", items: ["Fix names, categories, hours and phone numbers", "Resolve duplicates and stale practitioner profiles", "Set store codes and the spreadsheet process", "Apply for bulk verification if eligible"] },
+  { when: "Phase 3", title: "Structure and templates", items: ["Agree site structure for brands and acquisitions", "Build or revise the location page template", "Redirect old acquired-practice URLs where needed", "Correct priority listings from the register"] },
+  { when: "Phase 4", title: "Office-level improvement", items: ["Prioritise offices by capacity and opportunity", "Deepen location and service pages", "Support review requests through the reputation process", "Report each office against its own baseline"] },
+  { when: "Ongoing", title: "Change control", items: ["Run playbooks for openings, closures and rebrands", "Monthly register reconciliation", "Access review each quarter"] }
+]} caption="Phases overlap in practice. Durations depend on group size, how much access already sits with the group, and approval speed, so none are promised here." />
+
+## What the group is responsible for
+
+Multi-location SEO fails when the agency is expected to know things only the group knows. The lanes below set out the split we work to.
+
+<Lanes title="Responsibilities in a multi-location engagement" lanes={[
+  { title: "Group leadership", items: ["Name one approver for brand and location data", "Share acquisition, relocation and rebrand plans early", "Decide the policy on central versus office phone routing", "Confirm which offices can take more new patients"] },
+  { title: "Office teams", items: ["Report hours changes before they happen", "Tell central marketing when dentists join or leave", "Answer phones and respond to booking requests", "Supply office-specific facts for location pages"] },
+  { title: "Alpha Dental Media", items: ["Maintain the register and change log", "Implement profile, page and listing changes", "Monitor for duplicates, edits and suspensions", "Report by office with stated data limits"] }
+]} />
+
+## Options, limitations and what drives the budget
+
+We do not publish prices. The scope, and so the cost, is driven by:
+
+- **Number of offices and brands.** Ten offices under one brand is a different job from ten offices across four brands.
+- **State of ownership.** Recovering profiles held by former owners or vendors takes time and sometimes Google support cases.
+- **Acquisition pace.** A group adding offices every quarter needs ongoing change control, not a one-off clean-up.
+- **Website platform.** Whether location pages can be templated, and whether the group's developer or ours implements redirects.
+- **Measurement maturity.** Office-level reporting beyond inquiries needs call tracking, form routing and some link to booking data.
+- **Content depth.** Distinctive pages for each office need office input and writing time.
+
+There are also limits. Google decides what appears in local results; it describes them as based mainly on relevance, distance and prominence, and distance is outside anyone's control. An office in a dense market with little history may improve steadily without ever becoming the most visible practice in its area. Profiles can be suspended or edited by Google or by the public, and we can only respond quickly, not prevent it.
+
+<SourceNote ids={["google-gbp-local-ranking"]} />
+
+## A worked example: an acquisition and a rebrand
+
+<Illustrative title="A nine-office group acquiring three practices">
+A group operates nine offices under one brand on one domain. It acquires three independent practices. Two will rebrand to the group name in four months; one will keep its own name because of strong local recognition.
+
+The diagnosis finds that one acquired practice's Business Profile is owned by the seller's personal Google account, the group's own nine profiles sit in a business group but two office managers have owner access they do not need, and one existing office has a duplicate profile created when a spreadsheet import changed its store code.
+
+The plan: request ownership of the seller-held profile before closing, and confirm the seller will cooperate. Move all twelve profiles into group-owned business groups, one per brand, so the independent brand's team cannot edit group offices. Downgrade the two office managers to profile-level managers. Resolve the duplicate. For the two rebranding practices, map every old URL to the new group location pages, schedule redirects for the day signage changes, and change the profile names only once the storefront and website show the new name. Leave the independent brand on its own domain with its own location page and revisit in a year.
+
+The report separates the twelve offices into three cohorts — established, rebranded and independent — so the rebranded offices are compared with their own pre-change baseline rather than with established offices. All figures and timings in this example are invented for illustration.
+</Illustrative>
+
+## Reporting: how success is defined and compared
+
+Success is defined per office, at four levels, and we report each separately:
+
+- **Inquiries:** calls, form submissions and booking attempts attributed to search.
+- **Qualified inquiries:** inquiries from potential new patients the office can serve.
+- **Bookings:** appointments with a date in the schedule.
+- **Attended visits:** patients who arrived and were seen.
+
+Most groups can report the first level immediately and the others only after tracking and practice-management data are connected. Where we cannot see a level, the report says so rather than estimating it. The definitions follow our [dental marketing metrics glossary](/resources/dental-marketing-metrics/).
+
+Comparing offices fairly is the hard part. A raw league table rewards old offices in quiet markets and punishes new ones in busy ones.
+
+<DataTable caption="What to normalise before comparing offices" columns={["Difference between offices", "Why it distorts comparison", "How we adjust"]}
+  rows={[
+    ["Age of the office or its profile", "Newer offices have fewer reviews and less history", "Compare to the office's own baseline and to cohort peers"],
+    ["New-patient capacity", "A full schedule caps bookings regardless of demand", "Report capacity alongside results and flag capped offices"],
+    ["Services offered", "Offices without specialist services cannot win those searches", "Compare only services each office provides"],
+    ["Phone handling", "Central scheduling and front-desk answering differ in answer rate", "Report answered-call rate before judging marketing"],
+    ["Recent change", "Rebrands and relocations cause temporary fluctuation", "Hold changed offices in a separate cohort for a set period"]
+  ]} note="Framework for reporting design; not based on client data." />
+
+Our article on [building a group marketing dashboard that compares offices fairly](/blog/dental-group-marketing-dashboard/) goes further into cohort design. To estimate how inquiry changes might flow through to attended visits for a given office, the [dental growth calculator](/resources/dental-growth-calculator/) is a useful planning tool, and groups evaluating more than one provider can use the [agency comparison scorecard](/resources/dental-agency-comparison-scorecard/).
+
+## Next step: a growth audit scoped to your offices
+
+The [Dental Growth Audit](/dental-marketing-audit/) is where a multi-location engagement starts. For groups, it reviews a sample or all of your offices across visibility, website conversion and measurement, and records ownership and access gaps. To begin, we need your list of offices and, if you are willing, read-only access to your Business Profile group and Search Console. You receive the findings, the order we would address them in, and what we would leave alone. Single-office practices should look at our [local SEO and Google Business Profile service](/services/dental-local-seo-google-business-profile/) instead.

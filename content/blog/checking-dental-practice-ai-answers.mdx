@@ -2,14 +2,210 @@
 route: "/blog/checking-dental-practice-ai-answers/"
 type: "article"
 category: "ai-search"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
-title: "Checking Whether AI Answers Represent Your Dental Practice Accurately"
-metaTitle: "Checking Whether AI Answers Represent Your Dental Practice…"
-description: "Checking Whether AI Answers Represent Your Dental Practice Accurately. A practical guide for dental practice owners and managers from Alpha Dental Media."
+title: "How to Check Whether AI Answers Describe Your Dental Practice Accurately"
+metaTitle: "Checking AI Answers About Your Dental Practice"
+description: "A reproducible way to test what ChatGPT, Google AI Overviews and other assistants say about a dental practice, log it, and fix the sources behind errors."
+eyebrow: "AI search"
+lede: "One screenshot of one chatbot answer tells you almost nothing. A fixed prompt set, a written record of how each answer was produced, and a fact register to score it against will tell you what is wrong and where the error probably came from."
 parent: "/blog/"
-primaryIntent: "Checking Whether AI Answers Represent Your Dental Practice Accurately"
-related: ["/services/dental-ai-search-optimization/"]
+primaryIntent: "check if AI answers describe a dental practice accurately"
+secondaryQuestions:
+  - "What prompts should a dental practice use to test AI assistants?"
+  - "What is the difference between being mentioned, cited and recommended by AI?"
+  - "What should be recorded each time an AI answer is checked?"
+  - "How do you correct wrong information an AI assistant gives about a practice?"
+audience: "Dental practice owners, office managers and group marketing leads who want to know what AI assistants tell prospective patients"
+sources:
+  - "google-ai-features-search"
+  - "google-ai-optimization-guide"
+  - "gsc-generative-ai-performance-report"
+  - "openai-crawlers"
+  - "google-gbp-guidelines"
+related:
+  - "/services/dental-ai-search-optimization/"
+  - "/blog/ai-search-visibility-for-dentists/"
+  - "/blog/measuring-ai-referrals-and-citations/"
+  - "/blog/structured-data-for-dental-websites/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Google statements checked against AI features and your website (last updated 2025-12-10), the AI optimization guide (2026-07-10) and the Generative AI performance report help page; OpenAI crawler behaviour against developers.openai.com/api/docs/bots; Business Profile naming against GBP guidelines. All retrieved 2026-11-08. The logged example is illustrative. No live AI answers about real practices are reported on this page."
 order: 21
+faqs:
+  - q: "How often should a dental practice check what AI assistants say about it?"
+    a: "Monthly is enough for most single-office practices, plus an extra check within a few weeks of any change to hours, address, name, providers or insurance. Groups and practices in the middle of a rebrand may want a fortnightly check on the facts most likely to be wrong. Re-run the same prompts each time so results can be compared."
+  - q: "Can we ask ChatGPT or Google to correct a wrong answer directly?"
+    a: "Feedback buttons exist inside most assistants, and using them costs little, but there is no documented process that makes a provider rewrite an answer about your practice on request. The dependable fix is upstream: correct the website, Business Profile and directory listings the answer appears to rely on, then re-test after those pages have had time to be recrawled."
+  - q: "Do we need a paid AI visibility tool to do this?"
+    a: "No. A spreadsheet, a fixed prompt list and a clean browser session are enough to start. Tools can automate repetition across many prompts and locations, which helps larger groups, but Google notes that no third-party tool has access to its internal ranking or AI systems, so treat any tool score as an observation sample, not a measurement of the engine."
+  - q: "Is a mention in an AI answer the same as a recommendation?"
+    a: "No. A mention means the practice name appeared. A recommendation means the answer suggested the practice as an option for the user's need. An answer can mention a practice while recommending a competitor, or recommend it while stating the wrong hours. Log the two separately, along with whether a link was cited and whether the facts were right."
 ---
+
+<KeyAnswer>Write a fixed set of 15 to 25 prompts that patients plausibly ask, run them on a schedule in each assistant you care about, and log every answer with the date, engine, mode, location and whether web search was used. Score each answer separately for mention, citation, recommendation and factual accuracy against a practice fact register. Fix errors at their source: website, Business Profile and listings.</KeyAnswer>
+
+This page owns one narrow question: how to check, in a way you can repeat and defend, whether AI answers represent a dental practice correctly. For what AI search is and how it differs from classic SEO, read [what GEO and AI search mean for a practice](/blog/ai-search-visibility-for-dentists/). For what referral data and citation counts can prove, see [measuring AI referrals and citations](/blog/measuring-ai-referrals-and-citations/).
+
+## Why a single AI answer is weak evidence
+
+AI answers vary by design. Google describes AI Overviews and AI Mode as using a "query fan-out" technique that issues multiple related searches before composing a response, and says the two features may use different models and techniques, so the responses and links they show will vary. It also says AI Overviews appear only when its systems judge them additive, and "often don't trigger".
+
+<SourceNote ids={["google-ai-features-search"]} />
+
+Google's AI optimization guide adds that these features rely on retrieval-augmented generation (grounding answers in pages retrieved from the search index). That has a practical consequence for a practice: when a grounded answer is wrong, the error usually traces back to something published somewhere. The answer is downstream of sources you can inspect.
+
+<SourceNote ids={["google-ai-optimization-guide"]} />
+
+So the unit of evidence is not "what ChatGPT said when the office manager tried it on Tuesday". It is a pattern across a defined prompt set, repeated under recorded conditions. Without that, a practice can spend weeks reacting to an answer that would have come out differently on the next attempt.
+
+## Four outcomes to score separately: mention, citation, recommendation, accuracy
+
+Most informal checks blur these together. They answer different business questions, and each points to a different fix.
+
+| Outcome | What it means | Business question it answers | Typical fix if weak |
+|---|---|---|---|
+| Mention | The practice name appears anywhere in the answer | Does the assistant know the practice exists in this context? | Entity consistency: name, address, phone and category aligned across website, Business Profile and major listings |
+| Citation | The answer links to, or names as a source, a page about the practice | Which page is the assistant drawing on? | Make the cited page accurate; make the page you would rather be cited clearer and crawlable |
+| Recommendation | The answer suggests the practice as an option for the user's stated need | Would a prospective patient be pointed toward the practice? | Service-page depth, reviews, distinct local information; this is the slowest to change |
+| Accuracy | Facts stated about the practice match the fact register | Would a patient who acts on the answer be misled? | Correct the source of the wrong fact, then re-test |
+
+Accuracy is the one a practice can most directly control and the one with the clearest patient-experience cost. A recommendation with the wrong Saturday hours produces a frustrated patient at a locked door. Score accuracy even when the practice is not recommended: an answer that says "the practice no longer accepts a plan" is damaging whether or not it then recommends someone else.
+
+## Building a reproducible prompt sample
+
+A prompt sample is a short, stable list of questions that represent how patients actually ask. Stability matters more than size. If the list changes every month, you cannot tell whether results moved because the engine changed or because the questions did.
+
+### Four prompt groups to include
+
+1. **Navigational prompts** that name the practice: "What are the hours for [practice name] in [city]?", "Does [practice name] take [plan]?", "Who are the dentists at [practice name]?" These test accuracy most directly.
+2. **Service and location prompts** that do not name the practice: "Which dentists in [neighbourhood] offer same-day crowns?", "Where can I get an emergency dental appointment in [city] on a Saturday?" These test mention and recommendation.
+3. **Comparison prompts**: "Is [practice name] or a nearby practice better for nervous patients?" These show how the assistant characterises the practice relative to others. Record them, but do not publish or act on comparisons with named competitors.
+4. **Reputation prompts**: "What do patients say about [practice name]?" These reveal which review sources the assistant draws on and whether it summarises them fairly.
+
+Write each prompt exactly once, give it an ID (P01, P02 and so on), and never edit it in place. If a prompt needs changing, retire it and add a new ID. Keep the wording natural rather than keyword-shaped; Google's guide notes its AI systems understand synonyms and general meaning, so a stilted prompt does not test anything a patient would type.
+
+<SourceNote ids={["google-ai-optimization-guide"]} />
+
+### How many prompts and engines
+
+For a single-office practice, 15 to 25 prompts across two or three assistants is a manageable monthly task once the template exists. A group needs the navigational set repeated per office, because errors are usually location-specific: one office's old hours, another's former name. Weight effort toward the facts that change most often.
+
+## What to record every time you run a prompt
+
+Record the conditions as carefully as the answer. Each of these can change the result, and without them two people running the same prompt cannot compare notes.
+
+<Checklist title="Conditions to log with every answer" items={[
+  "Date and time of the run, with time zone",
+  "Engine and surface: for example ChatGPT, Google AI Overview, Google AI Mode, Copilot, Perplexity, Gemini app",
+  "Model or mode label shown in the interface, if any",
+  "Whether web search or browsing was used for this answer (look for citations, source cards or a search indicator; record 'unknown' if not shown)",
+  "Logged in or logged out, and whether personalisation or memory was on",
+  "Device type and browser",
+  "Approximate location the engine was likely to infer: physical location of the tester, or VPN region if one was used deliberately",
+  "Prompt ID and the exact prompt text",
+  "Full answer text saved, plus a screenshot or exported link",
+  "Any cited URLs, copied exactly"
+]} />
+
+Location deserves particular care for dental practices. A tester sitting inside the office will often get different local answers than a patient across town. If the practice serves several neighbourhoods, decide in advance where tests are run from, and keep it consistent.
+
+Whether web search was used is the other condition people skip. An answer generated without retrieval reflects what the model absorbed earlier and may be months out of date; an answer with retrieval reflects current pages. They call for different responses: the first mostly calls for patience and consistent signals over time, the second for fixing a specific page.
+
+## A log template for AI answer observations
+
+Use one row per prompt per run. A spreadsheet with these columns is enough; the point is that every row can be read on its own months later.
+
+<DataTable caption="AI answer observation log (template columns with one illustrative row)" columns={["Run date", "Engine and mode", "Web search used?", "Tester location", "Prompt ID", "Mentioned?", "Cited URL", "Recommended?", "Facts checked", "Errors found", "Likely source of error", "Action and owner"]}
+  rows={[
+    ["2026-11-08", "Example assistant, default mode, logged out", "Yes, 4 citations shown", "Inside practice zip code", "P03 Saturday hours", "Yes", "A third-party directory listing", "Not applicable", "Hours, phone, address", "Says open Saturdays; practice closed Saturdays since spring", "Directory listing still shows old hours", "Update listing; office manager; re-test next run"],
+    ["", "", "", "", "", "", "", "", "", "", "", ""]
+  ]}
+  note="The filled row is illustrative, not an observation of a real practice. Keep the full answer text in a linked file, not in the table." />
+
+Two columns do most of the diagnostic work: "Cited URL" and "Likely source of error". If the same wrong fact appears with the same cited directory across runs and engines, you have found something to fix. If it appears once, uncited, and disappears next month, it is noise.
+
+## Scoring accuracy against a practice fact register
+
+Accuracy needs a reference. Before the first run, write a short fact register: the practice's legal and public name, every address, phone numbers, hours per location (including lunch closures and seasonal changes), providers currently practising there, services offered and not offered, insurance plans accepted, languages spoken by staff, parking and accessibility notes, and the canonical website URL for each location.
+
+Then score each fact the answer states as one of: correct, outdated (was true, no longer is), wrong (never true), or unverifiable (a claim the register does not cover, such as "known for gentle care"). Outdated facts are usually the most fixable category, because they tend to correspond to a page somewhere that was never updated.
+
+The fact register is also the reference for structured data and listings. If it is wrong, every downstream fix inherits the error. For how the register feeds a website's markup, see [structured data that matches the real practice](/blog/structured-data-for-dental-websites/).
+
+## Tracing an error back to its source
+
+When an answer is wrong, work backwards before changing anything.
+
+<DecisionTree title="Where did the wrong fact come from?" q="Does the answer cite sources?" branches={[
+  { answer: "Yes", q: "Does a cited page contain the wrong fact?", branches: [
+    { answer: "Yes, a page the practice controls", outcome: "Correct the page, check the same fact elsewhere on the site, request recrawl where the tool allows, re-test after a few weeks" },
+    { answer: "Yes, a third-party page", outcome: "Correct the listing through its owner process; if it is a news or blog page, contact the publisher; log the request date" },
+    { answer: "No, the cited pages are correct", outcome: "Likely a synthesis error; check whether two sources conflict, align them, use in-product feedback, re-test" }
+  ] },
+  { answer: "No", q: "Was web search off or not indicated?", branches: [
+    { answer: "Yes", outcome: "Answer may reflect older training data; prioritise consistent current sources and re-test with search on" },
+    { answer: "No, search seemed on", outcome: "Search the wrong fact verbatim on the open web to find the page it came from, then treat as a cited case" }
+  ] }
+]} />
+
+A quick web search for the exact wrong phrase ("open Saturdays 8 to 2" plus the practice name) is often the fastest way to find the culprit: an old press release, a directory that scraped a previous website, a former associate's profile page, or a Business Profile edit suggested by the public.
+
+## Correcting the underlying sources
+
+The fix is almost always to correct what the assistant reads, not to argue with the assistant. In rough order of impact for a dental practice:
+
+1. **The practice website.** Hours, addresses and providers should appear as visible text on the relevant location pages, consistent across the footer, contact page and any schema. Google's AI features guidance lists making sure important content is available in textual form and that structured data matches visible text among the fundamentals that still apply.
+2. **Google Business Profile.** Google's AI optimization guide says Business Profile details can help a business be visible in AI responses as well as other Search results. Keep hours, special hours, categories and the business name accurate; Google's guidelines require the name to reflect the real-world name used on signage and the website.
+3. **Major directories and insurer provider lists.** Insurance-acceptance errors can trace back to plan directories the practice does not control. Log the correction request and date.
+4. **Old pages that should not exist.** Former locations, departed providers and expired promotions should be updated, redirected or removed rather than left to be found.
+5. **Crawler access.** If ChatGPT search matters to the practice, confirm that robots.txt does not block OAI-SearchBot. OpenAI's documentation says sites opted out of OAI-SearchBot will not be shown in ChatGPT search answers, though they can still appear as navigational links, and that it can take about 24 hours for its systems to adjust after a robots.txt change.
+
+<SourceNote ids={["google-ai-features-search", "google-ai-optimization-guide", "google-gbp-guidelines", "openai-crawlers"]} />
+
+Google's guide also warns against chasing inauthentic mentions across the web and notes there is no special file or markup needed for its AI features. Corrections should make true information consistent, not manufacture volume.
+
+<SourceNote ids={["google-ai-optimization-guide"]} />
+
+## A worked example of one monthly check
+
+<Illustrative title="A two-dentist general practice runs its first three monthly checks">
+The practice writes 18 prompts: 7 navigational, 6 service and location, 2 comparison, 3 reputation. It tests in two assistants, logged out, from the office zip code, with web search on where the interface allows.
+
+**Month 1.** The practice is mentioned in 9 of 36 answers. 4 answers state hours; 3 of those say the office opens on Saturdays, which stopped in the spring. Two of those answers cite the same directory listing. One answer lists an associate who left last year, citing an old team page still live at a forgotten URL.
+
+**Actions.** The office manager corrects the directory listing and records the date. The web team redirects the old team page to the current one and checks that Saturday hours appear nowhere on the site. The Business Profile special-hours section is reviewed.
+
+**Month 2.** Saturday hours appear in 1 of 4 hours answers, uncited. The departed associate no longer appears.
+
+**Month 3.** No hours errors. Mentions are 11 of 36, which the practice does not treat as meaningful movement, because prompt-level variation alone could explain a change that small.
+</Illustrative>
+
+The lesson in the example is about what to claim. The accuracy fixes are clear and traceable. The small change in mentions is not evidence of anything, and reporting it as a percentage rise in AI visibility would be misleading.
+
+## Common mistakes and the tradeoffs behind them
+
+- **Changing the prompts every month.** It feels thorough, but destroys comparability. Add prompts sparingly and keep the old ones running.
+- **Testing only logged in, from the office.** Memory, personalisation and location all shape answers. Logged-out tests from a defined location are closer to what a new patient sees.
+- **Treating citations as endorsements.** A citation shows where the assistant looked, not that it agreed. Check the cited page says what the answer claims.
+- **Fixing the answer instead of the source.** Feedback buttons are worth a click, but the durable fix is to correct the website, profile or listing.
+- **Over-reporting.** Mention counts from a few dozen answers move around on their own. Report accuracy fixes with evidence; report mention and recommendation trends only across several runs with stable conditions.
+- **Ignoring Google's own data.** Search Console now has a Generative AI performance report showing impressions of a site's links in AI Overviews and AI Mode. It does not tell you what the answer said, which is why manual checks still matter, but it shows which pages Google's AI features are linking to.
+
+<SourceNote ids={["gsc-generative-ai-performance-report"]} />
+
+There is a real tradeoff between rigour and cost. A practice that cannot spare the time each month is better off checking only the navigational prompts (hours, address, phone, insurance) than running a sloppy full set.
+
+## Sources and limitations
+
+Google's documentation describes its own AI features only. ChatGPT, Copilot, Perplexity and other assistants publish less about how answers are composed, and their behaviour can change without notice. OpenAI's crawler documentation explains how to allow or block its search crawler, but it does not promise that an accessible site will be cited. Nothing on this page reports live answers about any real practice; the example is illustrative. Results from a prompt sample are observations of a sample under recorded conditions, not a measurement of how often patients see the practice. That second question needs the referral and impression data discussed in [what AI referral and citation data can establish](/blog/measuring-ai-referrals-and-citations/).
+
+## Related next steps
+
+- If the log shows recurring factual errors, the work sits in [AI search optimization for dental practices](/services/dental-ai-search-optimization/), which starts from exactly this kind of fact register and source trace.
+- If the errors come from the Business Profile, the [local SEO and Google Business Profile service](/services/dental-local-seo-google-business-profile/) covers profile accuracy and categories.
+- To check the website side of the same facts, use the [dental website audit checklist](/resources/dental-website-audit-checklist/).
+- To have someone review visibility, website, listings and measurement together, [request the Dental Growth Audit](/dental-marketing-audit/), which checks name, address, phone and hours consistency across major listings as part of its visibility review.

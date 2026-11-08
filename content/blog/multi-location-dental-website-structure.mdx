@@ -2,14 +2,192 @@
 route: "/blog/multi-location-dental-website-structure/"
 type: "article"
 category: "dental-groups"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
-title: "Subfolders, Subdomains or Separate Domains for Dental Groups"
-metaTitle: "Subfolders, Subdomains or Separate Domains for Dental Groups"
-description: "Subfolders, Subdomains or Separate Domains for Dental Groups. A practical guide for dental practice owners and managers from Alpha Dental Media."
+title: "Subfolders, Subdomains or Separate Domains for a Dental Group Website"
+metaTitle: "Subfolders, Subdomains or Domains for Dental Groups"
+description: "How a dental group should choose between subfolders, subdomains and separate domains: what Google says, brand architecture, acquisitions and governance."
+eyebrow: "Dental groups and DSOs"
+lede: "Google does not reward one URL pattern over another. The structure that works is the one that matches how your offices are branded, owned and managed — and that someone can still govern after the next acquisition."
 parent: "/blog/"
-primaryIntent: "Subfolders, Subdomains or Separate Domains for Dental Groups"
-related: ["/services/local-seo-multi-location-clinics/"]
+primaryIntent: "subfolders vs subdomains vs separate domains for dental groups"
+secondaryQuestions:
+  - "Does Google prefer subdirectories over subdomains?"
+  - "Should each dental office have its own website?"
+  - "What should a group do with an acquired practice's domain?"
+  - "Who should own domains, DNS and Search Console in a dental group?"
+audience: "Owners, marketing leads and operations directors of dental groups and DSOs planning or restructuring a multi-office website"
+sources:
+  - "google-seo-starter-guide"
+  - "google-multi-regional-sites"
+  - "google-site-names"
+  - "google-search-console-properties"
+  - "google-spam-policies"
+  - "google-gbp-guidelines"
+  - "google-change-of-address-tool"
+related:
+  - "/services/local-seo-multi-location-clinics/"
+  - "/who-we-help/dental-groups-dsos/"
+  - "/blog/dental-group-location-pages/"
+  - "/blog/dental-practice-rebrand-seo-migration/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Google statements checked on 2026-11-08 against the SEO Starter Guide (last updated 2025-12-10), Managing multi-regional sites (2025-12-10), Site names (2025-12-10), Spam policies (2026-08-28), Search Console property help and Business Profile guidelines. Acquisition example is illustrative."
 order: 16
+faqs:
+  - q: "Does Google rank subfolders higher than subdomains?"
+    a: "Google's SEO Starter Guide does not say so. Its guidance is to do whatever makes sense for your business, noting that subdirectories can be easier to manage while subdomains sometimes suit a partition of topics. Differences in outcome usually come from how well each section is linked, maintained and trusted, not from the URL pattern itself."
+  - q: "Should every office in our group have its own domain?"
+    a: "Only if each office is genuinely a separate brand that patients know by a different name, with its own team and story. Separate domains that differ only by city name and funnel visitors to the same booking page resemble the doorway examples in Google's spam policies, and they multiply the maintenance work for every update."
+  - q: "We acquired a practice with a strong local name. Do we have to rebrand its website?"
+    a: "No. Many groups keep an acquired brand for a period, or permanently, because patients recognise it. The decision should follow the brand plan for that office. If you do fold it in, plan redirects, Business Profile changes and patient communication together rather than switching the domain on a single day."
+  - q: "Who in a dental group should own the domain registrar and Search Console?"
+    a: "The group itself, through a company account that does not depend on one employee or vendor. Agencies and web developers can be added as users. Losing registrar or DNS access during an acquisition or vendor change is one of the most disruptive and avoidable problems a group can have."
 ---
+
+<KeyAnswer>For most dental groups that operate under one brand, location pages in subfolders on a single domain (for example brand.com/locations/city-name/) are the simplest structure to build, measure and govern. Google says it has no ranking preference between subfolders and subdomains. Separate domains make sense only when offices are genuinely separate brands with their own identity, ownership plans or audiences.</KeyAnswer>
+
+This article answers one question: how a dental group should structure its website or websites across several offices. Writing each location page well is a separate job, covered in [our guide to location pages without repeated content](/blog/dental-group-location-pages/). What happens when the structure has to change — an acquisition, a rebrand, a domain move — is covered in [the migration guide](/blog/dental-practice-rebrand-seo-migration/).
+
+## What Google actually says about subdomains and subdirectories
+
+Google's own documentation is less dramatic than most of the debate. In its SEO Starter Guide, under a heading on subdomains versus subdirectories, Google says that from a business point of view you should do whatever makes sense for your business: subdirectories may be easier to manage, while partitioning topics into subdomains sometimes makes sense depending on the site.
+
+<SourceNote ids={["google-seo-starter-guide"]} />
+
+The same guide notes that on larger sites, grouping topically similar pages in directories can help Google learn how often URLs in each directory change. That is a crawling convenience, not a ranking bonus, and it applies to sites with more than a few thousand URLs — larger than most dental group sites.
+
+Google's page on multi-regional sites compares country domains, subdomains and subdirectories for international targeting. Its list for subdomains includes "easy to set up", "allows different server locations" and "easy separation of sites"; for subdirectories it lists "easy to set up" and "low maintenance (same host)", with "separation of sites harder" as a con. The context is country and language targeting, not dental offices in one state, but the underlying tradeoff carries over: subfolders are easier to run as one property, subdomains and separate domains are easier to separate.
+
+<SourceNote ids={["google-multi-regional-sites"]} />
+
+Two practical platform details matter more for a group than any ranking theory:
+
+- **Site names in search results** are supported at the domain and subdomain level, but Google states it does not support site names at the subdirectory level. A subfolder location inherits the main brand's site name; a subdomain or separate domain can show its own.
+- **Search Console** offers Domain properties, which include every subdomain and protocol, and URL-prefix properties, which can be limited to a path such as /locations/houston/. Either structure can be measured per office; the setup simply differs.
+
+<SourceNote ids={["google-site-names", "google-search-console-properties"]} />
+
+<Callout title="What this does not mean" tone="caution">
+"Google has no preference" does not mean structure is irrelevant. It means the outcome depends on things you control: whether each office's pages are internally linked from a clear hierarchy, whether content is maintained, whether signals such as links and reviews point to one consistent place, and whether anyone owns the whole system.
+</Callout>
+
+## The real decision is brand architecture, not URL syntax
+
+Before choosing a URL pattern, a group has to answer a brand question: how do patients know each office? There are three common answers, and each points to a different structure.
+
+| Brand model | How patients see it | Typical structure | Example pattern |
+|---|---|---|---|
+| One brand, many offices | Every office has the same name and signage | Subfolders on one domain | brand.com/locations/katy/ |
+| Endorsed brands | Offices keep a local name with a group endorsement ("part of…") | Subfolders, or subdomains if teams need separate tooling | brand.com/smile-studio-katy/ or katy.brand.com |
+| House of brands | Each office or region is its own brand with no visible parent | Separate domains | localbrand.com, otherbrand.com |
+
+The brand model also affects Google Business Profiles. Google's guidelines for chains and brands say all locations should use the same name unless the business's real-world representation consistently varies from location to location, and that the website linked from each profile should represent that individual location. A group whose offices share one name should have profiles that share that name and link to the matching location page. A house of brands has a different name on each profile and usually a different website behind it.
+
+<SourceNote ids={["google-gbp-guidelines"]} />
+
+If the brand question is undecided — common in the first year after a group forms — the website structure should not run ahead of it. Building twelve separate domains for brands that will be consolidated in eighteen months creates twelve migrations later.
+
+## How the three structures compare in day-to-day operation
+
+The table compares the three options on the work a group actually does every month. None of these rows is a ranking factor in itself; they are the operational reasons one structure succeeds where another decays.
+
+| Consideration | Subfolders (one domain) | Subdomains | Separate domains |
+|---|---|---|---|
+| Setup effort per new office | Add a page or section | DNS entry, often a separate install | New domain, hosting, install, certificate |
+| Shared content (services, insurance, policies) | Written once, linked from every office | Often duplicated or cross-linked | Duplicated, or each site writes its own |
+| Measurement | One analytics property; filter by path | Configurable as one or several properties | Separate properties to merge for group reporting |
+| Site name in search | Main brand only | Can differ per subdomain | Can differ per domain |
+| Links and reviews mentioning the brand | Accumulate to one domain | Split across hostnames | Split across domains |
+| Selling or spinning off one office | Requires extracting pages and redirects | Easier to hand over | Easiest to hand over |
+| Risk of near-duplicate pages | Lower if one team governs templates | Moderate | Higher — each site tends to copy the last |
+| Ongoing maintenance | One codebase and update cycle | Varies with how many installs exist | Multiplied by the number of sites |
+
+The "selling or spinning off" row is the one groups tend to forget. If an investor or partner might separate an office or region later, a separate domain or subdomain is easier to transfer. That is a legitimate business reason for separation — and a reason that has nothing to do with search rankings.
+
+## A decision path for choosing your structure
+
+Work through the questions in order. The first "no" that applies usually decides the structure.
+
+<DecisionTree title="Choosing a website structure for a dental group" q="Do all offices share one public brand name?" branches={[
+  { answer: "Yes", q: "Are booking, phones and content managed centrally?", branches: [
+      { answer: "Yes", outcome: "Subfolders on one domain, with a location hub and one page per office" },
+      { answer: "No, offices run their own tools", outcome: "Subfolders still preferred; fix governance first, then consider subdomains only if tooling truly cannot share a site" } ] },
+  { answer: "No", q: "Do patients know each office by a distinct, established name?", branches: [
+      { answer: "Yes", q: "Is the local brand permanent?", branches: [
+          { answer: "Yes", outcome: "Separate domains per brand, each with its own team-maintained content" },
+          { answer: "Undecided or temporary", outcome: "Keep the existing domain for now; plan a staged consolidation later" } ] },
+      { answer: "No, names differ only by city", outcome: "Consolidate under one brand domain; city-only domains resemble doorway patterns" } ] }
+]} />
+
+The last branch deserves emphasis. Google's spam policies give examples of doorway abuse, including "having multiple domain names or pages targeted at specific regions or cities that funnel users to one page" and "having multiple websites with slight variations to the URL and home page to maximize their reach for any specific query." A set of domains such as brand-katy, brand-sugar-land and brand-pearland, each with the same template and the same booking link, fits those examples closely.
+
+<SourceNote ids={["google-spam-policies"]} />
+
+## What to do with an acquired practice's domain
+
+Acquisitions are where structure decisions get tested. An acquired practice arrives with a domain, a Business Profile, reviews, links from local organisations and patients who know its name. There are three realistic paths.
+
+1. **Keep it as a separate brand.** Leave the domain in place, transfer registrar and hosting into group-controlled accounts, and add a modest "part of" endorsement if the brand plan allows. Lowest risk in the short term.
+2. **Endorse, then consolidate.** Keep the existing site for an agreed period while patients and staff adjust, then move it into a subfolder on the group domain with page-level redirects. This is the most common path for groups building one brand.
+3. **Consolidate immediately.** Move content into the group domain at the same time as the signage and name change. Appropriate when the old name is being retired everywhere at once, but it puts every change into one window.
+
+Google's Change of Address tool covers moves from one domain to another, including to a path within another domain, which is relevant to path 2 and 3. The mechanics — URL mapping, redirects and how long to keep them — are detailed in [our rebrand and migration guide](/blog/dental-practice-rebrand-seo-migration/).
+
+<SourceNote ids={["google-change-of-address-tool"]} />
+
+<Illustrative title="A six-office group acquiring two practices">
+A group runs six offices under one brand on brand.com/locations/. It acquires two practices. Practice A has a 20-year local name, a well-reviewed profile and links from a school district and a chamber of commerce. Practice B opened three years ago under a generic name.
+
+The group decides: Practice B is renamed and moved into brand.com/locations/ within the first quarter, with redirects from its old pages and an updated Business Profile. Practice A keeps its domain and name for at least a year with a "part of" line on the site, while the group surveys patients about the name. Both domains move into the group's registrar account in week one, before any other change.
+
+The numbers and timings here are invented to show the reasoning; they are not a benchmark.
+</Illustrative>
+
+## Governance: who owns what across one domain or many
+
+Structure decays without ownership. A single domain with no owner accumulates duplicate pages, outdated hours and orphaned provider bios; ten domains with no owner do the same ten times. Write down who is responsible for each layer before choosing a structure.
+
+<Lanes title="Ownership in a multi-office website" lanes={[
+  { title: "Group leadership", items: ["Brand architecture and naming decisions", "Approval of acquisitions' brand plans", "Budget for the website as shared infrastructure"] },
+  { title: "Central marketing", items: ["Templates, shared service and policy content", "Location hub and internal linking", "Search Console, analytics and reporting setup", "Business Profile organisation account"] },
+  { title: "Office managers", items: ["Accurate hours, providers and services per office", "Local photos and community details", "Flagging changes before they happen"] },
+  { title: "Web and IT vendor", items: ["Registrar, DNS and hosting under group accounts", "Redirect maps and release process", "Access removal when staff or vendors leave"] }
+]} caption="The lanes apply whichever structure you choose; separate domains simply multiply the vendor and marketing lanes." />
+
+<Checklist title="Governance checks before you change structure" items={[
+  "Every domain the group uses is listed with its registrar, renewal date and account owner",
+  "Registrar and DNS accounts belong to the group, not to an individual or a former vendor",
+  "A Search Console Domain property is verified for each domain, with URL-prefix properties for office sections if needed",
+  "Business Profiles sit in a group-owned organisation account with office managers as managers, not primary owners",
+  "There is one template per page type, and someone approves changes to it",
+  "There is a written process for adding an office, closing an office and acquiring a practice",
+  "Analytics separates offices by path or property in a way that can be combined for group reporting"
+]} />
+
+## Tradeoffs and common mistakes
+
+**Choosing subdomains for convenience, then never connecting them.** A subdomain set up because an office's booking vendor required it often ends up with no links from the main site and no maintenance. If you need a subdomain for a tool, link to it from the relevant location page and keep it inside the same governance.
+
+**Treating separate domains as extra chances to rank.** More domains are more sites to keep accurate, not more lottery tickets. Where the domains differ only by city, they invite the doorway comparison described above.
+
+**Building the location section as a flat list.** A location hub that groups offices by city or region, links to each office page, and links back from each office to shared service pages gives visitors and crawlers the "clearly defined, browseable hierarchy" that Google's doorway example contrasts with. Our [multi-location local SEO service](/services/local-seo-multi-location-clinics/) starts with this hierarchy.
+
+**Letting the brand decision lag the website.** If the group has not decided whether acquired names will stay, build the structure to allow both: a location hub on the main domain that can list endorsed brands, linking out to their sites until consolidation.
+
+**Forgetting the exit path.** If a partner may separate a region, record which pages, reviews, profiles and links belong to that region so they can be transferred without breaking the rest.
+
+## Sources and limitations
+
+Google's statements quoted here were current on 8 November 2026. The multi-regional comparison was written for country and language targeting; we use it for its description of operational tradeoffs, not as guidance on local dental offices. Google does not publish a ranking comparison of URL structures, so no structure can be promised to perform better. The acquisition example is illustrative. Decisions about selling or separating offices involve legal and commercial considerations outside marketing.
+
+## Related next steps
+
+- Once the structure is settled, the next question is what goes on each office's page: see [how to write location pages that differ by office](/blog/dental-group-location-pages/).
+- If you are about to merge, rename or move a site, read [preserving visibility through rebrands and migrations](/blog/dental-practice-rebrand-seo-migration/) before the change date.
+- For reporting across offices once they share one structure, see [a dashboard that compares offices fairly](/blog/dental-group-marketing-dashboard/).
+- For profile naming and practitioner listings, see [practice versus practitioner Business Profiles](/blog/dentist-practice-google-business-profiles/).
+- The broader picture for groups is on our [dental groups and DSOs page](/who-we-help/dental-groups-dsos/), and the [Dental Growth Audit](/dental-marketing-audit/) reviews every domain, profile and location page you list for us.

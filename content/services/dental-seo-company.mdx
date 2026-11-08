@@ -2,14 +2,236 @@
 route: "/services/dental-seo-company/"
 type: "service"
 serviceId: "S1"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
-title: "Dental SEO Services"
+title: "Dental SEO Services for Practices and Dental Groups"
 navLabel: "Dental SEO Services"
-metaTitle: "Dental SEO Services"
-description: "Dental SEO Services for dental practices and dental groups: diagnosis, deliverables, dependencies and reporting from Alpha Dental Media."
+metaTitle: "Dental SEO Services and SEO Company | Alpha Dental Media"
+description: "How Alpha Dental Media approaches dental SEO: technical crawl and indexing checks, site architecture, useful practice content, organic acquisition and honest measurement."
+eyebrow: "SEO and local visibility"
+lede: "Dental SEO is the work of making sure the right patients can find your practice in organic search, understand what you offer, and contact you. This page explains how we diagnose a practice website, what we would deliver, what we need from you, and how we would judge whether it worked."
 parent: "/services/"
 primaryIntent: "Dental SEO company and dental SEO services"
+secondaryQuestions:
+  - "What does a dental SEO company actually do?"
+  - "How do you diagnose why a dental website is not getting organic patients?"
+  - "What does the practice need to provide for SEO to work?"
+  - "What drives the budget for dental SEO?"
+  - "How should dental SEO success be measured?"
+audience: "Practice owners, practice managers and dental groups evaluating an SEO provider"
+sources:
+  - "google-seo-starter-guide"
+  - "google-helpful-content"
+  - "google-javascript-seo-basics"
+  - "google-how-search-works"
+  - "google-sitemaps-overview"
+  - "google-canonical-methods"
+  - "google-spam-policies"
+  - "google-hiring-seo"
+  - "google-search-console-performance"
+related:
+  - "/blog/why-dental-websites-do-not-rank/"
+  - "/blog/dental-seo-cost/"
+  - "/blog/how-long-dental-seo-takes/"
+  - "/blog/structured-data-for-dental-websites/"
+  - "/resources/dental-website-audit-checklist/"
+  - "/dental-marketing-audit/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Platform claims checked against Google Search Central pages (SEO Starter Guide, helpful content, JavaScript SEO basics, how Search works, sitemaps, canonicalization, spam policies, hiring an SEO) and Search Console Help on 2026-11-08. The worked example is illustrative with invented numbers. No Alpha Dental Media client results exist or are implied."
 order: 1
+faqs:
+  - q: "What does a dental SEO company actually do day to day?"
+    a: "Most of the work is unglamorous: checking that Google can crawl and index the pages that matter, fixing site structure so each service and location has one clear page, writing or improving content that answers what patients ask before booking, earning legitimate mentions and links, and reporting what changed in search and in inquiries. Rankings are a by-product of that work, not a deliverable anyone controls."
+  - q: "Can you promise first-page rankings for dental keywords?"
+    a: "No, and you should be cautious of anyone who does. Google's own advice on hiring an SEO says no one can promise a first-place ranking, and Google states that it does not accept payment to rank pages higher. What we can commit to is a documented diagnosis, a prioritised plan, and reporting that shows what changed and why."
+  - q: "How is dental SEO different from local SEO and Google Business Profile work?"
+    a: "Organic SEO is about the website: crawlability, architecture, content and links that help pages rank in the main search results. Local SEO focuses on the map results and the Business Profile, where distance and profile information carry more weight. Most single-office practices need both, but they are diagnosed differently, so we scope them separately on the local SEO service page."
+  - q: "Do we need a new website before starting SEO?"
+    a: "Not usually. Many problems — duplicate pages, thin service pages, missing internal links, slow templates — can be fixed on the existing site. A rebuild becomes worth discussing when the platform blocks basic fixes, renders key content only in the browser, or cannot produce a usable mobile booking path. If a rebuild is planned anyway, SEO should be involved before launch, not after."
+  - q: "How many blog posts a month should a dental practice publish?"
+    a: "There is no correct number, and Google says it has no preferred word count either. A practice is usually better served by a small set of genuinely useful service, cost, insurance and location pages kept accurate than by a schedule of generic posts. Content volume is a budget driver, so we tie it to specific gaps found in the diagnosis rather than a fixed quota."
+  - q: "What access do you need to start?"
+    a: "To diagnose, nothing beyond your public website. To implement and measure, we would ask for Search Console access, analytics access, someone who can publish or approve changes on the website, and summary counts of new-patient inquiries and bookings from the practice. We never need patient-level records for SEO work."
+  - q: "How do you report whether SEO is working?"
+    a: "We separate search visibility (impressions, clicks, positions for target pages) from business outcomes (inquiries, qualified inquiries, booked appointments and attended visits). The first set comes from Search Console; the second needs call and form tracking plus practice records. A report that shows only traffic or rankings cannot tell you whether the work paid for itself."
 ---
+
+<KeyAnswer>Dental SEO is worth paying for when it fixes the specific reasons the right patients are not finding or choosing your practice in organic search. We start with a diagnosis of crawling and indexing, site structure, content usefulness and measurement, then fix the highest-value gaps in order, and report on inquiries and booked visits as well as search visibility.</KeyAnswer>
+
+## Why practice websites stall in organic search, and what we recommend first
+
+Most dental websites that underperform in search are not being punished. They are usually unclear. Google cannot tell which page should rank for implants, two near-identical pages compete for the same service, the location is buried in a footer, or the treatment pages say little a prospective patient could not find anywhere else. Sometimes the problem is more basic: important pages are not in Google's index at all.
+
+Google describes Search as three stages — crawling, indexing and serving — and notes that not every page makes it through each stage. That is the right lens for a practice owner. Before anyone talks about keywords or backlinks, the first question is whether the pages you care about have made it through the first two stages, and whether they deserve to be chosen in the third.
+
+<SourceNote ids={["google-how-search-works"]} />
+
+Our direct recommendation for most practices is to **fix discoverability and page clarity before buying more content or links**. Technical and structural problems cap the return on everything else, and they are usually cheaper to fix than to work around. If the deeper question is why your site is not ranking at all, our article on [diagnosing why dental websites do not rank](/blog/why-dental-websites-do-not-rank/) walks through the symptoms in detail; this page explains how we would run the work as a service.
+
+## How we diagnose a dental website before recommending work
+
+The diagnosis has four parts. Each one answers a yes-or-no question first and only then looks at detail, so the findings can be ranked by impact rather than by how interesting they are.
+
+### Can Google crawl, render and index the pages that matter?
+
+We check whether each priority page — the homepage, every service page, every location page — is indexed, which URL Google treats as canonical, and whether anything blocks crawling. Google's starter guide suggests a `site:` search as a quick first check and Search Console's URL Inspection tool for how Google sees a specific page. We use both, then compare what is indexed against what the practice thinks it publishes.
+
+<SourceNote ids={["google-seo-starter-guide"]} />
+
+Rendering matters more than many practice owners expect. Google processes JavaScript sites in phases — crawling, rendering and indexing — and its documentation says server-side or pre-rendering "is still a great idea" because it is faster for users and crawlers and not all bots run JavaScript. If a treatment page only shows its content after scripts run in the browser, we test what the raw HTML contains. We also look for soft 404s (missing pages that return a normal status) and navigation links that are not real crawlable links.
+
+<SourceNote ids={["google-javascript-seo-basics"]} />
+
+### Does the site architecture match how patients choose a practice?
+
+Patients choose a dentist by service, location, insurance or payment options, availability and trust. The site structure should make each of those findable in one or two clicks and give each main service a single clear URL. We map every URL to the intent it serves and flag duplicates, orphans (pages with no internal links pointing to them) and pages that try to serve several unrelated intents at once.
+
+Duplicate URLs are not a spam violation — Google's guide says so plainly — but they waste crawling and make Google choose a canonical for you. Where duplicates exist we recommend the strongest consolidation signal that fits: a redirect when the old URL should disappear, a `rel="canonical"` annotation when both versions must stay live. Small, well-linked sites (Google's sitemap documentation describes "small" as about 500 pages or fewer) may not need a sitemap at all, though we usually keep one for monitoring.
+
+<SourceNote ids={["google-seo-starter-guide", "google-canonical-methods", "google-sitemaps-overview"]} />
+
+### Is the content useful enough to deserve the visit?
+
+Google's guidance on helpful content asks whether a page was made for people or primarily to attract search visits, and lists warning signs such as writing to a word count, summarising others without adding value, and producing lots of content on many topics hoping some performs. Dental pages often fail the simpler test: does a patient leave knowing what the treatment involves at this practice, roughly how cost and insurance work, who will treat them and how to book?
+
+Google also explains that its systems give more weight to signals of experience, expertise, authoritativeness and trust on topics that affect health — the category it calls "Your Money or Your Life". For a dental site that means clear authorship, accurate clinical descriptions reviewed by the dentist, and no exaggerated claims. We do not write clinical advice; we structure pages so the practice's own expertise is visible.
+
+<SourceNote ids={["google-helpful-content"]} />
+
+### Is measurement able to tell a ranking from a booking?
+
+Search Console reports clicks, impressions, click-through rate and average position, grouped by query, page, country, device and date. It does not know whether anyone called. We check whether calls, forms and online bookings from organic visits are tracked separately, and whether the practice can match those to booked and attended appointments. Where it cannot, we say so before promising any reporting. The details of call and form attribution sit with our [dental conversion tracking service](/services/dental-conversion-tracking/).
+
+<SourceNote ids={["google-search-console-performance"]} />
+
+<DataTable caption="Common organic search symptoms and how the diagnosis separates causes" columns={["What the practice notices", "Possible causes to test", "How we check", "Typical first action"]} rows={[
+  ["A service page never appears for its own treatment name", "Not indexed, wrong canonical, or a competing duplicate page", "URL Inspection, site search, internal duplicate review", "Consolidate to one URL and fix internal links"],
+  ["Traffic is steady but inquiries are flat", "Visits land on informational pages with no clear next step, or tracking misses calls", "Landing-page report against tracked inquiries", "Add booking paths and verify call and form tracking"],
+  ["New pages take a long time to show up", "Weak internal linking, content only rendered by scripts, or low perceived value", "Raw HTML check, link depth audit", "Link from relevant service pages and serve content in HTML"],
+  ["Rankings vary between neighbourhoods", "Local results are driven by distance and the Business Profile", "Compare organic and map results by location", "Scope local SEO separately"],
+  ["Many thin pages for every suburb", "Possible doorway pattern", "Compare page content and purpose", "Merge or rewrite into genuinely distinct pages"]
+]} note="Framework for diagnosis. It lists hypotheses to test, not conclusions about any particular site." />
+
+## What the engagement delivers
+
+The deliverables follow from the diagnosis, so no two scopes look identical. A typical engagement includes the following components, each with an owner and an acceptance test.
+
+| Deliverable | What it contains | How you can check it |
+|---|---|---|
+| Technical findings log | Every crawl, index, rendering, redirect and canonical issue, ranked by the pages affected | Each item names the URL, the evidence and the fix |
+| URL and intent map | One row per page: the patient question it answers, its target service or location, and its status | No two pages share the same primary intent |
+| Page briefs and rewrites | Service, location, cost and insurance pages written or improved for the specific practice | Dentist or manager approves clinical and business facts |
+| Internal linking plan | Which pages link to which, and with what descriptive anchor text | Every priority page reachable within two or three clicks |
+| Structured data review | Markup matched to the visible facts on each page | Validated without errors; nothing marked up that is not on the page |
+| Acquisition plan | Legitimate ways to earn mentions: associations, community work, local press, referral partners | No paid link schemes |
+| Monthly report | Search visibility and business outcomes kept in separate sections | Numbers trace back to Search Console and practice records |
+
+Structured data deserves a note because it is often oversold. It helps Google interpret facts that are already on the page; it does not replace them. How to match markup to the real practice is covered in our guide to [structured data for dental websites](/blog/structured-data-for-dental-websites/).
+
+On acquisition, we stay well inside Google's spam policies. Those policies define link spam, keyword stuffing, hidden text and doorway pages — including "multiple domain names or pages targeted at specific regions or cities that funnel users to one page". For dental sites, that last point rules out the common tactic of cloning a suburb page dozens of times with only the town name changed.
+
+<SourceNote ids={["google-spam-policies"]} />
+
+## Implementation sequence for a typical single-practice engagement
+
+The order matters more than the speed. Fixes that unblock indexing come first, because content published onto a site Google cannot process properly is wasted.
+
+<Timeline title="How the work is sequenced" phases={[
+  { when: "Phase 1", title: "Baseline and access", items: ["Record current indexed pages, queries and landing pages", "Confirm what the practice counts as an inquiry and a new patient", "Agree who approves website changes"] },
+  { when: "Phase 2", title: "Unblock discovery", items: ["Fix robots, canonical, redirect and rendering problems", "Consolidate duplicate service pages", "Repair internal links and navigation"] },
+  { when: "Phase 3", title: "Clarify priority pages", items: ["Rewrite the service and location pages tied to the practice's goals", "Add cost, insurance and booking information the practice approves", "Align structured data with visible facts"] },
+  { when: "Phase 4", title: "Extend and earn", items: ["Fill content gaps the diagnosis identified", "Pursue legitimate local mentions and links", "Retire or merge pages that serve no patient need"] },
+  { when: "Ongoing", title: "Measure and adjust", items: ["Compare search visibility with tracked inquiries", "Review which pages produce qualified inquiries", "Re-prioritise the backlog each cycle"] }
+]} caption="Phases overlap in practice. Durations depend on site size, platform access and approval speed, so we set dates with you after the audit." />
+
+Google's starter guide notes that some changes take effect in a few hours while others take several months, and suggests waiting a few weeks before judging whether a change helped. We plan reporting around that reality. For a fuller answer on timing, read [how long dental SEO takes and what to measure first](/blog/how-long-dental-seo-takes/).
+
+<SourceNote ids={["google-seo-starter-guide"]} />
+
+## What the practice needs to provide
+
+SEO is a joint project. A provider can diagnose and write, but only the practice can confirm clinical facts, answer the phone and decide which patients it wants more of.
+
+<Checklist title="Owner and team responsibilities" items={[
+  "Name one person who can approve page changes within an agreed window",
+  "Confirm which services, insurance plans and patient types you want to grow, and which you cannot take on",
+  "Give Search Console and analytics access, or let us set them up under your ownership",
+  "Provide website access, or connect us with whoever maintains the site",
+  "Have the dentist review clinical descriptions for accuracy",
+  "Share monthly totals of new-patient inquiries, bookings and attended first visits, with no patient-level data",
+  "Make sure calls are answered and web inquiries are followed up promptly, especially during hours when organic visits peak",
+  "Tell us early about rebrands, relocations, new associates or acquisitions"
+]} />
+
+Capacity is the dependency most often missed. If the schedule is already full for new patients, more organic visibility produces frustration, not revenue. In that case we would recommend focusing on the services with spare chair time, or pausing growth work until capacity changes. A practice planning a move or rename should read about [protecting search visibility through a rebrand or migration](/blog/dental-practice-rebrand-seo-migration/) before the change.
+
+## Choosing scope: options, limitations and budget drivers
+
+There are three broad ways to buy dental SEO. None is right for every practice.
+
+| Option | Suits | Main limitation |
+|---|---|---|
+| One-off technical and content audit with a fix list | Practices with in-house or web-developer capacity to implement | Nobody owns implementation or follow-up measurement |
+| Fixed project: remediation plus priority page rewrites | A site with clear structural problems and a defined set of key services | Gains can fade without ongoing content and acquisition |
+| Ongoing engagement with a monthly backlog | Competitive markets, several services to grow, or dental groups | Requires steady approvals and honest reporting to justify cost |
+
+We do not publish prices, because the honest answer depends on what the diagnosis finds. The factors that move cost most are:
+
+- **Site size and condition.** A ten-page site with clean templates needs far less technical work than a few hundred pages with duplicates and redirect chains.
+- **Platform constraints.** Some hosted website builders limit control over rendering, redirects or templates, which turns simple fixes into workarounds.
+- **Number of services and locations to grow.** Each priority service or office needs its own useful page and acquisition effort. Groups with several offices should also look at [multi-location dental SEO](/services/local-seo-multi-location-clinics/).
+- **Content production and approval.** Writing is quick compared with clinical review; slow approvals stretch timelines and cost.
+- **Measurement gaps.** If calls and bookings are not tracked, fixing that is a prerequisite and has its own cost.
+- **Competition.** Dense metropolitan markets usually need more sustained content and acquisition work than smaller towns.
+
+For a deeper explanation of pricing models and how to compare proposals line by line, see [what dental SEO should cost](/blog/dental-seo-cost/). If you are weighing several providers, the [agency comparison scorecard](/resources/dental-agency-comparison-scorecard/) gives you consistent questions to ask each one.
+
+<Callout title="Limits worth knowing before you buy" tone="caution">
+No provider controls Google's rankings. Google says it does not accept payment to rank pages higher, and its advice on hiring an SEO warns against anyone who promises a first-place ranking. SEO also cannot fix an unanswered phone, a full schedule or an offer patients do not want. We describe what we would do and how we would measure it; we do not promise outcomes.
+</Callout>
+
+<SourceNote ids={["google-how-search-works", "google-hiring-seo"]} />
+
+## A worked example: separating the technical problem from the content problem
+
+<Illustrative title="A three-dentist general practice wanting more implant consultations">
+A practice has about 60 pages. Implants are its priority, but the practice says implant inquiries from the website are rare.
+
+**Diagnosis.** Two URLs cover implants: an older page from a previous site and a newer one. Search Console shows the older page receiving most impressions for implant queries, while the newer, better page is reported as a duplicate with Google choosing the old URL as canonical. Neither page mentions consultation steps, financing options the practice actually offers, or which dentist places implants. Calls from the website are not tracked; forms go to a general inbox.
+
+**Proposed action, in order.** First, redirect the old URL to the new one and update internal links. Second, rewrite the surviving page with practice-approved facts about consultations, the treating dentist and payment options. Third, add call tracking for website visits and route form inquiries to the front desk with a tag for the service requested.
+
+**What the practice tracks over the next few months.** Suppose that before the change the site recorded 40 organic implant-page visits a month and the practice could identify 2 implant inquiries that mentioned the website. After the changes, the report would show implant-page impressions and clicks from Search Console, tracked calls and forms from that page, how many the front desk classed as qualified implant inquiries, how many booked a consultation and how many attended.
+
+**How to read it.** If visits rise but qualified inquiries do not, the page or the offer needs work. If qualified inquiries rise but bookings do not, the bottleneck is phone handling or scheduling, which SEO cannot fix. All figures here are invented to show the method.
+</Illustrative>
+
+## How we report progress and define success
+
+A useful SEO report answers two different questions and keeps them apart: is the practice more visible to the right searches, and is that visibility producing patients? We report each stage separately, because a gain at one stage does not prove a gain at the next.
+
+<Funnel title="From organic search to an attended visit" steps={[
+  { label: "Impressions and clicks", note: "Search Console data for priority pages and queries" },
+  { label: "Inquiries", note: "Tracked calls, forms and booking attempts from organic visits" },
+  { label: "Qualified inquiries", note: "Inquiries the practice confirms are new patients for services it offers" },
+  { label: "Booked appointments", note: "Qualified inquiries that the front desk scheduled" },
+  { label: "Attended visits", note: "Booked patients who arrived, from practice records" }
+]} caption="Each stage needs a different data source. Search tools cover only the first." />
+
+We define success with you at the start, in writing, using stages you can verify. A realistic first goal might be that every priority page is indexed under the intended URL; a later one might concern qualified inquiries or attended first visits for a specific service. Our [dental marketing metrics glossary](/resources/dental-marketing-metrics/) defines each term so that everyone counts the same way, and the [growth calculator](/resources/dental-growth-calculator/) helps estimate what a change at each stage would be worth.
+
+Search Console results vary by time, place, device and the searcher's history, so we do not treat a single manual search as evidence. We use the reported data and say when the sample is too small to conclude anything.
+
+<SourceNote ids={["google-search-console-performance"]} />
+
+## Where dental SEO fits with our other services
+
+Organic SEO overlaps with several neighbouring disciplines, and we keep the boundaries clear so you do not pay twice for the same work. Map-pack visibility and the Business Profile are handled under [local SEO and Google Business Profile](/services/dental-local-seo-google-business-profile/). Page design and booking paths belong to [dental web design and conversion](/services/dental-web-design-conversion/). Ongoing article production is scoped under [dental content marketing](/services/dental-content-marketing/), and visibility in AI-generated answers is covered by [dental AI search optimization](/services/dental-ai-search-optimization/). General practices weighing the whole mix can read about [marketing for general dentists](/who-we-help/general-dentists/).
+
+## Next step: request the Dental Growth Audit
+
+If you want to know whether SEO is the right investment for your practice now, the [Dental Growth Audit](/dental-marketing-audit/) is where we would start. It reviews visibility, website conversion, advertising and measurement together, so an SEO recommendation is weighed against the other places inquiries might be lost. You can also use the [dental website audit checklist](/resources/dental-website-audit-checklist/) to review your own site first. We need your website address and your priorities to begin; read-only access to Search Console and analytics makes the findings more specific. You receive the evidence for each finding and the order we would address it in, and the findings are yours to use with any provider.

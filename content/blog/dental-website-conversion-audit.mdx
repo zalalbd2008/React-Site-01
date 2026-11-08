@@ -2,14 +2,194 @@
 route: "/blog/dental-website-conversion-audit/"
 type: "article"
 category: "websites-conversion"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
 title: "Why Dental Website Visitors Do Not Book: A Mobile Conversion Audit"
-metaTitle: "Why Dental Website Visitors Do Not Book: A Mobile Conversio…"
-description: "Why Dental Website Visitors Do Not Book: A Mobile Conversion Audit. A practical guide for dental practice owners and managers from Alpha Dental Media."
+metaTitle: "Why Dental Website Visitors Don't Book: Mobile Conversion Audit"
+description: "Why dental website visitors leave without calling or booking, and how to audit the mobile path: tap targets, calls, forms, booking, insurance, speed and access."
+eyebrow: "Websites and conversion"
+lede: "Most practices that ask why their website does not produce appointments look at traffic first. The more common problem is what happens in the ninety seconds after a visitor arrives on a phone."
 parent: "/blog/"
-primaryIntent: "Why Dental Website Visitors Do Not Book: A Mobile Conversion Audit"
-related: ["/services/dental-web-design-conversion/"]
-order: 12
+primaryIntent: "why dental website visitors do not book"
+secondaryQuestions:
+  - "How do I audit my dental website on mobile?"
+  - "Why do people visit the website but not call?"
+  - "Does page speed affect dental appointment requests?"
+  - "What insurance information should a dental website show?"
+  - "Which accessibility issues stop patients booking?"
+audience: "Practice owners and office managers whose website gets visits but too few calls, forms or bookings"
+sources:
+  - "webdev-core-web-vitals"
+  - "webdev-inp"
+  - "webdev-optimize-lcp"
+  - "google-page-experience"
+  - "w3c-wcag22-target-size-minimum"
+  - "w3c-wcag22-consistent-help"
+  - "w3c-wcag22-labels-or-instructions"
+  - "w3c-wcag22-error-identification"
+  - "w3c-wcag22-identify-input-purpose"
+  - "doj-ada-web-guidance"
+related:
+  - "/services/dental-web-design-conversion/"
+  - "/resources/dental-website-audit-checklist/"
+  - "/blog/dental-online-booking-vs-request-forms/"
+  - "/blog/dental-call-tracking/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Core Web Vitals thresholds, INP and LCP guidance (web.dev), Google page experience guidance (Search Central, updated 2026-09-22), WCAG 2.2 Understanding documents for target size, consistent help, labels, error identification and input purpose, and DOJ ADA web guidance (2022) were retrieved on 2026-11-08. No conversion-rate benchmarks are stated; the walkthrough findings are an illustrative composite, not observations of a real site."
+faqs:
+  - q: "How often should a practice run a mobile conversion audit?"
+    a: "After any redesign, booking-tool change, phone system change or new campaign, and otherwise every quarter. Each pass takes under an hour if you follow a fixed script. Website plugins, third-party widgets and hours change silently, so a site that worked in spring can have a broken call button by autumn."
+  - q: "Is page speed the main reason visitors do not book?"
+    a: "Rarely on its own. Slow loading loses some visitors before they see anything, but a fast page with an unclear next step, a form that rejects valid phone numbers or a booking widget that only works for existing patients loses more. Check speed with field data, then walk the full path."
+  - q: "Should we list every insurance plan we accept?"
+    a: "List the plans you are in network with by their recognisable names, keep the list dated and current, and explain in one sentence what happens if a patient's plan is not listed. An out-of-date list causes more lost bookings and front-desk friction than no list, because it sets the wrong expectation."
+  - q: "Do we need to meet WCAG to avoid ADA problems?"
+    a: "The Department of Justice says the ADA applies to businesses open to the public, including medical offices, and points to WCAG as helpful guidance, but it has not set a detailed web standard for businesses. Treat WCAG 2.2 AA as the practical target and ask counsel about your specific obligations."
 ---
+
+<KeyAnswer>Visitors usually do not book because the path from interest to action breaks on a phone: the call button is hard to find or hit, the form asks too much or fails silently, the booking tool does not fit new patients, insurance questions go unanswered, or the page is slow or unusable with assistive technology. Walk that path yourself, on a phone, step by step.</KeyAnswer>
+
+This article explains why each of those breaks matters and how to find them. The [dental website audit checklist](/resources/dental-website-audit-checklist/) is the working tool to tick off during the audit; this page explains the reasoning behind its items so you can judge what to fix first. If the problem is that too few people reach the site at all, that is a visibility question covered in [why dental websites do not rank](/blog/why-dental-websites-do-not-rank/).
+
+## Where a mobile visit to a dental website stalls
+
+A prospective patient on a phone typically wants to answer three questions before acting: can this practice help with my problem, can I afford it or use my insurance here, and how do I get an appointment. Each answer has to be findable within a thumb's reach. When any one of them is missing or awkward, most people do not email to ask; they press back and try the next result.
+
+It helps to separate the visit into stages, because each stage fails for different reasons and has different owners.
+
+<Funnel title="The mobile path from arrival to appointment request" steps={[
+  { label: "Page loads", note: "Something useful is visible quickly and stays still" },
+  { label: "Relevance confirmed", note: "The visitor sees the service, location and who it is for" },
+  { label: "Questions answered", note: "Insurance, cost approach, hours, new-patient process" },
+  { label: "Action chosen", note: "Call, form or online booking, clearly offered" },
+  { label: "Action completed", note: "The call connects, the form submits, the booking confirms" },
+  { label: "Practice follows up", note: "Someone answers or replies within the promised time" }
+]} caption="A website audit that stops at the fourth stage misses the two failures visitors feel most." />
+
+The last stage is not technically part of the website, but it is where many "website problems" actually live. A form that submits correctly into an inbox nobody checks looks, from the patient's side, exactly like a broken form.
+
+## Page speed and stability: what to measure and what to ignore
+
+Google's web.dev guidance defines three Core Web Vitals: Largest Contentful Paint should occur within 2.5 seconds, Interaction to Next Paint should be 200 milliseconds or less, and Cumulative Layout Shift should be 0.1 or less, each assessed at the 75th percentile of page loads and segmented by mobile and desktop.
+
+<SourceNote ids={["webdev-core-web-vitals"]} />
+
+For a dental site, those three metrics map onto recognisable patient frustrations. A slow LCP is usually a large hero photo or video that delays the headline. A poor INP shows up as a tap on "Book now" or a menu that seems to do nothing for a moment, often because chat widgets, review carousels and tracking scripts are competing for the phone's processor. Layout shift is the call button jumping down as a cookie banner or promotional strip loads, so the visitor taps the wrong thing.
+
+INP observes the latency of all click, tap and keyboard interactions during a visit and reports the longest, ignoring outliers, which makes it the metric most connected to whether booking controls feel responsive.
+
+<SourceNote ids={["webdev-inp"]} />
+
+web.dev's LCP guidance breaks the metric into server response time, resource load delay, resource load duration and element render delay; diagnosing which part is slow tells you whether the fix is hosting, image handling or scripts.
+
+<SourceNote ids={["webdev-optimize-lcp"]} />
+
+Keep speed in proportion. Google's page experience documentation says Core Web Vitals are used by its ranking systems but that good scores alone will not put pages at the top of results, and that chasing a perfect score for SEO reasons may not be the most useful investment. For conversion, the threshold that matters is "fast and stable enough that nobody notices", measured with field data from real visits rather than a single lab test on office Wi-Fi.
+
+<SourceNote ids={["google-page-experience"]} />
+
+## Tap targets and call buttons
+
+On a phone, the call button is often the most valuable element on the page. It is also where small design decisions do the most damage.
+
+WCAG 2.2 success criterion 2.5.8 asks for pointer targets of at least 24 by 24 CSS pixels, with exceptions for adequately spaced targets and inline links; the enhanced criterion 2.5.5 uses 44 by 44 CSS pixels. Phone numbers in headers, text-link "call us" prompts and tightly stacked footer links frequently fall below the minimum.
+
+<SourceNote ids={["w3c-wcag22-target-size-minimum"]} />
+
+Consistency matters as much as size. WCAG 2.2 criterion 3.2.6 asks that help mechanisms repeated across pages, such as a contact phone number or contact link, appear in the same relative order on each page. A patient who found the number in the header of the homepage should find it in the header of the implant page.
+
+<SourceNote ids={["w3c-wcag22-consistent-help"]} />
+
+What to check on the call path:
+
+- **Is the number a working tel: link** on every page, including inside images or banners where it is often plain text?
+- **Does the button say what happens** ("Call the front desk") and, outside opening hours, what the caller will reach?
+- **Does a sticky call bar cover content** or the cookie banner, or obscure form fields when the keyboard opens?
+- **Is the number the one the practice wants called?** Old numbers survive in footers, schema markup and PDFs after a phone system change. Tracking numbers have their own rules, covered in [dental call tracking without treating every call as a new patient](/blog/dental-call-tracking/).
+- **Does someone answer?** Call the number during lunch and at five minutes before closing. That is part of the audit.
+
+## Forms that lose patients before submission
+
+Appointment request forms fail in two ways: people abandon them, and people complete them but the submission never arrives. Both are invisible unless you test.
+
+### Why people abandon dental forms
+
+The common causes are too many required fields, fields that ask for things patients do not know yet (insurance group number, preferred hygienist), and validation that rejects reasonable input such as phone numbers with spaces or names with apostrophes. Each field should earn its place: what does the front desk genuinely need to call the person back?
+
+WCAG 2.2 requires labels or instructions when content requires user input, and requires that automatically detected input errors are identified and described to the user in text. A form that turns a field red without saying why fails both the criterion and the patient.
+
+<SourceNote ids={["w3c-wcag22-labels-or-instructions", "w3c-wcag22-error-identification"]} />
+
+Criterion 1.3.5 asks that fields collecting information about the user expose their purpose programmatically, typically through autocomplete values, so browsers can offer to fill name, email and phone. On a phone that turns a minute of typing into two taps.
+
+<SourceNote ids={["w3c-wcag22-identify-input-purpose"]} />
+
+### Why completed forms never reach anyone
+
+Submit a test form and follow it all the way. Does it arrive? In which inbox? Does anyone own that inbox on Saturday? Does the confirmation message tell the person what happens next and when? Is there an automatic reply that sets expectations, and does it avoid repeating sensitive details from the form? A form routed to a former employee's address is one of the most common and most expensive website faults, because the site appears to be working.
+
+Forms also carry privacy obligations. Ask counsel how HIPAA applies to your form provider and to any analytics or advertising tags on pages where patients submit information, and keep clinical detail out of marketing forms where you can.
+
+## Booking flows and the new-patient gap
+
+Online booking tools can be excellent for existing patients and confusing for new ones. Common breaks include booking widgets that load slowly inside a frame, require an account before showing availability, show only hygiene appointments, or offer slots the practice does not actually want new patients to take. Whether a practice should offer self-scheduling at all, or a request form, depends on schedule control and integration; that decision is covered in [online booking versus request forms](/blog/dental-online-booking-vs-request-forms/). For the audit, the question is simpler: can a new patient with a specific problem get from the service page to a confirmed appointment or request on a phone, without dead ends?
+
+## Insurance and cost information that answers the real question
+
+For many visitors, "do you take my insurance?" is the deciding question, and a page that does not answer it hands the decision to a practice that does. Useful insurance content is specific and dated: the plans the practice is in network with by recognisable names, a plain statement of what happens if a plan is not listed (for example, the team checks out-of-network benefits), and when the list was last updated. For fee-for-service or elective treatments, explain how cost is determined and what the consultation estimate includes, without quoting prices the practice will not honour.
+
+## Accessibility as a conversion issue
+
+The Department of Justice's web guidance says Title III of the ADA covers businesses open to the public, lists medical offices among its examples, and notes that DOJ has no regulation setting detailed web standards for businesses but considers WCAG helpful guidance.
+
+<SourceNote ids={["doj-ada-web-guidance"]} />
+
+Treat accessibility as part of the conversion audit, not a separate compliance project. Images of text that screen readers cannot read, booking widgets that trap keyboard focus, low-contrast buttons and video without captions all stop real patients from booking. A practical target is WCAG 2.2 AA; ask counsel about specific legal obligations.
+
+## A diagnostic table: symptom, likely cause, test
+
+<DataTable caption="Reading conversion symptoms on a dental website" columns={["What you notice", "Likely cause to check first", "How to test it", "Usual fix"]}
+  rows={[
+    ["Visits steady, calls down", "Call button broken, hidden or pointing at an old number", "Tap every call link on a phone; check tracking-number swaps", "Restore one consistent tel: link per location"],
+    ["Many form starts, few submissions", "Required fields or validation errors", "Complete the form with realistic input, including spaces and apostrophes", "Cut fields; describe errors in text; add autocomplete"],
+    ["Forms submitted, front desk says none arrived", "Routing or spam filtering", "Submit a test and trace it to the inbox and person", "Fix routing; add an owner and response time"],
+    ["High exits on service pages", "Page does not confirm relevance or next step quickly", "Read the first screen on a phone without scrolling", "Lead with service, location and the action"],
+    ["Booking clicks but few confirmed appointments", "Widget unsuited to new patients or slow in a frame", "Book as a new patient on mobile data", "Adjust appointment types or use a request form"],
+    ["Calls about insurance that end without booking", "Insurance content missing or out of date", "Compare the website list with the front-desk list", "Publish a dated list and an out-of-network explanation"]
+  ]}
+  note="A framework for diagnosis. Use your own analytics and call data to confirm which row applies." />
+
+## Worked example: a twenty-minute phone walkthrough
+
+<Illustrative title="An office manager audits a three-dentist general practice website on her own phone">
+She opens the site from a Google search on mobile data, not office Wi-Fi. The homepage headline appears after a noticeable pause while a video loads, and the call button in the header shifts down when a promotional banner appears; her first tap opens the banner instead.
+
+On the emergency page, the phone number is in an image, so tapping it does nothing. The "Request appointment" form has nine required fields, including insurance member ID. With an apostrophe in a test surname the form shows a red outline and no message. On the second try it submits and shows "Thank you" with no indication of when the practice will call.
+
+She checks the shared inbox: the test arrived, but the inbox is checked once a day. The insurance page lists two plans the practice left a year ago. The booking button opens a widget that offers only recall hygiene appointments.
+
+Seven findings in twenty minutes; five are fixed within a week without a redesign. The point of the example is the method, not the specific faults, which are invented.
+</Illustrative>
+
+## Common mistakes when auditing conversion
+
+- **Testing on desktop or on office Wi-Fi.** Patients are on phones and mobile networks.
+- **Stopping at the thank-you page.** Follow the submission and the call to a human.
+- **Redesigning before fixing.** Many conversion faults are configuration, not design.
+- **Counting every form or call as a lead.** Existing patients, vendors and spam inflate the numbers; [tracking setup and attribution](/services/dental-conversion-tracking/) separates them.
+- **Fixing everything at once.** Change the call path first, measure, then move on, so you know which fix mattered.
+
+## Sources and limitations
+
+Speed thresholds and accessibility criteria come from web.dev, Google Search Central and W3C documents retrieved on 8 November 2026; standards and thresholds change. The DOJ guidance cited is from March 2022 and is informal. No conversion-rate benchmarks are given because we found none with a dental sample, method and date we could verify. The walkthrough is a labelled composite, not a real practice.
+
+## Related next steps
+
+- Use the [website audit checklist](/resources/dental-website-audit-checklist/) during your own walkthrough.
+- See how fixes and redesigns are scoped in [dental website design and conversion optimization](/services/dental-web-design-conversion/).
+- Check stage definitions in [the dental marketing metrics reference](/resources/dental-marketing-metrics/).
+- Ask for an outside review of the whole path, from search to answered call, through the [Dental Growth Audit](/dental-marketing-audit/).

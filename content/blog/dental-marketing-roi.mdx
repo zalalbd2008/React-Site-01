@@ -2,14 +2,180 @@
 route: "/blog/dental-marketing-roi/"
 type: "article"
 category: "reputation-strategy"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
 title: "Dental Marketing ROI: Leads, Bookings, Attended Visits, Revenue and Profit"
-metaTitle: "Dental Marketing ROI: Leads, Bookings, Attended Visits, Rev…"
-description: "Dental Marketing ROI: Leads, Bookings, Attended Visits, Revenue and Profit. A practical guide for dental practice owners and managers from Alpha Dental Media."
+metaTitle: "Dental Marketing ROI: From Leads to Collected Revenue"
+description: "How to tell leads, bookings, attended visits, collected revenue and profit apart, why ROAS is not ROI, and how to treat lifetime value with care."
+eyebrow: "Reputation and strategy"
+lede: "A report can show a strong return on ad spend while the practice loses money on the campaign. The difference lies in which number is being called a result, and what has been subtracted before anyone calls it a return."
 parent: "/blog/"
-primaryIntent: "Dental Marketing ROI: Leads, Bookings, Attended Visits, Revenue and Profit"
-related: ["/services/dental-conversion-tracking/"]
+primaryIntent: "dental marketing ROI"
+secondaryQuestions:
+  - "What is the difference between a lead and a new patient?"
+  - "What is the difference between ROAS and ROI for a dental practice?"
+  - "How should a practice calculate return on marketing?"
+  - "Should dental marketing ROI use patient lifetime value?"
+  - "How can booked and attended visits be connected back to ad campaigns?"
+audience: "Practice owners, managers and dental group finance or marketing leads judging whether marketing spend is paying back"
+sources:
+  - "google-ads-target-roas"
+  - "google-ads-conversion-values"
+  - "google-ads-offline-conversion-imports"
+  - "ga4-attribution"
+related:
+  - "/services/dental-conversion-tracking/"
+  - "/resources/dental-growth-calculator/"
+  - "/resources/dental-marketing-metrics/"
+  - "/blog/dental-call-tracking/"
+  - "/blog/dental-google-ads-budget/"
+  - "/blog/dental-group-marketing-dashboard/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "ROAS definition, conversion value mechanics, Target ROAS requirements, offline conversion import mechanics and GA4 attribution models checked against Google Ads Help and Google Analytics Help on 2026-11-08. All funnel counts, revenue and cost figures are illustrative; no benchmark conversion or attendance rates are stated because no dated dental-specific source was retrieved."
 order: 28
+faqs:
+  - q: "What is a good ROI for dental marketing?"
+    a: "There is no single figure that applies across practices, and we have not found a dated, representative benchmark. A useful target comes from your own numbers: the profit contribution of an attended new patient over a fixed period, compared with the full cost of acquiring them. Set the target from that, then test whether channels meet it."
+  - q: "Is ROAS the same as ROI?"
+    a: "No. Google Ads defines ROAS as conversion value divided by ad spend. It ignores management fees, clinical costs and whether the value you reported was ever collected. ROI subtracts the full marketing cost from the profit the marketing produced and divides by that cost."
+  - q: "Should we use patient lifetime value to judge campaigns?"
+    a: "Use it carefully and alongside a short-term measure. Lifetime value depends on assumptions about retention, recall attendance and referrals that are uncertain for a new channel. Judge campaigns first on collected revenue within a fixed window, such as 90 days, and treat lifetime value as a range."
+  - q: "Why do our ad platform conversions not match our new-patient count?"
+    a: "Ad platforms count tracked actions, such as calls longer than a set duration or form submissions. Those include existing patients, duplicates, spam and people who never book. Your practice management system counts patients who were seen. The gap is normal; the goal is to measure it, not hide it."
 ---
+
+<KeyAnswer>Dental marketing ROI is the profit an activity produced, minus its full cost, divided by that cost. To calculate it, separate five numbers that reports often blur: inquiries (leads), booked appointments, attended visits, collected revenue and profit. ROAS, which Google Ads defines as conversion value divided by ad spend, is a useful bidding signal but is not ROI.</KeyAnswer>
+
+Most disagreements between practices and agencies about whether marketing "works" are really disagreements about definitions. The agency points at leads; the owner looks at the schedule and the bank account. Both can be accurate and still describe different things. This guide separates the stages, explains why each stage loses volume, and works through a full example from ad spend to profit. If you want this measured properly in your own accounts, that is the job of our [dental conversion tracking service](/services/dental-conversion-tracking/).
+
+## The five numbers that get called "results"
+
+Each of these answers a different question. None of them can stand in for another.
+
+<Funnel title="From marketing inquiry to profit" steps={[
+  { label: "Inquiry (lead)", note: "A tracked call, form or booking attempt from any source" },
+  { label: "Qualified inquiry", note: "A prospective new patient asking for a service you offer, in your area" },
+  { label: "Booked appointment", note: "A scheduled new-patient visit in the practice management system" },
+  { label: "Attended visit", note: "The patient arrived and was seen" },
+  { label: "Collected revenue", note: "Payments actually received from patient and insurer within a set window" },
+  { label: "Profit contribution", note: "Collected revenue minus the variable costs of delivering the care" }
+]} caption="Each step down loses volume for different reasons. A report that stops at the first step cannot show return." />
+
+Definitions for each stage, and for related measures such as answered-call rate and cost per attended visit, are maintained in the [dental marketing metrics glossary](/resources/dental-marketing-metrics/). The point here is how they relate.
+
+### Why inquiries are not new patients
+
+An inquiry is anything a tracking system recorded: a call over a set duration, a form, a click on a booking button. It includes existing patients rescheduling, the same person calling twice, sales calls, spam forms and people asking about services you do not offer. How much of the total those make up varies by practice and by how tracking was set up, which is why the qualification step needs its own count. Separating new-patient calls from everything else is covered in [measuring calls without counting every call as a new patient](/blog/dental-call-tracking/).
+
+### Why bookings are not attended visits
+
+A booked appointment is a promise. Cancellations, no-shows and reschedules all sit between booking and attendance. The gap is also where marketing and operations meet: reminder processes, how far out the first available appointment is, and whether the caller's insurance question was answered all influence it.
+
+### Why production is not collected revenue
+
+Scheduled or produced fees are not what the practice receives. Insurance write-offs, adjustments, patient balances that are never paid and the delay before collection all reduce the figure. For return calculations, use collected revenue within a fixed window after the first visit, and say which window you chose.
+
+### Why revenue is not profit
+
+Revenue pays for clinical time, hygiene, supplies, lab fees and the front desk. A campaign that fills the schedule with low-margin appointments can raise revenue and still lose money once those costs are counted. Profit contribution, meaning revenue minus the variable cost of delivering the care, is the figure that belongs in an ROI calculation. Your accountant or practice management reports are the right source for a contribution margin; do not borrow one from another practice.
+
+## ROAS versus ROI: two different questions
+
+Google Ads defines return on ad spend as conversion value divided by ad spend, multiplied by 100%: in its own example, $5 of sales for each $1 of spend is a 500% ROAS. Conversion value is whatever the advertiser assigns, either the same value for every conversion or a different value per conversion, and Google uses it in bidding strategies such as Target ROAS and Maximize conversion value. Target ROAS needs conversions with values greater than zero, and Google notes that setting a target too high may limit the traffic your ads receive.
+
+<SourceNote ids={["google-ads-target-roas", "google-ads-conversion-values"]} />
+
+The important word is *assigns*. If a practice tells Google that every tracked call is worth $300, the account will report ROAS based on that number, whether or not those calls became attended, paying patients. ROAS answers "how much reported value did each ad dollar produce?" ROI answers "after every cost, did this make money?"
+
+| | ROAS | ROI |
+|---|---|---|
+| Formula | Conversion value ÷ ad spend × 100% | (Profit contribution − total marketing cost) ÷ total marketing cost × 100% |
+| Cost included | Media spend only | Media, management fees, tracking, creative, landing pages |
+| Value included | Whatever value was reported to the platform | Collected revenue after delivery costs, within a stated window |
+| Good for | Comparing campaigns and guiding automated bidding | Deciding whether to keep, grow or cut a channel |
+| Main risk | Inflated by assumed lead values | Needs data from outside the ad platform |
+
+## A worked example from ad spend to profit
+
+<Illustrative title="One month of paid search for a two-dentist general practice">
+**Costs.** Ad spend is $4,000 and the agency management fee is $1,500, so the total marketing cost is $5,500.
+
+**What the ad account reports.** The account recorded 120 conversions (calls and forms). The practice had set a value of $300 for each, so the account shows $36,000 in conversion value and a ROAS of 900% ($36,000 ÷ $4,000 × 100%).
+
+**What the practice records.** Of the 120 conversions, 20 were duplicates, existing patients or spam, leaving 100. Of those, 70 were prospective new patients asking for services the practice offers. 48 booked a first visit and 38 attended.
+
+**What was collected.** Across those 38 patients, the practice collected $15,960 from patients and insurers within 90 days of the first visit, an average of $420 each.
+
+**What it cost to deliver.** The practice's accountant estimates that variable costs of delivering that care (clinical and hygiene time, supplies, lab) run at about 60% of collections, leaving a 40% contribution: $6,384.
+
+**The result.** ROAS on collected revenue is $15,960 ÷ $4,000 = 399%, well below the 900% the platform showed. ROI over 90 days is ($6,384 − $5,500) ÷ $5,500 = about 16%. The campaign covered its full cost in the window, narrowly, before counting any later treatment or recall visits.
+
+**What would change the answer.** If 30 rather than 38 patients had attended, contribution would fall to about $5,040 and the 90-day ROI would be negative. That is why the attendance step, which is mostly an operations question, matters as much as the bidding.
+
+Every number in this example is invented for illustration.
+</Illustrative>
+
+You can model your own funnel, with your own rates and values, in the [dental growth calculator](/resources/dental-growth-calculator/).
+
+## Lifetime value: useful, but easy to misuse
+
+Lifetime value (LTV) estimates what a new patient is worth across future visits and referrals. It is a reasonable idea: a general practice patient who stays for years is worth far more than their first visit. It is also the easiest number to stretch.
+
+Treat LTV with these caveats:
+
+- **It rests on assumptions.** Retention, recall attendance, treatment acceptance and referrals all have to be estimated. If those estimates come from the practice's long-standing patients, they may not hold for patients acquired through a new channel.
+- **It arrives slowly.** Value that will be collected in year three does not pay this quarter's ad invoice. Compare it against payback time, not only total return.
+- **It should be a range.** Present a low, central and high estimate, and say which assumptions drive the difference.
+- **It needs the same cost treatment.** A lifetime revenue figure must be reduced to lifetime contribution before it is compared with acquisition cost.
+- **It can justify almost anything.** If a high LTV is used to approve any acquisition cost, nobody will notice when a channel stops working. Keep a short-window measure, such as 90-day collected contribution, alongside it.
+
+## Connecting practice outcomes back to campaigns
+
+Ad platforms and analytics tools only see what happens online unless you send them more. Two mechanics matter.
+
+**Offline conversion imports.** Google Ads lets advertisers import outcomes that happen offline, such as in an office or by phone, so campaigns can be judged on what happened after the click or call. Google currently recommends starting with enhanced conversions for leads, which uses hashed user-provided data alongside click identifiers. Google's help page also notes that from June 15, 2026, these uploads through the Google Ads API move to the Data Manager API. For a dental practice, any upload that relates to patients raises privacy questions; involve your own privacy officer or counsel before sending anything derived from patient records, and send the minimum needed.
+
+<SourceNote ids={["google-ads-offline-conversion-imports"]} />
+
+**Attribution models.** Google Analytics assigns credit for key events using a model, such as data-driven attribution or paid and organic last click. Its documentation notes that direct visits receive no credit unless the whole path was direct. Attribution answers which touchpoints get credit for a recorded action; it does not see phone calls that tracking missed, word-of-mouth referrals or a patient who drove past the sign.
+
+<SourceNote ids={["ga4-attribution"]} />
+
+The practical minimum for most practices is simpler than either: record the source of every new patient at booking, reconcile tracked inquiries with booked and attended visits each month, and keep the definitions fixed. Multi-office groups face the extra problem of comparing offices fairly, covered in [how to build a fair group marketing dashboard](/blog/dental-group-marketing-dashboard/).
+
+## What attribution cannot tell you
+
+Even with clean tracking, return figures describe association, not proof that the marketing caused every visit. Before crediting a channel, check what else changed in the same period:
+
+<Checklist title="Confounders to check before claiming a return" items={[
+  "Seasonality, such as school holidays or the end of the insurance benefit year",
+  "A new dentist, extended hours or a change in available appointments",
+  "Joining or leaving an insurance network",
+  "A new office, relocation or rebrand",
+  "Changes to tracking itself, such as a new call-tracking number that counts calls that already happened",
+  "Branded searches from people who would have found the practice anyway",
+  "Referrals from existing patients or other dentists"
+]} />
+
+## Common mistakes in measuring dental marketing return
+
+| Mistake | What it hides | Fix |
+|---|---|---|
+| Reporting ROAS based on a fixed lead value | Whether leads became paying patients | Report ROAS on collected revenue as well, and label which is which |
+| Counting management fees as overhead, not marketing cost | Part of the true acquisition cost | Include every cost that would end if the channel ended |
+| Using production instead of collections | Write-offs and unpaid balances | Use collected revenue within a stated window |
+| Treating revenue as return | Clinical and supply costs | Convert to contribution before calculating ROI |
+| Changing definitions mid-year | Real trends | Fix definitions and note any change in the report |
+| Judging a channel on one month | Normal variation and collection delay | Review trends over several months with the same window |
+
+## Sources and limitations
+
+Definitions of ROAS, conversion value, Target ROAS, offline conversion imports and attribution models come from Google Ads Help and Google Analytics Help as retrieved on 8 November 2026, and may change. Google's ROAS example uses retail sales; applying it to a dental practice is our interpretation. We have not cited typical attendance, acceptance or margin rates because we did not find a dated, representative dental source; use your practice's own data. Nothing here is accounting, tax or legal advice.
+
+## Next steps
+
+Start by writing down your definitions for each stage and the window you will use for collected revenue. Then test them on last quarter's numbers in the [dental growth calculator](/resources/dental-growth-calculator/). If your current reports stop at leads, our [conversion tracking and attribution service](/services/dental-conversion-tracking/) describes how we connect inquiries to booked and attended visits, and the [Dental Growth Audit](/dental-marketing-audit/) checks what your existing tracking can and cannot support.

@@ -2,14 +2,186 @@
 route: "/blog/dental-practice-rebrand-seo-migration/"
 type: "article"
 category: "dental-groups"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
-title: "Preserving Search Visibility Through Dental Acquisitions, Rebrands and Migrations"
-metaTitle: "Preserving Search Visibility Through Dental Acquisitions, R…"
-description: "Preserving Search Visibility Through Dental Acquisitions, Rebrands and Migrations. A practical guide for dental practice owners and managers from Alpha Dental…"
+title: "Keeping Search Visibility Through a Dental Acquisition, Rebrand or Site Migration"
+metaTitle: "Dental Rebrand and Site Migration Without Losing Visibility"
+description: "How dental practices and groups can sequence redirects, the Change of Address tool and Business Profile name changes so a rebrand or move does not erase visibility."
+eyebrow: "Dental groups and DSOs"
+lede: "Most lost visibility after a dental rebrand comes from sequencing, not from the rebrand itself: URLs changed without a map, profiles renamed before signage, or every change made in the same week."
 parent: "/blog/"
-primaryIntent: "Preserving Search Visibility Through Dental Acquisitions, Rebrands and Migrations"
-related: ["/services/local-seo-multi-location-clinics/","/services/dental-web-design-conversion/"]
+primaryIntent: "dental practice rebrand SEO migration"
+secondaryQuestions:
+  - "How do we redirect an old dental website to a new domain?"
+  - "When should we use Google's Change of Address tool?"
+  - "Will changing our practice name on Google Business Profile require re-verification?"
+  - "How long should redirects stay in place after a dental site move?"
+  - "What happens to an acquired practice's Business Profile?"
+audience: "Owners, operations leads and marketing managers at dental practices and groups planning an acquisition integration, rebrand, domain change or website rebuild"
+sources:
+  - "google-site-move-url-changes"
+  - "google-redirects"
+  - "google-change-of-address-tool"
+  - "google-canonical-urls"
+  - "google-gbp-guidelines"
+  - "google-gbp-edit-profile"
+  - "google-gbp-verify"
+  - "google-gbp-owners-managers"
+  - "google-site-names"
+related:
+  - "/services/local-seo-multi-location-clinics/"
+  - "/services/dental-web-design-conversion/"
+  - "/blog/multi-location-dental-website-structure/"
+  - "/blog/dentist-practice-google-business-profiles/"
+  - "/blog/dental-google-business-profile-suspension/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Site move steps checked against Google's Site moves with URL changes (last updated 2026-08-20) and Redirects (2026-04-14); Change of Address rules, 180-day period and domain-level limits against Search Console Help; name, re-verification and ownership transfer rules against Business Profile Help, all retrieved 2026-11-08. Timeline durations other than Google's stated periods are planning suggestions; mapping example is illustrative."
 order: 18
+faqs:
+  - q: "How long should we keep redirects from the old dental website?"
+    a: "Google's site move guidance says to keep redirects for as long as possible, generally at least one year. The Change of Address help adds at least 180 days, longer if Google Search still sends traffic to the old URLs, and recommends keeping the old domain registered for at least a year so nobody else can buy and misuse it."
+  - q: "Do we need the Change of Address tool if we only move pages within our own domain?"
+    a: "No. Google's help states that for moving pages from one path to another within a site, you just add redirects and update sitemaps. The tool is for moving a domain or subdomain to another domain, which can include moving an acquired practice's domain into a path on the group's domain."
+  - q: "Will renaming our Business Profile trigger re-verification?"
+    a: "It might. Google's help says that if you change your business name after it is verified, you might need to verify again, and that edits are reviewed before they go live. Change the name when the real-world signage and branding have changed, and expect a period where the profile may need attention."
+  - q: "Should we merge an acquired practice's Business Profile into ours?"
+    a: "If the acquired office stays open at its address, it keeps its own profile; you update its name, website and details to match the new branding once signage changes. Profiles represent physical locations, so there is usually nothing to merge. Transfer ownership into the group's account first so you control the changes."
+  - q: "Is it safe to change domain, design and CMS at the same time?"
+    a: "Google advises changing one thing at a time where possible, for example moving domains before changing layout. Combining changes makes it hard to tell which one caused a traffic drop. If budget forces a single project, keep URLs and content stable through the platform change and change the domain separately."
 ---
+
+<KeyAnswer>To keep visibility through an acquisition, rebrand or migration, map every old URL to its closest new equivalent, serve permanent server-side redirects, use Search Console's Change of Address tool for domain moves, and change each office's Business Profile name only once real-world signage matches. Sequence the changes rather than launching them together, and keep redirects for at least a year.</KeyAnswer>
+
+This guide covers the mechanics of change: moving, renaming and merging. Choosing the long-term structure for a group's sites is a separate decision, covered in [subfolders, subdomains or separate domains](/blog/multi-location-dental-website-structure/).
+
+## Which kind of change are you making?
+
+"Rebrand" covers several different projects, and each puts different assets at risk. Identify which you are doing before planning anything.
+
+| Change | What moves | Main risks | Google tools involved |
+|---|---|---|---|
+| Acquisition, brand kept | Accounts and ownership, not URLs | Losing registrar, hosting or profile access | Business Profile ownership transfer |
+| Rename on the same domain | Name, logo, copy; sometimes URLs | Profile name mismatch; site name in search lagging | Business Profile edit; WebSite structured data |
+| Domain change | Every URL | Broken links, lost rankings during recrawl | Redirects; Change of Address tool |
+| Acquired site folded into group domain | One domain into a path on another | Unmapped pages, duplicated content | Redirects; Change of Address tool to a path |
+| CMS or design rebuild | Templates, often URLs | Accidental URL changes, removed pages, noindex left on | Redirects if URLs change; sitemaps |
+| Office relocation | Address | Profile re-verification, map pin, citations | Business Profile edit and re-verification |
+
+A group integrating an acquisition may be doing three of these at once. The point of the table is to separate them so they can be scheduled one after another.
+
+## How Google describes a site move
+
+Google's guide to site moves with URL changes sets out a sequence: prepare and test the new site, prepare a mapping from current URLs to new ones, configure the server to redirect old URLs to new ones, then monitor traffic on both. It recommends splitting large moves into smaller steps, changing only one thing at a time — for example moving to a new domain first, then changing layout — and timing the move for a quieter period.
+
+Google also sets expectations. It says to expect temporary ranking fluctuation while it recrawls and reindexes, and that for medium-sized sites it can take a few weeks or more for new URLs to replace old ones, longer for larger sites. It states that 301 and other permanent redirects do not cause a loss in PageRank, and that a move is complete only once Googlebot has visited every old and new URL at least once.
+
+<SourceNote ids={["google-site-move-url-changes"]} />
+
+On redirect types, Google's redirects documentation distinguishes permanent redirects (HTTP 301 or 308), which show the new target in search results, from temporary ones, which keep showing the source. A rebrand or domain move is permanent, so the redirects should be too. Server-side redirects are preferred; JavaScript redirects are a fallback only when server-side or meta refresh options are unavailable.
+
+<SourceNote ids={["google-redirects"]} />
+
+## When to use the Change of Address tool — and when not to
+
+The Search Console Change of Address tool tells Google you have moved from one domain or subdomain to another, and Google says it helps migrate search results to the new site. The help page sets out conditions that matter for dental groups:
+
+- **Use it after** the move is live and redirects are working, not before.
+- **It works only at domain level.** You can move example.com or m.example.com, not a path such as example.com/office/. You can, however, move a whole domain to a path on another domain — the usual case when an acquired practice's site is folded into a group site.
+- **It does not move subdomains below the one you specify**, including www, so each variant you have used must be verified and submitted.
+- **Do not chain moves.** After moving site A to site B, you cannot immediately submit another move from B to C. Settle the destination before you start.
+- **The period is 180 days.** Google says it forwards signals and prefers the new site for 180 days; after that it no longer recognises a relationship between the sites. Keep redirects at least that long, and keep paying for the old domain for at least a year so it cannot be bought and misused.
+
+For moves within one domain — say from /our-offices/ to /locations/ — the help says to add redirects and update sitemaps; the tool is not needed.
+
+<SourceNote ids={["google-change-of-address-tool"]} />
+
+## Business Profiles during a rename or acquisition
+
+The website is only half of local visibility. Each office's Google Business Profile carries its name, reviews and map position, and Google's rules constrain how and when it can change.
+
+**Name timing.** Google's guidelines say a business name should reflect its real-world name as used consistently on the storefront, website and stationery. The edit-profile help adds that if you change the business name after verification, you might need to verify again, and that changes are reviewed before going live. In practice that means the profile name changes when the signage does — not weeks before as a teaser, and not months after.
+
+**During verification.** The verification help warns not to edit the name, address or category while a verification is in progress, because the code sent may stop working. Avoid stacking a name change on top of a pending verification.
+
+**Chains.** For groups converting several offices to one brand, the guidelines expect all locations of a chain to use the same name unless the real-world name consistently varies. Rolling a new name across offices office by office is fine, as long as each profile matches that office's signage at the time.
+
+**Ownership after an acquisition.** Business Profiles have owners and managers, with a single primary owner. Primary ownership can be transferred to another owner or manager already on the profile; the help notes that an owner in their first seven days cannot yet make someone else primary. Get the group added as owner and then made primary before any other change.
+
+**Relocation.** The edit help states that if a business moves to a new address after verification, it must be verified again.
+
+<SourceNote ids={["google-gbp-guidelines", "google-gbp-edit-profile", "google-gbp-verify", "google-gbp-owners-managers"]} />
+
+If a profile is suspended during the change, the evidence-gathering process is covered in [preparing a Business Profile suspension appeal](/blog/dental-google-business-profile-suspension/). Practitioner profiles for dentists who move between offices are covered in [practice versus practitioner profiles](/blog/dentist-practice-google-business-profiles/).
+
+## A sequence that separates the risky steps
+
+The timeline below is a planning sequence, not a Google requirement. Its purpose is to put each change in its own window so that a problem can be traced to a cause.
+
+<Timeline title="Sequencing an acquired practice's rebrand into a group domain" phases={[
+  { when: "Before announcement", title: "Secure access", items: ["Move domain registrar, DNS and hosting into group-owned accounts", "Become owner, then primary owner, of each Business Profile", "Verify every old domain variant in Search Console", "Export current URLs, top landing pages and inbound links"] },
+  { when: "4–8 weeks before", title: "Map and build", items: ["Map every old URL to its closest new equivalent", "Decide which pages are retired with 404 or 410", "Build and test the new pages on staging, with noindex removed only at launch", "Prepare updated location page with the new name and same office facts"] },
+  { when: "Change day", title: "Switch", items: ["Signage changes at the office", "Server-side 301 redirects go live", "Business Profile name, website link and photos updated", "New sitemap submitted"] },
+  { when: "Within a week", title: "Tell Google and patients", items: ["Submit Change of Address for domain moves, for each variant", "Update major listings, insurer directories and social profiles", "Email or text existing patients about the new name, without patient details in marketing systems"] },
+  { when: "Months 1–6", title: "Monitor", items: ["Check redirects and crawl errors weekly at first", "Watch impressions and calls per office against the pre-move baseline", "Fix unmapped URLs that still receive visits"] },
+  { when: "Months 6–12 and beyond", title: "Hold", items: ["Keep redirects for at least a year", "Keep the old domain registered", "Remove old-brand mentions from the site only after the profile and listings have settled"] }
+]} caption="Durations between steps are suggestions; Google's stated periods are 180 days for Change of Address and generally at least a year for redirects." />
+
+## Building the URL map
+
+The URL map is the single most important document in a migration. Every URL on the old site that has traffic, links or a purpose gets a row and a decision.
+
+<DataTable caption="Illustrative URL map for an acquired practice moving into a group domain" columns={["Old URL", "New URL", "Response", "Reason"]}
+  rows={[
+    ["oldpractice.com/", "brand.com/locations/riverside/", "301", "Old home page maps to the office's new location page, not the group home page"],
+    ["oldpractice.com/meet-dr-lee/", "brand.com/dentists/dr-lee/", "301", "Provider bio moves to the shared bios section"],
+    ["oldpractice.com/dental-implants/", "brand.com/services/dental-implants/", "301", "Closest equivalent service page exists"],
+    ["oldpractice.com/new-patient-forms/", "brand.com/locations/riverside/new-patients/", "301", "Office-specific forms keep an office-specific home"],
+    ["oldpractice.com/2019-holiday-hours/", "none", "410", "Obsolete; no useful equivalent"],
+    ["oldpractice.com/blog/flossing-tips/", "brand.com/blog/flossing-tips/", "301", "Content kept and consolidated with any duplicate post"]
+  ]}
+  note="Invented URLs. Redirecting everything to the group home page is the pattern to avoid: Google's guidance is to map pages to their corresponding new versions and return 404 or 410 for content not moved." />
+
+Google's site move guide also asks you to update internal links to point at new URLs directly, check rel="canonical" annotations on the new site, and make sure the new robots.txt and noindex settings reflect what should be indexed. Its canonicalisation documentation lists redirects and rel="canonical" as strong signals, so the two should agree.
+
+<SourceNote ids={["google-site-move-url-changes", "google-canonical-urls"]} />
+
+## Launch-day and first-month checks
+
+<Checklist title="Rebrand launch checks" items={[
+  "A sample of old URLs from the map returns a single 301 hop to the right new page, not a chain",
+  "The new site has no leftover noindex tags or staging robots.txt blocks",
+  "Every new location page shows the same name, address, phone and hours as its Business Profile",
+  "Business Profile website links point to the office's location page on the new domain",
+  "Call tracking numbers and booking links on the new pages route to the right office",
+  "Conversion events still fire after the template change",
+  "Search Console shows the new sitemap read and the Change of Address in progress where used",
+  "WebSite structured data on the new home page carries the new brand name"
+]} />
+
+The last item relates to site names. Google says site names are chosen from signals including WebSite structured data, the home page title and other text, that it cannot manually change an automatically selected site name, and that it supports an alternateName property. Adding the new name consistently, and the old one as an alternate during transition, is a reasonable way to indicate a preference; how quickly the displayed name changes is not something a practice controls.
+
+<SourceNote ids={["google-site-names"]} />
+
+## Common mistakes in dental migrations
+
+- **Redirecting everything to the home page.** Patients looking for a provider bio or forms land on a generic page, and Google gets no page-level mapping.
+- **Renaming profiles before signage changes.** A name that does not match the storefront conflicts with Google's naming guidelines and confuses patients arriving at the old sign.
+- **Letting the old domain expire.** Google's help specifically recommends keeping it for at least a year to prevent misuse by others.
+- **Bundling domain, design, CMS and URL changes.** When traffic falls, nobody can tell which change caused it.
+- **Losing measurement.** New templates often drop tracking scripts or change form behaviour. Compare calls and bookings per office before and after, as described in [the group dashboard guide](/blog/dental-group-marketing-dashboard/).
+- **Forgetting third-party directories.** Insurer directories and dental association listings often carry the old name long after the website changes.
+
+## Sources and limitations
+
+The Google periods quoted — at least one year for redirects in the site move guide, 180 days for Change of Address — were current on 8 November 2026. Google describes ranking fluctuation during moves but does not promise a recovery time, and none can be promised here. Business Profile reviews of name changes and re-verification outcomes vary by profile. Transferring domains and profiles in an acquisition also has contractual aspects your counsel should handle.
+
+## Related next steps
+
+- Our [multi-location local SEO service](/services/local-seo-multi-location-clinics/) plans profile and location-page changes office by office through an integration.
+- Our [dental website design and conversion service](/services/dental-web-design-conversion/) covers rebuilds where URLs, templates and tracking all have to survive the change.
+- If the rebuild involves choosing a new platform, see [WordPress versus Next.js for dental websites](/blog/wordpress-vs-nextjs-dental-websites/).
+- Before any migration, a [Dental Growth Audit](/dental-marketing-audit/) can produce the baseline and URL inventory you will compare against afterwards.

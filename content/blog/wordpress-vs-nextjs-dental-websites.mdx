@@ -2,14 +2,177 @@
 route: "/blog/wordpress-vs-nextjs-dental-websites/"
 type: "article"
 category: "websites-conversion"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
 title: "WordPress, Headless CMS or Next.js for a Dental Website"
-metaTitle: "WordPress, Headless CMS or Next.js for a Dental Website"
-description: "WordPress, Headless CMS or Next.js for a Dental Website. A practical guide for dental practice owners and managers from Alpha Dental Media."
+metaTitle: "WordPress vs Headless CMS vs Next.js for a Dental Website"
+description: "A neutral comparison of WordPress, headless CMS and Next.js for dental practices: editing, hosting, security updates, cost of ownership, lock-in, accessibility and speed."
+eyebrow: "Websites and conversion"
+lede: "The platform matters less than who will maintain it, who will edit it and who owns it. For many single practices, a well-maintained WordPress site is the sensible answer; for others, it is not."
 parent: "/blog/"
-primaryIntent: "WordPress, Headless CMS or Next.js for a Dental Website"
-related: ["/services/dental-web-design-conversion/"]
-order: 13
+primaryIntent: "WordPress vs Next.js for a dental website"
+secondaryQuestions:
+  - "Is WordPress good enough for a dental practice website?"
+  - "What is a headless CMS and does a practice need one?"
+  - "Which platform is fastest for a dental website?"
+  - "What does each option cost to own over several years?"
+  - "How do we avoid being locked in to a web developer?"
+audience: "Practice owners, office managers and dental group marketing leads choosing or replacing a website platform"
+sources:
+  - "wordpress-requirements"
+  - "wordpress-hardening"
+  - "wordpress-plugin-theme-autoupdates"
+  - "wordpress-rest-api-handbook"
+  - "nextjs-support-policy"
+  - "nextjs-static-exports"
+  - "webdev-core-web-vitals"
+  - "w3c-wcag-22"
+related:
+  - "/services/dental-web-design-conversion/"
+  - "/blog/dental-practice-rebrand-seo-migration/"
+  - "/blog/multi-location-dental-website-structure/"
+  - "/blog/choosing-a-dental-marketing-agency/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "WordPress requirements, hardening and auto-update documentation, the WordPress REST API handbook, the Next.js support policy and static export documentation, web.dev Core Web Vitals and WCAG 2.2 were retrieved on 2026-11-08. Version numbers and support dates are as published on that date. No market-share, cost or performance benchmarks are stated; cost figures appear only in a labelled illustrative example."
+faqs:
+  - q: "Is WordPress secure enough for a dental practice website?"
+    a: "It can be, if it is maintained. WordPress's own documentation says old versions are not maintained with security updates and that fixes make exploit details public, so the risk sits mainly in unpatched core, plugins, themes and hosting. A small, well-chosen plugin set with someone responsible for updates is the practical safeguard."
+  - q: "Is a Next.js website automatically faster than WordPress?"
+    a: "No. Either can pass or fail Core Web Vitals. Speed depends on images, scripts, hosting and how much third-party code the site loads. A lean WordPress theme on good hosting can outperform a Next.js site loaded with chat, review and tracking widgets. Measure field data rather than trusting the platform label."
+  - q: "What is a headless CMS in plain terms?"
+    a: "It separates where staff edit content from the code that displays the website. Editors use a familiar admin screen, and a developer-built front end, often in Next.js, fetches that content and renders the pages. WordPress itself can act as a headless CMS through its REST API."
+  - q: "Can we move from one platform to another later?"
+    a: "Yes, but it is a migration project, not a switch. Content, URLs, redirects, forms, tracking and structured data all have to be carried over and tested. Owning your domain, hosting account, code repository and a full content export makes a later move cheaper and keeps the decision in your hands."
 ---
+
+<KeyAnswer>Choose the platform your practice can keep maintained and edited. For most single practices that want staff to update pages and want a wide pool of providers, a lean, well-maintained WordPress site is often the sensible answer. Next.js, alone or with a headless CMS, suits practices and groups that have ongoing developer support and need custom booking, many locations or tighter performance control.</KeyAnswer>
+
+The question often arrives framed as a technology preference: a developer recommends one stack, another provider recommends the other. For a practice, the decision is really about four things: who edits content day to day, who applies security updates, who pays for what over several years, and who owns the pieces if the relationship ends. Each platform answers those differently. This article lays out the tradeoffs fairly; the design and conversion side of a website project is covered in [dental website design and conversion](/services/dental-web-design-conversion/).
+
+## What the three options actually are
+
+**Traditional WordPress.** One system stores the content, provides the admin screens and renders the pages, using a theme and plugins. Staff log in, edit a page and publish. WordPress runs on PHP and a MySQL or MariaDB database; on 8 November 2026 its requirements page recommended PHP 8.3 or greater and MariaDB 10.11 or greater or MySQL 8.0 or greater, and warned that older versions have reached end of life and may expose sites to security vulnerabilities.
+
+<SourceNote ids={["wordpress-requirements"]} />
+
+**Headless CMS.** Content is edited in one system and delivered as data to a separately built front end. The CMS might be a hosted product or WordPress itself: the WordPress REST API exposes posts, pages and other content as JSON so that applications in any language can read and write them.
+
+<SourceNote ids={["wordpress-rest-api-handbook"]} />
+
+**Next.js.** A React framework for building the website's front end in code. Content can live in files in the code repository (as on many small marketing sites), in a headless CMS, or both. Next.js can produce a fully static export served from any static host, but features that need a server, including cookies, rewrites, redirects, headers, incremental static regeneration and Server Actions, are not available in that mode.
+
+<SourceNote ids={["nextjs-static-exports"]} />
+
+"WordPress versus Next.js" is therefore slightly misleading. A practice can have WordPress alone, WordPress feeding a Next.js front end, another CMS feeding Next.js, or Next.js with content in files. The combinations change who can edit and who must maintain what.
+
+## How the options compare on what a practice cares about
+
+| Factor | Traditional WordPress | Headless CMS plus Next.js | Next.js with content in code |
+|---|---|---|---|
+| Who can edit day to day | Staff, in a familiar editor | Staff, in the CMS; layout changes need a developer | Usually a developer, or staff comfortable with files and review |
+| Publishing a small change | Minutes, by staff | Minutes for content; a deploy for layout | A code change and deploy |
+| Security updates | Core, theme, every plugin and the server; frequent | CMS vendor or CMS host, plus framework updates | Framework and dependency updates; small attack surface if static |
+| Hosting | Widely available PHP hosting | Two systems: CMS and front-end host | Static or Node hosting; can be simple |
+| Provider pool | Very wide | Narrower; needs JavaScript developers | Narrower; needs JavaScript developers |
+| Typical lock-in risk | Proprietary page builders and premium plugins | CMS vendor contract and custom front-end code | Custom code held by whoever wrote it |
+| Performance ceiling | Good with a lean theme and few plugins; easy to erode | High, if third-party scripts are controlled | High, if third-party scripts are controlled |
+| Accessibility | Depends on theme and plugins | Depends on how the front end is built | Depends on how the front end is built |
+| Best fit | Single practices with staff editors and modest custom needs | Groups or practices with many locations and ongoing developer support | Small, stable sites maintained by a technical owner or provider |
+
+The table describes tendencies, not rules. A disciplined WordPress build can be fast and accessible; a careless Next.js build can be neither.
+
+## Security updates and who carries them
+
+WordPress's hardening guide is direct: older versions are not maintained with security updates, and once a vulnerability is fixed the information needed to exploit it is almost certainly public, which makes outdated sites more exposed. WordPress has offered automatic core updates since version 3.7, and the guide also stresses keeping the web server and its software secure.
+
+<SourceNote ids={["wordpress-hardening"]} />
+
+Since WordPress 5.5, administrators can opt in to automatic updates for individual plugins and themes, with email notifications after update attempts. Auto-updates shorten the time a known hole stays open, at the cost of occasional compatibility breaks, which is why a staging copy and a named person responsible for checking updates matter.
+
+<SourceNote ids={["wordpress-plugin-theme-autoupdates"]} />
+
+Next.js shifts the burden rather than removing it. Its support policy keeps each major version in Active LTS until the next major release, then in Maintenance LTS, with only critical bug fixes and security updates, for two years from initial release. On the retrieval date, version 16 was Active LTS and version 15's security releases had been extended through 31 January 2027. A Next.js site that nobody upgrades eventually runs on an unsupported framework just as an abandoned WordPress site does.
+
+<SourceNote ids={["nextjs-support-policy"]} />
+
+The practical question for any proposal is the same: who applies updates, how often, how are they tested, and what does it cost per month or per year?
+
+## Performance and accessibility are build decisions, not platform features
+
+Core Web Vitals give a common yardstick: Largest Contentful Paint within 2.5 seconds, Interaction to Next Paint of 200 milliseconds or less and Cumulative Layout Shift of 0.1 or less, at the 75th percentile of real page loads.
+
+<SourceNote ids={["webdev-core-web-vitals"]} />
+
+Both platforms can meet those thresholds, and both can miss them. The usual causes of a slow dental site are oversized images and video, heavy page-builder markup, and third-party scripts for chat, reviews, booking and tracking. A static Next.js site has a higher ceiling because there is less work for the server and browser to do, but adding the same widgets brings the same costs.
+
+Accessibility follows the same logic. WCAG 2.2 sets the criteria, including newer ones on target size, consistent help and redundant entry; whether a site meets them depends on the theme or components, the colour choices and the third-party widgets, not on the platform name. Ask any provider which WCAG level they build to and how they test it.
+
+<SourceNote ids={["w3c-wcag-22"]} />
+
+## A decision tree for choosing a dental website platform
+
+<DecisionTree title="Which platform fits your practice?" q="Will non-technical staff publish content at least monthly?" branches={[
+  { answer: "Yes", q: "Do you have ongoing developer support under contract?", branches: [
+      { answer: "Yes, and we need custom features or many locations", outcome: "Headless CMS with a Next.js front end, or WordPress with a custom lean theme" },
+      { answer: "No, or only occasional help", outcome: "Traditional WordPress with a lean theme, few plugins and managed updates" } ] },
+  { answer: "No", q: "Is the site small and stable, with a provider or owner comfortable with code?", branches: [
+      { answer: "Yes", outcome: "Next.js with content in files, or a static WordPress setup" },
+      { answer: "No", outcome: "Traditional WordPress, so a wide pool of providers can maintain it" } ] }
+]} />
+
+The tree deliberately starts with editing and support, not speed. A platform the practice cannot keep current or cannot edit becomes a liability whatever its benchmark scores.
+
+## Cost of ownership over several years
+
+Build cost is the most visible number in a proposal and often the least important. Over three to five years, hosting, maintenance, licences, content changes and the eventual migration usually matter more.
+
+<Illustrative title="Five-year cost comparison for a two-location general practice">
+Invented figures for comparison only; real quotes vary widely by provider and scope.
+
+**Option 1, WordPress:** build 12,000; premium theme and plugin licences 400 a year; managed hosting 600 a year; maintenance and updates 150 a month; staff make most content edits. Five-year total roughly 26,000 before any redesign.
+
+**Option 2, headless CMS plus Next.js:** build 22,000; CMS plan 1,200 a year; front-end hosting 300 a year; developer retainer 250 a month for updates and layout changes. Five-year total roughly 37,500.
+
+**Option 3, Next.js with content in code:** build 16,000; hosting 200 a year; provider edits every content change at 100 an hour, about 3 hours a month. Five-year total roughly 35,000, mostly in edits.
+
+In this invented case WordPress is cheapest because staff do the edits. If the practice rarely changes content, Option 3 drops sharply. If it adds six more locations and needs a custom booking integration, Option 2's structure starts to pay for itself. The lesson is to model your own editing volume and support needs, not to copy these numbers.
+</Illustrative>
+
+## Ownership and lock-in: the questions to settle before signing
+
+Lock-in rarely comes from the platform itself. WordPress is open source; Next.js is open source. It comes from who holds the accounts and the code.
+
+<Checklist title="Ownership questions for any dental website proposal" items={[
+  "Is the domain registered in the practice's name, with the practice holding the registrar login?",
+  "Is the hosting account in the practice's name, or can it be transferred on request?",
+  "For custom code, is the repository owned by the practice or transferred at handover?",
+  "For WordPress, are premium theme and plugin licences in the practice's name?",
+  "Does the site depend on a proprietary page builder that would make content hard to move?",
+  "Can the practice export all content, images and form submissions in a standard format?",
+  "Who holds administrator access to the CMS, analytics, tag manager and Search Console?",
+  "What happens to the site, and at what cost, if the contract ends?"
+]} />
+
+These questions overlap with the wider agency due-diligence covered in [choosing a dental marketing agency](/blog/choosing-a-dental-marketing-agency/), which goes further into fees and reporting.
+
+## Common mistakes when choosing a platform
+
+- **Choosing on a demo's speed score.** A demo has no chat widget, no booking tool and no tracking. Ask for field data from live sites.
+- **Adding plugins for every feature.** On WordPress, each plugin is another update to track and another possible conflict. Fewer, well-maintained plugins are safer.
+- **Picking headless for a site nobody will edit.** The extra moving parts only pay back if content changes often or the group is large.
+- **Ignoring redirects during a rebuild.** Changing platforms often changes URLs; without redirects, search visibility and old links suffer. [Keeping visibility through rebrands and migrations](/blog/dental-practice-rebrand-seo-migration/) covers the process.
+- **Treating multi-location structure as a platform question.** Whether locations live in subfolders or separate sites is decided first; see [subfolders, subdomains or separate domains for groups](/blog/multi-location-dental-website-structure/).
+
+## Sources and limitations
+
+Version requirements and support dates come from WordPress.org and Next.js documentation as published on 8 November 2026 and change regularly. We do not cite platform market share or performance benchmarks, because none we found used a dental-practice sample with a stated method. Costs appear only in a labelled illustrative example. Other CMS products exist; we have not compared specific vendors, and naming them would date quickly.
+
+## Related next steps
+
+- See how website projects are scoped around conversion in [dental web design and conversion optimization](/services/dental-web-design-conversion/).
+- Check your current site's mobile path with [the website audit checklist](/resources/dental-website-audit-checklist/).
+- If you are weighing a rebuild, the [Dental Growth Audit](/dental-marketing-audit/) reviews whether the problems are platform-related at all.

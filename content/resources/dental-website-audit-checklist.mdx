@@ -1,14 +1,180 @@
 ---
 route: "/resources/dental-website-audit-checklist/"
 type: "resource"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
 title: "Dental Website Audit Checklist"
 navLabel: "Dental Website Audit Checklist"
-metaTitle: "Dental Website Audit Checklist"
-description: "A practical checklist for auditing a dental practice website. A free reference from Alpha Dental Media for dental practice owners and managers."
+metaTitle: "Dental Website Audit Checklist: 8 Sections With Checks"
+description: "A working checklist for auditing a dental practice website: findability, business info, mobile call and booking paths, accessibility, speed, forms and measurement."
+eyebrow: "Checklist"
+lede: "Eight sections you can work through with a phone, a laptop and an hour, each item paired with how to check it — no specialist tools required for most of them."
 parent: "/resources/"
-primaryIntent: "A practical checklist for auditing a dental practice website"
+primaryIntent: "dental website audit checklist"
+secondaryQuestions:
+  - "How do I check if my dental website is indexed by Google?"
+  - "What Core Web Vitals thresholds should a dental website meet?"
+  - "What are the WCAG 2.2 AA basics for a dental practice website?"
+  - "What should I check on a dental website's appointment request form?"
+audience: "Dental practice owners and managers reviewing their own website, or checking work delivered by a vendor"
+sources:
+  - "search-console-url-inspection"
+  - "google-mobile-first-indexing"
+  - "google-gbp-guidelines"
+  - "gbp-local-ranking"
+  - "w3c-wcag-22"
+  - "webdev-core-web-vitals"
+  - "chrome-lighthouse"
+  - "ga4-key-events"
+  - "ga4-utm-url-builder"
+  - "ecfr-16-cfr-465"
+related:
+  - "/blog/dental-website-conversion-audit/"
+  - "/services/dental-web-design-conversion/"
+  - "/blog/why-dental-websites-do-not-rank/"
+  - "/blog/dental-online-booking-vs-request-forms/"
+  - "/resources/dental-marketing-metrics/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Core Web Vitals thresholds checked against web.dev (page last updated 2024-10-31); WCAG 2.2 criteria and the 24 by 24 CSS pixel target size checked against the W3C Recommendation of 12 December 2024; Search Console URL Inspection, mobile-first indexing, Business Profile guidelines and local ranking factors checked against Google documentation retrieved 2026-11-08. The checklist is an editorial working tool, not a WCAG conformance evaluation or legal review."
 order: 3
+faqs:
+  - q: "How long does it take to work through this checklist?"
+    a: "A single-location practice can usually cover the findability, business information and mobile sections in under an hour with a phone and a laptop. The accessibility, performance and measurement sections take longer if you need Search Console, analytics or a developer's help to confirm what you find."
+  - q: "Does passing this checklist mean the website is WCAG compliant?"
+    a: "No. The accessibility section covers common, high-impact basics. Conformance with WCAG 2.2 AA requires checking every applicable success criterion across the site, including with assistive technology. Treat this list as a screening step that tells you whether a full evaluation is urgent."
+  - q: "Which section should I fix first?"
+    a: "Fix anything that stops a ready patient from contacting you: a broken phone link, a form that fails silently, wrong hours or a booking path that does not work on a phone. Those cost inquiries today. Visibility and performance improvements matter, but they take longer to show results."
 ---
+
+<KeyAnswer>Audit a dental website in the order a new patient experiences it: can they find it, is the business information right, can they call or book on a phone, do treatment pages answer their questions, can everyone use it, is it fast, does the form work safely, and can the practice measure what happened. Each checklist item below says how to check it.</KeyAnswer>
+
+This is the working tool. For the reasoning behind why visitors leave without booking, read [why dental website visitors do not book](/blog/dental-website-conversion-audit/); for ranking problems specifically, see [why a dental website is not ranking](/blog/why-dental-websites-do-not-rank/). Record each item as pass, fail or not applicable, with a screenshot and the date — a dated record is what lets you show later that something changed.
+
+<Callout title="Before you start" tone="note">
+Use a real phone on mobile data, not only a desktop browser shrunk to phone width. Test while signed out of the practice's Google accounts, and in a private window, so you see what a new visitor sees.
+</Callout>
+
+## 1. Findability
+
+<Checklist title="Can Google and patients find the right pages?" items={[
+  "The homepage and each main treatment page are indexed. How to check: in Search Console, paste each URL into URL Inspection and read whether the page is on Google; use the live test if you have just changed it.",
+  "A search for the practice name shows the practice's own site and Business Profile first. How to check: search the exact name and the name plus city in a private window.",
+  "The mobile version contains the same main content, headings and structured data as desktop. How to check: compare the two side by side; nothing important should be hidden or missing on mobile.",
+  "No important page is blocked by robots.txt or marked noindex. How to check: URL Inspection reports both; also open yoursite.com/robots.txt and read it.",
+  "Each page has a unique, descriptive title and meta description. How to check: search site:yourdomain.com and scan the listed titles for duplicates or placeholders.",
+  "Old URLs from a previous site redirect to their closest new page. How to check: test a few old addresses from bookmarks, printed material or the Search Console Pages report."
+]} />
+
+Google indexes and ranks using the mobile version of a site's content, which is why mobile content parity sits in this section rather than under design. URL Inspection shows Google's indexed version of a page and can test whether a live URL might be indexable.
+
+<SourceNote ids={["search-console-url-inspection", "google-mobile-first-indexing"]} />
+
+## 2. Business information
+
+<Checklist title="Is the practice described accurately and consistently?" items={[
+  "Practice name, address, phone and hours on the website match the Google Business Profile exactly. How to check: open both side by side; check holiday hours as well as regular hours.",
+  "The Business Profile name is the real-world practice name, without added keywords or cities. How to check: compare it with the signage and letterhead.",
+  "Each office has its own page with its own address, phone, hours and directions. How to check: open every location page; look for copied text with only the city swapped.",
+  "Dentists and specialists named on the site are current, with correct credentials. How to check: ask the office manager to confirm the team page line by line.",
+  "Insurance, payment and financing information is current and says what to do if a plan is not listed. How to check: compare with the front desk's current list.",
+  "Structured data, if present, describes the real practice and matches visible content. How to check: run the page through a structured data testing tool and compare each field with the page."
+]} />
+
+Google's guidelines say a Business Profile name should reflect the business's real-world name as used on its storefront, website and stationery, and that address lines should not contain keywords. Google describes local results as based mainly on relevance, distance and prominence, and says complete, accurate information helps with relevance. For how structured data should match the practice, see [matching dental website schema to the real practice](/blog/structured-data-for-dental-websites/).
+
+<SourceNote ids={["google-gbp-guidelines", "gbp-local-ranking"]} />
+
+## 3. Mobile call and booking paths
+
+<Checklist title="Can a patient contact the practice from a phone in under a minute?" items={[
+  "A tap-to-call phone number is visible without scrolling on every page. How to check: open five pages on a phone; tap the number and confirm it dials the right office.",
+  "The main call to action is the same on every page and says what happens next. How to check: read the button labels; 'Request an appointment' and 'Book online' are different promises.",
+  "Online booking, if offered, can be completed on a phone without pinching or zooming. How to check: make a test booking (then cancel it with the front desk) and time it.",
+  "Sticky bars, chat widgets and cookie banners do not cover the call button or form fields. How to check: scroll each page on a small phone and in landscape.",
+  "Calls are answered, or routed to a voicemail or answering service that says when someone will call back. How to check: phone the practice at lunchtime and just after closing.",
+  "After-hours and emergency instructions match the practice's real capacity. How to check: read the emergency page against what the practice actually offers."
+]} />
+
+Whether to offer online booking or a request form is a separate decision with real tradeoffs; [online booking versus request forms](/blog/dental-online-booking-vs-request-forms/) covers it. This checklist only asks whether the path the practice chose works.
+
+## 4. Treatment pages
+
+<Checklist title="Does each treatment page help a patient decide to contact you?" items={[
+  "Each major service has its own page stating who it is for, what the first visit involves and how to start. How to check: list the services the practice most wants and find the page for each.",
+  "Cost and insurance questions are addressed honestly, even if only to explain what affects price and how to get an estimate. How to check: search the page for 'cost', 'insurance' and 'financing'.",
+  "The page names the dentist or team who provides the treatment. How to check: read the page as a stranger; would you know who you would see?",
+  "Before-and-after images and testimonials are used only with documented patient permission and are real. How to check: ask who holds the consent records.",
+  "Each page has a clear next step near the top and again at the end. How to check: count the scrolls from the top to the first call or booking link on a phone.",
+  "Clinical claims have been reviewed by the treating dentist. How to check: ask whether a clinician signed off the copy and when."
+]} />
+
+Review content rules matter here too: the FTC's rule on consumer reviews and testimonials prohibits fake reviews and paying for reviews of a particular sentiment. If testimonials appear on treatment pages, the practice should be able to show where each came from.
+
+<SourceNote ids={["ecfr-16-cfr-465"]} />
+
+## 5. Accessibility basics (WCAG 2.2 AA)
+
+WCAG 2.2 is the current W3C Recommendation (dated 12 December 2024). The items below are a screening set of common, high-impact checks drawn from its success criteria — not a full conformance evaluation.
+
+<Checklist title="Can people using keyboards, screen readers or magnification use the site?" items={[
+  "Every function, including menus, forms and booking, works with the keyboard alone. How to check: unplug the mouse and use Tab, Shift+Tab, Enter and Space through the whole booking path.",
+  "A visible focus indicator shows where you are at every step, and it is not hidden behind sticky headers. How to check: tab through a page and watch for the outline disappearing.",
+  "Body text has a contrast ratio of at least 4.5:1 against its background. How to check: use a browser contrast checker on body text, buttons and text over images.",
+  "Tap targets such as buttons and links are at least 24 by 24 CSS pixels or spaced so they do not crowd each other. How to check: try tapping footer and menu links on a small phone.",
+  "Every form field has a visible label, and errors say which field is wrong and how to fix it. How to check: submit the form empty and read the messages; placeholder text alone is not a label.",
+  "Images that carry meaning have useful alt text; decorative images are hidden from screen readers. How to check: run an automated accessibility audit, then spot-check the flagged images.",
+  "Help and contact options appear in the same place on every page. How to check: compare the header and footer across several pages."
+]} />
+
+Lighthouse, an open-source automated tool built into Chrome, includes accessibility audits and is a quick first pass. Automated tools find only part of the problem; keyboard and screen-reader testing find the rest.
+
+<SourceNote ids={["w3c-wcag-22", "chrome-lighthouse"]} />
+
+## 6. Performance (Core Web Vitals)
+
+<Checklist title="Is the site fast and stable for real visitors?" items={[
+  "Largest Contentful Paint is within 2.5 seconds. How to check: Search Console's Core Web Vitals report or PageSpeed Insights field data, using mobile results.",
+  "Interaction to Next Paint is 200 milliseconds or less. How to check: field data only; lab tools cannot measure INP, though Total Blocking Time is a lab proxy.",
+  "Cumulative Layout Shift is 0.1 or less. How to check: field data, and watch the page load on a phone for buttons that jump as images or banners appear.",
+  "Hero images and videos are sized for mobile and do not delay the phone number or call to action. How to check: load the homepage on mobile data and note what appears first.",
+  "Third-party scripts such as chat, review widgets and old tracking tags are each still needed. How to check: list every script with a developer and remove anything nobody can explain."
+]} />
+
+web.dev recommends assessing these thresholds at the 75th percentile of page loads, segmented by mobile and desktop, and treating a page as passing when all three metrics meet the target. INP replaced First Input Delay as a stable Core Web Vital in 2024.
+
+<SourceNote ids={["webdev-core-web-vitals"]} />
+
+## 7. Forms and privacy
+
+<Checklist title="Does the form work, and does it avoid collecting what it should not?" items={[
+  "A test submission arrives where the practice expects it, and someone is responsible for replying. How to check: submit a clearly marked test and confirm with the front desk who received it and when.",
+  "If delivery fails, the visitor sees an honest error instead of a false 'thank you'. How to check: ask the developer how failures are handled and what the visitor sees.",
+  "The form asks only for what the practice needs to respond, and tells visitors not to include medical details. How to check: read every field and the helper text.",
+  "A privacy policy is linked from the form and describes what the site actually collects. How to check: compare the policy with the form fields and the scripts the site loads.",
+  "Analytics, advertising pixels and session-recording tools do not capture form contents or load on pages where patients enter health information. How to check: ask the developer for a list of every tag on form and booking pages.",
+  "Spam protection does not block real patients. How to check: submit from a phone on mobile data and from a different browser."
+]} />
+
+Tracking technologies on patient-facing pages can raise obligations under HIPAA and state privacy laws. The specifics depend on the practice and its vendors, so this is a question for the practice's own counsel rather than something a checklist can settle.
+
+## 8. Measurement
+
+<Checklist title="Can the practice tell what the website produced?" items={[
+  "Calls, form submissions and booking attempts are tracked as separate events. How to check: in GA4 Admin, review which events are marked as key events and what each one actually fires on.",
+  "Nothing that is not an inquiry is counted as one, such as contact page views or every tap on a phone link. How to check: compare a month of key events with the forms and calls the front desk actually received.",
+  "Ad and email links carry consistent UTM parameters for source, medium and campaign. How to check: click a live ad or email link and read the address bar.",
+  "Someone reconciles inquiries with bookings and attended visits at least monthly. How to check: ask who does it and to see last month's numbers.",
+  "The practice, not only its vendor, has admin access to analytics, Search Console, the Business Profile and the ad account. How to check: open each account's user settings."
+]} />
+
+In GA4, marking an event as a key event affects reports only from that point forward; it does not rewrite historic data, so note the date of any change. Google recommends always using utm_source, utm_medium and utm_campaign on campaign links. The [metrics glossary](/resources/dental-marketing-metrics/) defines inquiries, qualified inquiries and attended visits so the numbers in this section mean the same thing every month.
+
+<SourceNote ids={["ga4-key-events", "ga4-utm-url-builder"]} />
+
+## What to do with the results
+
+Sort failed items into three groups: anything that stops contact today (fix this week), anything that misleads patients or creates compliance questions (fix before spending more on traffic), and everything else (schedule it). If the list is long or the fixes need a developer, our [website design and conversion service](/services/dental-web-design-conversion/) works from this same structure. If you would rather have the whole path reviewed — visibility, website, advertising and measurement — request a [Dental Growth Audit](/dental-marketing-audit/).

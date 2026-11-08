@@ -2,14 +2,212 @@
 route: "/blog/why-dental-websites-do-not-rank/"
 type: "article"
 category: "seo-local"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
 title: "Why Dental Websites Fail to Rank: A Technical and Local Diagnosis"
-metaTitle: "Why Dental Websites Fail to Rank: A Technical and Local Dia…"
-description: "Why Dental Websites Fail to Rank: A Technical and Local Diagnosis. A practical guide for dental practice owners and managers from Alpha Dental Media."
+metaTitle: "Why Your Dental Website Isn't Ranking: A Diagnosis"
+description: "A layered way to diagnose why a dental website does not rank: indexing, relevance, the local map layer, prominence and mobile experience, using Google's own tools."
+eyebrow: "SEO and local visibility"
+lede: "Most ranking problems on dental websites sit in one of five layers. Working through them in order stops a practice paying to fix the wrong one."
 parent: "/blog/"
-primaryIntent: "Why Dental Websites Fail to Rank: A Technical and Local Diagnosis"
-related: ["/services/dental-seo-company/","/services/dental-web-design-conversion/"]
-order: 1
+primaryIntent: "why isn't my dental website ranking"
+secondaryQuestions:
+  - "Is my dental website indexed by Google?"
+  - "Why does my practice show in Maps but not in the organic results, or the other way round?"
+  - "Do slow pages stop a dental website from ranking?"
+  - "Why do competitors outrank us for implants or emergency dentistry?"
+audience: "Dental practice owners and managers whose website is not appearing for the services and areas they care about"
+sources:
+  - "google-how-search-works"
+  - "google-search-technical-requirements"
+  - "gsc-page-indexing-report"
+  - "gsc-url-inspection"
+  - "gsc-performance-report"
+  - "google-canonical-urls"
+  - "google-spam-policies"
+  - "google-helpful-content"
+  - "google-gbp-local-ranking"
+  - "google-mobile-first-indexing"
+  - "google-core-web-vitals"
+  - "google-debug-traffic-drops"
+  - "google-seo-starter-guide"
+related:
+  - "/services/dental-seo-company/"
+  - "/services/dental-web-design-conversion/"
+  - "/blog/google-maps-visibility-for-dentists/"
+  - "/resources/dental-website-audit-checklist/"
+  - "/blog/how-long-dental-seo-takes/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Google Search Central, Search Console Help and Business Profile Help pages opened and checked on 2026-11-08; quoted statements match the versions retrieved that day (dates of each page are recorded in content/sources/blog-seo.json). The worked example is illustrative and uses no client data."
+faqs:
+  - q: "How do I check whether Google has indexed my dental website?"
+    a: "Search Google for site: followed by your domain for a rough view, then use the Page indexing report and URL Inspection tool in Search Console for an exact answer about each important page. URL Inspection also shows which URL Google selected as canonical, which matters after redesigns and domain changes."
+  - q: "Can a website rebuild fix rankings on its own?"
+    a: "Sometimes, if the old site had technical faults such as blocked pages, duplicate URLs or thin mobile content. A rebuild cannot fix weak local prominence, an inaccurate Business Profile or service pages that say nothing specific. Rebuilds also create risk if old URLs are not redirected, so plan the migration before the design."
+  - q: "Why do I rank in my own office but not from a patient's neighbourhood?"
+    a: "Local results depend on distance from the searcher, so a practice can appear for searches made near the building and disappear a few miles away. Checking from your own desk is the least representative test. Check from several points in the area you want to serve, and compare the map results with the organic results separately."
+  - q: "Is a page that says Crawled - currently not indexed broken?"
+    a: "Not necessarily. Search Console Help describes it as a common status that does not always need attention. It matters when it affects pages you need, such as a main service page. Then check whether the page is substantially different from others on the site and whether it is linked from important pages."
 ---
+
+<KeyAnswer>A dental website usually fails to rank for one of five reasons, in this order: Google cannot index the page, the page does not clearly match the search, the search is local and the map results crowd it out, competitors are more prominent, or the mobile page is weak. Diagnose them in sequence, because a fix higher up the list is wasted if a lower layer is broken.</KeyAnswer>
+
+"Our website doesn't rank" is rarely one problem. It can mean the home page is missing from Google entirely, that the implant page appears on page three, that the practice shows in Maps but never in the ordinary results, or that a competitor appears for searches the practice thinks it owns. Each has a different cause and a different fix. This article sets out a diagnostic order that a practice manager can follow with free Google tools, and explains where technical work, local work and website work each fit.
+
+## Start by defining what not ranking means
+
+Before anyone changes the website, write down three things for each complaint: the exact search, where the searcher is, and which part of the results page you expect to appear in.
+
+- **The search.** "Dentist" is different from "emergency dentist open Saturday" or "same-day crowns". Broad searches are dominated by local results; specific treatment searches often show more organic pages.
+- **The searcher's location.** Google's Business Profile Help says local results are mainly based on relevance, distance and prominence. Distance means the result depends on where the person searching is, so a search from the front desk tells you little about a patient five miles away.
+- **The surface.** The map pack and the organic list are ranked differently. A practice can be strong in one and absent from the other, and the fixes are not the same.
+
+<SourceNote ids={["google-gbp-local-ranking"]} />
+
+Then check what Google already reports. The Search Console Performance report shows impressions (how often a page appeared in results), clicks and average position. If a page has impressions for a search at an average position of 25, the problem is competitiveness or relevance. If it has no impressions at all, the problem may be indexing, or the page may simply not be considered a match.
+
+<SourceNote ids={["gsc-performance-report"]} />
+
+## A diagnostic order for dental websites
+
+Work through the questions below from the top. Each answer either points to a fix or sends you to the next layer.
+
+<DecisionTree title="Why is this dental page not ranking?" q="Is the page indexed, and is it the URL Google chose as canonical?" branches={[
+  { answer: "No", outcome: "Layer 1: fix crawl, index or canonical issues before anything else" },
+  { answer: "Yes", q: "Does the page get impressions for the search in Search Console?", branches: [
+    { answer: "No", outcome: "Layer 2: the page does not clearly match the search. Check relevance and internal links" },
+    { answer: "Yes", q: "Is the search mainly answered by a map pack?", branches: [
+      { answer: "Yes", outcome: "Layer 3: diagnose the Business Profile and local signals, not just the page" },
+      { answer: "No", q: "Do the pages that outrank you have more references, reviews or depth?", branches: [
+        { answer: "Yes", outcome: "Layer 4: prominence and content depth gap" },
+        { answer: "No", outcome: "Layer 5: check the mobile page, speed and page experience" }
+      ] }
+    ] }
+  ] }
+]} />
+
+The order matters because the layers depend on each other. A practice that buys links (layer 4) for a page Google has not indexed (layer 1) gets nothing. A practice that rewrites its implant page (layer 2) when the real issue is that the search is answered almost entirely by the map pack (layer 3) will see little change in calls.
+
+## Layer 1: Can Google find, crawl and index the page?
+
+Google's technical requirements are short. Googlebot must not be blocked, the page must return an HTTP 200 (success) status, and the page must have indexable content. Google is explicit that meeting them does not mean a page will be indexed, and its guide to how Search works says Google does not promise to crawl, index or serve any page. Failing them, though, keeps a page out entirely.
+
+<SourceNote ids={["google-search-technical-requirements", "google-how-search-works"]} />
+
+The Page indexing report in Search Console groups URLs by status. The statuses most often relevant to practice websites are below.
+
+<DataTable caption="Common Page indexing statuses and what they mean for a practice website" columns={["Status in Search Console", "What Search Console Help says it means", "Typical cause on a dental site", "What to do"]}
+  rows={[
+    ["Blocked by robots.txt", "A robots.txt rule stops Google crawling the URL", "A staging rule left in place after launch, or a theme setting that blocks folders", "Remove the rule for pages that should appear; keep it only for genuinely private areas"],
+    ["Excluded by noindex tag", "The page tells Google not to index it", "A search-visibility toggle left on in the CMS, or service pages copied from a hidden template", "Remove noindex from pages you want found, then request indexing"],
+    ["Duplicate without user-selected canonical", "Google treats the page as a duplicate and serves another URL", "Several near-identical service or city pages, or the same page on www and non-www", "Consolidate or make pages substantially different; set a canonical"],
+    ["Duplicate, Google chose different canonical than user", "Google disagrees with the canonical you declared", "Old and new URLs both live after a redesign; tracking parameters in links", "Inspect the URL, redirect old versions, align internal links with the canonical"],
+    ["Crawled - currently not indexed", "Crawled but not indexed; common and not always a problem", "Thin pages that say little beyond the treatment name", "Only act for pages you need; improve substance and link to them from key pages"],
+    ["Soft 404", "The page looks like a not-found page but returns success", "Empty location or doctor pages, or a page that only holds a booking widget", "Add real content or return a proper 404 or redirect"]
+  ]}
+  note="Status names and meanings from Search Console Help, retrieved 2026-11-08. Typical causes are diagnostic hypotheses to confirm with URL Inspection, not findings about any specific site." />
+
+<SourceNote ids={["gsc-page-indexing-report", "gsc-url-inspection", "google-canonical-urls"]} />
+
+Two dental-specific patterns deserve attention. First, redesigns: when a practice changes website provider or platform, old URLs often stay live or return errors instead of redirecting, so Google keeps the old version as canonical. Second, platform templates: some practice-website products generate the same treatment pages for many practices with only the name changed. Search Console Help notes that Google does not serve duplicate pages, so a page that is near-identical to hundreds of others may never be selected. Changing domains or brands carries its own risks, covered in our guide to [keeping visibility through a rebrand or migration](/blog/dental-practice-rebrand-seo-migration/).
+
+## Layer 2: Does the page clearly match the search?
+
+If a page is indexed but gets no impressions for the search you care about, Google probably does not see it as a strong match. On dental sites this usually means one of three things.
+
+**There is no dedicated page.** A practice that wants to appear for sleep apnoea appliances, sedation or clear aligners, but mentions each only in a bullet list on a "Services" page, gives Google little to match. A specific search tends to be answered by a specific page.
+
+**The page exists but says nothing specific.** A treatment page that defines the procedure in general terms, without saying who at the practice provides it, how consultations work, what the cost conversation looks like, whether insurance or financing applies and how to book, looks like every other page on the topic. Google's guidance on helpful content asks whether a page provides original information and demonstrates first-hand expertise. A practice is unusually well placed to answer that: it knows its own process, technology and team.
+
+**The site's own links do not point to it.** If the implant page is only reachable through a dropdown menu and never linked from relevant pages, the site is signalling that it is not important. Internal links with descriptive anchor text help both visitors and Google understand what a page covers.
+
+<SourceNote ids={["google-helpful-content", "google-seo-starter-guide"]} />
+
+A caution on city pages: creating a page for every nearby suburb with the same text and a swapped place name is described in Google's spam policies as doorway abuse ("multiple domain names or pages targeted at specific regions or cities that funnel users to one page"). A single-office practice usually needs one strong location page, not twenty thin ones. Groups with several offices face a different problem, covered in [writing location pages without duplication](/blog/dental-group-location-pages/).
+
+<SourceNote ids={["google-spam-policies"]} />
+
+## Layer 3: Is the search really a map search?
+
+For many dental searches, the first thing a patient sees is a map pack drawn from Google Business Profiles, not a list of websites. When that happens, the website's organic position matters less than the profile's position, and the profile's position depends heavily on the searcher's distance from the practice.
+
+Google's Business Profile Help states that there is no way to request or pay for a better local ranking, and that prominence draws on information such as how many websites link to the business and how many reviews it has. The website still matters here, because the profile links to it and Google uses web information about the business, but the main levers are the profile itself: an accurate primary category, a real-world business name, correct hours and address, and genuine reviews.
+
+<SourceNote ids={["google-gbp-local-ranking"]} />
+
+If your complaint is "we do not show in Maps", go to our separate guide on [diagnosing Google Maps visibility for dentists](/blog/google-maps-visibility-for-dentists/), which covers categories, proximity testing, duplicates and spam. If the profile has been suspended, organic work will not bring it back; see [what to prepare before appealing a suspension](/blog/dental-google-business-profile-suspension/).
+
+## Layer 4: Are competitors simply more prominent?
+
+When your page is indexed, relevant and receiving impressions but sits below competitors, compare the pages that outrank you rather than assuming a technical fault. Useful questions:
+
+- Do their pages answer more of what a patient wants to know before booking: who does the treatment, how the consultation works, how cost and insurance are handled?
+- Are they referenced by other local websites, such as community organisations, local news, professional associations or suppliers' "find a provider" pages?
+- Do they have more genuine reviews, and are those reviews recent?
+- Is their site older, with years of accumulated references, while yours launched recently?
+
+Prominence is not bought quickly. Google's spam policies treat buying links that pass ranking credit as link spam, and the risk of a manual action outweighs a short-term gain. Sustainable prominence for a practice tends to come from real activity documented online: sponsorships, talks, community work, and patients who are asked, without incentives, to leave honest reviews.
+
+<SourceNote ids={["google-spam-policies"]} />
+
+## Layer 5: Is the mobile page fast, stable and complete?
+
+Google uses the mobile version of a site's content, crawled with a smartphone agent, for indexing and ranking. If the mobile version hides text, drops treatment details into collapsed tabs that never render, or omits the address and hours shown on desktop, Google evaluates the thinner version.
+
+<SourceNote ids={["google-mobile-first-indexing"]} />
+
+Google's Core Web Vitals guidance sets targets of Largest Contentful Paint within 2.5 seconds, Interaction to Next Paint under 200 milliseconds and Cumulative Layout Shift under 0.1, and describes good scores as aligned with what its core ranking systems seek to reward. It does not say speed overrides relevance. In practice, slow pages are more often a conversion problem than a ranking one: patients leave before the booking button loads. That makes speed worth fixing, but it belongs after the first four layers unless the site is severely broken on phones. The conversion side is covered in [why website visitors do not book](/blog/dental-website-conversion-audit/).
+
+<SourceNote ids={["google-core-web-vitals"]} />
+
+## A worked example: an implant page that never appears
+
+<Illustrative title="A single-office practice that cannot find its implant page">
+A general practice in a suburban area launched a new website eight months ago. The owner wants the practice to appear for implant searches and says the site "doesn't rank".
+
+**Layer 1.** URL Inspection shows the implant page is indexed, but Google has selected the old site's implant URL as canonical, because the old page still returns a 200 status. Action: redirect the old URL permanently to the new one and update internal links. This is the only technical fault found.
+
+**Layer 2.** The Performance report shows the new page received 40 impressions in three months, mostly for the practice's own name plus "implants". The page is 250 words of general description. Action: rewrite it with the dentist who places implants, how consultations and imaging are handled, how cost is discussed and how to book, and link to it from the home page and the general services page.
+
+**Layer 3.** Searches for implants plus the suburb show a map pack first. The profile's primary category is correct, but the profile links to the home page, not to a page relevant to the practice's main services. Action: no change to category; review the profile's services list and website link.
+
+**Layer 4.** The three practices above it have been online longer and are listed by several local organisations. Action: document existing community activity on the site and ask for listings where the practice genuinely participates.
+
+**Layer 5.** Mobile Largest Contentful Paint is slow because of an uncompressed hero video. Action: replace it with a compressed image. Treated as a conversion fix rather than the main ranking fix.
+
+The numbers above are invented to show the sequence. The point is the order: the canonical fault had to be solved before the content rewrite could count.
+</Illustrative>
+
+## Tradeoffs and common mistakes
+
+**Treating every drop as an algorithm update.** Google's guide to debugging traffic drops lists several causes: algorithmic updates, technical issues, security issues, spam or manual actions, and seasonality or changing interest. Check the Manual Actions and Security Issues reports and compare the timing of the drop with site changes before concluding it was an update.
+
+<SourceNote ids={["google-debug-traffic-drops"]} />
+
+**Measuring with a single personal search.** Personalised and location-dependent results make one search from the practice an unreliable test. Use Search Console impressions and position over weeks, and check map results from several points in the service area.
+
+**Fixing speed first because a tool gave a low score.** Lab scores are a useful diagnostic, but a fast page that is not indexed or not relevant still does not rank. Use the order above.
+
+**Rebuilding the site to solve a profile problem.** If the issue is local visibility, a new website will not change the profile's category, reviews or distance from the searcher.
+
+**Confusing rankings with results.** A page can rank and still produce no bookings if calls go unanswered or the booking path fails on mobile. Track inquiries separately from rankings; the definitions are in our [dental marketing metrics guide](/resources/dental-marketing-metrics/).
+
+**Expecting changes to show immediately.** Google's SEO Starter Guide says some changes take effect in a few hours and others several months, and suggests waiting a few weeks to assess impact. Our article on [how long dental SEO takes](/blog/how-long-dental-seo-takes/) sets out what to measure in the meantime.
+
+<SourceNote ids={["google-seo-starter-guide"]} />
+
+## Sources and limitations
+
+This diagnosis relies on Google's published documentation and its free tools. Google does not publish ranking weights, so no one outside Google can say exactly how much any factor counts for a particular search. Search Console reports data for Google Search only and does not include Business Profile interactions, which are reported in the profile's own Performance section. Status names in Search Console change from time to time; the names used here are those shown in Search Console Help on 8 November 2026. Third-party SEO tools estimate rankings and links from their own crawls and can differ from what Google reports.
+
+The layers are a working model for diagnosis, not Google's own classification. Real problems often span two layers at once, for example a redesign that both changed URLs and removed content.
+
+## Next steps
+
+If you want to work through this yourself, start with the free [dental website audit checklist](/resources/dental-website-audit-checklist/), which turns the layers above into practical checks. If the diagnosis points to ongoing technical, content and local work, our [dental SEO service](/services/dental-seo-company/) describes how we approach it. If it points to the website itself, such as a migration, a template that produces duplicate pages or a mobile experience that fails patients, see [dental website design focused on conversion](/services/dental-web-design-conversion/).
+
+For a structured outside view of all five layers, plus the Business Profile, advertising and measurement, request the [Dental Growth Audit](/dental-marketing-audit/). It sets out what we found, the evidence for each finding and the order we would address them in.
