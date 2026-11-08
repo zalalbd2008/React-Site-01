@@ -54,3 +54,4 @@ Retrieved and compiled 2026-11-08 by the Alpha Dental Media editorial team (batc
 ## Gaps
 
 - Military/VA population not sourced (do not mention specifics on page); no dentist-density or keyword data.
+- Born in Texas (DP02_0091PE): Houston 51.4%, Dallas 54.3%, Fort Worth 55.6%, Austin 48.5%, San Antonio 64.0% (±0.4), SA metro 62.2%, Texas 58.7%.

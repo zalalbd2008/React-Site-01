@@ -10,9 +10,9 @@
   --sand-100: #f2ede4;
   --sand-200: #e6dfd2;
   --ink: #18212e;
-  --ink-soft: #3e4a5c; /* 8.9:1 on warm white */
-  --ink-muted: #556172; /* 6.1:1 on warm white */
-  --teal-700: #0f6b64; /* 6.0:1 on white: text-safe accent */
+  --ink-soft: #3e4a5c; /* ≈8.4:1 on warm white */
+  --ink-muted: #556172; /* ≈5.9:1 on warm white */
+  --teal-700: #0f6b64; /* ≈6.3:1 on white: text-safe accent */
   --teal-600: #11807a;
   --teal-300: #7fd1c7; /* on navy only */
   --teal-50: #e8f5f3;

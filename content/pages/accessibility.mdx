@@ -1,11 +1,11 @@
 ---
 route: "/accessibility/"
 type: "legal"
-status: "Drafted"
+status: "Ready"
 title: "Accessibility Statement"
 navLabel: "Accessibility Statement"
 metaTitle: "Accessibility Statement | Alpha Dental Media"
-description: "Alpha Dental Media's accessibility commitment, the standard we target, known limitations and how to report a barrier."
+description: "The accessibility standard this site targets (WCAG 2.2 AA), the measures in place, known limitations, and how to report a barrier to us."
 lede: "We aim for this website to meet WCAG 2.2 Level AA. This page explains what has been done so far, what we have not yet verified, and how to tell us about a barrier."
 primaryIntent: "accessibility"
 audience: "Everyone using alphadentalmedia.com, including people who use assistive technology"
@@ -22,7 +22,7 @@ cta: "none"
 published: null
 updated: null
 evidence: "sourced"
-verificationNotes: "Measures described were checked in the site's code on 2026-11-08: lang attribute and skip link (src/app/layout.tsx), focus-visible outline and prefers-reduced-motion rules and documented contrast ratios on colour tokens (src/app/globals.css), labelled fields, hints and error associations (src/components/InquiryForm.tsx, src/components/GrowthCalculator.tsx), figure labels and keyboard-focusable scrollable tables (src/components/mdx/Diagrams.tsx), self-hosted fonts with system fallbacks (src/app/fonts.ts). No independent audit has been carried out; no conformance is claimed."
+verificationNotes: "Independent review 2026-11-08 against src/app/layout.tsx (lang en-US, 'Skip to main content' link), src/app/globals.css (:focus-visible outline, prefers-reduced-motion, colour tokens), src/components/SiteChrome.tsx and Footer.tsx (header, nav and footer landmarks), src/components/InquiryForm.tsx (labels, aria-describedby, aria-live status) and src/components/mdx/Diagrams.tsx (figure labels, focusable table region). Changed: contrast sentence now gives our recalculated ratios (about 5.9:1 to 15:1); the ratio comments in globals.css are slightly off (8.9 vs 8.4, 6.1 vs 5.9, 6.0 vs 6.3) and should be corrected by the developer; reporting section now says honestly that the form is the only channel until a direct address is confirmed. No conformance claimed; no independent audit."
 toc: true
 ---
 
@@ -62,7 +62,7 @@ If any part of this site is hard to use with your device, browser or assistive t
 - what went wrong, and
 - the browser, device and any assistive technology you were using.
 
-Choose "Other" as the main challenge and describe the barrier in the details box. At present the contact form is the only way to reach us; if the form itself is the barrier, we recognise that is a problem, and a direct contact address will be listed here once one is confirmed. When we receive a report, we will acknowledge it and explain what we plan to do about it, and provide the information you need in another format where we can.
+Choose "Something else" at the top of the form and describe the barrier; practice details are not needed. At present the contact form is the only way to reach us; if the form itself is the barrier, we recognise that is a problem, and a direct contact address will be listed here once one is confirmed. When we receive a report, we will acknowledge it and explain what we plan to do about it, and provide the information you need in another format where we can.
 
 ## Updates to this statement
 

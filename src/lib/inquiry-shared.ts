@@ -1,5 +1,6 @@
 /** Inquiry constants shared by the browser form and the server (no validation library, to keep the client bundle small). */
-export const INQUIRY_TYPES = ['audit', 'consultation'] as const;
+/** 'general' covers privacy, correction and accessibility requests that are not about a practice. */
+export const INQUIRY_TYPES = ['audit', 'consultation', 'general'] as const;
 
 export const CHALLENGES = [
   'Not enough new-patient inquiries',

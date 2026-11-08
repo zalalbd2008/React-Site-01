@@ -1,11 +1,12 @@
 ---
 route: "/privacy-policy/"
 type: "legal"
-status: "Drafted"
+status: "Ready"
+statusReason: "Ready for the protected preview only. Counsel review (owner input #14) is required before launch, plus legal name (#1), inquiry processor (#2), hosting provider (#13), retention periods and analytics configuration (#9)."
 title: "Privacy Policy"
 navLabel: "Privacy Policy"
 metaTitle: "Privacy Policy | Alpha Dental Media"
-description: "How Alpha Dental Media collects, uses and protects information submitted through this website, including inquiry forms."
+description: "What this website collects through its inquiry form and browser storage, where it goes and how it is used. Plain-language draft pending legal review."
 lede: "What this website collects, why, where it goes and how long it is kept — described in plain language and limited to what the site actually does."
 primaryIntent: "privacy policy"
 audience: "Visitors to alphadentalmedia.com, including dental practice owners and managers who submit an inquiry"
@@ -21,7 +22,7 @@ cta: "none"
 published: null
 updated: null
 evidence: "none-required"
-verificationNotes: "Drafted on 2026-11-08 from the site's code: form fields from src/lib/inquiry.ts and src/components/InquiryForm.tsx; delivery options from src/lib/delivery.ts; rate limiting from src/app/api/inquiry/route.ts; analytics and consent from src/lib/analytics.ts and src/components/Consent.tsx; self-hosted fonts from src/app/fonts.ts. Pending legal review (owner input #14). Owner must supply: legal business name (owner input #1), the configured inquiry processor (owner input #2), hosting provider (owner input #13), retention periods, and analytics configuration (owner input #9)."
+verificationNotes: "Independent review 2026-11-08 against src/lib/inquiry.ts, src/lib/inquiry-shared.ts, src/lib/delivery.ts, src/lib/analytics.ts, src/components/Consent.tsx, src/components/InquiryForm.tsx, src/app/api/inquiry/route.ts, src/app/layout.tsx and src/app/fonts.ts. Corrected: campaign values are read from the page where the form is submitted, at submission time, not from the first landing page (readAttribution is only called in onSubmit), and this happens regardless of analytics consent; if analytics are allowed Google Analytics also records page views and automatically collected data and uses cookies; site events carry only request type and chosen challenge; preview-only file sink disclosed; requests routed via the contact form's 'Other' option. Visible pending-legal-review callout retained. Counsel review (owner input #14) required before launch."
 toc: true
 ---
 
@@ -57,7 +58,7 @@ To prevent spam and duplicate submissions, and to understand which campaigns bri
 - **A random submission ID** generated in your browser, used to avoid processing the same request twice.
 - **The time the form was opened**, used to reject automated submissions sent faster than a person could type.
 - **A hidden field** that people do not see; if an automated program fills it, the submission is rejected.
-- **Campaign details, if present.** When you submit, the form reads the utm_source, utm_medium and utm_campaign values from the address of the page you are on, together with that page's path, and sends them with your inquiry. It also keeps them in your browser's session storage (under the name adm_attr) for the rest of the visit, so a second submission in the same tab sends the same values. Session storage is cleared when you close the browser tab. This happens whether or not analytics are allowed, and only when you submit the form. No advertising click IDs or other identifiers are collected this way.
+- **Campaign details, if present.** When you first open a page on this site in a browser tab, the site notes that page's path and any utm_source, utm_medium and utm_campaign values in its address, and keeps them in your browser's session storage (under the name adm_attr) for the rest of the visit. Nothing is sent anywhere at that point. If you later submit the form in the same tab, those values are sent with your inquiry so we can see which page or campaign led to it. Session storage is cleared when you close the browser tab. This happens whether or not analytics are allowed. No advertising click IDs or other identifiers are collected this way.
 
 The server also reads your IP address to limit how many requests can be sent from one address in a short period. In the current version of the site this count is held only in the server's working memory, is not written to a database, and is discarded when the server restarts.
 
@@ -96,7 +97,7 @@ Retention periods for inquiries and any related records have not yet been set. T
 
 ## Your choices and requests
 
-You can ask us to tell you what information we hold about you from this site, to correct it, or to delete it. Send your request through the [contact page](/contact/), choosing "Other" as the main challenge, say what you would like us to do, and we will reply to the email address you provide. We may need to confirm that the request comes from you. Depending on where you live, you may have additional rights under state privacy laws; those will be described here after legal review.
+You can ask us to tell you what information we hold about you from this site, to correct it, or to delete it. Send your request through the [contact page](/contact/), choosing "Something else" at the top of the form (practice details are not needed for these requests). Say what you would like us to do, and we will reply to the email address you provide. We may need to confirm that the request comes from you. Depending on where you live, you may have additional rights under state privacy laws; those will be described here after legal review.
 
 You can also decline analytics if a banner is shown, clear your browser's storage at any time, and arrive on the site without campaign tags in the address.
 

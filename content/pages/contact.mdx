@@ -1,7 +1,7 @@
 ---
 route: "/contact/"
 type: "utility"
-status: "Drafted"
+status: "Ready"
 title: "Contact Alpha Dental Media"
 navLabel: "Contact"
 metaTitle: "Contact Alpha Dental Media"
@@ -11,7 +11,7 @@ primaryIntent: "contact"
 parent: "/"
 cta: "none"
 evidence: "none-required"
-verificationNotes: "Independent review 2026-11-08 placeholder"
+verificationNotes: "Independent review 2026-11-08: checked against src/components/InquiryForm.tsx and src/app/api/inquiry/route.ts (success shown only after the server confirms delivery; 503/502 messages say nothing was sent or saved). Added what happens after sending (no timing promised) and how to route privacy, correction and accessibility requests. Risk: the form is the only contact channel, it requires practice fields for every request, and it fails closed until a destination is configured (owner inputs #2 and #4)."
 toc: false
 ---
 
@@ -39,4 +39,4 @@ No timing is promised on this page. Sending a request does not commit you to any
 
 ## Privacy requests, corrections and accessibility
 
-To ask about information we hold, report an error on a page or tell us about an accessibility barrier, use the same form: choose "Other" as the main challenge and describe the request in the details box. The form currently requires practice details on every request. If those fields do not apply to you, a separate contact address for these requests will be listed here once one is confirmed. See also our [editorial policy](/editorial-policy/) on corrections and the [accessibility statement](/accessibility/).
+To ask about information we hold, report an error on a page or tell us about an accessibility barrier, choose "Something else" at the top of the form. Practice details are not needed for these requests; just describe what you need. See also our [editorial policy](/editorial-policy/) on corrections and the [accessibility statement](/accessibility/).

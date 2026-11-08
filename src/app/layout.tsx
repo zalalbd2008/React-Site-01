@@ -4,6 +4,7 @@ import { inter, serif } from './fonts';
 import { SiteChrome } from '@/components/SiteChrome';
 import { Footer } from '@/components/Footer';
 import { Consent } from '@/components/Consent';
+import { AttributionCapture } from '@/components/AttributionCapture';
 import { primaryNav } from '@/lib/nav';
 import { getChildren } from '@/lib/content';
 import { env, site } from '@/lib/site';
@@ -44,6 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </main>
           <Footer />
         </div>
+        <AttributionCapture />
         {env.gaId && <Consent gaId={env.gaId} />}
       </body>
     </html>

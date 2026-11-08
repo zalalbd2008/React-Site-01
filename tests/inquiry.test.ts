@@ -44,3 +44,16 @@ test('rejects malformed website and phone', () => {
 test('unknown challenge values are rejected', () => {
   assert.equal(inquirySchema.safeParse({ ...valid, challenge: 'Something else' }).success, false);
 });
+
+test('general requests need a description but no practice details', () => {
+  const base = { type: 'general', name: 'A Visitor', email: 'visitor@example.com', consentContact: true, submissionId: valid.submissionId, startedAt: valid.startedAt };
+  assert.equal(inquirySchema.safeParse({ ...base, details: 'Please correct the date on your call tracking guide.' }).success, true);
+  assert.equal(inquirySchema.safeParse({ ...base, details: '' }).success, false);
+});
+
+test('audit requests still require practice fields', () => {
+  const r = inquirySchema.safeParse({ ...valid, practice: '', website: '', location: '', challenge: '' });
+  assert.equal(r.success, false);
+  const paths = r.success ? [] : r.error.issues.map((i) => i.path[0]);
+  for (const k of ['practice', 'website', 'location', 'challenge']) assert.ok(paths.includes(k), `missing ${k} error`);
+});

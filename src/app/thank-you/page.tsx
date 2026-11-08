@@ -8,6 +8,19 @@ type SP = Promise<{ type?: string }>;
 export default async function ThankYou({ searchParams }: { searchParams: SP }) {
   const { type } = await searchParams;
   const isCall = type === 'consultation';
+  if (type === 'general') {
+    return (
+      <section className="hero">
+        <div className="container prose">
+          <h1>Your request was received</h1>
+          <p className="hero__lede">Our system confirmed your request. We will reply by email to the address you provided.</p>
+          <p>
+            <Link href="/">Return to the homepage</Link>.
+          </p>
+        </div>
+      </section>
+    );
+  }
   return (
     <section className="hero">
       <div className="container prose">

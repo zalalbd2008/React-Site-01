@@ -6,7 +6,8 @@ import { useEffect, useId, useRef, useState } from 'react';
 import { CHALLENGES, CLINICAL_HINTS, isFreeEmail } from '@/lib/inquiry-shared';
 import { readAttribution, track } from '@/lib/analytics';
 
-type Props = { defaultType?: 'audit' | 'consultation' };
+type InquiryType = 'audit' | 'consultation' | 'general';
+type Props = { defaultType?: InquiryType };
 type Errors = Record<string, string>;
 
 const uuid = () =>
@@ -17,7 +18,7 @@ const uuid = () =>
 export function InquiryForm({ defaultType = 'audit' }: Props) {
   const id = useId();
   const router = useRouter();
-  const [type, setType] = useState<'audit' | 'consultation'>(defaultType);
+  const [type, setType] = useState<InquiryType>(defaultType);
   const [errors, setErrors] = useState<Errors>({});
   const [status, setStatus] = useState<'idle' | 'sending' | 'error'>('idle');
   const [message, setMessage] = useState('');
@@ -32,7 +33,7 @@ export function InquiryForm({ defaultType = 'audit' }: Props) {
     submissionId.current = uuid();
     startedAt.current = Date.now();
     const t = new URLSearchParams(window.location.search).get('type');
-    if (t === 'consultation' || t === 'audit') setType(t);
+    if (t === 'consultation' || t === 'audit' || t === 'general') setType(t);
   }, []);
 
   const f = (name: string) => ({
@@ -83,7 +84,7 @@ export function InquiryForm({ defaultType = 'audit' }: Props) {
       const data = (await res.json().catch(() => ({}))) as { ok?: boolean; fieldErrors?: Errors; message?: string };
       if (res.ok && data.ok) {
         // Success is shown only after the server confirms delivery.
-        track(type === 'audit' ? 'audit_request_accepted' : 'consultation_requested', { inquiry_type: type, challenge: body.challenge }, submissionId.current);
+        if (type !== 'general') track(type === 'audit' ? 'audit_request_accepted' : 'consultation_requested', { inquiry_type: type, challenge: body.challenge }, submissionId.current);
         router.push(`/thank-you/?type=${type}`);
         return;
       }
@@ -127,6 +128,10 @@ export function InquiryForm({ defaultType = 'audit' }: Props) {
           <input type="radio" id={`${id}-t-consult`} name="type" value="consultation" checked={type === 'consultation'} onChange={() => setType('consultation')} />
           <label htmlFor={`${id}-t-consult`}>Request a strategy call (we reply by email to arrange a time)</label>
         </div>
+        <div className="field field--check">
+          <input type="radio" id={`${id}-t-general`} name="type" value="general" checked={type === 'general'} onChange={() => setType('general')} />
+          <label htmlFor={`${id}-t-general`}>Something else: a privacy request, a correction or an accessibility issue</label>
+        </div>
       </fieldset>
 
       <div className="form-row form-row--2">
@@ -153,6 +158,8 @@ export function InquiryForm({ defaultType = 'audit' }: Props) {
         </div>
       </div>
 
+      {type !== 'general' && (
+        <>
       <div className="form-row form-row--2">
         <div className="field">
           <label htmlFor={`${id}-practice`}>Practice or group name (required)</label>
@@ -205,15 +212,20 @@ export function InquiryForm({ defaultType = 'audit' }: Props) {
         <Err name="challenge" />
       </div>
 
+        </>
+      )}
+
       <div className="field">
-        <label htmlFor={`${id}-details`}>Anything else we should know?</label>
+        <label htmlFor={`${id}-details`}>{type === 'general' ? 'Describe your request (required)' : 'Anything else we should know?'}</label>
         <textarea
           {...f('details')}
           maxLength={2000}
           onChange={(e) => setWarnClinical(CLINICAL_HINTS.test(e.currentTarget.value))}
         />
         <span className="field__hint" id={`${id}-details-hint`}>
-          Optional. Goals, services you want to grow, current agency or capacity limits. No patient information.
+          {type === 'general'
+            ? 'Tell us which page or information your request is about. No patient information.'
+            : 'Optional. Goals, services you want to grow, current agency or capacity limits. No patient information.'}
         </span>
         {warnClinical && (
           <span className="field__error" role="status">
@@ -263,7 +275,7 @@ export function InquiryForm({ defaultType = 'audit' }: Props) {
 
       <div>
         <button type="submit" className="btn btn--primary" disabled={status === 'sending'} aria-disabled={status === 'sending'}>
-          {status === 'sending' ? 'Sending…' : status === 'error' ? 'Try again' : type === 'audit' ? 'Send audit request' : 'Send call request'}
+          {status === 'sending' ? 'Sending…' : status === 'error' ? 'Try again' : type === 'audit' ? 'Send audit request' : type === 'consultation' ? 'Send call request' : 'Send request'}
         </button>
       </div>
     </form>

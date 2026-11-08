@@ -1,7 +1,7 @@
 ---
 route: "/resources/dental-growth-calculator/"
 type: "resource"
-status: "Drafted"
+status: "Ready"
 author: "editorial-team"
 reviewer: null
 title: "Dental Growth Calculator: Estimate Cost per Attended New-Patient Visit"
@@ -31,7 +31,7 @@ cta: "audit"
 published: null
 updated: null
 evidence: "illustrative-only"
-verificationNotes: "Formulas transcribed from src/lib/calculator.ts on 2026-11-08 and the worked examples recalculated by hand. Default inputs are the code's DEMO_INPUTS, which the code itself labels illustrative, not benchmarks. Average CPC and ROAS definitions checked against Google Ads Help on 2026-11-08. No industry benchmark is stated."
+verificationNotes: "Independent review 2026-11-08: every formula in the table compared line by line with calculate() and validate() in src/lib/calculator.ts and the display rounding in src/components/GrowthCalculator.tsx (clicks 0 dp, counts 1 dp, USD 0 dp); dash conditions match the code. Defaults equal DEMO_INPUTS and are labelled illustrative in the KeyAnswer, the tool, the Illustrative box and an FAQ. Worked example recalculated (500, 40, 24, 13.2, 10.56; $187.50; $426; $8,448; 2.8x; -25%). Google Ads avg. CPC and Target ROAS pages re-opened 2026-11-08. No changes needed."
 order: 2
 faqs:
   - q: "Are the calculator's starting numbers typical for dental practices?"

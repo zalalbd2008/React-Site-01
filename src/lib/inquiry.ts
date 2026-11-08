@@ -6,16 +6,19 @@ export { INQUIRY_TYPES, CHALLENGES, isFreeEmail, CLINICAL_HINTS } from './inquir
 const trimmed = (max: number, label = 'This field') =>
   z.string({ message: `${label} is required.` }).trim().max(max, `${label} is too long.`);
 
-export const inquirySchema = z.object({
-  type: z.enum(INQUIRY_TYPES, { message: 'Please choose an audit or a strategy call.' }),
+const optionalText = (max: number) => z.string().trim().max(max).optional().default('');
+const websiteRe = /^(https?:\/\/)?[a-z0-9.-]+\.[a-z]{2,}(\/.*)?$/i;
+
+export const inquirySchema = z
+  .object({
+  type: z.enum(INQUIRY_TYPES, { message: 'Please choose what you would like.' }),
   name: trimmed(120, 'Your name').min(2, 'Please enter your name.'),
   email: trimmed(200, 'Email').email('Please enter a valid email address.'),
-  practice: trimmed(160, 'Practice name').min(2, 'Please enter the practice or group name.'),
-  website: trimmed(300, 'Website')
-    .min(4, 'Please enter the practice website.')
-    .refine((v) => /^(https?:\/\/)?[a-z0-9.-]+\.[a-z]{2,}(\/.*)?$/i.test(v), 'Please enter a website address such as example.com.'),
-  location: trimmed(160, 'Location').min(2, 'Please enter the city and state of the main office.'),
-  challenge: z.enum(CHALLENGES, { message: 'Please choose the main growth challenge.' }),
+  // Practice fields are required for audit and consultation requests (checked below), optional for general requests.
+  practice: optionalText(160),
+  website: optionalText(300),
+  location: optionalText(160),
+  challenge: z.union([z.enum(CHALLENGES), z.literal('')]).optional().default(''),
   details: trimmed(2000).optional().default(''),
   phone: trimmed(40)
     .optional()
@@ -38,7 +41,18 @@ export const inquirySchema = z.object({
     })
     .optional()
     .default({}),
-});
+  })
+  .superRefine((v, ctx) => {
+    if (v.type === 'general') {
+      if (v.details.length < 10) ctx.addIssue({ code: 'custom', path: ['details'], message: 'Please describe your request.' });
+      return;
+    }
+    if (v.practice.length < 2) ctx.addIssue({ code: 'custom', path: ['practice'], message: 'Please enter the practice or group name.' });
+    if (v.website.length < 4) ctx.addIssue({ code: 'custom', path: ['website'], message: 'Please enter the practice website.' });
+    else if (!websiteRe.test(v.website)) ctx.addIssue({ code: 'custom', path: ['website'], message: 'Please enter a website address such as example.com.' });
+    if (v.location.length < 2) ctx.addIssue({ code: 'custom', path: ['location'], message: 'Please enter the city and state of the main office.' });
+    if (!v.challenge) ctx.addIssue({ code: 'custom', path: ['challenge'], message: 'Please choose the main growth challenge.' });
+  });
 
 export type Inquiry = z.infer<typeof inquirySchema>;
 

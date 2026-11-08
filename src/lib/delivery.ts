@@ -22,18 +22,20 @@ export function deliveryChannel(): 'webhook' | 'resend' | 'file' | null {
   return null;
 }
 
+const typeLabel = (t: Inquiry['type']) => (t === 'audit' ? 'Dental Growth Audit request' : t === 'consultation' ? 'Strategy call request' : 'General request (privacy, correction or accessibility)');
+
 function toText(i: Inquiry) {
   return [
-    `Type: ${i.type === 'audit' ? 'Dental Growth Audit request' : 'Strategy call request'}`,
+    `Type: ${typeLabel(i.type)}`,
     `Name: ${i.name}`,
     `Email: ${i.email}`,
     `Phone: ${i.phone || '—'}`,
     `Role: ${i.role || '—'}`,
-    `Practice: ${i.practice}`,
-    `Website: ${i.website}`,
-    `Location: ${i.location}`,
+    `Practice: ${i.practice || '—'}`,
+    `Website: ${i.website || '—'}`,
+    `Location: ${i.location || '—'}`,
     `Practices/locations: ${i.practiceCount || '—'}`,
-    `Main challenge: ${i.challenge}`,
+    `Main challenge: ${i.challenge || '—'}`,
     `Details: ${i.details || '—'}`,
     `Attribution: ${JSON.stringify(i.utm)}`,
     `Submission ID: ${i.submissionId}`,
@@ -70,7 +72,7 @@ export async function deliver(i: Inquiry): Promise<DeliveryResult> {
           from: process.env.INQUIRY_FROM_EMAIL,
           to: [process.env.INQUIRY_TO_EMAIL],
           reply_to: i.email,
-          subject: `${i.type === 'audit' ? 'Audit request' : 'Strategy call request'}: ${i.practice}`,
+          subject: `${typeLabel(i.type)}: ${i.practice || i.name}`,
           text: toText(i),
         }),
         signal: AbortSignal.timeout(10_000),
