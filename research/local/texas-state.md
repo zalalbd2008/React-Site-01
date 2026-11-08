@@ -69,3 +69,36 @@ Retrieved and compiled 2026-11-08 by the Alpha Dental Media editorial team (batc
 ## Houston as base
 
 - Alpha Dental Media is Houston-based (business-facts register: city level only, no address). Everything outside Houston is delivered remotely; there are no other Texas offices.
+
+
+## Review update, 2026-11-08: ACS 2020–2024 values (batch review-texas)
+
+Under the data-vintage policy in docs/city-brief.md, the independent reviewer re-pulled the 2020–2024 5-year Data Profiles from the data.census.gov table API (`ACSDP5Y2024.DP02–DP05`; places also via `node scripts/census.mjs "<City>" TX`, which returned identical values). Values are estimate ±MOE. The page now cites these figures (source ids `census-acs-2024-*`); the 2019–2023 table above is kept for the record only.
+
+| Measure (ACS 2020–2024 5-year, DP tables) | Houston city, Texas | Dallas city, Texas | Fort Worth city, Texas | Austin city, Texas | San Antonio city, Texas | Texas |
+|---|---|---|---|---|---|---|
+| Total population | 2328253 ±196 | 1307930 ±153 | 963194 ±475 | 979539 ±484 | 1479835 ±251 | 30188424 ±-555555555 |
+| Under 5 years (%) | 6.7 ±0.1 | 7.0 ±0.2 | 7.1 ±0.2 | 5.2 ±0.2 | 6.2 ±0.1 | 6.4 ±0.1 |
+| Under 18 years (%) | 23.4 ±0.2 | 23.9 ±0.3 | 26.4 ±0.3 | 18.0 ±0.3 | 23.6 ±0.2 | 25.0 ±0.1 |
+| 65 years and over (%) | 12.3 ±0.1 | 11.8 ±0.2 | 10.6 ±0.2 | 10.4 ±0.2 | 13.4 ±0.1 | 13.4 ±0.1 |
+| Median age | 34.4 ±0.2 | 33.4 ±0.3 | 33.6 ±0.3 | 34.7 ±0.2 | 34.9 ±0.2 | 35.6 ±0.1 |
+| Hispanic or Latino, any race (%) | 44.2 ±0.4 | 42.6 ±0.5 | 34.6 ±0.5 | 31.9 ±0.4 | 64.6 ±0.4 | 39.7 ±0.1 |
+| Language other than English at home, 5+ (%) | 47.1 ±0.4 | 41.2 ±0.6 | 32.6 ±0.7 | 30.3 ±0.6 | 40.4 ±0.6 | 35.1 ±0.1 |
+| Spanish at home, 5+ (%) | 37.2 ±0.4 | 34.9 ±0.5 | 24.5 ±0.6 | 20.2 ±0.6 | 36.4 ±0.5 | 28.1 ±0.1 |
+| Other Indo-European languages, 5+ (%) | 3.5 ±0.2 | 2.2 ±0.2 | 3.1 ±0.3 | 4.0 ±0.2 | 1.5 ±0.1 | 2.6 ±0.1 |
+| Asian and Pacific Island languages, 5+ (%) | 4.4 ±0.2 | 2.2 ±0.2 | 2.9 ±0.3 | 4.7 ±0.3 | 1.8 ±0.1 | 3.2 ±0.1 |
+| Speak English less than "very well", 5+ (%) | 22.1 ±0.3 | 18.2 ±0.4 | 12.5 ±0.5 | 10.5 ±0.5 | 12.9 ±0.4 | 13.0 ±0.1 |
+| Born in state of residence (%) | 50.7 ±0.4 | 53.8 ±0.6 | 54.5 ±0.7 | 47.7 ±0.6 | 63.7 ±0.5 | 58.3 ±0.1 |
+| Born in a different U.S. state (%) | 18.4 ±0.4 | 21.3 ±0.4 | 25.9 ±0.6 | 31.3 ±0.5 | 19.0 ±0.3 | 22.5 ±0.1 |
+| Foreign-born (%) | 29.3 ±0.4 | 23.4 ±0.5 | 17.6 ±0.6 | 18.7 ±0.6 | 15.0 ±0.4 | 17.6 ±0.1 |
+| Same house one year ago (%) | 82.9 ±0.4 | 84.5 ±0.4 | 85.7 ±0.6 | 78.8 ±0.6 | 82.5 ±0.5 | 86.0 ±0.1 |
+| Different state one year ago (%) | 1.9 ±0.1 | 2.3 ±0.2 | 2.0 ±0.2 | 3.6 ±0.3 | 2.2 ±0.2 | 2.0 ±0.1 |
+| Bachelor's degree or higher, 25+ (%) | 36.6 ±0.4 | 38.2 ±0.5 | 32.0 ±0.7 | 59.6 ±0.6 | 29.0 ±0.5 | 33.8 ±0.2 |
+| Median household income (2024 $) | 64813 ±822 | 70518 ±817 | 79507 ±966 | 93658 ±1670 | 65056 ±776 | 78476 ±263 |
+| Mean travel time to work (min) | 27.2 ±0.2 | 25.7 ±0.3 | 27.1 ±0.4 | 23.7 ±0.4 | 24.5 ±0.2 | 26.7 ±0.1 |
+| Worked from home (%) | 13.0 ±0.3 | 15.8 ±0.5 | 14.0 ±0.6 | 30.7 ±0.7 | 13.5 ±0.5 | 14.4 ±0.1 |
+| With private health insurance (%) | 52.3 ±0.5 | 54.3 ±0.6 | 62.1 ±0.8 | 74.7 ±0.7 | 58.1 ±0.6 | 62.8 ±0.2 |
+| With public coverage (%) | 30.7 ±0.4 | 29.5 ±0.5 | 26.3 ±0.6 | 20.7 ±0.5 | 34.3 ±0.4 | 29.0 ±0.1 |
+| No health insurance (%) | 23.7 ±0.4 | 22.8 ±0.5 | 18.6 ±0.6 | 12.4 ±0.6 | 17.6 ±0.5 | 17.1 ±0.2 |
+| Under 19, no health insurance (%) | 16.3 ±0.7 | 16.3 ±1.0 | 13.5 ±0.9 | 9.6 ±1.2 | 10.4 ±0.7 | 12.0 ±0.2 |
+| Owner-occupied housing units (%) | 42.1 ±0.5 | 42.4 ±0.5 | 57.0 ±0.8 | 43.4 ±0.7 | 52.2 ±0.6 | 62.6 ±0.2 |

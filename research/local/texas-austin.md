@@ -54,3 +54,36 @@ Retrieved and compiled 2026-11-08 by the Alpha Dental Media editorial team (batc
 ## Gaps
 
 - No sourced data on dentist supply; no keyword-tool data; tech-sector employment changes not sourced (do not mention on page).
+
+
+## Review update, 2026-11-08: ACS 2020–2024 values (batch review-texas)
+
+Under the data-vintage policy in docs/city-brief.md, the independent reviewer re-pulled the 2020–2024 5-year Data Profiles from the data.census.gov table API (`ACSDP5Y2024.DP02–DP05`; places also via `node scripts/census.mjs "<City>" TX`, which returned identical values). Values are estimate ±MOE. The page now cites these figures (source ids `census-acs-2024-*`); the 2019–2023 table above is kept for the record only.
+
+| Measure (ACS 2020–2024 5-year, DP tables) | Austin city, Texas | Austin-Round Rock-San Marcos, TX Metro Area | Texas |
+|---|---|---|---|
+| Total population | 979539 ±484 | 2426592 ±-555555555 | 30188424 ±-555555555 |
+| Under 5 years (%) | 5.2 ±0.2 | 5.8 ±0.1 | 6.4 ±0.1 |
+| Under 18 years (%) | 18.0 ±0.3 | 21.8 ±0.1 | 25.0 ±0.1 |
+| 65 years and over (%) | 10.4 ±0.2 | 11.9 ±0.1 | 13.4 ±0.1 |
+| Median age | 34.7 ±0.2 | 36.0 ±0.1 | 35.6 ±0.1 |
+| Hispanic or Latino, any race (%) | 31.9 ±0.4 | 32.2 ±-555555555.0 | 39.7 ±0.1 |
+| Language other than English at home, 5+ (%) | 30.3 ±0.6 | 28.4 ±0.4 | 35.1 ±0.1 |
+| Spanish at home, 5+ (%) | 20.2 ±0.6 | 19.7 ±0.3 | 28.1 ±0.1 |
+| Other Indo-European languages, 5+ (%) | 4.0 ±0.2 | 3.6 ±0.1 | 2.6 ±0.1 |
+| Asian and Pacific Island languages, 5+ (%) | 4.7 ±0.3 | 3.9 ±0.2 | 3.2 ±0.1 |
+| Speak English less than "very well", 5+ (%) | 10.5 ±0.5 | 9.4 ±0.3 | 13.0 ±0.1 |
+| Born in state of residence (%) | 47.7 ±0.6 | 51.0 ±0.4 | 58.3 ±0.1 |
+| Born in a different U.S. state (%) | 31.3 ±0.5 | 30.7 ±0.3 | 22.5 ±0.1 |
+| Foreign-born (%) | 18.7 ±0.6 | 16.3 ±0.3 | 17.6 ±0.1 |
+| Same house one year ago (%) | 78.8 ±0.6 | 82.6 ±0.4 | 86.0 ±0.1 |
+| Different state one year ago (%) | 3.6 ±0.3 | 3.0 ±0.2 | 2.0 ±0.1 |
+| Bachelor's degree or higher, 25+ (%) | 59.6 ±0.6 | 50.9 ±0.5 | 33.8 ±0.2 |
+| Median household income (2024 $) | 93658 ±1670 | 100431 ±996 | 78476 ±263 |
+| Mean travel time to work (min) | 23.7 ±0.4 | 27.3 ±0.2 | 26.7 ±0.1 |
+| Worked from home (%) | 30.7 ±0.7 | 26.8 ±0.4 | 14.4 ±0.1 |
+| With private health insurance (%) | 74.7 ±0.7 | 75.2 ±0.5 | 62.8 ±0.2 |
+| With public coverage (%) | 20.7 ±0.5 | 22.0 ±0.3 | 29.0 ±0.1 |
+| No health insurance (%) | 12.4 ±0.6 | 12.0 ±0.4 | 17.1 ±0.2 |
+| Under 19, no health insurance (%) | 9.6 ±1.2 | 9.3 ±0.6 | 12.0 ±0.2 |
+| Owner-occupied housing units (%) | 43.4 ±0.7 | 58.3 ±0.4 | 62.6 ±0.2 |

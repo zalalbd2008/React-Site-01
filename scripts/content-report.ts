@@ -24,7 +24,16 @@ const sources = new Set(
   fs.readdirSync(sourceDir).filter((n) => n.endsWith('.json')).flatMap((f) => (JSON.parse(fs.readFileSync(path.join(sourceDir, f), 'utf8')) as { id: string }[]).map((s) => s.id)),
 );
 const rows: Record<string, unknown>[] = [];
+// Observation sources are shown in public source lists, so they must never link to an individual practice or agency.
+for (const f of fs.readdirSync(sourceDir).filter((n) => n.endsWith('.json'))) {
+  for (const src of JSON.parse(fs.readFileSync(path.join(sourceDir, f), 'utf8')) as { id: string; kind: string; url: string }[]) {
+    if (src.kind === 'observation' && !/research-methodology/.test(src.url)) {
+      problemsPre.push(`sources/${f}: observation "${src.id}" links to a specific site (${src.url}); use a search URL or the methodology page`);
+    }
+  }
+}
 const problems: string[] = [];
+const problemsPre: string[] = [];
 const allRoutes = new Set<string>();
 const parsed = walk(contentDir).map((file) => {
   const { data, content } = matter(fs.readFileSync(file, 'utf8'));
@@ -72,6 +81,7 @@ for (const p of parsed) {
   if (longForm && body.trim() && !hasVisual) problems.push(`${fm.route}: no visual/table found`);
 }
 
+problems.unshift(...problemsPre);
 if (json) {
   console.log(JSON.stringify({ rows, problems }, null, 2));
 } else {

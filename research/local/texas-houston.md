@@ -57,3 +57,36 @@ Retrieved and compiled 2026-11-08 by the Alpha Dental Media editorial team (batc
 - No dentist-count or office-count data used (NPI/directory counts are not offices).
 - No search-volume or CPC data from a tool we control; any keyword lists are research candidates.
 - ACS 2020–2024 5-year city values were not available through the project script at retrieval time; 2019–2023 used for consistency across pages.
+
+
+## Review update, 2026-11-08: ACS 2020–2024 values (batch review-texas)
+
+Under the data-vintage policy in docs/city-brief.md, the independent reviewer re-pulled the 2020–2024 5-year Data Profiles from the data.census.gov table API (`ACSDP5Y2024.DP02–DP05`; places also via `node scripts/census.mjs "<City>" TX`, which returned identical values). Values are estimate ±MOE. The page now cites these figures (source ids `census-acs-2024-*`); the 2019–2023 table above is kept for the record only.
+
+| Measure (ACS 2020–2024 5-year, DP tables) | Houston city, Texas | Houston-Pasadena-The Woodlands, TX Metro Area | Texas |
+|---|---|---|---|
+| Total population | 2328253 ±196 | 7442788 ±-555555555 | 30188424 ±-555555555 |
+| Under 5 years (%) | 6.7 ±0.1 | 6.6 ±0.1 | 6.4 ±0.1 |
+| Under 18 years (%) | 23.4 ±0.2 | 25.9 ±0.1 | 25.0 ±0.1 |
+| 65 years and over (%) | 12.3 ±0.1 | 12.3 ±0.1 | 13.4 ±0.1 |
+| Median age | 34.4 ±0.2 | 35.4 ±0.1 | 35.6 ±0.1 |
+| Hispanic or Latino, any race (%) | 44.2 ±0.4 | 38.2 ±-555555555.0 | 39.7 ±0.1 |
+| Language other than English at home, 5+ (%) | 47.1 ±0.4 | 39.9 ±0.2 | 35.1 ±0.1 |
+| Spanish at home, 5+ (%) | 37.2 ±0.4 | 29.6 ±0.2 | 28.1 ±0.1 |
+| Other Indo-European languages, 5+ (%) | 3.5 ±0.2 | 3.7 ±0.1 | 2.6 ±0.1 |
+| Asian and Pacific Island languages, 5+ (%) | 4.4 ±0.2 | 5.0 ±0.1 | 3.2 ±0.1 |
+| Speak English less than "very well", 5+ (%) | 22.1 ±0.3 | 16.5 ±0.2 | 13.0 ±0.1 |
+| Born in state of residence (%) | 50.7 ±0.4 | 53.2 ±0.3 | 58.3 ±0.1 |
+| Born in a different U.S. state (%) | 18.4 ±0.4 | 20.7 ±0.2 | 22.5 ±0.1 |
+| Foreign-born (%) | 29.3 ±0.4 | 24.3 ±0.2 | 17.6 ±0.1 |
+| Same house one year ago (%) | 82.9 ±0.4 | 86.5 ±0.2 | 86.0 ±0.1 |
+| Different state one year ago (%) | 1.9 ±0.1 | 1.7 ±0.1 | 2.0 ±0.1 |
+| Bachelor's degree or higher, 25+ (%) | 36.6 ±0.4 | 36.0 ±0.3 | 33.8 ±0.2 |
+| Median household income (2024 $) | 64813 ±822 | 82168 ±590 | 78476 ±263 |
+| Mean travel time to work (min) | 27.2 ±0.2 | 29.9 ±0.1 | 26.7 ±0.1 |
+| Worked from home (%) | 13.0 ±0.3 | 13.4 ±0.2 | 14.4 ±0.1 |
+| With private health insurance (%) | 52.3 ±0.5 | 61.5 ±0.4 | 62.8 ±0.2 |
+| With public coverage (%) | 30.7 ±0.4 | 27.4 ±0.2 | 29.0 ±0.1 |
+| No health insurance (%) | 23.7 ±0.4 | 18.5 ±0.3 | 17.1 ±0.2 |
+| Under 19, no health insurance (%) | 16.3 ±0.7 | 12.9 ±0.4 | 12.0 ±0.2 |
+| Owner-occupied housing units (%) | 42.1 ±0.5 | 61.2 ±0.3 | 62.6 ±0.2 |

@@ -68,13 +68,13 @@
     "id": "census-acs5-2024-b25004-fl-review",
     "title": "ACS 2020–2024 5-year, Table B25004 Vacancy Status with Table B25001 Housing Units: 13 Florida cities and 11 counties",
     "publisher": "U.S. Census Bureau",
-    "url": "https://data.census.gov/table/ACSDT5Y2024.B25004?g=160XX00US1263000,160XX00US1276600,160XX00US1207300,160XX00US1264175,160XX00US1247625,160XX00US1270600,160XX00US1225175,160XX00US1258715,0500000US12103,0500000US12099,0500000US12115,0500000US12081,0500000US12021",
+    "url": "https://data.census.gov/table/ACSDT5Y2024.B25004?g=160XX00US1245000,160XX00US1253000,160XX00US1271000,160XX00US1235000,160XX00US1224000,160XX00US1263000,160XX00US1276600,160XX00US1207300,160XX00US1264175,160XX00US1247625,160XX00US1270600,160XX00US1225175,160XX00US1258715",
     "published": "2025-12",
     "retrieved": "2026-11-08",
     "dataYear": "2020–2024",
     "geography": "Miami, Orlando, Tampa, Jacksonville, Fort Lauderdale, St. Petersburg, West Palm Beach, Boca Raton, Sarasota, Naples, Tallahassee, Gainesville and Port St. Lucie cities; Pinellas, Palm Beach, Sarasota, Manatee, Collier, Martin, St. Lucie, Leon, Alachua, Broward and Miami-Dade counties; Florida",
     "measures": "Vacant units held for seasonal, recreational or occasional use (B25004_006) as a share of all housing units (B25001_001). Cities: Naples 7,707 of 18,902 (40.8%); Sarasota 4,676 of 32,324 (14.5%); Fort Lauderdale 12.5%; Boca Raton 4,679 of 49,128 (9.5%); West Palm Beach 4,234 of 62,464 (6.8%); St. Petersburg 7,170 of 141,508 (5.1%); Port St. Lucie 4.6%; Miami 4.2%; Orlando 3.4%; Tampa 1.9%; Tallahassee 1.0%; Jacksonville 0.7%; Gainesville 0.3%. Counties: Collier 24.9%; Sarasota 15.1%; Manatee 12.4%; Martin 12.3%; St. Lucie 9.6%; Palm Beach 9.5%; Pinellas 9.2%; Broward 7.2%; Miami-Dade 4.6%; Leon 1.1%; Alachua 0.5%. Florida 7.8%.",
-    "limitations": "Counts housing units, not people or patients; a proxy for seasonal presence only. Shares computed by Alpha Dental Media at review; margins of error apply and are large for small cities.",
+    "limitations": "Counts housing units, not people or patients; a proxy for seasonal presence only. Shares computed by Alpha Dental Media at review; margins of error apply and are large for small cities. County values were pulled from the same table for 0500000US12103, 12099, 12115, 12081, 12021, 12085, 12111, 12073, 12001, 12011 and 12086; B25001 totals from https://data.census.gov/table/ACSDT5Y2024.B25001 for the same geographies.",
     "kind": "government-data"
   },
   {
@@ -102,5 +102,31 @@
     "measures": "Rule text: applies to media exposure of any nature, paid or not; all advertising must identify the Florida-licensed dentist who assumes total responsibility (license number, or commonly used name with the address and phone on file with the Department); prohibits false, deceptive or misleading advertising including laudatory statements, quality comparisons, unjustified expectations of results and appeals primarily to a layperson's fears; prohibits in-person and telephone solicitation by a dentist or agent (scheduling and follow-up with patients or former patients excepted); bars naming people who neither practise at the advertised location nor own the practice (previous owner up to 2 years with written permission); referral-service statements; 'sleep dentistry' only with a general anesthesia permit.",
     "limitations": "Unofficial reproduction, used at independent review because the official FLRules page returned HTTP 403 (bot challenge) on 2026-11-08 and was not bypassed. LII's history ends at 2-26-06, so it may not reflect the 2026 amendments recorded by the writer; pages therefore describe only provisions present in both and tell readers to check the current official text.",
     "kind": "legal"
+  },
+  {
+    "id": "census-acs5-2024-dp05-north-port-msa",
+    "title": "ACS 2020–2024 5-year Data Profile DP05: North Port-Bradenton-Sarasota, FL Metro Area",
+    "publisher": "U.S. Census Bureau",
+    "url": "https://data.census.gov/table/ACSDP5Y2024.DP05?g=310XX00US35840",
+    "published": "2025-12",
+    "retrieved": "2026-11-08",
+    "dataYear": "2020–2024",
+    "geography": "North Port-Bradenton-Sarasota, FL Metro Area (Manatee and Sarasota counties)",
+    "measures": "Total population 889,339; 65 and over 33.2%.",
+    "limitations": "5-year period estimate with margin of error; metro figure, never a city figure.",
+    "kind": "government-data"
+  },
+  {
+    "id": "obs-review-florida-aggregate-2026-11-08",
+    "title": "Pooled count of Florida practice-website observations, 13 cities (observed 8 November 2026)",
+    "publisher": "Alpha Dental Media research",
+    "url": "https://alphadentalmedia.com/resources/research-methodology/",
+    "published": null,
+    "retrieved": "2026-11-08",
+    "dataYear": "2026-11-08",
+    "geography": "13 Florida cities",
+    "measures": "Pooled at independent review from research/local/florida-*-practices.md: 52 practice homepages (Miami 5, Naples 5, Tampa 3, Fort Lauderdale 3, all others 4). Spanish-language pages: 2 of 52 (one Miami, one Boca Raton). Saturday hours visible in page content: 7 of 52. Part-year or seasonal-resident content: 0 of the 16 sites in Naples, Sarasota, Fort Lauderdale and St. Petersburg. One shared site template and tag container appeared in the Orlando, Tampa and Jacksonville samples. Summary in research/reviews/review-florida.md.",
+    "limitations": "Convenience samples found with a web search tool, homepage static HTML only, gathered by three writers with slightly different checklists; counts describe these websites, not the market or any practice's performance.",
+    "kind": "observation"
   }
 ]

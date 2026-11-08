@@ -55,3 +55,36 @@ Retrieved and compiled 2026-11-08 by the Alpha Dental Media editorial team (batc
 
 - Military/VA population not sourced (do not mention specifics on page); no dentist-density or keyword data.
 - Born in Texas (DP02_0091PE): Houston 51.4%, Dallas 54.3%, Fort Worth 55.6%, Austin 48.5%, San Antonio 64.0% (±0.4), SA metro 62.2%, Texas 58.7%.
+
+
+## Review update, 2026-11-08: ACS 2020–2024 values (batch review-texas)
+
+Under the data-vintage policy in docs/city-brief.md, the independent reviewer re-pulled the 2020–2024 5-year Data Profiles from the data.census.gov table API (`ACSDP5Y2024.DP02–DP05`; places also via `node scripts/census.mjs "<City>" TX`, which returned identical values). Values are estimate ±MOE. The page now cites these figures (source ids `census-acs-2024-*`); the 2019–2023 table above is kept for the record only.
+
+| Measure (ACS 2020–2024 5-year, DP tables) | San Antonio city, Texas | San Antonio-New Braunfels, TX Metro Area | Houston city, Texas |
+|---|---|---|---|
+| Total population | 1479835 ±251 | 2662733 ±-555555555 | 2328253 ±196 |
+| Under 5 years (%) | 6.2 ±0.1 | 6.2 ±0.1 | 6.7 ±0.1 |
+| Under 18 years (%) | 23.6 ±0.2 | 24.3 ±0.1 | 23.4 ±0.2 |
+| 65 years and over (%) | 13.4 ±0.1 | 13.9 ±0.1 | 12.3 ±0.1 |
+| Median age | 34.9 ±0.2 | 35.9 ±0.2 | 34.4 ±0.2 |
+| Hispanic or Latino, any race (%) | 64.6 ±0.4 | 54.7 ±-555555555.0 | 44.2 ±0.4 |
+| Language other than English at home, 5+ (%) | 40.4 ±0.6 | 33.4 ±0.4 | 47.1 ±0.4 |
+| Spanish at home, 5+ (%) | 36.4 ±0.5 | 29.7 ±0.3 | 37.2 ±0.4 |
+| Other Indo-European languages, 5+ (%) | 1.5 ±0.1 | 1.5 ±0.1 | 3.5 ±0.2 |
+| Asian and Pacific Island languages, 5+ (%) | 1.8 ±0.1 | 1.7 ±0.1 | 4.4 ±0.2 |
+| Speak English less than "very well", 5+ (%) | 12.9 ±0.4 | 10.2 ±0.3 | 22.1 ±0.3 |
+| Born in state of residence (%) | 63.7 ±0.5 | 61.8 ±0.4 | 50.7 ±0.4 |
+| Born in a different U.S. state (%) | 19.0 ±0.3 | 23.5 ±0.3 | 18.4 ±0.4 |
+| Foreign-born (%) | 15.0 ±0.4 | 12.3 ±0.3 | 29.3 ±0.4 |
+| Same house one year ago (%) | 82.5 ±0.5 | 84.5 ±0.3 | 82.9 ±0.4 |
+| Different state one year ago (%) | 2.2 ±0.2 | 2.5 ±0.2 | 1.9 ±0.1 |
+| Bachelor's degree or higher, 25+ (%) | 29.0 ±0.5 | 32.3 ±0.4 | 36.6 ±0.4 |
+| Median household income (2024 $) | 65056 ±776 | 76213 ±781 | 64813 ±822 |
+| Mean travel time to work (min) | 24.5 ±0.2 | 26.8 ±0.2 | 27.2 ±0.2 |
+| Worked from home (%) | 13.5 ±0.5 | 14.9 ±0.4 | 13.0 ±0.3 |
+| With private health insurance (%) | 58.1 ±0.6 | 64.4 ±0.5 | 52.3 ±0.5 |
+| With public coverage (%) | 34.3 ±0.4 | 32.1 ±0.3 | 30.7 ±0.4 |
+| No health insurance (%) | 17.6 ±0.5 | 15.0 ±0.3 | 23.7 ±0.4 |
+| Under 19, no health insurance (%) | 10.4 ±0.7 | 9.5 ±0.5 | 16.3 ±0.7 |
+| Owner-occupied housing units (%) | 52.2 ±0.6 | 63.3 ±0.4 | 42.1 ±0.5 |

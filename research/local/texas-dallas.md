@@ -55,3 +55,36 @@ Retrieved and compiled 2026-11-08 by the Alpha Dental Media editorial team (batc
 ## Gaps
 
 - No dentist-density data; no keyword tool data; Dallas-vs-suburb commuter flows not sourced (LEHD/ACS flows not retrieved).
+
+
+## Review update, 2026-11-08: ACS 2020–2024 values (batch review-texas)
+
+Under the data-vintage policy in docs/city-brief.md, the independent reviewer re-pulled the 2020–2024 5-year Data Profiles from the data.census.gov table API (`ACSDP5Y2024.DP02–DP05`; places also via `node scripts/census.mjs "<City>" TX`, which returned identical values). Values are estimate ±MOE. The page now cites these figures (source ids `census-acs-2024-*`); the 2019–2023 table above is kept for the record only.
+
+| Measure (ACS 2020–2024 5-year, DP tables) | Dallas city, Texas | Fort Worth city, Texas | Dallas-Fort Worth-Arlington, TX Metro Area |
+|---|---|---|---|
+| Total population | 1307930 ±153 | 963194 ±475 | 7985590 ±-555555555 |
+| Under 5 years (%) | 7.0 ±0.2 | 7.1 ±0.2 | 6.4 ±0.1 |
+| Under 18 years (%) | 23.9 ±0.3 | 26.4 ±0.3 | 25.0 ±0.1 |
+| 65 years and over (%) | 11.8 ±0.2 | 10.6 ±0.2 | 12.1 ±0.1 |
+| Median age | 33.4 ±0.3 | 33.6 ±0.3 | 35.6 ±0.1 |
+| Hispanic or Latino, any race (%) | 42.6 ±0.5 | 34.6 ±0.5 | 29.7 ±-555555555.0 |
+| Language other than English at home, 5+ (%) | 41.2 ±0.6 | 32.6 ±0.7 | 32.1 ±0.2 |
+| Spanish at home, 5+ (%) | 34.9 ±0.5 | 24.5 ±0.6 | 21.9 ±0.2 |
+| Other Indo-European languages, 5+ (%) | 2.2 ±0.2 | 3.1 ±0.3 | 3.7 ±0.1 |
+| Asian and Pacific Island languages, 5+ (%) | 2.2 ±0.2 | 2.9 ±0.3 | 4.7 ±0.1 |
+| Speak English less than "very well", 5+ (%) | 18.2 ±0.4 | 12.5 ±0.5 | 12.1 ±0.2 |
+| Born in state of residence (%) | 53.8 ±0.6 | 54.5 ±0.7 | 52.5 ±0.2 |
+| Born in a different U.S. state (%) | 21.3 ±0.4 | 25.9 ±0.6 | 26.4 ±0.2 |
+| Foreign-born (%) | 23.4 ±0.5 | 17.6 ±0.6 | 19.4 ±0.2 |
+| Same house one year ago (%) | 84.5 ±0.4 | 85.7 ±0.6 | 86.2 ±0.2 |
+| Different state one year ago (%) | 2.3 ±0.2 | 2.0 ±0.2 | 2.1 ±0.1 |
+| Bachelor's degree or higher, 25+ (%) | 38.2 ±0.5 | 32.0 ±0.7 | 39.4 ±0.3 |
+| Median household income (2024 $) | 70518 ±817 | 79507 ±966 | 90275 ±491 |
+| Mean travel time to work (min) | 25.7 ±0.3 | 27.1 ±0.4 | 27.9 ±0.1 |
+| Worked from home (%) | 15.8 ±0.5 | 14.0 ±0.6 | 17.8 ±0.2 |
+| With private health insurance (%) | 54.3 ±0.6 | 62.1 ±0.8 | 67.0 ±0.3 |
+| With public coverage (%) | 29.5 ±0.5 | 26.3 ±0.6 | 24.5 ±0.2 |
+| No health insurance (%) | 22.8 ±0.5 | 18.6 ±0.6 | 16.2 ±0.2 |
+| Under 19, no health insurance (%) | 16.3 ±1.0 | 13.5 ±0.9 | 12.1 ±0.3 |
+| Owner-occupied housing units (%) | 42.4 ±0.5 | 57.0 ±0.8 | 60.1 ±0.3 |

@@ -1,15 +1,15 @@
 ---
 route: "/markets/texas/"
 type: "state"
-status: "Drafted"
+status: "Ready"
 author: "editorial-team"
 reviewer: null
 title: "Dental Marketing for Practices in Texas"
 navLabel: "Texas"
-metaTitle: "Dental Marketing Agency for Texas Practices | Alpha Dental Media"
+metaTitle: "Texas Dental Marketing Agency | Alpha Dental Media"
 description: "How Alpha Dental Media serves Texas dental practices from Houston: the four big metros, growth at the edges, language, Medicaid and CHIP, and Texas ad rules."
 eyebrow: "Markets"
-lede: "Alpha Dental Media is based in Houston, and Texas is one of our priority markets. This page explains how the state's dental markets are structured, which Texas-specific rules and programs affect marketing, and how we deliver work across the state without offices outside Houston."
+lede: "Alpha Dental Media is based in Houston, and Texas is one of our priority markets. This page explains how the state's dental markets are structured, which Texas-specific rules and programs affect marketing, and how we deliver work across the state without local offices."
 parent: "/markets/"
 geo: {"scope":"state","state":"Texas"}
 primaryIntent: "Dental marketing agency Texas"
@@ -24,12 +24,20 @@ sources:
   - "census-v2025-counties-metros-release"
   - "census-v2025-cities-release"
   - "omb-cbsa-delineation-2023"
-  - "census-acs-2023-texas"
-  - "census-acs-2023-houston-city-tx"
-  - "census-acs-2023-dallas-city-tx"
-  - "census-acs-2023-fort-worth-city-tx"
-  - "census-acs-2023-austin-city-tx"
-  - "census-acs-2023-san-antonio-city-tx"
+  - "census-acs-2024-texas"
+  - "census-acs-2024-houston-city-tx"
+  - "census-acs-2024-dallas-city-tx"
+  - "census-acs-2024-fort-worth-city-tx"
+  - "census-acs-2024-austin-city-tx"
+  - "census-acs-2024-san-antonio-city-tx"
+  - "census-acs-2024-houston-msa"
+  - "census-acs-2024-dfw-msa"
+  - "census-acs-2024-austin-msa"
+  - "census-acs-2024-san-antonio-msa"
+  - "census-acs-2024-el-paso-city-tx"
+  - "census-acs-2024-frisco-city-tx"
+  - "census-acs-2024-irving-city-tx"
+  - "census-acs-2024-plano-city-tx"
   - "medicaid-gov-dental-care"
   - "tx-hhsc-texas-health-steps"
   - "tx-hhsc-ths-dental-providers"
@@ -47,6 +55,8 @@ related:
   - "/markets/texas/fort-worth/"
   - "/markets/texas/austin/"
   - "/markets/texas/san-antonio/"
+  - "/markets/texas/el-paso/"
+  - "/markets/texas/mckinney/"
   - "/who-we-help/dental-groups-dsos/"
   - "/who-we-help/pediatric-dentists/"
   - "/services/local-seo-multi-location-clinics/"
@@ -55,10 +65,10 @@ cta: "audit"
 published: null
 updated: null
 evidence: "sourced"
-verificationNotes: "State, metro, county and city population figures from Census Vintage 2025 (SUB-EST2025_48, CB26-56, CB26-80); four-metro share of state population and of 2024–25 growth is our calculation from the same vintage. ACS 2019–2023 DP02/DP03 values from data.census.gov retrieved 2026-11-08. Metro composition from the OMB July 2023 delineation. Medicaid/CHIP dental from medicaid.gov and Texas HHSC pages and comparison charts dated 10/01/26. Texas dental advertising rules read on the LII mirror of 22 TAC chapter 108 (not legal advice). Call-recording summary from the RCFP guide (secondary source)."
+verificationNotes: "State, metro, county and city population figures from Census Vintage 2025 (SUB-EST2025_48, CB26-56, CB26-80); four-metro share of state population and of 2024–25 growth is our calculation from the same vintage. ACS 2020–2024 DP02–DP05 values (updated at review from 2019–2023 under the data-vintage policy) from data.census.gov retrieved 2026-11-08; city-page summary table compiled from the 14 Texas city pages. Metro composition from the OMB July 2023 delineation. Medicaid/CHIP dental from medicaid.gov and Texas HHSC pages and comparison charts dated 10/01/26. Texas dental advertising rules read on the LII mirror of 22 TAC chapter 108 (not legal advice). Call-recording summary from the RCFP guide (secondary source). Independent review 2026-11-08 (batch review-texas): ACS figures re-pulled for 2020–2024 (data.census.gov table API) and Vintage 2025 metro, county and city figures re-checked against CB26-56, CB26-80 and SUB-EST2025_48; 22 TAC 108.53/.55/.59 re-read on Cornell LII (unofficial mirror, now stated on page); HHSC Texas Health Steps, THSteps dental providers and the 10/01/26 Medicaid and CHIP dental charts re-opened. Added a 14-city relationship table and prose linking every city page by metro and division; removed office implications; RCFP call-recording summary attributed as secondary."
 faqs:
   - q: "Do you have offices in Dallas, Austin or San Antonio?"
-    a: "No. Alpha Dental Media is based in Houston and has no other Texas offices. We serve practices in every Texas market remotely through video calls, shared documents and read-only account access, the same way we work with Houston practices. City pages on this site describe markets we serve, not branches."
+    a: "No. Alpha Dental Media is based in Houston and does not have offices, staff or branches in other Texas cities. We serve practices in every Texas market remotely through video calls, shared documents and read-only account access, the same way we work with Houston practices. City pages describe markets we serve, not locations."
   - q: "Is one Texas-wide campaign enough for a group with offices in several metros?"
     a: "Almost never. Houston, Dallas-Fort Worth, Austin and San Antonio differ in language mix, coverage, growth and commuting, and each office competes locally. A group can share brand, creative and a website, but each office needs its own Business Profile, location page, ad geography, budget and reporting so that one busy market does not hide another's problems."
   - q: "What Texas rules should we check before running dental ads?"
@@ -66,16 +76,16 @@ faqs:
   - q: "How should a Texas pediatric practice market its Medicaid or CHIP participation?"
     a: "Precisely. Texas children's Medicaid dental and CHIP dental are delivered through managed care plans; HHSC's October 2026 charts list DentaQuest, MCNA Dental and UnitedHealthcare Dental. Name the plans you are in network with, per location, and keep it current. Never describe services as free when Medicaid pays, which Texas advertising rules prohibit."
   - q: "Should Texas practices market in Spanish?"
-    a: "Where the team can serve patients in Spanish, often yes, but the need varies widely. Statewide, 28.1% of residents aged five and over speak Spanish at home; among the five big cities, limited English ranges from 10.3% in Austin to 22.0% in Houston. Base the decision on your intake records and staffing, then build full Spanish pages, not translated menus."
+    a: "Where the team can serve patients in Spanish, often yes, but the need varies widely. Statewide, 28.1% of residents aged five and over speak Spanish at home, against 63.7% in El Paso and 6.9% in Frisco; among the five big cities, limited English ranges from 10.5% in Austin to 22.1% in Houston. Base the decision on intake records and staffing, then build full Spanish pages."
   - q: "Can we record calls for tracking in Texas?"
-    a: "Texas is generally summarised as a one-party-consent state for recording phone calls, but call tracking for a dental practice also raises privacy questions, and calls may cross state lines. We would not enable recording without your counsel's sign-off, and our call tracking approach does not depend on recording every call."
+    a: "The Reporters Committee for Freedom of the Press summarises Texas law as one-party consent for recording phone calls. That is a secondary summary, not legal advice, and call tracking also raises privacy questions; calls may cross state lines. We would not enable recording without your counsel's sign-off, and our call tracking approach does not depend on recording every call."
   - q: "Which Texas cities do you cover?"
-    a: "We serve dental practices anywhere in Texas. Our market pages cover Houston, Dallas, Fort Worth, Austin and San Antonio, plus McKinney, El Paso, Lubbock and Corpus Christi, each based on its own Census data and website observations. Other cities get a page only when separate research justifies one; until then, this overview and the nearest metro page apply."
+    a: "We serve dental practices anywhere in Texas. City pages cover Houston; Dallas, Fort Worth, Arlington, Irving, Plano, Frisco and McKinney in Dallas-Fort Worth; Austin and Round Rock; San Antonio; and El Paso, Corpus Christi and Lubbock. Each uses its own Census data and website observations. Elsewhere, this overview and the nearest metro page apply."
 ---
 
 ## How we work with Texas practices
 
-Alpha Dental Media is a Houston-based dental marketing agency. Texas is one of our priority markets, alongside Florida, Georgia and Greater Los Angeles. We have no offices elsewhere in Texas: practices in Dallas, Fort Worth, Austin, San Antonio and smaller cities work with us remotely, through video calls, shared documents and read-only access to their Business Profiles, analytics and ad accounts. Houston practices work with us the same way.
+Alpha Dental Media is a Houston-based dental marketing agency. Texas is one of our priority markets, alongside Florida, Georgia and Greater Los Angeles. We do not have offices or staff in other Texas cities: practices in Dallas, Fort Worth, Austin, San Antonio and the state's other markets work with us remotely, through video calls, shared documents and read-only access to their Business Profiles, analytics and ad accounts. Houston practices work with us the same way.
 
 <KeyAnswer>Texas is not one dental market. Two-thirds of Texans live in four metro areas that differ sharply in language, coverage, growth and commuting, and the fastest growth is at their outer edges. Good Texas dental marketing therefore starts metro by metro and office by office, within state advertising rules and the Medicaid and CHIP structure that shapes family dentistry.</KeyAnswer>
 
@@ -98,34 +108,57 @@ In 2024–25, Houston and Dallas-Fort Worth were the two fastest-growing U.S. me
 
 For dental practices, that pattern cuts two ways. Central-city practices often compete for share in slower-growing neighbourhoods, while suburban practices see new households and new competitors arrive at the same time.
 
-## How the cities relate to each other
+## How the 14 cities on our Texas pages relate to each other
 
-**Houston** is the largest city in the state and the centre of a ten-county metro. Commutes are the longest of the four metros, and the city is the most linguistically mixed of the five largest Texas cities. Our [Houston page](/markets/texas/houston/) explains why we plan Houston around intake capacity, language and drive-time corridors.
+We group our city pages by metro, because that is how commuting, competition and Census statistics are organised. Each page uses its own data and dated website observations and reaches its own channel order; the table summarises them and the paragraphs explain how the cities relate.
 
-**Dallas and Fort Worth** share a metro area, but the Census Bureau splits it into two metropolitan divisions: Dallas-Plano-Irving and Fort Worth-Arlington-Grapevine. The two cities behave differently. Dallas city's population was roughly flat in the latest estimate while its northern suburbs boomed, so our [Dallas page](/markets/texas/dallas/) focuses on share, reputation and retention. Fort Worth added more residents than any U.S. city except Charlotte and has a younger, more owner-occupied population, so our [Fort Worth page](/markets/texas/fort-worth/) focuses on new-resident discovery and families. We do not combine them.
+| City page | Metro area (division) | Population change, April 2020 to July 2025 | What the page leads with |
+|---|---|---|---|
+| Houston | Houston-Pasadena-The Woodlands | +4.2% | Intake capacity across languages, then corridor-level visibility |
+| Dallas | Dallas-Fort Worth-Arlington (Dallas-Plano-Irving) | +1.9% | Reviews, neighbourhood relevance and retention |
+| Irving | Dallas-Fort Worth-Arlington (Dallas-Plano-Irving) | +0.1% | Recall and reactivation, then staffed-language content |
+| Plano | Dallas-Fort Worth-Arlington (Dallas-Plano-Irving) | +2.6% | Reputation and verifiable distinctiveness |
+| Frisco | Dallas-Fort Worth-Arlington (Dallas-Plano-Irving) | +18.2% | Maps visibility with ads sized to capacity, as growth slows |
+| McKinney | Dallas-Fort Worth-Arlington (Dallas-Plano-Irving) | +20.8% | Home ZIP codes first, then measured tests in growth towns |
+| Fort Worth | Dallas-Fort Worth-Arlington (Fort Worth-Arlington-Grapevine) | +11.9% | New-resident discovery and family clarity |
+| Arlington | Dallas-Fort Worth-Arlington (Fort Worth-Arlington-Grapevine) | +2.0% | Catchment boundaries and payer-specific pages |
+| Austin | Austin-Round Rock-San Marcos | +4.6% | Website conversion and decision content before paid traffic |
+| Round Rock | Austin-Round Rock-San Marcos | +18.2% | Ad geography that stays out of central Austin |
+| San Antonio | San Antonio-New Braunfels | +8.0% | Reputation and bilingual trust |
+| El Paso | El Paso | +0.6% | Spanish-language depth and payment clarity |
+| Corpus Christi | Corpus Christi | −0.3% | Booking path, payment facts and storm-season accuracy |
+| Lubbock | Lubbock | +6.2% | Near-office visibility and an always-available booking path |
 
-**Austin** crossed one million residents but grew far more slowly than its suburbs. Its residents are more likely to have moved from another state, to work from home and to hold a degree. Our [Austin page](/markets/texas/austin/) explains why we put website conversion and content depth before paid traffic there.
+<SourceNote ids={["census-sub-est2025-texas", "omb-cbsa-delineation-2023"]}>Population change is our calculation from the Vintage 2025 estimates base and July 2025 estimate for each incorporated city.</SourceNote>
 
-**San Antonio** holds more than half its metro's population and has the highest share of Texas-born residents of the five cities. Our [San Antonio page](/markets/texas/san-antonio/) explains why reputation and bilingual trust come first.
+**Houston** is the largest city in the state and the centre of a ten-county metro. Its metro has the longest mean commute of the four big metros, and the city is the most linguistically mixed of the state's five largest cities. Our [Houston page](/markets/texas/houston/) plans around intake capacity, language and drive-time corridors. Houston-area suburbs such as Katy and Sugar Land do not have pages yet; they will only get one if separate research justifies it.
 
-<SourceNote ids={["omb-cbsa-delineation-2023", "census-sub-est2025-texas"]} />
+**Dallas-Fort Worth** holds seven of our city pages, and they are planned separately because the data separates them. The Census Bureau splits the metro into two divisions. In the Dallas-Plano-Irving division, [Dallas](/markets/texas/dallas/) is a large core whose population was roughly flat in the latest estimate, so its page focuses on share, reputation and retention. Next door in Dallas County, [Irving](/markets/texas/irving/) is barely growing either, but most of its households rent and its residents are far more often foreign-born, which puts recall and language first. To the north in Collin County, [Plano](/markets/texas/plano/) is settled, highly insured and full of similar-looking offices; [Frisco](/markets/texas/frisco/) grew quickly but slowed sharply in 2024–25, so its page is about when to move from acquisition to retention; and [McKinney](/markets/texas/mckinney/) is still growing fast while the fastest growth moves into towns beyond it. In the Fort Worth-Arlington-Grapevine division, [Fort Worth](/markets/texas/fort-worth/) added more residents in 2024–25 than any U.S. city except Charlotte and has a larger share of children and homeowners than Dallas, so new-resident discovery leads; [Arlington](/markets/texas/arlington/), between the two big cities, is nearly flat, has a split payer mix and draws patients across city lines.
 
-Beyond the four big metros, Texas has distinct markets of its own. Separate pages cover [McKinney](/markets/texas/mckinney/), a Dallas-area suburb with the tenth-largest numeric population gain of any U.S. city in 2024–25, and three markets outside the big metros: [El Paso](/markets/texas/el-paso/), [Lubbock](/markets/texas/lubbock/) and [Corpus Christi](/markets/texas/corpus-christi/). Other suburban cities, such as Plano, Frisco, Irving, Arlington and Round Rock, and Houston-area communities such as Katy and Sugar Land, get their own pages only when separate research supports them.
+**Austin and Round Rock** share a metro but not a playbook. [Austin](/markets/texas/austin/) crossed one million residents but grew far more slowly than its suburbs, and its residents are more likely than those of the other large cities to have been born in another state, to work from home and to hold a degree; its page puts website conversion and content depth before paid traffic. [Round Rock](/markets/texas/round-rock/), in Williamson County, grew about 18% since 2020, and its main risk is the reverse: ad budgets that leak into central Austin, where patients rarely drive north for routine care.
 
-<SourceNote ids={["census-v2025-cities-release"]} />
+**San Antonio** holds more than half its metro's population and has the highest share of Texas-born residents of the five largest cities. Our [San Antonio page](/markets/texas/san-antonio/) explains why reputation and bilingual trust come first.
+
+**Three metros stand on their own.** [El Paso](/markets/texas/el-paso/) is a border metro where most residents speak Spanish at home and the population is roughly flat. [Corpus Christi](/markets/texas/corpus-christi/) is a coastal metro whose population has not changed since 2020 and whose practices must keep listings accurate through hurricane season. [Lubbock](/markets/texas/lubbock/) is a young university city with short commutes and a patient pool that renews every year. None of them behaves like a suburb of a bigger Texas metro, and advice written for Dallas or Houston transfers poorly.
+
+<SourceNote ids={["omb-cbsa-delineation-2023", "census-sub-est2025-texas", "census-v2025-cities-release", "census-acs-2024-houston-msa", "census-acs-2024-dfw-msa", "census-acs-2024-austin-msa", "census-acs-2024-san-antonio-msa", "census-acs-2024-irving-city-tx", "census-acs-2024-plano-city-tx", "census-acs-2024-austin-city-tx", "census-acs-2024-el-paso-city-tx"]} />
 
 ## Language and coverage differ more than most plans assume
 
-| Measure (ACS 2019–2023) | Houston | Dallas | Fort Worth | Austin | San Antonio | Texas |
+| Measure (ACS 2020–2024) | Houston | Dallas | Fort Worth | Austin | San Antonio | Texas |
 |---|---|---|---|---|---|---|
-| Speak a language other than English at home | 47.2% | 41.1% | 32.5% | 29.8% | 40.4% | 34.9% |
-| Speak Spanish at home | 37.4% | 35.1% | 24.9% | 20.1% | 36.4% | 28.1% |
-| Speak English less than "very well" | 22.0% | 18.2% | 12.2% | 10.3% | 12.6% | 12.8% |
-| No health insurance | 24.0% | 23.0% | 18.6% | 12.4% | 17.5% | 17.4% |
-| Under-19s with no health insurance | 16.0% | 15.7% | 12.7% | 9.2% | 9.8% | 11.8% |
-| Mean travel time to work (minutes) | 27.3 | 26.0 | 26.9 | 24.0 | 24.6 | 26.7 |
+| Speak a language other than English at home | 47.1% | 41.2% | 32.6% | 30.3% | 40.4% | 35.1% |
+| Speak Spanish at home | 37.2% | 34.9% | 24.5% | 20.2% | 36.4% | 28.1% |
+| Speak English less than "very well" | 22.1% | 18.2% | 12.5% | 10.5% | 12.9% | 13.0% |
+| No health insurance | 23.7% | 22.8% | 18.6% | 12.4% | 17.6% | 17.1% |
+| Under-19s with no health insurance | 16.3% | 16.3% | 13.5% | 9.6% | 10.4% | 12.0% |
+| Mean travel time to work (minutes) | 27.2 | 25.7 | 27.1 | 23.7 | 24.5 | 26.7 |
 
-<SourceNote ids={["census-acs-2023-houston-city-tx", "census-acs-2023-dallas-city-tx", "census-acs-2023-fort-worth-city-tx", "census-acs-2023-austin-city-tx", "census-acs-2023-san-antonio-city-tx", "census-acs-2023-texas"]} />
+<SourceNote ids={["census-acs-2024-houston-city-tx", "census-acs-2024-dallas-city-tx", "census-acs-2024-fort-worth-city-tx", "census-acs-2024-austin-city-tx", "census-acs-2024-san-antonio-city-tx", "census-acs-2024-texas"]} />
+
+Outside the five largest cities the spread is wider still. In El Paso, 63.7% of residents aged five and over speak Spanish at home; in Frisco, 6.9% do, and Asian and Pacific Island languages (15.5%) are more common than Spanish. Irving has the highest foreign-born share of the 14 cities we cover, at 42.5%.
+
+<SourceNote ids={["census-acs-2024-el-paso-city-tx", "census-acs-2024-frisco-city-tx", "census-acs-2024-irving-city-tx"]} />
 
 Language figures are for residents aged five and over; insurance figures are for the civilian noninstitutionalized population. These are city-level averages: they do not describe any practice's patients and they do not measure demand. What they show is that a single Texas approach to Spanish-language marketing, insurance messaging or ad radius will be wrong somewhere. Where a practice serves patients in Spanish or another language, Google's guidance is to publish genuine language versions on their own URLs, connected with hreflang, rather than translating only navigation.
 
@@ -141,17 +174,17 @@ HHSC's member comparison charts dated October 2026 list three plans for both chi
 
 <SourceNote ids={["tx-hhsc-chip-dental-plans-chart", "tx-hhsc-medicaid-dental-plans-chart", "ada-hpi-medicaid-programs-2025"]} />
 
-The marketing implication is practical. For pediatric and family practices, plan participation is one of the first facts parents check, and it varies by office. In our five-city website samples, statements ranged from naming Medicaid and CHIP explicitly, to saying the practice does not accept them, to saying nothing at all. Location pages, Business Profiles and ads should state participation precisely and be updated when contracts change. Our [pediatric dentists page](/who-we-help/pediatric-dentists/) covers the service mix in more depth.
+The marketing implication is practical. For pediatric and family practices, plan participation is one of the first facts parents check, and it varies by office. In the four or five practice websites we reviewed for each city page on 8 November 2026, statements ranged from naming Medicaid and CHIP explicitly, to saying the practice does not accept them, to saying nothing at all. Location pages, Business Profiles and ads should state participation precisely and be updated when contracts change. Our [pediatric dentists page](/who-we-help/pediatric-dentists/) covers the service mix in more depth.
 
 ## Texas advertising rules to check before you publish
 
-The Texas State Board of Dental Examiners' professional-conduct rules include a subchapter on business promotion. Three provisions come up repeatedly in marketing work. We describe them as items to check, not as legal advice; the practice's counsel should confirm the current official text.
+The Texas State Board of Dental Examiners' professional-conduct rules include a subchapter on business promotion. Three provisions bear directly on marketing work. We read them on the Legal Information Institute's copy of the Texas Administrative Code, which is an unofficial mirror, so treat the checklist as items to check, not legal advice; the practice's counsel should confirm the current official text published by the Texas Secretary of State.
 
 <Checklist title="Texas dental advertising checks" items={["Price advertising (22 TAC §108.53): state the service, related services usually required, that the fee is a minimum, the dates the price applies, and the standard fee behind any discount", "Never describe a service as free when a third party, including Medicaid, pays for it (§108.53)", "General dentists advertising specific services show General Dentist or General Dentistry directly after the dentist's name, in type at least as large as the service names (§108.55)", "Practice websites clearly disclose ownership of the site, services, office addresses and contact information, and licensure and qualifications of the dentists and providers (§108.59)", "Ads, landing pages and Business Profiles describe the same services, hours and offers", "Call recording is reviewed with counsel before it is enabled"]} />
 
 <SourceNote ids={["tx-tac-108-53-fees", "tx-tac-108-55-general-dentists", "tx-tac-108-59-website-disclosures"]} />
 
-These rules matter more in Texas markets where our website reviews found published new-patient prices and memberships to be common, such as Dallas, Fort Worth and Austin. On call tracking, Texas is generally summarised as a one-party-consent state for recording calls, but that summary is a secondary source and does not settle privacy obligations; see [how we approach call tracking](/blog/dental-call-tracking/).
+These rules matter more where our website reviews found published new-patient prices and memberships to be common: three of five sampled homepages each in Dallas, Fort Worth and Austin, for example. On call tracking, the Reporters Committee for Freedom of the Press reports that Texas is a one-party-consent state for recording calls, but that is a secondary summary and does not settle privacy obligations; see [how we approach call tracking](/blog/dental-call-tracking/).
 
 <SourceNote ids={["rcfp-recording-guide-texas"]} />
 
@@ -172,7 +205,7 @@ For groups and DSOs, our [multi-location SEO service](/services/local-seo-multi-
 
 Remote delivery does not change what the work needs from the practice. Every engagement starts with the [Dental Growth Audit](/dental-marketing-audit/), which reviews visibility, website conversion, advertising and measurement for each office. After that, the work depends on a few practice inputs: someone who can approve content and offers, accurate hours and plan participation for each office, phones answered during the hours being marketed, and monthly new-patient totals by office — totals only, never patient records.
 
-We report on the same chain everywhere: inquiries, qualified inquiries, bookings, attended visits and, where the practice can share it, collected revenue. Texas does not change that chain, but it does change which link breaks first. In Houston it is often intake capacity across languages; in Dallas, consistency of hours and reputation; in Fort Worth, being found by new residents; in Austin, the website comparison; in San Antonio, trust built through reviews and bilingual content.
+We report on the same chain everywhere: inquiries, qualified inquiries, bookings, attended visits and, where the practice can share it, collected revenue. Texas does not change that chain, but the city table above suggests which link to check first in each market; the audit tests those hypotheses against each practice's own data. Definitions of each stage are on our [dental marketing metrics page](/resources/dental-marketing-metrics/).
 
 <Callout title="What this page does not claim" tone="note">
 We do not claim Texas clients, results, rankings or local offices. City pages describe markets we serve from Houston, based on public data and dated observations of public websites.

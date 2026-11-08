@@ -462,8 +462,8 @@
   "published": null,
   "retrieved": "2026-11-08",
   "dataYear": "Vintage 2025 (estimates base April 1, 2020; July 1 estimates 2020–2025)",
-  "geography": "Incorporated places and counties in California (rows used: Santa Monica, Burbank, Torrance, Beverly Hills, Downey, Santa Clarita and West Covina cities; Los Angeles County)",
-  "measures": "Annual resident population estimates. Our arithmetic: change from the April 2020 estimates base to July 1, 2025 — Beverly Hills −5.9%, Torrance −5.8%, Downey −5.1%, Burbank −4.0%, West Covina −3.8%, Santa Monica −3.2%, Santa Clarita −1.9%, Los Angeles County −3.2%.",
+  "geography": "Incorporated places, counties and the state total in California (rows used: Los Angeles, Long Beach, Pasadena, Glendale, Santa Monica, Burbank, Torrance, Beverly Hills, Downey, Santa Clarita and West Covina cities; Los Angeles County; California)",
+  "measures": "Annual resident population estimates. Our arithmetic: change from the April 2020 estimates base to July 1, 2025 — Beverly Hills −5.9%, Torrance −5.8%, Downey −5.1%, Glendale −4.8%, Burbank −4.0%, West Covina −3.8%, Long Beach −3.5%, Santa Monica −3.2%, Pasadena −2.7%, Santa Clarita −1.9%, City of Los Angeles −0.8%; Los Angeles County −3.2%; California −0.5%.",
   "limitations": "Model-based estimates revised each vintage; percentage changes are our calculation; residents only.",
   "kind": "government-data"
  },
