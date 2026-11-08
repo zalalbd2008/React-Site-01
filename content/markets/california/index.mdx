@@ -1,20 +1,21 @@
 ---
 route: "/markets/california/"
 type: "state"
-status: "Drafted"
+status: "Ready"
 author: "editorial-team"
 reviewer: null
 title: "Dental Marketing in Greater Los Angeles, California"
 navLabel: "California (Greater Los Angeles)"
 metaTitle: "Dental Marketing in Greater Los Angeles, CA"
-description: "How we serve Los Angeles County dental practices remotely from Houston: market structure, Medi-Cal, language, privacy and call-recording considerations."
+description: "How we serve Los Angeles County dental practices remotely from Houston: eleven city markets compared, Medi-Cal, language, privacy and call-recording issues."
 eyebrow: "Markets · California"
-lede: "Our California work is focused on Greater Los Angeles: practices and groups in the cities of Los Angeles County. We deliver it remotely from Houston, with no California office."
+lede: "Our California work covers Greater Los Angeles only: dental practices and groups in the cities of Los Angeles County. We deliver it remotely from Houston, with no California office and no plans to extend it to the rest of the state."
 parent: "/markets/"
 primaryIntent: "Dental marketing agency California"
 secondaryQuestions:
   - "Which California markets does Alpha Dental Media cover?"
   - "Can a Houston-based agency market a Los Angeles County dental practice?"
+  - "How do Los Angeles County cities differ as dental markets?"
   - "How does Medi-Cal Dental affect dental marketing in Los Angeles County?"
   - "Does the CCPA apply to a dental practice website?"
   - "Can we record patient calls for call tracking in California?"
@@ -22,39 +23,88 @@ audience: "Owners, managers and group leaders of dental practices in Los Angeles
 geo: {"scope":"state","state":"California"}
 sources:
   - "lacounty-about"
-  - "acs-2023-dp05-la-county"
-  - "acs-2023-dp05-la-msa"
-  - "acs-2023-dp05-california"
-  - "acs-2023-dp02-la-county"
-  - "acs-2023-dp02-california"
-  - "acs-2023-dp03-la-county"
-  - "acs-2023-dp03-california"
-  - "acs-2023-c16001-la-county"
-  - "acs-2018-dp05-la-county"
-  - "acs-2018-dp05-california"
-  - "acs-2023-dp02-los-angeles-city"
-  - "acs-2023-dp02-long-beach-city"
-  - "acs-2023-dp02-pasadena-city"
-  - "acs-2023-dp02-glendale-city"
-  - "acs-2023-dp05-los-angeles-city"
-  - "acs-2023-dp05-long-beach-city"
-  - "acs-2023-dp05-pasadena-city"
-  - "acs-2023-dp05-glendale-city"
-  - "acs-2023-dp03-los-angeles-city"
-  - "acs-2023-dp03-long-beach-city"
-  - "acs-2023-dp03-pasadena-city"
-  - "acs-2023-dp03-glendale-city"
+  - "census-gazetteer-2023-places-ca"
+  - "census-sub-est2025-california"
+  - "acs-2024-dp02-la-county"
+  - "acs-2024-dp03-la-county"
+  - "acs-2024-dp04-la-county"
+  - "acs-2024-dp05-la-county"
+  - "acs-2024-c16001-la-county"
+  - "acs-2024-dp02-california"
+  - "acs-2024-dp02-los-angeles-city"
+  - "acs-2024-dp02-long-beach-city"
+  - "acs-2024-dp02-pasadena-city"
+  - "acs-2024-dp02-glendale-city"
+  - "acs-2024-dp02-santa-monica-city"
+  - "acs-2024-dp02-burbank-city"
+  - "acs-2024-dp02-torrance-city"
+  - "acs-2024-dp02-beverly-hills-city"
+  - "acs-2024-dp02-downey-city"
+  - "acs-2024-dp02-santa-clarita-city"
+  - "acs-2024-dp02-west-covina-city"
+  - "acs-2024-dp05-los-angeles-city"
+  - "acs-2024-dp05-long-beach-city"
+  - "acs-2024-dp05-pasadena-city"
+  - "acs-2024-dp05-glendale-city"
+  - "acs-2024-dp05-santa-monica-city"
+  - "acs-2024-dp05-burbank-city"
+  - "acs-2024-dp05-torrance-city"
+  - "acs-2024-dp05-beverly-hills-city"
+  - "acs-2024-dp05-downey-city"
+  - "acs-2024-dp05-santa-clarita-city"
+  - "acs-2024-dp05-west-covina-city"
+  - "acs-2024-dp04-los-angeles-city"
+  - "acs-2024-dp04-long-beach-city"
+  - "acs-2024-dp04-pasadena-city"
+  - "acs-2024-dp04-glendale-city"
+  - "acs-2024-dp04-santa-monica-city"
+  - "acs-2024-dp04-burbank-city"
+  - "acs-2024-dp04-torrance-city"
+  - "acs-2024-dp04-beverly-hills-city"
+  - "acs-2024-dp04-downey-city"
+  - "acs-2024-dp04-santa-clarita-city"
+  - "acs-2024-dp04-west-covina-city"
+  - "acs-2024-dp03-los-angeles-city"
+  - "acs-2024-dp03-long-beach-city"
+  - "acs-2024-dp03-pasadena-city"
+  - "acs-2024-dp03-glendale-city"
+  - "acs-2024-dp03-santa-monica-city"
+  - "acs-2024-dp03-burbank-city"
+  - "acs-2024-dp03-torrance-city"
+  - "acs-2024-dp03-beverly-hills-city"
+  - "acs-2024-dp03-downey-city"
+  - "acs-2024-dp03-santa-clarita-city"
+  - "acs-2024-dp03-west-covina-city"
   - "chhs-dhcs-medi-cal-dental-measures-county"
   - "chhs-dhcs-medi-cal-dental-ffs-providers"
   - "ca-oag-ccpa"
   - "cppa-ccpa-faq"
   - "ca-ab925-2015-digest-pc632"
   - "google-gbp-guidelines"
+  - "obs-ca1-practices-los-angeles"
+  - "obs-ca1-practices-long-beach"
+  - "obs-ca1-practices-pasadena"
+  - "obs-ca1-practices-glendale"
+  - "obs-ca2-practices-santa-monica"
+  - "obs-ca2-practices-burbank"
+  - "obs-ca2-practices-torrance"
+  - "obs-ca2-practices-beverly-hills"
+  - "obs-ca2-practices-downey"
+  - "obs-ca2-practices-santa-clarita"
+  - "obs-ca2-practices-west-covina"
+  - "obs-ca1-agencies-los-angeles"
 related:
   - "/markets/california/los-angeles/"
   - "/markets/california/long-beach/"
   - "/markets/california/pasadena/"
   - "/markets/california/glendale/"
+  - "/markets/california/santa-monica/"
+  - "/markets/california/burbank/"
+  - "/markets/california/torrance/"
+  - "/markets/california/beverly-hills/"
+  - "/markets/california/downey/"
+  - "/markets/california/santa-clarita/"
+  - "/markets/california/west-covina/"
   - "/services/local-seo-multi-location-clinics/"
   - "/services/dental-conversion-tracking/"
   - "/blog/dental-call-tracking/"
@@ -63,29 +113,29 @@ cta: "audit"
 published: null
 updated: null
 evidence: "sourced"
-verificationNotes: "ACS 2019–2023 and 2014–2018 5-year values retrieved from data.census.gov tables on 2026-11-08 (city values match scripts/census.mjs). Medi-Cal utilization summed by us from the DHCS county dataset on the CHHS portal (CY 2024). CCPA statements checked against the California AG page (updated 2026-08-28) and CPPA FAQ. Penal Code 632 described only via the 2015 AB 925 Legislative Counsel's Digest because the current code page returned a bot challenge; DHCS program pages were not retrievable and are not cited. Research files: research/local/california-greater-los-angeles.md."
+verificationNotes: "Independent review 2026-11-08: all Census figures moved to ACS 2020–2024 5-year Data Profiles and C16001 (data.census.gov table API, same variables as scripts/census.mjs) for the eleven cities, Los Angeles County and California; population change now from Census Vintage 2025 (SUB-EST2025_6: April 2020 base to July 2025, our arithmetic), replacing the ACS 2014–2018 comparison. Medi-Cal Dental utilization recomputed from the DHCS CSV on the CHHS portal (CY 2024, Los Angeles County, 12 age bands): 1,379,973 of 3,495,987 = 39.5%; ages 0–20 58.0%; 21+ 30.2% — confirmed. FFS provider-language field recounted via the ArcGIS layer (edited 2025-09-18), paginated. CCPA wording re-checked against the AG page (updated 2026-08-28) and CPPA FAQ ($26.625 million from 2025-01-01); Penal Code 632 described only via the 2015 AB 925 digest (current code page returned 403; not bypassed). Added an eleven-city comparison and prose links to every city page, an aggregated cross-city observation summary (38 home pages), and a plain scope statement. Research: research/local/california-greater-los-angeles.md; review log research/reviews/review-california.md."
 faqs:
   - q: "Do you work with dental practices anywhere in California?"
-    a: "Our California focus is Greater Los Angeles, meaning practices in the cities of Los Angeles County. We are not extending the local program to San Diego, the Bay Area, the Inland Empire or the rest of the state, and we have no California office. A practice elsewhere in California can still ask about national, remote services, but it would not receive the local market research this hub describes."
+    a: "Our California focus is Greater Los Angeles only, meaning practices in the cities of Los Angeles County. We are not extending the local program to San Diego, the Bay Area, the Inland Empire or the rest of the state, and we have no California office. A practice elsewhere in California can still ask about national, remote services, but it would not receive the local market research this hub describes."
   - q: "Is Orange County included because it is in the same metro area?"
-    a: "Not as a local market. The Los Angeles–Long Beach–Anaheim metro area combines Los Angeles County and Orange County, but our researched cities are all in Los Angeles County. If a Long Beach or other Los Angeles County practice draws patients from Orange County, we account for that in catchment and ad targeting, without presenting Orange County cities as markets we cover."
-  - q: "How does a Houston team handle the time difference with a Los Angeles practice?"
-    a: "Los Angeles is two hours behind Houston, which works in a practice's favour for planning: our morning is before your schedule starts, and review calls can sit in your early afternoon. What matters more is a clear owner on your side for approvals and access, an agreed reporting rhythm, and written records of decisions, because remote delivery depends on those whatever the time zone."
+    a: "Not as a local market. The Los Angeles–Long Beach–Anaheim metro area combines Los Angeles County and Orange County, but every city we research is in Los Angeles County. If a Long Beach or West Covina practice draws patients from across the county line, we account for that in catchment and ad targeting, without presenting Orange County cities as markets we cover."
+  - q: "How does a Houston team handle the time difference with a Los Angeles County practice?"
+    a: "Los Angeles is two hours behind Houston, which helps with planning: our morning is before your schedule starts, and review calls can sit in your early afternoon. What matters more is a clear owner on your side for approvals and access, an agreed reporting rhythm, and written records of decisions, because remote delivery depends on those whatever the time zone."
   - q: "Should our marketing mention that we accept Medi-Cal?"
-    a: "If you participate, saying so clearly helps the right patients find you and saves front-desk time; if you do not, saying that clearly is just as useful. In Los Angeles County, DHCS data shows about 3.5 million continuously enrolled Medi-Cal members in 2024, so this is a large group to either serve deliberately or turn away politely. The decision is clinical and financial; marketing should simply state it accurately."
+    a: "If you participate, saying so clearly helps the right patients find you and saves front-desk time; if you do not, saying that clearly is just as useful. In Los Angeles County, DHCS data shows about 3.5 million continuously enrolled Medi-Cal members in 2024, so this is a large group to either serve deliberately or turn away politely. The participation decision is yours; marketing should state it accurately."
   - q: "Does the CCPA apply to our dental practice website?"
     a: "It depends on your size and data practices. The CCPA applies to for-profit businesses that meet revenue or data-volume thresholds, and it exempts certain medical information. Many single offices may fall outside it, while larger groups may not, and tracking pixels raise questions about sharing data. Your counsel should decide; we can document what your site collects and sends."
   - q: "Can we use call recording for call tracking in California?"
-    a: "Many call-tracking tools can record calls, but California law has long required the consent of all parties to record a confidential communication, according to the Legislative Counsel's summary of Penal Code 632. Before enabling recording, agree with your counsel on the disclosure message and whether recording is needed at all; call outcomes can often be measured without it."
+    a: "Many call-tracking tools can record calls, but in 2015 the Legislative Counsel summarised California law (Penal Code 632) as making it a crime to record a confidential communication, including a phone call, without the consent of all parties. Treat that as a reason to ask counsel about disclosure wording, and whether recording is needed at all, before enabling it."
   - q: "Which Los Angeles County cities have their own pages?"
-    a: "We have researched the City of Los Angeles, Long Beach, Pasadena and Glendale so far, each with its own data, website observations and plan. Other cities in the county are candidates only after the same research justifies a page. A practice in a city without a page is still inside the Greater Los Angeles focus."
+    a: "Eleven: the City of Los Angeles, Long Beach, Santa Clarita, Glendale, Torrance, Pasadena, Downey, West Covina, Burbank, Santa Monica and Beverly Hills, each with its own data, website observations and plan. Other cities in the county are candidates only after the same research justifies a page. A practice in a city without a page is still inside the Greater Los Angeles focus."
 ---
 
 ## What "California" means for Alpha Dental Media
 
-Our California work covers **Greater Los Angeles**: dental practices, dental groups and DSOs with offices in the incorporated cities of **Los Angeles County**. Los Angeles County sits inside the **Los Angeles–Long Beach–Anaheim, CA Metro Area**, which also includes Orange County. We are a Houston-based agency, we serve these practices remotely, and we do not have a California office or California staff.
+Our California work covers **Greater Los Angeles only**: dental practices, dental groups and DSOs with offices in the incorporated cities of **Los Angeles County**. Los Angeles County sits inside the **Los Angeles–Long Beach–Anaheim, CA Metro Area**, which also includes Orange County. We are a Houston-based agency, we serve these practices remotely, and we have no California office or California staff.
 
-We are deliberately not extending the local program to the rest of the state. San Diego, the Bay Area, Sacramento and the Central Valley are different markets with different search behaviour, competitors and patient flows, and a page that pretended otherwise would be generic. Concentrating on one county lets each city page rest on that city's own data and observations rather than on assumptions borrowed from elsewhere.
+We are deliberately not extending the local program to the rest of the state. San Diego, the Bay Area, Sacramento and the Central Valley are different markets, and concentrating on one county lets each city page rest on that city's own data rather than on assumptions borrowed from elsewhere.
 
 ## How Los Angeles County is put together, and why city names matter
 
@@ -97,38 +147,56 @@ That structure shapes dental marketing in three practical ways:
 
 1. **Search entities are city-specific.** Glendale, Pasadena, Burbank, Santa Monica and Long Beach are separate cities, not neighbourhoods of Los Angeles. Google Business Profile guidelines ask that a profile reflect the business's real-world name and address, so the city in your address, your site's location content and your structured data should agree with each other.
 2. **"Los Angeles" is ambiguous.** People use it for a city, a county and a metro area. In the agency pages we reviewed on 8 November 2026, "Los Angeles" was often used to cover places that are separate cities. For a practice, the useful question is narrower: which neighbourhoods and nearby cities do your patients actually come from?
-3. **Catchments cross city lines.** A Pasadena or Glendale office is likely to draw from neighbouring cities and unincorporated communities; a Long Beach office may draw from across the Orange County line. These are hypotheses we test with your patient ZIP codes, not assumptions we build campaigns on.
+3. **Catchments cross city lines.** A Burbank or Glendale office is likely to draw from neighbouring cities and City of Los Angeles neighbourhoods; a Long Beach office may draw from across the Orange County line. These are hypotheses we test with your patient ZIP codes, not assumptions we build campaigns on.
 
 <SourceNote ids={["google-gbp-guidelines", "obs-ca1-agencies-los-angeles"]} />
 
-## The four cities we have researched so far
+## Eleven cities, eleven different first questions
 
-The ACS 2019–2023 five-year estimates show how different these four cities are, even though they are all in one county. The table pairs each figure with the planning question it raises; none of these numbers tells us what a particular practice should do.
+We have researched eleven cities in the county so far. Together they hold about 5.5 million of the county's 9.8 million residents. The table puts the same ACS 2020–2024 measures side by side, with the population change from the Census Bureau's Vintage 2025 estimates, and the question each city page starts from. The figures describe residents; none of them tells a practice what its own patients want.
 
-<DataTable caption="Four Los Angeles County cities: selected ACS 2019–2023 five-year estimates and the question each raises" columns={["Measure", "City of Los Angeles", "Long Beach", "Pasadena", "Glendale", "Planning question"]}
+<DataTable caption="Eleven Los Angeles County cities: selected Census measures and the question each city page starts from" columns={["City", "Population (ACS 2020–2024)", "Change, April 2020 to July 2025", "Language other than English at home (5+)", "Owner-occupied homes", "Mean commute (min)", "First question on the city page"]}
   rows={[
-    ["Population", "3,857,897", "458,491", "136,462", "192,270", "How much of this city is realistically your catchment?"],
-    ["Median age (years)", "36.9", "36.8", "40.1", "41.4", "Does your service mix match the age profile you actually see?"],
-    ["Language other than English at home (age 5+)", "56.8%", "44.7%", "42.6%", "66.0%", "Which languages can your front desk genuinely support?"],
-    ["Speak English less than very well (age 5+)", "25.0%", "16.3%", "15.5%", "31.0%", "Are forms, reminders and phone scripts usable for these patients?"],
-    ["Median household income", "$80,366", "$83,969", "$103,778", "$84,262", "Context only: case mix must come from your own data"],
-    ["No health insurance coverage", "10.0%", "9.0%", "6.3%", "6.7%", "Is self-pay or membership-plan information easy to find?"],
-    ["Mean travel time to work (minutes)", "31.1", "30.0", "27.3", "27.3", "Do your hours and booking options fit commuting patterns?"]
+    ["City of Los Angeles", "3,857,263", "−0.8%", "56.4%", "36.0%", "30.7", "Which neighbourhoods are really your market?"],
+    ["Long Beach", "455,548", "−3.5%", "44.7%", "41.2%", "29.9", "Are phones, numbers and offers under control?"],
+    ["Santa Clarita", "230,221", "−1.9%", "36.2%", "71.8%", "34.1", "Where in a 73-square-mile valley do you actually compete?"],
+    ["Glendale", "190,748", "−4.8%", "66.2%", "35.2%", "27.1", "Which languages can your team support on the page and phone?"],
+    ["Torrance", "142,130", "−5.8%", "40.1%", "55.0%", "26.9", "Are you losing patients faster than you gain them?"],
+    ["Pasadena", "136,969", "−2.7%", "41.9%", "42.5%", "26.9", "Do elective consults attend, and is the right source credited?"],
+    ["Downey", "110,939", "−5.1%", "65.1%", "51.1%", "31.0", "Can a Spanish-speaking caller find, understand and book you?"],
+    ["West Covina", "107,037", "−3.8%", "59.8%", "60.3%", "32.9", "Which of several languages, and which services, will you serve properly?"],
+    ["Burbank", "104,546", "−4.0%", "41.5%", "43.3%", "26.0", "How far across the city line does your trade area run?"],
+    ["Santa Monica", "91,169", "−3.2%", "27.8%", "27.9%", "24.8", "How do you stand out when the next office is in the same building?"],
+    ["Beverly Hills", "31,624", "−5.9%", "43.6%", "41.0%", "25.1", "Where do patients come from, and how much is referral?"],
+    ["Los Angeles County", "9,808,667", "−3.2%", "55.1%", "45.9%", "30.4", "Comparison"]
   ]}
-  note="Source: U.S. Census Bureau, ACS 2019–2023 5-year Data Profiles (DP02, DP03, DP05) for each place. Health insurance here means medical coverage, not dental benefits." />
+  note="Sources: U.S. Census Bureau ACS 2020–2024 5-year Data Profiles (DP02, DP03, DP04, DP05) for each place and the county; Vintage 2025 population estimates (SUB-EST2025_6), change from the April 2020 estimates base, our arithmetic. Estimates carry margins of error, widest for Beverly Hills." />
 
-<SourceNote ids={["acs-2023-dp05-los-angeles-city", "acs-2023-dp05-long-beach-city", "acs-2023-dp05-pasadena-city", "acs-2023-dp05-glendale-city", "acs-2023-dp02-los-angeles-city", "acs-2023-dp02-long-beach-city", "acs-2023-dp02-pasadena-city", "acs-2023-dp02-glendale-city", "acs-2023-dp03-los-angeles-city", "acs-2023-dp03-long-beach-city", "acs-2023-dp03-pasadena-city", "acs-2023-dp03-glendale-city"]} />
+<SourceNote ids={["acs-2024-dp05-los-angeles-city", "acs-2024-dp05-long-beach-city", "acs-2024-dp05-santa-clarita-city", "acs-2024-dp05-glendale-city", "acs-2024-dp05-torrance-city", "acs-2024-dp05-pasadena-city", "acs-2024-dp05-downey-city", "acs-2024-dp05-west-covina-city", "acs-2024-dp05-burbank-city", "acs-2024-dp05-santa-monica-city", "acs-2024-dp05-beverly-hills-city", "acs-2024-dp05-la-county", "census-sub-est2025-california"]} />
 
-The four city pages take these differences in different directions:
+<SourceNote ids={["acs-2024-dp02-los-angeles-city", "acs-2024-dp02-long-beach-city", "acs-2024-dp02-santa-clarita-city", "acs-2024-dp02-glendale-city", "acs-2024-dp02-torrance-city", "acs-2024-dp02-pasadena-city", "acs-2024-dp02-downey-city", "acs-2024-dp02-west-covina-city", "acs-2024-dp02-burbank-city", "acs-2024-dp02-santa-monica-city", "acs-2024-dp02-beverly-hills-city", "acs-2024-dp02-la-county"]} />
 
-- **[The City of Los Angeles](/markets/california/los-angeles/)** is a problem of scale and fragmentation: 3.86 million residents across 470 square miles, where neighbourhood-level relevance matters more than the city name.
-- **[Long Beach](/markets/california/long-beach/)** is the densest of the four and has the youngest age profile; in our sample, price-led new-patient offers and messy phone numbers were the notable patterns.
-- **[Pasadena](/markets/california/pasadena/)** is small in area, so a practice's market almost certainly extends into neighbouring cities; the sites we reviewed offered no language options despite 42.6% of residents speaking a language other than English at home.
-- **[Glendale](/markets/california/glendale/)** is where language is most central: two-thirds of residents aged 5 and over speak a language other than English at home, and about half of residents were born outside the United States.
+<SourceNote ids={["acs-2024-dp04-los-angeles-city", "acs-2024-dp04-long-beach-city", "acs-2024-dp04-santa-clarita-city", "acs-2024-dp04-glendale-city", "acs-2024-dp04-torrance-city", "acs-2024-dp04-pasadena-city", "acs-2024-dp04-downey-city", "acs-2024-dp04-west-covina-city", "acs-2024-dp04-burbank-city", "acs-2024-dp04-santa-monica-city", "acs-2024-dp04-beverly-hills-city", "acs-2024-dp04-la-county", "acs-2024-dp03-los-angeles-city", "acs-2024-dp03-long-beach-city", "acs-2024-dp03-santa-clarita-city", "acs-2024-dp03-glendale-city", "acs-2024-dp03-torrance-city", "acs-2024-dp03-pasadena-city", "acs-2024-dp03-downey-city", "acs-2024-dp03-west-covina-city", "acs-2024-dp03-burbank-city", "acs-2024-dp03-santa-monica-city", "acs-2024-dp03-beverly-hills-city", "acs-2024-dp03-la-county"]} />
 
-Together these four cities account for about 4.6 million of Los Angeles County's 9.8 million residents. Population is also not growing: ACS period estimates for the county were about 2.5% lower in 2019–2023 than in 2014–2018, while the state as a whole was roughly flat. A flat or shrinking population means growth tends to come from winning patients from other practices and keeping existing ones, rather than from new households arriving.
+### How the cities relate to each other
 
-<SourceNote ids={["acs-2023-dp05-la-county", "acs-2018-dp05-la-county", "acs-2023-dp05-california", "acs-2018-dp05-california"]} />
+The cities fall into clusters whose practices may share patients.
+
+- **The Westside.** [Santa Monica](/markets/california/santa-monica/) and [Beverly Hills](/markets/california/beverly-hills/) are separate cities almost surrounded by [City of Los Angeles](/markets/california/los-angeles/) neighbourhoods such as Brentwood, Venice and Century City. All three pages deal with boundaries, but differently: the City of Los Angeles page narrows a huge city to neighbourhoods, Santa Monica deals with density and renter turnover, and Beverly Hills with a small resident base, a contested name and referral-led specialists.
+- **North and northeast of downtown.** [Glendale](/markets/california/glendale/), [Burbank](/markets/california/burbank/) and [Pasadena](/markets/california/pasadena/) border each other or nearby Los Angeles neighbourhoods. Glendale's plan is led by language, Burbank's by trade area, and Pasadena's by elective consult quality and booking attribution.
+- **The South Bay and harbour.** [Long Beach](/markets/california/long-beach/) and [Torrance](/markets/california/torrance/) are near each other but face different problems: phone and offer discipline in a dense city, and retention in an older, shrinking one.
+- **The southeast and the east San Gabriel Valley.** [Downey](/markets/california/downey/) is a bilingual Spanish-and-English market where payment clarity decides many calls; [West Covina](/markets/california/west-covina/) has several large language communities and, in our sample, a national implant-centre brand with an office in the city.
+- **The north county.** [Santa Clarita](/markets/california/santa-clarita/) is the most spread out, with the longest average commute of the eleven and the highest share of owner-occupied homes, so community-level visibility comes first.
+
+### Three patterns that hold across the county
+
+First, **every one of the eleven cities had fewer residents in July 2025 than in April 2020** in the Census Bureau's estimates, from 0.8% fewer in the City of Los Angeles to 5.9% fewer in Beverly Hills; the county fell 3.2% while California as a whole fell 0.5%. Growth for a practice is therefore more likely to come from winning and keeping patients than from new households arriving, which is why retention appears in several city plans.
+
+Second, **language varies more between neighbouring cities than averages suggest.** The share of residents aged five and over who speak a language other than English at home ranges from 27.8% in Santa Monica to 66.2% in Glendale, and the largest groups differ: Spanish in Downey, a broad "other Indo-European" category in Glendale, several Asian languages in West Covina and Torrance.
+
+Third, **the practice websites we sampled rarely matched that variety.** Across 38 practice home pages reviewed in the eleven cities on 8 November 2026, three to four per city, four offered Spanish pages or a Spanish-language option, none offered pages in any other non-English language, several more listed staff languages in a single line, and one used an automatic translation widget. The samples are small and not representative, so we read this as a set of questions for an audit, not as a market finding.
+
+<SourceNote ids={["census-sub-est2025-california", "acs-2024-dp02-la-county", "obs-ca1-practices-los-angeles", "obs-ca1-practices-long-beach", "obs-ca1-practices-pasadena", "obs-ca1-practices-glendale", "obs-ca2-practices-santa-monica", "obs-ca2-practices-burbank", "obs-ca2-practices-torrance", "obs-ca2-practices-beverly-hills", "obs-ca2-practices-downey", "obs-ca2-practices-santa-clarita", "obs-ca2-practices-west-covina"]} />
 
 ## Medi-Cal Dental and what it means for marketing decisions
 
@@ -138,19 +206,19 @@ DHCS publishes county-level utilization data. Summing its age bands for Los Ange
 
 <SourceNote ids={["chhs-dhcs-medi-cal-dental-measures-county"]} />
 
-Those figures describe a county population, not demand for any one office, but they explain why payment-path clarity matters so much here. In our website samples, some practices listed Denti-Cal or Medi-Cal among accepted plans, one stated plainly that it does not accept Medi-Cal or dental HMO plans, and others said only "PPO". Each of those can be the right business choice. The marketing mistake is ambiguity, which sends patients to the phone to ask a question the website could have answered.
+Those figures describe a county population, not demand for any one office, but they explain why payment-path clarity matters. In our website samples, some practices listed Denti-Cal or Medi-Cal among accepted plans, one stated plainly that it accepts neither Medi-Cal nor dental HMO plans, and others said only "PPO". Each can be the right business choice; the marketing mistake is ambiguity, which sends patients to the phone to ask.
 
-At county level, ACS figures add context: 40.2% of Los Angeles County residents have some form of public health coverage and 8.7% have none. Public coverage there means medical coverage such as Medi-Cal or Medicare, so it is a reason to make payment information clear, not a measure of dental benefits.
+At county level, ACS figures add context: 41.2% of Los Angeles County residents have some form of public health coverage and 8.2% have none. Public coverage there means medical coverage such as Medi-Cal or Medicare, so it is a reason to make payment information clear, not a measure of dental benefits.
 
-<SourceNote ids={["acs-2023-dp03-la-county", "obs-ca1-practices-los-angeles", "obs-ca1-practices-long-beach"]} />
+<SourceNote ids={["acs-2024-dp03-la-county", "obs-ca1-practices-los-angeles", "obs-ca1-practices-long-beach"]} />
 
-## Language diversity across the county
+## Language diversity: a question to ask, not a targeting plan
 
-Los Angeles County is linguistically diverse at a scale few markets match. Among residents aged 5 and over, 55.1% speak a language other than English at home, compared with 44.1% statewide, and 23.2% speak English less than "very well". Spanish is the largest group at 37.7%; Chinese languages and the Census grouping "other Indo-European languages" are each about 4.1%, followed by Tagalog and Korean.
+Among Los Angeles County residents aged 5 and over, 55.1% speak a language other than English at home, compared with 44.4% statewide, and 23.4% speak English less than "very well". Spanish is the largest group at 37.6%; Chinese languages and the Census grouping "other Indo-European languages" are each about 4.1%, followed by Tagalog and Korean.
 
-<SourceNote ids={["acs-2023-dp02-la-county", "acs-2023-dp02-california", "acs-2023-c16001-la-county"]} />
+<SourceNote ids={["acs-2024-dp02-la-county", "acs-2024-dp02-california", "acs-2024-c16001-la-county"]} />
 
-We treat these numbers as a reason to ask questions, not as a targeting plan. Speaking a language at home does not mean a patient wants to search, book or be treated in it. The decisions that matter are practical: which languages your team can support on the phone and in the chair, on which days, and whether translated pages say something useful rather than repeating a menu of services. The DHCS Medi-Cal Dental provider listing is a reminder that this varies city by city: the most frequently listed non-English language among providers was Spanish for Los Angeles, Long Beach and Pasadena billing addresses, but Armenian for Glendale.
+Speaking a language at home does not mean a patient wants to search, book or be treated in it, so these numbers never decide a plan on their own. The decisions that matter are practical: which languages your team can support on the phone and in the chair, on which days, and whether translated pages say something useful rather than repeating a menu of services. The DHCS Medi-Cal Dental provider listing shows how much this varies city by city: the most frequently listed non-English language among providers was Spanish for Los Angeles, Long Beach and Pasadena billing addresses, but Armenian for Glendale.
 
 <SourceNote ids={["chhs-dhcs-medi-cal-dental-ffs-providers"]} />
 
@@ -160,15 +228,15 @@ The **California Consumer Privacy Act (CCPA)**, as amended by the California Pri
 
 <SourceNote ids={["ca-oag-ccpa", "cppa-ccpa-faq"]} />
 
-What that means in practice is unclear for many dental businesses, and we do not make compliance judgements. A single-office practice may be below every threshold; a larger group or DSO may not be. Even where most patient data is exempt medical information, the marketing layer is where questions tend to arise: advertising pixels, analytics tags and session-recording tools can send visitor data to third parties. The Attorney General's page also notes that covered businesses must honour a browser-level opt-out signal such as Global Privacy Control.
+We do not make compliance judgements. A single-office practice may be below every threshold; a larger group or DSO may not be. Even where most patient data is exempt medical information, the marketing layer is where questions tend to arise: advertising pixels, analytics tags and session-recording tools can send visitor data to third parties. The Attorney General's page also says covered businesses must honour a user-enabled global privacy control, such as Global Privacy Control, as an opt-out request. Your counsel should decide what applies to you.
 
 ## Call recording and call tracking
 
-Call tracking is one of the most useful measurement tools for a dental practice, because so many new patients still phone. Many call-tracking platforms also offer call recording, and California treats recording differently from many states. The Legislative Counsel's digest of a 2015 bill summarised existing law as making it a crime to record a confidential communication, including a telephone call, without the consent of all parties.
+Many new patients still phone, so call tracking matters, and many call-tracking platforms also offer recording. The Legislative Counsel's digest of a 2015 bill summarised the law then in force as making it a crime to record a confidential communication, including a telephone call, without the consent of all parties.
 
 <SourceNote ids={["ca-ab925-2015-digest-pc632"]} />
 
-That digest is a summary from 2015, not the current text of Penal Code 632, so treat it as a reason to check, not as legal guidance. Our approach is to measure calls without recording by default: tracking numbers, call duration, missed-call rates and a simple outcome tag entered by your team. Recording is enabled only after your counsel approves the disclosure, and recordings are never used in reports that include patient details. The [dental call tracking guide](/blog/dental-call-tracking/) explains how to count calls without treating every one as a new patient.
+That digest is a 2015 summary, not the current text of Penal Code 632, so treat it as a reason to check with counsel, not as legal guidance. Our approach is to measure calls without recording by default: tracking numbers, call duration, missed-call rates and a simple outcome tag entered by your team. Recording is enabled only after your counsel approves the disclosure, and recordings are never used in reports that include patient details. The [dental call tracking guide](/blog/dental-call-tracking/) explains how to count calls without treating every one as a new patient.
 
 <Checklist title="California-specific website and measurement checks for Los Angeles County practices" items={[
   "List every tag, pixel and form tool on the site and where each sends data",
@@ -182,7 +250,7 @@ That digest is a summary from 2015, not the current text of Penal Code 632, so t
 
 ## How remote delivery from Houston works for a Los Angeles County practice
 
-Working remotely changes how responsibilities are divided more than what gets done. The [multi-location local SEO service](/services/local-seo-multi-location-clinics/) and the [conversion tracking service](/services/dental-conversion-tracking/) describe the methods in detail; for a Greater Los Angeles practice, the split usually looks like this.
+Working remotely changes how responsibilities are divided more than what gets done. The [multi-location local SEO service](/services/local-seo-multi-location-clinics/) and the [conversion tracking service](/services/dental-conversion-tracking/) describe the methods; the split usually looks like this.
 
 <Lanes title="Who does what in a remote engagement" lanes={[
   { title: "Alpha Dental Media (Houston)", items: ["Market and competitor research for your neighbourhoods", "Website, Business Profile and listing work", "Ad account build and management", "Measurement setup and monthly reporting"] },
@@ -190,8 +258,10 @@ Working remotely changes how responsibilities are divided more than what gets do
   { title: "Shared decisions", items: ["Which services and areas to prioritise", "Appointment capacity and hours", "Medi-Cal and plan participation messaging", "Privacy and call-recording choices, with your counsel"] }
 ]} caption="We never need patient-level records for marketing measurement; totals are enough." />
 
+For a group with offices in more than one of these cities, the city pages are a reminder that the same budget rule will not suit every office: a Torrance office may need reactivation before ads, while a Downey office may need Spanish call cover first. We compare offices on consistent definitions of inquiry, booked visit and attended visit before moving budget between them.
+
 <DecisionTree title="Is our practice inside the Greater Los Angeles program?" q="Is the office in Los Angeles County?" branches={[
-  { answer: "Yes", q: "Is it one of the four researched cities?", branches: [
+  { answer: "Yes", q: "Is it in one of the eleven researched cities?", branches: [
       { answer: "Yes", outcome: "Start from that city page, then request an audit" },
       { answer: "No", outcome: "Still in scope; the audit includes catchment research for your city" } ] },
   { answer: "No", q: "Is it in Orange County or elsewhere in California?", branches: [
