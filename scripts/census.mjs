@@ -22,9 +22,10 @@ fs.mkdirSync(cacheDir, { recursive: true });
 
 async function cached(url, file) {
   const p = path.join(cacheDir, file);
-  if (fs.existsSync(p)) return fs.readFileSync(p, 'utf8');
+  if (fs.existsSync(p) && fs.statSync(p).size > 0) return fs.readFileSync(p, 'utf8');
   // curl honours the environment's HTTPS proxy settings; Node's fetch does not.
   const t = execFileSync('curl', ['-sS', '--fail', '--max-time', '60', url], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
+  if (!t.trim()) throw new Error(`Empty response for ${url}`);
   fs.writeFileSync(p, t);
   return t;
 }
