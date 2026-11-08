@@ -42,8 +42,6 @@ faqs:
     a: "Feedback buttons exist inside most assistants, and using them costs little, but there is no documented process that makes a provider rewrite an answer about your practice on request. The dependable fix is upstream: correct the website, Business Profile and directory listings the answer appears to rely on, then re-test after those pages have had time to be recrawled."
   - q: "Do we need a paid AI visibility tool to do this?"
     a: "No. A spreadsheet, a fixed prompt list and a clean browser session are enough to start. Tools can automate repetition across many prompts and locations, which helps larger groups, but Google notes that no third-party tool has access to its internal ranking or AI systems, so treat any tool score as an observation sample, not a measurement of the engine."
-  - q: "Is a mention in an AI answer the same as a recommendation?"
-    a: "No. A mention means the practice name appeared. A recommendation means the answer suggested the practice as an option for the user's need. An answer can mention a practice while recommending a competitor, or recommend it while stating the wrong hours. Log the two separately, along with whether a link was cited and whether the facts were right."
 ---
 
 <KeyAnswer>Write a fixed set of 15 to 25 prompts that patients plausibly ask, run them on a schedule in each assistant you care about, and log every answer with the date, engine, mode, location and whether web search was used. Score each answer separately for mention, citation, recommendation and factual accuracy against a practice fact register. Fix errors at their source: website, Business Profile and listings.</KeyAnswer>
@@ -56,11 +54,11 @@ AI answers vary by design. Google describes AI Overviews and AI Mode as using a 
 
 <SourceNote ids={["google-ai-features-search"]} />
 
-Google's AI optimization guide adds that these features rely on retrieval-augmented generation (grounding answers in pages retrieved from the search index). That has a practical consequence for a practice: when a grounded answer is wrong, the error usually traces back to something published somewhere. The answer is downstream of sources you can inspect.
+Google's AI optimization guide adds that these features rely on retrieval-augmented generation (grounding answers in pages retrieved from the search index). That has a practical consequence for a practice: when a grounded answer is wrong, the error can often be traced back to something published somewhere. The answer is downstream of sources you can inspect.
 
 <SourceNote ids={["google-ai-optimization-guide"]} />
 
-So the unit of evidence is not "what ChatGPT said when the office manager tried it on Tuesday". It is a pattern across a defined prompt set, repeated under recorded conditions. Without that, a practice can spend weeks reacting to an answer that would have come out differently on the next attempt.
+So the unit of evidence is a pattern across a defined prompt set, repeated under recorded conditions, not one answer someone happened to see.
 
 ## Four outcomes to score separately: mention, citation, recommendation, accuracy
 
@@ -186,14 +184,11 @@ The practice writes 18 prompts: 7 navigational, 6 service and location, 2 compar
 
 The lesson in the example is about what to claim. The accuracy fixes are clear and traceable. The small change in mentions is not evidence of anything, and reporting it as a percentage rise in AI visibility would be misleading.
 
-## Common mistakes and the tradeoffs behind them
+## Mistakes that undo a careful check
 
-- **Changing the prompts every month.** It feels thorough, but destroys comparability. Add prompts sparingly and keep the old ones running.
-- **Testing only logged in, from the office.** Memory, personalisation and location all shape answers. Logged-out tests from a defined location are closer to what a new patient sees.
-- **Treating citations as endorsements.** A citation shows where the assistant looked, not that it agreed. Check the cited page says what the answer claims.
-- **Fixing the answer instead of the source.** Feedback buttons are worth a click, but the durable fix is to correct the website, profile or listing.
+- **Treating citations as endorsements.** A citation shows where the assistant looked, not that it agreed. Open the cited page and confirm it says what the answer claims before acting on it.
 - **Over-reporting.** Mention counts from a few dozen answers move around on their own. Report accuracy fixes with evidence; report mention and recommendation trends only across several runs with stable conditions.
-- **Ignoring Google's own data.** Search Console now has a Generative AI performance report showing impressions of a site's links in AI Overviews and AI Mode. It does not tell you what the answer said, which is why manual checks still matter, but it shows which pages Google's AI features are linking to.
+- **Skipping Google's own data.** Search Console's Generative AI performance report shows which pages Google's AI features link to, but not what the answers said. Use it alongside the log, not instead of it; [what that report and analytics can establish](/blog/measuring-ai-referrals-and-citations/) is covered separately.
 
 <SourceNote ids={["gsc-generative-ai-performance-report"]} />
 

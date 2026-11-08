@@ -31,7 +31,7 @@ This policy is a plain-language draft that describes how the website currently w
 
 ## Who we are
 
-This website, alphadentalmedia.com, is operated by Alpha Dental Media, a dental marketing agency based in Houston, Texas. The legal name of the business operating the site will be stated here once confirmed by the owner. Questions about this policy can be sent through the [contact page](/contact/).
+This website, alphadentalmedia.com, is operated by Alpha Dental Media, a dental marketing agency based in Houston, Texas. The legal name of the business operating the site will be stated here once confirmed by the owner. Questions about this policy can be sent through the [contact page](/contact/) (choose "Other" as the main challenge and explain your question in the details box).
 
 This site is for dental practices, dental groups and their staff. It is not a dental provider and does not offer care to patients.
 
@@ -44,7 +44,7 @@ The audit request and strategy call request forms ask for:
 
 We use this information only to respond to your business inquiry: to confirm whether we can help, ask follow-up questions, arrange a call or audit, and keep a record of the conversation.
 
-The form may show a gentle message if an email address uses a free webmail domain, or if the details box appears to contain clinical information. Those checks happen in your browser; they do not store or send what you typed.
+The form may show a gentle message if an email address uses a free webmail domain, or if the details box appears to contain clinical information. Those checks run in your browser and do not record or send anything themselves; what you type is sent only if you submit the form.
 
 <Callout title="Please do not send patient information" tone="caution">
 This site is not designed to receive patient information. Do not include patient names, dates of birth, records, images, insurance details or any treatment information in the form or in messages to us. If you do so by mistake, tell us through the contact page so we can delete it.
@@ -57,13 +57,13 @@ To prevent spam and duplicate submissions, and to understand which campaigns bri
 - **A random submission ID** generated in your browser, used to avoid processing the same request twice.
 - **The time the form was opened**, used to reject automated submissions sent faster than a person could type.
 - **A hidden field** that people do not see; if an automated program fills it, the submission is rejected.
-- **Campaign details from the link you arrived on**, if present: the utm_source, utm_medium and utm_campaign values, and the path of the first page you landed on. These are stored in your browser's session storage (under the name adm_attr) for the rest of your visit and sent with your inquiry. Session storage is cleared when you close the browser tab. No advertising click IDs or other identifiers are collected this way.
+- **Campaign details, if present.** When you submit, the form reads the utm_source, utm_medium and utm_campaign values from the address of the page you are on, together with that page's path, and sends them with your inquiry. It also keeps them in your browser's session storage (under the name adm_attr) for the rest of the visit, so a second submission in the same tab sends the same values. Session storage is cleared when you close the browser tab. This happens whether or not analytics are allowed, and only when you submit the form. No advertising click IDs or other identifiers are collected this way.
 
 The server also reads your IP address to limit how many requests can be sent from one address in a short period. In the current version of the site this count is held only in the server's working memory, is not written to a database, and is discarded when the server restarts.
 
 ## Where your inquiry goes
 
-The website does not keep its own database of inquiries. When you submit the form, your inquiry is passed to one service configured by the owner — either a customer relationship management (CRM) system or automation tool that receives it at a configured web address (a "webhook"), or an email delivery service that sends it to our inbox. The specific service will be named here once it is configured. That service processes the inquiry on our behalf.
+The website does not keep its own database of inquiries. (Test copies of the site can be set to write submissions to a local file for testing; that option is disabled on the live site.) When you submit the form, your inquiry is passed to one service configured by the owner — either a customer relationship management (CRM) system or automation tool that receives it at a configured web address (a "webhook"), or an email delivery service that sends it to our inbox. The specific service will be named here once it is configured. That service processes the inquiry on our behalf.
 
 If no delivery service is configured, or the delivery fails, the form tells you that your request was not sent, and nothing is saved.
 
@@ -77,8 +77,9 @@ If analytics are added in future, the site is built so that:
 
 - a banner asks for your choice first, and no analytics script loads unless you choose "Allow analytics";
 - your choice is remembered in your browser's local storage (under the name adm_consent_v1) so you are not asked on every page;
-- if you allow it, Google Analytics loads with Google signals and ad personalisation signals turned off;
-- the only events recorded are an accepted audit request, an accepted strategy call request, a confirmed booking (if a booking tool is added) and a click on a phone link — never names, email addresses, phone numbers, typed messages or patient information;
+- if you allow it, Google Analytics loads with Google signals and ad personalisation signals turned off, and uses its own cookies to tell visits apart;
+- Google Analytics then records page views and the standard technical information it collects automatically, such as device, browser, approximate location and how you arrived;
+- the only events the site itself sends are an accepted audit request, an accepted strategy call request, a confirmed booking (if a booking tool is added) and a click on a phone link (if a phone number is added), with no more detail than the type of request and the main challenge chosen from the list — never names, email addresses, phone numbers, typed messages or patient information;
 - to avoid counting the same event twice, a small marker may be kept in session storage for the rest of your visit.
 
 The site's fonts are stored on our own server, so loading a page does not send requests to a third-party font service.
@@ -95,7 +96,7 @@ Retention periods for inquiries and any related records have not yet been set. T
 
 ## Your choices and requests
 
-You can ask us to tell you what information we hold about you from this site, to correct it, or to delete it. Send your request through the [contact page](/contact/), say what you would like us to do, and we will reply to the email address you provide. We may need to confirm that the request comes from you. Depending on where you live, you may have additional rights under state privacy laws; those will be described here after legal review.
+You can ask us to tell you what information we hold about you from this site, to correct it, or to delete it. Send your request through the [contact page](/contact/), choosing "Other" as the main challenge, say what you would like us to do, and we will reply to the email address you provide. We may need to confirm that the request comes from you. Depending on where you live, you may have additional rights under state privacy laws; those will be described here after legal review.
 
 You can also decline analytics if a banner is shown, clear your browser's storage at any time, and arrive on the site without campaign tags in the address.
 

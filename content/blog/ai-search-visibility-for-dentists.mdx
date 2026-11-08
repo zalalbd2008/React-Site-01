@@ -36,7 +36,7 @@ cta: "audit"
 published: null
 updated: null
 evidence: "sourced"
-verificationNotes: "Google statements checked against Search Central 'AI features and your website' (last updated 2025-12-10) and Search Console Help on impressions, position and clicks; OpenAI statements against 'Overview of OpenAI crawlers' (platform.openai.com/docs/bots), all retrieved 2026-11-08. GEO and AEO are described as industry terms; no official definition was found. Fan-out example is illustrative."
+verificationNotes: "Google statements checked against Search Central 'AI features and your website' (last updated 2025-12-10) and Search Console Help on impressions, position and clicks; OpenAI statements against 'Overview of OpenAI crawlers' (developers.openai.com/api/docs/bots), all retrieved 2026-11-08. GEO and AEO are described as industry terms; no official definition was found. Fan-out example is illustrative."
 order: 20
 faqs:
   - q: "Is GEO different from SEO for a dental practice?"
@@ -85,7 +85,7 @@ Several other points on that page matter for a practice:
 
 <SourceNote ids={["google-ai-features"]} />
 
-On measurement, the same page says traffic from AI features is included in overall search traffic in Search Console's Performance report, within the Web search type. Search Console's help on impressions, position and clicks explains how counting works: a click on an external link in an AI Overview or AI Mode counts as a click, all links in an AI Overview share a single position, and a follow-up question in AI Mode is treated as a new query.
+On measurement, the same page says traffic from AI features is included in overall search traffic in Search Console's Performance report, within the Web search type, and Search Console's help confirms that a click on an external link in an AI Overview or AI Mode counts as an ordinary click. What that data, and analytics referral data, can and cannot prove is the subject of [what AI referral and citation data can establish](/blog/measuring-ai-referrals-and-citations/).
 
 <SourceNote ids={["google-search-console-performance-metrics"]} />
 
@@ -172,10 +172,12 @@ The point is not that every vendor claim is wrong, but that each one should be t
 ## Tradeoffs and common mistakes
 
 - **Treating AI search as a separate project.** It shares its foundations with local SEO; a separate budget for "GEO" that ignores an inaccurate Business Profile has its priorities reversed.
-- **Producing large volumes of AI-written pages.** Pages generated at scale without adding value conflict with Google's spam policies on scaled content, whatever tool produced them.
+- **Producing large volumes of AI-written pages.** Google's spam policies list using generative AI tools "to generate many pages without adding value for users" as an example of scaled content abuse, whatever tool produced them.
 - **Over-blocking.** Blocking all AI agents can remove a practice from AI search answers it would want to appear in.
 - **Under-checking.** Because answers vary, a single screenshot proves little. A repeatable sample over time tells you more.
 - **Ignoring capacity.** Being recommended by an AI answer for weekend appointments is a problem if the practice has no Saturday availability to offer.
+
+<SourceNote ids={["google-spam-policies"]} />
 
 ## Sources and limitations
 

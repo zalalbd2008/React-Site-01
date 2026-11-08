@@ -103,6 +103,9 @@ export const frontmatterSchema = z
     if (fm.type === 'city' && (!fm.geo.city || !fm.geo.state)) ctx.addIssue({ code: 'custom', message: 'City pages need geo.city and geo.state' });
     if (PUBLIC_STATUSES.includes(fm.status) && fm.type === 'case-study' && !fm.caseStudy?.clientPermission)
       ctx.addIssue({ code: 'custom', message: 'A case study cannot be public without recorded client permission' });
+    const expectedParent: Partial<Record<string, string>> = { article: '/blog/', service: '/services/', audience: '/who-we-help/', resource: '/resources/', state: '/markets/' };
+    const want = fm.type === 'city' ? fm.route.split('/').slice(0, 3).join('/') + '/' : expectedParent[fm.type];
+    if (want && fm.parent !== want) ctx.addIssue({ code: 'custom', message: `parent must be "${want}" for this ${fm.type} page` });
     if (fm.status === 'Published' && !fm.published) ctx.addIssue({ code: 'custom', message: 'Published pages need a real publication date' });
   });
 

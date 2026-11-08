@@ -11,16 +11,22 @@ lede: "A structured review of how patients find, judge and contact your practice
 primaryIntent: "dental marketing audit"
 parent: "/"
 cta: "none"
-evidence: "none-required"
+evidence: "sourced"
 verificationNotes: "Describes the audit scope only. No turnaround time, price or free-work promise is made, because none has been approved."
+sources:
+  - "google-ads-access-levels"
+  - "google-gbp-owners-managers"
+  - "search-console-permissions"
 toc: false
 faqs:
   - q: "Is the audit a sales pitch?"
-    a: "It is a diagnosis. You receive what we found, the order we would address it in, and the things we would not recommend spending on. If we are not the right fit, or your practice cannot take more patients, we will say so."
+    a: "It is a diagnosis. You receive what we found, the evidence for each finding, the order we would address them in, and the things we would not recommend spending on. If the main constraint is capacity or phone handling rather than marketing, the findings say so."
   - q: "Do we have to give you account access?"
-    a: "No. We can review your public website, listings and search results without access. Read-only access to Google Business Profile, Search Console, Analytics or Google Ads lets us check measurement and spend, which is usually where the most useful findings are. You can revoke access at any time."
-  - q: "Does the audit cost anything?"
-    a: "Pricing and scope are confirmed with you before any work starts. Nothing on this page commits you to a paid engagement."
+    a: "No. Public pages, listings and search results can be reviewed without access. View-only access to Search Console, Analytics or Google Ads, and manager access to the Business Profile, let the audit check measurement and spend, which public pages cannot show. You can remove that access yourself at any time from each platform's user settings."
+  - q: "Is there a charge for the audit, and how long does it take?"
+    a: "Whether a charge applies, the scope and the timing are confirmed with you in writing before any review work starts. Nothing on this page commits you to an audit or to a paid engagement, and no turnaround is promised here because it depends on scope and on how quickly access arrives."
+  - q: "What do you need from us to start?"
+    a: "Only what the form asks: who you are, the practice name and website, the main office location and the main challenge. Priorities, capacity, a location list and optional account access are discussed afterwards by email. Patient names, records or any clinical information are never needed."
 ---
 
 ## What the audit covers
@@ -28,11 +34,30 @@ faqs:
 The Dental Growth Audit looks at the whole path from a search to an attended appointment, because a weak link anywhere in that chain caps what the rest can achieve. Better rankings do not help if the phone goes unanswered at lunch, and more ad spend does not help if the booking page fails on a phone.
 
 <Lanes title="The four areas we review" lanes={[
-  { title: "Visibility", items: ["How the practice appears for the services and areas it wants", "Google Business Profile accuracy, categories and eligibility", "Technical crawl and indexing issues on the website", "Consistency of name, address and phone across major listings"] },
+  { title: "Visibility", items: ["How the practice appears for the services and areas it wants", "Google Business Profile accuracy, categories and eligibility", "Technical crawl and indexing issues on the website", "Consistency of name, address and phone across major listings", "Review volume, recency and how responses are handled", "Whether selected AI tools state the practice's basic facts correctly, on a recorded date"] },
   { title: "Website conversion", items: ["Mobile booking and call paths", "Treatment-page clarity: cost, insurance and next step", "Speed, layout stability and accessibility basics", "Forms: what happens after a visitor submits"] },
-  { title: "Advertising", items: ["Campaign structure and geographic targeting", "Search terms the budget actually paid for", "Landing pages and call handling for ad traffic", "What the account counts as a conversion"] },
+  { title: "Advertising", items: ["Campaign structure, geographic targeting and ad schedules", "Search terms the budget actually paid for", "Landing pages and call handling for ad traffic", "Which conversion actions are counted, and which steer bidding"] },
   { title: "Measurement", items: ["Whether calls, forms and bookings are tracked separately", "Whether anyone can tell an inquiry from a booked or attended visit", "Gaps between marketing reports and the practice management system", "What can and cannot be concluded from current data"] }
-]} caption="The emphasis changes with your goals. A single-office general practice and a ten-location group need different depth in each lane." />
+]} caption="The emphasis changes with your goals. A single-office general practice and a ten-location group need different depth in each lane. Advertising is reviewed only where an ad account exists." />
+
+Some checks need account access and some do not. Without access, the audit is limited to what any visitor can see: public pages, listings, search results and the website's behaviour on a phone. With access, it can also check what the ad budget paid for and what the tracking actually counts.
+
+## What you receive
+
+The findings are organised so you can act on them with us, with another provider or in-house.
+
+<DataTable caption="What the audit findings contain" columns={["Part", "What it tells you"]}
+  rows={[
+    ["Summary", "The few problems that matter most, in plain language, and where inquiries are most likely being lost"],
+    ["Findings by area", "Each issue found in visibility, website conversion, advertising and measurement, with the evidence for it: a screenshot, a setting, a search result or a figure from your accounts"],
+    ["Priority order", "The sequence we would address the issues in, and why: likely effect on qualified inquiries or bookings, cost in money and practice time, and dependencies"],
+    ["What we would not spend on", "Activity that is unlikely to help given your goals, capacity or data, so budget is not wasted"],
+    ["Measurement limits", "What your current data can and cannot show, and what would need to change to measure attended visits"],
+    ["Practice-side actions", "Changes only the practice can make, such as phone coverage, hours, approvals or capacity"]
+  ]}
+  note="Content of the findings, not a promise of any outcome. Format and timing are agreed with you before the review starts." />
+
+The audit does not make changes to your accounts or website, does not predict rankings or patient numbers, and does not review clinical content for accuracy; that remains with your own clinicians.
 
 ## What we need from you
 
@@ -41,8 +66,12 @@ The request form asks for the minimum we need to start. During the audit we may 
 - **Your priorities.** Which services you want more of, which you want fewer of, and any patients you cannot currently accept.
 - **Capacity.** Roughly how many new patients per month you can see, and where the schedule is tight.
 - **Locations.** Every office address, and any planned openings, relocations, acquisitions or rebrands.
-- **Optional read-only access** to Google Business Profile, Search Console, Google Analytics and Google Ads.
+- **Optional account access.** View-only access to Search Console, Google Analytics and Google Ads; for the Business Profile, manager access, because it has no view-only role. Keep owner or administrator control with the practice.
 - **Optional summary numbers** you already track, such as monthly new-patient counts. Totals only — never patient names, charts or records.
+
+Google Ads offers Read-only access among its access levels, Search Console offers a restricted-user role with view rights on most data, and Business Profile managers can edit the profile but cannot add or remove users.
+
+<SourceNote ids={["google-ads-access-levels", "search-console-permissions", "google-gbp-owners-managers"]} />
 
 <Callout title="Please do not send patient information" tone="caution">
 The audit never requires patient-level data. Do not include patient names, dates of birth, records, images or treatment details in the form or in any email to us.
@@ -50,12 +79,12 @@ The audit never requires patient-level data. Do not include patient names, dates
 
 ## What happens after you request it
 
-1. **We confirm fit.** We check that the request comes from a dental practice or group we can help and that we have no conflict in your market.
-2. **We ask what we need.** We reply by email with any questions and, if you want measurement reviewed, how to grant read-only access.
-3. **We review.** We work through the four areas above against your stated goals.
+1. **We confirm fit.** We check that the request comes from a dental practice or group and that the challenge you describe is one the audit can address.
+2. **We confirm scope.** We reply by email with any questions, confirm the scope and any charge in writing, and, if you want measurement reviewed, explain how to grant access.
+3. **We review.** We work through the four areas above against your stated goals and capacity.
 4. **We walk you through the findings.** You get the issues we found, the evidence for each, the order we would tackle them in, and what we would leave alone.
 
-There is no obligation to engage us afterwards, and the findings are yours to use with any provider.
+There is no obligation to engage us afterwards, and the findings are yours to use with any provider. If you want to look at your own website first, the [dental website audit checklist](/resources/dental-website-audit-checklist/) covers the website part of the review, and [our process](/our-process/) explains how an engagement continues after a diagnosis.
 
 ## Request the audit
 

@@ -8,7 +8,8 @@ export function metadataFor(e: Entry, opts: { noindex?: boolean } = {}): Metadat
   const url = absoluteUrl(e.route);
   const noindex = opts.noindex || !env.isProduction || !['Ready', 'Published'].includes(e.status) || e.type === 'utility';
   return {
-    title: e.route === '/' ? { absolute: e.metaTitle } : e.metaTitle,
+    // The layout template appends " | Alpha Dental Media"; titles that already name the brand are used as-is.
+    title: e.route === '/' || e.metaTitle.includes(site.name) ? { absolute: e.metaTitle } : e.metaTitle,
     description: e.description,
     alternates: { canonical: url },
     robots: noindex ? { index: false, follow: false } : { index: true, follow: true },

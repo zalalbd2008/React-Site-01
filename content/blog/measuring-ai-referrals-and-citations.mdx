@@ -36,7 +36,7 @@ cta: "audit"
 published: null
 updated: null
 evidence: "sourced"
-verificationNotes: "GA4 AI Assistant channel checked against the GA4 Default channel group help page; Search Console treatment of AI Overviews and AI Mode against AI features and your website (last updated 2025-12-10), the Generative AI performance report and Search generative AI control help pages (both noting worldwide rollout as of 2026-08-31), and the Performance report help page; OpenAI crawler roles against developers.openai.com/api/docs/bots. All retrieved 2026-11-08. OpenAI's publisher FAQ on help.openai.com, which describes the utm_source=chatgpt.com parameter, returned an access block on 2026-11-08 and is not cited; the parameter is described as something to verify in the practice's own data. The monthly report example is illustrative."
+verificationNotes: "GA4 AI Assistant channel checked against the GA4 Default channel group help page; Search Console treatment of AI Overviews and AI Mode against AI features and your website (last updated 2025-12-10), the Generative AI performance report and Search generative AI control help pages (both noting worldwide rollout as of 2026-08-31), and the Performance report help page; OpenAI crawler roles against developers.openai.com/api/docs/bots. All retrieved 2026-11-08. OpenAI's help centre returned an access block on 2026-11-08 and is not cited; no claim about OpenAI campaign parameters is made. The monthly report example is illustrative."
 order: 23
 faqs:
   - q: "Where does ChatGPT traffic appear in Google Analytics 4?"
@@ -75,13 +75,13 @@ That gives a practice a usable starting report: sessions, engaged sessions and k
 
 ### Referrers and campaign tags
 
-Two mechanisms put a visit into that channel or let you find it manually. The first is the referrer: when someone clicks a link inside an assistant's web interface, the browser can pass the assistant's domain (for example chatgpt.com) as the referring site. The second is a campaign tag on the link itself. OpenAI's publisher help documentation describes ChatGPT adding a utm_source=chatgpt.com parameter to referral links. We could not open that help page on 8 November 2026 because it blocked automated access, so treat the parameter as something to confirm in your own landing-page URLs rather than a documented constant. Filter GA4 for a session source containing "chatgpt" and inspect the full page location to see what actually arrives.
+Two mechanisms put a visit into that channel or let you find it manually. The first is the referrer: when someone clicks a link inside an assistant's web interface, the browser can pass the assistant's domain (for example chatgpt.com) as the referring site. The second is a campaign tag (UTM parameters) on the link itself, which only exists if whoever created the link added one. The official pages reviewed for this article do not document which tags, if any, each assistant adds, so do not assume one. Filter GA4 for a session source containing the assistant's name and inspect the full page location of those sessions to see what actually arrives on your site.
 
 Neither mechanism is complete. Links opened from a desktop app, copied into a new tab or passed through privacy tools can arrive with no referrer and no tag, and GA4 will usually record them as Direct. Any count of AI sessions is therefore a floor, not a total.
 
 ### Crawler visits are not visitors
 
-Server logs will also show OpenAI's crawlers. OpenAI documents separate user agents: OAI-SearchBot to surface sites in ChatGPT search results, GPTBot for content that may be used in training, and ChatGPT-User for certain actions a user triggers in ChatGPT, which OpenAI says is not used for automatic crawling or to decide search inclusion. These requests show access, not patients, and should never be added to traffic totals.
+Server logs will also show requests from AI providers' own user agents, such as OpenAI's OAI-SearchBot, GPTBot and ChatGPT-User, which OpenAI documents as serving search, training and user-triggered actions respectively. What each one does and whether to allow it is covered in [what GEO and AI search mean for a practice](/blog/ai-search-visibility-for-dentists/). For measurement the point is simpler: these requests show access, not patients, and should never be added to traffic totals.
 
 <SourceNote ids={["openai-crawlers"]} />
 
@@ -170,7 +170,7 @@ The useful part of the example is the last paragraph. A report that lists what i
 
 ## Sources and limitations
 
-GA4 and Search Console behaviour is described from Google's help pages as retrieved on 8 November 2026; both products change. Search Console's Generative AI report covers Google's AI features only. OpenAI's crawler documentation was retrieved from developers.openai.com; OpenAI's publisher FAQ on help.openai.com could not be opened, so the utm_source=chatgpt.com parameter is described as something to verify, not as cited fact. No figures on this page describe a real practice; the monthly report is illustrative.
+GA4 and Search Console behaviour is described from Google's help pages as retrieved on 8 November 2026; both products change. Search Console's Generative AI report covers Google's AI features only. OpenAI's crawler documentation was retrieved from developers.openai.com; OpenAI's help centre could not be opened, so this page makes no claim about any campaign parameter OpenAI may add to links. No figures on this page describe a real practice; the monthly report is illustrative.
 
 ## Related next steps
 

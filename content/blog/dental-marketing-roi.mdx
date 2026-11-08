@@ -50,7 +50,7 @@ faqs:
 
 <KeyAnswer>Dental marketing ROI is the profit an activity produced, minus its full cost, divided by that cost. To calculate it, separate five numbers that reports often blur: inquiries (leads), booked appointments, attended visits, collected revenue and profit. ROAS, which Google Ads defines as conversion value divided by ad spend, is a useful bidding signal but is not ROI.</KeyAnswer>
 
-Most disagreements between practices and agencies about whether marketing "works" are really disagreements about definitions. The agency points at leads; the owner looks at the schedule and the bank account. Both can be accurate and still describe different things. This guide separates the stages, explains why each stage loses volume, and works through a full example from ad spend to profit. If you want this measured properly in your own accounts, that is the job of our [dental conversion tracking service](/services/dental-conversion-tracking/).
+Disagreements between practices and agencies about whether marketing "works" are often disagreements about definitions. The agency points at leads; the owner looks at the schedule and the bank account. Both can be accurate and still describe different things. This guide separates the stages, explains why each stage loses volume, and works through a full example from ad spend to profit. If you want this measured properly in your own accounts, that is the job of our [dental conversion tracking service](/services/dental-conversion-tracking/).
 
 ## The five numbers that get called "results"
 
@@ -65,23 +65,19 @@ Each of these answers a different question. None of them can stand in for anothe
   { label: "Profit contribution", note: "Collected revenue minus the variable costs of delivering the care" }
 ]} caption="Each step down loses volume for different reasons. A report that stops at the first step cannot show return." />
 
-Definitions for each stage, and for related measures such as answered-call rate and cost per attended visit, are maintained in the [dental marketing metrics glossary](/resources/dental-marketing-metrics/). The point here is how they relate.
+Definitions for each stage, and for related measures such as cost per attended visit and contribution margin, live in the [dental marketing metrics glossary](/resources/dental-marketing-metrics/); this page does not repeat them. What matters for return is where volume or value drops out between stages, and who in the practice can do something about it.
 
-### Why inquiries are not new patients
+<DataTable caption="Where volume and value are lost between stages, and who owns the loss" columns={["Step", "Why the number falls", "Who can act on it", "What to record"]}
+  rows={[
+    ["Inquiry to qualified inquiry", "Existing patients, duplicates, spam, vendors and requests for services the practice does not offer are counted as inquiries", "Marketing (targeting, keywords, page content) and whoever classifies calls", "A qualification rule written down once and applied to every channel"],
+    ["Qualified inquiry to booking", "Calls missed or not returned, insurance questions unanswered, first available appointment too far out", "Front desk and scheduling", "Reason codes for qualified callers who did not book"],
+    ["Booking to attended visit", "Cancellations, no-shows and reschedules that never happen", "Reminders and scheduling, partly marketing expectations", "Attendance from the practice management system, by source"],
+    ["Attended visit to collected revenue", "Insurance write-offs, adjustments, unpaid balances and collection delay; production is not collections", "Billing and insurance verification", "Collections within a fixed window after the first visit, with the window stated"],
+    ["Collected revenue to profit contribution", "Clinical and hygiene time, supplies and lab fees that vary with the work", "Owner and accountant", "A contribution margin from the practice's own accounts, not borrowed from another practice"]
+  ]}
+  note="A framework for reading reports, not a set of benchmark rates. Separating new-patient calls from the rest is covered in measuring calls without counting every call as a new patient." />
 
-An inquiry is anything a tracking system recorded: a call over a set duration, a form, a click on a booking button. It includes existing patients rescheduling, the same person calling twice, sales calls, spam forms and people asking about services you do not offer. How much of the total those make up varies by practice and by how tracking was set up, which is why the qualification step needs its own count. Separating new-patient calls from everything else is covered in [measuring calls without counting every call as a new patient](/blog/dental-call-tracking/).
-
-### Why bookings are not attended visits
-
-A booked appointment is a promise. Cancellations, no-shows and reschedules all sit between booking and attendance. The gap is also where marketing and operations meet: reminder processes, how far out the first available appointment is, and whether the caller's insurance question was answered all influence it.
-
-### Why production is not collected revenue
-
-Scheduled or produced fees are not what the practice receives. Insurance write-offs, adjustments, patient balances that are never paid and the delay before collection all reduce the figure. For return calculations, use collected revenue within a fixed window after the first visit, and say which window you chose.
-
-### Why revenue is not profit
-
-Revenue pays for clinical time, hygiene, supplies, lab fees and the front desk. A campaign that fills the schedule with low-margin appointments can raise revenue and still lose money once those costs are counted. Profit contribution, meaning revenue minus the variable cost of delivering the care, is the figure that belongs in an ROI calculation. Your accountant or practice management reports are the right source for a contribution margin; do not borrow one from another practice.
+The table also explains why practices and agencies can look at the same month and disagree. Marketing reports usually sit on the first row; the owner experiences the last one. Each row needs its own count before a return can be calculated. Call classification in particular is covered in [measuring calls without counting every call as a new patient](/blog/dental-call-tracking/).
 
 ## ROAS versus ROI: two different questions
 
@@ -137,7 +133,7 @@ Treat LTV with these caveats:
 
 Ad platforms and analytics tools only see what happens online unless you send them more. Two mechanics matter.
 
-**Offline conversion imports.** Google Ads lets advertisers import outcomes that happen offline, such as in an office or by phone, so campaigns can be judged on what happened after the click or call. Google currently recommends starting with enhanced conversions for leads, which uses hashed user-provided data alongside click identifiers. Google's help page also notes that from June 15, 2026, these uploads through the Google Ads API move to the Data Manager API. For a dental practice, any upload that relates to patients raises privacy questions; involve your own privacy officer or counsel before sending anything derived from patient records, and send the minimum needed.
+**Offline conversion imports.** Google Ads lets advertisers import outcomes that happen offline, such as in an office or by phone, so campaigns can be judged on what happened after the click or call. Google currently recommends starting with enhanced conversions for leads, which uses hashed user-provided data alongside click identifiers. Google's help page also notes that since 15 June 2026 these uploads have been migrating from the Google Ads API to the Data Manager API, so check which method any integration uses. For a dental practice, any upload that relates to patients raises privacy questions; involve your own privacy officer or counsel before sending anything derived from patient records, and send the minimum needed.
 
 <SourceNote ids={["google-ads-offline-conversion-imports"]} />
 

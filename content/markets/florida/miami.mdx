@@ -1,16 +1,185 @@
 ---
 route: "/markets/florida/miami/"
 type: "city"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
 title: "Dental Marketing for Practices in Miami"
 navLabel: "Miami"
 metaTitle: "Dental Marketing Agency in Miami, Florida"
-description: "Dental marketing for practices in Miami, Florida: local research, channel priorities, website implications and a phased plan, delivered from Houston."
+description: "Dental marketing for practices in Miami, delivered remotely from Houston: bilingual intake, booking friction, payment clarity, dental SEO in Miami and a phased plan."
+eyebrow: "Florida market: Miami"
+lede: "In Miami the gap between being found and being booked is usually a language and access problem, not a visibility problem. This page sets out what the public data and our November 2026 website review suggest, and the plan we would start with."
 parent: "/markets/florida/"
 primaryIntent: "dental marketing agency in Miami"
-secondaryQuestions: ["dental SEO Miami"]
+secondaryQuestions: ["dental SEO Miami", "Do Miami dental practices need Spanish-language websites?", "Can a Houston-based agency handle a Miami dental practice?", "Should a Miami practice target all of Miami-Dade?"]
+audience: "Owners and managers of dental practices and groups in Miami and the surrounding Miami-Dade area"
 geo: {"scope":"city","state":"Florida","city":"Miami","wave":1}
 order: 100
+sources: ["census-acs5-2024-dp-miami-city", "census-acs5-2024-dp-florida-regions", "census-acs5-2024-b05002-birthplace", "census-acs5-2024-c16001-language", "census-acs5-2024-b25004-seasonal", "bebr-florida-estimates-2025", "obs-fl1-miami-practices-2026-11-08", "obs-fl1-miami-agencies-2026-11-08", "google-localized-versions", "google-gbp-local-ranking", "fl-statutes-466-019", "fl-statutes-456-062", "google-gbp-special-hours"]
+related: ["/markets/florida/", "/markets/florida/fort-lauderdale/", "/services/dental-web-design-conversion/", "/services/dental-local-seo-google-business-profile/", "/services/dental-google-ads-management/", "/services/dental-conversion-tracking/", "/blog/dental-online-booking-vs-request-forms/", "/resources/dental-website-audit-checklist/", "/dental-marketing-audit/"]
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Miami city figures are ACS 2020–2024 5-year Data Profile values for 'Miami city, Florida' (GEOID 160XX00US1245000) from data.census.gov via scripts/census.mjs, retrieved 2026-11-08; county and metro figures from the same API. Growth from BEBR April 1, 2025 estimates. Website observations: five practice sites with Miami mailing addresses (one outside city limits) and four agency pages, fetched with plain curl on 2026-11-08 and recorded in research/local/florida-miami-practices.md and research/competitors/florida-miami-agencies.md; aggregated, no practices or agencies named. Language and income are treated as hypotheses, not demand."
+faqs:
+  - q: "Can a Houston-based agency handle a Miami dental practice?"
+    a: "Yes, as long as the practice provides what cannot be seen remotely: who on the team can book in Spanish and when, real hours, insurance networks and capacity. Websites, Business Profiles, ads and tracking are all managed through the practice's own accounts. We work with Miami practices remotely from Houston and have no Miami office."
+  - q: "Do Miami dental practices need a Spanish-language website?"
+    a: "Usually, but only once Spanish-speaking patients can be served end to end. In Miami, 68.8% of residents five and over speak Spanish at home. A Spanish page that leads to an English-only phone line or form wastes the visit. Build intake first, then complete Spanish treatment and booking pages, then measure bookings by language."
+  - q: "Is a translation plugin enough for Spanish SEO in Miami?"
+    a: "Generally not. Google's guidance treats pages whose main content stays untranslated as duplicates, and it detects page language itself rather than relying on tags. Fully translated pages, linked to each other with hreflang annotations and reviewed by a fluent speaker, are what we would build. Machine-translated clinical wording also creates compliance and trust risks."
+  - q: "Should a Miami practice target all of Miami-Dade County?"
+    a: "Usually not. Many addresses labelled Miami are in separate cities or unincorporated areas, and Google's local results weigh distance. Start with the neighbourhoods patients can realistically reach in your opening hours, check where booked patients actually live, and expand only where tracking shows attended visits from further away."
+  - q: "How should a Miami practice talk about prices and financing online?"
+    a: "Clearly and within Florida rules. Payment information was among the most common elements on the Miami sites we reviewed. Florida law requires fee information to carry a minimum-fee disclaimer and free or discounted offers to carry a specific statement. Explain insurance, membership plans and financing plainly, and have counsel review any advertised price."
+  - q: "What does dental SEO in Miami involve beyond normal local SEO?"
+    a: "The same foundations — accurate Business Profile, useful treatment pages, technical health and reviews — plus a properly built Spanish version of the pages that matter, neighbourhood relevance for the real office location, and reporting that separates Spanish and English inquiries. It also means checking which jurisdiction your office is actually in."
+  - q: "How long before a Miami practice should expect results?"
+    a: "Fixes to booking, hours and call handling can show within weeks because they affect visitors you already get. Search visibility gains typically take months and depend on competition and the site's starting point. We report on booked and attended visits, not just rankings, so you can judge progress on what matters to the practice."
 ---
+
+<KeyAnswer>Alpha Dental Media provides dental marketing for practices in Miami, working remotely from Houston. In a city where most residents speak a language other than English at home and fewer than a third of homes are owner-occupied, we would start with bilingual intake and an easy booking path, then build Spanish and English search visibility around the office's real neighbourhood, and measure bookings by language.</KeyAnswer>
+
+## Who we serve in Miami, and what "Miami" means here
+
+This page is for owners and managers of general, family, cosmetic, implant, pediatric and orthodontic practices — and multi-office groups — in the city of Miami and the parts of Miami-Dade County they draw patients from. We are a Houston-based agency, we do not have a Miami office, and we do the work remotely through the practice's own accounts.
+
+Definitions matter because public data is published for specific geographies:
+
+- **Miami city** is an incorporated city of 459,745 people (ACS 2020–2024) and the county seat of **Miami-Dade County** (2,738,356).
+- Both sit inside the **Miami-Fort Lauderdale-West Palm Beach metro area**, which also includes Broward and Palm Beach counties. Fort Lauderdale has its [own page](/markets/florida/fort-lauderdale/) because its data and plan are different.
+- A "Miami, FL" mailing address does not mean an office is inside city limits. Coral Gables, Miami Beach and Hialeah are separate cities, and Kendall is unincorporated county. City statistics below describe the city only.
+
+<SourceNote ids={["census-acs5-2024-dp-miami-city", "census-acs5-2024-dp-florida-regions"]} />
+
+## What the Miami data says
+
+| Measure (Miami city, ACS 2020–2024 unless noted) | Value | Florida comparison |
+|---|---|---|
+| Speak a language other than English at home (age 5+) | 77.2% | 30.6% |
+| Speak Spanish at home | 68.8% | 22.6% |
+| Speak English less than "very well" | 39.2% | 12.5% |
+| Born outside the United States | 57.7% | 21.9% |
+| Owner-occupied homes | 30.8% | — |
+| No health insurance | 16.3% | 11.5% |
+| Median household income | $62,462 | $74,568 |
+| Seasonal-use homes as a share of all housing | 4.2% | 7.8% |
+| Population change, April 2020 to April 2025 (BEBR) | +8.3% (to 478,799) | +8.5% |
+
+<SourceNote ids={["census-acs5-2024-dp-miami-city", "census-acs5-2024-dp-florida-regions", "census-acs5-2024-b05002-birthplace", "census-acs5-2024-b25004-seasonal", "bebr-florida-estimates-2025"]} />
+
+Three things stand out. First, the language figures are not a niche: nearly two in five residents report speaking English less than "very well", so an English-only booking path excludes a large part of the market. Second, Miami is majority-renter, which suggests more residents moving and looking for a new dentist than in owner-heavy cities — a hypothesis to test with the practice's own records. Third, the city grew about twice as fast as Miami-Dade County as a whole (+4.2%), which concentrates new residents, and competition for them, in the urban core.
+
+What the data does not say: it does not tell you which language a person prefers for a treatment conversation, and median income tells you nothing reliable about cosmetic or implant demand. We test both with intake and booking data rather than assume them.
+
+## What our Miami website review found
+
+On 8 November 2026 we reviewed five dental practice websites with Miami mailing addresses (general, family, cosmetic and implant practices; one office was in unincorporated Kendall), and four agency pages that market dental services in Miami. We used public pages only and submitted no forms.
+
+- **Language:** one of the five practice sites had Spanish-language pages. The others were English-only in their main content.
+- **Booking:** one of five offered a confirmed real-time online scheduler. The rest relied on a phone call or a request form, and one had no tappable phone link in its page code.
+- **Access:** two of five showed Saturday hours.
+- **Payment:** all five mentioned insurance or payment, and three named financing or a membership plan on the home page.
+- **Location content:** two of five had neighbourhood or location pages.
+- **Agencies:** bilingual capability was a common claim, but the pages we opened rarely showed how Spanish-language calls and bookings would be handled. Results claims were frequent and undefined, and one page mentioned hurricane season without describing any steps.
+
+<SourceNote ids={["obs-fl1-miami-practices-2026-11-08", "obs-fl1-miami-agencies-2026-11-08"]}>A small convenience sample; it describes websites, not how any practice performs.</SourceNote>
+
+## The business problems Miami practices are actually solving
+
+### Bilingual operations, not bilingual marketing
+
+The most expensive Miami mistake is a Spanish ad or page that leads to an English-only phone queue or a form nobody answers in Spanish. Bilingual marketing only pays if a Spanish-speaking caller can book, ask about insurance and receive reminders in Spanish. That is an operational question for the practice — staffing, scripts, scheduling software settings — before it is a marketing one.
+
+### Turnover and first-visit friction
+
+A majority-renter, fast-growing city produces a steady flow of people choosing a dentist for the first time in a new area. They compare a few Business Profiles and sites, and most of the sites we reviewed asked them to call or fill in a request form. Every extra step loses some of them, especially out of hours.
+
+### Price, insurance and payment clarity under Florida rules
+
+With 16.3% of residents uninsured and payment information so common on local sites, patients expect to understand costs before they call. Florida law constrains how that is done: fee information needs a minimum-fee disclaimer, free or discounted offers need a specific capitalised statement, and laudatory or comparative claims are not allowed. Clear explanations of insurance, membership plans and financing work better than price headlines anyway.
+
+<SourceNote ids={["fl-statutes-466-019", "fl-statutes-456-062"]} />
+
+### A city name that covers many jurisdictions
+
+Because "Miami" spans several cities and unincorporated areas, practices are tempted to target the whole county. Google's local results weigh distance from the searcher, so a single office rarely benefits from countywide targeting; it pays for clicks from people who will not travel.
+
+<SourceNote ids={["google-gbp-local-ranking"]} />
+
+## Our recommended channel mix for Miami, and why
+
+For a typical single-office Miami practice, we would put effort in this order:
+
+1. **Website conversion and bilingual intake first.** Fix the booking path, add real-time booking for routine visit types if the schedule allows, put hours and the phone number at the top of every mobile page, and build Spanish pages only to the standard the front desk can support. See [dental website design and conversion](/services/dental-web-design-conversion/) and our article on [online booking versus request forms](/blog/dental-online-booking-vs-request-forms/).
+2. **Google Business Profile and local relevance second.** Correct categories, services, hours (including any Saturday sessions), photos and the business description, and a steady review process. Details are on the [local SEO and Business Profile service](/services/dental-local-seo-google-business-profile/).
+3. **Search ads third, in both languages, tightly local.** Spanish-language ads should land on Spanish pages and reach a Spanish-capable line. Ads run only during staffed hours. See [Google Ads management](/services/dental-google-ads-management/).
+4. **Measurement throughout.** Track calls, forms and bookings separately, and tag each inquiry by language, so you can see whether Spanish visitors book at the same rate as English visitors. See [conversion tracking](/services/dental-conversion-tracking/).
+
+We put conversion ahead of visibility in Miami because the sample suggests the weak link is what happens after someone finds a practice. If the audit shows the opposite — a strong booking path but a poorly maintained profile — the order changes.
+
+<Matrix title="Miami opportunity matrix" xLabel="Booking friction on the practice's site" yLabel="Share of target patients likely to prefer Spanish" cells={[
+  { title: "High Spanish share, high friction", text: "The common Miami case. Fix intake and booking in both languages before buying more traffic; this is where wasted spend concentrates.", hot: true },
+  { title: "High Spanish share, low friction", text: "Booking works; build complete Spanish treatment pages and Spanish-language ad groups, then measure booking rates by language." },
+  { title: "Lower Spanish share, high friction", text: "Some offices draw from more English-dominant neighbourhoods. Fix booking first; test Spanish intake with a small campaign before building pages." },
+  { title: "Lower Spanish share, low friction", text: "Compete on profile quality, reviews and service-specific pages; language is a secondary test." }
+]} caption="Cells in reading order: top-left, top-right, bottom-left, bottom-right. Position a practice using its own intake data, not neighbourhood demographics alone." />
+
+## Dental SEO in Miami
+
+**Dental SEO in Miami means earning visibility in Google's local results and organic results for the services and neighbourhoods a practice can serve, in English and Spanish.** The foundations are the same as anywhere — an accurate Business Profile, useful treatment pages, sound technical health and genuine reviews — but language and geography make the Miami version harder to get right.
+
+### Build real Spanish pages, not translated templates
+
+Google's documentation says it determines a page's language with its own algorithms rather than from language tags, and that localized versions are only treated as duplicates if the main content remains untranslated. In practice that means a translation widget that swaps navigation labels while treatment content stays in English does little. We would build fully translated versions of the pages that matter — home, the main treatment pages, new-patient information, insurance and booking — and link each English page to its Spanish counterpart with hreflang annotations, where each version lists itself and the other.
+
+<SourceNote ids={["google-localized-versions"]} />
+
+Spanish copy should be written or reviewed by a fluent speaker familiar with how local patients describe treatments, and checked against the same Florida advertising rules as the English version.
+
+### Be precise about place
+
+Name the office's actual neighbourhood and nearby landmarks patients use, give clear directions and parking or transit information, and keep the name, address and phone identical across the profile, site and listings. Do not create pages for neighbourhoods where you have no office; they rarely help and can look like doorway pages. A group with several offices needs one profile and one substantive page per office.
+
+### Keyword research candidates
+
+Without tool data, we treat keywords as research candidates to check against the practice's Search Console data: service plus neighbourhood in English ("dentist Brickell", "dental implants Coral Way"), the same in Spanish ("dentista cerca de mí", "implantes dentales Miami"), insurance-qualified searches, and emergency or same-day phrasing if the practice really offers same-day care. Search Console will show which of these already earn impressions; that is where we start.
+
+### Measure Spanish and English separately
+
+Report impressions, clicks, calls, form submissions and bookings separately for Spanish and English pages. If Spanish pages earn traffic but few bookings, the problem is intake, not SEO.
+
+## Website and conversion implications for Miami practices
+
+<DataTable caption="Miami observations to actions" columns={["Observed (8 Nov 2026)", "Cautious interpretation", "Proposed action", "How to test"]} rows={[
+  ["1 of 5 practice sites had Spanish-language pages", "A bilingual content gap may exist; the sample is small", "Build complete Spanish versions of key pages once intake can serve Spanish speakers", "Bookings per 100 visits, Spanish vs English pages"],
+  ["1 of 5 offered confirmed real-time online booking", "Most new patients meet a call-or-form step", "Offer self-scheduling for routine new-patient visits if schedule rules allow", "Abandoned scheduler sessions; time from request to booked appointment"],
+  ["2 of 5 showed Saturday hours", "Weekend access is visible where offered", "Show hours in the mobile header and on the profile; match ad schedules to staffed hours", "Calls arriving when closed, from call logs"],
+  ["3 of 5 named financing or a membership plan", "Payment clarity is a common expectation", "Explain insurance, plans and financing in plain language with Florida-compliant wording", "Clicks on payment content; consult-to-start rate"],
+  ["One 'Miami' office was outside city limits", "The city name covers many jurisdictions", "Define the target area by realistic travel, not the city label", "Patient ZIP codes from booked visits"]
+]} note="Sample of five practice websites with Miami mailing addresses, reviewed 8 November 2026. Details in our research file." />
+
+Our [website audit checklist](/resources/dental-website-audit-checklist/) covers the full set of mobile and form checks; in Miami we add two: does every Spanish page lead to a Spanish-capable next step, and do confirmation and reminder messages go out in the patient's language?
+
+## A phased plan for a Miami practice
+
+<Timeline title="Miami: first 120 days" phases={[
+  { when: "Weeks 1–3", title: "Audit and intake reality check", items: ["Dental Growth Audit of profile, site, ads and tracking", "Map who can book in Spanish, at what hours", "Confirm the office's jurisdiction and realistic catchment"] },
+  { when: "Weeks 4–8", title: "Fix booking in both languages", items: ["Mobile header with hours, call and book actions", "Real-time booking for routine visits, or a request process with a callback time the team commits to", "Spanish versions of home, new-patient, insurance and top treatment pages"] },
+  { when: "Weeks 9–13", title: "Local visibility and reviews", items: ["Business Profile categories, services, hours and photos", "Review requests to recent patients in their language", "Neighbourhood and access details on the office page"] },
+  { when: "Weeks 14–17", title: "Paid search and measurement", items: ["Separate Spanish and English ad groups to matching pages", "Ad schedule matched to staffed hours", "Report inquiries, bookings and attended visits by language"] }
+]} caption="Before June, add the storm-season communication steps from our Florida page." />
+
+Hurricane season applies here too; the [Florida market page](/markets/florida/) has the checklist for updating hours and pausing campaigns, based on Google's special-hours guidance.
+
+<SourceNote ids={["google-gbp-special-hours"]} />
+
+<Illustrative title="Testing whether Spanish pages are paying off">
+A Miami general practice launches Spanish versions of five pages. Suppose that over three months Spanish pages receive 900 visits and 27 booking actions (3.0%), while English pages receive 2,400 visits and 96 booking actions (4.0%). Before concluding that Spanish visitors are less interested, the practice checks intake: it finds that Spanish callers reach voicemail more often at lunchtime. After moving a bilingual team member's lunch break, the Spanish booking rate is measured again. All numbers here are invented to show the method.
+</Illustrative>
+
+## Next step for Miami practices
+
+The [Dental Growth Audit](/dental-marketing-audit/) is where we start: it checks how the practice appears in search, how the site converts in both languages, what ads are paying for and whether calls and bookings are measured. For statewide context — migration, seasonal housing, Florida advertising rules and storm season — see the [Florida market overview](/markets/florida/).
