@@ -21,7 +21,7 @@
 | Bulk verification needs 10+ profiles of same business; duplicates/suspended don't count; agencies with multiple businesses in one account can't bulk verify; must include all profiles; Google may de-verify inactive accounts | google-gbp-bulk-verification | GBP Help article | Global, retrieved 2026-11-08 | Interface/eligibility may change |
 | Business groups recommended over shared logins; one vs several groups tradeoff; separate spreadsheets per group | google-gbp-business-groups | GBP Help | retrieved 2026-11-08 | — |
 | Group roles: one primary owner; only owners manage users; managers edit all profiles in group | google-gbp-business-group-roles | GBP Help | retrieved 2026-11-08 | — |
-| Profile managers cannot add/remove users or remove the profile | google-gbp-profile-roles | GBP Help | retrieved 2026-11-08 | — |
+| Profile managers cannot add/remove users or remove the profile | google-gbp-owners-managers (existing id, blog-groups.json) | GBP Help | retrieved 2026-11-08 | — |
 | Unique stable store codes; changing a store code via spreadsheet on existing location creates a duplicate | google-gbp-store-codes | GBP Help | retrieved 2026-11-08 | — |
 | Chains: consistent names and same category if same service; one profile per location; dentists named as individual practitioners; phone/website should represent the individual location; local number over call centre where possible | google-gbp-guidelines | GBP guidelines | retrieved 2026-11-08 | Policy may change |
 | Local results based mainly on relevance, distance, prominence | google-gbp-local-ranking | GBP Help | retrieved 2026-11-08 | No weights published |

@@ -2,14 +2,188 @@
 route: "/blog/ai-search-visibility-for-dentists/"
 type: "article"
 category: "ai-search"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
-title: "GEO, AEO and AI Search: What Dental Practices Should Understand"
-metaTitle: "GEO, AEO and AI Search: What Dental Practices Should Unders…"
-description: "GEO, AEO and AI Search: What Dental Practices Should Understand. A practical guide for dental practice owners and managers from Alpha Dental Media."
+title: "GEO, AEO and AI Search: What They Mean for a Dental Practice"
+metaTitle: "GEO, AEO and AI Search Explained for Dental Practices"
+description: "What GEO, AEO and AI search mean for a dental practice, what Google and OpenAI document about AI Overviews, AI Mode and ChatGPT search, and what remains unknowable."
+eyebrow: "AI search"
+lede: "GEO and AEO are industry labels, not Google products. Behind them is a practical question: when a patient asks an AI feature about dentists nearby, can it find, understand and cite accurate information about your practice?"
 parent: "/blog/"
-primaryIntent: "GEO, AEO and AI Search: What Dental Practices Should Understand"
-related: ["/services/dental-ai-search-optimization/"]
+primaryIntent: "GEO AEO AI search for dentists"
+secondaryQuestions:
+  - "What is generative engine optimization for a dental practice?"
+  - "Does a dental website need special optimisation for Google AI Overviews?"
+  - "How does a practice appear in ChatGPT search?"
+  - "Should a practice block AI crawlers?"
+  - "What can a practice measure about AI search?"
+audience: "Dental practice owners, managers and group marketing leads evaluating AI search advice or proposals"
+sources:
+  - "google-ai-features"
+  - "google-search-console-performance-metrics"
+  - "openai-crawlers"
+  - "google-robots-intro"
+  - "google-spam-policies"
+  - "google-helpful-content"
+  - "google-gbp-guidelines"
+related:
+  - "/services/dental-ai-search-optimization/"
+  - "/blog/checking-dental-practice-ai-answers/"
+  - "/blog/measuring-ai-referrals-and-citations/"
+  - "/blog/structured-data-for-dental-websites/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Google statements checked against Search Central 'AI features and your website' (last updated 2025-12-10) and Search Console Help on impressions, position and clicks; OpenAI statements against 'Overview of OpenAI crawlers' (platform.openai.com/docs/bots), all retrieved 2026-11-08. GEO and AEO are described as industry terms; no official definition was found. Fan-out example is illustrative."
 order: 20
+faqs:
+  - q: "Is GEO different from SEO for a dental practice?"
+    a: "Mostly in emphasis, not method. Google's documentation says the SEO fundamentals apply to AI Overviews and AI Mode and that no special optimisation is required. GEO work for a practice usually means making sure facts such as services, providers, hours, insurance and location are stated clearly, consistently and crawlably, which good local SEO already requires."
+  - q: "Do we need an llms.txt file or special schema for AI search?"
+    a: "Not for Google. Its AI features guidance says you do not need new machine-readable files, AI text files or markup, and that there is no special Schema.org structured data to add. Other AI providers may behave differently; OpenAI's crawler documentation relies on robots.txt controls rather than a separate file."
+  - q: "Should we block GPTBot or other AI crawlers?"
+    a: "It depends on what you want to allow. OpenAI treats its crawlers separately: blocking GPTBot signals content should not be used for model training, while blocking OAI-SearchBot keeps the site out of ChatGPT search answers. A practice that wants to be found in ChatGPT search but not used for training can allow one and block the other."
+  - q: "Can an agency get our practice cited in AI answers?"
+    a: "No one can promise it. Google states that meeting its requirements does not mean a page will be crawled, indexed or served, and AI responses vary between models and sessions. What can be done is to remove obstacles — blocked crawlers, missing or inconsistent facts, thin pages — and then check answers regularly."
 ---
+
+<KeyAnswer>For a dental practice, GEO, AEO and "AI search" all refer to the same practical goal: being found and accurately described when patients use AI features such as Google's AI Overviews and AI Mode or ChatGPT search. Google says its normal SEO requirements apply with no special optimisation. The practice's job is to keep accurate facts crawlable, consistent and easy to cite.</KeyAnswer>
+
+This article explains what the terms mean and what the platforms actually document. It does not cover how to test what AI tools say about your practice — that is [checking AI answers about your practice](/blog/checking-dental-practice-ai-answers/) — or how to interpret AI referral data, covered in [measuring AI referrals and citations](/blog/measuring-ai-referrals-and-citations/).
+
+## The terms in plain language
+
+Much of the confusion comes from vocabulary. Some terms are product names with official documentation; others are industry labels with no agreed definition.
+
+| Term | What it usually refers to | Who defines it |
+|---|---|---|
+| GEO (generative engine optimisation) | Work intended to make content more likely to be used and cited in AI-generated answers | Industry label; no official platform definition found |
+| AEO (answer engine optimisation) | Older label for structuring content to answer questions directly, from featured snippets to voice assistants and now AI answers | Industry label |
+| AI search | Any search experience that generates a written answer with sources | General term |
+| AI Overviews | Google's AI-generated summaries shown on some search results pages, with links | Google product; documented on Search Central |
+| AI Mode | Google's conversational AI search experience for exploratory or comparative questions | Google product; documented on Search Central |
+| ChatGPT search | OpenAI's search feature within ChatGPT that surfaces websites in answers | OpenAI product; crawler documented by OpenAI |
+
+When a proposal uses GEO or AEO, ask which products it means, what will change on the website or profiles, and how the outcome will be checked. Labels without those answers are hard to evaluate.
+
+## What Google documents about AI Overviews and AI Mode
+
+Google's Search Central page "AI features and your website" is unusually direct. It states that SEO practices remain relevant for AI features, that "there are no additional requirements to appear in AI Overviews or AI Mode, nor other special optimizations necessary," and that to be eligible as a supporting link a page must be indexed and eligible to be shown in Google Search with a snippet.
+
+<SourceNote ids={["google-ai-features"]} />
+
+Several other points on that page matter for a practice:
+
+- **Query fan-out.** Google says both features may issue multiple related searches across subtopics and data sources to build a response. A single patient question can therefore draw on several different pages.
+- **Variation.** AI Mode and AI Overviews may use different models and techniques, so responses and links vary, and AI Overviews appear only when Google's systems judge them additive, so they often do not trigger.
+- **No special files.** Google says you do not need to create new machine-readable files, AI text files or markup, and there is no special Schema.org structured data required.
+- **Business Profile.** Among the fundamentals it lists is checking that Business Profile information is up to date — directly relevant to local practices.
+- **Structured data.** It should match the visible text on the page.
+- **Controls.** Robots.txt rules for Googlebot are the control for crawling; nosnippet, data-nosnippet, max-snippet and noindex limit what is shown.
+
+<SourceNote ids={["google-ai-features"]} />
+
+On measurement, the same page says traffic from AI features is included in overall search traffic in Search Console's Performance report, within the Web search type. Search Console's help on impressions, position and clicks explains how counting works: a click on an external link in an AI Overview or AI Mode counts as a click, all links in an AI Overview share a single position, and a follow-up question in AI Mode is treated as a new query.
+
+<SourceNote ids={["google-search-console-performance-metrics"]} />
+
+## What OpenAI documents about ChatGPT search
+
+OpenAI publishes an overview of its crawlers. The distinctions are practical for any practice deciding what to allow in robots.txt:
+
+- **OAI-SearchBot** is used to surface websites in ChatGPT's search features. OpenAI says sites opted out of OAI-SearchBot will not be shown in ChatGPT search answers, though they can still appear as navigational links, and recommends allowing it to appear in results.
+- **GPTBot** crawls content that may be used to train OpenAI's foundation models. Disallowing it signals content should not be used for training.
+- **ChatGPT-User** visits pages when a user's request triggers it. OpenAI says it is not used for automatic crawling, robots.txt rules may not apply to it, and it is not used to determine whether content appears in search.
+- The settings are independent, and OpenAI notes that it can take about 24 hours after a robots.txt update for its systems to adjust.
+
+<SourceNote ids={["openai-crawlers"]} />
+
+<Callout title="A common robots.txt mistake" tone="caution">
+Some sites block every AI-related user agent at once, often through a hosting or security plugin setting. For a practice that wants to be found in ChatGPT search, blocking OAI-SearchBot works against that goal. Check the live robots.txt and any CDN or firewall rules; Google's AI features page also mentions that crawling must be allowed by CDN or hosting infrastructure, not only robots.txt.
+</Callout>
+
+Google's robots.txt introduction is a useful reminder of scope: robots.txt manages crawling and is not a mechanism for keeping a page out of Google. Decisions about which bots to allow should be deliberate and documented, not inherited from a plugin default.
+
+<SourceNote ids={["google-robots-intro"]} />
+
+## How a patient question becomes several searches
+
+Query fan-out explains why thin websites struggle in AI answers. A patient's question is rarely one fact.
+
+<Illustrative title="One patient question, several underlying lookups">
+A patient asks an AI search feature: "Which dentists near the medical centre take my plan and have Saturday appointments for a child's first visit?"
+
+To answer, the system might look for: dental practices near that landmark; which of them treat children; which list that insurance plan; which are open on Saturdays; and reviews or descriptions mentioning children's visits.
+
+A practice whose website lists its insurance plans, shows Saturday hours in text, describes its children's appointments on a page that is linked from the home page, and has a Business Profile with matching hours gives the system something to find at each step. A practice whose hours are only in an image and whose insurance list says "call us" gives it nothing.
+
+The question, practice details and lookups are invented to illustrate the mechanism Google describes; they are not a record of how any specific system answered.
+</Illustrative>
+
+## What is knowable and what is not
+
+AI search attracts confident claims. It helps to separate what a practice can verify from what it cannot.
+
+<DataTable caption="What a dental practice can and cannot establish about AI search" columns={["Question", "Knowable?", "How, or why not"]}
+  rows={[
+    ["Can Google and OpenAI's search crawler reach our pages?", "Yes", "Robots.txt, server logs, CDN rules; Search Console indexing reports for Google"],
+    ["Are our pages indexed and snippet-eligible in Google?", "Yes", "Search Console URL inspection and indexing reports"],
+    ["How many clicks did Google search send us overall?", "Yes", "Search Console Performance report; AI feature clicks are included in Web search"],
+    ["Do AI answers describe our hours, services and location correctly?", "Partly", "Manual checks of sample questions; answers vary between sessions and models"],
+    ["Which visits came from ChatGPT or other AI tools?", "Partly", "Referrer data in analytics where it is passed; much is missing or ambiguous"],
+    ["Why did an AI answer cite another practice instead of us?", "No", "Platforms do not disclose source selection for individual answers"],
+    ["What is our share of all AI answers about dentists in our area?", "No", "The full set of questions and answers is not observable; any sampled figure is an estimate"],
+    ["Will a specific change get us cited?", "No", "Google states meeting requirements does not mean content will be crawled, indexed or served"]
+  ]}
+  note="Assessment based on platform documentation retrieved 2026-11-08." />
+
+The partial items are where most practical work happens. Testing what AI tools say about your practice is covered step by step in [checking AI answers](/blog/checking-dental-practice-ai-answers/); what referral and citation data can establish is in [measuring AI referrals](/blog/measuring-ai-referrals-and-citations/).
+
+## What a practice can actually do
+
+Because Google says no special optimisation is required, the useful work is the work that makes a practice easy to understand for both people and machines. The lanes below are a framework for organising it.
+
+<Lanes title="AI search work for a dental practice, by layer" lanes={[
+  { title: "Access", items: ["Allow Googlebot and OAI-SearchBot unless there is a deliberate reason not to", "Check CDN, firewall and plugin rules as well as robots.txt", "Fix indexing problems in Search Console"] },
+  { title: "Facts", items: ["State services, providers, hours, insurance, languages and location in page text, not only images or PDFs", "Keep Business Profile details identical to the website", "Give each office its own page in a group"] },
+  { title: "Clarity", items: ["Pages that answer the questions patients actually ask, one topic per page", "Structured data that matches visible content", "Consistent practice name across the site, profiles and directories"] },
+  { title: "Evidence", items: ["Genuine reviews gathered without incentives or gating", "Mentions on local and professional sites that describe the practice accurately", "Provider credentials stated where they are verifiable"] },
+  { title: "Checking", items: ["A fixed set of test questions reviewed on a schedule", "Search Console and analytics trends", "Corrections made at the source when answers are wrong"] }
+]} caption="Every lane is also ordinary good practice for local SEO and patients; none depends on undocumented AI ranking factors." />
+
+Google's helpful content guidance underpins the clarity lane: it asks whether content is people-first or made primarily to gain search rankings. Pages written to say "AI-optimised" things — keyword-heavy FAQ blocks, repeated "near me" phrasing — fall on the wrong side of that test. Accurate profile information is reinforced by Google's Business Profile guidelines, which require the name to match real-world branding.
+
+<SourceNote ids={["google-helpful-content", "google-gbp-guidelines"]} />
+
+## Claims to question in AI search proposals
+
+| Claim | What the documentation says | Question to ask |
+|---|---|---|
+| "You need an llms.txt or AI file to appear in Google's AI features" | Google: no new machine-readable files or AI text files are needed | Which platform requires it, and where is that documented? |
+| "Special AI schema will get you into AI Overviews" | Google: no special Schema.org structured data is needed | What existing markup is wrong, and does it match the page? |
+| "We will get you ranked first in ChatGPT" | Responses vary; no platform publishes a ranking position for answers | How will results be checked, and on which questions? |
+| "Block AI bots to protect your content" | OpenAI: blocking OAI-SearchBot removes the site from ChatGPT search answers | Which bot, for which purpose, and what do we lose? |
+| "We can measure your AI share of voice precisely" | The full set of AI answers is not observable | What sample, what dates, and what margin of error? |
+
+The point is not that every vendor claim is wrong, but that each one should be traceable to documentation or to a test the practice can repeat.
+
+## Tradeoffs and common mistakes
+
+- **Treating AI search as a separate project.** It shares its foundations with local SEO; a separate budget for "GEO" that ignores an inaccurate Business Profile has its priorities reversed.
+- **Producing large volumes of AI-written pages.** Pages generated at scale without adding value conflict with Google's spam policies on scaled content, whatever tool produced them.
+- **Over-blocking.** Blocking all AI agents can remove a practice from AI search answers it would want to appear in.
+- **Under-checking.** Because answers vary, a single screenshot proves little. A repeatable sample over time tells you more.
+- **Ignoring capacity.** Being recommended by an AI answer for weekend appointments is a problem if the practice has no Saturday availability to offer.
+
+## Sources and limitations
+
+Google's AI features page and OpenAI's crawler overview were current on 8 November 2026. Both products change frequently, and other AI assistants have their own crawlers and policies not covered here. GEO and AEO have no official definitions; the descriptions above reflect common industry usage. Nothing here can establish why a specific answer cited a specific source.
+
+## Related next steps
+
+- Our [dental AI search optimisation service](/services/dental-ai-search-optimization/) works through the access, facts, clarity, evidence and checking layers above.
+- To see what AI tools currently say about your practice, follow [the AI answer checking guide](/blog/checking-dental-practice-ai-answers/).
+- To align markup with what your pages show, read [structured data for dental websites](/blog/structured-data-for-dental-websites/).
+- Profile accuracy is the foundation; our [local SEO and Business Profile service](/services/dental-local-seo-google-business-profile/) covers it, and a [Dental Growth Audit](/dental-marketing-audit/) includes a crawler-access and facts-consistency check.

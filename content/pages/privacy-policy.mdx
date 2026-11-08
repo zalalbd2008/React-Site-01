@@ -1,13 +1,112 @@
 ---
 route: "/privacy-policy/"
 type: "legal"
-status: "Planned"
+status: "Drafted"
 title: "Privacy Policy"
 navLabel: "Privacy Policy"
 metaTitle: "Privacy Policy | Alpha Dental Media"
 description: "How Alpha Dental Media collects, uses and protects information submitted through this website, including inquiry forms."
+lede: "What this website collects, why, where it goes and how long it is kept — described in plain language and limited to what the site actually does."
 primaryIntent: "privacy policy"
+audience: "Visitors to alphadentalmedia.com, including dental practice owners and managers who submit an inquiry"
+author: "editorial-team"
+reviewer: null
+sources: []
+related:
+  - "/terms/"
+  - "/accessibility/"
+  - "/contact/"
 parent: "/"
 cta: "none"
+published: null
+updated: null
+evidence: "none-required"
+verificationNotes: "Drafted on 2026-11-08 from the site's code: form fields from src/lib/inquiry.ts and src/components/InquiryForm.tsx; delivery options from src/lib/delivery.ts; rate limiting from src/app/api/inquiry/route.ts; analytics and consent from src/lib/analytics.ts and src/components/Consent.tsx; self-hosted fonts from src/app/fonts.ts. Pending legal review (owner input #14). Owner must supply: legal business name (owner input #1), the configured inquiry processor (owner input #2), hosting provider (owner input #13), retention periods, and analytics configuration (owner input #9)."
 toc: true
 ---
+
+<Callout title="Draft pending legal review" tone="caution">
+This policy is a plain-language draft that describes how the website currently works. It has not yet been reviewed by a lawyer, and some details — the business's legal name, the service that receives inquiries, the hosting provider and retention periods — will be added by the owner before it is finalised. It will be updated when those details are confirmed.
+</Callout>
+
+## Who we are
+
+This website, alphadentalmedia.com, is operated by Alpha Dental Media, a dental marketing agency based in Houston, Texas. The legal name of the business operating the site will be stated here once confirmed by the owner. Questions about this policy can be sent through the [contact page](/contact/).
+
+This site is for dental practices, dental groups and their staff. It is not a dental provider and does not offer care to patients.
+
+## Information you give us through the inquiry form
+
+The audit request and strategy call request forms ask for:
+
+- **Required:** the type of request, your name, your email address, the practice or group name, the practice website, the city and state of the main office, the main growth challenge (chosen from a list), and confirmation that we may contact you about the request.
+- **Optional:** a phone number, your role, the number of practices or locations, and any further details you choose to type (up to 2,000 characters).
+
+We use this information only to respond to your business inquiry: to confirm whether we can help, ask follow-up questions, arrange a call or audit, and keep a record of the conversation.
+
+The form may show a gentle message if an email address uses a free webmail domain, or if the details box appears to contain clinical information. Those checks happen in your browser; they do not store or send what you typed.
+
+<Callout title="Please do not send patient information" tone="caution">
+This site is not designed to receive patient information. Do not include patient names, dates of birth, records, images, insurance details or any treatment information in the form or in messages to us. If you do so by mistake, tell us through the contact page so we can delete it.
+</Callout>
+
+## Information collected automatically with a form submission
+
+To prevent spam and duplicate submissions, and to understand which campaigns bring inquiries, each submission also includes:
+
+- **A random submission ID** generated in your browser, used to avoid processing the same request twice.
+- **The time the form was opened**, used to reject automated submissions sent faster than a person could type.
+- **A hidden field** that people do not see; if an automated program fills it, the submission is rejected.
+- **Campaign details from the link you arrived on**, if present: the utm_source, utm_medium and utm_campaign values, and the path of the first page you landed on. These are stored in your browser's session storage (under the name adm_attr) for the rest of your visit and sent with your inquiry. Session storage is cleared when you close the browser tab. No advertising click IDs or other identifiers are collected this way.
+
+The server also reads your IP address to limit how many requests can be sent from one address in a short period. In the current version of the site this count is held only in the server's working memory, is not written to a database, and is discarded when the server restarts.
+
+## Where your inquiry goes
+
+The website does not keep its own database of inquiries. When you submit the form, your inquiry is passed to one service configured by the owner — either a customer relationship management (CRM) system that receives it through a secure web address, or an email delivery service that sends it to our inbox. The specific service will be named here once it is configured. That service processes the inquiry on our behalf.
+
+If no delivery service is configured, or the delivery fails, the form tells you that your request was not sent, and nothing is saved.
+
+We do not sell your information, and we do not share it with other businesses for their own marketing.
+
+## Analytics and cookies
+
+At the time of writing, **no analytics are loaded on this site**.
+
+If analytics are added in future, the site is built so that:
+
+- a banner asks for your choice first, and no analytics script loads unless you choose "Allow analytics";
+- your choice is remembered in your browser's local storage (under the name adm_consent_v1) so you are not asked on every page;
+- if you allow it, Google Analytics loads with Google signals and ad personalisation signals turned off;
+- the only events recorded are an accepted audit request, an accepted strategy call request, a confirmed booking (if a booking tool is added) and a click on a phone link — never names, email addresses, phone numbers, typed messages or patient information;
+- to avoid counting the same event twice, a small marker may be kept in session storage for the rest of your visit.
+
+The site's fonts are stored on our own server, so loading a page does not send requests to a third-party font service.
+
+This section will be updated, with the analytics provider named, before any analytics are switched on.
+
+## Hosting and server logs
+
+Like any website, this site runs on a hosting provider's servers. Hosting providers typically record technical request information — such as IP address, browser type, the page requested and the time — to operate and secure the service. The hosting provider and what it records will be named here once the owner has chosen one.
+
+## How long we keep information
+
+Retention periods for inquiries and any related records have not yet been set. The owner will set them and they will be stated here before this policy is finalised. Until then, we will keep inquiry information only as long as needed to respond to the inquiry and maintain a reasonable business record of it.
+
+## Your choices and requests
+
+You can ask us to tell you what information we hold about you from this site, to correct it, or to delete it. Send your request through the [contact page](/contact/), say what you would like us to do, and we will reply to the email address you provide. We may need to confirm that the request comes from you. Depending on where you live, you may have additional rights under state privacy laws; those will be described here after legal review.
+
+You can also decline analytics if a banner is shown, clear your browser's storage at any time, and arrive on the site without campaign tags in the address.
+
+## Children
+
+This site is intended for dental professionals and businesses. It is not directed at children, and we do not knowingly collect information from children. If you believe a child has sent us information, contact us and we will delete it.
+
+## Links to other sites
+
+Pages on this site link to other websites, such as official documentation. Those sites have their own privacy practices, which this policy does not cover.
+
+## Changes to this policy
+
+We will update this page when the way the site handles information changes, and when the pending details above are confirmed. Significant changes will be noted on this page.

@@ -2,14 +2,250 @@
 route: "/blog/structured-data-for-dental-websites/"
 type: "article"
 category: "ai-search"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
 title: "Structured Data for Dental Websites That Matches the Real Practice"
-metaTitle: "Structured Data for Dental Websites That Matches the Real P…"
-description: "Structured Data for Dental Websites That Matches the Real Practice. A practical guide for dental practice owners and managers from Alpha Dental Media."
+metaTitle: "Dental Website Schema That Matches the Real Practice"
+description: "How to make a dental practice's schema markup describe the real practice: Dentist type, addresses and hours per location, providers, reviews, and FAQ markup in 2026."
+eyebrow: "AI search and technical SEO"
+lede: "Schema markup is a set of claims about the practice written for machines. It helps only when every claim is true, visible on the page and maintained as the practice changes."
 parent: "/blog/"
-primaryIntent: "Structured Data for Dental Websites That Matches the Real Practice"
-related: ["/services/dental-seo-company/","/services/dental-ai-search-optimization/"]
+primaryIntent: "dental website structured data that matches the real practice"
+secondaryQuestions:
+  - "Which schema type should a dental practice website use?"
+  - "How should a multi-location dental group mark up each office?"
+  - "Should individual dentists be marked up as Person or Physician?"
+  - "Can a dental practice use review stars or FAQ schema in 2026?"
+  - "Does structured data help a practice appear in AI Overviews?"
+audience: "Dental practice owners, office managers and the developers or agencies maintaining a practice website"
+sources:
+  - "google-sd-general-guidelines"
+  - "google-local-business-structured-data"
+  - "schema-org-dentist"
+  - "schema-org-person"
+  - "schema-org-individualphysician"
+  - "google-review-snippet-sd"
+  - "google-search-docs-updates"
+  - "google-ai-optimization-guide"
+  - "google-ai-features-search"
+  - "google-gbp-guidelines"
+related:
+  - "/services/dental-seo-company/"
+  - "/services/dental-ai-search-optimization/"
+  - "/blog/dental-group-location-pages/"
+  - "/blog/checking-dental-practice-ai-answers/"
+  - "/resources/dental-website-audit-checklist/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Checked against Google's General structured data guidelines (last updated 2026-07-10), Local business structured data (2026-09-08), Review snippet guidelines (2026-09-08), the Search documentation changelog (FAQ rich result deprecated 2026-05-07, documentation removed June 2026), the AI optimization guide (2026-07-10), AI features and your website (2025-12-10), and Schema.org Dentist, Person and IndividualPhysician, all retrieved 2026-11-08. The JSON-LD sample uses invented example data."
 order: 22
+faqs:
+  - q: "Should a dental practice use the Dentist schema type or LocalBusiness?"
+    a: "Use Dentist. Schema.org places Dentist under LocalBusiness, MedicalBusiness and MedicalOrganization, so it inherits the local business properties Google reads, and Google's guidance is to use the most specific applicable type. Plain LocalBusiness is not wrong, just less specific. The markup describes the client practice on its own website."
+  - q: "Can we show Google review stars for our practice using schema?"
+    a: "Not from your own site. Google's review snippet guidelines say that when the entity being reviewed controls the reviews about itself, its LocalBusiness or Organization markup is ineligible for the star feature, including reviews pulled in through a Google or Facebook widget. Reviews can still be displayed for visitors; just do not expect stars from them."
+  - q: "Should we remove FAQPage schema now that FAQ rich results are gone?"
+    a: "There is no urgency. Google stopped showing FAQ rich results from 7 May 2026 and removed the documentation, so the markup no longer earns a search feature. Valid markup that matches visible questions does no documented harm and may be read by other systems. Do not add new FAQ markup expecting a Google result, and never mark up questions that are not on the page."
+  - q: "Will adding schema get our practice into AI Overviews?"
+    a: "Not by itself. Google says structured data is not required for its generative AI features and there is no special schema to add. Its AI features guidance does list making sure structured data matches visible page text among the fundamentals worth doing. Accurate markup supports a clear, consistent picture of the practice; it is not an inclusion switch."
 ---
+
+<KeyAnswer>Mark up each practice location with the Dentist type, using only facts that are visible on that page and identical to the practice's real name, address, phone, hours and providers. Give every office its own entity on its own location page. Leave out self-serving review stars, do not expect FAQ rich results in 2026, and update the markup whenever the practice changes.</KeyAnswer>
+
+A note on whose markup this is. Everything below is about a **dental practice's own website**, a client of a marketing agency, not the agency's site. Dentist is the right type for a dental practice describing itself. An agency describing itself would use different types, and should never borrow a client's.
+
+## Why "matches the real practice" is the standard that matters
+
+Google's general structured data guidelines are blunt about it: structured data must be "a true representation of the page content", should not describe content that is "not visible to readers of the page", and must not be used to misrepresent ownership, affiliation or purpose. Violations can lead to a manual action that removes rich-result eligibility. Google also notes that correct markup, even markup that passes the Rich Results Test, does not ensure a rich result will appear.
+
+<SourceNote ids={["google-sd-general-guidelines"]} />
+
+For a dental practice, the risk is rarely deliberate deception. It is drift. Markup gets written once at launch by a developer or a plugin, then the practice changes its Thursday hours, an associate leaves, a second office opens, the name changes after an acquisition. The visible page gets updated; the JSON-LD in the template does not. Now the website is sending two different answers about the same fact, and any system reading both has to guess.
+
+That is why the useful question is not "do we have schema?" but "does every claim in our schema match the practice as it is this month?"
+
+## Which schema type a dental practice should use
+
+Schema.org's Dentist type sits under several parents: LocalBusiness, MedicalBusiness and MedicalOrganization, and through those Organization and Place. That means it carries the properties Google's local business documentation reads (name, address, telephone, url, geo, openingHoursSpecification) plus medical-organization properties such as medicalSpecialty and isAcceptingNewPatients.
+
+<SourceNote ids={["schema-org-dentist"]} />
+
+Google's local business documentation says to define each business location as a LocalBusiness type and to use the most specific LocalBusiness subtype possible. Dentist is that subtype for a dental office. The general guidelines repeat the point: "Try to use the most specific applicable type and property names."
+
+<SourceNote ids={["google-local-business-structured-data", "google-sd-general-guidelines"]} />
+
+Specialty practices (orthodontics, pediatric dentistry, periodontics, oral surgery) still use Dentist as the type. Schema.org has no orthodontist business type. Specialty belongs in visible page content and, where it adds clarity, in medicalSpecialty.
+
+## Property-by-property: where each value should come from
+
+Each property needs a single source of truth inside the practice. The table maps the properties Google's local business documentation lists to where the value should come from and the mismatch to look for.
+
+| Property | Source of truth | Common mismatch to check |
+|---|---|---|
+| name | Real-world name on signage, Business Profile and website header | Keyword-stuffed name ("Smile Dental Implants Emergency Dentist"), or old name after a rebrand |
+| address (PostalAddress) | The office's mailing and visiting address, matching Business Profile | Head-office address on every location; suite number missing |
+| telephone | The number patients actually call for that office, with country and area code | A tracking number in markup that differs from the visible number, or one central number for all offices without saying so |
+| url | The specific location page | Homepage URL on every location entity; redirected or broken URL |
+| openingHoursSpecification | The schedule front-desk staff follow, including lunch closures | Hours copied from a template; seasonal closures not reflected |
+| geo | Coordinates of the building entrance, to at least 5 decimal places | Coordinates of the city centre or of a previous office |
+| image | Real photos of the office, crawlable | Stock images or logos only |
+| priceRange | Only if the practice is comfortable stating one; under 100 characters | Invented or outdated range |
+| aggregateRating and review | Not for the practice's own reviews (see below) | Star markup sourced from an embedded widget |
+
+<SourceNote ids={["google-local-business-structured-data"]} />
+
+The name row links directly to Business Profile policy. Google's guidelines say the profile name should reflect the business's real-world name as used consistently on storefront, website and stationery, and that adding unnecessary information can lead to suspension. If the markup says something different from a compliant profile, the website is the odd one out.
+
+<SourceNote ids={["google-gbp-guidelines"]} />
+
+## Hours: the property most likely to be wrong
+
+Hours change more often than any other property, and wrong hours do the most direct damage, because a patient acts on them. Google's documentation accepts openingHoursSpecification as an array of day-and-time blocks with opens and closes in hh:mm:ss format, and supports validFrom and validThrough for seasonal closures.
+
+<SourceNote ids={["google-local-business-structured-data"]} />
+
+Three practical rules keep hours honest:
+
+1. **Model the real schedule, including gaps.** A practice closed 12:30 to 13:30 on weekdays should express two blocks per day, not one continuous block, if the visible page shows the lunch closure.
+2. **Mark up regular hours; manage short-notice changes in the Business Profile.** Holiday closures and weather closures are usually better handled as special hours in the profile and a visible notice on the site than as frequent markup edits.
+3. **Generate the markup from the same data as the visible hours.** If the site template renders hours from one data field and the JSON-LD from another, they will drift. One field, two outputs.
+
+Schema.org also defines a simpler openingHours text format (for example "Mo-Fr 08:00-17:00"). It is valid vocabulary, but Google's local business documentation lists openingHoursSpecification as the supported property, so use that.
+
+## Multi-location groups: one entity per office, on that office's page
+
+Google's documentation says to define each business location as its own LocalBusiness and to put structured data on the page it describes. For a dental group that means each location page carries one Dentist entity with that office's address, phone, hours and URL, and the homepage or "about" page can describe the parent organization.
+
+<SourceNote ids={["google-local-business-structured-data", "google-sd-general-guidelines"]} />
+
+<DecisionTree title="How should a dental group structure its location markup?" q="Does each office have its own page with its own address and hours visible?" branches={[
+  { answer: "Yes", q: "Do offices share one brand name?", branches: [
+    { answer: "Yes", outcome: "One Dentist entity per location page, each with its own @id, url, address, phone and hours; link each to the parent Organization with parentOrganization" },
+    { answer: "No, some offices kept acquired names", outcome: "Use each office's real-world name in its entity; express the relationship through parentOrganization, not by renaming offices in markup" }
+  ] },
+  { answer: "No", q: "Are all offices listed on one page?", branches: [
+    { answer: "Yes", outcome: "Build individual location pages first; until then, markup on a shared page should match exactly what that page shows for each office" },
+    { answer: "No, offices are barely mentioned", outcome: "Do not add location markup for offices the site does not describe; fix the content gap first" }
+  ] }
+]} />
+
+How location pages should differ from each other in content is covered in [how to write dental group location pages](/blog/dental-group-location-pages/); URL structure decisions belong to [multi-location dental website structure](/blog/multi-location-dental-website-structure/). Markup should follow those decisions, not drive them.
+
+## Dentists and other providers: Person, with care
+
+Marking up providers helps connect the practice to the people patients search for, but it is also where markup most often outlives reality, because associates move on.
+
+The conservative pattern is a **Person** for each dentist currently practising at the location, with jobTitle, worksFor pointing to the location's Dentist entity, and, if shown on the page, hasCredential, alumniOf or memberOf for verifiable qualifications and associations. Schema.org's Person type defines all of these.
+
+<SourceNote ids={["schema-org-person"]} />
+
+Schema.org also has IndividualPhysician, defined as "an individual medical practitioner", with a practicesAt property. Some sites use it for dentists. It is defensible vocabulary but not documented by Google for any rich result, and "physician" is not how most dentists describe themselves. Person is the plainer choice; whichever you pick, apply it consistently. Avoid typing the practice itself as Physician.
+
+<SourceNote ids={["schema-org-individualphysician"]} />
+
+Two rules matter more than type choice: only mark up providers who appear on that page, and remove them from markup the day they are removed from the page. The relationship between practitioner and practice Business Profiles is a separate question, covered in [practitioner versus practice profiles](/blog/dentist-practice-google-business-profiles/).
+
+## Reviews, ratings and FAQ markup: what changed
+
+### Review stars for your own practice
+
+Google's local business documentation recommends aggregateRating and review only "for sites that capture reviews about other local businesses". Its review snippet guidelines go further: if the entity being reviewed controls the reviews about itself, pages using LocalBusiness or Organization markup are ineligible for star review features, including when reviews come through an embedded third-party widget such as Google or Facebook reviews.
+
+<SourceNote ids={["google-local-business-structured-data", "google-review-snippet-sd"]} />
+
+So a dental practice marking up its own testimonials gains no star result and adds a mismatch risk if the markup claims a rating the page does not display. Show reviews to visitors if they help; leave them out of the practice's markup. Reputation work belongs on review platforms, as covered in [a review request process without incentives or gating](/blog/dental-review-request-process/).
+
+### FAQ rich results in 2026
+
+Google's Search documentation changelog records that a deprecation notice was added on 8 May 2026 and that the FAQ rich result "will no longer appear in Google Search starting May 7, 2026". In June 2026 Google removed the FAQ rich result documentation because the feature is no longer shown. On 8 November 2026, the former FAQPage documentation URL redirected to that changelog.
+
+<SourceNote ids={["google-search-docs-updates"]} />
+
+What that means in practice: FAQPage markup no longer earns a Google search feature for a dental site. Existing valid markup that matches questions visible on the page can stay; there is no documented penalty for it, and other systems may read it. Do not sell, buy or build FAQ markup as a visibility tactic, and never mark up questions and answers that are not shown on the page, which breaks the general guidelines regardless of feature status.
+
+## Structured data and AI answers: realistic expectations
+
+Google's AI optimization guide lists "overfocusing on structured data" among things site owners can ignore: structured data "isn't required for generative AI search, and there's no special schema.org markup you need to add", though it remains useful for rich-result eligibility. Its AI features guidance includes "making sure your structured data matches the visible text on the page" in its list of fundamentals.
+
+<SourceNote ids={["google-ai-optimization-guide", "google-ai-features-search"]} />
+
+The honest position for a practice is therefore modest. Accurate markup removes one source of contradiction about who the practice is and where it operates. It does not put a practice into AI Overviews, ChatGPT answers or anywhere else. If AI assistants are stating wrong facts about the practice, the fix starts with the [prompt sample and fact register in our guide to checking AI answers](/blog/checking-dental-practice-ai-answers/), and the markup is one of several sources to correct.
+
+## A JSON-LD pattern for one office
+
+The sample below uses invented data for a fictional office. Every value would need to match the visible location page.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "@id": "https://www.example-dental.com/locations/riverside/#dentist",
+  "name": "Example Family Dental Riverside",
+  "url": "https://www.example-dental.com/locations/riverside/",
+  "telephone": "+1-555-010-0199",
+  "image": "https://www.example-dental.com/images/riverside-front-desk.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "100 Example Ave, Suite 200",
+    "addressLocality": "Exampleville",
+    "addressRegion": "TX",
+    "postalCode": "00000",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 29.00000, "longitude": -95.00000 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "08:00:00", "closes": "12:30:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "13:30:00", "closes": "17:00:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:00:00", "closes": "13:00:00" }
+  ],
+  "isAcceptingNewPatients": true,
+  "parentOrganization": { "@id": "https://www.example-dental.com/#organization" },
+  "employee": [
+    { "@type": "Person", "name": "Dr. Example Person", "jobTitle": "General Dentist", "worksFor": { "@id": "https://www.example-dental.com/locations/riverside/#dentist" } }
+  ]
+}
+```
+
+Note what is absent: no aggregateRating, no FAQ block, no services the page does not describe, no keyword phrases appended to the name.
+
+## Implementation and maintenance checklist
+
+<Checklist title="Before publishing or changing practice markup" items={[
+  "A single fact register exists for each office: name, address, phone, hours, providers, accepting-new-patients status",
+  "Visible page text and JSON-LD are generated from the same data fields",
+  "Type is Dentist for each office; parent organization described once and linked by @id",
+  "Each location entity sits on that location's own page with its own url",
+  "Hours include lunch closures and match what the front desk works to",
+  "Telephone in markup matches the visible number on the page",
+  "Only providers shown on the page are marked up; departed providers removed from both",
+  "No self-serving aggregateRating or review markup",
+  "No FAQ or other markup for content not visible on the page",
+  "Rich Results Test and URL Inspection run after deploy; errors fixed",
+  "Markup reviewed whenever hours, providers, name or address change, and at least quarterly"
+]} />
+
+Google's local business guide recommends validating with the Rich Results Test, deploying a few pages first, checking them with URL Inspection, and allowing time for recrawling.
+
+<SourceNote ids={["google-local-business-structured-data"]} />
+
+## Common mistakes and their tradeoffs
+
+- **Plugin defaults left in place.** Some site plugins output a generic LocalBusiness block with the homepage URL and placeholder hours. It is quick, but it often contradicts the real practice. Turn off default output if you are hand-building location markup, or you will publish two conflicting entities.
+- **One entity for the whole group.** Easy to maintain, but it describes no real office. Each patient-facing office should be its own entity.
+- **Marking up aspirations.** Services the practice wants to grow but does not describe on the page, or hours it plans to add, do not belong in markup until they are on the page.
+- **Treating validation as accuracy.** The Rich Results Test checks syntax and required properties. It cannot tell you that Thursday closes at 17:00, not 18:00. Only the fact register can.
+- **Tracking numbers.** Call tracking can be legitimate, but if the visible number and the markup number differ, decide deliberately which is canonical and keep them consistent. How to measure calls without polluting the practice's identity is covered in [dental call tracking](/blog/dental-call-tracking/).
+
+## Sources and limitations
+
+This page relies on Google Search Central documentation and Schema.org definitions as retrieved on 8 November 2026. Google changes features without much notice, as the FAQ rich result shows; re-check the changelog before acting on any feature-specific advice. Other search engines and AI systems read schema.org markup in ways they document less fully, and nothing here promises any visibility outcome. The JSON-LD sample uses invented data for a fictional office.
+
+## Related next steps
+
+- Markup review, location-page structure and technical fixes are part of [dental SEO services](/services/dental-seo-company/), which starts with the site's own facts and templates.
+- If the concern is how AI assistants describe the practice, see [dental AI search optimization](/services/dental-ai-search-optimization/).
+- For groups with many offices, [multi-location dental SEO](/services/local-seo-multi-location-clinics/) covers location data management across sites and profiles.
+- Use the [dental website audit checklist](/resources/dental-website-audit-checklist/) to check markup alongside other technical basics, or [request the Dental Growth Audit](/dental-marketing-audit/) to have visibility, website and listings reviewed together.

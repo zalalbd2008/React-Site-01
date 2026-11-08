@@ -19,7 +19,7 @@
 | Claim | Source id | What the source actually measures | Geography / period | Limitation |
 |---|---|---|---|---|
 | LCP ≤2.5 s, INP ≤200 ms, CLS ≤0.1 at 75th percentile, mobile/desktop segmented; lab tools can't measure INP | webdev-core-web-vitals | web.dev, updated 2024-10-31 | — | — |
-| Google recommends good CWV; aligns with core ranking systems | google-core-web-vitals-search | Search Central, updated 2025-12-10 | — | No quantified effect |
+| Google recommends good CWV; aligns with core ranking systems | google-core-web-vitals (existing id) | Search Central, updated 2025-12-10 | — | No quantified effect |
 | Page experience: many aspects; relevance still wins when experience sub-par | google-page-experience | Search Central, updated 2026-09-22 | — | — |
 | WCAG 2.2 Recommendation 12 Dec 2024; new AA criteria incl. target size 24×24 CSS px, focus not obscured, accessible authentication, dragging; A: consistent help, redundant entry | w3c-wcag-22 | W3C | — | Standard, not law |
 | DOJ: Title III covers businesses open to the public incl. medical offices; no detailed regulation for businesses; flexibility; WCAG as helpful standard; guidance non-binding | doj-ada-web-guidance | ADA.gov, 18 Mar 2022, still posted 2026-11-08 | US | Not legal advice; may be rescinded |

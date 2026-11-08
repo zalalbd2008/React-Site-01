@@ -333,7 +333,7 @@
     "retrieved": "2026-11-08",
     "dataYear": null,
     "geography": null,
-    "measures": "Next.js can export a site as static files for any static host; features that need a server, such as cookies, rewrites, incremental static regeneration and Server Actions, are unsupported in a static export.",
+    "measures": "Next.js can export a site as static files for any static host; features that need a server, including cookies, rewrites, redirects, headers, incremental static regeneration, default image optimization and Server Actions, are unsupported in a static export.",
     "limitations": "Technical documentation for the current major version.",
     "kind": "official-docs"
   },
@@ -351,19 +351,6 @@
     "kind": "legal"
   },
   {
-    "id": "ca-penal-code-632",
-    "title": "California Penal Code § 632",
-    "publisher": "California Public Law (reproduction of the California Penal Code)",
-    "url": "https://california.public.law/codes/penal_code_section_632",
-    "published": null,
-    "retrieved": "2026-11-08",
-    "dataYear": null,
-    "geography": "California",
-    "measures": "Makes it an offence to intentionally record or eavesdrop on a confidential communication, including by telephone, without the consent of all parties, with fines of up to $2,500 per violation for a first offence.",
-    "limitations": "Unofficial reproduction; the official leginfo.legislature.ca.gov page could not be retrieved from this environment. Related sections (e.g. 632.7 for cellular calls) and case law affect application. Not legal advice.",
-    "kind": "legal"
-  },
-  {
     "id": "fl-statutes-934-03",
     "title": "Florida Statutes § 934.03 – Interception and disclosure of wire, oral, or electronic communications prohibited",
     "publisher": "The Florida Senate",
@@ -374,6 +361,45 @@
     "geography": "Florida",
     "measures": "Section 934.03(2)(d): it is lawful for a person to intercept a wire, oral or electronic communication when all of the parties to the communication have given prior consent.",
     "limitations": "2025 statute text; application depends on facts such as expectation of privacy. Not legal advice.",
+    "kind": "legal"
+  },
+  {
+    "id": "rcfp-recording-guide-california",
+    "title": "Reporter's Recording Guide: California",
+    "publisher": "Reporters Committee for Freedom of the Press",
+    "url": "https://www.rcfp.org/reporters-recording-guide/california/",
+    "published": "2021-08",
+    "retrieved": "2026-11-08",
+    "dataYear": null,
+    "geography": "California",
+    "measures": "Summarises Cal. Penal Code § 632(a): all parties to a confidential communication, including by telephone, must consent to recording; § 632.7 requires all-party consent for calls involving a cellular or cordless phone regardless of confidentiality (Smith v. LoanMe, Cal. 2021); first offences punishable by fines up to $2,500.",
+    "limitations": "Secondary legal summary written for journalists, last updated 2021-08 per the page; not the statute text and not legal advice. Check the current statute and ask counsel.",
+    "kind": "legal"
+  },
+  {
+    "id": "rcfp-recording-guide-texas",
+    "title": "Reporter's Recording Guide: Texas",
+    "publisher": "Reporters Committee for Freedom of the Press",
+    "url": "https://www.rcfp.org/reporters-recording-guide/texas/",
+    "published": "2020-06",
+    "retrieved": "2026-11-08",
+    "dataYear": null,
+    "geography": "Texas",
+    "measures": "Summarises Tex. Penal Code § 16.02: a party to a telephone conversation, or a person with one party's consent, may lawfully record it unless for a criminal or tortious purpose (one-party consent).",
+    "limitations": "Secondary legal summary written for journalists, last updated 2020-06 per the page; not the statute text and not legal advice. Check the current statute and ask counsel.",
+    "kind": "legal"
+  },
+  {
+    "id": "rcfp-recording-guide-georgia",
+    "title": "Reporter's Recording Guide: Georgia",
+    "publisher": "Reporters Committee for Freedom of the Press",
+    "url": "https://www.rcfp.org/reporters-recording-guide/georgia/",
+    "published": "2020-05",
+    "retrieved": "2026-11-08",
+    "dataYear": null,
+    "geography": "Georgia",
+    "measures": "Summarises Ga. Code §§ 16-11-62 and 16-11-66(a): a party to a communication, or a person with one party's prior consent, may record it (one-party consent).",
+    "limitations": "Secondary legal summary written for journalists, last updated 2020-05 per the page; not the statute text and not legal advice. Check the current statute and ask counsel.",
     "kind": "legal"
   }
 ]

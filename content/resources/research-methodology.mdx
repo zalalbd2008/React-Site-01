@@ -1,14 +1,102 @@
 ---
 route: "/resources/research-methodology/"
 type: "resource"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
-title: "Research Methodology"
+title: "Research Methodology: How We Collect, Date and Limit Observations"
 navLabel: "Research Methodology"
-metaTitle: "Research Methodology"
-description: "How Alpha Dental Media collects, dates and limits its research observations. A free reference from Alpha Dental Media for dental practice owners and managers."
+metaTitle: "Research Methodology | Alpha Dental Media"
+description: "How Alpha Dental Media selects samples, dates and records website and AI-answer observations, separates observation from interpretation, and states limits."
+eyebrow: "Methodology"
+lede: "The rules behind every observation on this site: how samples are chosen, what is recorded and when, what we never do, and why a small sample describes only itself."
 parent: "/resources/"
-primaryIntent: "How Alpha Dental Media collects, dates and limits its research observations"
+primaryIntent: "Alpha Dental Media research methodology"
+secondaryQuestions:
+  - "How does Alpha Dental Media choose which websites to review?"
+  - "Are the website observations on this site representative?"
+  - "How are AI answer samples collected?"
+  - "When will the research series be published?"
+audience: "Dental practice owners, managers and editors checking how observations on this site were produced"
+sources: []
+related:
+  - "/editorial-policy/"
+  - "/blog/checking-dental-practice-ai-answers/"
+  - "/blog/measuring-ai-referrals-and-citations/"
+  - "/resources/dental-website-audit-checklist/"
+cta: "none"
+published: null
+updated: null
+evidence: "none-required"
+verificationNotes: "Describes Alpha Dental Media's own collection rules; contains no statistics. On 2026-11-08 the research/competitors, research/local and research/ai-visibility folders contained no completed observation sets, so the page states that no study results have been published yet."
 order: 5
+faqs:
+  - q: "Do you name the practices or agencies you observe?"
+    a: "No. Observations are recorded privately with the URL and date so they can be checked, but public pages describe them only in aggregate, such as 'in a sample of four practice websites reviewed on a stated date'. We do not name, rank or criticise specific practices or agencies."
+  - q: "Can I rely on a finding from a sample of a few websites?"
+    a: "Only as a description of those websites on that date. A small convenience sample can show that a problem exists and is worth checking for, but it cannot tell you how common the problem is across dental practices, a state or a city."
+  - q: "Do you test competitors' contact forms or call them?"
+    a: "No. We do not submit forms, book appointments, phone practices or contact agencies to observe how they respond. Observations are limited to what any visitor can see on public pages without interacting with the business."
 ---
+
+<KeyAnswer>Our observations are small, dated, convenience samples of public web pages and AI answers. Each one records the URL or prompt, the date, the location and device context, and what was seen — separately from what we think it means. We never contact the businesses observed or submit their forms, and a small sample describes only the pages in it.</KeyAnswer>
+
+Pages on this site sometimes say things like "in a sample of practice websites we reviewed". This page explains what stands behind that phrase. It complements the [editorial policy](/editorial-policy/), which covers sourcing, review and corrections more broadly.
+
+## What we observe
+
+We run two kinds of observation:
+
+- **Website studies.** Public pages of dental practice websites (and, occasionally, dental marketing agency websites) reviewed for features a patient or practice owner would encounter: whether a phone number is visible on mobile, whether treatment pages address cost, what a booking path involves, what the page markup declares.
+- **AI answer sampling.** Prompts entered into publicly available AI assistants and AI search features — for example, questions a patient or a practice owner might ask — with the answers and any cited sources recorded as they appeared.
+
+Both are descriptive. They show what was on a page or in an answer at a moment in time.
+
+## How samples are selected
+
+Samples are **convenience samples**: chosen because they are relevant to the question and reachable, not drawn at random. For a website study we typically take the first organic results for a stated search in a stated location, or practices of a stated type in a stated city, and record exactly how the list was formed so someone else could repeat it. For AI sampling we write the prompts in advance and use them unchanged across tools.
+
+We record exclusions too — for example, a site that failed to load or a directory listing that was not a practice website — because an unexplained exclusion can shape the result as much as an inclusion.
+
+## What each record contains
+
+<DataTable caption="Fields recorded for every observation" columns={["Field", "Website study", "AI answer sample"]}
+  rows={[
+    ["Date and time", "Date of review, with time zone", "Date and time of each prompt"],
+    ["Geography", "Search location used, or the city and state of the practice", "Stated or inferred location of the session, if the tool uses one"],
+    ["Selection rule", "The search or list the sample came from, and exclusions", "The prompt set and the reason each prompt was chosen"],
+    ["Context", "Device type, browser, signed-out or private window", "Tool name, model or mode if shown, signed-out or not"],
+    ["Raw observation", "What was visible, with a screenshot or saved copy and the URL", "The full answer text and any cited links, saved as returned"],
+    ["Interpretation", "Recorded separately, labelled as interpretation", "Recorded separately, labelled as interpretation"]
+  ]}
+  note="Records are kept in the project's research folder with the URL or prompt and date so they can be checked later." />
+
+## Observation versus interpretation
+
+We keep two columns apart. An **observation** is something anyone could verify by looking at the same page on the same date: "the phone number is not visible on the first mobile screen". An **interpretation** is our view of what it might mean: "patients on mobile may find it harder to call". Interpretations are phrased cautiously and, where we suggest an action, we also say how it could be tested with the practice's own data. Public pages use the same structure — observed fact, cautious interpretation, proposed action, how to test — so readers can disagree with the interpretation without disputing the observation.
+
+## What we never do
+
+- **No contact with the businesses observed.** We do not phone practices, submit contact or appointment forms, start booking flows past the first screen, use chat widgets, or email agencies to see how they respond.
+- **No mystery shopping or fake identities.** We do not pose as patients or prospective clients.
+- **No access beyond public pages.** We do not log in, bypass paywalls or bot protection, or collect anything that requires an account.
+- **No naming or criticising on public pages.** Observations appear only in aggregate. Records that identify sites stay in our research files.
+- **No patient information.** We do not collect reviews or other content in a way that identifies patients.
+
+## Limitations
+
+**Small samples are not representative.** A sample of four or ten websites tells you about those websites. It cannot support a claim such as "most dental websites" or "practices in Houston", and we do not make one from it.
+
+**Observations are dated.** Websites change daily; AI answers can change between two identical prompts minutes apart. Every finding carries its date and should be read as true on that date only.
+
+**Search and AI results are personalised and localised.** Location, device, signed-in state and history can change what appears. We record the context we used, but someone else in a different place may see different results.
+
+**Visible features are not outcomes.** Seeing that a site lacks a feature tells us nothing about how many patients it books. Only the practice's own records can show that.
+
+**AI answers are not stable measurements.** A single sampled answer shows what one tool said once. Repeated sampling over time is needed before describing a pattern, and even then it describes the tool's output, not how often patients see it. For a practice-level view, see [how to check whether AI answers describe a practice accurately](/blog/checking-dental-practice-ai-answers/) and [what AI referral and citation data can establish](/blog/measuring-ai-referrals-and-citations/).
+
+## The research series
+
+We plan a short series of observation studies on dental websites and AI answers. As of November 2026 no study results have been published. Each study will appear only once its data has been collected under the rules above, and each will state its sample size, selection rule, dates, geography and limitations at the top. Until then, pages on this site rely on official documentation and clearly labelled illustrative examples rather than our own findings.
+
+If you spot an error in an observation or think a sample was described unfairly, tell us through the [contact page](/contact/) and we will review the record and correct the page if needed.

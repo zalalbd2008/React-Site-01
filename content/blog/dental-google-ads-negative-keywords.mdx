@@ -2,14 +2,184 @@
 route: "/blog/dental-google-ads-negative-keywords/"
 type: "article"
 category: "advertising"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
-title: "Dental Negative Keywords: Frameworks and Exclusions That Remove Good Leads"
-metaTitle: "Dental Negative Keywords: Frameworks and Exclusions That Re…"
-description: "Dental Negative Keywords: Frameworks and Exclusions That Remove Good Leads. A practical guide for dental practice owners and managers from Alpha Dental Media."
-parent: "/blog/"
-primaryIntent: "Dental Negative Keywords: Frameworks and Exclusions That Remove Good Leads"
-related: ["/services/dental-google-ads-management/"]
+title: "Dental Negative Keywords: How to Exclude Waste Without Excluding Good Leads"
+metaTitle: "Dental Negative Keywords Without Losing Good Leads"
+description: "How Google Ads negative keywords actually match, a three-layer framework for dental practices, and the common exclusions that quietly block real patients."
+eyebrow: "Google Ads for dentists"
+lede: "Negative keywords behave differently from the keywords you bid on. They do not stretch to synonyms or plurals, and one careless word can block searches from patients the practice wants."
+primaryIntent: "dental Google Ads negative keywords"
+secondaryQuestions:
+  - "Do negative keywords block close variants and misspellings?"
+  - "Should a dental practice exclude free, cheap or Medicaid searches?"
+  - "Where should negative keywords live: account, list or campaign?"
+  - "How do I find negative keywords for a dental account?"
+  - "Can negative keywords route searches between implant and denture ad groups?"
+audience: "Practice owners and managers checking how their ads budget is filtered"
+sources:
+  - "google-ads-negative-keywords"
+  - "google-ads-negative-keyword-lists"
+  - "google-ads-account-negatives"
+  - "google-ads-search-terms-report"
+  - "google-ads-match-types"
+related:
+  - "/services/dental-google-ads-management/"
+  - "/blog/dental-google-ads-keyword-match-types/"
+  - "/blog/emergency-dental-advertising/"
+  - "/blog/dental-implant-advertising/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Negative match behaviour, close-variant rule, casing and misspellings, the 16-word limit and symbol handling checked against Google Ads Help answer 2453972 on 2026-11-08. List limits (5,000 per list, 20 lists, 1,000 account-level) checked against 2453983 and 11396330. Account-level coverage of Performance Max and other campaign types checked against 11396330. Search terms report against 2472708. Example search terms and lists are invented."
 order: 8
+faqs:
+  - q: "Do negative keywords block misspellings and plurals automatically?"
+    a: "Partly. Google says negative keywords automatically account for casing and misspellings, but they do not match close variants or other expansions. You need to add synonyms and singular or plural forms yourself. Excluding one word form leaves the other free to trigger ads."
+  - q: "Should a dental practice add free as a negative keyword?"
+    a: "Only after checking what it blocks. A broad or phrase negative for free blocks searches for free clinics, which most private practices cannot serve, but also blocks searches for a free consultation or free second opinion if the practice offers one. If any free offer is real, use narrower negatives for the specific unwanted phrases instead."
+  - q: "Do account-level negative keywords apply to Performance Max?"
+    a: "Yes. Google states that account-level negatives apply to search and shopping inventory in Search, Performance Max, App, Shopping, Smart and Local campaigns. That reach is useful for universal exclusions such as job searches, and risky for anything that only one campaign should exclude."
+  - q: "How many negative keywords can a Google Ads account have?"
+    a: "On the retrieval date Google allowed up to 1,000 account-level negatives, and shared lists of up to 5,000 negatives each with up to 20 lists per account, plus campaign and ad group negatives. Limits change, so check Google Ads Help before restructuring a large account."
 ---
+
+<KeyAnswer>Build dental negatives in three layers: a short account-level list for searches no campaign should ever match, shared lists by theme, and campaign or ad group negatives for routing. Add them from the search terms report, not from generic lists. Before adding any word, check which real patient searches it would also block, because negatives do not match synonyms or plurals and broad negatives catch more than intended.</KeyAnswer>
+
+Negatives are the counterpart to match types. How positive keywords match searches is covered in [choosing match types for a dental account](/blog/dental-google-ads-keyword-match-types/); this article is about the exclusions.
+
+## How negative keywords actually match
+
+Google states plainly that negative match types "work differently than their positive counterparts". The main difference is that you need to add synonyms and singular or plural versions yourself if you want to exclude them, because negatives do not match close variants or other expansions. Google's example: a negative broad match keyword "flowers" stops ads on "red flowers" but not on "red flower". Google also says negatives automatically account for casing and misspellings, so those do not need adding separately.
+
+<SourceNote ids={["google-ads-negative-keywords"]} />
+
+The three negative match types follow these rules:
+
+- **Negative broad** (the default): the ad will not show if the search contains all of the negative's terms, in any order. It may still show if only some of the terms are present.
+- **Negative phrase**: the ad will not show if the search contains all the terms in the same order, even with extra words around them.
+- **Negative exact**: the ad will not show only if the search is exactly those terms, in that order, with no extra words.
+
+Google also notes that a negative keyword appearing after the 16th word of a very long search may not block the ad.
+
+<DataTable caption="How three negative match types treat the same invented dental searches, applying Google's published rules" columns={["Search", "Negative broad: dental jobs", "Negative phrase: \"dental jobs\"", "Negative exact: [dental jobs]"]}
+  rows={[
+    ["dental jobs", "Blocked", "Blocked", "Blocked"],
+    ["dental jobs houston", "Blocked", "Blocked", "Not blocked"],
+    ["jobs at dental office", "Blocked: both terms present", "Not blocked: words not in order", "Not blocked"],
+    ["dental job openings", "Not blocked: job is a different word form", "Not blocked", "Not blocked"],
+    ["dental assistant careers", "Not blocked: synonym", "Not blocked", "Not blocked"],
+    ["dentl jobs", "Blocked: Google accounts for misspellings", "Blocked", "Blocked"]
+  ]}
+  note="Searches are invented. Outcomes apply Google's rules as published on 2026-11-08; Google does not publish dental-specific examples, so confirm in your own search terms report." />
+
+<SourceNote ids={["google-ads-negative-keywords"]} />
+
+The table shows why negatives cannot be set once and forgotten. A practice that excludes "dental jobs" still pays for "dental job openings" and "dental assistant careers" unless it also excludes job, careers and their variants. And the broad negative blocks more combinations than the phrase version, which is good for jobs and dangerous for words that also appear in patient searches.
+
+## A three-layer framework for dental negatives
+
+Google provides three places for negatives, each with a different reach. Using them deliberately is the difference between a clean account and one where nobody knows why an ad stopped showing.
+
+<Lanes title="Where each kind of dental negative belongs" lanes={[
+  { title: "Account level", items: ["Searches no campaign should ever match", "Jobs, careers, salaries, schools, courses, licensing exams", "Supplies, equipment and wholesale", "Applies to Search, Performance Max and other campaign types", "Keep it short and conservative"] },
+  { title: "Shared lists by theme", items: ["Services the practice does not offer, such as a procedure no dentist there performs", "Locations the practice cannot realistically serve", "DIY and home-remedy intent, if the practice decides to exclude it", "Applied only to the campaigns where they make sense"] },
+  { title: "Campaign and ad group", items: ["Routing: keep denture searches out of the implant ad group and send them to the denture ad group", "Emergency terms excluded from non-emergency campaigns", "Brand terms separated from non-brand", "Temporary exclusions while a service is paused"] }
+]} caption="Layer reach on the retrieval date: account-level negatives cover several campaign types; shared lists cover only the campaigns they are applied to." />
+
+<SourceNote ids={["google-ads-account-negatives", "google-ads-negative-keyword-lists"]} />
+
+**Account level.** Google states that an account-level negative list applies automatically to search and shopping inventory in Search, Performance Max, App, Shopping, Smart and Local campaigns, with a limit of 1,000 negatives. Because of that reach, it should only hold searches the practice would never want in any campaign. A word that is wrong for one campaign and right for another does not belong here.
+
+**Shared lists.** Google allows negative keyword lists of up to 5,000 negatives each and up to 20 lists per account, applied to selected campaigns, so one edit updates every campaign sharing the list. Organise them by theme so that someone can tell later why a word was excluded.
+
+**Campaign and ad group.** These are the most precise tools, and the only ones suited to routing. If an account has an implant ad group and a denture ad group, adding denture terms as negatives in the implant ad group pushes those searches toward the ad group and landing page built for them. That is a routing decision, not an exclusion; the searches are still wanted.
+
+<SourceNote ids={["google-ads-account-negatives", "google-ads-negative-keyword-lists"]} />
+
+## Exclusions that quietly remove good leads
+
+Generic negative keyword lists circulate widely, and many contain words that are reasonable for retailers and harmful for a dental practice. The table below lists common candidates, what they block and what they can also block. Whether to exclude each one is a business decision, not a rule.
+
+<DataTable caption="Common dental negative candidates and the patient searches they can also block" columns={["Candidate negative", "Intended to block", "Can also block", "Safer approach"]}
+  rows={[
+    ["free", "Free clinics and charity care the practice cannot provide", "Free consultation, free second opinion, free exam offers the practice actually runs", "If any free offer is real, exclude specific phrases such as free clinic instead of the single word"],
+    ["cheap / cheapest", "Bargain-hunting with low value", "Patients without insurance comparing costs who would book a fairly priced service", "Keep, and make the landing page honest about cost and financing; review conversion quality before excluding"],
+    ["Medicaid / CHIP / sliding scale", "Coverage the practice does not accept", "Searches from patients with other coverage who mention it in passing, and pediatric searches if the practice does accept it", "Check the practice's actual participation first; use phrase or exact negatives for the specific programme names"],
+    ["emergency / 24 hour", "After-hours searches the practice cannot answer", "Daytime urgent searches the practice can take on same-day slots", "Control by ad schedule and capacity, not by a blanket negative; see the emergency article"],
+    ["kids / children / pediatric", "Pediatric searches at an adults-only practice", "Parents booking themselves and their children at a family practice", "Only exclude if the practice genuinely does not see children"],
+    ["near me", "Nothing useful", "A large share of local intent searches", "Do not exclude"],
+    ["cost / price", "Researchers not ready to book", "Patients who need cost information before booking, often for implants and orthodontics", "Keep, route to pages that answer cost honestly"],
+    ["competitor names", "Brand searches for other practices", "Little, but bidding on them raises separate policy and reputation questions", "Decide as a policy, then apply consistently"]
+  ]}
+  note="Candidate list compiled for illustration; no search volume or performance data is implied." />
+
+The pattern in the table is that single-word broad negatives carry the most risk. "Free" as a broad negative blocks every search containing it. "Free clinic" as a phrase negative blocks the intended searches and leaves "free implant consultation" alone. Google's own warning is short: if you use too many negative keywords, your ads might reach fewer customers.
+
+<SourceNote ids={["google-ads-negative-keywords"]} />
+
+Emergency searches deserve special care, because whether to exclude them depends on the hours and capacity the practice actually has. That decision is covered in [running emergency dental ads that match real hours and capacity](/blog/emergency-dental-advertising/).
+
+## Finding negatives from your own search terms
+
+The search terms report is the source of a practice's negatives. Google describes it as showing the searches that triggered ads, with a Keyword column (added via the columns menu) showing which keyword matched. It lists only terms used by a significant number of people, and omits low-volume terms for privacy, so it never shows everything.
+
+<SourceNote ids={["google-ads-search-terms-report"]} />
+
+<DecisionTree title="Should this search term become a negative?" q="Could this search come from someone the practice can treat?" branches={[
+  { answer: "No", q: "Would the same word appear in searches the practice does want?", branches: [
+      { answer: "No", outcome: "Add as a broad negative at the narrowest layer where it is always wrong; account level only if every campaign should exclude it." },
+      { answer: "Yes", outcome: "Add the specific phrase as a phrase or exact negative, not the single word." } ] },
+  { answer: "Yes", q: "Is it reaching the right ad group and landing page?", branches: [
+      { answer: "Yes", outcome: "Keep. If it converts poorly, look at the landing page, bid or schedule before excluding it." },
+      { answer: "No", outcome: "Route it: add an ad group negative in the wrong ad group and an exact or phrase keyword in the right one." } ] },
+  { answer: "Unsure", outcome: "Leave it for another review cycle and check the call recordings or form notes the practice keeps, within its privacy rules, for what these visitors wanted." }
+]} />
+
+A short weekly review of the report is usually more effective than a long list added at launch. Each review should record what was added, at which layer and why, so the list can be audited later.
+
+<Illustrative title="Auditing an inherited negative list">
+An invented two-dentist general practice inherits an account with 412 negatives, most added at account level by a previous manager. A review sorts them into four groups.
+
+About 300 are harmless: jobs, schools, supplies, other professions. Around 60 are duplicates of each other in different match types. Eleven are plausible but risky: free, cheap, kids, emergency, payment plan, financing, sedation, Saturday, walk in, weekend and denture. The practice offers payment plans, sees children, has Saturday hours twice a month and accepts walk-in emergencies when a slot is open, so eight of those eleven are blocking searches it wants.
+
+The fix: move routing terms such as denture to ad group level, replace free with free clinic and free dental care events as phrase negatives, remove kids, payment plan, financing, Saturday, walk in and weekend, and leave emergency control to the ad schedule. The team then compares two months of search terms before and after. All numbers are invented.
+</Illustrative>
+
+## A checklist for a negative keyword review
+
+<Checklist title="Negative keyword review for a dental account" items={[
+  "Export all negatives at account, list, campaign and ad group level with their match types",
+  "Check every single-word broad negative against the services, offers and patients the practice accepts",
+  "Confirm insurance and programme exclusions match the practice's current participation",
+  "Move routing negatives such as dentures in an implant ad group to ad group level",
+  "Add plural, singular and synonym forms for genuine exclusions, since negatives do not match close variants",
+  "Keep the account-level list to exclusions that are wrong for every campaign, including Performance Max",
+  "Remove duplicates that repeat a negative already covered by a broader one",
+  "Record why each new negative was added and who approved it",
+  "Recheck after any service, hours or insurance change at the practice"
+]} />
+
+## Tradeoffs and common mistakes
+
+Fewer negatives means more spend on searches the practice cannot use. More negatives, especially broad single words, means fewer impressions and the risk of silently excluding valuable searches, which never appear in any report because the ad never showed. The second error is harder to see than the first, which is why it persists.
+
+Common mistakes:
+
+- Importing a generic negative list without reading it against the practice's services and insurance.
+- Putting routing terms at account level, which also blocks them in the campaign built to serve them.
+- Assuming a negative covers plurals and synonyms.
+- Using a negative to fix a landing page or schedule problem.
+- Never reviewing old negatives after the practice adds a service, extends hours or joins a plan.
+
+For implant campaigns, where the boundary between implants, dentures and training searches matters most, see [how to advertise dental implants](/blog/dental-implant-advertising/).
+
+## Sources and limitations
+
+Matching rules, limits and campaign-type coverage come from Google Ads Help articles retrieved on 8 November 2026. Limits and the campaign types covered by account-level negatives change over time. Google does not publish dental-specific negative keyword guidance; the dental examples here apply Google's general rules to invented searches and are not drawn from any account's data. The search terms report omits low-volume terms, so no review can catch every wasted or blocked search.
+
+## Next steps
+
+If your account has a long negative list nobody can explain, an audit of what it blocks is a quick, low-risk improvement. Our [dental Google Ads management](/services/dental-google-ads-management/) approach rebuilds negatives in layers from the account's own search terms, and checks each exclusion against the practice's services, hours and insurance. The [Dental Growth Audit](/dental-marketing-audit/) reviews the search terms your budget paid for and the exclusions in place, with read-only access if you choose to grant it.

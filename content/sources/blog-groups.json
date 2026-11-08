@@ -221,7 +221,7 @@
     "kind": "official-docs"
   },
   {
-    "id": "google-gbp-performance",
+    "id": "google-gbp-performance-insights",
     "title": "Understand your Business Profile performance and insights",
     "publisher": "Google Business Profile Help",
     "url": "https://support.google.com/business/answer/7689763",
@@ -315,7 +315,7 @@
     "id": "openai-crawlers",
     "title": "Overview of OpenAI crawlers",
     "publisher": "OpenAI",
-    "url": "https://platform.openai.com/docs/bots",
+    "url": "https://developers.openai.com/api/docs/bots",
     "published": null,
     "retrieved": "2026-11-08",
     "dataYear": null,

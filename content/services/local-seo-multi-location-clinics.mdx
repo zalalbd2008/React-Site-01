@@ -26,7 +26,7 @@ sources:
   - "google-gbp-bulk-verification"
   - "google-gbp-business-groups"
   - "google-gbp-business-group-roles"
-  - "google-gbp-profile-roles"
+  - "google-gbp-owners-managers"
   - "google-gbp-store-codes"
   - "google-gbp-local-ranking"
   - "google-site-move-url-changes"
@@ -126,7 +126,7 @@ A group needs explicit rules for which people can edit which records, because Go
 
 The roles themselves are fixed by Google. A business group can have several owners but only one primary owner; only owners can add or remove users, delete the group or transfer it. Group managers can add, edit and delete every profile in the group but cannot manage users. On an individual profile, managers have mostly the same access as owners, except they cannot add or remove users or remove the profile.
 
-<SourceNote ids={["google-gbp-business-group-roles", "google-gbp-profile-roles"]} />
+<SourceNote ids={["google-gbp-business-group-roles", "google-gbp-owners-managers"]} />
 
 That means "who can edit" is decided by which group a profile sits in and which role a person holds. One business group for the whole organisation keeps everything in one dashboard and one spreadsheet, but anyone with group access can edit every office. Several groups, for example one per brand or region, limit access but need separate spreadsheets and dashboards. Google notes both tradeoffs, and also that owners and managers can be added to single profiles within a group.
 

@@ -52,19 +52,6 @@
     "kind": "official-docs"
   },
   {
-    "id": "google-gbp-profile-roles",
-    "title": "Manage your Business Profile owners & managers",
-    "publisher": "Google Business Profile Help",
-    "url": "https://support.google.com/business/answer/3403100",
-    "published": null,
-    "retrieved": "2026-11-08",
-    "dataYear": null,
-    "geography": null,
-    "measures": "Individual profile roles: owners have full control and one primary owner; managers have mostly the same access but cannot add or remove users or remove the profile.",
-    "limitations": "Help article. Undated on the page.",
-    "kind": "official-docs"
-  },
-  {
     "id": "google-gbp-store-codes",
     "title": "Add & manage Business Profile store codes for bulk uploads",
     "publisher": "Google Business Profile Help",
@@ -114,19 +101,6 @@
     "geography": null,
     "measures": "Core Web Vitals thresholds: LCP within 2.5 seconds, INP of 200 milliseconds or less, CLS of 0.1 or less, assessed at the 75th percentile of page loads segmented by mobile and desktop; INP replaced FID as a stable Core Web Vital in 2024; lab tools cannot measure INP.",
     "limitations": "Last updated 2024-10-31 per the page; metric set can change.",
-    "kind": "official-docs"
-  },
-  {
-    "id": "google-core-web-vitals-search",
-    "title": "Understanding Core Web Vitals and Google search results",
-    "publisher": "Google Search Central",
-    "url": "https://developers.google.com/search/docs/appearance/core-web-vitals",
-    "published": null,
-    "retrieved": "2026-11-08",
-    "dataYear": null,
-    "geography": null,
-    "measures": "Google recommends achieving good Core Web Vitals; they align with what core ranking systems seek to reward alongside other page experience aspects.",
-    "limitations": "Last updated 2025-12-10 per the page footer. Does not quantify ranking effect.",
     "kind": "official-docs"
   },
   {
