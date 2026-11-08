@@ -34,7 +34,7 @@ Required sections (adapt headings to the city — siblings must not read alike):
 - City-specific buyer questions as FAQs (e.g. "Can a Houston-based agency handle our Dallas practice?", "Should we target the whole metro or only nearby ZIP codes?").
 - Links: state hub (`/markets/<state>/`), 2–4 most relevant services, relevant articles/resources, `/dental-marketing-audit/`. Put these in `related` too.
 
-Add `<SourceNote ids={[...]} />` next to data claims. Census and observation sources go in your sources JSON; observations use `kind: "observation"` with the research file path in `measures`, and `url` the search or site you observed.
+Add `<SourceNote ids={[...]} />` next to data claims. Census and observation sources go in your sources JSON; observations use `kind: "observation"` with the research file path in `measures`, and `url` set to `https://alphadentalmedia.com/resources/research-methodology/` (site-wide decision, 2026-11-08: public source lists must never link to an individual practice or agency; the original search reference goes in `limitations`, and the sites observed are listed only in the internal research file). `npm run content:check` enforces this.
 
 ## State hub pages (≥2,000 words, 6–8 FAQs)
 
