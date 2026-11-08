@@ -81,7 +81,7 @@ The question often arrives framed as a technology preference: a developer recomm
 | Typical lock-in risk | Proprietary page builders and premium plugins | CMS vendor contract and custom front-end code | Custom code held by whoever wrote it |
 | Performance ceiling | Good with a lean theme and few plugins; easy to erode | High, if third-party scripts are controlled | High, if third-party scripts are controlled |
 | Accessibility | Depends on theme and plugins | Depends on how the front end is built | Depends on how the front end is built |
-| Best fit | Single practices with staff editors and modest custom needs | Groups or practices with many locations and ongoing developer support | Small, stable sites maintained by a technical owner or provider |
+| Usually suits | Single practices with staff editors and modest custom needs | Groups or practices with many locations and ongoing developer support | Small, stable sites maintained by a technical owner or provider |
 
 The table describes tendencies, not rules. A disciplined WordPress build can be fast and accessible; a careless Next.js build can be neither.
 
@@ -158,6 +158,18 @@ Lock-in rarely comes from the platform itself. WordPress is open source; Next.js
 ]} />
 
 These questions overlap with the wider agency due-diligence covered in [choosing a dental marketing agency](/blog/choosing-a-dental-marketing-agency/), which goes further into fees and reporting.
+
+## What to ask a provider who recommends one platform
+
+Providers tend to recommend what they build every day, which is reasonable: a team that maintains fifty WordPress sites will run yours more reliably than a stack it rarely touches. The recommendation still needs to be tested against your practice's situation rather than accepted as a preference. Five questions separate a considered recommendation from a habit.
+
+1. **Who will make the edits we make most often?** List the last ten changes the practice wanted (new hygienist bio, holiday hours, insurance list update, new service page) and ask how each would happen on the proposed platform, by whom, and how long it would take.
+2. **What is the update and testing routine?** Ask how often core, plugins or framework dependencies are updated, whether there is a staging copy, and who is alerted when an update fails.
+3. **Which third-party scripts will the site load?** Chat, reviews, booking, call tracking and analytics often decide performance more than the platform. Ask for the list and for field Core Web Vitals from a comparable live site.
+4. **How will forms and booking connect to the practice?** Ask where submissions go, how they are stored, and whether the booking tool is embedded, linked or integrated with the practice management system.
+5. **What does leaving look like?** Ask for the handover package in writing: domain, hosting, repository or theme files, licences, content export and administrator logins.
+
+A provider who answers these specifically, whichever platform they favour, is giving you something you can hold them to. Vague answers on maintenance and ownership are a larger warning sign than the platform choice itself.
 
 ## Common mistakes when choosing a platform
 

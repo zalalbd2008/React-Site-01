@@ -21,7 +21,16 @@ audience: "Dental practice owners, dentists evaluating marketing, practice manag
 parent: null
 author: "editorial-team"
 reviewer: null
-sources: []
+sources:
+  - "google-gbp-guidelines"
+  - "google-gbp-local-ranking"
+  - "google-ads-location-targeting"
+  - "google-ads-ad-scheduling"
+  - "google-ads-negative-keywords"
+  - "google-ads-primary-secondary-conversions"
+  - "google-ads-offline-conversions"
+  - "google-ai-features-search"
+  - "openai-crawlers"
 related:
   - "/services/"
   - "/who-we-help/"
@@ -32,8 +41,8 @@ related:
 cta: "audit"
 published: null
 updated: null
-evidence: "none-required"
-verificationNotes: "Company facts limited to docs/business-facts.md (Houston-based, remote nationwide delivery, priority markets TX/FL/GA/Greater Los Angeles, nine services as methodology). No external statistics or platform-specific claims are made, so no sources are cited. The Illustrative block uses invented numbers. External research could not be performed on 2026-11-08 because developers.google.com, support.google.com and ftc.gov did not resolve from this session; platform statements were kept general and should be checked when the page moves to Fact-checked."
+evidence: "sourced"
+verificationNotes: "Platform statements checked on 2026-11-08 against Google Search Central (AI features, last updated 2025-12-10), OpenAI crawler documentation, Google Business Profile Help (guidelines, local ranking) and Google Ads Help (location targeting, ad scheduling, negative keywords, primary/secondary conversions, offline conversion imports). OpenAI's publishers FAQ (referral UTM tagging) returned 403 and is not cited; the AI FAQ avoids that claim. Company facts limited to docs/business-facts.md (Houston-based, remote nationwide delivery, priority markets TX/FL/GA/Greater Los Angeles, nine services as methodology). No external statistics are used. The Illustrative block uses invented numbers."
 toc: true
 faqs:
   - q: "What does a dental marketing agency actually manage?"
@@ -49,7 +58,7 @@ faqs:
   - q: "What does a multi-location group need to provide?"
     a: "A verified list of every location with its legal and public names, addresses, phone numbers and hours; who controls each Business Profile, website and ad account; the booking system each office uses; planned openings, closures or rebrands; and a single decision-maker for approvals. Without an accurate location register, reporting by office cannot be trusted."
   - q: "What can and cannot be measured about AI search visibility?"
-    a: "You can record what specific AI tools say about your practice for a fixed set of questions, track whether the facts are correct, and count website visits where the AI tool passes referral information. You cannot get a complete count of how often assistants mention you, and answers vary by person, place and time. We report it as observations, not rankings."
+    a: "You can record what specific AI tools say about your practice for a fixed set of questions, check whether the facts are right, and see clicks from Google's AI Overviews and AI Mode inside Search Console's overall Web search data. You cannot get a complete count of how often assistants mention you, and Google says responses and links vary. We report observations, not rankings."
 ---
 
 ## Dental marketing built around booked, attended visits
@@ -108,6 +117,10 @@ These are usually sold as separate products, often by separate vendors. In pract
   { title: "Measurement", items: ["Track calls, forms and bookings as separate actions", "Separate new-patient inquiries from existing patients", "Reconcile marketing data with the practice schedule", "Report what is known, estimated and unknown"] }
 ]} caption="Each lane depends on the others. A gap in measurement makes it impossible to judge the other three." />
 
+Several of these responsibilities map onto specific platform controls. Google says local results are based mainly on relevance, distance and prominence, and that profiles with complete, accurate information are more likely to appear in relevant local searches; its Business Profile guidelines require the name and details to reflect the real-world business. In Google Ads, location targeting and ad schedules limit where and when ads can run, negative keywords exclude search terms, and conversion actions can be marked primary (used for bidding) or secondary (observed only). That last setting is how calls, forms and bookings can be tracked separately without letting a weak signal steer the budget. Offline conversion imports let outcomes that happen after the click, such as a booked appointment, be fed back into the account.
+
+<SourceNote ids={["google-gbp-local-ranking", "google-gbp-guidelines", "google-ads-location-targeting", "google-ads-ad-scheduling", "google-ads-negative-keywords", "google-ads-primary-secondary-conversions", "google-ads-offline-conversions"]} />
+
 ### From a search to an attended visit
 
 The funnel below is the measurement chain we use in planning and reporting. The terms matter because agencies often report the top of it and imply the bottom.
@@ -133,6 +146,14 @@ The [dental marketing metrics glossary](/resources/dental-marketing-metrics/) de
 <Illustrative title="Why the stage you measure changes the decision">
 A practice spends 3,000 dollars a month on ads and the agency report shows 120 calls. That looks like 25 dollars a call. Listening to a sample reveals that 50 of the calls were existing patients, 15 were wrong numbers or sales calls, and 55 were potential new patients. Of those, 30 booked and 24 attended. The real figure is 125 dollars per attended visit, five times the headline. Neither number is good or bad on its own; the point is that a budget decision based on 25 dollars a call would be made on the wrong evidence.
 </Illustrative>
+
+### What can be measured about AI search visibility
+
+AI search is a newer channel, so it is worth being precise about what the data shows. Google states that there are no additional requirements or special optimizations for appearing in AI Overviews or AI Mode beyond normal SEO fundamentals, that a page must be indexed and eligible to show with a snippet, and that traffic from these features is included in the Search Console Performance report under the Web search type rather than reported separately. Google also notes that AI Overviews often do not appear, and that the two features may use different models, so the responses and links shown vary. For ChatGPT, OpenAI says sites that block its OAI-SearchBot crawler will not be shown in ChatGPT search answers, so crawl access is a precondition rather than a ranking lever.
+
+<SourceNote ids={["google-ai-features-search", "openai-crawlers"]} />
+
+In practice that means a practice can check crawl access, keep its public facts consistent, record what selected AI tools say for a fixed set of questions on dated occasions, and watch overall search and referral traffic. It cannot obtain a complete count of AI mentions or a stable "AI ranking". Our [AI search optimization service](/services/dental-ai-search-optimization/) works within those limits.
 
 ## How an engagement runs
 

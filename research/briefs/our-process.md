@@ -10,7 +10,8 @@
 - **Factual claims and evidence:** company facts only from docs/business-facts.md; no external statistics or platform claims.
 - **Keyword research:** research candidates only (no tool data).
 - **Author / reviewer:** editorial-team / none (no review claimed)
-- **Evidence status:** none-required
+- **Evidence status:** sourced
 - **Proposed visual and its purpose / data:** Timeline (five stages) and Checklist (report questions).
 - **CTA and next-step deliverables:** Audit.
-- **Gaps / what needs client data:** External research was attempted on 2026-11-08 but developers.google.com, developers.google.cn, support.google.com and www.ftc.gov did not resolve from this session (proxy/DNS block); WebSearch worked but returned only secondary summaries, which are not citable. No sources were therefore cited, and the page avoids platform-specific or statistical claims. No durations or turnaround stated (none approved). Ownership/access terms to be confirmed by owner.
+- **Gaps / what needs client data:** No durations or turnaround stated (none approved). Ownership/access terms to be confirmed by owner.
+- **Sources (2026-11-08):** google-ads-access-levels (Read-only/Standard/Admin), google-gbp-owners-managers (owners vs managers), search-console-permissions (owners, full, restricted users), google-ads-offline-conversions (importing post-click outcomes). Evidence status now: sourced.

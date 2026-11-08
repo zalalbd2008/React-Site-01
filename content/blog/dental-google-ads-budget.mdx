@@ -2,14 +2,196 @@
 route: "/blog/dental-google-ads-budget/"
 type: "article"
 category: "advertising"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
-title: "Building a Dental Google Ads Budget Around Qualified Inquiries and Attended Visits"
-metaTitle: "Building a Dental Google Ads Budget Around Qualified Inquir…"
-description: "Building a Dental Google Ads Budget Around Qualified Inquiries and Attended Visits. A practical guide for dental practice owners and managers from Alpha Dental…"
-parent: "/blog/"
-primaryIntent: "Building a Dental Google Ads Budget Around Qualified Inquiries and Attended Visits"
-related: ["/services/dental-google-ads-management/","/services/dental-conversion-tracking/"]
+title: "How to Set a Dental Google Ads Budget From Qualified Inquiries and Attended Visits"
+metaTitle: "Dental Google Ads Budget: Work Back From Attended Visits"
+description: "Build a dental Google Ads budget backward from the attended visits you can absorb: funnel assumptions, ad spend versus fees, how Google paces spend and learning periods."
+eyebrow: "Google Ads for dentists"
+lede: "A budget picked as a round number tells you nothing about what it should produce. Working backward from the visits your schedule can take gives a number you can test, and a way to tell whether it is working."
+primaryIntent: "dental Google Ads budget"
+secondaryQuestions:
+  - "How much should a dental practice spend on Google Ads?"
+  - "What is the difference between ad spend and management fees?"
+  - "How does Google spend a daily budget?"
+  - "How long is the Google Ads learning period?"
+  - "Why does conversion volume matter when setting a budget?"
+audience: "Practice owners setting or reviewing a Google Ads budget"
+sources:
+  - "google-ads-daily-budget"
+  - "google-ads-ad-scheduling"
+  - "google-ads-bid-strategy-statuses"
+  - "google-ads-smart-bidding"
+  - "google-ads-target-cpa"
+  - "google-ads-primary-secondary-conversions"
+  - "google-ads-offline-conversions"
+  - "google-ads-keyword-planner"
+  - "google-ads-ai-max"
+related:
+  - "/services/dental-google-ads-management/"
+  - "/services/dental-conversion-tracking/"
+  - "/resources/dental-growth-calculator/"
+  - "/blog/dental-marketing-roi/"
+  - "/blog/dental-google-ads-keyword-match-types/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Daily budget overdelivery (up to 2x per day, 30.4x per month) checked against Google Ads Help 2375423; ad schedule pacing against 2404244; Learning status triggers and 7-day limit against 6263057; 30-conversion evaluation guidance against 7065882 and 6268632; Target CPA behaviour against 6268632; primary/secondary actions and 1–2 conversion cycles against 11461796; offline conversion import and enhanced conversions for leads against 2998031; Keyword Planner forecast caveats against 7337243; AI Max budget note against 15910187. All retrieved 2026-11-08. All funnel rates, costs and fees in the worked example are invented."
 order: 10
+faqs:
+  - q: "How much should a dental practice spend on Google Ads each month?"
+    a: "There is no defensible general figure. Start from how many additional attended new-patient visits the schedule can absorb, then work back through your own attendance, booking and qualification rates and cost per click. The result is a hypothesis to test for two to three months, not a quote."
+  - q: "Are management fees part of the ad budget?"
+    a: "Treat them separately. Ad spend is paid to Google for clicks; management fees pay whoever runs the account. Both belong in cost per attended visit, but mixing them hides whether the media or the management is the cost driver. Ask any provider to show the two lines separately and to confirm the ad account is in the practice's name."
+  - q: "Why did Google spend more than our daily budget?"
+    a: "Google states that on a given day a campaign may spend up to twice its average daily budget to take advantage of traffic fluctuations, but over a month it will not charge more than 30.4 times the average daily budget. A high day is usually balanced by lower days later in the month."
+  - q: "How long should we wait before judging a new budget?"
+    a: "Longer than the Learning label. Google says Learning status lasts no more than 7 days, but recommends evaluating Smart Bidding over periods with at least 30 conversions. For many single-office practices that means one to three months, depending on volume, and longer still for treatments with long decision cycles."
+  - q: "Should the budget optimise toward booked or attended visits?"
+    a: "Ideally toward the closest outcome you can measure reliably. Most accounts start by bidding on qualified calls and forms, then import booked or attended outcomes from the practice's systems as offline conversions once that process works. Bidding on raw clicks or all calls optimises toward volume, not patients."
 ---
+
+<KeyAnswer>Set the budget backward: decide how many additional attended new-patient visits the schedule can absorb, divide by your attendance, booking and qualification rates to get the inquiries and clicks needed, then multiply by an expected cost per click. Keep management fees separate, allow for Google's daily pacing and learning periods, and treat the first number as a test.</KeyAnswer>
+
+This article owns one question: how to arrive at a monthly ad budget from outcomes. Comparing leads, bookings, visits, revenue and profit is covered in [telling dental leads, visits and revenue apart](/blog/dental-marketing-roi/), and the [Dental Growth Calculator](/resources/dental-growth-calculator/) runs the same arithmetic with your own assumptions.
+
+## Why the budget should start from attended visits
+
+Most dental ad budgets start from a number that feels affordable, or from what a provider proposes. Neither says what the money should produce, so there is no point at which anyone can say it is too much, too little or working.
+
+Starting from attended visits fixes that, for three reasons:
+
+1. **It ties spend to capacity.** A practice with room for a handful of extra new patients each month gains nothing from a budget built to produce several times that number. Extra inquiries become longer waits, unanswered calls and wasted spend.
+2. **It exposes the assumptions.** Every step from click to visit is a rate the practice can measure. When results disappoint, you can see which rate was wrong.
+3. **It sets the measurement plan in advance.** If the target is attended visits, someone has to be able to count attended visits that came from ads. That is a [conversion tracking](/services/dental-conversion-tracking/) requirement, not an afterthought.
+
+## The funnel the budget is built on
+
+<Funnel title="From click to attended visit" steps={[
+  { label: "Clicks", note: "Paid visits to the site, plus calls from the ad" },
+  { label: "Inquiries", note: "Calls, forms and booking attempts" },
+  { label: "Qualified inquiries", note: "The service, area and coverage the practice can serve" },
+  { label: "Booked appointments", note: "A time in the schedule" },
+  { label: "Attended visits", note: "The patient arrived and was seen" }
+]} caption="Each stage needs its own count. Stage definitions are in the dental marketing metrics reference." />
+
+The stage definitions are in the [dental marketing metrics reference](/resources/dental-marketing-metrics/). Two of them matter most for budgeting:
+
+- **Qualified inquiry.** Many calls from ads are existing patients, wrong numbers, vendors or people asking about services the practice does not offer. A budget calculated on all inquiries overstates what it buys.
+- **Attended visit.** Booked is not attended. No-shows and cancellations sit between the two and vary by service and by how quickly the practice follows up.
+
+## A worked calculation
+
+<Illustrative title="Working backward from eight additional attended visits">
+An invented single-office general practice says it can take about 8 additional new-patient visits a month from search ads without extending waits beyond two weeks. Its assumptions, which it will replace with measured values after the first months:
+
+- Attended share of booked appointments: 80 percent. 8 attended visits need 8 divided by 0.80 = 10 bookings.
+- Booked share of qualified inquiries: 50 percent. 10 bookings need 10 divided by 0.50 = 20 qualified inquiries.
+- Qualified share of all inquiries: 60 percent. 20 qualified inquiries need 20 divided by 0.60, about 34 inquiries.
+- Inquiries per click: 8 percent. 34 inquiries need 34 divided by 0.08, about 425 clicks.
+- Average cost per click: 7 dollars. 425 clicks cost about 2,975 dollars a month in ad spend.
+
+Ad spend per attended visit is 2,975 divided by 8, about 372 dollars. If management costs 1,200 dollars a month, the total is 4,175 dollars, about 522 dollars per attended visit.
+
+Sensitivity: if only 40 percent of inquiries are qualified instead of 60, the practice needs 50 inquiries, about 625 clicks and about 4,375 dollars in ad spend for the same 8 visits. That one assumption moves ad spend per attended visit from about 372 to about 547 dollars. The fee does not change, so it falls as a share of the total.
+
+Every rate, cost and fee here is invented. They are not benchmarks and should not be used as targets.
+</Illustrative>
+
+The sensitivity line is the useful part. Small changes in early-funnel rates compound, so the largest gains often come from improving qualification and booking, such as answering every call, a better landing page or clearer service pages, rather than from raising spend.
+
+### Where the inputs come from
+
+<DataTable caption="Budget inputs and where to get them" columns={["Input", "Where it comes from", "Common problem"]}
+  rows={[
+    ["Visits the schedule can absorb", "Practice owner and scheduler, by service and day", "Not asked; budget exceeds capacity"],
+    ["Attended share of bookings", "Practice management system, in aggregate", "Booked counted as attended"],
+    ["Booked share of qualified inquiries", "Front desk call log or CRM", "Calls not logged with a source"],
+    ["Qualified share of inquiries", "Call review and form review", "All calls counted as leads"],
+    ["Inquiries per click", "Google Ads conversion data, if tracking is sound", "Page views or short calls counted as conversions"],
+    ["Cost per click", "The account's own history; Keyword Planner estimates for new accounts", "Treating forecasts as commitments"]
+  ]}
+  note="Use the account's own history wherever it exists. Use estimates only for a first test, then replace them." />
+
+For a new account, Google's Keyword Planner gives estimated searches and costs and a performance forecast. Google is clear that campaign performance depends on bids, budget, ad quality, location targeting and customer behaviour, and that some sensitive or very low-volume keywords cannot be forecast. A forecast is a starting point for the cost-per-click assumption, nothing more.
+
+<SourceNote ids={["google-ads-keyword-planner"]} />
+
+## Ad spend, fees and the other costs of a campaign
+
+Ad spend goes to Google. Management fees go to whoever builds and runs the account. Other costs, such as landing page work, call tracking, and staff time answering and logging calls, often sit in neither line. They all count toward cost per attended visit, but they should be reported separately, for two reasons. A provider whose fee is a percentage of ad spend has an incentive to raise spend, so it helps to see whether a proposed increase is backed by the funnel. And a practice comparing proposals needs to compare like with like; the questions to ask are in [choosing a dental marketing agency](/blog/choosing-a-dental-marketing-agency/).
+
+The ad account itself should be in the practice's name, with the practice's billing, so that history and conversion data stay with the practice if the provider changes.
+
+## How Google actually spends the budget
+
+Google Ads budgets are set as an average daily amount, and Google does not spend it evenly:
+
+- **Daily variation.** Google states that on a given day a campaign may spend up to twice its average daily budget to take advantage of fluctuations in traffic.
+- **Monthly ceiling.** Over a month, Google says you will be charged no more than 30.4 times the average daily budget.
+- **Ad schedules.** When a campaign uses an ad schedule, Google says it paces toward a monthly spend of 30.4 times the average daily budget however many days it is active. Limiting ads to weekdays concentrates the month's spend into those days rather than reducing it.
+
+<SourceNote ids={["google-ads-daily-budget", "google-ads-ad-scheduling"]} />
+
+To turn a monthly figure into a setting, divide it by 30.4 to get the average daily budget, and expect individual days well above and below that amount.
+
+A campaign that regularly runs out of budget is a budgeting signal, and it also affects features: Google notes that AI Max will not be effective if a campaign is limited by budget.
+
+<SourceNote ids={["google-ads-ai-max"]} />
+
+## Learning periods and how long to wait
+
+Google shows a "Learning" bid strategy status after major changes. Google states that it never lasts more than 7 days and is triggered by three things: a new or reactivated strategy, a composition change (campaigns, ad groups or keywords added or removed) and a significant change to conversion goals. Google also states that changes to budgets, targets, creatives or targeting settings never trigger Learning status.
+
+<SourceNote ids={["google-ads-bid-strategy-statuses"]} />
+
+The label is not the whole story. Google's guidance on primary conversion actions says to allow one to two conversion cycles after a significant change in the conversion behaviour Smart Bidding optimises toward. Google's Smart Bidding and Target CPA pages recommend evaluating performance over periods with at least 30 conversions.
+
+<SourceNote ids={["google-ads-primary-secondary-conversions", "google-ads-smart-bidding", "google-ads-target-cpa"]} />
+
+This is the practical link between budget and evaluation: the budget decides how many conversions arrive each month, and that decides how quickly anyone can judge the campaign. The deeper in the funnel the conversion you optimise toward, the fewer of them there are and the longer evaluation takes. A smaller budget does not just buy fewer visits; it makes every judgement slower and noisier.
+
+<Illustrative title="How the example's volume affects evaluation">
+Continuing the invented example: the practice expects about 34 inquiries a month. Counting all inquiries as the primary conversion, it would pass 30 conversions in about a month, but that count includes unqualified calls. Counting qualified inquiries, about 20 a month, it needs roughly six to seven weeks to reach 30. Counting bookings, about 10 a month, it needs around three months. Its monthly ad spend of about 2,975 dollars works out to an average daily budget of about 98 dollars, divided by 30.4. Ad spend per qualified inquiry is about 149 dollars, 2,975 divided by 20, which is the natural starting point for a Target CPA set on qualified inquiries. All figures are invented.
+</Illustrative>
+
+<Timeline title="A first budget test" phases={[
+  { when: "Before launch", title: "Set the plan", items: ["Agree visit target and capacity", "Confirm primary conversions count qualified inquiries", "Set up call and form source logging at the front desk"] },
+  { when: "Weeks 1–4", title: "Stabilise", items: ["Weekly search term review", "Fix missed-call and landing page problems", "Avoid structural changes that restart learning"] },
+  { when: "Months 2–3", title: "Measure the funnel", items: ["Replace assumed rates with measured ones", "Recalculate the budget from the visit target", "Decide whether to hold, raise or lower spend"] },
+  { when: "Month 3 onward", title: "Move bidding closer to visits", items: ["Import booked or attended outcomes if the process is reliable", "Review cost per attended visit, ad spend and fees separately"] }
+]} caption="Timings depend on conversion volume. Lower-volume campaigns need longer windows." />
+
+## Bidding toward outcomes that match the budget
+
+The budget calculation assumes the account is optimising toward qualified inquiries. Google's bidding only optimises toward primary conversion actions, those included in the Conversions column; secondary actions are observation only. If primary conversions include page views or very short calls, the budget buys more of those.
+
+<SourceNote ids={["google-ads-primary-secondary-conversions", "google-ads-target-cpa"]} />
+
+Once the practice can reliably record which inquiries were booked and attended, Google's offline conversion import, and the enhanced conversions for leads approach Google now recommends, can bring those outcomes back into the account. That moves bidding closer to attended visits. It involves sending data from the practice's systems to Google, so the practice should decide what is shared with its own privacy and legal advisers; the page does not address healthcare privacy rules.
+
+<SourceNote ids={["google-ads-offline-conversions"]} />
+
+With Target CPA bidding, the target should come from the same calculation: monthly ad spend divided by the number of conversions of the type the campaign optimises toward. Google warns that a target set too low may forgo clicks that could convert, resulting in fewer conversions, so a target well below what the funnel supports tends to limit volume rather than create efficiency.
+
+<SourceNote ids={["google-ads-target-cpa"]} />
+
+## Common budgeting mistakes
+
+- Setting the budget before asking how many new patients the schedule can take.
+- Calculating cost per lead from all calls, including existing patients and wrong numbers.
+- Combining fees and ad spend into one figure, or not knowing who owns the ad account.
+- Judging a new budget after a week because the Learning label has gone.
+- Changing budget, bid strategy and keywords together, so no change can be evaluated.
+- Raising spend to solve a missed-call or landing page problem.
+- Treating Keyword Planner forecasts as promised results.
+
+## Sources and limitations
+
+Budget pacing, learning, bidding and conversion behaviour come from Google Ads Help articles retrieved on 8 November 2026. Google changes these systems and their names; Target CPA labelling changed in June 2026, for example. Google publishes no dental-specific costs, conversion rates or budget guidance, and this article cites none: every rate, cost and fee in the example is invented to show the method. A practice's real rates depend on its market, services, website, phone handling and capacity, and can only come from its own data.
+
+## Next steps
+
+Run your own numbers in the [Dental Growth Calculator](/resources/dental-growth-calculator/), then compare them with what the account actually reports. Our [dental Google Ads management](/services/dental-google-ads-management/) approach builds the budget from the visit target, reports ad spend and fees separately, and sets a review date in advance. Where the funnel cannot yet be measured, [dental conversion tracking](/services/dental-conversion-tracking/) comes first. The [Dental Growth Audit](/dental-marketing-audit/) checks spend, conversion settings and call handling together.

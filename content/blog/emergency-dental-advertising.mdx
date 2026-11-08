@@ -2,14 +2,187 @@
 route: "/blog/emergency-dental-advertising/"
 type: "article"
 category: "advertising"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
-title: "Emergency Dental Advertising Aligned With Real Hours and Capacity"
-metaTitle: "Emergency Dental Advertising Aligned With Real Hours and Ca…"
-description: "Emergency Dental Advertising Aligned With Real Hours and Capacity. A practical guide for dental practice owners and managers from Alpha Dental Media."
-parent: "/blog/"
-primaryIntent: "Emergency Dental Advertising Aligned With Real Hours and Capacity"
-related: ["/services/dental-google-ads-management/"]
+title: "How to Run Emergency Dental Ads That Match Your Real Hours and Capacity"
+metaTitle: "Emergency Dental Ads That Match Real Hours and Capacity"
+description: "Set up emergency dental campaigns around the hours your phones are answered and the same-day slots you actually hold, with honest landing pages and call measurement."
+eyebrow: "Google Ads for dentists"
+lede: "An emergency ad makes a promise about time. If the phone goes to voicemail or the next opening is Thursday, the click is wasted and the patient remembers. The campaign has to be built from the schedule outward."
+primaryIntent: "emergency dental advertising"
+secondaryQuestions:
+  - "Should emergency dental ads run 24 hours a day?"
+  - "How do call assets and ad schedules work together for emergencies?"
+  - "What should an emergency dental landing page promise?"
+  - "How far should emergency dental ads be targeted?"
+  - "How do we measure whether emergency ads produce attended visits?"
+audience: "Practice owners and managers deciding whether and when to advertise emergency appointments"
+sources:
+  - "google-ads-ad-scheduling"
+  - "google-ads-call-assets"
+  - "google-ads-location-assets"
+  - "google-gbp-guidelines"
+  - "google-ads-location-targeting"
+  - "google-ads-target-locations"
+  - "google-ads-misrepresentation"
+  - "google-ads-measure-calls"
+related:
+  - "/services/dental-google-ads-management/"
+  - "/blog/dental-call-tracking/"
+  - "/blog/dental-google-ads-negative-keywords/"
+  - "/services/dental-web-design-conversion/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Ad schedule default and 30.4x pacing checked against Google Ads Help 2404244; call asset scheduling, cost and call reporting against 2453991; location asset data from Business Profile and closed locations against 2404182; Business Profile hours and special hours against 3038177; presence and interest targeting against 2453995 and 1722043; Unavailable offers against the Misrepresentation policy (adspolicy 6020955); call conversion by duration or recording analysis against 6095882. All retrieved 2026-11-08. No clinical triage guidance is given; capacity figures in the example are invented."
 order: 9
+faqs:
+  - q: "Should emergency dental ads run 24 hours a day?"
+    a: "Only if someone can answer the phone and offer a realistic appointment at every hour the ads run. Google campaigns default to running all day, so a practice that does nothing will advertise at 2 a.m. For most practices the honest schedule is business hours plus any staffed on-call window, with ads paused or reworded outside it."
+  - q: "Can a call button show only when the office is answering phones?"
+    a: "Yes. Google lets you schedule a call asset to show only on certain days and hours, for example only when your business is answering calls. Ads can still show outside those hours if the campaign schedule allows, so align the campaign schedule and the call asset schedule deliberately."
+  - q: "Is it a problem to say same-day emergency appointments if we cannot always offer them?"
+    a: "It can be. Google's Misrepresentation policy prohibits promising services or offers in ads that are unavailable or not easily found from the destination. Describe what is true, such as same-day appointments when available and how to check, and pause the promise on days when the schedule is full."
+  - q: "How should we count emergency ad results?"
+    a: "Count answered calls from ads separately from missed ones, then how many became booked emergency visits and how many attended. Google can count a call as a conversion by duration or by AI analysis of recordings, but neither knows whether the patient was seen. That comes from the practice's own schedule."
 ---
+
+<KeyAnswer>Run emergency dental ads only during hours when someone answers the phone and same-day slots really exist. Set the campaign ad schedule and call asset schedule to those hours, keep Business Profile hours accurate, target the distance a patient in pain will travel, and make the landing page say exactly what is available. Measure answered calls and attended visits, not clicks.</KeyAnswer>
+
+Emergency searches are among the most time-sensitive a practice can buy. The searcher usually wants to talk to someone now and be seen soon, which makes the ad's value depend almost entirely on operations: phone coverage, open slots and the team's willingness to fit someone in. This article covers how to align a campaign with those constraints. Measuring calls without counting every ring as a new patient has its own article: [dental call tracking](/blog/dental-call-tracking/).
+
+## Start with a capacity definition, not a campaign
+
+Before any setting is changed, the practice needs to write down what "emergency availability" means in its own schedule. The marketing team cannot infer it, and the answer usually differs by day of the week.
+
+<Checklist title="Emergency capacity questions to answer before advertising" items={[
+  "How many emergency slots are held open each day, and on which days",
+  "When held slots are released to regular patients if no emergency calls",
+  "Who answers the phone at each hour, including lunch and the last hour of the day",
+  "Whether there is an after-hours on-call arrangement, and what it can actually offer",
+  "Which emergencies the clinical team will and will not see, decided by the dentists, not the marketing team",
+  "Whether new patients are accepted as emergencies, or only existing patients",
+  "What payment or insurance information callers are told up front",
+  "How the front desk records that a booked visit came from an emergency call",
+  "What happens on days when a dentist is out and capacity drops"
+]} />
+
+The clinical scope question matters for the landing page as well as the schedule. What the practice says about swelling, trauma or when to go to a hospital is a clinical decision for the dentists to write or approve. Marketing should present that content accurately, not draft it.
+
+## Matching the campaign to the hours
+
+Google Ads gives a practice three settings that control when an emergency ad can reach a caller, and they need to agree with each other.
+
+**The campaign ad schedule.** Google states that campaigns are set to show ads "All day" by default. An ad schedule can restrict days and hours, or apply bid adjustments to particular times. When a schedule is used, Google says the campaign paces toward a monthly spend of 30.4 times the average daily budget regardless of how many days it is active, so a schedule concentrates spend into fewer hours rather than reducing the monthly total.
+
+<SourceNote ids={["google-ads-ad-scheduling"]} />
+
+**The call asset schedule.** Google lets advertisers set phone numbers to appear only when the business can accept calls, and under advanced options to schedule the call asset for certain days and hours. Call clicks cost the same as headline clicks. If the campaign runs at hours when the call asset is off, the ad can still appear, just without the call button, which suits a page that offers online booking requests overnight.
+
+<SourceNote ids={["google-ads-call-assets"]} />
+
+**Location assets and Business Profile hours.** Google says location asset data, including hours, comes from Google Business Profile and Maps, and that locations marked temporarily or permanently closed will not show as location assets. The Business Profile guidelines ask for regular customer-facing hours and allow special hours for holidays and other events. Inaccurate profile hours therefore show up inside the ads too.
+
+<SourceNote ids={["google-ads-location-assets", "google-gbp-guidelines"]} />
+
+### Four time bands most practices should plan for
+
+<DataTable caption="Aligning emergency ads with what is true at each time" columns={["Time band", "What is true", "Ad and call asset", "Landing page message"]}
+  rows={[
+    ["Open, slots available", "Phones answered; same-day emergency slots open", "Campaign on; call asset on; bids at normal or raised levels", "Call now for a same-day appointment when available"],
+    ["Open, slots full", "Phones answered; no same-day capacity left", "Pause or lower bids; or switch to ads that do not promise same day", "Call to be seen at the next available time; state the realistic wait"],
+    ["Closed, staffed on-call", "A person answers; limited options", "Campaign on only if on-call can genuinely help; call asset on", "Describe exactly what on-call provides and what it does not"],
+    ["Closed, no one answers", "Voicemail or answering service only", "Campaign off, or ads without a call button pointing to a request form", "Request an appointment for the next opening; state when the office reopens"]
+  ]}
+  note="The slots-full band is the one the ad schedule cannot detect on its own. It needs a person to pause or adjust the campaign, or an agreed rule." />
+
+The "open, slots full" band is the hardest. An ad schedule knows the clock, not the appointment book. A practice whose emergency slots are often gone by 11 a.m. either needs a front-desk habit of signalling when they fill, or an ad message that does not promise same day.
+
+## Targeting the distance a patient will travel
+
+Emergency intent is local. A patient in pain is less likely to drive across a metro area than one shopping for aligners, so emergency campaigns usually justify tighter geography than other campaigns.
+
+Google offers two targeting bases: people in or regularly in the locations you target ("presence"), and people who have shown interest in those locations. The default advanced option uses both. Google recommends "Presence or Interest" for Search in general, but its own help page says Presence targeting makes sense when you only want people in specific locations rather than people elsewhere who are interested in them. An emergency campaign for one office is a reasonable case for Presence.
+
+<SourceNote ids={["google-ads-location-targeting", "google-ads-target-locations"]} />
+
+Google also warns that a very small radius or location may serve only intermittently or not at all, because small targets may not meet its targeting criteria. Tight is good; tiny can mean no delivery. Check the campaign's geographic report after a few weeks to see where clicks and calls actually came from.
+
+<SourceNote ids={["google-ads-target-locations"]} />
+
+## Writing a landing page that keeps the ad's promise
+
+Google's Misrepresentation policy includes "Unavailable offers": promising products, services or offers in the ad that are unavailable or not easily found from the destination is not allowed. For emergency dentistry, the obvious risk is an ad that says same-day or 24/7 when the practice cannot deliver it.
+
+<SourceNote ids={["google-ads-misrepresentation"]} />
+
+Beyond policy, an honest emergency page tends to be shorter and more practical than a general service page:
+
+- **The phone number first, and the hours it is answered**, in text, not only in a button.
+- **What same-day means here**: for example, "we hold emergency appointments each weekday and fill them in order of calls", if that is true.
+- **What happens after hours**, stated plainly, including whether anyone answers.
+- **Who the practice sees**: new patients, existing patients, children, and any insurance limits.
+- **What to bring and what it may cost**, to the extent the practice is willing to say.
+- **Clinical guidance only if the dentists wrote or approved it.**
+
+Page speed and the mobile call path matter more here than on almost any other page; the website side is covered by the [dental web design and conversion service](/services/dental-web-design-conversion/).
+
+## Deciding when emergency ads should run
+
+<DecisionTree title="Should emergency ads run in this time window?" q="Will a person answer the phone during this window?" branches={[
+  { answer: "No", q: "Is there a way to request the next available appointment online?", branches: [
+      { answer: "Yes", outcome: "Optional: run ads without a call asset, with the page clearly saying when the office reopens. Otherwise pause." },
+      { answer: "No", outcome: "Pause emergency ads for this window." } ] },
+  { answer: "Yes", q: "Is there a realistic appointment to offer today or by the next morning?", branches: [
+      { answer: "Yes", outcome: "Run the campaign with the call asset on, and say same-day only if it is true." },
+      { answer: "No", outcome: "Lower bids or switch to ads that promise a quick callback and the next available time, not same day." } ] }
+]} />
+
+<Illustrative title="A practice with two emergency slots a day">
+An invented three-chair general practice holds two emergency slots each weekday, at 10:30 and 15:00, released at 13:00 and 16:00 if unused. The front desk answers from 7:45 to 17:00 with a lunch gap of 12:00 to 13:00 covered by an answering service. There is no after-hours on-call.
+
+The emergency campaign is scheduled Monday to Friday 7:45 to 16:00, with the call asset scheduled 7:45 to 12:00 and 13:00 to 16:00. Over lunch, ads still show but without the call button and point to a short request form. A front-desk rule says: when both slots are booked, message the person managing the account, who lowers bids until the next day. The landing page says "Two emergency appointments held each weekday; calling earlier in the day makes a same-day visit more likely."
+
+After a month, the practice compares answered calls from ads, emergency bookings and attended emergency visits, by hour. If most booked emergencies come from calls before 10:00, it can concentrate budget there. All times and slot counts are invented.
+</Illustrative>
+
+## Measuring emergency campaigns
+
+Google can count a call from an ad as a conversion in two ways: by counting calls longer than a minimum duration the advertiser sets, or by using Google's AI to analyse call recordings for lead quality, where recording is available and enabled. Call reporting uses Google forwarding numbers. Whether recording calls to a dental practice is appropriate is a privacy and legal question the practice should decide with its own counsel before turning it on.
+
+<SourceNote ids={["google-ads-measure-calls", "google-ads-call-assets"]} />
+
+Neither method knows whether the caller was seen. The useful chain for emergency ads is:
+
+<Funnel title="Emergency ad results, from click to attended visit" steps={[
+  { label: "Calls from ads", note: "All calls, answered and missed" },
+  { label: "Answered calls", note: "From the phone system, by hour" },
+  { label: "Emergency bookings", note: "Recorded by the front desk with the source" },
+  { label: "Attended emergency visits", note: "From the schedule" },
+  { label: "Follow-on treatment accepted", note: "Optional, from the practice management system, in aggregate only" }
+]} caption="Missed calls during ad hours are the clearest sign the schedule and staffing do not match." />
+
+Definitions for each stage are in the [dental marketing metrics reference](/resources/dental-marketing-metrics/). The most useful single report for an emergency campaign is answered versus missed calls from ads by hour of day, because it shows directly whether advertising and staffing line up.
+
+## Tradeoffs and common mistakes
+
+Running emergency ads only when capacity exists means fewer impressions and accepting that some emergency demand goes to other practices. Running them all day buys more calls, but some of them reach voicemail or a full schedule, which costs money and can produce frustrated reviews. There is no setting that removes the tradeoff; the choice should follow the practice's capacity.
+
+Common mistakes:
+
+- Leaving the campaign at the default all-day schedule.
+- Scheduling the campaign but not the call asset, or the reverse.
+- Business Profile hours that differ from the website and the ads, especially around holidays.
+- Promising same-day or 24/7 on the ad or page when it is not consistently true.
+- Excluding "emergency" as a negative keyword everywhere instead of controlling it by schedule; see [dental negative keywords](/blog/dental-google-ads-negative-keywords/).
+- Counting every call from an ad as an emergency patient.
+
+## Sources and limitations
+
+Settings and policies come from Google Ads Help, Google Advertising Policies Help and Business Profile Help pages retrieved on 8 November 2026. Google changes features and policy wording without dated changelogs. Google publishes no dental-specific emergency guidance, and this article gives no clinical advice: what counts as a dental emergency, and what the practice tells patients about urgent symptoms, are clinical decisions. No call volumes, costs or conversion rates are cited because no dated, dental-specific source was available; the example is invented.
+
+## Next steps
+
+Emergency campaigns are often the simplest place to find waste, because the hourly missed-call report makes mismatches visible. Our [dental Google Ads management](/services/dental-google-ads-management/) work sets schedules, call assets and messaging from a written capacity definition the practice approves. The [Dental Growth Audit](/dental-marketing-audit/) reviews ad hours, call handling and profile hours together.

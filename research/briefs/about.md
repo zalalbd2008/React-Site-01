@@ -13,4 +13,5 @@
 - **Evidence status:** none-required
 - **Proposed visual and its purpose / data:** None (company page).
 - **CTA and next-step deliverables:** Audit; contact.
-- **Gaps / what needs client data:** External research was attempted on 2026-11-08 but developers.google.com, developers.google.cn, support.google.com and www.ftc.gov did not resolve from this session (proxy/DNS block); WebSearch worked but returned only secondary summaries, which are not citable. No sources were therefore cited, and the page avoids platform-specific or statistical claims. Owner inputs #1 (legal name; any relationship with WevTEC / Fix Website Issues / Bizzsol LLC — deliberately not mentioned), #4 contact details, #5 leadership, #8 case studies.
+- **Gaps / what needs client data:** Owner inputs #1 (legal name; any relationship with WevTEC / Fix Website Issues / Bizzsol LLC — deliberately not mentioned), #4 contact details, #5 leadership, #8 case studies.
+- **Visual:** none added — the 'will and will not claim' list already does the job; a Checklist would duplicate it.

@@ -63,10 +63,10 @@ Short labels only; no wording is to be reused.
 
 ## 4. Content and article observations
 
-- **Bylines:** of 11 agencies where an article was checked, **5 showed a named author** (A3, A5, A7, A9, A11), 1 used a generic company-employee byline (A2) and 5 showed a date but no visible author (A1, A4, A8, A10, and A7's software page). Only **1** article (A9) showed both a published and a "last updated" date to readers. No article viewed named a reviewer.
+- **Bylines:** of 10 agencies where an article was checked (A6's article URL returned 404; A12 and A13 not checked), **5 showed a named author** (A3, A5, A7, A9, A11), 1 used a generic company-employee byline (A2) and 4 showed a date but no visible author (A1, A4, A8, A10). Only **1** article (A9) showed both a published and a "last updated" date to readers. No article viewed named a reviewer.
 - **Answer-first format:** one article (A9) opened with a labelled quick answer and a worked example; one AI-search service page (A11) answered buyer objections in FAQ form. Most service pages front-load benefits and push FAQs to the end.
 - **Freshness signals:** structured-data `dateModified` values ranged from 2021 (A12 homepage) to the observation week (A9, A11, A4). Several agencies updated AI-search pages in Oct–Nov 2026.
-- **AI search:** 10 of 13 sampled agencies list an AI-search/GEO/AEO service or mention it on the homepage. Only A11 stated what is measured (citations, share of voice by prompt set, engines monitored) and that results cannot be promised; only A6 published a priced, time-boxed baseline/re-measure design.
+- **AI search:** 8 of 13 sampled agencies list an AI-search/GEO/AEO service or mention it on the pages viewed (A1, A2, A3, A5, A6, A8, A9, A11); A10 and A12 market AI tools for other purposes (marketing operations, phones). Only A11 stated what is measured (citations, share of voice by prompt set, engines monitored) and that results cannot be promised; only A6 published a priced, time-boxed baseline/re-measure design.
 
 ## 5. Limitations
 

@@ -17,7 +17,11 @@ audience: "Practice owners, managers and dental group leads comparing dental mar
 parent: "/"
 author: "editorial-team"
 reviewer: null
-sources: []
+sources:
+  - "google-gbp-local-ranking"
+  - "google-ads-search-terms-report"
+  - "google-ai-features-search"
+  - "openai-crawlers"
 related:
   - "/dental-marketing-audit/"
   - "/our-process/"
@@ -25,8 +29,8 @@ related:
 cta: "audit"
 published: null
 updated: null
-evidence: "none-required"
-verificationNotes: "Describes the nine services in docs/business-facts.md as methodology only. No prices, timelines or results are stated. Owner input #6 (confirmation that each service is currently delivered) is still open."
+evidence: "sourced"
+verificationNotes: "Platform statements in the table and service groups checked on 2026-11-08 against Google Business Profile Help (local ranking), Google Ads Help (search terms report), Google Search Central (AI features) and OpenAI crawler docs. Describes the nine services in docs/business-facts.md as methodology only. No prices, timelines or results are stated. Owner input #6 (confirmation that each service is currently delivered) is still open."
 toc: true
 faqs: []
 ---
@@ -48,16 +52,18 @@ The services below map to those questions. They overlap deliberately, because a 
 <DataTable caption="Common problem → first service to look at → why" columns={["What the practice is experiencing", "First service to look at", "Why start there"]}
   rows={[
     ["Reports show leads, but the schedule does not reflect them", "Conversion tracking and attribution", "Until inquiries, bookings and attended visits are separated, nobody can tell whether marketing is working"],
-    ["The practice is missing from map results near its own office", "Local SEO and Google Business Profile", "Profile accuracy, categories and eligibility usually decide map visibility before website work does"],
+    ["The practice is missing from map results near its own office", "Local SEO and Google Business Profile", "Google ranks local results mainly on relevance, distance and prominence, and says incomplete or inaccurate profiles may not show for relevant nearby searches"],
     ["New-patient inquiries are needed within weeks, and there is budget for spend", "Google Ads management", "Paid search reaches people searching now, as long as landing pages and phones are ready for them"],
     ["Plenty of visitors, few calls or booking requests", "Website design and conversion", "More traffic will not fix a booking path that fails on a phone or pages that avoid cost and insurance questions"],
     ["The site ranks for the practice name but not for treatments or nearby areas", "Dental SEO", "Technical, content and local relevance issues on the website limit which searches it can appear for"],
     ["Several offices with inconsistent listings, pages and reports", "Multi-location dental SEO", "Group-scale problems need a location register, a page structure and per-office reporting"],
     ["Treatment pages are thin, duplicated or out of date", "Content marketing", "Useful, specific pages give both patients and search engines something to judge the practice on"],
     ["Rating or review volume lags nearby practices, or a negative review is causing concern", "Reputation management", "A steady, compliant request process and careful responses change what prospective patients read"],
-    ["AI assistants describe the practice inaccurately or not at all", "AI search optimization", "Answers draw on the same public facts as search; correcting and clarifying those facts is the controllable part"]
+    ["AI assistants describe the practice inaccurately or not at all", "AI search optimization", "Google says AI Overviews and AI Mode need no special optimization beyond SEO fundamentals; crawl access and accurate public facts are the controllable parts"]
   ]}
   note="A starting point, not a diagnosis. Two problems often share a cause, so the audit checks the chain end to end before recommending spend." />
+
+<SourceNote ids={["google-gbp-local-ranking", "google-ai-features-search", "openai-crawlers"]} />
 
 ## How the services fit together
 
@@ -65,7 +71,9 @@ The nine services fall into four groups.
 
 **Measurement.** [Conversion tracking and attribution](/services/dental-conversion-tracking/) is the foundation. It separates calls, forms and bookings, distinguishes new from existing patients where your systems allow, and reconciles marketing data with the schedule. We usually check it first whatever else is planned.
 
-**Visibility.** [Dental SEO](/services/dental-seo-company/) covers the website's technical health, page relevance and local signals. [Local SEO and Google Business Profile](/services/dental-local-seo-google-business-profile/) focuses on a single practice's map presence and listings. [Multi-location dental SEO](/services/local-seo-multi-location-clinics/) applies the same disciplines across a group, where consistency and structure matter most. [Google Ads management](/services/dental-google-ads-management/) buys visibility directly for the services and areas you choose, and [AI search optimization](/services/dental-ai-search-optimization/) looks at how AI assistants and AI search features describe the practice.
+**Visibility.** [Dental SEO](/services/dental-seo-company/) covers the website's technical health, page relevance and local signals. [Local SEO and Google Business Profile](/services/dental-local-seo-google-business-profile/) focuses on a single practice's map presence and listings. [Multi-location dental SEO](/services/local-seo-multi-location-clinics/) applies the same disciplines across a group, where consistency and structure matter most. [Google Ads management](/services/dental-google-ads-management/) buys visibility directly for the services and areas you choose, and its search terms report shows which actual searches triggered the ads (Google omits low-volume terms for privacy, so it never shows everything). [AI search optimization](/services/dental-ai-search-optimization/) looks at how AI assistants and AI search features describe the practice.
+
+<SourceNote ids={["google-ads-search-terms-report"]} />
 
 **Conversion.** [Website design and conversion](/services/dental-web-design-conversion/) is about whether a visitor on a phone can understand the offer and act. [Content marketing](/services/dental-content-marketing/) produces the treatment, location and practice pages that answer patients' real questions; any clinical statements are reviewed by your own clinicians.
 

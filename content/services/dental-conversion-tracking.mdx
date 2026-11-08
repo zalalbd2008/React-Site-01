@@ -2,14 +2,212 @@
 route: "/services/dental-conversion-tracking/"
 type: "service"
 serviceId: "S9"
-status: "Planned"
+status: "Drafted"
 author: "editorial-team"
 reviewer: null
-title: "Dental Conversion Tracking and Attribution"
+title: "Dental Conversion Tracking and Marketing Attribution"
 navLabel: "Dental Conversion Tracking and Attribution"
-metaTitle: "Dental Conversion Tracking and Attribution"
-description: "Dental Conversion Tracking and Attribution for dental practices and dental groups: diagnosis, deliverables, dependencies and reporting from Alpha Dental Media."
+metaTitle: "Dental Conversion Tracking and Attribution | Alpha Dental Media"
+description: "How Alpha Dental Media sets up dental marketing measurement: inquiry definitions, call and form tracking, booking stages, offline imports and privacy-aware tagging."
+eyebrow: "Measurement and attribution"
+lede: "Conversion tracking for a dental practice should answer one question honestly: which marketing produced patients who booked and attended? This page explains how we would audit your current measurement, what we would set up, where privacy rules limit what can be tracked, and what your team needs to record."
 parent: "/services/"
 primaryIntent: "Dental marketing attribution and conversion tracking"
+secondaryQuestions:
+  - "How should a dental practice define a conversion?"
+  - "How do you connect Google Ads and Analytics to booked and attended appointments?"
+  - "What does the HHS online tracking guidance mean for dental websites after the 2024 court ruling?"
+  - "Can a dental practice use offline conversion imports?"
+  - "What does the front desk need to record for attribution to work?"
+audience: "Practice owners, practice managers, dental groups and DSOs who want marketing reports they can trust"
+sources:
+  - "ga4-key-events-vs-conversions"
+  - "google-ads-primary-secondary-conversions"
+  - "google-ads-call-reporting"
+  - "google-ads-measure-calls"
+  - "google-ads-offline-conversions"
+  - "google-ads-enhanced-conversions-leads"
+  - "ga4-consent-mode"
+  - "ga4-avoid-pii"
+  - "ecfr-45-cfr-160-103"
+  - "nixon-peabody-ocr-tracking-2024"
+  - "aha-v-becerra-opinion-2024"
+  - "aha-news-hhs-no-appeal-2024"
+  - "ecfr-16-cfr-318"
+  - "ca-penal-code-632"
+related:
+  - "/blog/dental-call-tracking/"
+  - "/blog/dental-marketing-roi/"
+  - "/blog/measuring-ai-referrals-and-citations/"
+  - "/blog/dental-group-marketing-dashboard/"
+  - "/resources/dental-marketing-metrics/"
+  - "/dental-marketing-audit/"
+cta: "audit"
+published: null
+updated: null
+evidence: "sourced"
+verificationNotes: "Checked on 2026-11-08 against Google Analytics Help (conversions vs key events, consent mode, avoiding PII), Google Ads Help (primary and secondary conversions, call reporting, measuring calls, offline conversion imports, enhanced conversions for leads), eCFR (45 CFR 160.103; 16 CFR Part 318), the AHA v. Becerra opinion (N.D. Tex., June 20, 2024) on GovInfo, AHA News (August 29, 2024) and a Nixon Peabody alert (July 3, 2024). The HHS OCR tracking-technologies bulletin page on hhs.gov could not be retrieved from this environment, so its current text is described only through the court opinion and legal commentary; status after 2024 must be rechecked before Fact-checked. No compliance claims are made. The worked example is illustrative."
 order: 9
+faqs:
+  - q: "Is Google Analytics HIPAA-compliant for a dental practice?"
+    a: "We do not describe any tool that way, and you should be wary of anyone who does. Whether a tag creates a HIPAA problem depends on what it collects, on which pages, what agreements exist with the vendor and how the practice is regulated. We design tagging to keep health and identifying information out of analytics and ask your counsel to approve the configuration."
+  - q: "Why does Google Ads report more conversions than we have new patients?"
+    a: "Usually because the account counts actions that are not new-patient inquiries: every phone-number click, short calls, existing patients calling about appointments, duplicate form tags or page views. Google treats primary conversion actions as the goal for bidding, so loose definitions also steer spend toward the wrong outcome. Narrowing primary conversions is normally the first fix."
+  - q: "Do we need call tracking numbers on our website?"
+    a: "Not always. Google's call reporting already measures calls from ads using forwarding numbers. Website call tracking helps if you need to know which channel produced a call, but dynamic numbers must not break the practice's name, address and phone consistency in listings. We decide case by case and keep the main number on the Business Profile."
+  - q: "Can you track which patients came from which ad?"
+    a: "Not at the patient level, and we would not want that information. Attribution can be done with click identifiers and booking stages recorded in the practice's systems, then shared with Google as anonymous counts or identifiers where counsel agrees. Our reports show totals by channel and stage, never names, charts or treatment details."
+  - q: "What happened to the HHS guidance on tracking technologies?"
+    a: "In June 2024 a federal court in Texas vacated the part of the HHS bulletin covering an IP address combined with a visit to an unauthenticated health-related page, and HHS withdrew its appeal in August 2024. Other parts of the bulletin, such as those on patient portals and authenticated pages, were not vacated. Confirm current status with your counsel."
+  - q: "Should we record calls to judge lead quality?"
+    a: "Only after legal review. Google Ads can classify calls by analysing recordings, but recording patient calls involves consent rules that vary by state — California, for example, generally requires the consent of all parties to record a confidential telephone call — as well as HIPAA questions. Many practices can classify calls adequately from duration and front-desk outcome codes instead."
+  - q: "How long before the reports are reliable?"
+    a: "Tagging can be corrected quickly, but reliable outcome data needs a full reporting cycle of consistent front-desk recording, and longer for low-volume treatments such as implants. We report the date each definition changed so that months before and after the change are never compared as if they measured the same thing."
+  - q: "Do we need a CRM, or is our practice management software enough?"
+    a: "Many single practices can manage with the practice management system's referral source field, a simple inquiry log and consistent use. A CRM or call-tracking platform helps when there are several offices, a central call team or a high volume of unbooked inquiries to follow up. Either way, any system holding patient information needs your privacy review first."
 ---
+
+<KeyAnswer>Dental conversion tracking should separate inquiries, qualified inquiries, booked appointments and attended visits, and connect each stage to the marketing channel that started it. We audit what your tags and ad accounts currently count, redefine conversions around real new-patient inquiries, add booking and attendance stages from the practice's records, and configure tracking so that health information stays out of marketing tools.</KeyAnswer>
+
+## The measurement problem, and our direct recommendation
+
+Most dental marketing reports measure activity and call it success. A "conversion" in Google Ads might be a click on the header phone number from an existing patient. A "lead" from a call-tracking tool might be a 12-second wrong number. A "new patient" in a monthly report might be estimated rather than counted. When those figures feed budget decisions and automated bidding, the practice spends more on whatever is easiest to count.
+
+Our recommendation is to define four stages before buying any tool: an **inquiry** (a real attempt to contact the practice about care), a **qualified inquiry** (a prospective patient for a service you offer, in your area), a **booked appointment** (confirmed in the scheduling system) and an **attended visit** (the patient came in). Marketing platforms can measure the first stage. Only the practice can measure the last two. Attribution is the work of joining them without moving patient information into marketing systems.
+
+For how these stages relate to revenue and profit, see [telling leads, bookings, visits and revenue apart](/blog/dental-marketing-roi/); the [metrics glossary](/resources/dental-marketing-metrics/) holds the definitions we use.
+
+## How we audit current tracking
+
+### What is being counted, and where
+
+We list every conversion action in Google Ads, every key event in Google Analytics 4 and every source of "leads" in other tools. Google now uses "key event" in Analytics for an action important to the business, and reserves "conversion" for actions used to measure ad campaigns and optimise bidding. In Google Ads, primary conversion actions are used for bidding and reporting while secondary actions are observed only. Audits often find page views, scroll depth and duplicate form tags marked as primary.
+
+<SourceNote ids={["ga4-key-events-vs-conversions", "google-ads-primary-secondary-conversions"]} />
+
+### Whether calls are measured or merely counted
+
+Calls are where most dental inquiries happen and where measurement is weakest. Google's call reporting uses Google forwarding numbers on ads to record call duration, start time, caller number and whether the call connected, and lets advertisers count calls above a set duration as conversions. Google can also classify calls by analysing recordings where recording is enabled in the US and Canada. A duration threshold filters out wrong numbers but still counts existing-patient calls, so we look at what share of qualifying calls the front desk would recognise as new-patient inquiries. The method is explained in [measuring dental calls without counting every call as a new patient](/blog/dental-call-tracking/).
+
+<SourceNote ids={["google-ads-call-reporting", "google-ads-measure-calls"]} />
+
+### Whether forms and bookings confirm
+
+We submit every form and attempt every online booking on a phone, then check what fires: a tag on button click (which counts failed submissions), a tag on a thank-you page (which counts reloads) or a confirmed server response. We also check that the practice actually receives the submission and that someone follows it up.
+
+### Whether anything leaks into analytics that should not
+
+Google's own policies prohibit sending personally identifiable information such as email addresses or phone numbers to Analytics, and Google notes that it often leaks through page URLs and titles. On dental sites, booking confirmation URLs, form query strings and appointment page titles can carry names, phone numbers or the treatment requested. We crawl the site and review the data streams for this.
+
+<SourceNote ids={["ga4-avoid-pii"]} />
+
+<DataTable caption="Tracking audit: what we test and why it matters" columns={["Check", "What a weak setup looks like", "Why it matters", "Typical fix"]} rows={[
+  ["Primary conversions in Google Ads", "Header phone clicks, page views or all calls set as primary", "Bidding optimises toward easy, low-value actions", "Narrow primary actions; move others to secondary"],
+  ["Call measurement", "Every call counted regardless of length or caller", "Existing patients and wrong numbers inflate results", "Duration threshold plus front-desk outcome codes"],
+  ["Form and booking events", "Tag fires on click or page reload", "Failed or duplicate submissions counted", "Fire on confirmed submission only"],
+  ["URLs and page titles", "Names, phone numbers or treatment in query strings", "Personal and possibly health information reaches analytics vendors", "Remove from URLs; redaction; tag review with counsel"],
+  ["Practice records", "No referral source or inconsistent entry", "No way to connect marketing to bookings", "Agreed source list and entry rule at booking"]
+]} note="Audit framework. Findings vary by website platform, booking system and team process." />
+
+## Privacy and consent: what limits dental tracking
+
+This is the part of the work where we are most careful, and where the practice's own counsel has the final word. We describe the landscape; we do not certify any configuration as compliant.
+
+**Is the practice a HIPAA covered entity?** HIPAA's definition of a covered entity includes a health care provider that transmits health information electronically in connection with a covered transaction — which describes most practices that bill dental insurance electronically. Your counsel should confirm your status, because it shapes everything below.
+
+<SourceNote ids={["ecfr-45-cfr-160-103"]} />
+
+**The HHS tracking-technologies bulletin and the 2024 ruling.** HHS's Office for Civil Rights issued a bulletin in December 2022, updated in March 2024, on covered entities' use of tracking technologies such as cookies and pixels on websites, patient portals and apps. On June 20, 2024, the US District Court for the Northern District of Texas, in *American Hospital Association v. Becerra*, declared unlawful and vacated one part of the March 2024 bulletin: the position that an IP address combined with a visit to an unauthenticated public webpage addressing specific health conditions or health care providers is individually identifiable health information. HHS filed an appeal and then withdrew it in August 2024. Legal commentary at the time noted that the rest of the bulletin — including its treatment of authenticated pages such as patient portals — remained as subregulatory guidance.
+
+<SourceNote ids={["aha-v-becerra-opinion-2024", "aha-news-hhs-no-appeal-2024", "nixon-peabody-ocr-tracking-2024"]} />
+
+We could not retrieve the current HHS bulletin page while preparing this page, so we do not describe its present wording. In practice, the ruling narrowed one scenario; it did not make every marketing tag on a dental website risk-free. Pages behind a login, appointment request forms, booking flows and anything that pairs an identifier with a treatment or condition still need careful review. State privacy and wiretap laws are separate from HIPAA and can apply to the same tags.
+
+**Consent banners and consent mode.** Google's consent mode passes a visitor's choices from a consent banner to Google tags so they adjust their behaviour; it does not provide the banner, and it is not in itself a HIPAA safeguard. We configure it where the practice uses a consent platform, but treat it as one layer, not the answer.
+
+<SourceNote ids={["ga4-consent-mode"]} />
+
+**The FTC Health Breach Notification Rule.** The FTC rule applies to vendors of personal health records and related entities, and states that it does not apply to HIPAA-covered entities or to entities acting as their business associates. It is mostly relevant if a practice or group runs consumer health apps or tools outside its HIPAA activities — another question for counsel.
+
+<SourceNote ids={["ecfr-16-cfr-318"]} />
+
+**Call recording.** Recording calls to judge inquiry quality brings in state consent law as well as HIPAA. California, for example, generally makes it an offence to record a confidential telephone communication without the consent of all parties. We default to duration thresholds and front-desk outcome codes, and only enable recording-based classification after legal review.
+
+<SourceNote ids={["ca-penal-code-632"]} />
+
+<Callout title="What we will and will not do" tone="caution">
+We design tracking to keep patient names, contact details, treatments and conditions out of analytics and advertising platforms, document every tag and what it collects, and ask the practice's counsel to approve the configuration and any vendor agreements. We do not describe any setup as "HIPAA-compliant", and we never need patient-level data to produce reports.
+</Callout>
+
+## What the service delivers
+
+- **A measurement plan** naming each stage, its definition, its source system and its owner.
+- **Clean conversion actions** in Google Ads and key events in Analytics, with primary actions limited to genuine inquiries.
+- **Call measurement** using ad call reporting, duration thresholds and, where useful, website call tracking that does not disturb listing consistency.
+- **Form and booking events** that fire only on confirmed submissions, with no personal data in URLs or event parameters.
+- **A front-desk recording standard**: a short referral-source list, outcome codes for inquiries (new patient booked, existing patient, not a fit, no answer) and a rule for when to enter them.
+- **Offline outcome imports, where appropriate.** Google Ads supports importing offline conversions using the Google click identifier saved with an inquiry, so bidding can learn from booked or attended appointments. Google now recommends enhanced conversions for leads, which matches imported outcomes using hashed data such as email addresses, and notes that from June 15, 2026 offline conversion and enhanced-conversions-for-leads uploads move to the Data Manager API. Sending any patient-derived data to Google — even hashed — is a decision for the practice and its counsel; where it is not approved, we import counts or use click identifiers only, or report outcomes outside the ad platform.
+- **A monthly report** that separates the four stages by channel and office, with a change log.
+
+<SourceNote ids={["google-ads-offline-conversions", "google-ads-enhanced-conversions-leads"]} />
+
+## Implementation sequence
+
+<Lanes title="Who does what during setup" lanes={[
+  { title: "Alpha Dental Media", items: ["Audit tags, conversion actions and URLs", "Write the measurement plan and outcome codes", "Rebuild conversion actions and key events", "Configure call reporting and form events", "Build the monthly report"] },
+  { title: "Practice team", items: ["Agree inquiry and qualified-inquiry definitions", "Record referral source and outcome codes at booking", "Export monthly totals of bookings and attended visits", "Tell us about new forms, phone systems or booking tools"] },
+  { title: "Practice counsel and vendors", items: ["Confirm HIPAA status and applicable state laws", "Review tags, consent setup and any data sent to platforms", "Review vendor agreements, including business associate agreements", "Approve or decline call recording and offline imports"] }
+]} caption="The sequence runs left to right in practice: audit, then definitions agreed with the team, then counsel review, then configuration and the first report." />
+
+## Dependencies and owner responsibilities
+
+Attribution fails most often at the front desk, not in the tag manager. If referral source is skipped when the phone is busy, or entered as "Google" for every patient, no software can recover it. We keep the recording burden small — one field, a short list, one outcome code — and we ask the practice manager to own its consistency.
+
+<Checklist title="Before tracking work starts" items={[
+  "Owner access to Google Ads, Google Analytics, Tag Manager and the website, granted to us at the lowest role needed",
+  "A named staff member responsible for referral-source and outcome entry",
+  "A decision on whether counsel will review tagging and vendor agreements — we recommend it",
+  "A list of every phone number, form, booking tool and office the practice uses",
+  "Agreement that reports use totals only, never patient names, charts or treatment details"
+]} />
+
+## Options, limitations and budget drivers
+
+There are three common levels of scope, and we do not publish prices for any of them:
+
+| Option | What it covers | Main limitation |
+|---|---|---|
+| Clean-up | Conversion definitions, call reporting, form events, PII review | Still stops at inquiries; bookings remain estimated |
+| Stage reporting | Clean-up plus front-desk outcome codes and monthly summary exports | Depends on consistent staff entry; manual reporting effort |
+| Offline outcomes | Stage reporting plus approved imports of booked or attended outcomes into Google Ads | Needs counsel approval and a reliable export from the practice system |
+
+Effort grows with the number of offices, phone systems and booking tools; whether a central call team exists; how many platforms need connecting; and how much legal review the practice requires. Groups comparing offices should read [comparing offices fairly in a group dashboard](/blog/dental-group-marketing-dashboard/). AI assistants are a newer source of referrals with their own measurement limits, covered in [what AI referral and citation data can establish](/blog/measuring-ai-referrals-and-citations/).
+
+## Worked example: one month, measured two ways
+
+<Illustrative title="A single-office general practice before and after a tracking clean-up">
+**Before.** The practice's agency report shows 140 "leads" in a month: 85 Google Ads conversions, 40 call-tracking calls and 15 forms. The practice management system shows 31 new patients booked, but the referral source field is blank for 20 of them.
+
+**What the audit finds.** Ads count every call of any length and every click on the header phone number. Call tracking includes existing patients and calls under 20 seconds. Two form tags fire on the same submission. The booking confirmation URL contains the patient's first name.
+
+**After.** Primary ad conversions are limited to ad calls over the agreed duration, confirmed forms and completed bookings. The front desk records source and outcome for every new-patient inquiry. The name is removed from the confirmation URL and the tag configuration goes to the practice's counsel for review.
+
+**The next month's report.** 58 inquiries, of which 41 are qualified (new prospective patients for services offered). 29 are booked and 24 attend. Ads account for 14 of the attended visits, organic search and maps for 7, referrals for 3. The headline number is smaller, but each figure now means one thing, and the practice can compare channel cost with attended visits rather than with leads.
+</Illustrative>
+
+To turn stage counts like these into cost and capacity scenarios, use the [dental growth calculator](/resources/dental-growth-calculator/).
+
+## Reporting and how success is defined
+
+<Funnel title="The four stages every report separates" steps={[
+  { label: "Inquiry", note: "Qualifying call, confirmed form or booking attempt — from platforms" },
+  { label: "Qualified inquiry", note: "Prospective new patient, service offered, in area — from outcome codes" },
+  { label: "Booked appointment", note: "Confirmed in the scheduling system — practice export" },
+  { label: "Attended visit", note: "Patient came in — practice export" }
+]} caption="Revenue and profit sit beyond these stages and need the practice's financial data; we report them only when the practice supplies totals." />
+
+Success for this service is defined by data quality before marketing results: the share of new-patient bookings with a recorded source, the share of primary conversions the front desk recognises as real inquiries, zero personal data found in analytics on re-crawl, and a report the practice manager can reconcile with the scheduling system. Once those hold, the same reports support decisions in our [Google Ads management](/services/dental-google-ads-management/) and SEO work.
+
+## Next step
+
+The [Dental Growth Audit](/dental-marketing-audit/) includes a measurement review: whether calls, forms and bookings are tracked separately, whether anyone can tell an inquiry from a booked or attended visit, gaps between marketing reports and the practice management system, and what can and cannot be concluded from your current data. Read-only access to Google Ads, Analytics and Tag Manager makes that review far more useful. We never need patient-level information to do it.

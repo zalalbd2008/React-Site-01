@@ -19,11 +19,17 @@
 | Claim | Source id | What the source actually measures | Geography / period | Limitation |
 |---|---|---|---|---|
 | Houston-based; remote nationwide; priority markets; nine services | docs/business-facts.md | Owner-supplied facts | — | Owner input #6 (services confirmation) open |
+| Local results mainly on relevance, distance, prominence; accurate profiles more likely to show | google-gbp-local-ranking | Google's local ranking tips | Global; undated help page | Weights not published |
+| Name/details must reflect real-world business | google-gbp-guidelines | GBP policy | — | Policy may change |
+| Location targeting, ad schedules, negatives, primary vs secondary conversions, offline imports | google-ads-location-targeting, google-ads-ad-scheduling, google-ads-negative-keywords, google-ads-primary-secondary-conversions, google-ads-offline-conversions | Google Ads Help | — | Product docs change |
+| No special optimization for AI Overviews/AI Mode; indexed + snippet-eligible; traffic in Search Console Web search type; responses vary; AI Overviews often don't trigger | google-ai-features-search | Search Central page last updated 2025-12-10 | — | Features change |
+| Sites opted out of OAI-SearchBot not shown in ChatGPT search answers | openai-crawlers | OpenAI crawler docs | — | Undated |
 | All funnel figures | Illustrative only | Invented | — | Inside `<Illustrative>` |
 
 - **Keyword research:** research candidates only (no tool data available).
 - **Author / reviewer:** editorial-team / none (no review claimed)
-- **Evidence status:** none-required (no external factual claims).
+- **Evidence status:** sourced (platform statements); company facts from business-facts.md.
 - **Proposed visual and its purpose / data:** Lanes (responsibilities), Funnel (search visit → attended visit).
 - **CTA and next-step deliverables:** Dental Growth Audit.
-- **Gaps / what needs client data:** External research was attempted on 2026-11-08 but developers.google.com, developers.google.cn, support.google.com and www.ftc.gov did not resolve from this session (proxy/DNS block); WebSearch worked but returned only secondary summaries, which are not citable. No sources were therefore cited, and the page avoids platform-specific or statistical claims. Fact-checker should confirm the AI-visibility FAQ wording (referral data passed by AI tools; variability of answers) against current Search Central / OpenAI docs. No case studies or results exist (owner input #8).
+- **Gaps / what needs client data:** AI-visibility FAQ now sourced to Search Central AI features + OpenAI crawlers; referral-tagging claim dropped. No case studies or results exist (owner input #8).
+- **Source access:** Google/OpenAI pages fetched via curl on 2026-11-08. OpenAI Publishers and Developers FAQ (help.openai.com, referral UTM tagging) returned 403 — not cited; the AI FAQ avoids the referral-tagging claim.
