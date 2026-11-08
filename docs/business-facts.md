@@ -37,5 +37,6 @@ Inspected read-only via the connected Fix Website Issues WordPress site on 2026-
 
 ## Environment facts (2026-11-08)
 
-- No existing repository, CMS or live-site access for alphadentalmedia.com was available. The domain could not be fetched from this environment (network policy), so no existing URL inventory exists. **Before launch, the owner must supply the current site's URL list (or confirm there is no live site) so inbound-link destinations can be preserved with redirects.**
+- No existing repository or CMS for alphadentalmedia.com was available in the connected GitHub account.
+- 2026-11-08 checks with the domain allowed through the network proxy: `alphadentalmedia.com` did not resolve in DNS (an earlier attempt returned a TLS certificate that did not match the hostname); `www.alphadentalmedia.com` could not be connected (proxy 502). A web search for `alphadentalmedia.com` returned no pages from the domain. **Conclusion: no working live site or indexed URLs were found, so there is no URL inventory to migrate.** If the owner knows of an older site or inbound links on another host, supply the list before launch so redirects can be added.
 - Hosting target not specified. The app runs on any Node 20.9+ host and is Vercel-compatible.
