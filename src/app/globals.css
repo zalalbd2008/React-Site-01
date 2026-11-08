@@ -1409,7 +1409,8 @@ tbody th {
 .footer-grid li + li {
   margin-top: var(--space-2);
 }
-.site-footer .wordmark {
+.site-footer .wordmark,
+.site-footer .wordmark__alpha {
   color: #fff;
 }
 .site-footer .wordmark__rest {
