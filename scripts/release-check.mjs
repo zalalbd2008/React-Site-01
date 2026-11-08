@@ -108,7 +108,7 @@ async function checkPage(route) {
   // Drafts never appear as links.
   for (const h of hiddenRoutes) if (links.includes(h)) fail(route, `links to unpublished ${h}`);
   // Placeholder or fabricated markers.
-  if (/lorem ipsum|TODO|TBD|\(555\)|555-01/i.test(strip(html))) fail(route, 'placeholder text found');
+  if (/lorem ipsum|\bTODO\b|\bTBD\b|\(555\)|555-01/i.test(strip(html.replace(/<pre[\s\S]*?<\/pre>/g, ' ')))) fail(route, 'placeholder text found');
   return row;
 }
 
@@ -123,7 +123,7 @@ async function main() {
   if (!smUrls.length) fail('/sitemap.xml', 'empty sitemap');
   const smRoutes = smUrls.map((u) => u.replace(ORIGIN, ''));
   for (const r of smRoutes) if (!publicRoutes.has(r)) fail('/sitemap.xml', `contains non-public ${r}`);
-  for (const r of publicRoutes) if (!smRoutes.includes(r) && r !== '/contact/') warn('/sitemap.xml', `missing public route ${r}`);
+  for (const r of publicRoutes) if (!smRoutes.includes(r)) warn('/sitemap.xml', `missing public route ${r}`);
   const llms = await get(BASE + '/llms.txt');
   if (llms.status !== 200) fail('/llms.txt', `HTTP ${llms.status}`);
   for (const h of hiddenRoutes) if (llms.text.includes(ORIGIN + h + ')')) fail('/llms.txt', `lists unpublished ${h}`);

@@ -11,6 +11,8 @@ type Props = {
   groups: NavGroup[];
   audit: { label: string; href: string };
   consult: { label: string; href: string };
+  /** null when the services hub is not published in this build. */
+  servicesHref: string | null;
 };
 
 const isCurrent = (path: string, href: string) => (href === '/' ? path === '/' : path.startsWith(href.split('?')[0]));
@@ -20,7 +22,7 @@ const isCurrent = (path: string, href: string) => (href === '/' ? path === '/' :
  * server, so navigation works without JavaScript; the drawer needs JS only to
  * open, and the same links are reachable through hub pages and the footer.
  */
-export function SiteChrome({ groups, audit, consult }: Props) {
+export function SiteChrome({ groups, audit, consult, servicesHref }: Props) {
   const pathname = usePathname() || '/';
   const [open, setOpen] = useState(false);
   const drawerRef = useRef<HTMLDivElement>(null);
@@ -156,11 +158,13 @@ export function SiteChrome({ groups, audit, consult }: Props) {
               <IconHome /> Home
             </Link>
           </li>
-          <li>
-            <Link href="/services/" aria-current={isCurrent(pathname, '/services/') ? 'page' : undefined}>
-              <IconGrid /> Services
-            </Link>
-          </li>
+          {servicesHref && (
+            <li>
+              <Link href={servicesHref} aria-current={isCurrent(pathname, servicesHref) ? 'page' : undefined}>
+                <IconGrid /> Services
+              </Link>
+            </li>
+          )}
           <li>
             <Link href={audit.href} className="bottom-bar__audit" aria-current={isCurrent(pathname, audit.href) ? 'page' : undefined}>
               <IconAudit /> Audit

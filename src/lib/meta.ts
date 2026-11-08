@@ -6,10 +6,11 @@ import { getEntry } from './content';
 
 export function metadataFor(e: Entry, opts: { noindex?: boolean } = {}): Metadata {
   const url = absoluteUrl(e.route);
-  const noindex = opts.noindex || !env.isProduction || !['Ready', 'Published'].includes(e.status) || e.type === 'utility';
+  const noindex = opts.noindex || !env.isProduction || !['Ready', 'Published'].includes(e.status);
   return {
     // The layout template appends " | Alpha Dental Media"; titles that already name the brand are used as-is.
-    title: e.route === '/' || e.metaTitle.includes(site.name) ? { absolute: e.metaTitle } : e.metaTitle,
+    // Long titles drop the " | Alpha Dental Media" suffix rather than truncate in results.
+    title: e.route === '/' || e.metaTitle.includes(site.name) || e.metaTitle.length + site.name.length + 3 > 65 ? { absolute: e.metaTitle } : e.metaTitle,
     description: e.description,
     alternates: { canonical: url },
     robots: noindex ? { index: false, follow: false } : { index: true, follow: true },
@@ -45,8 +46,9 @@ export function crumbsFor(e: Entry): Crumb[] {
     acc += `${s}/`;
     if (i === segs.length - 1) crumbs.push({ name: e.navLabel ?? e.title, href: acc });
     else {
+      // Skip levels that are not published in this build, so breadcrumbs never link to a 404.
       const parent = getEntry(acc);
-      crumbs.push({ name: parent?.navLabel ?? HUB_NAMES[acc] ?? s, href: acc });
+      if (parent) crumbs.push({ name: parent.navLabel ?? HUB_NAMES[acc] ?? s, href: acc });
     }
   });
   return crumbs;

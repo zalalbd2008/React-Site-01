@@ -6,7 +6,7 @@ import { Footer } from '@/components/Footer';
 import { Consent } from '@/components/Consent';
 import { AttributionCapture } from '@/components/AttributionCapture';
 import { primaryNav } from '@/lib/nav';
-import { getChildren } from '@/lib/content';
+import { getChildren, getEntry } from '@/lib/content';
 import { env, site } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -26,7 +26,8 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const groups = primaryNav.map((g) => ({
+  // Only hubs that are visible in this build appear in navigation.
+  const groups = primaryNav.filter((g) => getEntry(g.href)).map((g) => ({
     ...g,
     children: ['/services/', '/who-we-help/', '/markets/'].includes(g.href)
       ? getChildren(g.href).map((c) => ({ label: c.navLabel ?? c.title, href: c.route }))
@@ -38,7 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <a href="#main" className="skip-link">
           Skip to main content
         </a>
-        <SiteChrome groups={groups} audit={site.ctas.primary} consult={site.ctas.secondary} />
+        <SiteChrome groups={groups} audit={site.ctas.primary} consult={site.ctas.secondary} servicesHref={getEntry('/services/') ? '/services/' : null} />
         <div id="page-root">
           <main id="main" tabIndex={-1}>
             {children}

@@ -6,7 +6,6 @@ import { absoluteUrl, env } from '@/lib/site';
 export default function sitemap(): MetadataRoute.Sitemap {
   if (!env.isProduction) return [];
   return getVisibleEntries()
-    .filter((e) => e.type !== 'utility')
     .map((e) => ({
       url: absoluteUrl(e.route),
       ...(e.updated || e.published ? { lastModified: e.updated ?? e.published! } : {}),
