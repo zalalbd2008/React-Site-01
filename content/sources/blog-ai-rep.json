@@ -232,5 +232,18 @@
     "measures": "Trade-press summary of the 2019 OCR settlement with a Dallas dental practice: Yelp reply disclosed a patient's last name, condition, treatment plan, insurance and cost; further disclosures found on the review page; missing social-media PHI policies; $10,000 and a corrective action plan with no admission of liability.",
     "limitations": "Secondary source; primary HHS resolution agreement not retrieved.",
     "kind": "other"
+  },
+  {
+    "id": "ecfr-45-cfr-160-103",
+    "title": "45 CFR 160.103 — Definitions (HIPAA)",
+    "publisher": "Electronic Code of Federal Regulations (eCFR)",
+    "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-160/subpart-A/section-160.103",
+    "published": null,
+    "retrieved": "2026-11-08",
+    "dataYear": null,
+    "geography": "United States",
+    "measures": "Defines a covered entity to include a health care provider who transmits any health information in electronic form in connection with a covered transaction; defines disclosure as release or divulging of information outside the entity holding it.",
+    "limitations": "Definition only; whether a particular practice is covered is a question for counsel.",
+    "kind": "legal"
   }
 ]

@@ -22,12 +22,14 @@ Payload rules: no names, emails, phone numbers, free-text, practice names or pat
 | Consultation bookings | Booking provider | After a provider is chosen. |
 | Organic landing-page performance | Search Console (pages, queries) + GA4 landing pages | Organic sessions → accepted inquiries by landing page. |
 | Indexing and query performance | Search Console Page indexing + Performance | Check monthly; inspect new routes after publication. |
-| AI referral traffic | GA4 session source (e.g. chatgpt.com, perplexity.ai, gemini.google.com, copilot.microsoft.com) | Referral visits only; many AI answers produce no click. |
+| AI referral traffic | GA4 default channel group "AI Assistant" plus session source (e.g. chatgpt.com, perplexity.ai, gemini.google.com, copilot.microsoft.com) | Referral visits only; many AI answers produce no click. Per Google's GA4 docs the AI Assistant channel excludes Google's own AI Overviews and AI Mode. |
+| Google AI Overviews / AI Mode impressions | Search Console → Generative AI performance report (Search) | Rolled out to all sites on 31 Aug 2026 (Search Console Help, retrieved 2026-11-08). Impressions only, by page/country/device — not clicks or citations text. |
 | AI citations and brand mentions | Manual sample (`docs/ai-visibility-plan.md`) | Separate from referrals. |
 | Content quality and maintenance | `npm run content:check`, source retrieval dates, broken-link checks | Re-verify platform guidance quarterly. |
 
 ## Known gaps
 
 - Until GA4, Search Console and a CRM are connected, the site can confirm only server-accepted inquiries.
-- Search Console groups AI features (AI Overviews / AI Mode) within Web search reporting; it does not isolate AI citations (re-check current documentation when the property exists).
+- Search Console's Generative AI performance report shows impressions in AI Overviews and AI Mode, but not what the answer said or whether it was accurate; that needs the manual sample. AI feature traffic is also still counted within the Web search type of the main Performance report.
+- The report appears only once a site has enough AI-feature impressions, and not at all if the site is excluded from Search generative AI features in Search Console settings.
 - Visitors who decline consent are not measured in analytics; the CRM still records their inquiries.

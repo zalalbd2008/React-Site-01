@@ -30,7 +30,7 @@ Production launch has **not** been authorised. Complete every item; ask the owne
 ## After go-live (requires account access — currently incomplete)
 
 - [ ] Google Search Console: add Domain property (DNS TXT), submit `https://alphadentalmedia.com/sitemap.xml`, inspect `/`, one service, one city, one article; request indexing.
-- [ ] Review Search Console's settings and documentation for controls on inclusion in Google's AI features (e.g. nosnippet / data-nosnippet / max-snippet) — none are applied by default; change only on an owner decision.
+- [ ] Search Console now has a setting to include or exclude a site from Search generative AI features, and a Generative AI performance report (AI Overviews and AI Mode impressions; all sites since 31 Aug 2026). Leave the site included unless the owner decides otherwise; do not apply nosnippet / data-nosnippet / max-snippet by default. Open the report once data accrues.
 - [ ] Bing Webmaster Tools: import from Search Console or verify; submit sitemap.
 - [ ] GA4: confirm consent banner, verify `audit_request_accepted` arrives once per accepted submission and carries no personal data; mark it as a key event.
 - [ ] CRM: add the `qualified_lead` stage and record qualification for each inquiry (service, market, source).
