@@ -81,6 +81,28 @@ export function SiteChrome({ groups, audit, consult, servicesHref }: Props) {
     };
   }, [open, close]);
 
+  // Keep keyboard focus clear of the sticky header and the fixed mobile bottom bar (WCAG 2.2 SC 2.4.11).
+  // Browsers do not scroll an element that is technically in the viewport but sits under a fixed bar.
+  useEffect(() => {
+    const onFocus = (e: FocusEvent) => {
+      const el = e.target as HTMLElement | null;
+      if (!el || !el.matches?.(':focus-visible') || el.closest('.site-header, .bottom-bar, .section-nav, #site-drawer')) return;
+      const r = el.getBoundingClientRect();
+      const header = document.querySelector('.site-header')?.getBoundingClientRect();
+      const subnav = document.querySelector('.section-nav');
+      const subRect = subnav && getComputedStyle(subnav).display !== 'none' ? subnav.getBoundingClientRect() : null;
+      const bar = document.querySelector('.bottom-bar');
+      const barRect = bar && getComputedStyle(bar).display !== 'none' ? bar.getBoundingClientRect() : null;
+      const topLimit = Math.max(header?.bottom ?? 0, subRect?.bottom ?? 0) + 8;
+      const bottomLimit = (barRect ? barRect.top : window.innerHeight) - 8;
+      const behavior: ScrollBehavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+      if (r.bottom > bottomLimit) window.scrollBy({ top: r.bottom - bottomLimit, behavior });
+      else if (r.top < topLimit) window.scrollBy({ top: r.top - topLimit, behavior });
+    };
+    document.addEventListener('focusin', onFocus);
+    return () => document.removeEventListener('focusin', onFocus);
+  }, []);
+
   return (
     <>
       <header className="site-header">

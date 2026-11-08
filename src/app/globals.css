@@ -157,6 +157,11 @@ hr {
   border-top: var(--border);
   margin: var(--space-7) 0;
 }
+/* Keep keyboard focus clear of the sticky header, section nav and mobile bottom bar (WCAG 2.2 Focus Not Obscured). */
+main :is(a[href], button, input, select, textarea, summary, [tabindex]) {
+  scroll-margin-top: calc(var(--header-h) + var(--subnav-h) + 12px);
+  scroll-margin-bottom: calc(var(--bottombar-h) + var(--safe-bottom) + 12px);
+}
 .visually-hidden {
   position: absolute !important;
   width: 1px;
@@ -821,6 +826,7 @@ tbody th {
   margin-bottom: var(--space-5);
 }
 .sources {
+  overflow-wrap: anywhere;
   margin-top: var(--space-7);
   padding-top: var(--space-5);
   border-top: var(--border);
@@ -930,7 +936,7 @@ tbody th {
 }
 .matrix {
   display: grid;
-  grid-template-columns: auto 1fr 1fr;
+  grid-template-columns: auto minmax(0, 1fr) minmax(0, 1fr);
   gap: 6px;
   font-size: 0.92rem;
 }
@@ -947,6 +953,9 @@ tbody th {
   transform: rotate(180deg);
 }
 .matrix__cell {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  hyphens: auto;
   background: var(--white-warm);
   border: var(--border);
   border-radius: var(--radius-sm);
