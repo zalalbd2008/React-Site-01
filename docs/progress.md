@@ -1,5 +1,12 @@
 # Implementation progress and handoff — 2026-11-09
 
+## Launch status (2026-11-09)
+
+Launch approved by the owner and deployed to Vercel: **https://alphadentalmedia.vercel.app** (117 published pages; live release check 0 failures / 0 warnings; live Lighthouse home: performance 95, accessibility 100, best practices 100). `alphadentalmedia.com` and `www` are attached in Vercel but **DNS must still be pointed at Vercel by the domain owner** (records in docs/deployment.md). Until then the vercel.app address is deliberately noindexed. All Ready pages are now `Published` with date 2026-11-09. `main` and `staging` both contain the deployed code.
+
+Fixed during launch: `proxy.ts` had to live in `src/` to be loaded, so preview password protection, the www redirect and the vercel.app noindex were not active before — they are now verified.
+
+
 ## Summary
 
 The website is built, written, independently reviewed and verified against a production build. **117 of 118 routes are Ready**; `/leadership/` is deliberately Blocked until verified biographies exist. Nothing has been deployed, and no DNS, hosting or paid service was changed. Launch requires the owner inputs listed below and explicit approval.

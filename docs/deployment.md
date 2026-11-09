@@ -57,3 +57,30 @@ BASE=http://localhost:3200 node scripts/release-check.mjs --json release-report.
 INQUIRY_DEV_SINK=file PORT=3300 npx next start -p 3300 &
 BASE=http://localhost:3300 EXPECT_DELIVERY=ok node scripts/e2e.mjs
 ```
+
+## Current deployment (2026-11-09)
+
+- Vercel team `zrocs-projects-4bc9499b`, project `alphadentalmedia` (`prj_dYR9tc7kw79NfDbziwDUqvCcF4lV`), Node 22.x, framework Next.js.
+- Environment variables: `SITE_ENV=production` (Production target only). No inquiry destination, analytics ID or booking URL is set yet.
+- Live temporary address: https://alphadentalmedia.vercel.app (sends `X-Robots-Tag: noindex` by design until the real domain serves the site).
+- Domains attached in Vercel: `alphadentalmedia.com` (primary) and `www.alphadentalmedia.com` (308 → apex). **DNS not yet pointed** — see below.
+- Deployed with the Vercel CLI from the `staging`/`main` commit (`npx vercel@65.12.1 deploy --prod`). The project is not yet connected to GitHub for automatic deploys: in Vercel → Project → Settings → Git, connect `zalalbd2008/React-Site-01` (production branch `main`) if the Vercel account has access to that GitHub account.
+
+### DNS change required at the registrar (Namecheap nameservers dns1/dns2.registrar-servers.com)
+
+| Type | Host | Value | Note |
+|---|---|---|---|
+| A | @ | 216.198.79.1 | Vercel's recommended apex address (alternative: 76.76.21.21) |
+| CNAME | www | 82a4dc7a967b1d0e.vercel-dns-017.com. | (alternative: cname.vercel-dns.com.) |
+
+Remove the existing apex A record **195.35.11.4** (on 2026-11-09 it served only an empty "Index of /" listing). Vercel issues the HTTPS certificate automatically once DNS resolves.
+
+### After DNS propagates
+
+```bash
+curl -sI https://alphadentalmedia.com/            # 200, no X-Robots-Tag
+curl -sI https://www.alphadentalmedia.com/        # single 308 to https://alphadentalmedia.com/
+ALLOW_HOST_NOINDEX= BASE=https://alphadentalmedia.com node scripts/release-check.mjs
+```
+
+Then submit `https://alphadentalmedia.com/sitemap.xml` in Google Search Console and Bing Webmaster Tools.

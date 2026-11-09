@@ -47,7 +47,8 @@ async function checkPage(route) {
   const row = { route, status };
   report.push(row);
   if (status !== 200) return fail(route, `HTTP ${status}`);
-  if (headers.get('x-robots-tag')?.includes('noindex')) fail(route, 'X-Robots-Tag noindex on a published page');
+  // ALLOW_HOST_NOINDEX=1 when checking a non-canonical host (e.g. *.vercel.app), which is deliberately noindexed.
+  if (headers.get('x-robots-tag')?.includes('noindex') && !process.env.ALLOW_HOST_NOINDEX) fail(route, 'X-Robots-Tag noindex on a published page');
   const robots = attr(html, /<meta name="robots" content="([^"]+)"/);
   if (robots?.includes('noindex')) fail(route, `meta robots ${robots}`);
   const canonical = attr(html, /<link rel="canonical" href="([^"]+)"/);

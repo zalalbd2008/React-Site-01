@@ -16,7 +16,7 @@ Items only the business owner can supply or decide. Independent work continues w
 | 10 | Search Console and Bing Webmaster Tools access for the production domain | Sitemap submission, URL inspection, AI-feature reporting | Steps documented in launch checklist |
 | 11 | Existing live site URL inventory (or confirmation none exists) | Redirect map | None applied |
 | 12 | AI training crawler preference (GPTBot, Google-Extended etc.) | robots.txt training rules | No training-specific rule; OAI-SearchBot explicitly allowed for search |
-| 13 | Hosting choice (repository supplied: github.com/zalalbd2008/React-Site-01, code on `staging`) | Protected preview URL, production deploy | Not deployed |
+| 13 | **DNS change at the registrar** to point alphadentalmedia.com to Vercel (records in docs/deployment.md); optionally connect the GitHub repo to the Vercel project for auto-deploys | Site on the real domain, indexing, Search Console | Live at alphadentalmedia.vercel.app (noindexed) |
 | 14 | Privacy-policy legal review (state privacy laws, any CRM/email processors used) | Publishing the privacy policy as final | Plain-language draft describing only what the site actually does |
 | 15 | Clinical reviewer, if any article must give clinical guidance | Clinical content | Articles stay on marketing operations |
 | 16 | Final logo (vector) and licensed brand imagery | Logo replacement; Open Graph image | Typographic wordmark; generated typographic OG image |

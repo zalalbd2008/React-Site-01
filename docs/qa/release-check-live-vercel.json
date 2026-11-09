@@ -1,0 +1,1859 @@
+{
+  "base": "https://alphadentalmedia.vercel.app",
+  "checkedAt": "2026-11-09T13:30:20.094Z",
+  "published": 117,
+  "failures": [],
+  "warnings": [],
+  "pages": [
+    {
+      "route": "/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/",
+      "title": "Dental Marketing Agency for Practices & Dental Groups",
+      "h1": 1,
+      "htmlWords": 3850,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "WebPage"
+      ],
+      "links": 102
+    },
+    {
+      "route": "/about/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/about/",
+      "title": "About Alpha Dental Media | Houston Dental Marketing",
+      "h1": 1,
+      "htmlWords": 960,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "AboutPage"
+      ],
+      "links": 60
+    },
+    {
+      "route": "/accessibility/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/accessibility/",
+      "title": "Accessibility Statement | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 805,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage"
+      ],
+      "links": 46
+    },
+    {
+      "route": "/blog/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/",
+      "title": "Dental Marketing Guides for Practice Owners | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 1546,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "CollectionPage"
+      ],
+      "links": 81
+    },
+    {
+      "route": "/blog/ai-search-visibility-for-dentists/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/ai-search-visibility-for-dentists/",
+      "title": "GEO, AEO and AI Search Explained for Dental Practices",
+      "h1": 1,
+      "htmlWords": 3045,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 62
+    },
+    {
+      "route": "/blog/checking-dental-practice-ai-answers/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/checking-dental-practice-ai-answers/",
+      "title": "Checking AI Answers About Your Dental Practice",
+      "h1": 1,
+      "htmlWords": 3566,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 61
+    },
+    {
+      "route": "/blog/choosing-a-dental-marketing-agency/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/choosing-a-dental-marketing-agency/",
+      "title": "Choosing a Dental Marketing Agency: Questions to Ask",
+      "h1": 1,
+      "htmlWords": 3259,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 65
+    },
+    {
+      "route": "/blog/dental-call-tracking/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/dental-call-tracking/",
+      "title": "Dental Call Tracking: Measure Calls, Not Just Count Them",
+      "h1": 1,
+      "htmlWords": 3390,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 59
+    },
+    {
+      "route": "/blog/dental-google-ads-budget/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/dental-google-ads-budget/",
+      "title": "Dental Google Ads Budget: Work Back From Attended Visits",
+      "h1": 1,
+      "htmlWords": 3148,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 62
+    },
+    {
+      "route": "/blog/dental-google-ads-keyword-match-types/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/dental-google-ads-keyword-match-types/",
+      "title": "Dental Google Ads Match Types: Exact, Phrase or Broad?",
+      "h1": 1,
+      "htmlWords": 3233,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 59
+    },
+    {
+      "route": "/blog/dental-google-ads-negative-keywords/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/dental-google-ads-negative-keywords/",
+      "title": "Dental Negative Keywords Without Losing Good Leads",
+      "h1": 1,
+      "htmlWords": 2932,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 57
+    },
+    {
+      "route": "/blog/dental-google-business-profile-suspension/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/dental-google-business-profile-suspension/",
+      "title": "Dental Business Profile Suspended? Evidence to Prepare",
+      "h1": 1,
+      "htmlWords": 3493,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 59
+    },
+    {
+      "route": "/blog/dental-group-location-pages/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/dental-group-location-pages/",
+      "title": "Dental Group Location Pages Without Repeated Content",
+      "h1": 1,
+      "htmlWords": 2934,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 60
+    },
+    {
+      "route": "/blog/dental-group-marketing-dashboard/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/dental-group-marketing-dashboard/",
+      "title": "Dental Group Marketing Dashboard: Comparing Offices Fairly",
+      "h1": 1,
+      "htmlWords": 2916,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 62
+    },
+    {
+      "route": "/blog/dental-implant-advertising/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/dental-implant-advertising/",
+      "title": "Dental Implant Ads: Intent, Landing Pages, Consult Quality",
+      "h1": 1,
+      "htmlWords": 3682,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 61
+    },
+    {
+      "route": "/blog/dental-marketing-roi/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/dental-marketing-roi/",
+      "title": "Dental Marketing ROI: From Leads to Collected Revenue",
+      "h1": 1,
+      "htmlWords": 2821,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 62
+    },
+    {
+      "route": "/blog/dental-online-booking-vs-request-forms/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/dental-online-booking-vs-request-forms/",
+      "title": "Online Booking vs Appointment Request Forms for Dentists",
+      "h1": 1,
+      "htmlWords": 3144,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 59
+    },
+    {
+      "route": "/blog/dental-practice-rebrand-seo-migration/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/dental-practice-rebrand-seo-migration/",
+      "title": "Dental Rebrand and Site Migration Without Losing Visibility",
+      "h1": 1,
+      "htmlWords": 3194,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 61
+    },
+    {
+      "route": "/blog/dental-review-request-process/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/dental-review-request-process/",
+      "title": "Dental Review Requests Without Incentives or Gating",
+      "h1": 1,
+      "htmlWords": 3412,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 58
+    },
+    {
+      "route": "/blog/dental-seo-cost/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/dental-seo-cost/",
+      "title": "Dental SEO Cost: What Drives It and How to Compare Proposals",
+      "h1": 1,
+      "htmlWords": 3115,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 59
+    },
+    {
+      "route": "/blog/dental-website-conversion-audit/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/dental-website-conversion-audit/",
+      "title": "Why Dental Website Visitors Don't Book: A Mobile Audit",
+      "h1": 1,
+      "htmlWords": 3325,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 61
+    },
+    {
+      "route": "/blog/dentist-practice-google-business-profiles/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/dentist-practice-google-business-profiles/",
+      "title": "Dentist vs Practice Google Business Profiles: Eligibility",
+      "h1": 1,
+      "htmlWords": 3543,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 57
+    },
+    {
+      "route": "/blog/emergency-dental-advertising/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/emergency-dental-advertising/",
+      "title": "Emergency Dental Ads That Match Real Hours and Capacity",
+      "h1": 1,
+      "htmlWords": 2924,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 58
+    },
+    {
+      "route": "/blog/google-maps-visibility-for-dentists/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/google-maps-visibility-for-dentists/",
+      "title": "Why Your Dental Practice Isn't Showing in Google Maps",
+      "h1": 1,
+      "htmlWords": 3488,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 60
+    },
+    {
+      "route": "/blog/how-long-dental-seo-takes/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/how-long-dental-seo-takes/",
+      "title": "How Long Does Dental SEO Take? What to Measure First",
+      "h1": 1,
+      "htmlWords": 2968,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 58
+    },
+    {
+      "route": "/blog/measuring-ai-referrals-and-citations/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/measuring-ai-referrals-and-citations/",
+      "title": "What AI Referral and Citation Data Can Prove for Dentists",
+      "h1": 1,
+      "htmlWords": 3213,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 63
+    },
+    {
+      "route": "/blog/multi-location-dental-website-structure/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/multi-location-dental-website-structure/",
+      "title": "Subfolders, Subdomains or Domains for Dental Groups",
+      "h1": 1,
+      "htmlWords": 3219,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 62
+    },
+    {
+      "route": "/blog/new-dental-practice-marketing-plan/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/new-dental-practice-marketing-plan/",
+      "title": "New Dental Practice Marketing Plan: The First 90 Days",
+      "h1": 1,
+      "htmlWords": 3712,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 65
+    },
+    {
+      "route": "/blog/responding-to-negative-dental-reviews/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/responding-to-negative-dental-reviews/",
+      "title": "Responding to Negative Dental Reviews Without PHI",
+      "h1": 1,
+      "htmlWords": 3739,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 58
+    },
+    {
+      "route": "/blog/structured-data-for-dental-websites/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/structured-data-for-dental-websites/",
+      "title": "Dental Website Schema That Matches the Real Practice",
+      "h1": 1,
+      "htmlWords": 3722,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 64
+    },
+    {
+      "route": "/blog/why-dental-websites-do-not-rank/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/why-dental-websites-do-not-rank/",
+      "title": "Why Your Dental Website Isn't Ranking: A Diagnosis",
+      "h1": 1,
+      "htmlWords": 3970,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 64
+    },
+    {
+      "route": "/blog/wordpress-vs-nextjs-dental-websites/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/blog/wordpress-vs-nextjs-dental-websites/",
+      "title": "WordPress vs Headless CMS vs Next.js for a Dental Website",
+      "h1": 1,
+      "htmlWords": 3114,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "BlogPosting"
+      ],
+      "links": 59
+    },
+    {
+      "route": "/case-studies/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/case-studies/",
+      "title": "Dental Marketing Results and Case Study Standards",
+      "h1": 1,
+      "htmlWords": 1249,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "CollectionPage"
+      ],
+      "links": 58
+    },
+    {
+      "route": "/contact/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/contact/",
+      "title": "Contact Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 548,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "ContactPage"
+      ],
+      "links": 52
+    },
+    {
+      "route": "/dental-marketing-audit/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/dental-marketing-audit/",
+      "title": "Request a Dental Growth Audit | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 1471,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage"
+      ],
+      "links": 45
+    },
+    {
+      "route": "/editorial-policy/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/editorial-policy/",
+      "title": "Editorial Policy and Corrections | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 1511,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage"
+      ],
+      "links": 49
+    },
+    {
+      "route": "/markets/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/",
+      "title": "Dental Marketing Markets: Texas, Florida, Georgia, LA",
+      "h1": 1,
+      "htmlWords": 1316,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "CollectionPage"
+      ],
+      "links": 63
+    },
+    {
+      "route": "/markets/california/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/california/",
+      "title": "Dental Marketing in Greater Los Angeles, CA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 9245,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 90
+    },
+    {
+      "route": "/markets/california/beverly-hills/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/california/beverly-hills/",
+      "title": "Dental Marketing Agency in Beverly Hills, CA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3885,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 67
+    },
+    {
+      "route": "/markets/california/burbank/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/california/burbank/",
+      "title": "Dental Marketing Agency in Burbank, CA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 4165,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 67
+    },
+    {
+      "route": "/markets/california/downey/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/california/downey/",
+      "title": "Dental Marketing Agency in Downey, CA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3830,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 67
+    },
+    {
+      "route": "/markets/california/glendale/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/california/glendale/",
+      "title": "Dental Marketing Agency in Glendale, CA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3853,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 65
+    },
+    {
+      "route": "/markets/california/long-beach/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/california/long-beach/",
+      "title": "Dental Marketing Agency in Long Beach, CA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3948,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 64
+    },
+    {
+      "route": "/markets/california/los-angeles/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/california/los-angeles/",
+      "title": "Dental Marketing Agency in Los Angeles, CA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 4233,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 71
+    },
+    {
+      "route": "/markets/california/pasadena/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/california/pasadena/",
+      "title": "Dental Marketing Agency in Pasadena, CA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3885,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 68
+    },
+    {
+      "route": "/markets/california/santa-clarita/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/california/santa-clarita/",
+      "title": "Dental Marketing Agency in Santa Clarita, CA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3823,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 67
+    },
+    {
+      "route": "/markets/california/santa-monica/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/california/santa-monica/",
+      "title": "Dental Marketing Agency in Santa Monica, CA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 4395,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 71
+    },
+    {
+      "route": "/markets/california/torrance/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/california/torrance/",
+      "title": "Dental Marketing Agency in Torrance, CA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3748,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 67
+    },
+    {
+      "route": "/markets/california/west-covina/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/california/west-covina/",
+      "title": "Dental Marketing Agency in West Covina, CA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3809,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 67
+    },
+    {
+      "route": "/markets/florida/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/florida/",
+      "title": "Dental Marketing Agency for Florida Practices",
+      "h1": 1,
+      "htmlWords": 6341,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 102
+    },
+    {
+      "route": "/markets/florida/boca-raton/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/florida/boca-raton/",
+      "title": "Dental Marketing in Boca Raton, FL | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 4438,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 71
+    },
+    {
+      "route": "/markets/florida/fort-lauderdale/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/florida/fort-lauderdale/",
+      "title": "Dental Marketing Agency in Fort Lauderdale, Florida",
+      "h1": 1,
+      "htmlWords": 4333,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 70
+    },
+    {
+      "route": "/markets/florida/gainesville/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/florida/gainesville/",
+      "title": "Dental Marketing Agency in Gainesville, Florida",
+      "h1": 1,
+      "htmlWords": 3760,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 68
+    },
+    {
+      "route": "/markets/florida/jacksonville/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/florida/jacksonville/",
+      "title": "Dental Marketing Agency in Jacksonville, Florida",
+      "h1": 1,
+      "htmlWords": 3690,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 69
+    },
+    {
+      "route": "/markets/florida/miami/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/florida/miami/",
+      "title": "Dental Marketing Agency in Miami, Florida | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 4040,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 68
+    },
+    {
+      "route": "/markets/florida/naples/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/florida/naples/",
+      "title": "Dental Marketing Agency in Naples, Florida | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 4183,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 69
+    },
+    {
+      "route": "/markets/florida/orlando/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/florida/orlando/",
+      "title": "Dental Marketing Agency in Orlando, Florida | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3963,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 69
+    },
+    {
+      "route": "/markets/florida/port-st-lucie/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/florida/port-st-lucie/",
+      "title": "Dental Marketing Agency in Port St. Lucie, Florida",
+      "h1": 1,
+      "htmlWords": 4231,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 69
+    },
+    {
+      "route": "/markets/florida/sarasota/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/florida/sarasota/",
+      "title": "Dental Marketing in Sarasota, FL | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 4280,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 72
+    },
+    {
+      "route": "/markets/florida/st-petersburg/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/florida/st-petersburg/",
+      "title": "Dental Marketing in St. Petersburg, FL | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 4500,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 71
+    },
+    {
+      "route": "/markets/florida/tallahassee/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/florida/tallahassee/",
+      "title": "Dental Marketing Agency in Tallahassee, Florida",
+      "h1": 1,
+      "htmlWords": 3908,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 68
+    },
+    {
+      "route": "/markets/florida/tampa/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/florida/tampa/",
+      "title": "Dental Marketing Agency in Tampa, Florida | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3684,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 71
+    },
+    {
+      "route": "/markets/florida/west-palm-beach/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/florida/west-palm-beach/",
+      "title": "Dental Marketing in West Palm Beach, FL | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 4680,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 69
+    },
+    {
+      "route": "/markets/georgia/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/georgia/",
+      "title": "Dental Marketing in Georgia | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 5556,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 87
+    },
+    {
+      "route": "/markets/georgia/alpharetta/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/georgia/alpharetta/",
+      "title": "Dental Marketing in Alpharetta, GA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3252,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 68
+    },
+    {
+      "route": "/markets/georgia/athens/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/georgia/athens/",
+      "title": "Dental Marketing in Athens, GA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3621,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 67
+    },
+    {
+      "route": "/markets/georgia/atlanta/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/georgia/atlanta/",
+      "title": "Dental Marketing in Atlanta, GA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 4145,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 67
+    },
+    {
+      "route": "/markets/georgia/augusta/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/georgia/augusta/",
+      "title": "Dental Marketing in Augusta, GA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3772,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 67
+    },
+    {
+      "route": "/markets/georgia/columbus/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/georgia/columbus/",
+      "title": "Dental Marketing in Columbus, GA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3646,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 66
+    },
+    {
+      "route": "/markets/georgia/johns-creek/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/georgia/johns-creek/",
+      "title": "Dental Marketing in Johns Creek, GA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3355,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 67
+    },
+    {
+      "route": "/markets/georgia/lawrenceville/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/georgia/lawrenceville/",
+      "title": "Dental Marketing in Lawrenceville, GA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3665,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 67
+    },
+    {
+      "route": "/markets/georgia/macon/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/georgia/macon/",
+      "title": "Dental Marketing in Macon, GA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3974,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 69
+    },
+    {
+      "route": "/markets/georgia/marietta/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/georgia/marietta/",
+      "title": "Dental Marketing in Marietta, GA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3475,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 65
+    },
+    {
+      "route": "/markets/georgia/roswell/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/georgia/roswell/",
+      "title": "Dental Marketing in Roswell, GA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3289,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 70
+    },
+    {
+      "route": "/markets/georgia/sandy-springs/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/georgia/sandy-springs/",
+      "title": "Dental Marketing in Sandy Springs, GA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3534,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 67
+    },
+    {
+      "route": "/markets/georgia/savannah/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/georgia/savannah/",
+      "title": "Dental Marketing in Savannah, GA | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3760,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 68
+    },
+    {
+      "route": "/markets/texas/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/texas/",
+      "title": "Texas Dental Marketing Agency | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 5467,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 93
+    },
+    {
+      "route": "/markets/texas/arlington/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/texas/arlington/",
+      "title": "Arlington, TX Dental Marketing Agency | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3893,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 71
+    },
+    {
+      "route": "/markets/texas/austin/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/texas/austin/",
+      "title": "Austin, TX Dental Marketing Agency | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3486,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 65
+    },
+    {
+      "route": "/markets/texas/corpus-christi/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/texas/corpus-christi/",
+      "title": "Corpus Christi Dental Marketing Agency | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3814,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 66
+    },
+    {
+      "route": "/markets/texas/dallas/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/texas/dallas/",
+      "title": "Dallas, TX Dental Marketing Agency | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3784,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 67
+    },
+    {
+      "route": "/markets/texas/el-paso/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/texas/el-paso/",
+      "title": "El Paso, TX Dental Marketing Agency | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 4135,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 69
+    },
+    {
+      "route": "/markets/texas/fort-worth/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/texas/fort-worth/",
+      "title": "Fort Worth, TX Dental Marketing Agency | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3562,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 65
+    },
+    {
+      "route": "/markets/texas/frisco/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/texas/frisco/",
+      "title": "Frisco, TX Dental Marketing Agency | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3556,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 75
+    },
+    {
+      "route": "/markets/texas/houston/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/texas/houston/",
+      "title": "Houston, TX Dental Marketing Agency | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 4198,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 67
+    },
+    {
+      "route": "/markets/texas/irving/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/texas/irving/",
+      "title": "Irving, TX Dental Marketing Agency | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3909,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 71
+    },
+    {
+      "route": "/markets/texas/lubbock/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/texas/lubbock/",
+      "title": "Lubbock, TX Dental Marketing Agency | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3493,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 67
+    },
+    {
+      "route": "/markets/texas/mckinney/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/texas/mckinney/",
+      "title": "McKinney, TX Dental Marketing Agency | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3852,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 68
+    },
+    {
+      "route": "/markets/texas/plano/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/texas/plano/",
+      "title": "Plano, TX Dental Marketing Agency | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3896,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 72
+    },
+    {
+      "route": "/markets/texas/round-rock/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/texas/round-rock/",
+      "title": "Round Rock, TX Dental Marketing Agency | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3783,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 67
+    },
+    {
+      "route": "/markets/texas/san-antonio/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/markets/texas/san-antonio/",
+      "title": "San Antonio, TX Dental Marketing Agency | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3653,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 65
+    },
+    {
+      "route": "/our-process/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/our-process/",
+      "title": "How We Work: Alpha Dental Media's Process",
+      "h1": 1,
+      "htmlWords": 2080,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage"
+      ],
+      "links": 54
+    },
+    {
+      "route": "/privacy-policy/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/privacy-policy/",
+      "title": "Privacy Policy | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 1620,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage"
+      ],
+      "links": 47
+    },
+    {
+      "route": "/resources/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/resources/",
+      "title": "Dental Marketing Resources, Tools and Checklists",
+      "h1": 1,
+      "htmlWords": 670,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "CollectionPage"
+      ],
+      "links": 62
+    },
+    {
+      "route": "/resources/dental-agency-comparison-scorecard/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/resources/dental-agency-comparison-scorecard/",
+      "title": "Dental Marketing Agency Comparison Scorecard (0–2 Scoring)",
+      "h1": 1,
+      "htmlWords": 2297,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Article"
+      ],
+      "links": 58
+    },
+    {
+      "route": "/resources/dental-growth-calculator/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/resources/dental-growth-calculator/",
+      "title": "Dental Growth Calculator: Cost per Attended New Patient",
+      "h1": 1,
+      "htmlWords": 2378,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Article"
+      ],
+      "links": 60
+    },
+    {
+      "route": "/resources/dental-marketing-metrics/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/resources/dental-marketing-metrics/",
+      "title": "Dental Marketing Metrics Glossary: Definitions and Misuse",
+      "h1": 1,
+      "htmlWords": 3832,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Article"
+      ],
+      "links": 59
+    },
+    {
+      "route": "/resources/dental-website-audit-checklist/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/resources/dental-website-audit-checklist/",
+      "title": "Dental Website Audit Checklist: 8 Sections With Checks",
+      "h1": 1,
+      "htmlWords": 3067,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Article"
+      ],
+      "links": 60
+    },
+    {
+      "route": "/resources/research-methodology/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/resources/research-methodology/",
+      "title": "Research Methodology | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 1564,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Article"
+      ],
+      "links": 52
+    },
+    {
+      "route": "/services/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/services/",
+      "title": "Dental Marketing Services: SEO, Ads, Websites, Tracking",
+      "h1": 1,
+      "htmlWords": 1710,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "CollectionPage"
+      ],
+      "links": 70
+    },
+    {
+      "route": "/services/dental-ai-search-optimization/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/services/dental-ai-search-optimization/",
+      "title": "Dental AI Search Optimization, AEO and GEO | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 4256,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 65
+    },
+    {
+      "route": "/services/dental-content-marketing/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/services/dental-content-marketing/",
+      "title": "Dental Content Marketing: Research, Review, Publishing",
+      "h1": 1,
+      "htmlWords": 3633,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 65
+    },
+    {
+      "route": "/services/dental-conversion-tracking/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/services/dental-conversion-tracking/",
+      "title": "Dental Conversion Tracking and Attribution | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 4173,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 62
+    },
+    {
+      "route": "/services/dental-google-ads-management/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/services/dental-google-ads-management/",
+      "title": "Dental Google Ads Management and PPC | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 4075,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 67
+    },
+    {
+      "route": "/services/dental-local-seo-google-business-profile/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/services/dental-local-seo-google-business-profile/",
+      "title": "Dental Local SEO and Google Business Profile | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3904,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 67
+    },
+    {
+      "route": "/services/dental-reputation-management/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/services/dental-reputation-management/",
+      "title": "Dental Reputation Management | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3823,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 62
+    },
+    {
+      "route": "/services/dental-seo-company/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/services/dental-seo-company/",
+      "title": "Dental SEO Services and SEO Company | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 4194,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 71
+    },
+    {
+      "route": "/services/dental-web-design-conversion/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/services/dental-web-design-conversion/",
+      "title": "Dental Website Design and Conversion Optimization",
+      "h1": 1,
+      "htmlWords": 4029,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 66
+    },
+    {
+      "route": "/services/local-seo-multi-location-clinics/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/services/local-seo-multi-location-clinics/",
+      "title": "Multi-Location Dental SEO for Dental Groups and DSOs",
+      "h1": 1,
+      "htmlWords": 4310,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage",
+        "Service"
+      ],
+      "links": 66
+    },
+    {
+      "route": "/terms/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/terms/",
+      "title": "Terms of Use | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 854,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage"
+      ],
+      "links": 48
+    },
+    {
+      "route": "/who-we-help/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/who-we-help/",
+      "title": "Who We Help: Dental Practices, Groups and DSOs",
+      "h1": 1,
+      "htmlWords": 1354,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "CollectionPage"
+      ],
+      "links": 58
+    },
+    {
+      "route": "/who-we-help/cosmetic-and-implant-practices/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/who-we-help/cosmetic-and-implant-practices/",
+      "title": "Marketing for Cosmetic and Implant Dental Practices",
+      "h1": 1,
+      "htmlWords": 3379,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage"
+      ],
+      "links": 65
+    },
+    {
+      "route": "/who-we-help/dental-groups-dsos/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/who-we-help/dental-groups-dsos/",
+      "title": "Dental Group and DSO Marketing: Governance and Budget",
+      "h1": 1,
+      "htmlWords": 3453,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage"
+      ],
+      "links": 69
+    },
+    {
+      "route": "/who-we-help/dental-startups/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/who-we-help/dental-startups/",
+      "title": "Marketing for Dental Startups and New Practices",
+      "h1": 1,
+      "htmlWords": 3615,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage"
+      ],
+      "links": 65
+    },
+    {
+      "route": "/who-we-help/general-dentists/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/who-we-help/general-dentists/",
+      "title": "Marketing for General Dental Practices | Alpha Dental Media",
+      "h1": 1,
+      "htmlWords": 3725,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage"
+      ],
+      "links": 67
+    },
+    {
+      "route": "/who-we-help/orthodontists/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/who-we-help/orthodontists/",
+      "title": "Orthodontic Practice Marketing: Referrals and Starts",
+      "h1": 1,
+      "htmlWords": 3382,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage"
+      ],
+      "links": 66
+    },
+    {
+      "route": "/who-we-help/pediatric-dentists/",
+      "status": 200,
+      "canonical": "https://alphadentalmedia.com/who-we-help/pediatric-dentists/",
+      "title": "Pediatric Dental Marketing: Parents, Payers, Capacity",
+      "h1": 1,
+      "htmlWords": 3539,
+      "schemaTypes": [
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "WebPage"
+      ],
+      "links": 66
+    }
+  ]
+}
