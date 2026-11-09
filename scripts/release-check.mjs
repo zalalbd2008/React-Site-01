@@ -31,7 +31,8 @@ async function get(url, opts = {}) {
   return { status: res.status, headers: res.headers, text };
 }
 
-const attr = (html, re) => (html.match(re) || [])[1];
+const decode = (t) => t?.replace(/&#x27;|&#39;/g, "'").replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+const attr = (html, re) => decode((html.match(re) || [])[1]);
 const all = (html, re) => [...html.matchAll(re)].map((m) => m[1]);
 const strip = (h) => h.replace(/<script[\s\S]*?<\/script>/g, ' ').replace(/<style[\s\S]*?<\/style>/g, ' ').replace(/<[^>]+>/g, ' ').replace(/&[a-z#0-9]+;/gi, ' ');
 
