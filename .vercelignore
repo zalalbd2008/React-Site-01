@@ -1,0 +1,5 @@
+node_modules
+.next
+.data
+research/local/.cache
+*.tsbuildinfo
