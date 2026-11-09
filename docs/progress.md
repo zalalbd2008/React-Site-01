@@ -4,7 +4,7 @@
 
 The website is built, written, independently reviewed and verified against a production build. **117 of 118 routes are Ready**; `/leadership/` is deliberately Blocked until verified biographies exist. Nothing has been deployed, and no DNS, hosting or paid service was changed. Launch requires the owner inputs listed below and explicit approval.
 
-The project currently exists only in this cloud session's local git repository (branch `staging`). **It must be pushed to a GitHub repository before the session ends.**
+The code is in GitHub: https://github.com/zalalbd2008/React-Site-01, branch `staging` (pushed 2026-11-09). `main` is untouched and should receive the code only when launch is approved.
 
 ## What works
 
@@ -52,7 +52,7 @@ Long-form total: 98 pages, ~254,000 words of main content. Every long-form page 
 
 ## Blocked or incomplete (owner inputs — see docs/owner-inputs.md)
 
-1. **GitHub repository** to push this project (#13) — most urgent.
+1. ~~GitHub repository~~ — done: `zalalbd2008/React-Site-01`, branch `staging`. Hosting choice still open (#13).
 2. **Inquiry destination** (CRM webhook or Resend email) (#2) — the form cannot deliver until set.
 3. Booking provider (#3) — "Book a Strategy Call" opens a request form; `consultation_booked` not implemented.
 4. Public phone/email/hours (#4) — not displayed; `phone_link_clicked` unused.
@@ -65,7 +65,7 @@ Long-form total: 98 pages, ~254,000 words of main content. Every long-form page 
 
 ## Next actions
 
-1. Owner provides the GitHub repository → push `staging` (and `main` after approval).
+1. Connect the repository to a host (Vercel recommended): `staging` → protected preview, `main` → production after approval.
 2. Owner chooses hosting (Vercel recommended) → configure preview with `PREVIEW_PASSWORD` and the inquiry destination; send a real test inquiry.
 3. Counsel review of privacy, terms and state-rule sections.
 4. Owner approval for launch → follow `docs/launch-checklist.md` (set published dates, DNS, verification on the production hostname, Search Console/Bing sitemap submission).
