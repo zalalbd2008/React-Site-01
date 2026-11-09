@@ -2,15 +2,15 @@
 route: "/services/dental-reputation-management/"
 type: "service"
 serviceId: "S7"
-status: "Drafted"
+status: "Ready"
 author: "editorial-team"
 reviewer: null
 title: "Dental Reputation Management Without Shortcuts"
 navLabel: "Dental Reputation Management"
 metaTitle: "Dental Reputation Management | Alpha Dental Media"
-description: "How Alpha Dental Media approaches dental reputation management: policy-safe review requests, privacy-aware replies, monitoring and service recovery."
+description: "Dental reputation management that stays inside Google policy, the FTC review rule and patient privacy: fair review requests, safe replies and service recovery."
 eyebrow: "Reviews and reputation"
-lede: "Dental reputation management is the routine of asking every patient for honest feedback, replying to reviews without disclosing anything about the patient, and fixing the problems reviews reveal. This page explains how we would diagnose your current reviews, what we would set up, the rules that apply, and what your team owns."
+lede: "Dental reputation management is the routine of asking every patient for honest feedback, replying without disclosing anything about the patient, and fixing what reviews reveal. Below: the rules that apply, how we would diagnose and set it up, and what your team owns."
 parent: "/services/"
 primaryIntent: "Dental reputation management"
 secondaryQuestions:
@@ -24,10 +24,12 @@ sources:
   - "google-maps-ugc-prohibited-content"
   - "google-gbp-review-tips"
   - "google-gbp-manage-reviews"
+  - "google-gbp-local-ranking"
   - "ecfr-16-cfr-465"
   - "fr-2024-ftc-consumer-reviews-rule"
   - "dla-piper-hipaa-review-settlement-2023"
   - "ecfr-45-cfr-160-103"
+  - "ecfr-47-cfr-64-1200"
 related:
   - "/blog/dental-review-request-process/"
   - "/blog/responding-to-negative-dental-reviews/"
@@ -39,7 +41,7 @@ cta: "audit"
 published: null
 updated: null
 evidence: "sourced"
-verificationNotes: "Checked on 2026-11-08 against Google's Maps user-generated content policy (prohibited and restricted content), Google Business Profile Help (tips to get more reviews; manage customer reviews), 16 CFR Part 465 via the eCFR API, the Federal Register record for 89 FR 68034 (published 2024-08-22, effective 2024-10-21), 45 CFR 160.103, and a DLA Piper summary (January 2023) of a December 2022 OCR dental settlement. HHS pages on hhs.gov (including resolution agreements and any guidance on responding to reviews) could not be retrieved from this environment, so HHS positions are described only through that secondary summary. No compliance or removal outcomes are promised. The worked example is illustrative."
+verificationNotes: "Independent review 2026-11-08/09: re-opened Google Maps UGC policy, GBP review tips and manage-reviews pages, 16 CFR 465 (eCFR, sections 465.2, 465.4, 465.5, 465.7), 45 CFR 160.103, 47 CFR 64.1200 and the DLA Piper summary; all statements within what the sources say. Changed: removed an unsupported claim that Google advises against identical replies; OCR settlement now attributed to the DLA Piper summary; covered-entity wording softened; added a cautious TCPA note for texted review requests (counsel recommended) linking to the request-process article; testimonial authorisation framed as a question for counsel; funnel rewritten around profile actions and linked to the metrics glossary instead of repeating stage definitions; headings, callout and timeline caption de-duplicated from sibling service pages. HHS pages on hhs.gov return 403 and were not bypassed. Writer notes: checked on 2026-11-08 against Google's Maps user-generated content policy (prohibited and restricted content), Google Business Profile Help (tips to get more reviews; manage customer reviews), 16 CFR Part 465 via the eCFR API, the Federal Register record for 89 FR 68034 (published 2024-08-22, effective 2024-10-21), 45 CFR 160.103, and a DLA Piper summary (January 2023) of a December 2022 OCR dental settlement. HHS pages on hhs.gov (including resolution agreements and any guidance on responding to reviews) could not be retrieved from this environment, so HHS positions are described only through that secondary summary. No compliance or removal outcomes are promised. The worked example is illustrative."
 order: 7
 faqs:
   - q: "Can we offer a discount or prize draw for leaving a review?"
@@ -51,18 +53,18 @@ faqs:
   - q: "Can you get a negative review removed?"
     a: "Only if it breaks Google's content policies — for example spam, a conflict of interest or content that is not about a real experience. Then it can be flagged, and Google decides. A review that is simply unfair or harsh usually stays. The FTC rule also prohibits unfounded legal threats or intimidation aimed at getting reviews removed."
   - q: "Should we reply to every review?"
-    a: "Replying to many reviews is useful, but a reply must never confirm that the reviewer is a patient or mention treatment, appointments, billing or insurance details, even if the reviewer did. Short, general replies to positive reviews and a consistent offline-contact reply to negative ones keep the risk low. Google also suggests avoiding identical thank-you replies."
+    a: "Replying to many reviews is useful, but a reply must never confirm that the reviewer is a patient or mention treatment, appointments, billing or insurance details, even if the reviewer did. Short, general replies to positive reviews and a consistent offline-contact reply to negative ones keep the risk low. Google's own tips favour personal replies; for a practice, personalise the tone, never the patient details."
   - q: "Can we put Google reviews on our website?"
-    a: "Displaying genuine reviews is common, but select and display them honestly. The FTC rule prohibits implying that the reviews shown on your own site represent most or all reviews when negative ones are suppressed because of their rating. Patient testimonials you create yourself, such as videos or stories, need written patient authorization your counsel has reviewed."
-  - q: "Does reputation management include review monitoring tools?"
-    a: "It can, but a tool is optional. A single office can monitor its Google profile with notifications and a weekly check. Groups with many locations usually benefit from a tool that pulls reviews from several platforms into one queue. Any tool that sends review requests uses patient contact details, so it needs the same privacy review as other vendors."
+    a: "Displaying genuine reviews is common, but select and display them honestly. The FTC rule prohibits implying that the reviews shown on your own site represent most or all reviews when negative ones are suppressed because of their rating. Testimonials the practice creates itself, such as patient videos or stories, use patient information, so ask counsel what written authorization is needed before publishing."
 ---
 
 <KeyAnswer>Dental reputation management should produce a steady flow of genuine reviews and safe, consistent replies, not a curated rating. We audit your review profile, request process and past replies, set up a request routine that asks every patient the same way with no incentives or gating, write reply templates that disclose nothing about patients, and route the problems reviews reveal to the person who can fix them.</KeyAnswer>
 
-## What usually goes wrong with dental reviews, and what we recommend
+## Common review shortcuts, and what we recommend instead
 
-Reviews matter to a practice for two reasons: prospective patients read them when choosing a dentist, and they are part of how a Google Business Profile presents the practice. That pressure leads practices toward shortcuts — a gift card for a five-star review, a survey that sends only happy patients to Google, a staff target of reviews per week, or a sharp public reply correcting a patient's account of their visit. Each of these now carries a policy or legal risk, and the last one carries a patient privacy risk.
+Reviews matter to a practice because prospective patients can read them when comparing dentists, and because Google says the number of reviews and positive ratings can help a profile's local ranking. That pressure leads practices toward shortcuts — a gift card for a five-star review, a survey that sends only happy patients to Google, a staff target of reviews per week, or a sharp public reply correcting a patient's account of their visit. Each of these now carries a policy or legal risk, and the last one carries a patient privacy risk.
+
+<SourceNote ids={["google-gbp-local-ranking"]} />
 
 Our recommendation is a boring system run consistently: ask every patient after their visit through the same channel, offer nothing in return, reply to reviews with short templates that never confirm the person is a patient, and treat negative reviews as service data first and a marketing problem second. The volume of reviews grows from the number of patients asked, not from cleverness.
 
@@ -92,13 +94,19 @@ The FTC's Trade Regulation Rule on the Use of Consumer Reviews and Testimonials,
 
 Note the difference in scope: the FTC rule targets incentives tied to sentiment, while Google prohibits incentives for any review on its platform. We design to the stricter of the two.
 
+### Text-message requests and the TCPA
+
+If review requests go out as automated texts, federal telemarketing rules also apply. The FCC's rule at 47 CFR 64.1200 requires the called party's prior express consent for many autodialed calls and texts to mobile numbers, and prior express written consent where the message includes advertising or is telemarketing, with separate provisions for health care messages. Which category a review request falls into is a question for the practice's counsel; we use the consent and opt-out process counsel approves and do not switch on automated texting before that. The practical steps are in [requesting dental reviews without incentives or gating](/blog/dental-review-request-process/).
+
+<SourceNote ids={["ecfr-47-cfr-64-1200"]} />
+
 ### Patient privacy when replying
 
-A review is the patient's own disclosure; a reply is the practice's. Most dental practices that bill insurance electronically are HIPAA covered entities, and covered entities are limited in what they can say about patients in public. In a settlement announced in December 2022, the HHS Office for Civil Rights found that a dental practice had impermissibly disclosed patient names, treatment and insurance information in replies to Yelp reviews — including details the reviewers themselves had not posted. Commentators drew the lesson that a patient sharing their own information does not permit the practice to add to it.
+A review is the patient's own disclosure; a reply is the practice's. HIPAA's covered entities include health care providers that transmit health information electronically in connection with covered transactions, which can include a practice that submits insurance claims electronically, and covered entities are limited in what they can say about patients in public. As summarised by the law firm DLA Piper, a December 2022 HHS Office for Civil Rights settlement concerned a dental practice found to have impermissibly disclosed patient names, treatment and insurance information in replies to Yelp reviews, including details the reviewers had not posted themselves. The firm's conclusion: unlike patients, covered entities face significant limits when responding to reviews, good or bad.
 
 <SourceNote ids={["ecfr-45-cfr-160-103", "dla-piper-hipaa-review-settlement-2023"]} />
 
-This is why we adapt one piece of Google's general reply advice. Google suggests personalising replies and addressing reviewers by name. For a dental practice, a reply that names the reviewer, refers to "your visit", "your treatment" or "your appointment", or responds to the clinical details in the review can confirm a patient relationship. Our templates thank people for feedback, describe the practice's general policies, and invite the person to contact the office — without confirming that they are a patient. Google's own guidance is consistent on the core point: never share a reviewer's private information, and take complex issues offline. The full method is in [responding to negative dental reviews without disclosing patient information](/blog/responding-to-negative-dental-reviews/).
+So we adapt one piece of Google's general advice. Google suggests addressing reviewers by name and acknowledging their specific feedback; for a practice, naming the reviewer or referring to "your visit", "your treatment" or the clinical details can confirm a patient relationship. Our templates thank people, describe general policies and invite contact with the office, without confirming that anyone is a patient. Google agrees on the core point: never share a reviewer's private information, and take complex issues offline. The full method is in [responding to negative dental reviews without disclosing patient information](/blog/responding-to-negative-dental-reviews/).
 
 <SourceNote ids={["google-gbp-review-tips"]} />
 
@@ -127,16 +135,16 @@ We review the profile as a prospective patient would, then look underneath it:
 
 <SourceNote ids={["google-gbp-manage-reviews", "google-gbp-review-tips"]} />
 
-The request process itself — timing, wording and channel — is covered step by step in [requesting dental reviews without incentives or gating](/blog/dental-review-request-process/).
+Timing, wording and channel for the requests are covered step by step in the [review request process article](/blog/dental-review-request-process/).
 
-## Implementation sequence
+## Setting up the review routine, step by step
 
 <Timeline title="Setting up review work for a practice" phases={[
   { when: "Weeks 1–2", title: "Audit and stop the risks", items: ["Review profiles, themes, past replies and request process", "Pause any incentive, quota or gated survey", "Flag past replies that disclose patient information"] },
   { when: "Weeks 2–4", title: "Request routine", items: ["Choose the channel: existing patient messaging or a review tool", "Write one request message for all patients", "Privacy review of any tool that uses patient contact details"] },
   { when: "Weeks 3–5", title: "Replies and roles", items: ["Approve reply templates with the practice", "Name who approves replies and who handles escalations", "Train front-desk staff on what not to say in public"] },
   { when: "Ongoing", title: "Run and review", items: ["Weekly monitoring and replies", "Monthly theme summary for the practice manager", "Quarterly check of request coverage and policy changes"] }
-]} caption="Indicative sequence; timing depends on approvals and on the practice's messaging system. It is not a turnaround commitment." />
+]} caption="The order matters more than the dates: risky practices stop first. Timing depends on approvals and the practice's messaging system, and no dates are promised." />
 
 ## What the practice owns
 
@@ -151,7 +159,7 @@ Reputation work fails when it is treated as something the agency does to the pro
   "Counsel review of reply templates, testimonial use and any vendor handling patient contact details"
 ]} />
 
-## Options, limitations and budget drivers
+## What changes the effort, and what nobody can promise
 
 We do not publish prices. Effort depends mostly on:
 
@@ -164,7 +172,7 @@ We do not publish prices. Effort depends mostly on:
 | Tool integration | Connecting a review tool to the practice's messaging system needs setup and privacy review |
 | Approval process | Groups with legal or compliance sign-off need longer reply cycles |
 
-<Callout title="Limits worth knowing" tone="caution">
+<Callout title="What reputation work cannot promise" tone="caution">
 No one can promise a rating, a number of reviews or the removal of a review. Google decides what stays up. Request routines raise the number of patients asked, but patients decide whether to write and what to say. Replies cannot correct a patient's account in public detail without risking a privacy disclosure.
 </Callout>
 
@@ -188,16 +196,16 @@ Reputation reporting should connect to patient acquisition without pretending re
 
 - **Process measures** the practice controls: share of completed appointments sent a request, reply time, share of replies using approved templates, and zero replies containing patient details.
 - **Profile measures**: review volume and recency by office, rating trend, and themes by month.
-- **Acquisition context**, from the [conversion tracking service](/services/dental-conversion-tracking/) where it is in place: inquiries, qualified inquiries, booked appointments and attended visits from Business Profile and organic sources, reported separately and never attributed to reviews alone.
+- **Acquisition context**, from the [conversion tracking service](/services/dental-conversion-tracking/) where it is in place: what happened to inquiries from the Business Profile and organic search further down the path to an attended visit, never attributed to reviews alone.
 
-<Funnel title="Where reputation sits in the path to a visit" steps={[
-  { label: "Profile view", note: "A prospective patient sees the rating, recent reviews and replies" },
-  { label: "Inquiry", note: "Call, website visit, direction request or booking attempt from the profile" },
-  { label: "Qualified inquiry", note: "A prospective patient for a service offered, in the area" },
-  { label: "Booked and attended", note: "Recorded by the practice" }
-]} caption="Reviews influence the first step; the later stages also depend on availability, insurance, the website and the phone." />
+<Funnel title="Where reviews can and cannot exert influence" steps={[
+  { label: "Profile seen", note: "Rating, recent reviews and the practice's replies are read alongside competitors'" },
+  { label: "Profile action", note: "Call, website click or direction request — counted by the profile, not yet a patient" },
+  { label: "Contact with the practice", note: "Whether it becomes a booking now depends on phones, availability and insurance" },
+  { label: "Visit and next review", note: "The experience at the visit feeds the next request and the next review" }
+]} caption="Reviews mainly shape the first two steps. The loop back to the next review is why service recovery belongs in the routine." />
 
-Definitions for these measures are in the [dental marketing metrics glossary](/resources/dental-marketing-metrics/). Success is defined as a request process that reaches every patient, replies that are timely and safe, and recurring complaints that are fixed — with rating and volume read as consequences of those, not as targets in themselves.
+Stage definitions, from inquiry through attended visit, are in the [metrics glossary](/resources/dental-marketing-metrics/#inquiry-metrics) rather than repeated here. Success is defined as a request process that reaches every patient, replies that are timely and safe, and recurring complaints that are fixed — with rating and volume read as consequences of those, not as targets in themselves.
 
 ## Next step
 

@@ -2,7 +2,7 @@
 route: "/services/dental-web-design-conversion/"
 type: "service"
 serviceId: "S4"
-status: "Drafted"
+status: "Ready"
 author: "editorial-team"
 reviewer: null
 title: "Dental Website Design and Conversion Optimization"
@@ -40,7 +40,7 @@ cta: "audit"
 published: null
 updated: null
 evidence: "sourced"
-verificationNotes: "Core Web Vitals thresholds checked against web.dev (last updated 2024-10-31) and Google Search Central (last updated 2025-12-10); page experience statement against Search Central (last updated 2026-09-22). WCAG 2.2 criteria checked against the W3C Recommendation of 12 December 2024. DOJ position checked against ADA.gov guidance dated 18 March 2022, still posted on 2026-11-08; described as non-binding guidance, not legal advice. Site-move steps checked against Search Central (last updated 2026-08-20). No conversion benchmarks are used. The worked example is labelled Illustrative with invented figures. No client results are claimed."
+verificationNotes: "Independent review 2026-11-08/09: re-opened web.dev Core Web Vitals (thresholds, 75th percentile), Search Central Core Web Vitals and page experience (most relevant content shown even with sub-par page experience), the WCAG 2.2 Recommendation (12 December 2024; 2.5.8 24x24 CSS px; W3C advises 2.2), ADA.gov web guidance (18 March 2022; medical offices; flexibility; no detailed regulation; guidance has no legally binding effect) and Search Central site moves (301/308, Change of Address, at least one year, few weeks for medium sites); all statements supported. Changed: generalisations softened; migration and CMS sections shortened to avoid repeating the multi-location page and the owning articles; reporting stages linked to the metrics glossary instead of redefined; headings de-duplicated from siblings; trimmed toward ~2,800 words. Writer notes: Core Web Vitals thresholds checked against web.dev (last updated 2024-10-31) and Google Search Central (last updated 2025-12-10); page experience statement against Search Central (last updated 2026-09-22). WCAG 2.2 criteria checked against the W3C Recommendation of 12 December 2024. DOJ position checked against ADA.gov guidance dated 18 March 2022, still posted on 2026-11-08; described as non-binding guidance, not legal advice. Site-move steps checked against Search Central (last updated 2026-08-20). No conversion benchmarks are used. The worked example is labelled Illustrative with invented figures. No client results are claimed."
 faqs:
   - q: "Do we need a new website or can the current one be fixed?"
     a: "Often it can be fixed. If the platform is maintainable, the URLs are sound and the main problems are content, booking paths and speed, targeted changes are cheaper and carry less migration risk than a rebuild. A rebuild is justified when the platform blocks basic fixes, nobody can edit it safely, or the structure is so tangled that repairs would cost almost as much."
@@ -49,11 +49,7 @@ faqs:
   - q: "Is our practice legally required to have an accessible website?"
     a: "We cannot give legal advice. The Department of Justice's published guidance says Title III of the ADA applies to businesses open to the public, lists medical offices as an example, and says those businesses must make what they offer online accessible, while having flexibility in how. It names WCAG as helpful guidance. Ask your own counsel how this applies to your practice."
   - q: "Should we use online booking or an appointment request form?"
-    a: "It depends on whether your scheduling system can expose real availability safely, how many appointment types a new patient might need, and how quickly your team responds to requests. Many practices offer both for different visit types. Our article comparing online booking with request forms sets out the tradeoffs and the questions to ask your booking vendor."
-  - q: "Will a redesign hurt our Google rankings?"
-    a: "A redesign that changes URLs is a site move, and Google says to expect temporary fluctuation while it recrawls. The risk is managed by mapping every old URL to a new one, using permanent server-side redirects, keeping them for at least a year, and checking Search Console closely after launch. A redesign that keeps URLs and content carries much less risk."
-  - q: "Which platform do you build dental websites on?"
-    a: "We choose with you, based on who will edit the site, how often, what integrations it needs and who maintains it. A well-run WordPress site and a modern framework build can both be fast and accessible; both can also be neglected. Our WordPress versus Next.js article explains the tradeoffs, including the ongoing maintenance each one needs."
+    a: "It depends on whether your scheduling system can expose real availability safely, how many appointment types a new patient might need, and how quickly your team responds to requests. Some practices offer both, for different visit types. Our article comparing online booking with request forms sets out the tradeoffs and the questions to ask your booking vendor."
   - q: "How do you measure whether a new website is working?"
     a: "We separate inquiries from qualified inquiries, bookings and attended visits, and track calls, forms and online bookings as distinct actions. A site is working when more of the right visitors complete a booking path and those bookings attend. Traffic and time on page are diagnostic, not success measures."
   - q: "Who writes the content on the new site?"
@@ -62,9 +58,9 @@ faqs:
 
 ## Why dental websites lose patients they have already won
 
-Most practices do not have a traffic problem as much as a completion problem. Someone searches, finds the practice, taps through on a phone, and then stalls: the phone number is buried in a menu, the booking widget loads slowly or asks for an account, the implant page says nothing about cost or consultations, the insurance page lists plans no one has checked in years, or a sticky banner covers the form's submit button. None of these show up in a ranking report. All of them lose patients who were ready to act.
+For many practices the bigger problem is not traffic but completion. Someone searches, finds the practice, taps through on a phone, and then stalls: the phone number is buried in a menu, the booking widget loads slowly or asks for an account, the implant page says nothing about cost or consultations, the insurance page lists plans no one has checked in years, or a sticky banner covers the form's submit button. None of these show up in a ranking report. All of them lose patients who were ready to act.
 
-Our recommendation, before any talk of redesign, is to find out where real visitors stall and fix those points in order of how many patients they cost. Sometimes that leads to a new site. More often it leads to a focused set of changes to the booking path, the key treatment pages, speed and accessibility, done on the site you already have.
+Our recommendation, before any talk of redesign, is to find out where real visitors stall and fix those points in order of how many patients they cost. Sometimes that leads to a new site. Often it leads to a focused set of changes to the booking path, the key treatment pages, speed and accessibility, done on the site you already have.
 
 The question of why visitors do not book is explored in depth in our [mobile conversion audit article](/blog/dental-website-conversion-audit/). This page describes the service that acts on the answer.
 
@@ -144,7 +140,7 @@ We build and remediate to WCAG 2.2 Level AA, the current W3C Recommendation, pub
 
 Several criteria added in 2.2 bear directly on dental booking paths:
 
-- **Target Size (Minimum), 2.5.8 (AA):** pointer targets at least 24 by 24 CSS pixels, with listed exceptions. Small date pickers and close buttons often fail.
+- **Target Size (Minimum), 2.5.8 (AA):** pointer targets at least 24 by 24 CSS pixels, with listed exceptions. Small date pickers and close buttons can fail it.
 - **Focus Not Obscured (Minimum), 2.4.11 (AA):** a keyboard user's focused element should not be hidden, for example by a sticky "Book now" bar or cookie banner.
 - **Accessible Authentication (Minimum), 3.3.8 (AA):** relevant to patient portals and booking systems that require login.
 - **Redundant Entry, 3.3.7 (A):** do not make people retype information already given in the same process.
@@ -189,19 +185,17 @@ On cost, we help practices say something honest without quoting numbers they can
 
 ## Migrations without losing visibility
 
-If URLs change, Google treats it as a site move. Its guidance is to prepare a mapping from old to new URLs, implement server-side permanent redirects (301 or 308), avoid redirect chains, update internal links and sitemaps, verify both old and new sites in Search Console, use the Change of Address tool when the domain changes, and keep redirects for as long as possible, generally at least one year. Google also says to expect temporary ranking fluctuation, and that medium-sized sites can take a few weeks or more to show new URLs in place of old ones.
+A redesign that changes URLs is a site move in Google's terms. We follow its guidance: a complete old-to-new URL map, permanent server-side redirects (301 or 308) without chains, the Change of Address tool when the domain changes, and redirects kept generally for at least a year, with temporary ranking fluctuation expected while Google recrawls.
 
 <SourceNote ids={["google-site-move-url-changes"]} />
 
-We run migrations to that standard and add dental-specific checks: Business Profile website links updated, booking and call-tracking numbers carried across, and old treatment pages with links pointed to their closest equivalent rather than the home page. Migrations triggered by a rebrand or acquisition are covered in our article on [rebrands, acquisitions and site migrations](/blog/dental-practice-rebrand-seo-migration/). If rankings were already weak before the redesign, see [why dental websites do not rank](/blog/why-dental-websites-do-not-rank/) and our [dental SEO service](/services/dental-seo-company/), since a redesign rarely fixes a relevance or local-signal problem on its own.
+The checks we add for a practice: Business Profile website links updated on launch day, booking links and call-tracking numbers carried across, and old treatment pages redirected to their closest equivalent rather than the home page. Rebrand and acquisition migrations are covered in [rebrands, acquisitions and site migrations](/blog/dental-practice-rebrand-seo-migration/). If rankings were already weak before the redesign, see [why dental websites do not rank](/blog/why-dental-websites-do-not-rank/) and our [dental SEO service](/services/dental-seo-company/), since a redesign rarely fixes a relevance or local-signal problem on its own.
 
 ## Maintainability and choosing a CMS
 
-The platform matters less than whether the practice can keep the site accurate after launch. Hours change, dentists join and leave, insurance participation shifts, and offers expire. A site that needs a developer for each of these drifts out of date.
+The platform matters less than whether the practice can keep the site accurate after launch: hours, dentists, insurance participation and offers all change, and a site that needs a developer for each drifts out of date. We choose with the practice by asking who edits, what has to integrate, who applies security updates and what happens if a vendor relationship ends. The practice should own the domain, own the hosting account or hold a clear transfer right, and keep admin access. The detailed comparison is in [WordPress versus Next.js for dental websites](/blog/wordpress-vs-nextjs-dental-websites/).
 
-We choose a platform with the practice by asking who edits, how often, what has to integrate (booking, forms, reviews, tracking), who applies security and software updates, and what happens if the relationship with any vendor ends. The practice should own the domain, the hosting account or have a clear transfer right, and hold admin access. The detailed comparison is in [WordPress versus Next.js for dental websites](/blog/wordpress-vs-nextjs-dental-websites/).
-
-## Implementation sequence
+## How a website project runs, phase by phase
 
 <Timeline title="How a website engagement runs" phases={[
   { when: "Phase 1", title: "Diagnose", items: ["Task tests on phones", "Field performance and accessibility review", "Form and booking routing test", "URL inventory if a redesign is likely"] },
@@ -220,7 +214,7 @@ We choose a platform with the practice by asking who edits, how often, what has 
 - **Front-desk readiness:** someone who answers calls and responds to form requests promptly. A better site produces more requests; an unanswered queue wastes them.
 - **Photography** of the real practice and team where possible; stock photos of strangers in scrubs tell visitors nothing.
 
-## Options, limitations and budget drivers
+## Website scope options and cost drivers
 
 We do not publish prices. Cost depends on:
 
@@ -247,14 +241,9 @@ Over the next quarter, the practice compares completed bookings from the website
 
 ## How success is measured
 
-We separate four levels for every website engagement:
+For a website, the measure that matters is completion: how many visitors who reach a booking path finish it, by path (call, form, online booking) and by visit type, and whether those bookings attend. Calls, forms and online bookings are tracked as separate actions so a broken widget cannot hide behind a busy phone line. Beyond that, the site is judged on the same inquiry, booking and attended-visit stages as every channel, as defined in the [metrics glossary](/resources/dental-marketing-metrics/).
 
-- **Inquiries:** calls from the site, form submissions and online booking completions, each tracked as its own action.
-- **Qualified inquiries:** inquiries from people the practice can serve, for the services it wants.
-- **Bookings:** appointments with a date in the schedule.
-- **Attended visits:** patients who arrived.
-
-We also report diagnostic measures such as task completion in testing, Core Web Vitals at the 75th percentile and accessibility issues resolved, but we do not present these as business results. Definitions follow our [dental marketing metrics glossary](/resources/dental-marketing-metrics/). Comparisons are made against the practice's own baseline, with changes in capacity, seasonality and ad spend noted.
+Diagnostic measures (task completion in testing, Core Web Vitals at the 75th percentile, accessibility issues resolved) are reported too, but never presented as business results. Comparisons are made against the practice's own baseline, with changes in capacity, seasonality and ad spend noted.
 
 ## Next step: start with the website lane of the audit
 
