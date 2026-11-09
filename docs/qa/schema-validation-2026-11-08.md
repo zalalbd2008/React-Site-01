@@ -16,3 +16,11 @@ Tool: validator.schema.org (POST of the production-build HTML; the validator cou
 Not present by design: Dentist, MedicalClinic, LocalBusiness, ProfessionalService, ratings, reviews, prices, FAQPage.
 
 Google Rich Results Test: only BreadcrumbList and Article/BlogPosting are relevant supported features; run it on the production hostname after launch (it cannot test a local build). Organization, Service and WebSite produce no rich result and are not errors.
+
+## Addendum 2026-11-09 (service pages published)
+
+| Route | Errors | Warnings | Types found |
+|---|---|---|---|
+| /services/ | 0 | 0 | CollectionPage, BreadcrumbList |
+| /services/dental-seo-company/ | 0 | 0 | Service (provider = Organization, audience = BusinessAudience), BreadcrumbList |
+| /services/dental-conversion-tracking/ | 0 | 0 | Service, BreadcrumbList |

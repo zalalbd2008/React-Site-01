@@ -1,21 +1,15 @@
 {
   "base": "http://localhost:3200",
-  "checkedAt": "2026-11-09T12:53:29.681Z",
+  "checkedAt": "2026-11-09T12:54:13.469Z",
   "published": 117,
   "failures": [],
-  "warnings": [
-    "/markets/florida/fort-lauderdale/: description 170 chars may truncate",
-    "/markets/florida/gainesville/: description 166 chars may truncate",
-    "/markets/florida/orlando/: description 167 chars may truncate",
-    "/markets/georgia/: description 167 chars may truncate",
-    "/services/dental-content-marketing/: description 166 chars may truncate"
-  ],
+  "warnings": [],
   "pages": [
     {
       "route": "/",
       "status": 200,
       "canonical": "https://alphadentalmedia.com/",
-      "title": "Dental Marketing Agency for Practices &amp; Dental Groups",
+      "title": "Dental Marketing Agency for Practices & Dental Groups",
       "h1": 1,
       "htmlWords": 3850,
       "schemaTypes": [
@@ -330,7 +324,7 @@
       "route": "/blog/dental-website-conversion-audit/",
       "status": 200,
       "canonical": "https://alphadentalmedia.com/blog/dental-website-conversion-audit/",
-      "title": "Why Dental Website Visitors Don&#x27;t Book: A Mobile Audit",
+      "title": "Why Dental Website Visitors Don't Book: A Mobile Audit",
       "h1": 1,
       "htmlWords": 3323,
       "schemaTypes": [
@@ -378,7 +372,7 @@
       "route": "/blog/google-maps-visibility-for-dentists/",
       "status": 200,
       "canonical": "https://alphadentalmedia.com/blog/google-maps-visibility-for-dentists/",
-      "title": "Why Your Dental Practice Isn&#x27;t Showing in Google Maps",
+      "title": "Why Your Dental Practice Isn't Showing in Google Maps",
       "h1": 1,
       "htmlWords": 3486,
       "schemaTypes": [
@@ -490,7 +484,7 @@
       "route": "/blog/why-dental-websites-do-not-rank/",
       "status": 200,
       "canonical": "https://alphadentalmedia.com/blog/why-dental-websites-do-not-rank/",
-      "title": "Why Your Dental Website Isn&#x27;t Ranking: A Diagnosis",
+      "title": "Why Your Dental Website Isn't Ranking: A Diagnosis",
       "h1": 1,
       "htmlWords": 3968,
       "schemaTypes": [
@@ -791,7 +785,7 @@
       "canonical": "https://alphadentalmedia.com/markets/florida/",
       "title": "Dental Marketing Agency for Florida Practices",
       "h1": 1,
-      "htmlWords": 6351,
+      "htmlWords": 6339,
       "schemaTypes": [
         "Organization",
         "WebSite",
@@ -871,7 +865,7 @@
       "canonical": "https://alphadentalmedia.com/markets/florida/miami/",
       "title": "Dental Marketing Agency in Miami, Florida | Alpha Dental Media",
       "h1": 1,
-      "htmlWords": 4040,
+      "htmlWords": 4038,
       "schemaTypes": [
         "Organization",
         "WebSite",
@@ -983,7 +977,7 @@
       "canonical": "https://alphadentalmedia.com/markets/florida/tampa/",
       "title": "Dental Marketing Agency in Tampa, Florida | Alpha Dental Media",
       "h1": 1,
-      "htmlWords": 3684,
+      "htmlWords": 3682,
       "schemaTypes": [
         "Organization",
         "WebSite",
@@ -1461,7 +1455,7 @@
       "route": "/our-process/",
       "status": 200,
       "canonical": "https://alphadentalmedia.com/our-process/",
-      "title": "How We Work: Alpha Dental Media&#x27;s Process",
+      "title": "How We Work: Alpha Dental Media's Process",
       "h1": 1,
       "htmlWords": 2080,
       "schemaTypes": [

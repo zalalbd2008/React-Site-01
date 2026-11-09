@@ -1,0 +1,10 @@
+PASS audit page renders form server-side
+PASS empty submit shows accessible field errors and moves focus
+PASS clinical-content warning appears for patient details
+PASS valid submission → thank-you only after server acceptance
+PASS no personal data in analytics payloads or URL
+PASS double-click sends one request
+PASS mobile drawer: opens, traps focus, closes on Escape, returns focus
+PASS bottom bar hides while a form field has focus
+PASS no horizontal overflow at 360px on key templates
+PASS calculator handles zero CPC without Infinity
