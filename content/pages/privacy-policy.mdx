@@ -1,7 +1,7 @@
 ---
 route: "/privacy-policy/"
 type: "legal"
-status: "Ready"
+status: "Published"
 statusReason: "Ready for the protected preview only. Counsel review (owner input #14) is required before launch, plus legal name (#1), inquiry processor (#2), hosting provider (#13), retention periods and analytics configuration (#9)."
 title: "Privacy Policy"
 navLabel: "Privacy Policy"
@@ -19,7 +19,7 @@ related:
   - "/contact/"
 parent: "/"
 cta: "none"
-published: null
+published: "2026-11-09"
 updated: null
 evidence: "none-required"
 verificationNotes: "Independent review 2026-11-08 against src/lib/inquiry.ts, src/lib/inquiry-shared.ts, src/lib/delivery.ts, src/lib/analytics.ts, src/components/Consent.tsx, src/components/InquiryForm.tsx, src/app/api/inquiry/route.ts, src/app/layout.tsx and src/app/fonts.ts. Corrected: campaign values are read from the page where the form is submitted, at submission time, not from the first landing page (readAttribution is only called in onSubmit), and this happens regardless of analytics consent; if analytics are allowed Google Analytics also records page views and automatically collected data and uses cookies; site events carry only request type and chosen challenge; preview-only file sink disclosed; requests routed via the contact form's 'Other' option. Visible pending-legal-review callout retained. Counsel review (owner input #14) required before launch."

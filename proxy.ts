@@ -19,6 +19,13 @@ export function proxy(req: NextRequest) {
     return NextResponse.redirect(url, 308);
   }
 
+  // In production, any host other than the canonical domain (e.g. *.vercel.app) must not be indexed.
+  if (isProduction && host.replace(/:\d+$/, '') !== CANONICAL_HOST && !host.startsWith('localhost')) {
+    const res = NextResponse.next();
+    res.headers.set('X-Robots-Tag', 'noindex, nofollow');
+    return res;
+  }
+
   const password = process.env.PREVIEW_PASSWORD;
   if (!isProduction && password) {
     const auth = req.headers.get('authorization') ?? '';
