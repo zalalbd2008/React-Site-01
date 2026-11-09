@@ -23,7 +23,7 @@ scripts/            seed-manifest, content-report, check-mdx, release-check, e2e
 src/app/            routes (static pages + [slug] templates), API route, sitemap, robots, llms.txt, OG image
 src/components/     SiteChrome (header/drawer/bottom bar), ContentPage template, MDX components, form, calculator
 src/lib/            content loader, schema, JSON-LD, metadata, analytics, inquiry validation/delivery
-proxy.ts            preview Basic auth + www→apex redirect
+src/proxy.ts        preview Basic auth, www→apex redirect, noindex on non-canonical production hosts
 ```
 
 ## Publication control (one rule, every surface)
